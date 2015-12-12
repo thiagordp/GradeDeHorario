@@ -1,0 +1,14 @@
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\bin\Debug\GradeDeHorario.exe.config
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.exe
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.pdb
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\bin\Debug\GradeDeHorario.exe
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\bin\Debug\GradeDeHorario.pdb
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\obj\Debug\Interface.csprojResolveAssemblyReference.cache
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.Properties.Resources.resources
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\obj\Debug\Interface.csproj.GenerateResource.Cache
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.frmDisciplina.resources
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.frmFase.resources
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.frmGradeHorario.resources
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.frmPrincipal.resources
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.frmProfessor.resources
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.frmSelecionaCurso.resources

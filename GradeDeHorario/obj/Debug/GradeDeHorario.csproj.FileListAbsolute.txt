@@ -1,0 +1,9 @@
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\bin\Debug\GradeDeHorario.exe.config
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\bin\Debug\GradeDeHorario.exe
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\bin\Debug\GradeDeHorario.pdb
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.csprojResolveAssemblyReference.cache
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.Principal.resources
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.Properties.Resources.resources
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.csproj.GenerateResource.Cache
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.exe
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.pdb
