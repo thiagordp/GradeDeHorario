@@ -12,6 +12,21 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmInfraEstrutura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfraEstrutura.Designer.cs">
+      <DependentUpon>frmInfraEstrutura.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSelecionaCurso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +106,12 @@
     <Compile Include="frmProfessor.Designer.cs">
       <DependentUpon>frmProfessor.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSelecionaDisciplina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelecionaDisciplina.Designer.cs">
+      <DependentUpon>frmSelecionaDisciplina.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmDisciplina.resx">
@@ -96,6 +123,9 @@
     <EmbeddedResource Include="frmGradeHorario.resx">
       <DependentUpon>frmGradeHorario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmInfraEstrutura.resx">
+      <DependentUpon>frmInfraEstrutura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSelecionaCurso.resx">
       <DependentUpon>frmSelecionaCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelecionaDisciplina.resx">
+      <DependentUpon>frmSelecionaDisciplina.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -139,6 +172,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+    <None Include="Resources\ic_open.png" />
+    <None Include="Resources\ic_relatorio.png" />
+    <None Include="Resources\ic_infraestrutura.png" />
+    <None Include="Resources\ic_clean.png" />
     <None Include="Resources\ic_start.png" />
     <None Include="Resources\ic_logout.png" />
     <None Include="Resources\ic_delete.png" />
@@ -147,6 +184,24 @@
     <None Include="Resources\ic_load.png" />
     <None Include="Resources\logo.png" />
     <None Include="Resources\ic_save_all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RegraNegocio\RegraNegocio.csproj">
+      <Project>{a238ab83-10bc-4ff2-a78e-c53ce87e833a}</Project>
+      <Name>RegraNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

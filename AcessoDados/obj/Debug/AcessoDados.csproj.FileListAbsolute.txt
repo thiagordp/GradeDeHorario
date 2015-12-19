@@ -1,0 +1,5 @@
+D:\Projetos\C#\Projeto\GradeDeHorario\AcessoDados\bin\Debug\AcessoDados.dll
+D:\Projetos\C#\Projeto\GradeDeHorario\AcessoDados\bin\Debug\AcessoDados.pdb
+D:\Projetos\C#\Projeto\GradeDeHorario\AcessoDados\obj\Debug\AcessoDados.csprojResolveAssemblyReference.cache
+D:\Projetos\C#\Projeto\GradeDeHorario\AcessoDados\obj\Debug\AcessoDados.dll
+D:\Projetos\C#\Projeto\GradeDeHorario\AcessoDados\obj\Debug\AcessoDados.pdb

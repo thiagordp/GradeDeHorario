@@ -1,0 +1,7 @@
+D:\Projetos\C#\Projeto\GradeDeHorario\RegraNegocio\bin\Debug\RegraNegocio.dll
+D:\Projetos\C#\Projeto\GradeDeHorario\RegraNegocio\bin\Debug\RegraNegocio.pdb
+D:\Projetos\C#\Projeto\GradeDeHorario\RegraNegocio\obj\Debug\RegraNegocio.csprojResolveAssemblyReference.cache
+D:\Projetos\C#\Projeto\GradeDeHorario\RegraNegocio\obj\Debug\RegraNegocio.dll
+D:\Projetos\C#\Projeto\GradeDeHorario\RegraNegocio\obj\Debug\RegraNegocio.pdb
+D:\Projetos\C#\Projeto\GradeDeHorario\RegraNegocio\bin\Debug\AcessoDados.dll
+D:\Projetos\C#\Projeto\GradeDeHorario\RegraNegocio\bin\Debug\AcessoDados.pdb

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 14.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Log de Geração de Código/Transformação de Texto">
+  <MessageClass Name="Message" Label="Mensagem" Option="Mostrar mensagens de informação" />
+  <MessageClass Name="Warning" Label="Aviso" Option="Mostrar avisos" />
+  <MessageClass Name="Error" Label="Erro" Option="Mostrar erros" />
+  <MessageClass Name="Property" Label="Propriedade" Option="Mostrar metadados" />
+  <MessageClass Name="Diagnostic" Label="Mensagem" Option="Mostrar mensagens de diagnóstico" />
+  <Message Timestamp="2015-12-16T17:15:33" Importance="High" Text="A geração de código ou a transformação de texto foi iniciada." />
+  <Message Timestamp="2015-12-16T17:15:33" Importance="Diagnostic" Text="Nome = ClassTemplate" />
+  <Message Timestamp="2015-12-16T17:15:33" Importance="Diagnostic" Text="Substituir = True" />
+  <Message Timestamp="2015-12-16T17:15:33" Importance="Diagnostic" Text="CaminhoDoProjeto = ..\ModelingProject1Lib\ModelingProject1Lib.csproj" />
+  <Message Timestamp="2015-12-16T17:15:33" Importance="Diagnostic" Text="DiretórioDeDestino = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-12-16T17:15:33" Importance="Diagnostic" Text="NomeDeDestino = {Name}" />
+  <Message Timestamp="2015-12-16T17:15:33" Importance="Diagnostic" Text="CaminhoDoArquivoDeModelo = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-12-16T17:15:33" Importance="Diagnostic" Text="CaminhoDeArquivoDeModeloResolvido = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-12-16T17:15:33" Importance="Medium" Text="Vinculações de modelo de texto do ModelingProject1: 'ClassTemplate' serão aplicadas ClassTemplate.t4 para: &quot;ModelingProject1::Class1&quot; -  (Class), &quot;ModelingProject1::Class2&quot; -  (Class) " />
+  <Message Timestamp="2015-12-16T17:16:21" Importance="Medium" Text="Projeto Adicionado: D:\Projetos\C#\Projeto\GradeDeHorario\ModelingProject1Lib\ModelingProject1Lib.csproj" />
+  <Message Timestamp="2015-12-16T17:16:21" Importance="Medium" Text="&quot;ModelingProject1::Class1&quot; -  (Class) : successo (arquivo criado) - D:\Projetos\C#\Projeto\GradeDeHorario\ModelingProject1Lib\GeneratedCode\Class1.cs" />
+  <Message Timestamp="2015-12-16T17:16:22" Importance="Medium" Text="&quot;ModelingProject1::Class2&quot; -  (Class) : successo (arquivo criado) - D:\Projetos\C#\Projeto\GradeDeHorario\ModelingProject1Lib\GeneratedCode\Class2.cs" />
+  <Message Timestamp="2015-12-16T17:16:22" Importance="Diagnostic" Text="Nome = StructTemplate" />
+  <Message Timestamp="2015-12-16T17:16:22" Importance="Diagnostic" Text="Substituir = True" />
+  <Message Timestamp="2015-12-16T17:16:22" Importance="Diagnostic" Text="CaminhoDoProjeto = ..\ModelingProject1Lib\ModelingProject1Lib.csproj" />
+  <Message Timestamp="2015-12-16T17:16:22" Importance="Diagnostic" Text="DiretórioDeDestino = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-12-16T17:16:22" Importance="Diagnostic" Text="NomeDeDestino = {Name}" />
+  <Message Timestamp="2015-12-16T17:16:22" Importance="Diagnostic" Text="CaminhoDoArquivoDeModelo = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-12-16T17:16:22" Importance="Diagnostic" Text="CaminhoDeArquivoDeModeloResolvido = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-12-16T17:16:22" Importance="Medium" Text="Vinculações de modelo de texto do ModelingProject1: 'StructTemplate' serão aplicadas StructTemplate.t4 para: &quot;ModelingProject1::Class1&quot; -  (Class), &quot;ModelingProject1::Class2&quot; -  (Class) " />
+  <Message Timestamp="2015-12-16T17:16:22" Importance="Diagnostic" Text="&quot;ModelingProject1::Class1&quot; -  (Class): nenhum arquivo foi gerado porque o método 'AplicaAElemento' do modelo 'StructTemplate.t4' foi avaliado como falso." />
+  <Message Timestamp="2015-12-16T17:16:22" Importance="Diagnostic" Text="&quot;ModelingProject1::Class2&quot; -  (Class): nenhum arquivo foi gerado porque o método 'AplicaAElemento' do modelo 'StructTemplate.t4' foi avaliado como falso." />
+  <Message Timestamp="2015-12-16T17:16:22" Importance="High" Text="Geração de código concluída. Erros: 0. Avisos: 0." />
+</Log>

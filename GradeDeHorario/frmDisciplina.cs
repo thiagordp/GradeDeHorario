@@ -16,6 +16,10 @@ namespace GradeDeHorario
         {
             InitializeComponent();
         }
-        
+
+        private void btnSelecionaRequisito_Click(object sender, EventArgs e)
+        {
+            (new frmSelecionaDisciplina()).ShowDialog();
+        }
     }
 }

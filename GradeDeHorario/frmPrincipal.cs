@@ -14,10 +14,12 @@ namespace GradeDeHorario
     {
         public frmPrincipal(int index_curso)
         {
+            InitializeComponent();
+
             switch (index_curso)
             {
                 case 1:
-                    InitializeComponent();
+                    // pnlBackground.BackgroundImage = Properties.Resources.ic_board;
                     break;
                 case 2:
                     MessageBox.Show("Teste!!");
@@ -47,6 +49,11 @@ namespace GradeDeHorario
         private void btnProfessor_Click(object sender, EventArgs e)
         {
             (new frmProfessor()).ShowDialog();
+        }
+
+        private void btnInfraEstrutura_Click(object sender, EventArgs e)
+        {
+            (new frmInfraEstrutura()).ShowDialog();
         }
     }
 }

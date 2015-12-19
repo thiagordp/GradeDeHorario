@@ -16,5 +16,14 @@ namespace GradeDeHorario
         {
             InitializeComponent();
         }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            dtgDisciplinaFase.Rows.Add("ARA7132", "07655", "Fundamentos Matemáticos para Computação - Entre outros", "4");
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

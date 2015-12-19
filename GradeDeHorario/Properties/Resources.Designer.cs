@@ -83,9 +83,29 @@ namespace GradeDeHorario.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ic_clean {
+            get {
+                object obj = ResourceManager.GetObject("ic_clean", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ic_delete {
             get {
                 object obj = ResourceManager.GetObject("ic_delete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ic_infraestrutura {
+            get {
+                object obj = ResourceManager.GetObject("ic_infraestrutura", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,6 +156,26 @@ namespace GradeDeHorario.Properties {
         internal static System.Drawing.Bitmap ic_new {
             get {
                 object obj = ResourceManager.GetObject("ic_new", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ic_open {
+            get {
+                object obj = ResourceManager.GetObject("ic_open", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ic_relatorio {
+            get {
+                object obj = ResourceManager.GetObject("ic_relatorio", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

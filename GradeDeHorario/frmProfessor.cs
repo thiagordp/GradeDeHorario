@@ -16,5 +16,10 @@ namespace GradeDeHorario
         {
             InitializeComponent();
         }
+
+        private void dtgHorarioDisponivel_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

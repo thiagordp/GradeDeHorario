@@ -53,7 +53,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 37F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(442, 177);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(357, 114);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -64,7 +64,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(436, 40);
+            this.label1.Size = new System.Drawing.Size(351, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Gerenciador de Grades de Horários";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -74,10 +74,10 @@
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.label2.Location = new System.Drawing.Point(10, 45);
+            this.label2.Location = new System.Drawing.Point(10, 31);
             this.label2.Margin = new System.Windows.Forms.Padding(10, 5, 3, 5);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(429, 55);
+            this.label2.Size = new System.Drawing.Size(344, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Selecione um curso:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -92,10 +92,10 @@
             "Engenharia de Computação",
             "Engenharia de Energia",
             "Tecnogias da Informação e Comunicação (TIC)"});
-            this.cbbCurso.Location = new System.Drawing.Point(10, 108);
+            this.cbbCurso.Location = new System.Drawing.Point(10, 71);
             this.cbbCurso.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
             this.cbbCurso.Name = "cbbCurso";
-            this.cbbCurso.Size = new System.Drawing.Size(422, 21);
+            this.cbbCurso.Size = new System.Drawing.Size(337, 21);
             this.cbbCurso.TabIndex = 2;
             // 
             // toolStrip1
@@ -105,9 +105,9 @@
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(40, 40);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnStart});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 177);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 114);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(442, 69);
+            this.toolStrip1.Size = new System.Drawing.Size(357, 69);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -128,10 +128,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 246);
+            this.ClientSize = new System.Drawing.Size(357, 183);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.toolStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmSelecionaCurso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seleção de curso";
