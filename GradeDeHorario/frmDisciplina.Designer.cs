@@ -54,8 +54,6 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txtNomeDisciplina = new System.Windows.Forms.TextBox();
             this.nudCreditoDisplicina = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cbbSala = new System.Windows.Forms.ComboBox();
             this.dtgDisciplinaRequisito = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSelecionaRequisito = new System.Windows.Forms.Button();
@@ -272,8 +270,6 @@
             this.tableLayoutPanel2.Controls.Add(this.txtCodigo, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.txtNomeDisciplina, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.nudCreditoDisplicina, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.label4, 2, 2);
-            this.tableLayoutPanel2.Controls.Add(this.cbbSala, 3, 2);
             this.tableLayoutPanel2.Controls.Add(this.dtgDisciplinaRequisito, 4, 1);
             this.tableLayoutPanel2.Controls.Add(this.panel1, 5, 0);
             this.tableLayoutPanel2.Controls.Add(this.label5, 4, 0);
@@ -358,26 +354,6 @@
             0,
             0,
             0});
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(252, 59);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Sala:";
-            // 
-            // cbbSala
-            // 
-            this.cbbSala.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbbSala.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbSala.FormattingEnabled = true;
-            this.cbbSala.Location = new System.Drawing.Point(289, 55);
-            this.cbbSala.Name = "cbbSala";
-            this.cbbSala.Size = new System.Drawing.Size(102, 21);
-            this.cbbSala.TabIndex = 5;
             // 
             // dtgDisciplinaRequisito
             // 
@@ -472,9 +448,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.TextBox txtNomeDisciplina;
-        private System.Windows.Forms.ComboBox cbbSala;
         private System.Windows.Forms.NumericUpDown nudCreditoDisplicina;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dtgDisciplinaRequisito;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA;
         private System.Windows.Forms.DataGridViewTextBoxColumn NOME_DISCIPLINA;
