@@ -16,3 +16,5 @@ D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.fr
 D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.frmSelecionaDisciplina.resources
 D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\bin\Debug\RegraNegocio.dll
 D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\bin\Debug\RegraNegocio.pdb
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\bin\Debug\Modelos.dll
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\bin\Debug\Modelos.pdb

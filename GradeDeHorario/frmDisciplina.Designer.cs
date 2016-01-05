@@ -28,17 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDisciplina));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDisciplina));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnNovo = new System.Windows.Forms.ToolStripButton();
-            this.btnSalvar = new System.Windows.Forms.ToolStripButton();
             this.btnCancelar = new System.Windows.Forms.ToolStripButton();
             this.btnSalvarEdicao = new System.Windows.Forms.ToolStripButton();
+            this.btnExcluir = new System.Windows.Forms.ToolStripButton();
             this.dtgDisciplina = new System.Windows.Forms.DataGridView();
             this.CODIGO_DISCIPLINA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NOME_DISCIPLINA = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,6 +57,7 @@
             this.txtNomeDisciplina = new System.Windows.Forms.TextBox();
             this.nudCreditoDisplicina = new System.Windows.Forms.NumericUpDown();
             this.dtgDisciplinaRequisito = new System.Windows.Forms.DataGridView();
+            this.NOME_DISCIPLINA_REQUISITO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSelecionaRequisito = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -74,9 +77,9 @@
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(40, 40);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnNovo,
-            this.btnSalvar,
             this.btnCancelar,
-            this.btnSalvarEdicao});
+            this.btnSalvarEdicao,
+            this.btnExcluir});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(674, 69);
@@ -93,21 +96,12 @@
             this.btnNovo.Text = "Novo";
             this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnNovo.ToolTipText = "Criar uma nova disciplina";
-            // 
-            // btnSalvar
-            // 
-            this.btnSalvar.Image = global::GradeDeHorario.Properties.Resources.ic_save_all;
-            this.btnSalvar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSalvar.Margin = new System.Windows.Forms.Padding(5);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(70, 59);
-            this.btnSalvar.Text = "Salvar tudo";
-            this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnSalvar.ToolTipText = "Salvar as alterações realizadas";
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // btnCancelar
             // 
             this.btnCancelar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnCancelar.Enabled = false;
             this.btnCancelar.Image = global::GradeDeHorario.Properties.Resources.ic_menu_close;
             this.btnCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(5);
@@ -115,11 +109,13 @@
             this.btnCancelar.Size = new System.Drawing.Size(57, 59);
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnCancelar.ToolTipText = "Salvar todas as alterações realizadas";
+            this.btnCancelar.ToolTipText = "Reverte todas as alterações realizadas e que não foram salvas.";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnSalvarEdicao
             // 
             this.btnSalvarEdicao.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnSalvarEdicao.Enabled = false;
             this.btnSalvarEdicao.Image = global::GradeDeHorario.Properties.Resources.ic_button;
             this.btnSalvarEdicao.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSalvarEdicao.Margin = new System.Windows.Forms.Padding(5);
@@ -128,6 +124,21 @@
             this.btnSalvarEdicao.Text = "Salvar";
             this.btnSalvarEdicao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnSalvarEdicao.ToolTipText = "Salvar a nova disciplina criada";
+            this.btnSalvarEdicao.Click += new System.EventHandler(this.btnSalvarEdicao_Click);
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnExcluir.Enabled = false;
+            this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
+            this.btnExcluir.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(5);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(45, 59);
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnExcluir.ToolTipText = "Excluir disciplina selecionada";
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // dtgDisciplina
             // 
@@ -136,6 +147,7 @@
             this.dtgDisciplina.AllowUserToResizeColumns = false;
             this.dtgDisciplina.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dtgDisciplina.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgDisciplina.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dtgDisciplina.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -155,32 +167,34 @@
             this.SALA_DISCIPLINA,
             this.PRE_REQUISITO_DISCIPLINA});
             this.tableLayoutPanel1.SetColumnSpan(this.dtgDisciplina, 2);
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgDisciplina.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 8F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgDisciplina.DefaultCellStyle = dataGridViewCellStyle5;
             this.dtgDisciplina.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgDisciplina.Location = new System.Drawing.Point(10, 115);
             this.dtgDisciplina.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.dtgDisciplina.MultiSelect = false;
             this.dtgDisciplina.Name = "dtgDisciplina";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 8F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgDisciplina.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 8F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgDisciplina.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dtgDisciplina.RowHeadersVisible = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dtgDisciplina.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dtgDisciplina.RowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.dtgDisciplina.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgDisciplina.Size = new System.Drawing.Size(654, 281);
             this.dtgDisciplina.TabIndex = 1;
+            this.dtgDisciplina.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgDisciplina_CellDoubleClick);
             // 
             // CODIGO_DISCIPLINA
             // 
@@ -193,12 +207,11 @@
             // 
             // NOME_DISCIPLINA
             // 
-            this.NOME_DISCIPLINA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.NOME_DISCIPLINA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.NOME_DISCIPLINA.HeaderText = "Nome";
             this.NOME_DISCIPLINA.MinimumWidth = 200;
             this.NOME_DISCIPLINA.Name = "NOME_DISCIPLINA";
             this.NOME_DISCIPLINA.ReadOnly = true;
-            this.NOME_DISCIPLINA.Width = 200;
             // 
             // CREDITO_DISCIPLINA
             // 
@@ -222,6 +235,7 @@
             this.PRE_REQUISITO_DISCIPLINA.HeaderText = "Pré-requisito";
             this.PRE_REQUISITO_DISCIPLINA.Name = "PRE_REQUISITO_DISCIPLINA";
             this.PRE_REQUISITO_DISCIPLINA.ReadOnly = true;
+            this.PRE_REQUISITO_DISCIPLINA.Visible = false;
             // 
             // tableLayoutPanel1
             // 
@@ -246,6 +260,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.gbDisciplina, 2);
             this.gbDisciplina.Controls.Add(this.tableLayoutPanel2);
             this.gbDisciplina.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbDisciplina.Enabled = false;
             this.gbDisciplina.Location = new System.Drawing.Point(10, 10);
             this.gbDisciplina.Margin = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.gbDisciplina.Name = "gbDisciplina";
@@ -317,6 +332,7 @@
             // 
             // txtCodigo
             // 
+            this.txtCodigo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCodigo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtCodigo.Location = new System.Drawing.Point(73, 3);
             this.txtCodigo.Name = "txtCodigo";
@@ -325,6 +341,7 @@
             // 
             // txtNomeDisciplina
             // 
+            this.txtNomeDisciplina.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tableLayoutPanel2.SetColumnSpan(this.txtNomeDisciplina, 3);
             this.txtNomeDisciplina.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtNomeDisciplina.Location = new System.Drawing.Point(73, 29);
@@ -349,6 +366,7 @@
             this.nudCreditoDisplicina.Name = "nudCreditoDisplicina";
             this.nudCreditoDisplicina.Size = new System.Drawing.Size(102, 22);
             this.nudCreditoDisplicina.TabIndex = 6;
+            this.nudCreditoDisplicina.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.nudCreditoDisplicina.Value = new decimal(new int[] {
             1,
             0,
@@ -359,18 +377,41 @@
             // 
             this.dtgDisciplinaRequisito.AllowUserToAddRows = false;
             this.dtgDisciplinaRequisito.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.dtgDisciplinaRequisito.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgDisciplinaRequisito.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dtgDisciplinaRequisito.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 8F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgDisciplinaRequisito.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dtgDisciplinaRequisito.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgDisciplinaRequisito.ColumnHeadersVisible = false;
+            this.dtgDisciplinaRequisito.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.NOME_DISCIPLINA_REQUISITO});
             this.tableLayoutPanel2.SetColumnSpan(this.dtgDisciplinaRequisito, 2);
             this.dtgDisciplinaRequisito.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgDisciplinaRequisito.Location = new System.Drawing.Point(397, 29);
             this.dtgDisciplinaRequisito.Name = "dtgDisciplinaRequisito";
             this.dtgDisciplinaRequisito.ReadOnly = true;
+            this.dtgDisciplinaRequisito.RowHeadersVisible = false;
             this.tableLayoutPanel2.SetRowSpan(this.dtgDisciplinaRequisito, 2);
             this.dtgDisciplinaRequisito.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dtgDisciplinaRequisito.Size = new System.Drawing.Size(254, 48);
             this.dtgDisciplinaRequisito.TabIndex = 8;
+            // 
+            // NOME_DISCIPLINA_REQUISITO
+            // 
+            this.NOME_DISCIPLINA_REQUISITO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NOME_DISCIPLINA_REQUISITO.HeaderText = "Disciplina";
+            this.NOME_DISCIPLINA_REQUISITO.Name = "NOME_DISCIPLINA_REQUISITO";
+            this.NOME_DISCIPLINA_REQUISITO.ReadOnly = true;
+            this.NOME_DISCIPLINA_REQUISITO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.NOME_DISCIPLINA_REQUISITO.ToolTipText = "Disciplina requisito";
             // 
             // panel1
             // 
@@ -436,7 +477,6 @@
 
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnNovo;
-        private System.Windows.Forms.ToolStripButton btnSalvar;
         private System.Windows.Forms.DataGridView dtgDisciplina;
         private System.Windows.Forms.ToolStripButton btnSalvarEdicao;
         private System.Windows.Forms.ToolStripButton btnCancelar;
@@ -450,13 +490,15 @@
         private System.Windows.Forms.TextBox txtNomeDisciplina;
         private System.Windows.Forms.NumericUpDown nudCreditoDisplicina;
         private System.Windows.Forms.DataGridView dtgDisciplinaRequisito;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NOME_DISCIPLINA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CREDITO_DISCIPLINA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SALA_DISCIPLINA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PRE_REQUISITO_DISCIPLINA;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnSelecionaRequisito;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ToolStripButton btnExcluir;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NOME_DISCIPLINA_REQUISITO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PRE_REQUISITO_DISCIPLINA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SALA_DISCIPLINA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CREDITO_DISCIPLINA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NOME_DISCIPLINA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA;
     }
 }

@@ -53,6 +53,10 @@
       <Project>{f1f270fb-a84b-403b-99a1-68f0ecdc6acf}</Project>
       <Name>AcessoDados</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Modelos\Modelos.csproj">
+      <Project>{443921d1-e7c0-448e-bc16-f1247a20fc90}</Project>
+      <Name>Modelos</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

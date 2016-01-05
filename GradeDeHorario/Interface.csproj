@@ -172,6 +172,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+    <None Include="Resources\ic_delete2.png" />
     <None Include="Resources\ic_open.png" />
     <None Include="Resources\ic_relatorio.png" />
     <None Include="Resources\ic_infraestrutura.png" />
@@ -186,6 +187,10 @@
     <None Include="Resources\ic_save_all.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Modelos\Modelos.csproj">
+      <Project>{443921d1-e7c0-448e-bc16-f1247a20fc90}</Project>
+      <Name>Modelos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RegraNegocio\RegraNegocio.csproj">
       <Project>{a238ab83-10bc-4ff2-a78e-c53ce87e833a}</Project>
       <Name>RegraNegocio</Name>
@@ -202,6 +207,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
