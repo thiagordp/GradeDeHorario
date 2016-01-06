@@ -15,15 +15,16 @@ namespace GradeDeHorario
         public frmDisciplina()
         {
             InitializeComponent();
-            dtgDisciplina.Rows.Add("ARA1234", "Inteligência Artificial II", "4", "ARA312");
-            dtgDisciplina.Rows.Add("ARA1235", "Inteligência Artificial II", "4", "ARA312");
-            dtgDisciplina.Rows.Add("ARA12342", "Inteligência Artificial II", "4", "ARA312");
-            dtgDisciplina.Rows.Add("ARA12304", "Inteligência Artificial II", "4", "ARA312");
-            dtgDisciplina.Rows.Add("ARA1236544", "Inteligência Artificial II", "4", "ARA312");
-            dtgDisciplina.Rows.Add("ARA123144", "Inteligência Artificial II", "4", "ARA312");
-            dtgDisciplina.Rows.Add("ARA12394", "Inteligência Artificial II", "4", "ARA312");
 
+            dtgDisciplina.Rows.Add("ARA1234", "Inteligência Artificial II", "4", "ARA312", "DEC - Depto. de Computação");
+            dtgDisciplina.Rows.Add("ARA1235", "Inteligência Artificial II", "4", "ARA311", "ENS - Depto. de Energia e Sustentabilidade");
         }
+        /*
+            DEC - Depto. de Computação
+            ENS - Depto. de Energia e Sustentabilidade
+            FQM - Depto. de Física Química e Matemática
+            TIC - Depto. de Tecnologia da Informação e Comunicação
+         */
 
         private void btnSelecionaRequisito_Click(object sender, EventArgs e)
         {
@@ -72,6 +73,7 @@ namespace GradeDeHorario
             txtCodigo.Clear();
             txtNomeDisciplina.Clear();
             nudCreditoDisplicina.Value = 1;
+            cbbDepartamento.SelectedIndex = -1;
             EstadoEditacao(false);
         }
 
@@ -81,11 +83,10 @@ namespace GradeDeHorario
             txtNomeDisciplina.Clear();
             nudCreditoDisplicina.Value = 1;
             dtgDisciplinaRequisito.Rows.Clear();
-
+            cbbDepartamento.SelectedIndex = -1;
             EstadoEditacao(false);
+
             /**** Chamar novamente a consulta de seleção da tabela de disciplinas ****/
-
-
         }
 
         private void btnSalvarEdicao_Click(object sender, EventArgs e)
@@ -103,13 +104,18 @@ namespace GradeDeHorario
 
         private void dtgDisciplina_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            EstadoEditacao(true);
+            if (gbDisciplina.Enabled == true)
+            {
+                MessageBox.Show("Não é possível editar a disciplina selecionada enquanto outra estiver sendo criada ou editada.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
+            EstadoEditacao(true);
 
             txtCodigo.Text = dtgDisciplina.Rows[e.RowIndex].Cells["CODIGO_DISCIPLINA"].Value.ToString();
             txtNomeDisciplina.Text = dtgDisciplina.Rows[e.RowIndex].Cells["NOME_DISCIPLINA"].Value.ToString();
             nudCreditoDisplicina.Value = Convert.ToDecimal(dtgDisciplina.Rows[e.RowIndex].Cells["CREDITO_DISCIPLINA"].Value.ToString());
-
+            cbbDepartamento.SelectedItem = dtgDisciplina.Rows[e.RowIndex].Cells["DEPARTAMENTO_DISCIPLINA"].Value.ToString();
             // Verificar como resgatar os requisitos
         }
     }

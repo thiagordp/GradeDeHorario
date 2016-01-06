@@ -22,7 +22,6 @@ namespace GradeDeHorario
                     // pnlBackground.BackgroundImage = Properties.Resources.ic_board;
                     break;
                 case 2:
-                    MessageBox.Show("Teste!!");
                     break;
                 case 3:
                     break;
@@ -54,6 +53,16 @@ namespace GradeDeHorario
         private void btnInfraEstrutura_Click(object sender, EventArgs e)
         {
             (new frmInfraEstrutura()).ShowDialog();
+        }
+
+        private void btnSemestre_Click(object sender, EventArgs e)
+        {
+            (new frmSemestre()).ShowDialog();
+        }
+
+        private void btnTurma_Click(object sender, EventArgs e)
+        {
+            (new frmTurma()).ShowDialog();
         }
     }
 }

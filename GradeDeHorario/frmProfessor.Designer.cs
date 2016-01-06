@@ -215,9 +215,9 @@
             this.cbbDepartamento.FormattingEnabled = true;
             this.cbbDepartamento.Items.AddRange(new object[] {
             "DEC - Depto. de Computação",
-            "ENS - Energia e Sustentabilidade",
-            "FQM - Física Química e Matemática",
-            "TIC - Tecnologia da Informação e Comunicação"});
+            "ENS - Depto. de Energia e Sustentabilidade",
+            "FQM - Depto. de Física Química e Matemática",
+            "TIC - Depto. de Tecnologia da Informação e Comunicação"});
             this.cbbDepartamento.Location = new System.Drawing.Point(93, 59);
             this.cbbDepartamento.Name = "cbbDepartamento";
             this.cbbDepartamento.Size = new System.Drawing.Size(268, 21);
@@ -291,7 +291,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(655, 507);
             this.Name = "frmProfessor";
-            this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Professor";

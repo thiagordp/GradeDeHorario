@@ -93,7 +93,6 @@ namespace GradeDeHorario
         {
             EstadoEditacao(true);
 
-
             txtCodigoProfessor.Text = dtgProfessor.Rows[e.RowIndex].Cells["CODIGO_PROFESSOR"].Value.ToString();
             txtNomeProfessor.Text = dtgProfessor.Rows[e.RowIndex].Cells["NOME_PROFESSOR"].Value.ToString();
             cbbDepartamento.SelectedItem = dtgProfessor.Rows[e.RowIndex].Cells["DEP_PROFESSOR"].Value.ToString();

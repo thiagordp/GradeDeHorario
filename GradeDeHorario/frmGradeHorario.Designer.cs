@@ -125,6 +125,7 @@
             this.cbbSelectFase.AutoToolTip = true;
             this.cbbSelectFase.BackColor = System.Drawing.SystemColors.ControlLight;
             this.cbbSelectFase.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbSelectFase.FlatStyle = System.Windows.Forms.FlatStyle.Standard;
             this.cbbSelectFase.ForeColor = System.Drawing.SystemColors.WindowText;
             this.cbbSelectFase.Items.AddRange(new object[] {
             "1ª Fase",
@@ -153,6 +154,7 @@
             // 
             this.cbbSelectSemestre.BackColor = System.Drawing.SystemColors.ControlLight;
             this.cbbSelectSemestre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbSelectSemestre.FlatStyle = System.Windows.Forms.FlatStyle.Standard;
             this.cbbSelectSemestre.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.cbbSelectSemestre.Name = "cbbSelectSemestre";
             this.cbbSelectSemestre.Size = new System.Drawing.Size(121, 69);
@@ -203,7 +205,7 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -320,7 +322,7 @@
             // 
             // dataGridView4
             // 
-            this.dataGridView4.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView4.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridView4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -369,7 +371,7 @@
             // 
             // dtgPesquisaDisciplina
             // 
-            this.dtgPesquisaDisciplina.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dtgPesquisaDisciplina.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dtgPesquisaDisciplina.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dtgPesquisaDisciplina.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgPesquisaDisciplina.Dock = System.Windows.Forms.DockStyle.Fill;

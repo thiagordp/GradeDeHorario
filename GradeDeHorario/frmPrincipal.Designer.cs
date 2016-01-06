@@ -32,13 +32,16 @@
             this.tsBarraMenu = new System.Windows.Forms.ToolStrip();
             this.btnDisciplina = new System.Windows.Forms.ToolStripButton();
             this.btnFase = new System.Windows.Forms.ToolStripButton();
+            this.btnSemestre = new System.Windows.Forms.ToolStripButton();
+            this.btnTurma = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnProfessor = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnInfraEstrutura = new System.Windows.Forms.ToolStripButton();
-            this.btnSair = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.pnlBackground = new System.Windows.Forms.Panel();
-            this.btnSemestre = new System.Windows.Forms.ToolStripButton();
             this.tsBarraMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,10 +54,13 @@
             this.btnDisciplina,
             this.btnFase,
             this.btnSemestre,
+            this.btnTurma,
+            this.toolStripSeparator1,
             this.btnProfessor,
-            this.toolStripButton1,
+            this.toolStripSeparator2,
             this.btnInfraEstrutura,
-            this.btnSair});
+            this.toolStripSeparator3,
+            this.toolStripButton1});
             this.tsBarraMenu.Location = new System.Drawing.Point(0, 0);
             this.tsBarraMenu.Name = "tsBarraMenu";
             this.tsBarraMenu.Padding = new System.Windows.Forms.Padding(5);
@@ -85,6 +91,34 @@
             this.btnFase.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnFase.Click += new System.EventHandler(this.btnFase_Click);
             // 
+            // btnSemestre
+            // 
+            this.btnSemestre.Image = global::GradeDeHorario.Properties.Resources.ic_semestre;
+            this.btnSemestre.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSemestre.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSemestre.Name = "btnSemestre";
+            this.btnSemestre.Size = new System.Drawing.Size(62, 57);
+            this.btnSemestre.Text = "Semestres";
+            this.btnSemestre.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSemestre.Click += new System.EventHandler(this.btnSemestre_Click);
+            // 
+            // btnTurma
+            // 
+            this.btnTurma.Image = global::GradeDeHorario.Properties.Resources.ic_turma;
+            this.btnTurma.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnTurma.Margin = new System.Windows.Forms.Padding(5);
+            this.btnTurma.Name = "btnTurma";
+            this.btnTurma.Size = new System.Drawing.Size(47, 57);
+            this.btnTurma.Text = "Turmas";
+            this.btnTurma.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnTurma.Click += new System.EventHandler(this.btnTurma_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Margin = new System.Windows.Forms.Padding(5);
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 57);
+            // 
             // btnProfessor
             // 
             this.btnProfessor.Image = ((System.Drawing.Image)(resources.GetObject("btnProfessor.Image")));
@@ -96,17 +130,11 @@
             this.btnProfessor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnProfessor.Click += new System.EventHandler(this.btnProfessor_Click);
             // 
-            // toolStripButton1
+            // toolStripSeparator2
             // 
-            this.toolStripButton1.Image = global::GradeDeHorario.Properties.Resources.logo;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Margin = new System.Windows.Forms.Padding(5);
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(104, 57);
-            this.toolStripButton1.Text = "Grade de horários";
-            this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripButton1.ToolTipText = "Grade de Horários";
-            this.toolStripButton1.Click += new System.EventHandler(this.btnGradeHorario_Click);
+            this.toolStripSeparator2.Margin = new System.Windows.Forms.Padding(5);
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 57);
             // 
             // btnInfraEstrutura
             // 
@@ -120,17 +148,23 @@
             this.btnInfraEstrutura.ToolTipText = "Infraestrutura de salas e laboratórios";
             this.btnInfraEstrutura.Click += new System.EventHandler(this.btnInfraEstrutura_Click);
             // 
-            // btnSair
+            // toolStripSeparator3
             // 
-            this.btnSair.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnSair.Image = global::GradeDeHorario.Properties.Resources.ic_logout;
-            this.btnSair.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSair.Margin = new System.Windows.Forms.Padding(5);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(44, 57);
-            this.btnSair.Text = "Sair";
-            this.btnSair.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnSair.ToolTipText = "Sair e escolher outro curso";
+            this.toolStripSeparator3.Margin = new System.Windows.Forms.Padding(5);
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 57);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Image = global::GradeDeHorario.Properties.Resources.logo;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Margin = new System.Windows.Forms.Padding(5);
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(104, 57);
+            this.toolStripButton1.Text = "Grade de horários";
+            this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton1.ToolTipText = "Grade de Horários";
+            this.toolStripButton1.Click += new System.EventHandler(this.btnGradeHorario_Click);
             // 
             // toolStrip1
             // 
@@ -152,16 +186,6 @@
             this.pnlBackground.Size = new System.Drawing.Size(788, 335);
             this.pnlBackground.TabIndex = 3;
             // 
-            // btnSemestre
-            // 
-            this.btnSemestre.Image = ((System.Drawing.Image)(resources.GetObject("btnSemestre.Image")));
-            this.btnSemestre.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSemestre.Margin = new System.Windows.Forms.Padding(5);
-            this.btnSemestre.Name = "btnSemestre";
-            this.btnSemestre.Size = new System.Drawing.Size(62, 57);
-            this.btnSemestre.Text = "Semestres";
-            this.btnSemestre.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -174,6 +198,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(804, 476);
             this.Name = "frmPrincipal";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grade de Horários";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -193,9 +218,12 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnInfraEstrutura;
         private System.Windows.Forms.Panel pnlBackground;
-        private System.Windows.Forms.ToolStripButton btnSair;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton btnSemestre;
+        private System.Windows.Forms.ToolStripButton btnTurma;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
     }
 }
 
