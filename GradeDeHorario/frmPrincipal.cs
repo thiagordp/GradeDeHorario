@@ -12,27 +12,34 @@ namespace GradeDeHorario
 {
     public partial class frmPrincipal : Form
     {
+        private int curso { set; get; }
+
         public frmPrincipal(int index_curso)
         {
             InitializeComponent();
 
+            curso = index_curso;
+
             switch (index_curso)
             {
+                case 0:
+                    this.Text = "Grade de horários - Fisioterapia";
+                    break;
                 case 1:
-                    // pnlBackground.BackgroundImage = Properties.Resources.ic_board;
+                    this.Text = "Grade de horários - Engenharia de Computação";
                     break;
                 case 2:
+                    this.Text = "Grade de horários - Engenharia de Energia";
                     break;
                 case 3:
-                    break;
-                case 4:
+                    this.Text = "Grade de horários - Tecnologias da Informação e Comunicação";
                     break;
             }
         }
 
         private void btnGradeHorario_Click(object sender, EventArgs e)
         {
-            (new frmGradeHorario()).ShowDialog();
+            (new frmGradeHorario(curso)).ShowDialog();
         }
 
         private void btnDisciplina_Click(object sender, EventArgs e)
@@ -42,7 +49,7 @@ namespace GradeDeHorario
 
         private void btnFase_Click(object sender, EventArgs e)
         {
-            (new frmFase()).ShowDialog();
+            (new frmFase(curso)).ShowDialog();
         }
 
         private void btnProfessor_Click(object sender, EventArgs e)
@@ -62,7 +69,7 @@ namespace GradeDeHorario
 
         private void btnTurma_Click(object sender, EventArgs e)
         {
-            (new frmTurma()).ShowDialog();
+            (new frmTurma(curso)).ShowDialog();
         }
     }
 }

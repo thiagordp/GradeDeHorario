@@ -19,7 +19,14 @@ namespace GradeDeHorario
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            (new frmPrincipal(cbbCurso.SelectedIndex)).ShowDialog();
+            if (cbbCurso.SelectedIndex == -1)
+            {
+                MessageBox.Show("É necessário selecionar um curso para iniciar o sistema.", "Selecione um curso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                (new frmPrincipal(cbbCurso.SelectedIndex)).ShowDialog();
+            }
         }
     }
 }

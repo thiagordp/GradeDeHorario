@@ -63,6 +63,36 @@ namespace GradeDeHorario.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ic_backgroud {
+            get {
+                object obj = ResourceManager.GetObject("ic_backgroud", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ic_backgroud1 {
+            get {
+                object obj = ResourceManager.GetObject("ic_backgroud1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ic_backgroud2 {
+            get {
+                object obj = ResourceManager.GetObject("ic_backgroud2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ic_board {
             get {
                 object obj = ResourceManager.GetObject("ic_board", resourceCulture);
@@ -96,26 +126,6 @@ namespace GradeDeHorario.Properties {
         internal static System.Drawing.Bitmap ic_delete {
             get {
                 object obj = ResourceManager.GetObject("ic_delete", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ic_delete2 {
-            get {
-                object obj = ResourceManager.GetObject("ic_delete2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ic_delete21 {
-            get {
-                object obj = ResourceManager.GetObject("ic_delete21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -226,6 +236,16 @@ namespace GradeDeHorario.Properties {
         internal static System.Drawing.Bitmap ic_start {
             get {
                 object obj = ResourceManager.GetObject("ic_start", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ic_teacher {
+            get {
+                object obj = ResourceManager.GetObject("ic_teacher", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

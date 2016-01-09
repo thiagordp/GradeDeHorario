@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProfessor));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProfessor));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnNovo = new System.Windows.Forms.ToolStripButton();
             this.btnCancelar = new System.Windows.Forms.ToolStripButton();
@@ -112,7 +112,7 @@
             // 
             this.btnExcluir.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.btnExcluir.Enabled = false;
-            this.btnExcluir.Image = global::GradeDeHorario.Properties.Resources.ic_delete21;
+            this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
             this.btnExcluir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExcluir.Margin = new System.Windows.Forms.Padding(5);
             this.btnExcluir.Name = "btnExcluir";
@@ -252,6 +252,7 @@
             this.dtgProfessor.Margin = new System.Windows.Forms.Padding(5);
             this.dtgProfessor.Name = "dtgProfessor";
             this.dtgProfessor.RowHeadersVisible = false;
+            this.dtgProfessor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgProfessor.Size = new System.Drawing.Size(629, 298);
             this.dtgProfessor.TabIndex = 2;
             this.dtgProfessor.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgProfessor_CellDoubleClick);

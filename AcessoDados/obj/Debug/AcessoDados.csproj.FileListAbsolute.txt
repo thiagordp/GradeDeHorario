@@ -5,3 +5,8 @@ D:\Projetos\C#\Projeto\GradeDeHorario\AcessoDados\obj\Debug\AcessoDados.dll
 D:\Projetos\C#\Projeto\GradeDeHorario\AcessoDados\obj\Debug\AcessoDados.pdb
 D:\Projetos\C#\Projeto\GradeDeHorario\AcessoDados\bin\Debug\Modelos.dll
 D:\Projetos\C#\Projeto\GradeDeHorario\AcessoDados\bin\Debug\Modelos.pdb
+D:\Projetos\C#\Projeto\GradeDeHorario\AcessoDados\bin\Debug\AcessoDados.dll.config
+D:\Projetos\C#\Projeto\GradeDeHorario\AcessoDados\bin\Debug\EntityFramework.dll
+D:\Projetos\C#\Projeto\GradeDeHorario\AcessoDados\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projetos\C#\Projeto\GradeDeHorario\AcessoDados\bin\Debug\EntityFramework.xml
+D:\Projetos\C#\Projeto\GradeDeHorario\AcessoDados\bin\Debug\EntityFramework.SqlServer.xml

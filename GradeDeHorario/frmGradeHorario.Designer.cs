@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.btnCancelar = new System.Windows.Forms.ToolStripButton();
@@ -40,7 +42,7 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnGerarRelatorio = new System.Windows.Forms.ToolStripButton();
             this.tblGrade = new System.Windows.Forms.TableLayoutPanel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgGradeHorario = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -54,9 +56,15 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.txtPesquisaDisciplina = new System.Windows.Forms.TextBox();
             this.dtgPesquisaDisciplina = new System.Windows.Forms.DataGridView();
+            this.SEGUNDA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TERCA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QUARTA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QUINTA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SEXTA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SABADO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip1.SuspendLayout();
             this.tblGrade.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgGradeHorario)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -193,7 +201,7 @@
             this.tblGrade.ColumnCount = 2;
             this.tblGrade.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tblGrade.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tblGrade.Controls.Add(this.dataGridView1, 0, 0);
+            this.tblGrade.Controls.Add(this.dtgGradeHorario, 0, 0);
             this.tblGrade.Controls.Add(this.tableLayoutPanel1, 1, 0);
             this.tblGrade.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblGrade.Location = new System.Drawing.Point(0, 69);
@@ -203,16 +211,44 @@
             this.tblGrade.Size = new System.Drawing.Size(1008, 592);
             this.tblGrade.TabIndex = 1;
             // 
-            // dataGridView1
+            // dtgGradeHorario
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(800, 586);
-            this.dataGridView1.TabIndex = 0;
+            this.dtgGradeHorario.AllowUserToAddRows = false;
+            this.dtgGradeHorario.AllowUserToDeleteRows = false;
+            this.dtgGradeHorario.AllowUserToResizeColumns = false;
+            this.dtgGradeHorario.AllowUserToResizeRows = false;
+            this.dtgGradeHorario.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dtgGradeHorario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgGradeHorario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgGradeHorario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgGradeHorario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.SEGUNDA,
+            this.TERCA,
+            this.QUARTA,
+            this.QUINTA,
+            this.SEXTA,
+            this.SABADO});
+            this.dtgGradeHorario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgGradeHorario.Location = new System.Drawing.Point(3, 3);
+            this.dtgGradeHorario.Name = "dtgGradeHorario";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgGradeHorario.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgGradeHorario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dtgGradeHorario.Size = new System.Drawing.Size(800, 586);
+            this.dtgGradeHorario.TabIndex = 0;
             // 
             // tableLayoutPanel1
             // 
@@ -381,6 +417,48 @@
             this.dtgPesquisaDisciplina.Size = new System.Drawing.Size(184, 142);
             this.dtgPesquisaDisciplina.TabIndex = 1;
             // 
+            // SEGUNDA
+            // 
+            this.SEGUNDA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SEGUNDA.HeaderText = "Segunda-feira";
+            this.SEGUNDA.Name = "SEGUNDA";
+            this.SEGUNDA.ReadOnly = true;
+            // 
+            // TERCA
+            // 
+            this.TERCA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TERCA.HeaderText = "Terça-feira";
+            this.TERCA.Name = "TERCA";
+            this.TERCA.ReadOnly = true;
+            // 
+            // QUARTA
+            // 
+            this.QUARTA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.QUARTA.HeaderText = "Quarta-feira";
+            this.QUARTA.Name = "QUARTA";
+            this.QUARTA.ReadOnly = true;
+            // 
+            // QUINTA
+            // 
+            this.QUINTA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.QUINTA.HeaderText = "Quinta-feira";
+            this.QUINTA.Name = "QUINTA";
+            this.QUINTA.ReadOnly = true;
+            // 
+            // SEXTA
+            // 
+            this.SEXTA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SEXTA.HeaderText = "Sexta-feira";
+            this.SEXTA.Name = "SEXTA";
+            this.SEXTA.ReadOnly = true;
+            // 
+            // SABADO
+            // 
+            this.SABADO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SABADO.HeaderText = "Sábado";
+            this.SABADO.Name = "SABADO";
+            this.SABADO.ReadOnly = true;
+            // 
             // frmGradeHorario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -397,7 +475,7 @@
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.tblGrade.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgGradeHorario)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
@@ -420,7 +498,7 @@
 
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.TableLayoutPanel tblGrade;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgGradeHorario;
         private System.Windows.Forms.ToolStripButton btnCarregaGrade;
         private System.Windows.Forms.ToolStripButton btnCancelar;
         private System.Windows.Forms.ToolStripButton btnSalvar;
@@ -444,5 +522,11 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SEGUNDA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TERCA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QUARTA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QUINTA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SEXTA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SABADO;
     }
 }

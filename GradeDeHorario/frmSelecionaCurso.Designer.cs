@@ -91,7 +91,7 @@
             "Fisioterapia",
             "Engenharia de Computação",
             "Engenharia de Energia",
-            "Tecnogias da Informação e Comunicação (TIC)"});
+            "Tecnologias da Informação e Comunicação"});
             this.cbbCurso.Location = new System.Drawing.Point(10, 71);
             this.cbbCurso.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
             this.cbbCurso.Name = "cbbCurso";

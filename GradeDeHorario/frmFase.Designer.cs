@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFase));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -39,7 +40,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFase));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnNovo = new System.Windows.Forms.ToolStripButton();
             this.btnCancelar = new System.Windows.Forms.ToolStripButton();
@@ -119,7 +119,8 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Image = global::GradeDeHorario.Properties.Resources.ic_delete21;
+            this.btnExcluir.Enabled = false;
+            this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
             this.btnExcluir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExcluir.Margin = new System.Windows.Forms.Padding(5);
             this.btnExcluir.Name = "btnExcluir";

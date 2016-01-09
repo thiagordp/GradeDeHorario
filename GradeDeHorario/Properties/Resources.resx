@@ -124,11 +124,17 @@
   <data name="ic_save_all" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_save_all.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ic_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_delete2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ic_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_start.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_turma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_turma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_backgroud1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_backgroud.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,8 +151,8 @@
   <data name="ic_semestre" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_semestre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_backgroud2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_backgroud.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_menu_close" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_menu_close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,14 +160,17 @@
   <data name="ic_infraestrutura" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_infraestrutura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ic_backgroud" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_backgroud.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ic_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_board" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_board.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_load" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_load.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_delete21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_delete2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="img_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,13 +178,10 @@
   <data name="ic_clean" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_clean.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_delete2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_delete2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_board" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_board.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_load" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_load.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_turma" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_turma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_teacher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_teacher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

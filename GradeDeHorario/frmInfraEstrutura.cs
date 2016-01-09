@@ -24,6 +24,7 @@ namespace GradeDeHorario
         private void btnNovo_Click(object sender, EventArgs e)
         {
             gbSala.Enabled = btnSalvar.Enabled = btnCancelar.Enabled = true;
+            btnNovo.Enabled = false;
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -31,7 +32,13 @@ namespace GradeDeHorario
             try
             {
                 Limpar();
+
+
+
                 MessageBox.Show("Alterações realizadas com sucesso!", "Alterações concluídas", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                btnNovo.Enabled = true;
+                btnCancelar.Enabled = btnExcluir.Enabled = btnSalvar.Enabled = false;
             }
             catch (Exception ex)
             {
@@ -75,6 +82,7 @@ namespace GradeDeHorario
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Limpar();
+            btnNovo.Enabled = true;
         }
 
         private void dtgInfraestrutura_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

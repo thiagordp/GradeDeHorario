@@ -123,7 +123,7 @@
             // 
             this.btnExcluir.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.btnExcluir.Enabled = false;
-            this.btnExcluir.Image = global::GradeDeHorario.Properties.Resources.ic_delete21;
+            this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
             this.btnExcluir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(45, 66);

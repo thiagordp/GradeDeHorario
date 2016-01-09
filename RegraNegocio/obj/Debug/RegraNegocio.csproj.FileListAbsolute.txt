@@ -7,3 +7,8 @@ D:\Projetos\C#\Projeto\GradeDeHorario\RegraNegocio\bin\Debug\AcessoDados.dll
 D:\Projetos\C#\Projeto\GradeDeHorario\RegraNegocio\bin\Debug\AcessoDados.pdb
 D:\Projetos\C#\Projeto\GradeDeHorario\RegraNegocio\bin\Debug\Modelos.dll
 D:\Projetos\C#\Projeto\GradeDeHorario\RegraNegocio\bin\Debug\Modelos.pdb
+D:\Projetos\C#\Projeto\GradeDeHorario\RegraNegocio\bin\Debug\RegraNegocio.dll.config
+D:\Projetos\C#\Projeto\GradeDeHorario\RegraNegocio\bin\Debug\EntityFramework.dll
+D:\Projetos\C#\Projeto\GradeDeHorario\RegraNegocio\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projetos\C#\Projeto\GradeDeHorario\RegraNegocio\bin\Debug\EntityFramework.xml
+D:\Projetos\C#\Projeto\GradeDeHorario\RegraNegocio\bin\Debug\EntityFramework.SqlServer.xml

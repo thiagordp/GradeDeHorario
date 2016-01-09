@@ -12,9 +12,13 @@ namespace GradeDeHorario
 {
     public partial class frmSelecionaDisciplina : Form
     {
-        public frmSelecionaDisciplina()
+        List<object> disciplinaSelecionada;
+
+        public frmSelecionaDisciplina(List<object> disciplina)
         {
             InitializeComponent();
+            disciplinaSelecionada = disciplina;
+
             // Selecionar as disciplinas e preencher a tabela
             dtgSelecionaDisciplina.Rows.Add(false, "ARA1234", "Análise de Sinais e Sistemas");
             dtgSelecionaDisciplina.Rows.Add(false, "ARA1235", "Circuitos Elétricos para Computação");
@@ -28,6 +32,16 @@ namespace GradeDeHorario
                 dtgSelecionaDisciplina.Rows[i].Selected = false;
                 dtgSelecionaDisciplina.Rows[i].Cells[0].Value = false;
             }
+        }
+
+        private void VerificaDisciplinaSelecionada()
+        {
+            //teste
+            disciplinaSelecionada.Add("Yeah!!");
+
+
+
+            //Verificar as disciplinas selecionadas e colocar no List
         }
     }
 }

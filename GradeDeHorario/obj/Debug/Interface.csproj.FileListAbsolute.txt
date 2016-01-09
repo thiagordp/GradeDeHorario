@@ -20,3 +20,7 @@ D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\bin\Debug\Modelos.dll
 D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\bin\Debug\Modelos.pdb
 D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.frmSemestre.resources
 D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.frmTurma.resources
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\bin\Debug\EntityFramework.dll
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\bin\Debug\EntityFramework.xml
+D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\bin\Debug\EntityFramework.SqlServer.xml

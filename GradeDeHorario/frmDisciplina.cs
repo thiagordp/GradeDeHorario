@@ -19,16 +19,15 @@ namespace GradeDeHorario
             dtgDisciplina.Rows.Add("ARA1234", "Inteligência Artificial II", "4", "ARA312", "DEC - Depto. de Computação");
             dtgDisciplina.Rows.Add("ARA1235", "Inteligência Artificial II", "4", "ARA311", "ENS - Depto. de Energia e Sustentabilidade");
         }
-        /*
-            DEC - Depto. de Computação
-            ENS - Depto. de Energia e Sustentabilidade
-            FQM - Depto. de Física Química e Matemática
-            TIC - Depto. de Tecnologia da Informação e Comunicação
-         */
 
         private void btnSelecionaRequisito_Click(object sender, EventArgs e)
         {
-            (new frmSelecionaDisciplina()).ShowDialog();
+            List<object> teste = new List<object>();
+
+            (new frmSelecionaDisciplina(teste)).ShowDialog();
+
+            MessageBox.Show(teste.First<object>().ToString());
+
         }
 
         private void btnNovo_Click(object sender, EventArgs e)
