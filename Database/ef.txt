@@ -1,0 +1,3 @@
+http://www.entityframeworktutorial.net/
+http://www.entityframeworktutorial.net/EntityFramework5/create-dbcontext-in-entity-framework5.aspx
+http://carloscds.net/
