@@ -31,7 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>logo_default.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -53,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CriaBancoRegraNegocio.cs" />
     <Compile Include="DisciplinaRegraNegocio.cs" />
     <Compile Include="FaseRegraNegocio.cs" />
     <Compile Include="GradeHorarioRegraNegocio.cs" />
@@ -70,9 +72,6 @@
       <Project>{443921d1-e7c0-448e-bc16-f1247a20fc90}</Project>
       <Name>Modelos</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="logo_default.ico" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
