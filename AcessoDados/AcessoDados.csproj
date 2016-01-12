@@ -59,12 +59,6 @@
     <Compile Include="SelecionaDisciplinaAcessoDados.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Modelos\Modelos.csproj">
-      <Project>{443921d1-e7c0-448e-bc16-f1247a20fc90}</Project>
-      <Name>Modelos</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>

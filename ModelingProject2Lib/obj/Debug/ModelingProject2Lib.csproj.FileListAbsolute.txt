@@ -1,5 +1,0 @@
-D:\Projetos\C#\Projeto\GradeDeHorario\ModelingProject2Lib\bin\Debug\ModelingProject2Lib.dll
-D:\Projetos\C#\Projeto\GradeDeHorario\ModelingProject2Lib\bin\Debug\ModelingProject2Lib.pdb
-D:\Projetos\C#\Projeto\GradeDeHorario\ModelingProject2Lib\obj\Debug\ModelingProject2Lib.csprojResolveAssemblyReference.cache
-D:\Projetos\C#\Projeto\GradeDeHorario\ModelingProject2Lib\obj\Debug\ModelingProject2Lib.dll
-D:\Projetos\C#\Projeto\GradeDeHorario\ModelingProject2Lib\obj\Debug\ModelingProject2Lib.pdb

@@ -221,10 +221,6 @@
     <None Include="Resources\ic_save_all.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Modelos\Modelos.csproj">
-      <Project>{443921d1-e7c0-448e-bc16-f1247a20fc90}</Project>
-      <Name>Modelos</Name>
-    </ProjectReference>
     <ProjectReference Include="..\RegraNegocio\RegraNegocio.csproj">
       <Project>{a238ab83-10bc-4ff2-a78e-c53ce87e833a}</Project>
       <Name>RegraNegocio</Name>

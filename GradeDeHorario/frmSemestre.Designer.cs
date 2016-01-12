@@ -32,10 +32,9 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnNovo = new System.Windows.Forms.ToolStripButton();
             this.btnCancelar = new System.Windows.Forms.ToolStripButton();
-            this.btnSalvar = new System.Windows.Forms.ToolStripButton();
             this.btnExcluir = new System.Windows.Forms.ToolStripButton();
+            this.btnSalvar = new System.Windows.Forms.ToolStripButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.gbSemestre = new System.Windows.Forms.GroupBox();
             this.tblDado = new System.Windows.Forms.TableLayoutPanel();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,11 +43,12 @@
             this.dtgSemestre = new System.Windows.Forms.DataGridView();
             this.CODIGO_TURMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NOME_SEMESTRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gbSemestre = new System.Windows.Forms.GroupBox();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.gbSemestre.SuspendLayout();
             this.tblDado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgSemestre)).BeginInit();
+            this.gbSemestre.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -90,19 +90,6 @@
             this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // btnSalvar
-            // 
-            this.btnSalvar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnSalvar.Enabled = false;
-            this.btnSalvar.Image = global::GradeDeHorario.Properties.Resources.ic_button;
-            this.btnSalvar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSalvar.Margin = new System.Windows.Forms.Padding(5);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(44, 59);
-            this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
-            // 
             // btnExcluir
             // 
             this.btnExcluir.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -115,6 +102,19 @@
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnSalvar.Enabled = false;
+            this.btnSalvar.Image = global::GradeDeHorario.Properties.Resources.ic_button;
+            this.btnSalvar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSalvar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(44, 59);
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -131,19 +131,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.Size = new System.Drawing.Size(255, 220);
             this.tableLayoutPanel1.TabIndex = 1;
-            // 
-            // gbSemestre
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.gbSemestre, 2);
-            this.gbSemestre.Controls.Add(this.tblDado);
-            this.gbSemestre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbSemestre.Enabled = false;
-            this.gbSemestre.Location = new System.Drawing.Point(3, 3);
-            this.gbSemestre.Name = "gbSemestre";
-            this.gbSemestre.Size = new System.Drawing.Size(249, 74);
-            this.gbSemestre.TabIndex = 2;
-            this.gbSemestre.TabStop = false;
-            this.gbSemestre.Text = "Semestre";
             // 
             // tblDado
             // 
@@ -242,6 +229,19 @@
             this.NOME_SEMESTRE.ReadOnly = true;
             this.NOME_SEMESTRE.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
+            // gbSemestre
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.gbSemestre, 2);
+            this.gbSemestre.Controls.Add(this.tblDado);
+            this.gbSemestre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbSemestre.Enabled = false;
+            this.gbSemestre.Location = new System.Drawing.Point(3, 3);
+            this.gbSemestre.Name = "gbSemestre";
+            this.gbSemestre.Size = new System.Drawing.Size(249, 74);
+            this.gbSemestre.TabIndex = 2;
+            this.gbSemestre.TabStop = false;
+            this.gbSemestre.Text = "Semestre";
+            // 
             // frmSemestre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -260,10 +260,10 @@
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.gbSemestre.ResumeLayout(false);
             this.tblDado.ResumeLayout(false);
             this.tblDado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgSemestre)).EndInit();
+            this.gbSemestre.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
