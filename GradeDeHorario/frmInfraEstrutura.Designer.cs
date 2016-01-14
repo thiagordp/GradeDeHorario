@@ -228,19 +228,9 @@
             0,
             0,
             0});
-            this.nudCapacidade.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             this.nudCapacidade.Name = "nudCapacidade";
             this.nudCapacidade.Size = new System.Drawing.Size(99, 22);
             this.nudCapacidade.TabIndex = 6;
-            this.nudCapacidade.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // label5
             // 

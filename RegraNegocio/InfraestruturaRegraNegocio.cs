@@ -34,12 +34,35 @@ public class InfraestruturaRegraNegocio
     {
         try
         {
+            if (espaco.CODIGO_ESPACO.Trim() == "")
+            {
+                throw new Exception("O campo código do espaço não pode ser vazio!");
+            }
+            if (espaco.CAPACIDADE_ESPACO == 0)
+            {
+                throw new Exception("A capacidade deve ser maior que zero!");
+            }
+            if (espaco.TIPO_ESPACO == -1)
+            {
+                throw new Exception("Selecione um tipo de espaço!");
+            }
 
+            using (Modelos.Entidade contexto = new Modelos.Entidade())
+            {
+                Modelos.ESPACO espacoExiste = contexto.ESPACO.Find(espaco.CODIGO_ESPACO);
+
+                if (espacoExiste != null)
+                {
+                    throw new Exception("O espaço com a identificação informada já está cadastrado.");
+                }
+
+                contexto.ESPACO.Add(espaco);
+                contexto.SaveChanges();                
+            }
         }
-        catch (Exception)
+        catch (Exception ex)
         {
-
-            throw;
+            throw new Exception("Erro no método InsereInfraEstrutura\n\nDetalhe:\n\n\t" + ex.Message);
         }
     }
 }

@@ -12,7 +12,7 @@ namespace GradeDeHorario
 {
     public partial class frmInfraEstrutura : Form
     {
-        private InfraestruturaRegraNegocio espaco;
+        private InfraestruturaRegraNegocio infraEstrutra;
 
         public frmInfraEstrutura()
         {
@@ -43,6 +43,16 @@ namespace GradeDeHorario
 
                 espaco.CODIGO_ESPACO = txtIdentificacao.Text;
                 espaco.CAPACIDADE_ESPACO = Convert.ToInt32(nudCapacidade.Value);
+                espaco.TIPO_ESPACO = cbbTipoEspaco.SelectedIndex;
+                espaco.NUMERO_PC_ESPACO = Convert.ToInt32(nudNumComputador.Value);
+                espaco.PROJETOR_ESPACO = chkProjetor.Checked;
+                espaco.INTERNET_ESPACO = chkInternet.Checked;
+                espaco.QUADRO_BRANCO_ESPACO = chkQuadroBranco.Checked;
+                espaco.QUADRO_VIDRO_ESPACO = chkQuadroBranco.Checked;
+
+                infraEstrutra = new InfraestruturaRegraNegocio();
+                infraEstrutra.InsereInfraEstrutura(espaco);
+                
                 Limpar();
 
                 MessageBox.Show("Alterações realizadas com sucesso!", "Alterações concluídas", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -114,10 +124,7 @@ namespace GradeDeHorario
 
         private void frmInfraEstrutura_Load(object sender, EventArgs e)
         {
-            espaco = new InfraestruturaRegraNegocio();
-
-            //////////////   REVER SELECAO
-            dtgInfraestrutura.DataSource = espaco.SelecionaTodaInfraEstutura();
+          
         }
     }
 }
