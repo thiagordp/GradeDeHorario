@@ -28,12 +28,9 @@ namespace GradeDeHorario
 
                 if (dadosTabela.Rows.Count <= 0)
                 {
-                    MessageBox.Show("Banco não existe!");
-
                     novoBanco.CriarBanco();
                     novoBanco.CriaDepartamento();
                 }
-                else { MessageBox.Show("Banco existe!"); }
 
                 Application.Run(new frmSelecionaCurso());       // Executando a aplicação.
             }

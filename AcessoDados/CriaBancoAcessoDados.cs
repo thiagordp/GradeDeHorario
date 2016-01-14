@@ -58,13 +58,6 @@ namespace AcessoDados
         {
             try
             {
-                ///// Temporário//////
-                using (Modelos.Entidade ctx = new Modelos.Entidade())
-                {
-                    if (ctx.DEPARTAMENTO.Count() > 0) { return; }
-                }
-                //////////////////////
-
                 //Usa-se uma lista para fazer a inserção de todos os departamentos.
                 List<Modelos.DEPARTAMENTO> departamentos = new List<Modelos.DEPARTAMENTO>();
                 Modelos.DEPARTAMENTO departamento;
@@ -100,6 +93,7 @@ namespace AcessoDados
                     {
                         contexto.DEPARTAMENTO.Add(depto);
                     }
+                    contexto.SaveChanges();
                 }
             }
             catch (Exception ex)

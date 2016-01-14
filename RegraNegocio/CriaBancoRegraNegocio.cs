@@ -38,7 +38,7 @@ namespace RegraNegocio
                 string scriptTabela = arquivoTabelas.OpenText().ReadToEnd();
 
                 criaBanco = new AcessoDados.CriaBancoAcessoDados();
-                criaBanco.CriarBanco(scriptBanco, scriptTabela); // Função que verificará a existência e caso não exista, criará um novo banco. 
+                criaBanco.CriarBanco(scriptBanco, scriptTabela); // Função que verificará a existência do BD e, caso não exista, criará um novo banco. 
             }
             catch (Exception ex)
             {
