@@ -24,3 +24,7 @@ D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\bin\Debug\EntityFramework.d
 D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\bin\Debug\EntityFramework.SqlServer.dll
 D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\bin\Debug\EntityFramework.xml
 D:\Projetos\C#\Projeto\GradeDeHorario\GradeDeHorario\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projetos\GradeDeHorario\GradeDeHorario\bin\Debug\GradeDeHorario.exe.config
+D:\Projetos\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.exe
+D:\Projetos\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.pdb
+D:\Projetos\GradeDeHorario\GradeDeHorario\obj\Debug\Interface.csprojResolveAssemblyReference.cache

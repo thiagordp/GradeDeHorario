@@ -10,3 +10,15 @@ D:\Projetos\C#\Projeto\GradeDeHorario\AcessoDados\bin\Debug\EntityFramework.dll
 D:\Projetos\C#\Projeto\GradeDeHorario\AcessoDados\bin\Debug\EntityFramework.SqlServer.dll
 D:\Projetos\C#\Projeto\GradeDeHorario\AcessoDados\bin\Debug\EntityFramework.xml
 D:\Projetos\C#\Projeto\GradeDeHorario\AcessoDados\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projetos\GradeDeHorario\AcessoDados\bin\Debug\AcessoDados.dll.config
+D:\Projetos\GradeDeHorario\AcessoDados\bin\Debug\AcessoDados.dll
+D:\Projetos\GradeDeHorario\AcessoDados\bin\Debug\AcessoDados.pdb
+D:\Projetos\GradeDeHorario\AcessoDados\bin\Debug\EntityFramework.dll
+D:\Projetos\GradeDeHorario\AcessoDados\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projetos\GradeDeHorario\AcessoDados\bin\Debug\Modelos.dll
+D:\Projetos\GradeDeHorario\AcessoDados\bin\Debug\Modelos.pdb
+D:\Projetos\GradeDeHorario\AcessoDados\bin\Debug\EntityFramework.xml
+D:\Projetos\GradeDeHorario\AcessoDados\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projetos\GradeDeHorario\AcessoDados\obj\Debug\AcessoDados.csprojResolveAssemblyReference.cache
+D:\Projetos\GradeDeHorario\AcessoDados\obj\Debug\AcessoDados.dll
+D:\Projetos\GradeDeHorario\AcessoDados\obj\Debug\AcessoDados.pdb

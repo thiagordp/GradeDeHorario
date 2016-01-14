@@ -15,16 +15,18 @@ namespace GradeDeHorario
         public frmInfraEstrutura()
         {
             InitializeComponent();
-
-            dtgInfraestrutura.Rows.Add("ARA123", "SALA", "40", "40", true, true, true, true);
-            dtgInfraestrutura.Rows.Add("ARA321", "LABORATÓRIO", "35", "35", false, true, false, true);
-            dtgInfraestrutura.Rows.Add("ARA312", "SALA", "40", "40", true, false, true, false);
         }
 
         private void btnNovo_Click(object sender, EventArgs e)
         {
             gbSala.Enabled = btnSalvar.Enabled = btnCancelar.Enabled = true;
             btnNovo.Enabled = false;
+            
+            try
+            {
+                InfraestruturaRegraNegocio novoespaco = new InfraestruturaRegraNegocio();
+                
+            }
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
