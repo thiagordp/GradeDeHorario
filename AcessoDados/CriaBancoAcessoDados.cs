@@ -14,12 +14,6 @@ namespace AcessoDados
 {
     public class CriaBancoAcessoDados
     {
-        ///////////////////////////////////
-        //  Executar comandos de CREATE  //
-        ///////////////////////////////////
-
-
-
         // Cria o banco no SQL Server caso não exista.
         public void CriarBanco(string ScriptBancoConstrucao, string ScriptTabelasConstrucao)
         {
@@ -49,7 +43,7 @@ namespace AcessoDados
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message +"\n"+ ex.StackTrace);
+                throw new Exception(ex.Message + "\n" + ex.StackTrace);
             }
         }
 

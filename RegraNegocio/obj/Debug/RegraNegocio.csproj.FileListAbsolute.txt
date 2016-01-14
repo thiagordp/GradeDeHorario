@@ -26,3 +26,17 @@ D:\Projetos\GradeDeHorario\RegraNegocio\bin\Debug\EntityFramework.SqlServer.xml
 D:\Projetos\GradeDeHorario\RegraNegocio\obj\Debug\RegraNegocio.csprojResolveAssemblyReference.cache
 D:\Projetos\GradeDeHorario\RegraNegocio\obj\Debug\RegraNegocio.dll
 D:\Projetos\GradeDeHorario\RegraNegocio\obj\Debug\RegraNegocio.pdb
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Debug\RegraNegocio.dll.config
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Debug\RegraNegocio.dll
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Debug\RegraNegocio.pdb
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Debug\AcessoDados.dll
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Debug\EntityFramework.dll
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Debug\Modelos.dll
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Debug\AcessoDados.pdb
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Debug\Modelos.pdb
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Debug\EntityFramework.xml
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\obj\Debug\RegraNegocio.csprojResolveAssemblyReference.cache
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\obj\Debug\RegraNegocio.dll
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\obj\Debug\RegraNegocio.pdb

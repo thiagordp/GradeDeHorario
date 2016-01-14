@@ -12,7 +12,8 @@ namespace GradeDeHorario
 {
     public partial class frmInfraEstrutura : Form
     {
-        private InfraestruturaRegraNegocio infraEstrutra;
+        private InfraestruturaRegraNegocio infraEstrutura;
+        private bool novoRegistro = false;        //Indica que é um novo registro caso 1 ou já existe caso contrário.
 
         public frmInfraEstrutura()
         {
@@ -23,6 +24,8 @@ namespace GradeDeHorario
         {
             gbSala.Enabled = btnSalvar.Enabled = btnCancelar.Enabled = true;
             btnNovo.Enabled = false;
+
+            novoRegistro = true;
 
             try
             {
@@ -43,17 +46,28 @@ namespace GradeDeHorario
 
                 espaco.CODIGO_ESPACO = txtIdentificacao.Text;
                 espaco.CAPACIDADE_ESPACO = Convert.ToInt32(nudCapacidade.Value);
-                espaco.TIPO_ESPACO = cbbTipoEspaco.SelectedIndex;
+                espaco.TIPO_ESPACO = cbbTipoEspaco.SelectedItem.ToString();
                 espaco.NUMERO_PC_ESPACO = Convert.ToInt32(nudNumComputador.Value);
                 espaco.PROJETOR_ESPACO = chkProjetor.Checked;
                 espaco.INTERNET_ESPACO = chkInternet.Checked;
                 espaco.QUADRO_BRANCO_ESPACO = chkQuadroBranco.Checked;
                 espaco.QUADRO_VIDRO_ESPACO = chkQuadroBranco.Checked;
 
-                infraEstrutra = new InfraestruturaRegraNegocio();
-                infraEstrutra.InsereInfraEstrutura(espaco);
-                
+                infraEstrutura = new InfraestruturaRegraNegocio();
+
+                if (novoRegistro == true)
+                {
+                    infraEstrutura.InsereInfraEstrutura(espaco);
+                }
+                else
+                {
+                    infraEstrutura.EditaInfraEstrutura(espaco);
+                }
+
+
                 Limpar();
+                PreencheTabela();
+
 
                 MessageBox.Show("Alterações realizadas com sucesso!", "Alterações concluídas", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -94,7 +108,6 @@ namespace GradeDeHorario
         {
             txtIdentificacao.Clear();
             nudCapacidade.Value = nudNumComputador.Value = 1;
-            dtgInfraestrutura.Rows.Clear();
             cbbTipoEspaco.SelectedIndex = -1;
             EstadoEditacao(false);
         }
@@ -108,6 +121,7 @@ namespace GradeDeHorario
         private void dtgInfraestrutura_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             EstadoEditacao(true);
+            novoRegistro = false;
 
             txtIdentificacao.Text = dtgInfraestrutura.Rows[e.RowIndex].Cells["CODIGO_ESPACO"].Value.ToString();
 
@@ -124,7 +138,13 @@ namespace GradeDeHorario
 
         private void frmInfraEstrutura_Load(object sender, EventArgs e)
         {
-          
+            PreencheTabela();
+        }
+
+        private void PreencheTabela()
+        {
+            infraEstrutura = new InfraestruturaRegraNegocio();
+            dtgInfraestrutura.DataSource = infraEstrutura.SelecionaTodaInfraEstutura();
         }
     }
 }

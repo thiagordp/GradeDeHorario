@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInfraEstrutura));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnNovo = new System.Windows.Forms.ToolStripButton();
             this.btnCancelar = new System.Windows.Forms.ToolStripButton();
@@ -52,6 +54,7 @@
             this.cbbTipoEspaco = new System.Windows.Forms.ComboBox();
             this.dtgInfraestrutura = new System.Windows.Forms.DataGridView();
             this.CODIGO_ESPACO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DISCIPLINA_TURMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TIPO_ESPACO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CAPACIDADE_ESPACO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.COMPUTADOR_ESPACO = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,6 +62,8 @@
             this.PROJETOR_ESPACO = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.QUADRO_BRANCO_ESPACO = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.QUADRO_VIDRO_ESPACO = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.gbSala.SuspendLayout();
@@ -186,6 +191,8 @@
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.cbbTipoEspaco, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label1, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.txtNome, 3, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 15);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(5);
@@ -194,6 +201,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(714, 80);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
@@ -299,12 +307,13 @@
             // 
             // txtIdentificacao
             // 
+            this.txtIdentificacao.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtIdentificacao.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.tableLayoutPanel2.SetColumnSpan(this.txtIdentificacao, 3);
             this.txtIdentificacao.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtIdentificacao.Enabled = false;
             this.txtIdentificacao.Location = new System.Drawing.Point(98, 3);
             this.txtIdentificacao.Name = "txtIdentificacao";
-            this.txtIdentificacao.Size = new System.Drawing.Size(309, 22);
+            this.txtIdentificacao.Size = new System.Drawing.Size(99, 22);
             this.txtIdentificacao.TabIndex = 4;
             // 
             // label3
@@ -348,11 +357,22 @@
             this.dtgInfraestrutura.AllowUserToOrderColumns = true;
             this.dtgInfraestrutura.AllowUserToResizeColumns = false;
             this.dtgInfraestrutura.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dtgInfraestrutura.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgInfraestrutura.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dtgInfraestrutura.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgInfraestrutura.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgInfraestrutura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgInfraestrutura.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CODIGO_ESPACO,
+            this.DISCIPLINA_TURMA,
             this.TIPO_ESPACO,
             this.CAPACIDADE_ESPACO,
             this.COMPUTADOR_ESPACO,
@@ -375,14 +395,23 @@
             // CODIGO_ESPACO
             // 
             this.CODIGO_ESPACO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_ESPACO.DataPropertyName = "CODIGO_ESPACO";
             this.CODIGO_ESPACO.HeaderText = "Identificação";
             this.CODIGO_ESPACO.MinimumWidth = 100;
             this.CODIGO_ESPACO.Name = "CODIGO_ESPACO";
             this.CODIGO_ESPACO.ReadOnly = true;
             // 
+            // DISCIPLINA_TURMA
+            // 
+            this.DISCIPLINA_TURMA.DataPropertyName = "DISCIPLINA_TURMA";
+            this.DISCIPLINA_TURMA.HeaderText = "DISCIPLINA_TURMA";
+            this.DISCIPLINA_TURMA.Name = "DISCIPLINA_TURMA";
+            this.DISCIPLINA_TURMA.Visible = false;
+            // 
             // TIPO_ESPACO
             // 
             this.TIPO_ESPACO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.TIPO_ESPACO.DataPropertyName = "TIPO_ESPACO";
             this.TIPO_ESPACO.HeaderText = "Tipo";
             this.TIPO_ESPACO.MinimumWidth = 100;
             this.TIPO_ESPACO.Name = "TIPO_ESPACO";
@@ -391,6 +420,7 @@
             // CAPACIDADE_ESPACO
             // 
             this.CAPACIDADE_ESPACO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CAPACIDADE_ESPACO.DataPropertyName = "CAPACIDADE_ESPACO";
             this.CAPACIDADE_ESPACO.HeaderText = "Capacidade";
             this.CAPACIDADE_ESPACO.Name = "CAPACIDADE_ESPACO";
             this.CAPACIDADE_ESPACO.Width = 92;
@@ -398,6 +428,7 @@
             // COMPUTADOR_ESPACO
             // 
             this.COMPUTADOR_ESPACO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.COMPUTADOR_ESPACO.DataPropertyName = "NUMERO_PC_ESPACO";
             this.COMPUTADOR_ESPACO.HeaderText = "Computadores";
             this.COMPUTADOR_ESPACO.Name = "COMPUTADOR_ESPACO";
             this.COMPUTADOR_ESPACO.ReadOnly = true;
@@ -407,6 +438,7 @@
             // INTERNET_ESPACO
             // 
             this.INTERNET_ESPACO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.INTERNET_ESPACO.DataPropertyName = "INTERNET_ESPACO";
             this.INTERNET_ESPACO.HeaderText = "Internet";
             this.INTERNET_ESPACO.Name = "INTERNET_ESPACO";
             this.INTERNET_ESPACO.ReadOnly = true;
@@ -415,6 +447,7 @@
             // PROJETOR_ESPACO
             // 
             this.PROJETOR_ESPACO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.PROJETOR_ESPACO.DataPropertyName = "PROJETOR_ESPACO";
             this.PROJETOR_ESPACO.HeaderText = "Projetor";
             this.PROJETOR_ESPACO.Name = "PROJETOR_ESPACO";
             this.PROJETOR_ESPACO.ReadOnly = true;
@@ -423,18 +456,39 @@
             // QUADRO_BRANCO_ESPACO
             // 
             this.QUADRO_BRANCO_ESPACO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.QUADRO_BRANCO_ESPACO.DataPropertyName = "QUADRO_BRANCO_ESPACO";
             this.QUADRO_BRANCO_ESPACO.HeaderText = "Quadro branco";
             this.QUADRO_BRANCO_ESPACO.Name = "QUADRO_BRANCO_ESPACO";
             this.QUADRO_BRANCO_ESPACO.ReadOnly = true;
-            this.QUADRO_BRANCO_ESPACO.Width = 82;
+            this.QUADRO_BRANCO_ESPACO.Width = 91;
             // 
             // QUADRO_VIDRO_ESPACO
             // 
             this.QUADRO_VIDRO_ESPACO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.QUADRO_VIDRO_ESPACO.DataPropertyName = "QUADRO_VIDRO_ESPACO";
             this.QUADRO_VIDRO_ESPACO.HeaderText = "Quadro de vidro";
             this.QUADRO_VIDRO_ESPACO.Name = "QUADRO_VIDRO_ESPACO";
             this.QUADRO_VIDRO_ESPACO.ReadOnly = true;
-            this.QUADRO_VIDRO_ESPACO.Width = 64;
+            this.QUADRO_VIDRO_ESPACO.Width = 97;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(262, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Nome:";
+            // 
+            // txtNome
+            // 
+            this.txtNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtNome.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtNome.Location = new System.Drawing.Point(308, 3);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(99, 22);
+            this.txtNome.TabIndex = 17;
             // 
             // frmInfraEstrutura
             // 
@@ -488,13 +542,16 @@
         private System.Windows.Forms.CheckBox chkQuadroBranco;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ToolStripButton btnCancelar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DISCIPLINA_TURMA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TIPO_ESPACO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CAPACIDADE_ESPACO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn COMPUTADOR_ESPACO;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn INTERNET_ESPACO;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn PROJETOR_ESPACO;
         private System.Windows.Forms.DataGridViewCheckBoxColumn QUADRO_BRANCO_ESPACO;
         private System.Windows.Forms.DataGridViewCheckBoxColumn QUADRO_VIDRO_ESPACO;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn PROJETOR_ESPACO;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn INTERNET_ESPACO;
-        private System.Windows.Forms.DataGridViewTextBoxColumn COMPUTADOR_ESPACO;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CAPACIDADE_ESPACO;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TIPO_ESPACO;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtNome;
     }
 }

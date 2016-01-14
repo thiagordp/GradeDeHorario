@@ -30,27 +30,15 @@ public class InfraestruturaRegraNegocio
 
     }
 
+
+    // Verifica o novo registro e caso esteja correto, a camada de dados o armazenará.
+    // Caso o registro apresente algum erro, este será reportado ao usuário.
     public void InsereInfraEstrutura(Modelos.ESPACO espaco)
     {
+        VerificaInfraEstrutura(espaco);
+
         try
         {
-            if (espaco.CODIGO_ESPACO.Trim() == "")
-            {
-                throw new Exception("O campo código do espaço não pode ser vazio!");
-            }
-            if (espaco.CAPACIDADE_ESPACO == 0)
-            {
-                throw new Exception("A capacidade deve ser maior que zero!");
-            }
-            if (espaco.TIPO_ESPACO == -1)
-            {
-                throw new Exception("Selecione um tipo de espaço!");
-            }
-            if (espaco.NUMERO_PC_ESPACO == 0)
-            {
-                throw new Exception("O número de computadores deve ser maior que zero!");
-            }
-
             using (Modelos.Entidade contexto = new Modelos.Entidade())
             {
                 Modelos.ESPACO espacoExiste = contexto.ESPACO.Find(espaco.CODIGO_ESPACO);
@@ -66,7 +54,59 @@ public class InfraestruturaRegraNegocio
         }
         catch (Exception ex)
         {
-            throw new Exception("Erro no método InsereInfraEstrutura\n\nDetalhe:\n\n\t" + ex.Message);
+            throw new Exception("Erro no método InsereInfraEstrutura\n\nDetalhe:\n\n" + ex.Message);
+        }
+    }
+
+    // Verifica o novo registro e caso esteja correto, a camada de dados o armazenará.
+    // Caso o registro apresente algum erro, este será reportado ao usuário.
+    public void EditaInfraEstrutura(Modelos.ESPACO espaco)
+    {
+        VerificaInfraEstrutura(espaco);
+
+        Modelos.ESPACO tempEspaco = null;
+        try
+        {
+            //Encontra o registro existente de acordo com o informado.
+            using (Modelos.Entidade contexto = new Modelos.Entidade())
+            {
+                tempEspaco = contexto.ESPACO.Where(esp => esp.CODIGO_ESPACO == espaco.CODIGO_ESPACO).FirstOrDefault();
+            }
+
+            if (tempEspaco == null)
+            {
+                throw new Exception("Registro não existente! Verifique se o banco de dados foi alterado por outro programa.");
+            }
+
+            using (Modelos.Entidade contexto = new Modelos.Entidade())
+            {
+                contexto.Entry(tempEspaco).State = System.Data.Entity.EntityState.Modified; // Marca a entidade como modificada
+            }
+        }
+        catch (Exception ex)
+        {
+            throw new Exception("Erro no método EditaInfraEstrutura\n\nDetalhe:\n\n" + ex.Message); ;
+        }
+    }
+
+    // Verifica os campos do Espaço informado.
+    private void VerificaInfraEstrutura(Modelos.ESPACO espaco)
+    {
+        if (espaco.CODIGO_ESPACO.Trim() == "")
+        {
+            throw new Exception("O campo código do espaço não pode ser vazio!");
+        }
+        if (espaco.CAPACIDADE_ESPACO == 0)
+        {
+            throw new Exception("A capacidade deve ser maior que zero!");
+        }
+        if (espaco.TIPO_ESPACO == -1)
+        {
+            throw new Exception("Selecione um tipo de espaço!");
+        }
+        if (espaco.NUMERO_PC_ESPACO == 0)
+        {
+            throw new Exception("O número de computadores deve ser maior que zero!");
         }
     }
 }
