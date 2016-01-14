@@ -12,6 +12,8 @@ namespace GradeDeHorario
 {
     public partial class frmInfraEstrutura : Form
     {
+        private InfraestruturaRegraNegocio espaco;
+
         public frmInfraEstrutura()
         {
             InitializeComponent();
@@ -29,7 +31,7 @@ namespace GradeDeHorario
             }
             catch (Exception)
             {
-                
+
             }
         }
 
@@ -37,9 +39,11 @@ namespace GradeDeHorario
         {
             try
             {
+                Modelos.ESPACO espaco = new Modelos.ESPACO();
+
+                espaco.CODIGO_ESPACO = txtIdentificacao.Text;
+                espaco.CAPACIDADE_ESPACO = Convert.ToInt32(nudCapacidade.Value);
                 Limpar();
-
-
 
                 MessageBox.Show("Alterações realizadas com sucesso!", "Alterações concluídas", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -106,6 +110,14 @@ namespace GradeDeHorario
             chkQuadroVidro.Checked = Convert.ToBoolean(dtgInfraestrutura.Rows[e.RowIndex].Cells["QUADRO_VIDRO_ESPACO"].Value);
 
             // Verificar como resgatar os requisitos
+        }
+
+        private void frmInfraEstrutura_Load(object sender, EventArgs e)
+        {
+            espaco = new InfraestruturaRegraNegocio();
+
+            //////////////   REVER SELECAO
+            dtgInfraestrutura.DataSource = espaco.SelecionaTodaInfraEstutura();
         }
     }
 }

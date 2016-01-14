@@ -464,6 +464,7 @@
             this.Name = "frmInfraEstrutura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Infra Estrutura de salas e laboratórios";
+            this.Load += new System.EventHandler(this.frmInfraEstrutura_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);

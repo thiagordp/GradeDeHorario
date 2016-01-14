@@ -11,6 +11,7 @@ using System.Text;
 
 public class InfraestruturaAcessoDados
 {
+
     //
     // Insere uma nova disciplina no banco de dados
     //
@@ -29,7 +30,20 @@ public class InfraestruturaAcessoDados
     //
     // Retorna todas as disciplinas cadastradas
     //
-    public void SelecionaTodaInfraEstutura() { }
+    public List<Modelos.ESPACO> SelecionaTodaInfraEstutura()
+    {
+        try
+        {
+            using (Modelos.Entidade contexto = new Modelos.Entidade())
+            {
+                return contexto.ESPACO.ToList();
+            }
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
+    }
 
     //
     // Retorna as disciplinas que contém o nome indicado -- REVER O FILTRO

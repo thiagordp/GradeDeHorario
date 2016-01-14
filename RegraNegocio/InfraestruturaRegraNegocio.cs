@@ -11,5 +11,28 @@ using System.Text;
 
 public class InfraestruturaRegraNegocio
 {
+    InfraestruturaAcessoDados infraEstrutura;
+
+
+    //Seleciona todos os espacos
+    public List<Modelos.ESPACO> SelecionaTodaInfraEstutura()
+    {
+        try
+        {
+            infraEstrutura = new InfraestruturaAcessoDados();
+
+            return infraEstrutura.SelecionaTodaInfraEstutura();
+        }
+        catch (Exception ex)
+        {
+            throw new Exception("Erro no método SelecionaTodaEstrutura.\n\nDetalhe: \n\n" + ex.Message);
+        }
+
+    }
+
+    public void InsereInfraEstrutura(Modelos.ESPACO)
+    {
+        
+    }
 }
 
