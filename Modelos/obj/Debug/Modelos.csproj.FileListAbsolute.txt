@@ -1,13 +1,3 @@
-D:\Projetos\C#\Projeto\GradeDeHorario\Modelos\bin\Debug\Modelos.dll
-D:\Projetos\C#\Projeto\GradeDeHorario\Modelos\bin\Debug\Modelos.pdb
-D:\Projetos\C#\Projeto\GradeDeHorario\Modelos\obj\Debug\Modelos.csprojResolveAssemblyReference.cache
-D:\Projetos\C#\Projeto\GradeDeHorario\Modelos\obj\Debug\Modelos.dll
-D:\Projetos\C#\Projeto\GradeDeHorario\Modelos\obj\Debug\Modelos.pdb
-D:\Projetos\C#\Projeto\GradeDeHorario\Modelos\bin\Debug\Modelos.dll.config
-D:\Projetos\C#\Projeto\GradeDeHorario\Modelos\bin\Debug\EntityFramework.dll
-D:\Projetos\C#\Projeto\GradeDeHorario\Modelos\bin\Debug\EntityFramework.SqlServer.dll
-D:\Projetos\C#\Projeto\GradeDeHorario\Modelos\bin\Debug\EntityFramework.xml
-D:\Projetos\C#\Projeto\GradeDeHorario\Modelos\bin\Debug\EntityFramework.SqlServer.xml
 D:\Projetos\GradeDeHorario\Modelos\bin\Debug\Modelos.dll.config
 D:\Projetos\GradeDeHorario\Modelos\bin\Debug\Modelos.dll
 D:\Projetos\GradeDeHorario\Modelos\bin\Debug\Modelos.pdb

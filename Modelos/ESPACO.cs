@@ -24,7 +24,7 @@ namespace Modelos
         public Nullable<bool> QUADRO_VIDRO_ESPACO { get; set; }
         public Nullable<bool> PROJETOR_ESPACO { get; set; }
         public Nullable<bool> INTERNET_ESPACO { get; set; }
-        public Nullable<bool> CAPACIDADE_ESPACO { get; set; }
+        public Nullable<int> CAPACIDADE_ESPACO { get; set; }
         public Nullable<bool> QUADRO_BRANCO_ESPACO { get; set; }
         public Nullable<int> TIPO_ESPACO { get; set; }
         public Nullable<int> NUMERO_PC_ESPACO { get; set; }

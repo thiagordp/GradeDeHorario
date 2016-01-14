@@ -30,9 +30,17 @@ public class InfraestruturaRegraNegocio
 
     }
 
-    public void InsereInfraEstrutura(Modelos.ESPACO)
+    public void InsereInfraEstrutura(Modelos.ESPACO espaco)
     {
-        
+        try
+        {
+
+        }
+        catch (Exception)
+        {
+
+            throw;
+        }
     }
 }
 

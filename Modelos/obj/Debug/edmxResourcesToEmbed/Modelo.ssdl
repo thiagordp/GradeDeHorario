@@ -48,7 +48,7 @@
     <Property Name="QUADRO_VIDRO_ESPACO" Type="bit" />
     <Property Name="PROJETOR_ESPACO" Type="bit" />
     <Property Name="INTERNET_ESPACO" Type="bit" />
-    <Property Name="CAPACIDADE_ESPACO" Type="bit" />
+    <Property Name="CAPACIDADE_ESPACO" Type="int" />
     <Property Name="QUADRO_BRANCO_ESPACO" Type="bit" />
     <Property Name="TIPO_ESPACO" Type="int" />
     <Property Name="NUMERO_PC_ESPACO" Type="int" />
