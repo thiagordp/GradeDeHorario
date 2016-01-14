@@ -203,11 +203,6 @@
             this.nudNumComputador.Name = "nudNumComputador";
             this.nudNumComputador.Size = new System.Drawing.Size(99, 22);
             this.nudNumComputador.TabIndex = 10;
-            this.nudNumComputador.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // label2
             // 

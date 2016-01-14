@@ -46,6 +46,10 @@ public class InfraestruturaRegraNegocio
             {
                 throw new Exception("Selecione um tipo de espaço!");
             }
+            if (espaco.NUMERO_PC_ESPACO == 0)
+            {
+                throw new Exception("O número de computadores deve ser maior que zero!");
+            }
 
             using (Modelos.Entidade contexto = new Modelos.Entidade())
             {
@@ -57,7 +61,7 @@ public class InfraestruturaRegraNegocio
                 }
 
                 contexto.ESPACO.Add(espaco);
-                contexto.SaveChanges();                
+                contexto.SaveChanges();
             }
         }
         catch (Exception ex)
