@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,16 +17,28 @@ namespace RegraNegocio
         private AcessoDados.CriaBancoAcessoDados criaBanco;
 
         ///////////////////////////////////
-        //  Executar comandos de CREATE  //
+        //  Executar comandos de CREATE  //d
         ///////////////////////////////////
 
         // Cria o banco no SQL Server caso não exista.
-        public void CriaBanco()
+        public void CriarBanco()
         {
             try
             {
+                string path = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+
+                path = path.Replace(@"\bin\Debug", ""); // Isso é feito pois a linha anterior retorna o caminho para o Debug e não para a raiz do projeto.
+                
+                string caminhoScriptBanco = path + @"\Resources\ScriptBancoConstrucao.sql";
+                FileInfo arquivoBanco = new FileInfo(caminhoScriptBanco);
+                string scriptBanco = arquivoBanco.OpenText().ReadToEnd();
+
+                string caminhoScriptTabelas = path + @"\Resources\ScriptTabelasConstrucao.sql";
+                FileInfo arquivoTabelas = new FileInfo(caminhoScriptTabelas);
+                string scriptTabela = arquivoTabelas.OpenText().ReadToEnd();
+
                 criaBanco = new AcessoDados.CriaBancoAcessoDados();
-                criaBanco.CriaBanco(); // Função que verificará a existência e caso não exista, criará um novo banco. 
+                criaBanco.CriarBanco(scriptBanco, scriptTabela); // Função que verificará a existência e caso não exista, criará um novo banco. 
             }
             catch (Exception ex)
             {

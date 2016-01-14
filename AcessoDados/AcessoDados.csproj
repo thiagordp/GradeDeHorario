@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CriaBancoAcessoDados.cs" />
     <Compile Include="DisciplinaAcessoDados.cs" />
     <Compile Include="FaseAcessoDados.cs" />
     <Compile Include="GradeHorarioAcessoDados.cs" />

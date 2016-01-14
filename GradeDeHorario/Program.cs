@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,9 +15,32 @@ namespace GradeDeHorario
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmSelecionaCurso());
+            try
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+
+                // Código para a primeira execução do sistema no computador do usuário.
+                RegraNegocio.CriaBancoRegraNegocio novoBanco = new RegraNegocio.CriaBancoRegraNegocio();
+                DataTable dadosTabela = new DataTable();           // Tabela que conterá o resultado da Pesquisa do banco;
+
+                dadosTabela = novoBanco.VerificaBanco();
+
+                if (dadosTabela.Rows.Count <= 0)
+                {
+                    MessageBox.Show("Banco não existe!");
+
+                    novoBanco.CriarBanco();
+                    novoBanco.CriaDepartamento();
+                }
+                else { MessageBox.Show("Banco existe!"); }
+
+                Application.Run(new frmSelecionaCurso());       // Executando a aplicação.
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao iniciar o sistema.\n\nDetalhe: \"" + ex.Message + "\"");
+            }
         }
     }
 }

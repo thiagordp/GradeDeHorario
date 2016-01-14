@@ -21,10 +21,14 @@ namespace GradeDeHorario
         {
             gbSala.Enabled = btnSalvar.Enabled = btnCancelar.Enabled = true;
             btnNovo.Enabled = false;
-            
+
             try
             {
                 InfraestruturaRegraNegocio novoespaco = new InfraestruturaRegraNegocio();
+
+            }
+            catch (Exception)
+            {
                 
             }
         }

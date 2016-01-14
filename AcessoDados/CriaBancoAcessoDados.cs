@@ -19,15 +19,19 @@ namespace AcessoDados
         ///////////////////////////////////
 
 
+
         // Cria o banco no SQL Server caso não exista.
-         public void CriarBanco(string ScriptBancoConstrucao, string ScriptTabelasConstrucao)
+        public void CriarBanco(string ScriptBancoConstrucao, string ScriptTabelasConstrucao)
         {
+            StringBuilder sql = new StringBuilder();
+            SqlCommand comandoSql = new SqlCommand();
+
             try
             {
                 using (SqlConnection conexao = new SqlConnection(@"Server= localhost\SQLEXPRESS; Integrated Security = SSPI"))
                 {
                     conexao.Open();
-                    
+
                     sql.Append(ScriptBancoConstrucao);
 
                     comandoSql.CommandText = sql.ToString();
@@ -43,9 +47,9 @@ namespace AcessoDados
                     comandoSql.ExecuteNonQuery();           // Cria as tabelas.
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw new Exception("Ocorreu um erro no método CriarBanco. Caso o problema persista, entre em contato com o Administrador do Sistema.");
+                throw new Exception(ex.Message +"\n"+ ex.StackTrace);
             }
         }
 
@@ -55,44 +59,44 @@ namespace AcessoDados
             try
             {
                 ///// Temporário//////
-                using (Modelo.Contexto ctx = new Modelo.Contexto())
+                using (Modelos.Entidade ctx = new Modelos.Entidade())
                 {
                     if (ctx.DEPARTAMENTO.Count() > 0) { return; }
                 }
                 //////////////////////
 
                 //Usa-se uma lista para fazer a inserção de todos os departamentos.
-                List<Modelo.DEPARTAMENTO> departamentos = new List<Modelo.DEPARTAMENTO>();
-                Modelo.DEPARTAMENTO departamento;
+                List<Modelos.DEPARTAMENTO> departamentos = new List<Modelos.DEPARTAMENTO>();
+                Modelos.DEPARTAMENTO departamento;
 
                 // Inserção do Departamento de Computação.
-                departamento = new Modelo.DEPARTAMENTO();
+                departamento = new Modelos.DEPARTAMENTO();
                 departamento.CODIGO_DEPARTAMENTO = 1;
                 departamento.NOME_DEPARTAMENTO = "Depto. de Computação (DEC)";
                 departamentos.Add(departamento);
 
                 // Inserção do Departamento de Energia e Sustentabilidade.
-                departamento = new Modelo.DEPARTAMENTO();
+                departamento = new Modelos.DEPARTAMENTO();
                 departamento.CODIGO_DEPARTAMENTO = 2;
                 departamento.NOME_DEPARTAMENTO = "Depto. de Energia e Sustentabilidade (ENS)";
                 departamentos.Add(departamento);
 
                 // Inserção do Departamento de Física, Química e Matemática.
-                departamento = new Modelo.DEPARTAMENTO();
+                departamento = new Modelos.DEPARTAMENTO();
                 departamento.CODIGO_DEPARTAMENTO = 3;
                 departamento.NOME_DEPARTAMENTO = "Depto. de Física, Química e Matemática (FQM)";
                 departamentos.Add(departamento);
 
                 // Inserção do Departamento de Tecnologia da Informação e Comunicação.
-                departamento = new Modelo.DEPARTAMENTO();
+                departamento = new Modelos.DEPARTAMENTO();
                 departamento.CODIGO_DEPARTAMENTO = 4;
                 departamento.NOME_DEPARTAMENTO = "Depto. de Tecnologia da Informação e Comunicação (TIC)";
                 departamentos.Add(departamento);
 
                 // Adição de todos os departamentos no banco.
-                using (Modelo.Contexto contexto = new Modelo.Contexto())
+                using (Modelos.Entidade contexto = new Modelos.Entidade())
                 {
-                    foreach (Modelo.DEPARTAMENTO depto in departamentos)
+                    foreach (Modelos.DEPARTAMENTO depto in departamentos)
                     {
                         contexto.DEPARTAMENTO.Add(depto);
                     }

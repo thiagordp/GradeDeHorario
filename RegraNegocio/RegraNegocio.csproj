@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CriaBancoRegraNegocio.cs" />
     <Compile Include="DisciplinaRegraNegocio.cs" />
     <Compile Include="FaseRegraNegocio.cs" />
     <Compile Include="GradeHorarioRegraNegocio.cs" />
