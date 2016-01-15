@@ -13,7 +13,7 @@ namespace GradeDeHorario
     public partial class frmInfraEstrutura : Form
     {
         private InfraestruturaRegraNegocio infraEstrutura;
-        private bool novoRegistro = false;        //Indica que é um novo registro caso 1 ou já existe caso contrário.
+        private bool novoRegistro = false;                           //Indica que é um novo registro caso 1 ou já existe caso contrário.
         private Modelos.ESPACO espacoAntigo = new Modelos.ESPACO();
 
         public frmInfraEstrutura()
@@ -69,7 +69,6 @@ namespace GradeDeHorario
                 Limpar();
                 PreencheTabela();
 
-
                 MessageBox.Show("Alterações realizadas com sucesso!", "Alterações concluídas", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 btnNovo.Enabled = true;
@@ -84,11 +83,28 @@ namespace GradeDeHorario
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
+
+
             if (MessageBox.Show("Você realmente deseja excluir o espaço selecionado?", "Exclusão de espaço", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 try
                 {
-                    // Excluir disciplina
+                    Modelos.ESPACO espaco = new Modelos.ESPACO();
+
+                    espaco.CODIGO_ESPACO = txtIdentificacao.Text;
+                    espaco.CAPACIDADE_ESPACO = Convert.ToInt32(nudCapacidade.Value);
+                    espaco.TIPO_ESPACO = cbbTipoEspaco.SelectedItem.ToString();
+                    espaco.NUMERO_PC_ESPACO = Convert.ToInt32(nudNumComputador.Value);
+                    espaco.PROJETOR_ESPACO = chkProjetor.Checked;
+                    espaco.INTERNET_ESPACO = chkInternet.Checked;
+                    espaco.QUADRO_BRANCO_ESPACO = chkQuadroBranco.Checked;
+                    espaco.QUADRO_VIDRO_ESPACO = chkQuadroBranco.Checked;
+
+                    infraEstrutura = new InfraestruturaRegraNegocio();
+
+                    infraEstrutura.ApagaInfraEstrutura(espaco);
+                    PreencheTabela();
+
                     Limpar();
                     EstadoEditacao(false);
                     MessageBox.Show("Espaço excluído com sucesso!", "Exclusão realizada", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -110,6 +126,9 @@ namespace GradeDeHorario
             txtIdentificacao.Clear();
             nudCapacidade.Value = nudNumComputador.Value = 1;
             cbbTipoEspaco.SelectedIndex = -1;
+
+            chkInternet.Checked = chkProjetor.Checked = chkQuadroBranco.Checked = chkQuadroVidro.Checked = false;
+
             EstadoEditacao(false);
         }
 
@@ -121,25 +140,37 @@ namespace GradeDeHorario
 
         private void dtgInfraestrutura_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            EstadoEditacao(true);
-            novoRegistro = false;
-
-            txtIdentificacao.Text = espacoAntigo.CODIGO_ESPACO = dtgInfraestrutura.Rows[e.RowIndex].Cells["CODIGO_ESPACO"].Value.ToString();
-            cbbTipoEspaco.SelectedItem = espacoAntigo.TIPO_ESPACO = dtgInfraestrutura.Rows[e.RowIndex].Cells["TIPO_ESPACO"].Value.ToString();
-            nudCapacidade.Value = Convert.ToDecimal(dtgInfraestrutura.Rows[e.RowIndex].Cells["CAPACIDADE_ESPACO"].Value.ToString());
-            nudNumComputador.Value = Convert.ToDecimal(dtgInfraestrutura.Rows[e.RowIndex].Cells["COMPUTADOR_ESPACO"].Value.ToString());
-            chkInternet.Checked = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["INTERNET_ESPACO"].Value.ToString());
-            chkProjetor.Checked = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["PROJETOR_ESPACO"].Value.ToString());
-            chkQuadroBranco.Checked = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["QUADRO_BRANCO_ESPACO"].Value.ToString());
-            chkQuadroVidro.Checked = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["QUADRO_VIDRO_ESPACO"].Value.ToString());
+            try
+            {
+                EstadoEditacao(true);
+                novoRegistro = false;
 
 
-            espacoAntigo.CAPACIDADE_ESPACO = int.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["CAPACIDADE_ESPACO"].Value.ToString());
-            espacoAntigo.INTERNET_ESPACO = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["INTERNET_ESPACO"].Value.ToString());
-            espacoAntigo.NUMERO_PC_ESPACO = int.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["COMPUTADOR_ESPACO"].Value.ToString());
-            espacoAntigo.PROJETOR_ESPACO = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["PROJETOR_ESPACO"].Value.ToString());
-            espacoAntigo.QUADRO_BRANCO_ESPACO = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["QUADRO_BRANCO_ESPACO"].Value.ToString());
-            espacoAntigo.QUADRO_VIDRO_ESPACO = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["QUADRO_VIDRO_ESPACO"].Value.ToString());
+                txtIdentificacao.Text = espacoAntigo.CODIGO_ESPACO = dtgInfraestrutura.Rows[e.RowIndex].Cells["CODIGO_ESPACO"].Value.ToString();
+                cbbTipoEspaco.SelectedItem = espacoAntigo.TIPO_ESPACO = dtgInfraestrutura.Rows[e.RowIndex].Cells["TIPO_ESPACO"].Value.ToString();
+                nudCapacidade.Value = Convert.ToDecimal(dtgInfraestrutura.Rows[e.RowIndex].Cells["CAPACIDADE_ESPACO"].Value.ToString());
+                nudNumComputador.Value = Convert.ToDecimal(dtgInfraestrutura.Rows[e.RowIndex].Cells["COMPUTADOR_ESPACO"].Value.ToString());
+                chkInternet.Checked = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["INTERNET_ESPACO"].Value.ToString());
+                chkProjetor.Checked = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["PROJETOR_ESPACO"].Value.ToString());
+                chkQuadroBranco.Checked = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["QUADRO_BRANCO_ESPACO"].Value.ToString());
+                chkQuadroVidro.Checked = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["QUADRO_VIDRO_ESPACO"].Value.ToString());
+
+
+                espacoAntigo.CAPACIDADE_ESPACO = int.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["CAPACIDADE_ESPACO"].Value.ToString());
+                espacoAntigo.INTERNET_ESPACO = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["INTERNET_ESPACO"].Value.ToString());
+                espacoAntigo.NUMERO_PC_ESPACO = int.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["COMPUTADOR_ESPACO"].Value.ToString());
+                espacoAntigo.PROJETOR_ESPACO = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["PROJETOR_ESPACO"].Value.ToString());
+                espacoAntigo.QUADRO_BRANCO_ESPACO = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["QUADRO_BRANCO_ESPACO"].Value.ToString());
+                espacoAntigo.QUADRO_VIDRO_ESPACO = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["QUADRO_VIDRO_ESPACO"].Value.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                Limpar();
+                btnNovo.Enabled = true;
+                btnCancelar.Enabled = btnExcluir.Enabled = btnSalvar.Enabled = false;
+            }
 
             /*OBS: o campo DISCIPLINA_TURMA do objeto não deve ser alterado, para garantir que nada será perdido.*/
         }
