@@ -27,7 +27,7 @@
     <Key>
       <PropertyRef Name="SEQ_DISCIPLINA_CURSO" />
     </Key>
-    <Property Name="SEQ_DISCIPLINA_CURSO" Type="int" Nullable="false" />
+    <Property Name="SEQ_DISCIPLINA_CURSO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="FASE_DISCIPLINA_CURSO" Type="int" />
     <Property Name="CODIGO_CURSO" Type="int" />
     <Property Name="CODIGO_DISCIPLINA" Type="varchar" MaxLength="10" />
@@ -45,12 +45,13 @@
       <PropertyRef Name="CODIGO_ESPACO" />
     </Key>
     <Property Name="CODIGO_ESPACO" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="NOME_ESPACO" Type="varchar" MaxLength="15" />
     <Property Name="QUADRO_VIDRO_ESPACO" Type="bit" />
     <Property Name="PROJETOR_ESPACO" Type="bit" />
     <Property Name="INTERNET_ESPACO" Type="bit" />
     <Property Name="CAPACIDADE_ESPACO" Type="int" />
     <Property Name="QUADRO_BRANCO_ESPACO" Type="bit" />
-    <Property Name="TIPO_ESPACO" Type="int" />
+    <Property Name="TIPO_ESPACO" Type="varchar" MaxLength="20" />
     <Property Name="NUMERO_PC_ESPACO" Type="int" />
   </EntityType>
   <EntityType Name="ESPACO_TURMA">
@@ -67,7 +68,7 @@
     <Key>
       <PropertyRef Name="SEQ_GRADE" />
     </Key>
-    <Property Name="SEQ_GRADE" Type="int" Nullable="false" />
+    <Property Name="SEQ_GRADE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="DIA_SEMANA_GRADE" Type="int" />
     <Property Name="HORARIO_GRADE" Type="int" />
   </EntityType>
@@ -109,18 +110,18 @@
   </EntityType>
   <EntityType Name="SEMESTRE">
     <Key>
-      <PropertyRef Name="CODIGO_SEMESTRE" />
+      <PropertyRef Name="SEQ_SEMESTRE" />
     </Key>
-    <Property Name="CODIGO_SEMESTRE" Type="int" Nullable="false" />
+    <Property Name="SEQ_SEMESTRE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="NOME_SEMESTRE" Type="varchar" MaxLength="10" />
   </EntityType>
   <EntityType Name="TURMA">
     <Key>
       <PropertyRef Name="SEQ_TURMA" />
     </Key>
-    <Property Name="SEQ_TURMA" Type="int" Nullable="false" />
+    <Property Name="SEQ_TURMA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="NOME_TURMA" Type="varchar" MaxLength="10" />
-    <Property Name="CODIGO_SEMESTRE" Type="int" />
+    <Property Name="SEQ_SEMESTRE" Type="int" />
   </EntityType>
   <Association Name="FK__DISCIPLIN__CODIG__286302EC">
     <End Role="CURSO" Type="Self.CURSO" Multiplicity="0..1" />
@@ -296,15 +297,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__TURMA__CODIGO_SE__34C8D9D1">
+  <Association Name="FK__TURMA__SEQ_SEMES__34C8D9D1">
     <End Role="SEMESTRE" Type="Self.SEMESTRE" Multiplicity="0..1" />
     <End Role="TURMA" Type="Self.TURMA" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="SEMESTRE">
-        <PropertyRef Name="CODIGO_SEMESTRE" />
+        <PropertyRef Name="SEQ_SEMESTRE" />
       </Principal>
       <Dependent Role="TURMA">
-        <PropertyRef Name="CODIGO_SEMESTRE" />
+        <PropertyRef Name="SEQ_SEMESTRE" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -379,7 +380,7 @@
       <End Role="DISCIPLINA_TURMA" EntitySet="DISCIPLINA_TURMA" />
       <End Role="PROFESSOR_TURMA" EntitySet="PROFESSOR_TURMA" />
     </AssociationSet>
-    <AssociationSet Name="FK__TURMA__CODIGO_SE__34C8D9D1" Association="Self.FK__TURMA__CODIGO_SE__34C8D9D1">
+    <AssociationSet Name="FK__TURMA__SEQ_SEMES__34C8D9D1" Association="Self.FK__TURMA__SEQ_SEMES__34C8D9D1">
       <End Role="SEMESTRE" EntitySet="SEMESTRE" />
       <End Role="TURMA" EntitySet="TURMA" />
     </AssociationSet>

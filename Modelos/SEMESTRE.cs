@@ -20,7 +20,7 @@ namespace Modelos
             this.TURMA = new HashSet<TURMA>();
         }
     
-        public int CODIGO_SEMESTRE { get; set; }
+        public int SEQ_SEMESTRE { get; set; }
         public string NOME_SEMESTRE { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

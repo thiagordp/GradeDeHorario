@@ -100,7 +100,7 @@ public class InfraestruturaRegraNegocio
         {
             throw new Exception("A capacidade deve ser maior que zero!");
         }
-        if (espaco.TIPO_ESPACO == -1)
+        if (espaco.TIPO_ESPACO == "")
         {
             throw new Exception("Selecione um tipo de espaço!");
         }

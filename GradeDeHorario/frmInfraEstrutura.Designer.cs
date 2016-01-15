@@ -62,8 +62,6 @@
             this.PROJETOR_ESPACO = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.QUADRO_BRANCO_ESPACO = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.QUADRO_VIDRO_ESPACO = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.gbSala.SuspendLayout();
@@ -191,8 +189,6 @@
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.cbbTipoEspaco, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label1, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.txtNome, 3, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 15);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(5);
@@ -307,13 +303,12 @@
             // 
             // txtIdentificacao
             // 
-            this.txtIdentificacao.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtIdentificacao.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.tableLayoutPanel2.SetColumnSpan(this.txtIdentificacao, 3);
             this.txtIdentificacao.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtIdentificacao.Enabled = false;
             this.txtIdentificacao.Location = new System.Drawing.Point(98, 3);
             this.txtIdentificacao.Name = "txtIdentificacao";
-            this.txtIdentificacao.Size = new System.Drawing.Size(99, 22);
+            this.txtIdentificacao.Size = new System.Drawing.Size(309, 22);
             this.txtIdentificacao.TabIndex = 4;
             // 
             // label3
@@ -471,25 +466,6 @@
             this.QUADRO_VIDRO_ESPACO.ReadOnly = true;
             this.QUADRO_VIDRO_ESPACO.Width = 97;
             // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(262, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Nome:";
-            // 
-            // txtNome
-            // 
-            this.txtNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtNome.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtNome.Location = new System.Drawing.Point(308, 3);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(99, 22);
-            this.txtNome.TabIndex = 17;
-            // 
             // frmInfraEstrutura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -551,7 +527,5 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn PROJETOR_ESPACO;
         private System.Windows.Forms.DataGridViewCheckBoxColumn QUADRO_BRANCO_ESPACO;
         private System.Windows.Forms.DataGridViewCheckBoxColumn QUADRO_VIDRO_ESPACO;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtNome;
     }
 }

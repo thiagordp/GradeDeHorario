@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="GradeHorarioModelo.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="GradeHorarioModelo.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="CURSO">
           <Key>
             <PropertyRef Name="CODIGO_CURSO" />
@@ -32,7 +32,7 @@
           <Key>
             <PropertyRef Name="SEQ_DISCIPLINA_CURSO" />
           </Key>
-          <Property Name="SEQ_DISCIPLINA_CURSO" Type="int" Nullable="false" />
+          <Property Name="SEQ_DISCIPLINA_CURSO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="FASE_DISCIPLINA_CURSO" Type="int" />
           <Property Name="CODIGO_CURSO" Type="int" />
           <Property Name="CODIGO_DISCIPLINA" Type="varchar" MaxLength="10" />
@@ -50,12 +50,13 @@
             <PropertyRef Name="CODIGO_ESPACO" />
           </Key>
           <Property Name="CODIGO_ESPACO" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="NOME_ESPACO" Type="varchar" MaxLength="15" />
           <Property Name="QUADRO_VIDRO_ESPACO" Type="bit" />
           <Property Name="PROJETOR_ESPACO" Type="bit" />
           <Property Name="INTERNET_ESPACO" Type="bit" />
           <Property Name="CAPACIDADE_ESPACO" Type="int" />
           <Property Name="QUADRO_BRANCO_ESPACO" Type="bit" />
-          <Property Name="TIPO_ESPACO" Type="int" />
+          <Property Name="TIPO_ESPACO" Type="varchar" MaxLength="20" />
           <Property Name="NUMERO_PC_ESPACO" Type="int" />
         </EntityType>
         <EntityType Name="ESPACO_TURMA">
@@ -72,7 +73,7 @@
           <Key>
             <PropertyRef Name="SEQ_GRADE" />
           </Key>
-          <Property Name="SEQ_GRADE" Type="int" Nullable="false" />
+          <Property Name="SEQ_GRADE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="DIA_SEMANA_GRADE" Type="int" />
           <Property Name="HORARIO_GRADE" Type="int" />
         </EntityType>
@@ -114,18 +115,18 @@
         </EntityType>
         <EntityType Name="SEMESTRE">
           <Key>
-            <PropertyRef Name="CODIGO_SEMESTRE" />
+            <PropertyRef Name="SEQ_SEMESTRE" />
           </Key>
-          <Property Name="CODIGO_SEMESTRE" Type="int" Nullable="false" />
+          <Property Name="SEQ_SEMESTRE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="NOME_SEMESTRE" Type="varchar" MaxLength="10" />
         </EntityType>
         <EntityType Name="TURMA">
           <Key>
             <PropertyRef Name="SEQ_TURMA" />
           </Key>
-          <Property Name="SEQ_TURMA" Type="int" Nullable="false" />
+          <Property Name="SEQ_TURMA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="NOME_TURMA" Type="varchar" MaxLength="10" />
-          <Property Name="CODIGO_SEMESTRE" Type="int" />
+          <Property Name="SEQ_SEMESTRE" Type="int" />
         </EntityType>
         <Association Name="FK__DISCIPLIN__CODIG__286302EC">
           <End Role="CURSO" Type="Self.CURSO" Multiplicity="0..1" />
@@ -301,15 +302,15 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TURMA__CODIGO_SE__34C8D9D1">
+        <Association Name="FK__TURMA__SEQ_SEMES__34C8D9D1">
           <End Role="SEMESTRE" Type="Self.SEMESTRE" Multiplicity="0..1" />
           <End Role="TURMA" Type="Self.TURMA" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="SEMESTRE">
-              <PropertyRef Name="CODIGO_SEMESTRE" />
+              <PropertyRef Name="SEQ_SEMESTRE" />
             </Principal>
             <Dependent Role="TURMA">
-              <PropertyRef Name="CODIGO_SEMESTRE" />
+              <PropertyRef Name="SEQ_SEMESTRE" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -384,12 +385,13 @@
             <End Role="DISCIPLINA_TURMA" EntitySet="DISCIPLINA_TURMA" />
             <End Role="PROFESSOR_TURMA" EntitySet="PROFESSOR_TURMA" />
           </AssociationSet>
-          <AssociationSet Name="FK__TURMA__CODIGO_SE__34C8D9D1" Association="Self.FK__TURMA__CODIGO_SE__34C8D9D1">
+          <AssociationSet Name="FK__TURMA__SEQ_SEMES__34C8D9D1" Association="Self.FK__TURMA__SEQ_SEMES__34C8D9D1">
             <End Role="SEMESTRE" EntitySet="SEMESTRE" />
             <End Role="TURMA" EntitySet="TURMA" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="GradeHorarioModelo" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -427,7 +429,7 @@
           <Key>
             <PropertyRef Name="SEQ_DISCIPLINA_CURSO" />
           </Key>
-          <Property Name="SEQ_DISCIPLINA_CURSO" Type="Int32" Nullable="false" />
+          <Property Name="SEQ_DISCIPLINA_CURSO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="FASE_DISCIPLINA_CURSO" Type="Int32" />
           <Property Name="CODIGO_CURSO" Type="Int32" />
           <Property Name="CODIGO_DISCIPLINA" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
@@ -453,12 +455,13 @@
             <PropertyRef Name="CODIGO_ESPACO" />
           </Key>
           <Property Name="CODIGO_ESPACO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NOME_ESPACO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
           <Property Name="QUADRO_VIDRO_ESPACO" Type="Boolean" />
           <Property Name="PROJETOR_ESPACO" Type="Boolean" />
           <Property Name="INTERNET_ESPACO" Type="Boolean" />
           <Property Name="CAPACIDADE_ESPACO" Type="Int32" />
           <Property Name="QUADRO_BRANCO_ESPACO" Type="Boolean" />
-          <Property Name="TIPO_ESPACO" Type="Int32" />
+          <Property Name="TIPO_ESPACO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="NUMERO_PC_ESPACO" Type="Int32" />
           <NavigationProperty Name="DISCIPLINA_TURMA" Relationship="Self.ESPACO_TURMA" FromRole="ESPACO" ToRole="DISCIPLINA_TURMA" />
         </EntityType>
@@ -466,7 +469,7 @@
           <Key>
             <PropertyRef Name="SEQ_GRADE" />
           </Key>
-          <Property Name="SEQ_GRADE" Type="Int32" Nullable="false" />
+          <Property Name="SEQ_GRADE" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="DIA_SEMANA_GRADE" Type="Int32" />
           <Property Name="HORARIO_GRADE" Type="Int32" />
           <NavigationProperty Name="DISCIPLINA_TURMA" Relationship="Self.GRADE_TURMA" FromRole="GRADE" ToRole="DISCIPLINA_TURMA" />
@@ -483,21 +486,21 @@
         </EntityType>
         <EntityType Name="SEMESTRE">
           <Key>
-            <PropertyRef Name="CODIGO_SEMESTRE" />
+            <PropertyRef Name="SEQ_SEMESTRE" />
           </Key>
-          <Property Name="CODIGO_SEMESTRE" Type="Int32" Nullable="false" />
+          <Property Name="SEQ_SEMESTRE" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="NOME_SEMESTRE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="TURMA" Relationship="Self.FK__TURMA__CODIGO_SE__34C8D9D1" FromRole="SEMESTRE" ToRole="TURMA" />
+          <NavigationProperty Name="TURMA" Relationship="Self.FK__TURMA__SEQ_SEMES__34C8D9D1" FromRole="SEMESTRE" ToRole="TURMA" />
         </EntityType>
         <EntityType Name="TURMA">
           <Key>
             <PropertyRef Name="SEQ_TURMA" />
           </Key>
-          <Property Name="SEQ_TURMA" Type="Int32" Nullable="false" />
+          <Property Name="SEQ_TURMA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="NOME_TURMA" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <Property Name="CODIGO_SEMESTRE" Type="Int32" />
+          <Property Name="SEQ_SEMESTRE" Type="Int32" />
           <NavigationProperty Name="DISCIPLINA_TURMA" Relationship="Self.FK__DISCIPLIN__SEQ_T__32E0915F" FromRole="TURMA" ToRole="DISCIPLINA_TURMA" />
-          <NavigationProperty Name="SEMESTRE" Relationship="Self.FK__TURMA__CODIGO_SE__34C8D9D1" FromRole="TURMA" ToRole="SEMESTRE" />
+          <NavigationProperty Name="SEMESTRE" Relationship="Self.FK__TURMA__SEQ_SEMES__34C8D9D1" FromRole="TURMA" ToRole="SEMESTRE" />
         </EntityType>
         <Association Name="FK__DISCIPLIN__CODIG__286302EC">
           <End Role="CURSO" Type="Self.CURSO" Multiplicity="0..1" />
@@ -571,15 +574,15 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__TURMA__CODIGO_SE__34C8D9D1">
+        <Association Name="FK__TURMA__SEQ_SEMES__34C8D9D1">
           <End Role="SEMESTRE" Type="Self.SEMESTRE" Multiplicity="0..1" />
           <End Role="TURMA" Type="Self.TURMA" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="SEMESTRE">
-              <PropertyRef Name="CODIGO_SEMESTRE" />
+              <PropertyRef Name="SEQ_SEMESTRE" />
             </Principal>
             <Dependent Role="TURMA">
-              <PropertyRef Name="CODIGO_SEMESTRE" />
+              <PropertyRef Name="SEQ_SEMESTRE" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -634,7 +637,7 @@
             <End Role="TURMA" EntitySet="TURMA" />
             <End Role="DISCIPLINA_TURMA" EntitySet="DISCIPLINA_TURMA" />
           </AssociationSet>
-          <AssociationSet Name="FK__TURMA__CODIGO_SE__34C8D9D1" Association="Self.FK__TURMA__CODIGO_SE__34C8D9D1">
+          <AssociationSet Name="FK__TURMA__SEQ_SEMES__34C8D9D1" Association="Self.FK__TURMA__SEQ_SEMES__34C8D9D1">
             <End Role="SEMESTRE" EntitySet="SEMESTRE" />
             <End Role="TURMA" EntitySet="TURMA" />
           </AssociationSet>
@@ -709,6 +712,7 @@
             <EntityTypeMapping TypeName="GradeHorarioModelo.ESPACO">
               <MappingFragment StoreEntitySet="ESPACO">
                 <ScalarProperty Name="CODIGO_ESPACO" ColumnName="CODIGO_ESPACO" />
+                <ScalarProperty Name="NOME_ESPACO" ColumnName="NOME_ESPACO" />
                 <ScalarProperty Name="QUADRO_VIDRO_ESPACO" ColumnName="QUADRO_VIDRO_ESPACO" />
                 <ScalarProperty Name="PROJETOR_ESPACO" ColumnName="PROJETOR_ESPACO" />
                 <ScalarProperty Name="INTERNET_ESPACO" ColumnName="INTERNET_ESPACO" />
@@ -740,7 +744,7 @@
           <EntitySetMapping Name="SEMESTRE">
             <EntityTypeMapping TypeName="GradeHorarioModelo.SEMESTRE">
               <MappingFragment StoreEntitySet="SEMESTRE">
-                <ScalarProperty Name="CODIGO_SEMESTRE" ColumnName="CODIGO_SEMESTRE" />
+                <ScalarProperty Name="SEQ_SEMESTRE" ColumnName="SEQ_SEMESTRE" />
                 <ScalarProperty Name="NOME_SEMESTRE" ColumnName="NOME_SEMESTRE" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -750,7 +754,7 @@
               <MappingFragment StoreEntitySet="TURMA">
                 <ScalarProperty Name="SEQ_TURMA" ColumnName="SEQ_TURMA" />
                 <ScalarProperty Name="NOME_TURMA" ColumnName="NOME_TURMA" />
-                <ScalarProperty Name="CODIGO_SEMESTRE" ColumnName="CODIGO_SEMESTRE" />
+                <ScalarProperty Name="SEQ_SEMESTRE" ColumnName="SEQ_SEMESTRE" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

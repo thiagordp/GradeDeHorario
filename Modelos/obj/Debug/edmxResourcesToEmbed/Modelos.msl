@@ -49,6 +49,7 @@
       <EntityTypeMapping TypeName="GradeHorarioModelo.ESPACO">
         <MappingFragment StoreEntitySet="ESPACO">
           <ScalarProperty Name="CODIGO_ESPACO" ColumnName="CODIGO_ESPACO" />
+          <ScalarProperty Name="NOME_ESPACO" ColumnName="NOME_ESPACO" />
           <ScalarProperty Name="QUADRO_VIDRO_ESPACO" ColumnName="QUADRO_VIDRO_ESPACO" />
           <ScalarProperty Name="PROJETOR_ESPACO" ColumnName="PROJETOR_ESPACO" />
           <ScalarProperty Name="INTERNET_ESPACO" ColumnName="INTERNET_ESPACO" />
@@ -80,7 +81,7 @@
     <EntitySetMapping Name="SEMESTRE">
       <EntityTypeMapping TypeName="GradeHorarioModelo.SEMESTRE">
         <MappingFragment StoreEntitySet="SEMESTRE">
-          <ScalarProperty Name="CODIGO_SEMESTRE" ColumnName="CODIGO_SEMESTRE" />
+          <ScalarProperty Name="SEQ_SEMESTRE" ColumnName="SEQ_SEMESTRE" />
           <ScalarProperty Name="NOME_SEMESTRE" ColumnName="NOME_SEMESTRE" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -90,7 +91,7 @@
         <MappingFragment StoreEntitySet="TURMA">
           <ScalarProperty Name="SEQ_TURMA" ColumnName="SEQ_TURMA" />
           <ScalarProperty Name="NOME_TURMA" ColumnName="NOME_TURMA" />
-          <ScalarProperty Name="CODIGO_SEMESTRE" ColumnName="CODIGO_SEMESTRE" />
+          <ScalarProperty Name="SEQ_SEMESTRE" ColumnName="SEQ_SEMESTRE" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

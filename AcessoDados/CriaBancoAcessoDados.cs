@@ -96,6 +96,54 @@ namespace AcessoDados
             }
         }
 
+        // Inserção dos cursos.
+        public void CriaCurso()
+        {
+            try
+            {
+                //Usa-se uma lista para fazer a inserção de todos os cursos.
+                List<Modelos.CURSO> cursos = new List<Modelos.CURSO>();
+                Modelos.CURSO curso;
+
+                // Inserção do curso de Fisioterapia.
+                curso = new Modelos.CURSO();
+                curso.CODIGO_CURSO = 654;
+                curso.NOME_CURSO = "Fisioterapia";
+                cursos.Add(curso);
+
+                // Inserção do curso de Engenharia de Energia.
+                curso = new Modelos.CURSO();
+                curso.CODIGO_CURSO = 653;
+                curso.NOME_CURSO = "Engenharia de Energia";
+                cursos.Add(curso);
+
+                // Inserção do curso de Engenharia de Computação.
+                curso = new Modelos.CURSO();
+                curso.CODIGO_CURSO = 655;
+                curso.NOME_CURSO = "Engenharia de Computação";
+                cursos.Add(curso);
+
+                // Inserção do curso de TIC.
+                curso = new Modelos.CURSO();
+                curso.CODIGO_CURSO = 652;
+                curso.NOME_CURSO = "Tecnologias da Informação e Comunicação";
+                cursos.Add(curso);
+
+                using (Modelos.Entidade contexto = new Modelos.Entidade())
+                {
+                    foreach (Modelos.CURSO item in cursos)
+                    {
+                        contexto.CURSO.Add(item);
+                    }
+                    contexto.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         // Verifica a existência do banco de dados no sistema
         public DataTable VerificaBanco()
         {
@@ -121,5 +169,6 @@ namespace AcessoDados
                 throw new Exception("VerificarBanco(): \"" + ex.Message + "\"");
             }
         }
+
     }
 }

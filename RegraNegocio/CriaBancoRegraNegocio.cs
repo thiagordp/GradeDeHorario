@@ -28,7 +28,7 @@ namespace RegraNegocio
                 string path = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
 
                 path = path.Replace(@"\bin\Debug", ""); // Isso é feito pois a linha anterior retorna o caminho para o Debug e não para a raiz do projeto.
-                
+
                 string caminhoScriptBanco = path + @"\Resources\ScriptBancoConstrucao.sql";
                 FileInfo arquivoBanco = new FileInfo(caminhoScriptBanco);
                 string scriptBanco = arquivoBanco.OpenText().ReadToEnd();
@@ -57,7 +57,21 @@ namespace RegraNegocio
             }
             catch (Exception ex)
             {
-                throw new Exception("Erro no método CriaDepartamento().\n\nDetalhe do erro: \"" + ex.Message + "\"");
+                throw new Exception("Erro no método CriaDepartamento.\n\nDetalhe:\n\n" + ex.Message);
+            }
+        }
+
+        //Inserção dos cursos
+        public void CriaCurso()
+        {
+            try
+            {
+                criaBanco = new AcessoDados.CriaBancoAcessoDados();
+                criaBanco.CriaCurso();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método CriaCurso.\n\nDetalhe:\n\n" + ex.Message); ;
             }
         }
 
@@ -71,8 +85,7 @@ namespace RegraNegocio
             }
             catch (Exception ex)
             {
-
-                throw new Exception("Erro no método VerificaBanco().\n\nDetalhe do erro: \"" + ex.Message + "\"");
+                throw new Exception("Erro no método VerificaBanco.\n\nDetalhe:\n\n" + ex.Message);
             }
         }
     }
