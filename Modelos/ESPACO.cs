@@ -21,7 +21,6 @@ namespace Modelos
         }
     
         public string CODIGO_ESPACO { get; set; }
-        public string NOME_ESPACO { get; set; }
         public Nullable<bool> QUADRO_VIDRO_ESPACO { get; set; }
         public Nullable<bool> PROJETOR_ESPACO { get; set; }
         public Nullable<bool> INTERNET_ESPACO { get; set; }

@@ -45,7 +45,6 @@
       <PropertyRef Name="CODIGO_ESPACO" />
     </Key>
     <Property Name="CODIGO_ESPACO" Type="varchar" MaxLength="15" Nullable="false" />
-    <Property Name="NOME_ESPACO" Type="varchar" MaxLength="15" />
     <Property Name="QUADRO_VIDRO_ESPACO" Type="bit" />
     <Property Name="PROJETOR_ESPACO" Type="bit" />
     <Property Name="INTERNET_ESPACO" Type="bit" />

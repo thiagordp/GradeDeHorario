@@ -15,7 +15,7 @@ public class InfraestruturaRegraNegocio
 
 
     //Seleciona todos os espacos
-    public List<Modelos.ESPACO> SelecionaTodaInfraEstutura()
+    public List<Modelos.ESPACO> SelecionaTodaInfraEstrutura()
     {
         try
         {
@@ -60,33 +60,66 @@ public class InfraestruturaRegraNegocio
 
     // Verifica o novo registro e caso esteja correto, a camada de dados o armazenará.
     // Caso o registro apresente algum erro, este será reportado ao usuário.
-    public void EditaInfraEstrutura(Modelos.ESPACO espaco)
+    public void EditaInfraEstrutura(Modelos.ESPACO espacoAtual, Modelos.ESPACO espacoNovo)
+    //tempEspaco = contexto.ESPACO.Where(esp => esp.CODIGO_ESPACO == espacoNovo.CODIGO_ESPACO).FirstOrDefault();
+    //contexto.Entry(tempEspaco).State = System.Data.Entity.EntityState.Modified; // Marca a entidade como modificada
     {
-        VerificaInfraEstrutura(espaco);
 
-        Modelos.ESPACO tempEspaco = null;
         try
         {
-            //Encontra o registro existente de acordo com o informado.
-            using (Modelos.Entidade contexto = new Modelos.Entidade())
-            {
-                tempEspaco = contexto.ESPACO.Where(esp => esp.CODIGO_ESPACO == espaco.CODIGO_ESPACO).FirstOrDefault();
-            }
+            VerificaInfraEstrutura(espacoNovo);
 
-            if (tempEspaco == null)
-            {
-                throw new Exception("Registro não existente! Verifique se o banco de dados foi alterado por outro programa.");
-            }
+            Modelos.ESPACO tempEspaco;
 
             using (Modelos.Entidade contexto = new Modelos.Entidade())
             {
-                contexto.Entry(tempEspaco).State = System.Data.Entity.EntityState.Modified; // Marca a entidade como modificada
+                tempEspaco = contexto.ESPACO.Where(esp => esp.CODIGO_ESPACO == espacoNovo.CODIGO_ESPACO).FirstOrDefault();
+
+                if (espacoAtual.CODIGO_ESPACO != espacoNovo.CODIGO_ESPACO) // Delete e insert espaço
+                {
+                    if (tempEspaco != null)
+                    {
+                        throw new Exception("O novo código para o espaço já está cadastrado no banco!");
+                    }
+
+                    contexto.ESPACO.Add(espacoNovo); // Adiciona o novo espaço.
+
+                    //Como insiriu-se um novo objeto, é necessário apagar o antigo.
+                    tempEspaco = contexto.ESPACO.Where(esp => esp.CODIGO_ESPACO == espacoAtual.CODIGO_ESPACO).FirstOrDefault();
+                    if (tempEspaco != null)
+                    {
+                        contexto.Entry(tempEspaco).State = System.Data.Entity.EntityState.Deleted; //Altera o estado do objeto.
+                    }
+                }
+                else // update
+                {
+                    if (tempEspaco == null)
+                    {
+                        throw new Exception("Objeto não encontrado!\nVerifique se há algum programa alterando o banco de dados.");
+                    }
+
+                    tempEspaco.CAPACIDADE_ESPACO = espacoAtual.CAPACIDADE_ESPACO;
+                    tempEspaco.CODIGO_ESPACO = espacoAtual.CODIGO_ESPACO;
+                    tempEspaco.INTERNET_ESPACO = espacoAtual.INTERNET_ESPACO;
+                    tempEspaco.NUMERO_PC_ESPACO = espacoAtual.NUMERO_PC_ESPACO;
+                    tempEspaco.PROJETOR_ESPACO = espacoAtual.PROJETOR_ESPACO;
+                    tempEspaco.QUADRO_BRANCO_ESPACO = espacoAtual.QUADRO_BRANCO_ESPACO;
+                    tempEspaco.QUADRO_VIDRO_ESPACO = espacoAtual.QUADRO_VIDRO_ESPACO;
+                    tempEspaco.TIPO_ESPACO = espacoAtual.TIPO_ESPACO;
+
+                    contexto.Entry(tempEspaco).State = System.Data.Entity.EntityState.Modified; // Marca a entidade como modificada
+
+                }
+                contexto.SaveChanges();     //Salva as alterações
             }
         }
         catch (Exception ex)
         {
-            throw new Exception("Erro no método EditaInfraEstrutura\n\nDetalhe:\n\n" + ex.Message); ;
+            throw new Exception("Erro no método EditaInfraEstrutura\n\nDetalhe:\n\n" + ex.Message);
         }
+
+
+
     }
 
     // Verifica os campos do Espaço informado.

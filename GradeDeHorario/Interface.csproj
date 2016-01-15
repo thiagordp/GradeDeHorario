@@ -222,7 +222,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Modelos\Modelos.csproj">
-      <Project>{f7ad5bfc-3472-4227-80b4-73e2dbd6d986}</Project>
+      <Project>{152677e2-aa72-42f8-ab22-7651b78b1c19}</Project>
       <Name>Modelos</Name>
     </ProjectReference>
     <ProjectReference Include="..\RegraNegocio\RegraNegocio.csproj">

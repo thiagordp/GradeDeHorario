@@ -50,7 +50,6 @@
             <PropertyRef Name="CODIGO_ESPACO" />
           </Key>
           <Property Name="CODIGO_ESPACO" Type="varchar" MaxLength="15" Nullable="false" />
-          <Property Name="NOME_ESPACO" Type="varchar" MaxLength="15" />
           <Property Name="QUADRO_VIDRO_ESPACO" Type="bit" />
           <Property Name="PROJETOR_ESPACO" Type="bit" />
           <Property Name="INTERNET_ESPACO" Type="bit" />
@@ -455,7 +454,6 @@
             <PropertyRef Name="CODIGO_ESPACO" />
           </Key>
           <Property Name="CODIGO_ESPACO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="NOME_ESPACO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
           <Property Name="QUADRO_VIDRO_ESPACO" Type="Boolean" />
           <Property Name="PROJETOR_ESPACO" Type="Boolean" />
           <Property Name="INTERNET_ESPACO" Type="Boolean" />
@@ -712,7 +710,6 @@
             <EntityTypeMapping TypeName="GradeHorarioModelo.ESPACO">
               <MappingFragment StoreEntitySet="ESPACO">
                 <ScalarProperty Name="CODIGO_ESPACO" ColumnName="CODIGO_ESPACO" />
-                <ScalarProperty Name="NOME_ESPACO" ColumnName="NOME_ESPACO" />
                 <ScalarProperty Name="QUADRO_VIDRO_ESPACO" ColumnName="QUADRO_VIDRO_ESPACO" />
                 <ScalarProperty Name="PROJETOR_ESPACO" ColumnName="PROJETOR_ESPACO" />
                 <ScalarProperty Name="INTERNET_ESPACO" ColumnName="INTERNET_ESPACO" />

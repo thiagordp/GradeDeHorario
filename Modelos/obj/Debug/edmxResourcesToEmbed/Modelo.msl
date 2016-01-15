@@ -49,7 +49,6 @@
       <EntityTypeMapping TypeName="GradeHorarioModelo.ESPACO">
         <MappingFragment StoreEntitySet="ESPACO">
           <ScalarProperty Name="CODIGO_ESPACO" ColumnName="CODIGO_ESPACO" />
-          <ScalarProperty Name="NOME_ESPACO" ColumnName="NOME_ESPACO" />
           <ScalarProperty Name="QUADRO_VIDRO_ESPACO" ColumnName="QUADRO_VIDRO_ESPACO" />
           <ScalarProperty Name="PROJETOR_ESPACO" ColumnName="PROJETOR_ESPACO" />
           <ScalarProperty Name="INTERNET_ESPACO" ColumnName="INTERNET_ESPACO" />

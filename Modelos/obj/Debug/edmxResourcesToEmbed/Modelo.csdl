@@ -60,7 +60,6 @@
       <PropertyRef Name="CODIGO_ESPACO" />
     </Key>
     <Property Name="CODIGO_ESPACO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="NOME_ESPACO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
     <Property Name="QUADRO_VIDRO_ESPACO" Type="Boolean" />
     <Property Name="PROJETOR_ESPACO" Type="Boolean" />
     <Property Name="INTERNET_ESPACO" Type="Boolean" />

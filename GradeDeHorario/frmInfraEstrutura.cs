@@ -14,6 +14,7 @@ namespace GradeDeHorario
     {
         private InfraestruturaRegraNegocio infraEstrutura;
         private bool novoRegistro = false;        //Indica que é um novo registro caso 1 ou já existe caso contrário.
+        private Modelos.ESPACO espacoAntigo = new Modelos.ESPACO();
 
         public frmInfraEstrutura()
         {
@@ -61,7 +62,7 @@ namespace GradeDeHorario
                 }
                 else
                 {
-                    infraEstrutura.EditaInfraEstrutura(espaco);
+                    infraEstrutura.EditaInfraEstrutura(espacoAntigo, espaco);
                 }
 
 
@@ -123,17 +124,24 @@ namespace GradeDeHorario
             EstadoEditacao(true);
             novoRegistro = false;
 
-            txtIdentificacao.Text = dtgInfraestrutura.Rows[e.RowIndex].Cells["CODIGO_ESPACO"].Value.ToString();
-
-            cbbTipoEspaco.SelectedItem = dtgInfraestrutura.Rows[e.RowIndex].Cells["TIPO_ESPACO"].Value.ToString();
+            txtIdentificacao.Text = espacoAntigo.CODIGO_ESPACO = dtgInfraestrutura.Rows[e.RowIndex].Cells["CODIGO_ESPACO"].Value.ToString();
+            cbbTipoEspaco.SelectedItem = espacoAntigo.TIPO_ESPACO = dtgInfraestrutura.Rows[e.RowIndex].Cells["TIPO_ESPACO"].Value.ToString();
             nudCapacidade.Value = Convert.ToDecimal(dtgInfraestrutura.Rows[e.RowIndex].Cells["CAPACIDADE_ESPACO"].Value.ToString());
             nudNumComputador.Value = Convert.ToDecimal(dtgInfraestrutura.Rows[e.RowIndex].Cells["COMPUTADOR_ESPACO"].Value.ToString());
-            chkInternet.Checked = Convert.ToBoolean(dtgInfraestrutura.Rows[e.RowIndex].Cells["INTERNET_ESPACO"].Value);
-            chkProjetor.Checked = Convert.ToBoolean(dtgInfraestrutura.Rows[e.RowIndex].Cells["PROJETOR_ESPACO"].Value);
-            chkQuadroBranco.Checked = Convert.ToBoolean(dtgInfraestrutura.Rows[e.RowIndex].Cells["QUADRO_BRANCO_ESPACO"].Value);
-            chkQuadroVidro.Checked = Convert.ToBoolean(dtgInfraestrutura.Rows[e.RowIndex].Cells["QUADRO_VIDRO_ESPACO"].Value);
+            chkInternet.Checked = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["INTERNET_ESPACO"].Value.ToString());
+            chkProjetor.Checked = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["PROJETOR_ESPACO"].Value.ToString());
+            chkQuadroBranco.Checked = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["QUADRO_BRANCO_ESPACO"].Value.ToString());
+            chkQuadroVidro.Checked = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["QUADRO_VIDRO_ESPACO"].Value.ToString());
 
-            // Verificar como resgatar os requisitos
+
+            espacoAntigo.CAPACIDADE_ESPACO = int.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["CAPACIDADE_ESPACO"].Value.ToString());
+            espacoAntigo.INTERNET_ESPACO = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["INTERNET_ESPACO"].Value.ToString());
+            espacoAntigo.NUMERO_PC_ESPACO = int.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["COMPUTADOR_ESPACO"].Value.ToString());
+            espacoAntigo.PROJETOR_ESPACO = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["PROJETOR_ESPACO"].Value.ToString());
+            espacoAntigo.QUADRO_BRANCO_ESPACO = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["QUADRO_BRANCO_ESPACO"].Value.ToString());
+            espacoAntigo.QUADRO_VIDRO_ESPACO = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["QUADRO_VIDRO_ESPACO"].Value.ToString());
+
+            /*OBS: o campo DISCIPLINA_TURMA do objeto não deve ser alterado, para garantir que nada será perdido.*/
         }
 
         private void frmInfraEstrutura_Load(object sender, EventArgs e)
@@ -144,7 +152,7 @@ namespace GradeDeHorario
         private void PreencheTabela()
         {
             infraEstrutura = new InfraestruturaRegraNegocio();
-            dtgInfraestrutura.DataSource = infraEstrutura.SelecionaTodaInfraEstutura();
+            dtgInfraestrutura.DataSource = infraEstrutura.SelecionaTodaInfraEstrutura();
         }
     }
 }
