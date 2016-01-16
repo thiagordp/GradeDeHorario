@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conexao.cs" />
     <Compile Include="CriaBancoAcessoDados.cs" />
     <Compile Include="DisciplinaAcessoDados.cs" />
     <Compile Include="FaseAcessoDados.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="ProfessorAcessoDados.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SelecionaDisciplinaAcessoDados.cs" />
+    <Compile Include="UtilidadeAcessoDados.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

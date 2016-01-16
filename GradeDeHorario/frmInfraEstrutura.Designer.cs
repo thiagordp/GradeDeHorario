@@ -28,10 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInfraEstrutura));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInfraEstrutura));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btnNovo = new System.Windows.Forms.ToolStripButton();
+            this.btnCancelar = new System.Windows.Forms.ToolStripButton();
+            this.btnSalvar = new System.Windows.Forms.ToolStripButton();
+            this.btnExcluir = new System.Windows.Forms.ToolStripButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.gbSala = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -49,10 +53,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cbbTipoEspaco = new System.Windows.Forms.ComboBox();
             this.dtgInfraestrutura = new System.Windows.Forms.DataGridView();
-            this.btnNovo = new System.Windows.Forms.ToolStripButton();
-            this.btnCancelar = new System.Windows.Forms.ToolStripButton();
-            this.btnSalvar = new System.Windows.Forms.ToolStripButton();
-            this.btnExcluir = new System.Windows.Forms.ToolStripButton();
             this.CODIGO_ESPACO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TIPO_ESPACO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CAPACIDADE_ESPACO = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -85,6 +85,54 @@
             this.toolStrip1.Size = new System.Drawing.Size(804, 69);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // btnNovo
+            // 
+            this.btnNovo.Image = global::GradeDeHorario.Properties.Resources.ic_new;
+            this.btnNovo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnNovo.Margin = new System.Windows.Forms.Padding(5);
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(44, 59);
+            this.btnNovo.Text = "Novo";
+            this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnCancelar.Enabled = false;
+            this.btnCancelar.Image = global::GradeDeHorario.Properties.Resources.ic_menu_close;
+            this.btnCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(57, 66);
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnSalvar.Enabled = false;
+            this.btnSalvar.Image = global::GradeDeHorario.Properties.Resources.ic_button;
+            this.btnSalvar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSalvar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(44, 59);
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnExcluir.Enabled = false;
+            this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
+            this.btnExcluir.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(45, 66);
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -337,54 +385,6 @@
             this.dtgInfraestrutura.Size = new System.Drawing.Size(784, 252);
             this.dtgInfraestrutura.TabIndex = 1;
             this.dtgInfraestrutura.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgInfraestrutura_CellDoubleClick);
-            // 
-            // btnNovo
-            // 
-            this.btnNovo.Image = global::GradeDeHorario.Properties.Resources.ic_new;
-            this.btnNovo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnNovo.Margin = new System.Windows.Forms.Padding(5);
-            this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(44, 59);
-            this.btnNovo.Text = "Novo";
-            this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnCancelar.Enabled = false;
-            this.btnCancelar.Image = global::GradeDeHorario.Properties.Resources.ic_menu_close;
-            this.btnCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(57, 66);
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnSalvar
-            // 
-            this.btnSalvar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnSalvar.Enabled = false;
-            this.btnSalvar.Image = global::GradeDeHorario.Properties.Resources.ic_button;
-            this.btnSalvar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSalvar.Margin = new System.Windows.Forms.Padding(5);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(44, 59);
-            this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
-            // 
-            // btnExcluir
-            // 
-            this.btnExcluir.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnExcluir.Enabled = false;
-            this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
-            this.btnExcluir.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(45, 66);
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // CODIGO_ESPACO
             // 

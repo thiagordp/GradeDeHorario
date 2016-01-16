@@ -27,16 +27,6 @@ namespace GradeDeHorario
             btnNovo.Enabled = false;
 
             novoRegistro = true;
-
-            try
-            {
-                InfraestruturaRegraNegocio novoespaco = new InfraestruturaRegraNegocio();
-
-            }
-            catch (Exception)
-            {
-
-            }
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -107,6 +97,7 @@ namespace GradeDeHorario
 
                     Limpar();
                     EstadoEditacao(false);
+                    btnNovo.Enabled = true;
                     MessageBox.Show("Espaço excluído com sucesso!", "Exclusão realizada", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
@@ -143,6 +134,7 @@ namespace GradeDeHorario
             try
             {
                 EstadoEditacao(true);
+                btnNovo.Enabled = false;
                 novoRegistro = false;
 
 

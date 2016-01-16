@@ -6,34 +6,92 @@
 //------------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 
-public class ProfessorAcessoDados
+namespace AcessoDados
 {
-    //
-    // Insere um professor no banco de dados
-    //
-    public void InsereProfessor() { }
+    public class ProfessorAcessoDados
+    {
+        //
+        // Insere um professor no banco de dados
+        //
+        public void InsereProfessor() { }
 
-    //
-    // Edita os atributos do professor indicado de acordo com os dados fornecidos
-    //
-    public void EditaProfessor() { }
+        //
+        // Edita os atributos do professor indicado de acordo com os dados fornecidos
+        //
+        public void EditaProfessor() { }
 
-    //
-    // Apaga o professor especificado
-    //
-    public void ApagaProfessor() { }
+        //
+        // Apaga o professor especificado
+        //
+        public void ApagaProfessor() { }
 
-    //
-    // Retorna todos os professores cadastrados
-    //
-    public void SelecionaTodaProfessor() { }
+        //
+        // Retorna todos os professores cadastrados
+        //
+        public DataTable SelecionaTodoProfessor()
+        {
+            StringBuilder sql = new StringBuilder();
+            SqlCommand comandoSql = new SqlCommand();
 
-    //
-    // Retorna o professor que contém o nome indicado -- REVER O FILTRO
-    //
-    public void SelecionaProfessor(string filtro) { }
+            try
+            {
+                using (SqlConnection conexao = new SqlConnection(Conexao.stringConexao))
+                {
+                    conexao.Open();
+
+                    sql.Append("SELECT PROFESSOR.*, NOME_DEPARTAMENTO FROM PROFESSOR INNER JOIN DEPARTAMENTO");
+                    sql.Append(" ON PROFESSOR.CODIGO_DEPARTAMENTO = DEPARTAMENTO.CODIGO_DEPARTAMENTO");
+                    sql.Append(" ORDER BY NOME_PROFESSOR ASC");
+
+                    comandoSql.CommandText = sql.ToString();
+                    comandoSql.Connection = conexao;
+                    DataTable dadoTabela = new DataTable();
+
+                    dadoTabela.Load(comandoSql.ExecuteReader());
+
+                    return dadoTabela;
+
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        //
+        // Retorna o professor que contém o nome indicado -- REVER O FILTRO
+        //
+        public void SelecionaProfessor(string filtro) { }
+
+        //
+        // Retorna uma lista com todos os departamentos cadastrados.
+        //
+        public DataTable SelecionaTodoDepartamento()
+        {
+            try
+            {
+                using (Modelos.Entidade contexto = new Modelos.Entidade())
+                {
+                    List<Modelos.DEPARTAMENTO> dep = contexto.DEPARTAMENTO.ToList();
+
+                    return AcessoDados.UtilidadeAcessoDados.ListToDataTable(dep);
+                }
+            }
+            catch (Exception)
+            {
+                //
+                throw;
+            }
+        }
+
+    }
+
+
 }
-

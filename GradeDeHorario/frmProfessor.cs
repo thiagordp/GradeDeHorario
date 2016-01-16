@@ -12,20 +12,17 @@ namespace GradeDeHorario
 {
     public partial class frmProfessor : Form
     {
+        ProfessorRegraNegocio professor;
+
         public frmProfessor()
         {
             InitializeComponent();
-            dtgProfessor.Rows.Add("1234", "FULANO DE TAL", "Dep. de Computação");
-            dtgProfessor.Rows.Add("4987", "CICLANO PEREIRA", "Dep. de Engenharia");
-            dtgProfessor.Rows.Add("4351", "BELTRANO ITAL", "Dep. de Fisioterapia");
         }
 
         private void btnNovo_Click(object sender, EventArgs e)
         {
-            btnNovo.Enabled = false;
+            btnNovo.Enabled = btnExcluir.Enabled = false;
             EstadoEditacao(true);
-
-            btnExcluir.Enabled = false;
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -52,6 +49,11 @@ namespace GradeDeHorario
         {
             try
             {
+
+
+
+
+
                 LimparTudo();
                 btnNovo.Enabled = true;
                 MessageBox.Show("Alterações realizadas com sucesso!", "Alterações concluídas", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -64,7 +66,6 @@ namespace GradeDeHorario
         private void btnCancelarEdicao_Click(object sender, EventArgs e)
         {
             LimparTexto();
-
         }
 
         private void LimparTudo()
@@ -85,7 +86,7 @@ namespace GradeDeHorario
         }
         private void EstadoEditacao(bool estado)
         {
-            btnCancelar.Enabled = btnSalvar.Enabled = btnExcluir.Enabled = estado;
+            btnCancelar.Enabled = btnSalvar.Enabled = btnExcluir.Enabled = gbProfessor.Enabled = estado;
             btnNovo.Enabled = !estado;
         }
 
@@ -96,6 +97,42 @@ namespace GradeDeHorario
             txtCodigoProfessor.Text = dtgProfessor.Rows[e.RowIndex].Cells["CODIGO_PROFESSOR"].Value.ToString();
             txtNomeProfessor.Text = dtgProfessor.Rows[e.RowIndex].Cells["NOME_PROFESSOR"].Value.ToString();
             cbbDepartamento.SelectedItem = dtgProfessor.Rows[e.RowIndex].Cells["DEP_PROFESSOR"].Value.ToString();
+        }
+
+        private void PreencheListaDepartamento()
+        {
+            try
+            {
+                professor = new ProfessorRegraNegocio();
+
+                cbbDepartamento.DataSource = professor.SelecionaTodoDepartamento();
+                cbbDepartamento.DisplayMember = "NOME_DEPARTAMENTO";
+                cbbDepartamento.ValueMember = "CODIGO_DEPARTAMENTO";
+                cbbDepartamento.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void PreencheTabelaProfessor()
+        {
+            try
+            {
+                professor = new ProfessorRegraNegocio();
+                dtgProfessor.DataSource = professor.SelecionaTodoProfessor();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void frmProfessor_Load(object sender, EventArgs e)
+        {
+            PreencheListaDepartamento();
+            PreencheTabelaProfessor();
         }
     }
 }

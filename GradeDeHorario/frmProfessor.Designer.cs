@@ -37,6 +37,8 @@
             this.btnSalvar = new System.Windows.Forms.ToolStripButton();
             this.btnExcluir = new System.Windows.Forms.ToolStripButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.dtgProfessor = new System.Windows.Forms.DataGridView();
+            this.gbProfessor = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,14 +46,15 @@
             this.txtNomeProfessor = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cbbDepartamento = new System.Windows.Forms.ComboBox();
-            this.dtgProfessor = new System.Windows.Forms.DataGridView();
             this.CODIGO_PROFESSOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NOME_PROFESSOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DEP_PROFESSOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NOME_DEPARTAMENTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DEPARTAMENTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgProfessor)).BeginInit();
+            this.gbProfessor.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -125,103 +128,16 @@
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.dtgProfessor, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.gbProfessor, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 69);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 95F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 110F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.Size = new System.Drawing.Size(639, 399);
             this.tableLayoutPanel1.TabIndex = 1;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 4;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.7746F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.22541F));
-            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.txtCodigoProfessor, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.txtNomeProfessor, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label4, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.cbbDepartamento, 1, 2);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(5, 5);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(5);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(629, 85);
-            this.tableLayoutPanel2.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(39, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Código:";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(47, 35);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Nome:";
-            // 
-            // txtCodigoProfessor
-            // 
-            this.txtCodigoProfessor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtCodigoProfessor.Location = new System.Drawing.Point(93, 3);
-            this.txtCodigoProfessor.Name = "txtCodigoProfessor";
-            this.txtCodigoProfessor.Size = new System.Drawing.Size(94, 22);
-            this.txtCodigoProfessor.TabIndex = 3;
-            // 
-            // txtNomeProfessor
-            // 
-            this.tableLayoutPanel2.SetColumnSpan(this.txtNomeProfessor, 3);
-            this.txtNomeProfessor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtNomeProfessor.Location = new System.Drawing.Point(93, 31);
-            this.txtNomeProfessor.Name = "txtNomeProfessor";
-            this.txtNomeProfessor.Size = new System.Drawing.Size(533, 22);
-            this.txtNomeProfessor.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 64);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Departamento:";
-            // 
-            // cbbDepartamento
-            // 
-            this.tableLayoutPanel2.SetColumnSpan(this.cbbDepartamento, 2);
-            this.cbbDepartamento.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbbDepartamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbDepartamento.FormattingEnabled = true;
-            this.cbbDepartamento.Items.AddRange(new object[] {
-            "DEC - Depto. de Computação",
-            "ENS - Depto. de Energia e Sustentabilidade",
-            "FQM - Depto. de Física Química e Matemática",
-            "TIC - Depto. de Tecnologia da Informação e Comunicação"});
-            this.cbbDepartamento.Location = new System.Drawing.Point(93, 59);
-            this.cbbDepartamento.Name = "cbbDepartamento";
-            this.cbbDepartamento.Size = new System.Drawing.Size(268, 21);
-            this.cbbDepartamento.TabIndex = 5;
             // 
             // dtgProfessor
             // 
@@ -246,20 +162,117 @@
             this.dtgProfessor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CODIGO_PROFESSOR,
             this.NOME_PROFESSOR,
-            this.DEP_PROFESSOR});
+            this.NOME_DEPARTAMENTO,
+            this.CODIGO_DEPARTAMENTO});
             this.dtgProfessor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgProfessor.Location = new System.Drawing.Point(5, 100);
+            this.dtgProfessor.Location = new System.Drawing.Point(5, 115);
             this.dtgProfessor.Margin = new System.Windows.Forms.Padding(5);
             this.dtgProfessor.Name = "dtgProfessor";
             this.dtgProfessor.RowHeadersVisible = false;
             this.dtgProfessor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgProfessor.Size = new System.Drawing.Size(629, 298);
+            this.dtgProfessor.Size = new System.Drawing.Size(629, 279);
             this.dtgProfessor.TabIndex = 2;
             this.dtgProfessor.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgProfessor_CellDoubleClick);
+            // 
+            // gbProfessor
+            // 
+            this.gbProfessor.Controls.Add(this.tableLayoutPanel2);
+            this.gbProfessor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbProfessor.Enabled = false;
+            this.gbProfessor.Location = new System.Drawing.Point(5, 5);
+            this.gbProfessor.Margin = new System.Windows.Forms.Padding(5);
+            this.gbProfessor.Name = "gbProfessor";
+            this.gbProfessor.Size = new System.Drawing.Size(629, 100);
+            this.gbProfessor.TabIndex = 3;
+            this.gbProfessor.TabStop = false;
+            this.gbProfessor.Text = "Cadastro de professor";
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 4;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.7746F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.22541F));
+            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label3, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.txtCodigoProfessor, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.txtNomeProfessor, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label4, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.cbbDepartamento, 1, 2);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 18);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(5);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(623, 79);
+            this.tableLayoutPanel2.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(39, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Código:";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(47, 32);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Nome:";
+            // 
+            // txtCodigoProfessor
+            // 
+            this.txtCodigoProfessor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtCodigoProfessor.Location = new System.Drawing.Point(93, 3);
+            this.txtCodigoProfessor.Name = "txtCodigoProfessor";
+            this.txtCodigoProfessor.Size = new System.Drawing.Size(94, 22);
+            this.txtCodigoProfessor.TabIndex = 3;
+            // 
+            // txtNomeProfessor
+            // 
+            this.tableLayoutPanel2.SetColumnSpan(this.txtNomeProfessor, 3);
+            this.txtNomeProfessor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtNomeProfessor.Location = new System.Drawing.Point(93, 29);
+            this.txtNomeProfessor.Name = "txtNomeProfessor";
+            this.txtNomeProfessor.Size = new System.Drawing.Size(527, 22);
+            this.txtNomeProfessor.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(3, 59);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(84, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Departamento:";
+            // 
+            // cbbDepartamento
+            // 
+            this.tableLayoutPanel2.SetColumnSpan(this.cbbDepartamento, 2);
+            this.cbbDepartamento.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbbDepartamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbDepartamento.FormattingEnabled = true;
+            this.cbbDepartamento.Location = new System.Drawing.Point(93, 55);
+            this.cbbDepartamento.Name = "cbbDepartamento";
+            this.cbbDepartamento.Size = new System.Drawing.Size(266, 21);
+            this.cbbDepartamento.TabIndex = 5;
             // 
             // CODIGO_PROFESSOR
             // 
             this.CODIGO_PROFESSOR.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_PROFESSOR.DataPropertyName = "CODIGO_PROFESSOR";
             this.CODIGO_PROFESSOR.HeaderText = "Código";
             this.CODIGO_PROFESSOR.Name = "CODIGO_PROFESSOR";
             this.CODIGO_PROFESSOR.ReadOnly = true;
@@ -268,18 +281,28 @@
             // NOME_PROFESSOR
             // 
             this.NOME_PROFESSOR.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NOME_PROFESSOR.DataPropertyName = "NOME_PROFESSOR";
             this.NOME_PROFESSOR.HeaderText = "Nome";
             this.NOME_PROFESSOR.Name = "NOME_PROFESSOR";
             this.NOME_PROFESSOR.ReadOnly = true;
             // 
-            // DEP_PROFESSOR
+            // NOME_DEPARTAMENTO
             // 
-            this.DEP_PROFESSOR.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.DEP_PROFESSOR.HeaderText = "Departamento";
-            this.DEP_PROFESSOR.MinimumWidth = 200;
-            this.DEP_PROFESSOR.Name = "DEP_PROFESSOR";
-            this.DEP_PROFESSOR.ReadOnly = true;
-            this.DEP_PROFESSOR.Width = 200;
+            this.NOME_DEPARTAMENTO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.NOME_DEPARTAMENTO.DataPropertyName = "NOME_DEPARTAMENTO";
+            this.NOME_DEPARTAMENTO.HeaderText = "Departamento";
+            this.NOME_DEPARTAMENTO.MinimumWidth = 200;
+            this.NOME_DEPARTAMENTO.Name = "NOME_DEPARTAMENTO";
+            this.NOME_DEPARTAMENTO.ReadOnly = true;
+            this.NOME_DEPARTAMENTO.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.NOME_DEPARTAMENTO.Width = 200;
+            // 
+            // CODIGO_DEPARTAMENTO
+            // 
+            this.CODIGO_DEPARTAMENTO.DataPropertyName = "CODIGO_DEPARTAMENTO";
+            this.CODIGO_DEPARTAMENTO.HeaderText = "idDepto";
+            this.CODIGO_DEPARTAMENTO.Name = "CODIGO_DEPARTAMENTO";
+            this.CODIGO_DEPARTAMENTO.Visible = false;
             // 
             // frmProfessor
             // 
@@ -295,12 +318,14 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Professor";
+            this.Load += new System.EventHandler(this.frmProfessor_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgProfessor)).EndInit();
+            this.gbProfessor.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgProfessor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,8 +347,10 @@
         private System.Windows.Forms.DataGridView dtgProfessor;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ToolStripButton btnExcluir;
+        private System.Windows.Forms.GroupBox gbProfessor;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR;
         private System.Windows.Forms.DataGridViewTextBoxColumn NOME_PROFESSOR;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DEP_PROFESSOR;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NOME_DEPARTAMENTO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DEPARTAMENTO;
     }
 }

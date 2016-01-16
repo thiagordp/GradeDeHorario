@@ -27,7 +27,6 @@ public class InfraestruturaRegraNegocio
         {
             throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
         }
-
     }
 
     // Verifica o novo registro e caso esteja correto, a camada de dados o armazenará.
@@ -103,6 +102,7 @@ public class InfraestruturaRegraNegocio
             throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
         }
     }
+
     public List<Modelos.ESPACO> SelecionaInfraEstrutura(string codigoEspaco)
     {
         try
