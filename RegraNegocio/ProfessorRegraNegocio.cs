@@ -13,7 +13,7 @@ namespace AcessoDados
 {
     public class ProfessorRegraNegocio
     {
-        private AcessoDados.ProfessorAcessoDados professorRN;
+        private AcessoDados.ProfessorAcessoDados professorAD;
 
         // Insere um novo cadastro de professor
         public void InsereProfessor(Modelos.PROFESSOR professor)
@@ -22,8 +22,8 @@ namespace AcessoDados
 
             try
             {
-                professorRN = new AcessoDados.ProfessorAcessoDados();
-                professorRN.InsereProfessor(professor);
+                professorAD = new AcessoDados.ProfessorAcessoDados();
+                professorAD.InsereProfessor(professor);
             }
             catch (Exception ex)
             {
@@ -33,21 +33,22 @@ namespace AcessoDados
 
         public DataTable SelecionaTodoProfessor()
         {
-            professorRN = new AcessoDados.ProfessorAcessoDados();
+            professorAD = new AcessoDados.ProfessorAcessoDados();
 
-            return professorRN.SelecionaTodoProfessor();
+            return professorAD.SelecionaTodoProfessor();
         }
 
         public void EditaProfessor(Modelos.PROFESSOR profAntigo, Modelos.PROFESSOR profAtual)
         {
-
+            professorAD = new ProfessorAcessoDados();
+            professorAD.EditaProfessor(profAntigo, profAtual);
 
         }
         public void VerificaProfessor(Modelos.PROFESSOR professor)
         {
             if (professor.CODIGO_PROFESSOR == 0)
             {
-                throw new Exception("O campo código do professorRN não pode ser nulo nem vazio!");
+                throw new Exception("O campo código do professor não pode ser nulo nem vazio!");
             }
             if (professor.CODIGO_DEPARTAMENTO == 0)
             {
@@ -55,14 +56,15 @@ namespace AcessoDados
             }
             if (professor.NOME_PROFESSOR.Trim() == "")
             {
-                throw new Exception("O campo nome do professorRN não pode ser vazio!");
+                throw new Exception("O campo nome do professor não pode ser vazio!");
             }
         }
 
         // Apaga um professorRN da lista.
         public void ApagaProfessor(Modelos.PROFESSOR professor)
         {
-
+            professorAD = new ProfessorAcessoDados();
+            professorAD.ApagaProfessor(professor);
         }
 
         public void SelecionaProfessor()
@@ -72,8 +74,8 @@ namespace AcessoDados
 
         public DataTable SelecionaTodoDepartamento()
         {
-            professorRN = new AcessoDados.ProfessorAcessoDados();
-            return professorRN.SelecionaTodoDepartamento();
+            professorAD = new AcessoDados.ProfessorAcessoDados();
+            return professorAD.SelecionaTodoDepartamento();
         }
     }
 }

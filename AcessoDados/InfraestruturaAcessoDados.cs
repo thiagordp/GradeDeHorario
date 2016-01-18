@@ -29,7 +29,7 @@ public class InfraestruturaAcessoDados
     }
 
     // Edita os atributos da disciplina indicada de acordo com os dados fornecidos
-    public void EditaInfraEstrutura(Modelos.ESPACO espacoAtual, Modelos.ESPACO espacoNovo)
+    public void EditaInfraEstrutura(Modelos.ESPACO espacoAntigo, Modelos.ESPACO espacoNovo)
     {
         Modelos.ESPACO tempEspaco;
 
@@ -37,7 +37,7 @@ public class InfraestruturaAcessoDados
         {
             tempEspaco = contexto.ESPACO.Where(esp => esp.CODIGO_ESPACO == espacoNovo.CODIGO_ESPACO).FirstOrDefault();
 
-            if (espacoAtual.CODIGO_ESPACO != espacoNovo.CODIGO_ESPACO) // Delete e insert espaço
+            if (espacoAntigo.CODIGO_ESPACO != espacoNovo.CODIGO_ESPACO) // Delete e insert espaço
             {
                 if (tempEspaco != null)
                 {
@@ -47,7 +47,7 @@ public class InfraestruturaAcessoDados
                 contexto.ESPACO.Add(espacoNovo); // Adiciona o novo espaço.
 
                 //Como insiriu-se um novo objeto, é necessário apagar o antigo.
-                tempEspaco = contexto.ESPACO.Where(esp => esp.CODIGO_ESPACO == espacoAtual.CODIGO_ESPACO).FirstOrDefault();
+                tempEspaco = contexto.ESPACO.Where(esp => esp.CODIGO_ESPACO == espacoAntigo.CODIGO_ESPACO).FirstOrDefault();
 
                 if (tempEspaco != null)
                 {

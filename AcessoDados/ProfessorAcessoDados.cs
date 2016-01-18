@@ -47,18 +47,89 @@ namespace AcessoDados
                 contexto.PROFESSOR.Add(professor);
                 contexto.SaveChanges();
             }
-
         }
 
         //
         // Edita os atributos do professor indicado de acordo com os dados fornecidos
         //
-        public void EditaProfessor() { }
+        public void EditaProfessor(Modelos.PROFESSOR profAntigo, Modelos.PROFESSOR profNovo)
+        {
+            Modelos.PROFESSOR tempProf;
+
+
+
+            using (Modelos.Entidade contexto = new Modelos.Entidade())
+            {
+                profNovo.DEPARTAMENTO = contexto.DEPARTAMENTO.Find(profNovo.CODIGO_DEPARTAMENTO); // Busca a instância do departamento indicado e armazena no objeto professor.
+
+                tempProf = contexto.PROFESSOR.Where(prof => prof.CODIGO_PROFESSOR == profNovo.CODIGO_PROFESSOR).FirstOrDefault();
+
+                if (profAntigo.CODIGO_PROFESSOR != profNovo.CODIGO_PROFESSOR)
+                {
+                    if (tempProf != null)
+                    {
+                        throw new Exception("O novo código para o professor já está cadastrado no banco!");
+                    }
+
+                    contexto.PROFESSOR.Add(profNovo);// Adiciona o novo espaço.
+
+                    //Como insiriu-se um novo objeto, é necessário apagar o antigo.
+                    tempProf = contexto.PROFESSOR.Where(prof => prof.CODIGO_PROFESSOR == profAntigo.CODIGO_PROFESSOR).FirstOrDefault();
+
+                    if (tempProf != null)
+                    {
+                        contexto.Entry(tempProf).State = System.Data.Entity.EntityState.Deleted; //Altera o estado do objeto para excluído.
+                    }
+                }
+                else
+                {
+                    if (tempProf == null)
+                    {
+                        throw new Exception("Objeto não encontrado!\nVerifique se há algum programa alterando o banco de dados.");
+                    }
+
+                    tempProf.CODIGO_PROFESSOR = profNovo.CODIGO_PROFESSOR;
+                    tempProf.CODIGO_DEPARTAMENTO = profNovo.CODIGO_DEPARTAMENTO;
+                    tempProf.NOME_PROFESSOR = profNovo.NOME_PROFESSOR;
+                    tempProf.DEPARTAMENTO = profNovo.DEPARTAMENTO;
+
+                    contexto.Entry(tempProf).State = System.Data.Entity.EntityState.Modified; // Marca a entidade como modificada
+                }
+                contexto.SaveChanges();
+            }
+        }
 
         //
         // Apaga o professor especificado
         //
-        public void ApagaProfessor() { }
+        public void ApagaProfessor(Modelos.PROFESSOR professor)
+        {
+            try
+            {
+                using (Modelos.Entidade contexto = new Modelos.Entidade())
+                {
+                    Modelos.PROFESSOR tempProfessor = contexto.PROFESSOR.Where(prof => prof.CODIGO_PROFESSOR == professor.CODIGO_PROFESSOR).FirstOrDefault();
+
+                    if (tempProfessor == null)
+                    {
+                        throw new Exception("Objeto não encontrado!\n\nVerifique se existe algum outro aplicativo manipulando o banco de dados.");
+                    }
+
+                    if (tempProfessor.DISCIPLINA_TURMA.Count != 0)
+                    {
+                        throw new Exception("O professor não pode ser excluído pois está alocado em alguma turma.\nDesaloque este professor para, então, excluí-lo.");
+                    }
+
+                    contexto.Entry(tempProfessor).State = System.Data.Entity.EntityState.Deleted;
+                    contexto.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+        }
 
         //
         // Retorna todos os professores cadastrados e os departamentos aos quais estão vinculados

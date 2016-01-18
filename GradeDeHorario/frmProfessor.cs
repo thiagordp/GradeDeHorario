@@ -35,8 +35,11 @@ namespace GradeDeHorario
             {
                 try
                 {
-                    // Excluir disciplina
+                    professorRN = new AcessoDados.ProfessorRegraNegocio();
 
+                    professorRN.ApagaProfessor(profAntigo);
+
+                    // Excluir disciplina
                     LimparTudo();
                     EstadoEditacao(false);
                     MessageBox.Show("Disciplina excluída com sucesso!", "Exclusão realizada", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -82,6 +85,7 @@ namespace GradeDeHorario
                 MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         private void btnCancelarEdicao_Click(object sender, EventArgs e)
         {
             LimparTexto();
@@ -125,6 +129,10 @@ namespace GradeDeHorario
                 txtCodigoProfessor.Text = dtgProfessor.Rows[e.RowIndex].Cells["CODIGO_PROFESSOR"].Value.ToString();
                 txtNomeProfessor.Text = dtgProfessor.Rows[e.RowIndex].Cells["NOME_PROFESSOR"].Value.ToString();
                 cbbDepartamento.SelectedValue = dtgProfessor.Rows[e.RowIndex].Cells["CODIGO_DEPARTAMENTO"].Value.ToString();
+
+                profAntigo.CODIGO_PROFESSOR = Convert.ToInt32(txtCodigoProfessor.Text);
+                profAntigo.NOME_PROFESSOR = txtNomeProfessor.Text;
+                profAntigo.CODIGO_DEPARTAMENTO = Convert.ToInt32(cbbDepartamento.SelectedValue);
             }
             catch (Exception ex)
             {
