@@ -31,20 +31,38 @@ namespace AcessoDados
             }
         }
 
+        // Retorna uma lista com todos os professores cadastrados.
         public DataTable SelecionaTodoProfessor()
         {
-            professorAD = new AcessoDados.ProfessorAcessoDados();
+            try
+            {
+                professorAD = new AcessoDados.ProfessorAcessoDados();
 
-            return professorAD.SelecionaTodoProfessor();
+                return professorAD.SelecionaTodoProfessor();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
+
         }
 
+        // Edita dados de um professor cadastrado.
         public void EditaProfessor(Modelos.PROFESSOR profAntigo, Modelos.PROFESSOR profAtual)
         {
-            professorAD = new ProfessorAcessoDados();
-            professorAD.EditaProfessor(profAntigo, profAtual);
-
+            try
+            {
+                professorAD = new ProfessorAcessoDados();
+                professorAD.EditaProfessor(profAntigo, profAtual);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
         }
-        public void VerificaProfessor(Modelos.PROFESSOR professor)
+
+        // Verifica se o usuário preencheu corretamente os dados do professor.
+        private void VerificaProfessor(Modelos.PROFESSOR professor)
         {
             if (professor.CODIGO_PROFESSOR == 0)
             {
@@ -60,22 +78,39 @@ namespace AcessoDados
             }
         }
 
-        // Apaga um professorRN da lista.
+        // Apaga um professor da lista.
         public void ApagaProfessor(Modelos.PROFESSOR professor)
         {
-            professorAD = new ProfessorAcessoDados();
-            professorAD.ApagaProfessor(professor);
+            try
+            {
+                professorAD = new ProfessorAcessoDados();
+                professorAD.ApagaProfessor(professor);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
         }
 
-        public void SelecionaProfessor()
+        // Seleciona um professor de acordo com o código de identificação.
+        public void SelecionaProfessor(Modelos.PROFESSOR professor)
         {
-
+            professorAD = new ProfessorAcessoDados();
+            professorAD.SelecionaProfessor(professor);
         }
 
+        // Seleciona todos os departamentos cadastrados.
         public DataTable SelecionaTodoDepartamento()
         {
-            professorAD = new AcessoDados.ProfessorAcessoDados();
-            return professorAD.SelecionaTodoDepartamento();
+            try
+            {
+                professorAD = new AcessoDados.ProfessorAcessoDados();
+                return professorAD.SelecionaTodoDepartamento();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
         }
     }
 }

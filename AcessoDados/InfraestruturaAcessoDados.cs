@@ -6,6 +6,8 @@
 //------------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 
@@ -80,23 +82,51 @@ public class InfraestruturaAcessoDados
     // Deleta a disciplina especificada
     public void ApagaInfraEstrutura(Modelos.ESPACO espaco)
     {
-        using (Modelos.Entidade contexto = new Modelos.Entidade())
+        try
         {
-            Modelos.ESPACO tempEspaco = contexto.ESPACO.Where(esp => esp.CODIGO_ESPACO == espaco.CODIGO_ESPACO).FirstOrDefault();
-
-            if (tempEspaco == null)
+            using (Modelos.Entidade contexto = new Modelos.Entidade())
             {
-                throw new Exception("Objeto não encontrado!\n\nVerifique se existe algum outro aplicativo manipulando o banco de dados.");
-            }
+                Modelos.ESPACO tempEspaco = contexto.ESPACO.Where(esp => esp.CODIGO_ESPACO == espaco.CODIGO_ESPACO).FirstOrDefault();
 
-            contexto.Entry(tempEspaco).State = System.Data.Entity.EntityState.Deleted;
-            contexto.SaveChanges();
+                if (tempEspaco == null)
+                {
+                    throw new Exception("Objeto não encontrado!\n\nVerifique se existe algum outro aplicativo manipulando o banco de dados.");
+                }
+
+                if (tempEspaco.DISCIPLINA_TURMA.Count > 0)
+                {
+                    throw new Exception("O espaço não pode ser excluído pois está alocado em alguma turma.\nDesaloque este espaço para, então, excluí-lo.");
+                }
+
+                contexto.Entry(tempEspaco).State = System.Data.Entity.EntityState.Deleted;
+                contexto.SaveChanges();
+            }
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
         }
     }
 
     // Retorna todas as disciplinas cadastradas
-    public List<Modelos.ESPACO> SelecionaTodaInfraEstrutura()
+    public DataTable SelecionaTodaInfraEstrutura()
     {
+        using (SqlConnection conexao = new SqlConnection(AcessoDados.Conexao.stringConexao))
+        {
+            conexao.Open();
+            StringBuilder sql = new StringBuilder();
+            SqlCommand comandoSql = new SqlCommand();
+
+            sql.Append("SELECT * FROM ESPACO");
+            comandoSql.CommandText = sql.ToString();
+            comandoSql.Connection = conexao;
+            DataTable dadosTabela = new DataTable();
+
+            dadosTabela.Load(comandoSql.ExecuteReader());
+
+            return dadosTabela; 
+        }
+        /*
         try
         {
             using (Modelos.Entidade contexto = new Modelos.Entidade())
@@ -107,7 +137,7 @@ public class InfraestruturaAcessoDados
         catch (Exception ex)
         {
             throw new Exception(ex.Message);
-        }
+        }*/
     }
 
     // Retorna as disciplinas que contém o nome indicado -- REVER O FILTRO

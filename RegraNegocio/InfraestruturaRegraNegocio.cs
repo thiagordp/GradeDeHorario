@@ -6,22 +6,22 @@
 //------------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 
 public class InfraestruturaRegraNegocio
 {
-    InfraestruturaAcessoDados infraEstrutura;
-
+    InfraestruturaAcessoDados infraEstruturaAD;
 
     //Seleciona todos os espacos
-    public List<Modelos.ESPACO> SelecionaTodaInfraEstrutura()
+    public DataTable SelecionaTodaInfraEstrutura()
     {
         try
         {
-            infraEstrutura = new InfraestruturaAcessoDados();
+            infraEstruturaAD = new InfraestruturaAcessoDados();
 
-            return infraEstrutura.SelecionaTodaInfraEstrutura();
+            return infraEstruturaAD.SelecionaTodaInfraEstrutura();
         }
         catch (Exception ex)
         {
@@ -34,12 +34,11 @@ public class InfraestruturaRegraNegocio
     public void InsereInfraEstrutura(Modelos.ESPACO espaco)
     {
         VerificaInfraEstrutura(espaco);
+
         try
         {
-
-            infraEstrutura = new InfraestruturaAcessoDados();
-
-            infraEstrutura.InsereInfraEstrutura(espaco);
+            infraEstruturaAD = new InfraestruturaAcessoDados();
+            infraEstruturaAD.InsereInfraEstrutura(espaco);
         }
         catch (Exception ex)
         {
@@ -55,10 +54,10 @@ public class InfraestruturaRegraNegocio
 
         try
         {
-            infraEstrutura = new InfraestruturaAcessoDados();
+            infraEstruturaAD = new InfraestruturaAcessoDados();
 
 
-            infraEstrutura.EditaInfraEstrutura(espacoAtual, espacoNovo);
+            infraEstruturaAD.EditaInfraEstrutura(espacoAtual, espacoNovo);
         }
         catch (Exception ex)
         {
@@ -94,8 +93,8 @@ public class InfraestruturaRegraNegocio
 
         try
         {
-            infraEstrutura = new InfraestruturaAcessoDados();
-            infraEstrutura.ApagaInfraEstrutura(espaco);
+            infraEstruturaAD = new InfraestruturaAcessoDados();
+            infraEstruturaAD.ApagaInfraEstrutura(espaco);
         }
         catch (Exception ex)
         {
@@ -107,9 +106,9 @@ public class InfraestruturaRegraNegocio
     {
         try
         {
-            infraEstrutura = new InfraestruturaAcessoDados();
+            infraEstruturaAD = new InfraestruturaAcessoDados();
 
-            return infraEstrutura.SelecionaInfraEstrutura(codigoEspaco);
+            return infraEstruturaAD.SelecionaInfraEstrutura(codigoEspaco);
         }
         catch (Exception ex)
         {

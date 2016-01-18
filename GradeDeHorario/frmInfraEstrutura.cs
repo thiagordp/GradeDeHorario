@@ -12,7 +12,7 @@ namespace GradeDeHorario
 {
     public partial class frmInfraEstrutura : Form
     {
-        private InfraestruturaRegraNegocio infraEstrutura;
+        private InfraestruturaRegraNegocio infraEstruturaRN;
         private bool novoRegistro = false;                           //Indica que é um novo registro caso 1 ou já existe caso contrário.
         private Modelos.ESPACO espacoAntigo = new Modelos.ESPACO();
 
@@ -44,15 +44,15 @@ namespace GradeDeHorario
                 espaco.QUADRO_BRANCO_ESPACO = chkQuadroBranco.Checked;
                 espaco.QUADRO_VIDRO_ESPACO = chkQuadroBranco.Checked;
 
-                infraEstrutura = new InfraestruturaRegraNegocio();
+                infraEstruturaRN = new InfraestruturaRegraNegocio();
 
                 if (novoRegistro == true)
                 {
-                    infraEstrutura.InsereInfraEstrutura(espaco);
+                    infraEstruturaRN.InsereInfraEstrutura(espaco);
                 }
                 else
                 {
-                    infraEstrutura.EditaInfraEstrutura(espacoAntigo, espaco);
+                    infraEstruturaRN.EditaInfraEstrutura(espacoAntigo, espaco);
                 }
 
 
@@ -73,26 +73,13 @@ namespace GradeDeHorario
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-
-
             if (MessageBox.Show("Você realmente deseja excluir o espaço selecionado?", "Exclusão de espaço", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 try
                 {
-                    /*Modelos.ESPACO espaco = new Modelos.ESPACO();
+                    infraEstruturaRN = new InfraestruturaRegraNegocio();
 
-                    espaco.CODIGO_ESPACO = txtIdentificacao.Text;
-                    espaco.CAPACIDADE_ESPACO = Convert.ToInt32(nudCapacidade.Value);
-                    espaco.TIPO_ESPACO = cbbTipoEspaco.SelectedItem.ToString();
-                    espaco.NUMERO_PC_ESPACO = Convert.ToInt32(nudNumComputador.Value);
-                    espaco.PROJETOR_ESPACO = chkProjetor.Checked;
-                    espaco.INTERNET_ESPACO = chkInternet.Checked;
-                    espaco.QUADRO_BRANCO_ESPACO = chkQuadroBranco.Checked;
-                    espaco.QUADRO_VIDRO_ESPACO = chkQuadroBranco.Checked;*/
-
-                    infraEstrutura = new InfraestruturaRegraNegocio();
-
-                    infraEstrutura.ApagaInfraEstrutura(espacoAntigo);
+                    infraEstruturaRN.ApagaInfraEstrutura(espacoAntigo);
                     PreencheTabela();
 
                     Limpar();
@@ -174,8 +161,15 @@ namespace GradeDeHorario
 
         private void PreencheTabela()
         {
-            infraEstrutura = new InfraestruturaRegraNegocio();
-            dtgInfraestrutura.DataSource = infraEstrutura.SelecionaTodaInfraEstrutura();
+            try
+            {
+                infraEstruturaRN = new InfraestruturaRegraNegocio();
+                dtgInfraestrutura.DataSource = infraEstruturaRN.SelecionaTodaInfraEstrutura();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

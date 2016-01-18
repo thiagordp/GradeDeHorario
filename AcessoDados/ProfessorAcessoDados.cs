@@ -34,29 +34,26 @@ namespace AcessoDados
                     throw new Exception("Já existe um professor com a identificação informada.");
                 }
 
-
+                // Referenciação do Departamento ao qual o professor pertence.
                 Modelos.DEPARTAMENTO depto = contexto.DEPARTAMENTO.Find(professor.CODIGO_DEPARTAMENTO);
-
                 if (depto == null)
                 {
                     throw new Exception("O departamento indicado não existe!\nCertifique-se que nenhuma outra aplicação esteja manipulando o banco de dados!");
                 }
-
                 professor.DEPARTAMENTO = depto;
 
+                // Insere e Salvar alterações.
                 contexto.PROFESSOR.Add(professor);
                 contexto.SaveChanges();
             }
         }
 
         //
-        // Edita os atributos do professor indicado de acordo com os dados fornecidos
+        // Edita os atributos do professor indicado de acordo com os dados fornecidos.
         //
         public void EditaProfessor(Modelos.PROFESSOR profAntigo, Modelos.PROFESSOR profNovo)
         {
             Modelos.PROFESSOR tempProf;
-
-
 
             using (Modelos.Entidade contexto = new Modelos.Entidade())
             {
@@ -126,7 +123,6 @@ namespace AcessoDados
             }
             catch (Exception ex)
             {
-
                 throw new Exception(ex.Message);
             }
         }
