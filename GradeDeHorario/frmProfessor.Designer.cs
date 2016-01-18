@@ -38,6 +38,10 @@
             this.btnExcluir = new System.Windows.Forms.ToolStripButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dtgProfessor = new System.Windows.Forms.DataGridView();
+            this.CODIGO_PROFESSOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NOME_PROFESSOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NOME_DEPARTAMENTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DEPARTAMENTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbProfessor = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,10 +50,6 @@
             this.txtNomeProfessor = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cbbDepartamento = new System.Windows.Forms.ComboBox();
-            this.CODIGO_PROFESSOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NOME_PROFESSOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NOME_DEPARTAMENTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CODIGO_DEPARTAMENTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgProfessor)).BeginInit();
@@ -174,6 +174,41 @@
             this.dtgProfessor.TabIndex = 2;
             this.dtgProfessor.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgProfessor_CellDoubleClick);
             // 
+            // CODIGO_PROFESSOR
+            // 
+            this.CODIGO_PROFESSOR.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_PROFESSOR.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR.HeaderText = "Código";
+            this.CODIGO_PROFESSOR.Name = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR.ReadOnly = true;
+            this.CODIGO_PROFESSOR.Width = 70;
+            // 
+            // NOME_PROFESSOR
+            // 
+            this.NOME_PROFESSOR.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NOME_PROFESSOR.DataPropertyName = "NOME_PROFESSOR";
+            this.NOME_PROFESSOR.HeaderText = "Nome";
+            this.NOME_PROFESSOR.Name = "NOME_PROFESSOR";
+            this.NOME_PROFESSOR.ReadOnly = true;
+            // 
+            // NOME_DEPARTAMENTO
+            // 
+            this.NOME_DEPARTAMENTO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.NOME_DEPARTAMENTO.DataPropertyName = "NOME_DEPARTAMENTO";
+            this.NOME_DEPARTAMENTO.HeaderText = "Departamento";
+            this.NOME_DEPARTAMENTO.MinimumWidth = 200;
+            this.NOME_DEPARTAMENTO.Name = "NOME_DEPARTAMENTO";
+            this.NOME_DEPARTAMENTO.ReadOnly = true;
+            this.NOME_DEPARTAMENTO.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.NOME_DEPARTAMENTO.Width = 200;
+            // 
+            // CODIGO_DEPARTAMENTO
+            // 
+            this.CODIGO_DEPARTAMENTO.DataPropertyName = "CODIGO_DEPARTAMENTO";
+            this.CODIGO_DEPARTAMENTO.HeaderText = "idDepto";
+            this.CODIGO_DEPARTAMENTO.Name = "CODIGO_DEPARTAMENTO";
+            this.CODIGO_DEPARTAMENTO.Visible = false;
+            // 
             // gbProfessor
             // 
             this.gbProfessor.Controls.Add(this.tableLayoutPanel2);
@@ -233,6 +268,7 @@
             // 
             // txtCodigoProfessor
             // 
+            this.txtCodigoProfessor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCodigoProfessor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtCodigoProfessor.Location = new System.Drawing.Point(93, 3);
             this.txtCodigoProfessor.Name = "txtCodigoProfessor";
@@ -241,6 +277,7 @@
             // 
             // txtNomeProfessor
             // 
+            this.txtNomeProfessor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tableLayoutPanel2.SetColumnSpan(this.txtNomeProfessor, 3);
             this.txtNomeProfessor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtNomeProfessor.Location = new System.Drawing.Point(93, 29);
@@ -268,41 +305,6 @@
             this.cbbDepartamento.Name = "cbbDepartamento";
             this.cbbDepartamento.Size = new System.Drawing.Size(266, 21);
             this.cbbDepartamento.TabIndex = 5;
-            // 
-            // CODIGO_PROFESSOR
-            // 
-            this.CODIGO_PROFESSOR.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_PROFESSOR.DataPropertyName = "CODIGO_PROFESSOR";
-            this.CODIGO_PROFESSOR.HeaderText = "Código";
-            this.CODIGO_PROFESSOR.Name = "CODIGO_PROFESSOR";
-            this.CODIGO_PROFESSOR.ReadOnly = true;
-            this.CODIGO_PROFESSOR.Width = 70;
-            // 
-            // NOME_PROFESSOR
-            // 
-            this.NOME_PROFESSOR.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.NOME_PROFESSOR.DataPropertyName = "NOME_PROFESSOR";
-            this.NOME_PROFESSOR.HeaderText = "Nome";
-            this.NOME_PROFESSOR.Name = "NOME_PROFESSOR";
-            this.NOME_PROFESSOR.ReadOnly = true;
-            // 
-            // NOME_DEPARTAMENTO
-            // 
-            this.NOME_DEPARTAMENTO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.NOME_DEPARTAMENTO.DataPropertyName = "NOME_DEPARTAMENTO";
-            this.NOME_DEPARTAMENTO.HeaderText = "Departamento";
-            this.NOME_DEPARTAMENTO.MinimumWidth = 200;
-            this.NOME_DEPARTAMENTO.Name = "NOME_DEPARTAMENTO";
-            this.NOME_DEPARTAMENTO.ReadOnly = true;
-            this.NOME_DEPARTAMENTO.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.NOME_DEPARTAMENTO.Width = 200;
-            // 
-            // CODIGO_DEPARTAMENTO
-            // 
-            this.CODIGO_DEPARTAMENTO.DataPropertyName = "CODIGO_DEPARTAMENTO";
-            this.CODIGO_DEPARTAMENTO.HeaderText = "idDepto";
-            this.CODIGO_DEPARTAMENTO.Name = "CODIGO_DEPARTAMENTO";
-            this.CODIGO_DEPARTAMENTO.Visible = false;
             // 
             // frmProfessor
             // 

@@ -16,10 +16,39 @@ namespace AcessoDados
 {
     public class ProfessorAcessoDados
     {
+        StringBuilder sql;
+        SqlCommand comandoSql;
+        DataTable dadosTabela;
+
         //
         // Insere um professor no banco de dados
         //
-        public void InsereProfessor() { }
+        public void InsereProfessor(Modelos.PROFESSOR professor)
+        {
+            using (Modelos.Entidade contexto = new Modelos.Entidade())
+            {
+                Modelos.PROFESSOR profExiste = contexto.PROFESSOR.Find(professor.CODIGO_PROFESSOR);
+
+                if (profExiste != null)
+                {
+                    throw new Exception("Já existe um professor com a identificação informada.");
+                }
+
+
+                Modelos.DEPARTAMENTO depto = contexto.DEPARTAMENTO.Find(professor.CODIGO_DEPARTAMENTO);
+
+                if (depto == null)
+                {
+                    throw new Exception("O departamento indicado não existe!\nCertifique-se que nenhuma outra aplicação esteja manipulando o banco de dados!");
+                }
+
+                professor.DEPARTAMENTO = depto;
+
+                contexto.PROFESSOR.Add(professor);
+                contexto.SaveChanges();
+            }
+
+        }
 
         //
         // Edita os atributos do professor indicado de acordo com os dados fornecidos
@@ -32,12 +61,12 @@ namespace AcessoDados
         public void ApagaProfessor() { }
 
         //
-        // Retorna todos os professores cadastrados
+        // Retorna todos os professores cadastrados e os departamentos aos quais estão vinculados
         //
         public DataTable SelecionaTodoProfessor()
         {
-            StringBuilder sql = new StringBuilder();
-            SqlCommand comandoSql = new SqlCommand();
+            sql = new StringBuilder();
+            comandoSql = new SqlCommand();
 
             try
             {
@@ -55,8 +84,19 @@ namespace AcessoDados
 
                     dadoTabela.Load(comandoSql.ExecuteReader());
 
-                    return dadoTabela;
+                    /*      MODO ALTERNATIVO
 
+                    using (Modelos.Entidade ctx = new Modelos.Entidade())
+                    {
+                        var query = (from prof in ctx.PROFESSOR
+                                     join dep in ctx.DEPARTAMENTO on prof.CODIGO_DEPARTAMENTO equals dep.CODIGO_DEPARTAMENTO
+                                     orderby prof.NOME_PROFESSOR
+                                     select new { prof, dep}).ToList();
+
+                        return AcessoDados.UtilidadeAcessoDados.ListToDataTable(query);
+                    }*/
+
+                    return dadoTabela;
                 }
             }
             catch (Exception ex)
@@ -68,7 +108,37 @@ namespace AcessoDados
         //
         // Retorna o professor que contém o nome indicado -- REVER O FILTRO
         //
-        public void SelecionaProfessor(string filtro) { }
+        public DataTable SelecionaProfessor(Modelos.PROFESSOR professor)
+        {
+            try
+            {
+                using (SqlConnection conexao = new SqlConnection(Conexao.stringConexao))
+                {
+                    sql = new StringBuilder();
+                    comandoSql = new SqlCommand();
+
+                    sql.Append("SELECT PROFESSOR.*, NOME_DEPARTAMENTO");
+                    sql.Append(" FROM PROFESSOR INNER JOIN DEPARTAMENTO");
+                    sql.Append(" ON PROFESSOR.CODIGO_DEPARTAMENTO = DEPARTAMENTO.CODIGO_DEPARTAMENTO");
+                    sql.Append(" WHERE PROFESSOR.NOME_PROFESSOR LIKE '@NOME%';");
+
+
+
+                    comandoSql.CommandText = sql.ToString();
+                    comandoSql.Parameters.AddWithValue("@NOME", professor.NOME_PROFESSOR);
+                    comandoSql.Connection = conexao;
+                    dadosTabela.Load(comandoSql.ExecuteReader());
+
+                    return dadosTabela;
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
 
         //
         // Retorna uma lista com todos os departamentos cadastrados.

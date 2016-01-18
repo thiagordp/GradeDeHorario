@@ -20,7 +20,7 @@ public class InfraestruturaAcessoDados
 
             if (espacoExiste != null)
             {
-                throw new Exception("O espaço com a identificação informada já está cadastrado.");
+                throw new Exception("Já existe um espaço com a identificação informada");
             }
 
             contexto.ESPACO.Add(espaco);

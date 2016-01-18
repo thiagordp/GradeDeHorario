@@ -9,47 +9,71 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
-
-public class ProfessorRegraNegocio
+namespace AcessoDados
 {
-    private AcessoDados.ProfessorAcessoDados professor;
-
-    // Insere um novo cadastro de professor
-    public void InsereProfessor()
+    public class ProfessorRegraNegocio
     {
+        private AcessoDados.ProfessorAcessoDados professorRN;
 
-    }
+        // Insere um novo cadastro de professor
+        public void InsereProfessor(Modelos.PROFESSOR professor)
+        {
+            VerificaProfessor(professor);
 
-    public DataTable SelecionaTodoProfessor()
-    {
-        professor = new AcessoDados.ProfessorAcessoDados();
+            try
+            {
+                professorRN = new AcessoDados.ProfessorAcessoDados();
+                professorRN.InsereProfessor(professor);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
+        }
 
-        return professor.SelecionaTodoProfessor();
-    }
+        public DataTable SelecionaTodoProfessor()
+        {
+            professorRN = new AcessoDados.ProfessorAcessoDados();
 
-    public void EditaProfessor()
-    {
+            return professorRN.SelecionaTodoProfessor();
+        }
 
-    }
-    public void VerificaProfessor()
-    {
+        public void EditaProfessor(Modelos.PROFESSOR profAntigo, Modelos.PROFESSOR profAtual)
+        {
 
-    }
 
-    public void ApagaProfessor()
-    {
+        }
+        public void VerificaProfessor(Modelos.PROFESSOR professor)
+        {
+            if (professor.CODIGO_PROFESSOR == 0)
+            {
+                throw new Exception("O campo código do professorRN não pode ser nulo nem vazio!");
+            }
+            if (professor.CODIGO_DEPARTAMENTO == 0)
+            {
+                throw new Exception("O campo código do Departamento não pode ser nulo nem vazio!");
+            }
+            if (professor.NOME_PROFESSOR.Trim() == "")
+            {
+                throw new Exception("O campo nome do professorRN não pode ser vazio!");
+            }
+        }
 
-    }
+        // Apaga um professorRN da lista.
+        public void ApagaProfessor(Modelos.PROFESSOR professor)
+        {
 
-    public void SelecionaProfessor()
-    {
+        }
 
-    }
+        public void SelecionaProfessor()
+        {
 
-    public DataTable SelecionaTodoDepartamento()
-    {
-        professor = new AcessoDados.ProfessorAcessoDados();
-        return professor.SelecionaTodoDepartamento();
+        }
+
+        public DataTable SelecionaTodoDepartamento()
+        {
+            professorRN = new AcessoDados.ProfessorAcessoDados();
+            return professorRN.SelecionaTodoDepartamento();
+        }
     }
 }
-

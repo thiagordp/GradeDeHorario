@@ -12,7 +12,9 @@ namespace GradeDeHorario
 {
     public partial class frmProfessor : Form
     {
-        ProfessorRegraNegocio professor;
+        private AcessoDados.ProfessorRegraNegocio professorRN;
+        private bool novoRegistro = false;
+        private Modelos.PROFESSOR profAntigo = new Modelos.PROFESSOR();
 
         public frmProfessor()
         {
@@ -21,8 +23,10 @@ namespace GradeDeHorario
 
         private void btnNovo_Click(object sender, EventArgs e)
         {
-            btnNovo.Enabled = btnExcluir.Enabled = false;
             EstadoEditacao(true);
+            btnNovo.Enabled = btnExcluir.Enabled = false;
+
+            novoRegistro = true;
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -49,9 +53,24 @@ namespace GradeDeHorario
         {
             try
             {
+                Modelos.PROFESSOR prof = new Modelos.PROFESSOR();
+
+                prof.CODIGO_PROFESSOR = int.Parse(txtCodigoProfessor.Text);
+                prof.CODIGO_DEPARTAMENTO = Convert.ToInt32(cbbDepartamento.SelectedValue);
+                prof.NOME_PROFESSOR = txtNomeProfessor.Text;
 
 
 
+                professorRN = new AcessoDados.ProfessorRegraNegocio();
+
+                if (novoRegistro == true)
+                {
+                    professorRN.InsereProfessor(prof);
+                }
+                else
+                {
+                    professorRN.EditaProfessor(profAntigo, prof);
+                }
 
 
                 LimparTudo();
@@ -70,10 +89,12 @@ namespace GradeDeHorario
 
         private void LimparTudo()
         {
+            professorRN = new AcessoDados.ProfessorRegraNegocio();
+
             txtCodigoProfessor.Clear();
             txtNomeProfessor.Clear();
-            dtgProfessor.Rows.Clear();
-
+            dtgProfessor.DataSource = professorRN.SelecionaTodoProfessor();
+            cbbDepartamento.SelectedIndex = -1;
             EstadoEditacao(false);
             /**** Chamar novamente a consulta de seleção da tabela de disciplinas ****/
         }
@@ -82,8 +103,11 @@ namespace GradeDeHorario
         {
             txtCodigoProfessor.Clear();
             txtNomeProfessor.Clear();
+
+            cbbDepartamento.SelectedIndex = -1;
             EstadoEditacao(false);
         }
+
         private void EstadoEditacao(bool estado)
         {
             btnCancelar.Enabled = btnSalvar.Enabled = btnExcluir.Enabled = gbProfessor.Enabled = estado;
@@ -92,20 +116,33 @@ namespace GradeDeHorario
 
         private void dtgProfessor_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            EstadoEditacao(true);
+            novoRegistro = false;
 
-            txtCodigoProfessor.Text = dtgProfessor.Rows[e.RowIndex].Cells["CODIGO_PROFESSOR"].Value.ToString();
-            txtNomeProfessor.Text = dtgProfessor.Rows[e.RowIndex].Cells["NOME_PROFESSOR"].Value.ToString();
-            cbbDepartamento.SelectedItem = dtgProfessor.Rows[e.RowIndex].Cells["DEP_PROFESSOR"].Value.ToString();
+            try
+            {
+                EstadoEditacao(true);
+
+                txtCodigoProfessor.Text = dtgProfessor.Rows[e.RowIndex].Cells["CODIGO_PROFESSOR"].Value.ToString();
+                txtNomeProfessor.Text = dtgProfessor.Rows[e.RowIndex].Cells["NOME_PROFESSOR"].Value.ToString();
+                cbbDepartamento.SelectedValue = dtgProfessor.Rows[e.RowIndex].Cells["CODIGO_DEPARTAMENTO"].Value.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro ao interagir com a tabela", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                LimparTexto();
+                btnNovo.Enabled = true;
+                btnCancelar.Enabled = btnExcluir.Enabled = btnSalvar.Enabled = false;
+            }
         }
 
         private void PreencheListaDepartamento()
         {
             try
             {
-                professor = new ProfessorRegraNegocio();
+                professorRN = new AcessoDados.ProfessorRegraNegocio();
 
-                cbbDepartamento.DataSource = professor.SelecionaTodoDepartamento();
+                cbbDepartamento.DataSource = professorRN.SelecionaTodoDepartamento();
                 cbbDepartamento.DisplayMember = "NOME_DEPARTAMENTO";
                 cbbDepartamento.ValueMember = "CODIGO_DEPARTAMENTO";
                 cbbDepartamento.SelectedIndex = -1;
@@ -120,8 +157,8 @@ namespace GradeDeHorario
         {
             try
             {
-                professor = new ProfessorRegraNegocio();
-                dtgProfessor.DataSource = professor.SelecionaTodoProfessor();
+                professorRN = new AcessoDados.ProfessorRegraNegocio();
+                dtgProfessor.DataSource = professorRN.SelecionaTodoProfessor();
             }
             catch (Exception ex)
             {

@@ -59,25 +59,25 @@ namespace AcessoDados
                 // Inserção do Departamento de Computação.
                 departamento = new Modelos.DEPARTAMENTO();
                 departamento.CODIGO_DEPARTAMENTO = 1;
-                departamento.NOME_DEPARTAMENTO = "Depto. de Computação (DEC)";
+                departamento.NOME_DEPARTAMENTO = "DEPTO. DE COMPUTAÇÃO (DEC)";
                 departamentos.Add(departamento);
 
                 // Inserção do Departamento de Energia e Sustentabilidade.
                 departamento = new Modelos.DEPARTAMENTO();
                 departamento.CODIGO_DEPARTAMENTO = 2;
-                departamento.NOME_DEPARTAMENTO = "Depto. de Energia e Sustentabilidade (ENS)";
+                departamento.NOME_DEPARTAMENTO = "DEPTO. DE ENERGIA E SUSTENTABILIDADE (ENS)";
                 departamentos.Add(departamento);
 
                 // Inserção do Departamento de Física, Química e Matemática.
                 departamento = new Modelos.DEPARTAMENTO();
                 departamento.CODIGO_DEPARTAMENTO = 3;
-                departamento.NOME_DEPARTAMENTO = "Depto. de Física, Química e Matemática (FQM)";
+                departamento.NOME_DEPARTAMENTO = "DEPTO. DE FÍSICA, QUÍMICA E MATEMÁTICA (FQM)";
                 departamentos.Add(departamento);
 
                 // Inserção do Departamento de Tecnologia da Informação e Comunicação.
                 departamento = new Modelos.DEPARTAMENTO();
                 departamento.CODIGO_DEPARTAMENTO = 4;
-                departamento.NOME_DEPARTAMENTO = "Depto. de Tecnologia da Informação e Comunicação (TIC)";
+                departamento.NOME_DEPARTAMENTO = "DEPTO. DE TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÃO (TIC)";
                 departamentos.Add(departamento);
 
                 // Adição de todos os departamentos no banco.
