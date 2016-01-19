@@ -58,6 +58,7 @@
     <Compile Include="InfraestruturaAcessoDados.cs" />
     <Compile Include="ProfessorAcessoDados.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelecionaCursoAcessoDados.cs" />
     <Compile Include="SelecionaDisciplinaAcessoDados.cs" />
     <Compile Include="UtilidadeAcessoDados.cs" />
   </ItemGroup>

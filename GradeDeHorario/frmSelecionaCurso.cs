@@ -12,6 +12,8 @@ namespace GradeDeHorario
 {
     public partial class frmSelecionaCurso : Form
     {
+        RegraNegocio.SelecionaCursoRegraNegocio cursoRN;
+
         public frmSelecionaCurso()
         {
             InitializeComponent();
@@ -25,8 +27,33 @@ namespace GradeDeHorario
             }
             else
             {
-                (new frmPrincipal(cbbCurso.SelectedIndex)).ShowDialog();
+                cursoRN = new RegraNegocio.SelecionaCursoRegraNegocio();
+                Modelos.CURSO cursoEscolhido = cursoRN.SelecionaCursoEscolhido(Convert.ToInt32(cbbCurso.SelectedValue));
+
+                (new frmPrincipal(cursoEscolhido)).ShowDialog();
             }
+        }
+
+        private void frmSelecionaCurso_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                PreencheListaCurso();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void PreencheListaCurso()
+        {
+            cursoRN = new RegraNegocio.SelecionaCursoRegraNegocio();
+
+            cbbCurso.DataSource = cursoRN.SelecionaTodoCurso();
+            cbbCurso.ValueMember = "CODIGO_CURSO";
+            cbbCurso.DisplayMember = "NOME_CURSO";
+            cbbCurso.SelectedIndex = -1;
         }
     }
 }

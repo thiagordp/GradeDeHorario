@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------------------
 frmPrincipal:
     
-    • Ajustar comportamento de acordo com o curso selecionado.
+    ✓ Ajustar comportamento de acordo com o curso selecionado.
 ----------------------------------------------------------------------------------------------
 frmDisciplina:
     

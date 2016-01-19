@@ -12,15 +12,13 @@ namespace GradeDeHorario
 {
     public partial class frmGradeHorario : Form
     {
-        private int curso;
+        private Modelos.CURSO curso { set; get; }
 
-        public frmGradeHorario(int curso)
+        public frmGradeHorario(Modelos.CURSO curso)
         {
             InitializeComponent();
             this.curso = curso;
             InicializaGrade();
-
-
         }
 
         //Adicionar no BD um n..n na Grade com a Disci_Turma

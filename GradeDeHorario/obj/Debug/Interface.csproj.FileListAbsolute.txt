@@ -26,11 +26,6 @@ D:\Projetos\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.exe
 D:\Projetos\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.pdb
 D:\Projetos\GradeDeHorario\GradeDeHorario\bin\Debug\AcessoDados.dll
 D:\Projetos\GradeDeHorario\GradeDeHorario\bin\Debug\AcessoDados.pdb
-D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Debug\GradeDeHorario.exe.config
-D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.exe
-D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.pdb
-D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Debug\GradeDeHorario.exe
-D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Debug\GradeDeHorario.pdb
 D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Debug\EntityFramework.dll
 D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Debug\EntityFramework.SqlServer.dll
 D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Debug\Modelos.dll
@@ -54,3 +49,8 @@ D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.frmSemestr
 D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.frmTurma.resources
 D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.Properties.Resources.resources
 D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\Interface.csproj.GenerateResource.Cache
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Debug\Grade de Horários - UFSC Araranguá.exe.config
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Debug\Grade de Horários - UFSC Araranguá.exe
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Debug\Grade de Horários - UFSC Araranguá.pdb
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\Grade de Horários - UFSC Araranguá.exe
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\Grade de Horários - UFSC Araranguá.pdb

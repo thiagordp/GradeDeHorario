@@ -12,9 +12,9 @@ namespace GradeDeHorario
 {
     public partial class frmTurma : Form
     {
-        private int curso;
+        private Modelos.CURSO curso;
 
-        public frmTurma(int curso)
+        public frmTurma(Modelos.CURSO curso)
         {
             InitializeComponent();
             this.curso = curso;

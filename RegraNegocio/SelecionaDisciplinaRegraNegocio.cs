@@ -9,12 +9,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class SelecionaDisciplinaRegraNegocio
+namespace RegraNegocio
 {
-    public void SelecionaDisciplina() { }
-    
-    public void VerificaSelecao() { }
+    public class SelecionaDisciplinaRegraNegocio
+    {
+        public void SelecionaDisciplina() { }
 
-    
+        public void VerificaSelecao() { }
+        
+    }
 }
+
 

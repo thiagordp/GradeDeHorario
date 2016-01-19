@@ -108,25 +108,25 @@ namespace AcessoDados
                 // Inserção do curso de Fisioterapia.
                 curso = new Modelos.CURSO();
                 curso.CODIGO_CURSO = 654;
-                curso.NOME_CURSO = "Fisioterapia";
+                curso.NOME_CURSO = "FISIOTERAPIA";
                 cursos.Add(curso);
 
                 // Inserção do curso de Engenharia de Energia.
                 curso = new Modelos.CURSO();
                 curso.CODIGO_CURSO = 653;
-                curso.NOME_CURSO = "Engenharia de Energia";
+                curso.NOME_CURSO = "ENGENHARIA DE ENERGIA";
                 cursos.Add(curso);
 
                 // Inserção do curso de Engenharia de Computação.
                 curso = new Modelos.CURSO();
                 curso.CODIGO_CURSO = 655;
-                curso.NOME_CURSO = "Engenharia de Computação";
+                curso.NOME_CURSO = "ENGENHARIA DE COMPUTAÇÃO";
                 cursos.Add(curso);
 
                 // Inserção do curso de TIC.
                 curso = new Modelos.CURSO();
                 curso.CODIGO_CURSO = 652;
-                curso.NOME_CURSO = "Tecnologias da Informação e Comunicação";
+                curso.NOME_CURSO = "TECNOLOGIAS DA INFORMAÇÃO E COMUNICAÇÃO";
                 cursos.Add(curso);
 
                 using (Modelos.Entidade contexto = new Modelos.Entidade())

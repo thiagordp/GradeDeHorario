@@ -87,11 +87,6 @@
             this.cbbCurso.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbbCurso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbCurso.FormattingEnabled = true;
-            this.cbbCurso.Items.AddRange(new object[] {
-            "Fisioterapia",
-            "Engenharia de Computação",
-            "Engenharia de Energia",
-            "Tecnologias da Informação e Comunicação"});
             this.cbbCurso.Location = new System.Drawing.Point(10, 71);
             this.cbbCurso.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
             this.cbbCurso.Name = "cbbCurso";
@@ -137,6 +132,7 @@
             this.Name = "frmSelecionaCurso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seleção de curso";
+            this.Load += new System.EventHandler(this.frmSelecionaCurso_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);

@@ -12,10 +12,13 @@ namespace GradeDeHorario
 {
     public partial class frmSemestre : Form
     {
-        public frmSemestre()
+        private Modelos.CURSO curso;
+
+        public frmSemestre(Modelos.CURSO curso)
         {
             InitializeComponent();
-            dtgSemestre.Rows.Add("");
+
+            this.curso = curso;
         }
 
         private void btnNovo_Click(object sender, EventArgs e)

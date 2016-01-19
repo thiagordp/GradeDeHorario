@@ -49,7 +49,6 @@ namespace GradeDeHorario
                     MessageBox.Show(ex.Message, "Erro ao excluir disciplina", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-
         }
 
         private void btnSalvarEdicao_Click(object sender, EventArgs e)
@@ -61,9 +60,7 @@ namespace GradeDeHorario
                 prof.CODIGO_PROFESSOR = int.Parse(txtCodigoProfessor.Text);
                 prof.CODIGO_DEPARTAMENTO = Convert.ToInt32(cbbDepartamento.SelectedValue);
                 prof.NOME_PROFESSOR = txtNomeProfessor.Text;
-
-
-
+                                
                 professorRN = new AcessoDados.ProfessorRegraNegocio();
 
                 if (novoRegistro == true)
@@ -74,7 +71,6 @@ namespace GradeDeHorario
                 {
                     professorRN.EditaProfessor(profAntigo, prof);
                 }
-
 
                 LimparTudo();
                 btnNovo.Enabled = true;

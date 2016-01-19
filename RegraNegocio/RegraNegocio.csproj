@@ -60,6 +60,7 @@
     <Compile Include="InfraestruturaRegraNegocio.cs" />
     <Compile Include="ProfessorRegraNegocio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelecionaCursoRegraNegocio.cs" />
     <Compile Include="SelecionaDisciplinaRegraNegocio.cs" />
   </ItemGroup>
   <ItemGroup>

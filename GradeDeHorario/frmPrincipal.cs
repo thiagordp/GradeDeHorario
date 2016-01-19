@@ -12,26 +12,26 @@ namespace GradeDeHorario
 {
     public partial class frmPrincipal : Form
     {
-        private int curso { set; get; }
+        private Modelos.CURSO curso { set; get; }
 
-        public frmPrincipal(int index_curso)
+        public frmPrincipal(Modelos.CURSO curso)
         {
             InitializeComponent();
 
-            curso = index_curso;
+            this.curso = curso;
 
-            switch (index_curso)
+            switch (curso.CODIGO_CURSO)
             {
-                case 0:
+                case 654:
                     this.Text = "Grade de horários - Fisioterapia";
                     break;
-                case 1:
+                case 655:
                     this.Text = "Grade de horários - Engenharia de Computação";
                     break;
-                case 2:
+                case 653:
                     this.Text = "Grade de horários - Engenharia de Energia";
                     break;
-                case 3:
+                case 652:
                     this.Text = "Grade de horários - Tecnologias da Informação e Comunicação";
                     break;
             }
@@ -64,7 +64,7 @@ namespace GradeDeHorario
 
         private void btnSemestre_Click(object sender, EventArgs e)
         {
-            (new frmSemestre()).ShowDialog();
+            (new frmSemestre(curso)).ShowDialog();
         }
 
         private void btnTurma_Click(object sender, EventArgs e)
