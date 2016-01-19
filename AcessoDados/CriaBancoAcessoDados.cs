@@ -169,6 +169,5 @@ namespace AcessoDados
                 throw new Exception("VerificarBanco(): \"" + ex.Message + "\"");
             }
         }
-
     }
 }

@@ -1,0 +1,60 @@
+----------------------------------------------------------------------------------------------
+frmPrincipal:
+    
+    • Ajustar comportamento de acordo com o curso selecionado.
+----------------------------------------------------------------------------------------------
+frmDisciplina:
+    
+    • Comportamento da Interface.
+    • Inserção, edição, exclusão e listagem de disciplinas.
+    • Comunicação com o formulário de disciplinas requisito.
+    • Inserção, edição, exclusão e listagem de disciplinas requisito.
+----------------------------------------------------------------------------------------------
+frmSelecionaDisciplina:
+
+    • Comportamento de interface
+    • Listagem e seleção de disciplinas
+    • Comunicação com o frmDisciplina: envio da lista com as disc. selec.
+----------------------------------------------------------------------------------------------
+frmFase:
+
+    • Comportamento de interface.
+    • Pesquisa e listagem de todas as disciplinas.
+    • Inserção, edição, exclusão e listagem de fases de acordo com o curso.
+    • Inserção, edição, exclusão e listagem de disciplinas de acordo com a fase do curso.
+----------------------------------------------------------------------------------------------
+frmSemestre:
+
+    • Comportamento de interface.
+    • Inserção, edição, exclusão e listagem de semestres.
+----------------------------------------------------------------------------------------------
+frmTurma:
+
+    • Comportamento de interface.
+    • Verificar se é necessário inserir, editar etc.
+        ○ (Sim) Inserção, edição, exclusão e listagem de turmas de acordo com o semestre.
+        ○ (Não) Apagar formulário.
+----------------------------------------------------------------------------------------------
+frmProfessor:
+
+    • CONCLUÍDO
+----------------------------------------------------------------------------------------------
+frmInfraestrutura
+
+    • CONCLUÍDO
+----------------------------------------------------------------------------------------------
+frmGradeHorario
+
+    • Comportamento da interface.
+    • Layout da grade.
+    • Listagem de fases
+    • Listagem de semestres
+    • Carregar a grade para a fase e o semestre indicados.
+    • Salvamento da grade.
+    • Listagem de disciplinas
+    • Listagem de Professores
+    • Listagem de Salas
+    • Adição de Disc, Prof, e Lab. (DPL) em uma célula da grade.
+    • Verificar a validade da DPL para tal horário.
+    • Imprimir PDF com a grade atual com todas a info de acordo com o modelo.
+----------------------------------------------------------------------------------------------
