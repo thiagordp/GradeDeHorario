@@ -31,9 +31,14 @@ namespace GradeDeHorario
         {
             for (int i = 0; i < dtgSelecionaDisciplina.Rows.Count; i++)
             {
-                dtgSelecionaDisciplina.Rows[i].Selected = false;
                 dtgSelecionaDisciplina.Rows[i].Cells[0].Value = false;
             }
+            dtgSelecionaDisciplina.ClearSelection();
+        }
+
+        private void ListaRequisito()
+        {
+
         }
 
         private void VerificaDisciplinaSelecionada()

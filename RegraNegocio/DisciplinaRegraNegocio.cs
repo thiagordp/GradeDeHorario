@@ -19,18 +19,23 @@ namespace RegraNegocio
 {
     public class DisciplinaRegraNegocio
     {
-        AcessoDados.DisciplinaAcessoDados disciplinaAD;
-        Form frmDisciplina;
+        private AcessoDados.DisciplinaAcessoDados disciplinaAD;
+        private Form frmDisciplina;
+
 
         public DisciplinaRegraNegocio(Form frm)
         {
             frmDisciplina = frm;
         }
-        
-        // Insere uma disciplina no banco.
-        public void InsereDisciplina(Modelos.DISCIPLINA disciplina, DataTable disciplinaRequisito)
-        {
 
+        // Insere uma disciplina no banco.
+        public void InsereDisciplina(Modelos.DISCIPLINA disciplina, DataGridView disciplinaRequisito)
+        {
+            VerificaDisciplina(disciplina);
+            VerificaRequisitos(disciplina, disciplinaRequisito);
+
+            disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
+            disciplinaAD.InsereDisciplina(disciplina, disciplinaRequisito);
         }
 
         // Edita uma disciplina cadastrada.
@@ -50,17 +55,55 @@ namespace RegraNegocio
             return disciplinaAD.SelecionaTodaDisciplina();
         }
 
-        //
-        public void SelecionaDisciplina()
+        // Seleciona a disciplina indicada
+        public Modelos.DISCIPLINA SelecionaDisciplina(string codigoDisciplina)
         {
+            disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
 
+            return disciplinaAD.SelecionaDisciplina(codigoDisciplina);
         }
 
-        // Seleciona todo os departamentos
+        // Seleciona todo os departamentos.
         public DataTable SelecionaTodoDepartamento()
         {
             return AcessoDados.UtilidadeAcessoDados.SelecionaTodoDepartamento();
         }
 
+        // Verifica os campos da disciplina informada.
+        private void VerificaDisciplina(Modelos.DISCIPLINA disciplina)
+        {
+            if (disciplina.CODIGO_DISCIPLINA.Trim() == "")
+            {
+                throw new Exception("O campo de código da disciplina não pode ser vazio!");
+            }
+            
+            if (SelecionaDisciplina(disciplina.CODIGO_DISCIPLINA) != null)
+            {
+                throw new Exception("Uma disciplina com o código informado já está cadastrada.");
+            }
+
+            if (disciplina.NOME_DISCIPLINA.Trim() == "")
+            {
+                throw new Exception("O campo de nome da disciplina não pode ser vazio!");
+            }
+
+            if (disciplina.CODIGO_DEPARTAMENTO == 0)
+            {
+                throw new Exception("É necessário escolher o departamento ao qual a disciplina será vinculada!");
+            }
+
+        }
+
+        // Verifica a lista de requisitos para a disciplina informada.
+        private void VerificaRequisitos(Modelos.DISCIPLINA disciplina, DataGridView requisitos)
+        {
+            for (int i = 0; i < requisitos.Rows.Count; i++)
+            {
+                if (requisitos.Rows[i].Cells["CODIGO_DISCIPLINA_REQ"].Value.ToString() == disciplina.CODIGO_DISCIPLINA)
+                {
+                    throw new Exception("Lista de Requisitos inválida.\nUma disciplina não pode ser requisito de si própria.");
+                }
+            }
+        }
     }
 }

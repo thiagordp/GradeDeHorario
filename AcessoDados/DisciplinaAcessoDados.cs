@@ -5,11 +5,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Text;
+using System.Windows.Forms;
+
 namespace AcessoDados
 {
 
@@ -19,21 +19,51 @@ namespace AcessoDados
         SqlCommand comandoSql;
         DataTable dadosTabela;
 
+
         //
         // Insere uma nova disciplina no banco de dados
         //
-        public void InsereDisciplina()
+        public void InsereDisciplina(Modelos.DISCIPLINA disciplina, DataGridView requisitos)
         {
+            Modelos.DISCIPLINA tempDisciplina;
 
+            try
+            {
+                using (Modelos.Entidade contexto = new Modelos.Entidade())
+                {
+                    for (int i = 0; i < requisitos.Rows.Count; i++)
+                    {
+                        tempDisciplina = contexto.DISCIPLINA.Find(requisitos.Rows[i].Cells["CODIGO_DISCIPLINA_REQ"].Value.ToString());
+
+                        if (tempDisciplina == null)
+                        {
+                            throw new Exception("Uma disciplina requisito não foi encontrada no banco de dados.\nVerifique se existe alguma aplicação externa que esteja manipulando o banco de dados.");
+                        }
+
+                        disciplina.DISCIPLINA1.Add(tempDisciplina);
+                    }
+
+                    contexto.DISCIPLINA.Add(disciplina);
+                    contexto.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         //
         // Edita os atributos da disciplina indicada de acordo com os dados fornecidos
         //
-        public void EditaDisciplina() { }
+        public void EditaDisciplina()
+        {
+        }
 
         // Deleta a disciplina especificada
-        public void ApagaDisciplina() { }
+        public void ApagaDisciplina()
+        {
+        }
 
         // Retorna todas as disciplinas cadastradas
         public DataTable SelecionaTodaDisciplina()
@@ -63,9 +93,19 @@ namespace AcessoDados
         }
 
         // Retorna as disciplinas que contém o nome indicado -- REVER O FILTRO
-        public Modelos.DISCIPLINA SelecionaDisciplina(string filtro)
+        public Modelos.DISCIPLINA SelecionaDisciplina(string codigoDisciplina)
         {
-            return null;
+            try
+            {
+                using (Modelos.Entidade contexto = new Modelos.Entidade())
+                {
+                    return contexto.DISCIPLINA.Find(codigoDisciplina);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
     }

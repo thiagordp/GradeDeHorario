@@ -12,13 +12,17 @@ namespace GradeDeHorario
 {
     public partial class frmDisciplina : Form
     {
-        RegraNegocio.DisciplinaRegraNegocio disciplinaRN;
-        Modelos.DISCIPLINA disciplinaAntiga = new Modelos.DISCIPLINA();
+        private RegraNegocio.DisciplinaRegraNegocio disciplinaRN;
+        private Modelos.DISCIPLINA disciplinaAntiga = new Modelos.DISCIPLINA();
 
 
         public frmDisciplina()
         {
             InitializeComponent();
+
+            dtgDisciplinaRequisito.Rows.Add("ARA3214", "CÁLCULO I");
+            dtgDisciplinaRequisito.Rows.Add("ARA1234", "FÍSICA B");
+
         }
 
         private void btnSelecionaRequisito_Click(object sender, EventArgs e)
@@ -35,8 +39,6 @@ namespace GradeDeHorario
             EstadoEditacao(true);
 
             btnExcluir.Enabled = false;
-
-
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -95,6 +97,17 @@ namespace GradeDeHorario
         {
             try
             {
+                Modelos.DISCIPLINA disciplina = new Modelos.DISCIPLINA();
+
+                disciplina.CODIGO_DISCIPLINA = txtCodigo.Text;
+                disciplina.CREDITO_DISCIPLINA = Convert.ToInt32(nudCreditoDisplicina.Value);
+                disciplina.CODIGO_DEPARTAMENTO = Convert.ToInt32(cbbDepartamento.SelectedValue);
+                disciplina.NOME_DISCIPLINA = txtNomeDisciplina.Text;
+
+                disciplinaRN = new RegraNegocio.DisciplinaRegraNegocio(this);
+
+                disciplinaRN.InsereDisciplina(disciplina, dtgDisciplinaRequisito);
+
                 LimparTudo();
                 MessageBox.Show("Alterações realizadas com sucesso!", "Alterações concluídas", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -127,6 +140,30 @@ namespace GradeDeHorario
             PreencheTabelaDisciplina();
         }
 
+        private DataTable DataGridViewToDataTable()
+        {
+            DataSet ds = new DataSet();
+            DataTable dt = new DataTable();
+
+            foreach (DataGridViewColumn col in dtgDisciplinaRequisito.Columns)
+            {
+                dt.Columns.Add(col.DataPropertyName, col.ValueType);
+            }
+            foreach (DataGridViewRow gridRow in dtgDisciplinaRequisito.Rows)
+            {
+                if (gridRow.IsNewRow)
+                    continue;
+                DataRow dtRow = dt.NewRow();
+                for (int i1 = 0; i1 < dtgDisciplinaRequisito.Columns.Count; i1++)
+                    dtRow[i1] = (gridRow.Cells[i1].Value == null ? DBNull.Value : gridRow.Cells[i1].Value);
+                dt.Rows.Add(dtRow);
+            }
+            ds.Tables.Add(dt);
+
+            return dt;
+        }
+
+
         private void PreencheListaDepartamento()
         {
             try
@@ -144,6 +181,7 @@ namespace GradeDeHorario
             }
         }
 
+
         private void PreencheTabelaDisciplina()
         {
             try
@@ -159,9 +197,17 @@ namespace GradeDeHorario
             }
         }
 
-        private void PreencheTabelaDisciplinaRequisito()
+        private void PreencheTabelaDisciplinaRequisito(Modelos.DISCIPLINA disciplina)
         {
+            try
+            {
 
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
         }
     }
 }
