@@ -104,8 +104,7 @@ namespace AcessoDados
         {
             try
             {
-                professorAD = new AcessoDados.ProfessorAcessoDados();
-                return professorAD.SelecionaTodoDepartamento();
+                return AcessoDados.UtilidadeAcessoDados.SelecionaTodoDepartamento();
             }
             catch (Exception ex)
             {

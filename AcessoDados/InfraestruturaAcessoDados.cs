@@ -110,7 +110,7 @@ public class InfraestruturaAcessoDados
 
     // Retorna todas as disciplinas cadastradas
     public DataTable SelecionaTodaInfraEstrutura()
-    {
+    {/*
         using (SqlConnection conexao = new SqlConnection(AcessoDados.Conexao.stringConexao))
         {
             conexao.Open();
@@ -125,19 +125,19 @@ public class InfraestruturaAcessoDados
             dadosTabela.Load(comandoSql.ExecuteReader());
 
             return dadosTabela; 
-        }
-        /*
+        }*/
+        
         try
         {
             using (Modelos.Entidade contexto = new Modelos.Entidade())
             {
-                return contexto.ESPACO.ToList();
+                return AcessoDados.UtilidadeAcessoDados.ListToDataTable(contexto.ESPACO.ToList());
             }
         }
         catch (Exception ex)
         {
             throw new Exception(ex.Message);
-        }*/
+        }
     }
 
     // Retorna as disciplinas que contém o nome indicado -- REVER O FILTRO

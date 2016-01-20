@@ -28,10 +28,13 @@ namespace Modelos
         public Nullable<int> CODIGO_DEPARTAMENTO { get; set; }
     
         public virtual DEPARTAMENTO DEPARTAMENTO { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DISCIPLINA_CURSO> DISCIPLINA_CURSO { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DISCIPLINA> DISCIPLINA1 { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DISCIPLINA> DISCIPLINA2 { get; set; }
     }

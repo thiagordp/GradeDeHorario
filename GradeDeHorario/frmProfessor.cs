@@ -39,14 +39,14 @@ namespace GradeDeHorario
 
                     professorRN.ApagaProfessor(profAntigo);
 
-                    // Excluir disciplina
+                    // Excluir professor
                     LimparTudo();
                     EstadoEditacao(false);
-                    MessageBox.Show("Disciplina excluída com sucesso!", "Exclusão realizada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Professor excluído com sucesso!", "Exclusão realizada", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "Erro ao excluir disciplina", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(ex.Message, "Erro ao excluir professor", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -60,7 +60,7 @@ namespace GradeDeHorario
                 prof.CODIGO_PROFESSOR = int.Parse(txtCodigoProfessor.Text);
                 prof.CODIGO_DEPARTAMENTO = Convert.ToInt32(cbbDepartamento.SelectedValue);
                 prof.NOME_PROFESSOR = txtNomeProfessor.Text;
-                                
+
                 professorRN = new AcessoDados.ProfessorRegraNegocio();
 
                 if (novoRegistro == true)
@@ -163,6 +163,7 @@ namespace GradeDeHorario
             {
                 professorRN = new AcessoDados.ProfessorRegraNegocio();
                 dtgProfessor.DataSource = professorRN.SelecionaTodoProfessor();
+                dtgProfessor.ClearSelection();
             }
             catch (Exception ex)
             {

@@ -19,22 +19,7 @@ namespace GradeDeHorario
             InitializeComponent();
 
             this.curso = curso;
-
-            switch (curso.CODIGO_CURSO)
-            {
-                case 654:
-                    this.Text = "Grade de horários - Fisioterapia";
-                    break;
-                case 655:
-                    this.Text = "Grade de horários - Engenharia de Computação";
-                    break;
-                case 653:
-                    this.Text = "Grade de horários - Engenharia de Energia";
-                    break;
-                case 652:
-                    this.Text = "Grade de horários - Tecnologias da Informação e Comunicação";
-                    break;
-            }
+            this.Text = "Grade de horários - " + curso.NOME_CURSO;
         }
 
         private void btnGradeHorario_Click(object sender, EventArgs e)
@@ -46,7 +31,7 @@ namespace GradeDeHorario
         {
             (new frmDisciplina()).ShowDialog();
         }
-
+        
         private void btnFase_Click(object sender, EventArgs e)
         {
             (new frmFase(curso)).ShowDialog();

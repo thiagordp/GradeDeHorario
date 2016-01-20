@@ -49,5 +49,22 @@ namespace AcessoDados
                 return objT;
             }).ToList();
         }
+
+        public static DataTable SelecionaTodoDepartamento()
+        {
+            try
+            {
+                using (Modelos.Entidade contexto = new Modelos.Entidade())
+                {
+                    List<Modelos.DEPARTAMENTO> dep = contexto.DEPARTAMENTO.ToList();
+
+                    return AcessoDados.UtilidadeAcessoDados.ListToDataTable(dep);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

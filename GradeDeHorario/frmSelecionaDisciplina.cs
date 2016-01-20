@@ -14,10 +14,12 @@ namespace GradeDeHorario
     {
         List<object> disciplinaSelecionada;
 
-        public frmSelecionaDisciplina(List<object> disciplina)
+        public frmSelecionaDisciplina(ref List<object> disciplina)
         {
             InitializeComponent();
             disciplinaSelecionada = disciplina;
+
+            disciplina.Add("Teste");
 
             // Selecionar as disciplinas e preencher a tabela
             dtgSelecionaDisciplina.Rows.Add(false, "ARA1234", "Análise de Sinais e Sistemas");

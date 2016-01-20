@@ -12,22 +12,22 @@ namespace GradeDeHorario
 {
     public partial class frmDisciplina : Form
     {
+        RegraNegocio.DisciplinaRegraNegocio disciplinaRN;
+        Modelos.DISCIPLINA disciplinaAntiga = new Modelos.DISCIPLINA();
+
+
         public frmDisciplina()
         {
             InitializeComponent();
-
-            dtgDisciplina.Rows.Add("ARA1234", "Inteligência Artificial II", "4", "ARA312", "DEC - Depto. de Computação");
-            dtgDisciplina.Rows.Add("ARA1235", "Inteligência Artificial II", "4", "ARA311", "ENS - Depto. de Energia e Sustentabilidade");
         }
 
         private void btnSelecionaRequisito_Click(object sender, EventArgs e)
         {
             List<object> teste = new List<object>();
 
-            (new frmSelecionaDisciplina(teste)).ShowDialog();
+            (new frmSelecionaDisciplina(ref teste)).ShowDialog();//teste
 
-            MessageBox.Show(teste.First<object>().ToString());
-
+            MessageBox.Show(teste.First<object>().ToString());//teste
         }
 
         private void btnNovo_Click(object sender, EventArgs e)
@@ -35,6 +35,8 @@ namespace GradeDeHorario
             EstadoEditacao(true);
 
             btnExcluir.Enabled = false;
+
+
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -59,8 +61,9 @@ namespace GradeDeHorario
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             LimparTexto();
-
         }
+
+
 
         private void EstadoEditacao(bool estado)
         {
@@ -116,6 +119,49 @@ namespace GradeDeHorario
             nudCreditoDisplicina.Value = Convert.ToDecimal(dtgDisciplina.Rows[e.RowIndex].Cells["CREDITO_DISCIPLINA"].Value.ToString());
             cbbDepartamento.SelectedItem = dtgDisciplina.Rows[e.RowIndex].Cells["DEPARTAMENTO_DISCIPLINA"].Value.ToString();
             // Verificar como resgatar os requisitos
+        }
+
+        private void frmDisciplina_Load(object sender, EventArgs e)
+        {
+            PreencheListaDepartamento();
+            PreencheTabelaDisciplina();
+        }
+
+        private void PreencheListaDepartamento()
+        {
+            try
+            {
+                disciplinaRN = new RegraNegocio.DisciplinaRegraNegocio(this);
+
+                cbbDepartamento.DataSource = disciplinaRN.SelecionaTodoDepartamento();
+                cbbDepartamento.DisplayMember = "NOME_DEPARTAMENTO";
+                cbbDepartamento.ValueMember = "CODIGO_DEPARTAMENTO";
+                cbbDepartamento.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void PreencheTabelaDisciplina()
+        {
+            try
+            {
+                disciplinaRN = new RegraNegocio.DisciplinaRegraNegocio(this);
+
+                dtgDisciplina.DataSource = disciplinaRN.SelecionaTodaDisciplina();
+                dtgDisciplina.ClearSelection();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void PreencheTabelaDisciplinaRequisito()
+        {
+
         }
     }
 }

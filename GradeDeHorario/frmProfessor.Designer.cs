@@ -227,8 +227,8 @@
             this.tableLayoutPanel2.ColumnCount = 4;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.7746F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.22541F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.txtCodigoProfessor, 1, 0);
@@ -303,7 +303,7 @@
             this.cbbDepartamento.FormattingEnabled = true;
             this.cbbDepartamento.Location = new System.Drawing.Point(93, 55);
             this.cbbDepartamento.Name = "cbbDepartamento";
-            this.cbbDepartamento.Size = new System.Drawing.Size(266, 21);
+            this.cbbDepartamento.Size = new System.Drawing.Size(364, 21);
             this.cbbDepartamento.TabIndex = 5;
             // 
             // frmProfessor

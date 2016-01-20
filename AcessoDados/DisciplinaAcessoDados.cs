@@ -6,34 +6,67 @@
 //------------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
-
-public class DisciplinaAcessoDados
+namespace AcessoDados
 {
-    //
-    // Insere uma nova disciplina no banco de dados
-    //
-    public void InsereDisciplina() { }
 
-    //
-    // Edita os atributos da disciplina indicada de acordo com os dados fornecidos
-    //
-    public void EditaDisciplina() { }
+    public class DisciplinaAcessoDados
+    {
+        StringBuilder sql;
+        SqlCommand comandoSql;
+        DataTable dadosTabela;
 
-    //
-    // Deleta a disciplina especificada
-    //
-    public void ApagaDisciplina() { }
+        //
+        // Insere uma nova disciplina no banco de dados
+        //
+        public void InsereDisciplina()
+        {
 
-    //
-    // Retorna todas as disciplinas cadastradas
-    //
-    public void SelecionaTodaDisciplina() { }
+        }
 
-    //
-    // Retorna as disciplinas que contém o nome indicado -- REVER O FILTRO
-    //
-    public void SelecionaDisciplina(string filtro) { }
+        //
+        // Edita os atributos da disciplina indicada de acordo com os dados fornecidos
+        //
+        public void EditaDisciplina() { }
+
+        // Deleta a disciplina especificada
+        public void ApagaDisciplina() { }
+
+        // Retorna todas as disciplinas cadastradas
+        public DataTable SelecionaTodaDisciplina()
+        {
+            sql = new StringBuilder();
+            comandoSql = new SqlCommand();
+            dadosTabela = new DataTable();
+
+            using (SqlConnection conexao = new SqlConnection(Conexao.stringConexao))
+            {
+                sql.Append("SELECT	CODIGO_DISCIPLINA, NOME_DISCIPLINA, CREDITO_DISCIPLINA,");
+                sql.Append("        DISCIPLINA.CODIGO_DEPARTAMENTO, NOME_DEPARTAMENTO ");
+                sql.Append("        FROM DISCIPLINA INNER JOIN DEPARTAMENTO");
+                sql.Append("        ON DISCIPLINA.CODIGO_DEPARTAMENTO = DEPARTAMENTO.CODIGO_DEPARTAMENTO");
+                sql.Append("        ORDER BY NOME_DISCIPLINA ASC; ");
+
+
+                comandoSql.CommandText = sql.ToString();
+                comandoSql.Connection = conexao;
+
+                conexao.Open();
+
+                dadosTabela.Load(comandoSql.ExecuteReader());
+
+                return dadosTabela;
+            }
+        }
+
+        // Retorna as disciplinas que contém o nome indicado -- REVER O FILTRO
+        public Modelos.DISCIPLINA SelecionaDisciplina(string filtro)
+        {
+            return null;
+        }
+
+    }
 }
-
