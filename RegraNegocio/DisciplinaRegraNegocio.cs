@@ -99,7 +99,7 @@ namespace RegraNegocio
         {
             for (int i = 0; i < requisitos.Rows.Count; i++)
             {
-                if (requisitos.Rows[i].Cells["CODIGO_DISCIPLINA_REQ"].Value.ToString() == disciplina.CODIGO_DISCIPLINA)
+                if (requisitos.Rows[i].Cells["CODIGO_DISCIPLINA_REQUISITO"].Value.ToString() == disciplina.CODIGO_DISCIPLINA)
                 {
                     throw new Exception("Lista de Requisitos inválida.\nUma disciplina não pode ser requisito de si própria.");
                 }

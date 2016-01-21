@@ -27,11 +27,8 @@ namespace GradeDeHorario
 
         private void btnSelecionaRequisito_Click(object sender, EventArgs e)
         {
-            List<object> teste = new List<object>();
+            (new frmSelecionaDisciplina(ref dtgDisciplinaRequisito)).ShowDialog();//teste
 
-            (new frmSelecionaDisciplina(ref teste)).ShowDialog();//teste
-
-            MessageBox.Show(teste.First<object>().ToString());//teste
         }
 
         private void btnNovo_Click(object sender, EventArgs e)
@@ -140,27 +137,16 @@ namespace GradeDeHorario
             PreencheTabelaDisciplina();
         }
 
-        private DataTable DataGridViewToDataTable()
+        private void PreencheTabelaRequisitos()
         {
-            DataSet ds = new DataSet();
-            DataTable dt = new DataTable();
-
-            foreach (DataGridViewColumn col in dtgDisciplinaRequisito.Columns)
+            try
             {
-                dt.Columns.Add(col.DataPropertyName, col.ValueType);
-            }
-            foreach (DataGridViewRow gridRow in dtgDisciplinaRequisito.Rows)
-            {
-                if (gridRow.IsNewRow)
-                    continue;
-                DataRow dtRow = dt.NewRow();
-                for (int i1 = 0; i1 < dtgDisciplinaRequisito.Columns.Count; i1++)
-                    dtRow[i1] = (gridRow.Cells[i1].Value == null ? DBNull.Value : gridRow.Cells[i1].Value);
-                dt.Rows.Add(dtRow);
-            }
-            ds.Tables.Add(dt);
 
-            return dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
 
@@ -194,19 +180,6 @@ namespace GradeDeHorario
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void PreencheTabelaDisciplinaRequisito(Modelos.DISCIPLINA disciplina)
-        {
-            try
-            {
-
-            }
-            catch (Exception ex)
-            {
-
-                throw;
             }
         }
     }

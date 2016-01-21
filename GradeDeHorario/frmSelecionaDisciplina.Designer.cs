@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSelecionaDisciplina));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnSalvar = new System.Windows.Forms.ToolStripButton();
@@ -52,7 +53,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(5);
-            this.toolStrip1.Size = new System.Drawing.Size(438, 72);
+            this.toolStrip1.Size = new System.Drawing.Size(434, 72);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -64,6 +65,7 @@
             this.btnSalvar.Size = new System.Drawing.Size(44, 59);
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnLimpar
             // 
@@ -88,7 +90,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(438, 174);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(434, 219);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // dtgSelecionaDisciplina
@@ -97,6 +99,8 @@
             this.dtgSelecionaDisciplina.AllowUserToDeleteRows = false;
             this.dtgSelecionaDisciplina.AllowUserToResizeColumns = false;
             this.dtgSelecionaDisciplina.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dtgSelecionaDisciplina.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgSelecionaDisciplina.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dtgSelecionaDisciplina.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dtgSelecionaDisciplina.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -112,7 +116,7 @@
             this.dtgSelecionaDisciplina.RowHeadersVisible = false;
             this.tableLayoutPanel1.SetRowSpan(this.dtgSelecionaDisciplina, 2);
             this.dtgSelecionaDisciplina.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgSelecionaDisciplina.Size = new System.Drawing.Size(418, 154);
+            this.dtgSelecionaDisciplina.Size = new System.Drawing.Size(414, 199);
             this.dtgSelecionaDisciplina.TabIndex = 0;
             // 
             // SELECIONA_DISCIPLINA
@@ -123,7 +127,8 @@
             // 
             // CODIGO_DISCIPLINA
             // 
-            this.CODIGO_DISCIPLINA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.CODIGO_DISCIPLINA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA.DataPropertyName = "CODIGO_DISCIPLINA";
             this.CODIGO_DISCIPLINA.HeaderText = "Código";
             this.CODIGO_DISCIPLINA.Name = "CODIGO_DISCIPLINA";
             this.CODIGO_DISCIPLINA.ReadOnly = true;
@@ -133,6 +138,7 @@
             // NOME_DISCIPLINA
             // 
             this.NOME_DISCIPLINA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NOME_DISCIPLINA.DataPropertyName = "NOME_DISCIPLINA";
             this.NOME_DISCIPLINA.HeaderText = "Nome";
             this.NOME_DISCIPLINA.Name = "NOME_DISCIPLINA";
             this.NOME_DISCIPLINA.ReadOnly = true;
@@ -142,13 +148,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(438, 246);
+            this.ClientSize = new System.Drawing.Size(434, 291);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.toolStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(450, 330);
             this.Name = "frmSelecionaDisciplina";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSelecionaDisciplina";
+            this.Load += new System.EventHandler(this.frmSelecionaDisciplina_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -165,8 +173,8 @@
         private System.Windows.Forms.ToolStripButton btnLimpar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.DataGridView dtgSelecionaDisciplina;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NOME_DISCIPLINA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA;
         private System.Windows.Forms.DataGridViewCheckBoxColumn SELECIONA_DISCIPLINA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NOME_DISCIPLINA;
     }
 }

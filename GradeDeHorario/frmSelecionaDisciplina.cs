@@ -12,43 +12,98 @@ namespace GradeDeHorario
 {
     public partial class frmSelecionaDisciplina : Form
     {
-        List<object> disciplinaSelecionada;
+        private RegraNegocio.SelecionaDisciplinaRegraNegocio selecionaDisciplinaRN;
+        private DataGridView tabelaDisciplina;
 
-        public frmSelecionaDisciplina(ref List<object> disciplina)
+        public frmSelecionaDisciplina(ref DataGridView tabelaDisciplina)
         {
             InitializeComponent();
-            disciplinaSelecionada = disciplina;
+            this.tabelaDisciplina = tabelaDisciplina;
 
-            disciplina.Add("Teste");
 
-            // Selecionar as disciplinas e preencher a tabela
-            dtgSelecionaDisciplina.Rows.Add(false, "ARA1234", "Análise de Sinais e Sistemas");
-            dtgSelecionaDisciplina.Rows.Add(false, "ARA1235", "Circuitos Elétricos para Computação");
-            dtgSelecionaDisciplina.Rows.Add(false, "ARA1236", "Cálculo I");
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
+            dtgSelecionaDisciplina.EndEdit();
             for (int i = 0; i < dtgSelecionaDisciplina.Rows.Count; i++)
             {
                 dtgSelecionaDisciplina.Rows[i].Cells[0].Value = false;
             }
+
             dtgSelecionaDisciplina.ClearSelection();
         }
 
         private void ListaRequisito()
         {
+            selecionaDisciplinaRN = new RegraNegocio.SelecionaDisciplinaRegraNegocio();
+
+            dtgSelecionaDisciplina.DataSource = selecionaDisciplinaRN.SelecionaTodaDisciplina();
+            dtgSelecionaDisciplina.ClearSelection();
+        }
+
+
+        // Verifica a presença de disciplinas já existentes na tabela de requisitos.
+        private void VerificaDisciplinaSelecionada()
+        {
+            try
+            {
+                string codigo;
+
+                foreach (DataGridViewRow linha in tabelaDisciplina.Rows)
+                {
+                    codigo = linha.Cells["CODIGO_DISCIPLINA_REQUISITO"].Value.ToString();
+
+                    foreach (DataGridViewRow linha2 in dtgSelecionaDisciplina.Rows)
+                    {
+                        if (linha2.Cells["CODIGO_DISCIPLINA"].Value.ToString() == codigo)
+                        {
+                            linha2.Cells["SELECIONA_DISCIPLINA"].Value = true;
+
+                            break;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void dtgSelecionaDisciplina_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
 
         }
 
-        private void VerificaDisciplinaSelecionada()
+        private void btnSalvar_Click(object sender, EventArgs e)
         {
-            //teste
-            disciplinaSelecionada.Add("Yeah!!");
+            string codigo;
+            string nome;
+
+            tabelaDisciplina.Rows.Clear();
+
+            dtgSelecionaDisciplina.EndEdit();
+            for (int i = 0; i < dtgSelecionaDisciplina.Rows.Count; i++)
+            {
+                if (Convert.ToBoolean(dtgSelecionaDisciplina.Rows[i].Cells["SELECIONA_DISCIPLINA"].Value) == true)
+                {
+                    codigo = dtgSelecionaDisciplina.Rows[i].Cells["CODIGO_DISCIPLINA"].Value.ToString();
+                    nome = dtgSelecionaDisciplina.Rows[i].Cells["NOME_DISCIPLINA"].Value.ToString();
+
+                    tabelaDisciplina.Rows.Add(codigo, nome);
+                }
+            }
+
+            this.Close();
 
 
+        }
 
-            //Verificar as disciplinas selecionadas e colocar no List
+        private void frmSelecionaDisciplina_Load(object sender, EventArgs e)
+        {
+            ListaRequisito();
+            VerificaDisciplinaSelecionada();
         }
     }
 }

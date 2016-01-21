@@ -33,7 +33,7 @@ namespace AcessoDados
                 {
                     for (int i = 0; i < requisitos.Rows.Count; i++)
                     {
-                        tempDisciplina = contexto.DISCIPLINA.Find(requisitos.Rows[i].Cells["CODIGO_DISCIPLINA_REQ"].Value.ToString());
+                        tempDisciplina = contexto.DISCIPLINA.Find(requisitos.Rows[i].Cells["CODIGO_DISCIPLINA_REQUISITO"].Value.ToString());
 
                         if (tempDisciplina == null)
                         {

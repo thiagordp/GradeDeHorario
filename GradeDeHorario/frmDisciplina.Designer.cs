@@ -59,13 +59,13 @@
             this.txtNomeDisciplina = new System.Windows.Forms.TextBox();
             this.nudCreditoDisplicina = new System.Windows.Forms.NumericUpDown();
             this.dtgDisciplinaRequisito = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_REQ = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NOME_DISCIPLINA_REQUISITO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSelecionaRequisito = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cbbDepartamento = new System.Windows.Forms.ComboBox();
+            this.CODIGO_DISCIPLINA_REQUISITO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NOME_DISCIPLINA_REQUISITO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgDisciplina)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -302,7 +302,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 44F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 1);
@@ -375,7 +375,7 @@
             this.txtNomeDisciplina.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtNomeDisciplina.Location = new System.Drawing.Point(73, 29);
             this.txtNomeDisciplina.Name = "txtNomeDisciplina";
-            this.txtNomeDisciplina.Size = new System.Drawing.Size(379, 22);
+            this.txtNomeDisciplina.Size = new System.Drawing.Size(378, 22);
             this.txtNomeDisciplina.TabIndex = 4;
             // 
             // nudCreditoDisplicina
@@ -422,44 +422,28 @@
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgDisciplinaRequisito.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dtgDisciplinaRequisito.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgDisciplinaRequisito.ColumnHeadersVisible = false;
             this.dtgDisciplinaRequisito.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_REQ,
+            this.CODIGO_DISCIPLINA_REQUISITO,
             this.NOME_DISCIPLINA_REQUISITO});
             this.tableLayoutPanel2.SetColumnSpan(this.dtgDisciplinaRequisito, 2);
             this.dtgDisciplinaRequisito.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgDisciplinaRequisito.Location = new System.Drawing.Point(458, 29);
+            this.dtgDisciplinaRequisito.Location = new System.Drawing.Point(457, 29);
             this.dtgDisciplinaRequisito.Name = "dtgDisciplinaRequisito";
+            this.dtgDisciplinaRequisito.ReadOnly = true;
             this.dtgDisciplinaRequisito.RowHeadersVisible = false;
             this.tableLayoutPanel2.SetRowSpan(this.dtgDisciplinaRequisito, 2);
             this.dtgDisciplinaRequisito.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dtgDisciplinaRequisito.Size = new System.Drawing.Size(297, 52);
+            this.dtgDisciplinaRequisito.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgDisciplinaRequisito.Size = new System.Drawing.Size(298, 52);
             this.dtgDisciplinaRequisito.TabIndex = 8;
-            // 
-            // CODIGO_DISCIPLINA_REQ
-            // 
-            this.CODIGO_DISCIPLINA_REQ.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_REQ.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_REQ.HeaderText = "Código";
-            this.CODIGO_DISCIPLINA_REQ.Name = "CODIGO_DISCIPLINA_REQ";
-            this.CODIGO_DISCIPLINA_REQ.Width = 5;
-            // 
-            // NOME_DISCIPLINA_REQUISITO
-            // 
-            this.NOME_DISCIPLINA_REQUISITO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.NOME_DISCIPLINA_REQUISITO.DataPropertyName = "NOME_DISCIPLINA";
-            this.NOME_DISCIPLINA_REQUISITO.HeaderText = "Disciplina";
-            this.NOME_DISCIPLINA_REQUISITO.Name = "NOME_DISCIPLINA_REQUISITO";
-            this.NOME_DISCIPLINA_REQUISITO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.NOME_DISCIPLINA_REQUISITO.ToolTipText = "Disciplina requisito";
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnSelecionaRequisito);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(715, 3);
+            this.panel1.Location = new System.Drawing.Point(713, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(40, 20);
+            this.panel1.Size = new System.Drawing.Size(42, 20);
             this.panel1.TabIndex = 5;
             // 
             // btnSelecionaRequisito
@@ -467,7 +451,7 @@
             this.btnSelecionaRequisito.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSelecionaRequisito.Location = new System.Drawing.Point(0, 0);
             this.btnSelecionaRequisito.Name = "btnSelecionaRequisito";
-            this.btnSelecionaRequisito.Size = new System.Drawing.Size(40, 20);
+            this.btnSelecionaRequisito.Size = new System.Drawing.Size(42, 20);
             this.btnSelecionaRequisito.TabIndex = 4;
             this.btnSelecionaRequisito.Text = "...";
             this.btnSelecionaRequisito.UseVisualStyleBackColor = true;
@@ -477,9 +461,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(458, 0);
+            this.label5.Location = new System.Drawing.Point(457, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(251, 26);
+            this.label5.Size = new System.Drawing.Size(250, 26);
             this.label5.TabIndex = 9;
             this.label5.Text = "Disciplinas Pré-requisito";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -502,8 +486,27 @@
             this.cbbDepartamento.FormattingEnabled = true;
             this.cbbDepartamento.Location = new System.Drawing.Point(233, 55);
             this.cbbDepartamento.Name = "cbbDepartamento";
-            this.cbbDepartamento.Size = new System.Drawing.Size(219, 21);
+            this.cbbDepartamento.Size = new System.Drawing.Size(218, 21);
             this.cbbDepartamento.TabIndex = 11;
+            // 
+            // CODIGO_DISCIPLINA_REQUISITO
+            // 
+            this.CODIGO_DISCIPLINA_REQUISITO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_REQUISITO.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_REQUISITO.HeaderText = "Código";
+            this.CODIGO_DISCIPLINA_REQUISITO.Name = "CODIGO_DISCIPLINA_REQUISITO";
+            this.CODIGO_DISCIPLINA_REQUISITO.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_REQUISITO.Width = 70;
+            // 
+            // NOME_DISCIPLINA_REQUISITO
+            // 
+            this.NOME_DISCIPLINA_REQUISITO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NOME_DISCIPLINA_REQUISITO.DataPropertyName = "NOME_DISCIPLINA";
+            this.NOME_DISCIPLINA_REQUISITO.HeaderText = "Disciplina";
+            this.NOME_DISCIPLINA_REQUISITO.Name = "NOME_DISCIPLINA_REQUISITO";
+            this.NOME_DISCIPLINA_REQUISITO.ReadOnly = true;
+            this.NOME_DISCIPLINA_REQUISITO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.NOME_DISCIPLINA_REQUISITO.ToolTipText = "Disciplina requisito";
             // 
             // frmDisciplina
             // 
@@ -565,7 +568,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NOME_DEPARTAMENTO;
         private System.Windows.Forms.DataGridViewTextBoxColumn PRE_REQUISITO_DISCIPLINA;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DEPARTAMENTO;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_REQ;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_REQUISITO;
         private System.Windows.Forms.DataGridViewTextBoxColumn NOME_DISCIPLINA_REQUISITO;
     }
 }

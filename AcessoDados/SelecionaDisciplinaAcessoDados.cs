@@ -6,14 +6,49 @@
 //------------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 
-public class SelecionaDisciplinaAcessoDados
+namespace AcessoDados
 {
-    //
-    // Seleciona todas as disciplinas cadastradas.
-    //
-    public void SelecionaTodaDisciplina() { }
-}
 
+    public class SelecionaDisciplinaAcessoDados
+    {
+        StringBuilder sql = new StringBuilder();
+        SqlCommand comandoSql = new SqlCommand();
+
+        //
+        // Seleciona todas as disciplinas cadastradas.
+        //
+        public DataTable SelecionaTodaDisciplina()
+        {
+            try
+            {
+                sql.Clear();
+
+                sql.Append("SELECT CODIGO_DISCIPLINA, NOME_DISCIPLINA ");
+                sql.Append("FROM DISCIPLINA ORDER BY NOME_DISCIPLINA ASC");
+
+                using (SqlConnection conexao = new SqlConnection(Conexao.stringConexao))
+                {
+                    DataTable dadosTabela = new DataTable();
+
+                    conexao.Open();
+
+                    comandoSql.CommandText = sql.ToString();
+                    comandoSql.Connection = conexao;
+
+                    dadosTabela.Load(comandoSql.ExecuteReader());
+
+                    return dadosTabela;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+    }
+}

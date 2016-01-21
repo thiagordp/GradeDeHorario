@@ -6,6 +6,7 @@
 //------------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 
@@ -13,10 +14,19 @@ namespace RegraNegocio
 {
     public class SelecionaDisciplinaRegraNegocio
     {
-        public void SelecionaDisciplina() { }
+        private AcessoDados.SelecionaDisciplinaAcessoDados selecionaDisciplinaAD;
 
-        public void VerificaSelecao() { }
-        
+        public DataTable SelecionaTodaDisciplina()
+        {
+            selecionaDisciplinaAD = new AcessoDados.SelecionaDisciplinaAcessoDados();
+
+            return selecionaDisciplinaAD.SelecionaTodaDisciplina();
+        }
+
+        public void VerificaSelecao()
+        {
+
+        }
     }
 }
 
