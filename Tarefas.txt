@@ -7,8 +7,8 @@ frmDisciplina:
     
     ✓ Comportamento da Interface.
     • Inserção, edição, exclusão e listagem de disciplinas.
-    • Comunicação com o formulário de disciplinas requisito.
-    • Inserção, edição, exclusão e listagem de disciplinas requisito.
+    ✓ Comunicação com o formulário de disciplinas requisito.
+    ✓ Inserção, edição, exclusão e listagem de disciplinas requisito.
 ----------------------------------------------------------------------------------------------
 frmSelecionaDisciplina:
 

@@ -5,10 +5,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Text;
 using System.Windows.Forms;
+using System.ComponentModel;
+using System.Linq;
 
 namespace AcessoDados
 {
@@ -31,6 +34,22 @@ namespace AcessoDados
             {
                 using (Modelos.Entidade contexto = new Modelos.Entidade())
                 {
+                    Modelos.DISCIPLINA discExiste = contexto.DISCIPLINA.Find(disciplina.CODIGO_DISCIPLINA);
+
+                    if (discExiste != null)
+                    {
+                        throw new Exception("Já existe uma disciplina com a identificação informada.");
+                    }
+
+                    Modelos.DEPARTAMENTO depto = contexto.DEPARTAMENTO.Find(disciplina.CODIGO_DEPARTAMENTO);
+
+                    if (depto == null)
+                    {
+                        throw new Exception("O departamento indicado não existe!\nCertifique-se que nenhuma outra aplicação esteja manipulando o banco de dados!");
+                    }
+
+                    disciplina.DEPARTAMENTO = depto;
+
                     for (int i = 0; i < requisitos.Rows.Count; i++)
                     {
                         tempDisciplina = contexto.DISCIPLINA.Find(requisitos.Rows[i].Cells["CODIGO_DISCIPLINA_REQUISITO"].Value.ToString());
@@ -56,13 +75,85 @@ namespace AcessoDados
         //
         // Edita os atributos da disciplina indicada de acordo com os dados fornecidos
         //
-        public void EditaDisciplina()
+        public void EditaDisciplina(Modelos.DISCIPLINA disciplinaAntiga, Modelos.DISCIPLINA disciplinaNova, DataTable requisitoAntigo, DataTable requisitoNovo)
         {
+            Modelos.DISCIPLINA tempDisciplina;
+            Modelos.Entidade contex;
+
+            using (Modelos.Entidade contexto = new Modelos.Entidade())
+            {
+                disciplinaNova.DEPARTAMENTO = contexto.DEPARTAMENTO.Find(disciplinaNova.CODIGO_DEPARTAMENTO);
+                contex = contexto;
+                AdicionaRequisito(ref disciplinaNova, requisitoNovo, ref contex);
+
+                tempDisciplina = contexto.DISCIPLINA.Find(disciplinaNova.CODIGO_DISCIPLINA);
+
+                if (disciplinaAntiga.CODIGO_DISCIPLINA != disciplinaNova.CODIGO_DISCIPLINA)
+                {
+                    if (tempDisciplina != null)
+                    {
+                        throw new Exception("O novo código para a disciplina já está cadastrado no banco!");
+                    }
+
+                    contexto.DISCIPLINA.Add(disciplinaNova);
+
+                    tempDisciplina = contexto.DISCIPLINA.Where(disc => disc.CODIGO_DISCIPLINA == disciplinaAntiga.CODIGO_DISCIPLINA).FirstOrDefault();
+                    tempDisciplina.DISCIPLINA1.Clear();
+                    contexto.Entry(tempDisciplina).State = System.Data.Entity.EntityState.Modified;
+                    contexto.Entry(tempDisciplina).State = System.Data.Entity.EntityState.Deleted;
+                    
+                }
+                else
+                {
+                    if (tempDisciplina == null)
+                    {
+                        throw new Exception("Objeto não encontrado!\nVerifique se há algum programa alterando o banco de dados.");
+                    }
+
+                    tempDisciplina.CODIGO_DISCIPLINA = disciplinaNova.CODIGO_DISCIPLINA;
+                    tempDisciplina.CODIGO_DEPARTAMENTO = disciplinaNova.CODIGO_DEPARTAMENTO;
+                    tempDisciplina.CREDITO_DISCIPLINA = disciplinaNova.CREDITO_DISCIPLINA;
+                    tempDisciplina.DEPARTAMENTO = disciplinaNova.DEPARTAMENTO;
+
+                    tempDisciplina.DISCIPLINA1.Clear();
+
+                    contexto.Entry(tempDisciplina).State = System.Data.Entity.EntityState.Modified;
+
+                    tempDisciplina.DISCIPLINA1 = disciplinaNova.DISCIPLINA1;
+
+                    contexto.Entry(tempDisciplina).State = System.Data.Entity.EntityState.Modified;
+                }
+
+                contexto.SaveChanges();
+            }
+        }
+
+        private void AdicionaRequisito(ref Modelos.DISCIPLINA disciplina, DataTable requisito, ref Modelos.Entidade contexto)
+        {
+            Modelos.DISCIPLINA tempRequisito;
+
+            if (disciplina.DISCIPLINA1.Count > 0)
+            {
+                disciplina.DISCIPLINA1.Clear();
+            }
+
+            for (int i = 0; i < requisito.Rows.Count; i++)
+            {
+                tempRequisito = contexto.DISCIPLINA.Find(requisito.Rows[i].Field<string>("CODIGO_DISCIPLINA"));
+
+                if (tempRequisito == null)
+                {
+                    throw new Exception("Uma disciplina requisito não foi encontrada no banco de dados.\nVerifique se existe alguma aplicação externa que esteja manipulando o banco de dados.");
+                }
+
+                disciplina.DISCIPLINA1.Add(tempRequisito);
+            }
         }
 
         // Deleta a disciplina especificada
         public void ApagaDisciplina()
         {
+
         }
 
         // Retorna todas as disciplinas cadastradas
@@ -108,5 +199,45 @@ namespace AcessoDados
             }
         }
 
+        public DataTable SelecionaRequisito(Modelos.DISCIPLINA disciplina)
+        {
+            try
+            {
+                using (Modelos.Entidade contexto = new Modelos.Entidade())
+                {
+                    Modelos.DISCIPLINA dis = contexto.DISCIPLINA.Find(disciplina.CODIGO_DISCIPLINA);
+
+                    //  dis.DISCIPLINA1.CopyTo(lista.ToArray(), 0);
+                    if (dis == null) { throw new Exception("Disciplina não existe."); }
+                }
+
+                using (SqlConnection conexao = new SqlConnection(Conexao.stringConexao))
+                {
+                    conexao.Open();
+
+                    sql = new StringBuilder();
+                    comandoSql = new SqlCommand();
+
+                    sql.Append("SELECT DISCIPLINA.CODIGO_DISCIPLINA, DISCIPLINA.NOME_DISCIPLINA ");
+                    sql.Append("FROM PRE_REQUISITO ");
+                    sql.Append("INNER JOIN DISCIPLINA ");
+                    sql.Append("ON PRE_REQUISITO.CODIGO_DISCIPLINA_REQUISITO = DISCIPLINA.CODIGO_DISCIPLINA ");
+                    sql.Append("WHERE PRE_REQUISITO.CODIGO_DISCIPLINA = ");
+                    sql.Append("'" + disciplina.CODIGO_DISCIPLINA + "'");
+                    sql.Append("ORDER BY NOME_DISCIPLINA ASC");
+
+                    comandoSql.CommandText = sql.ToString();
+                    comandoSql.Connection = conexao;
+                    dadosTabela = new DataTable();
+                    dadosTabela.Load(comandoSql.ExecuteReader());
+                }
+
+                return dadosTabela;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

@@ -19,8 +19,6 @@ namespace GradeDeHorario
         {
             InitializeComponent();
             this.tabelaDisciplina = tabelaDisciplina;
-
-
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
@@ -81,9 +79,12 @@ namespace GradeDeHorario
             string codigo;
             string nome;
 
-            tabelaDisciplina.Rows.Clear();
+            DataTable tabela = new DataTable();
+            tabela.Columns.Add("CODIGO_DISCIPLINA");
+            tabela.Columns.Add("NOME_DISCIPLINA");
 
             dtgSelecionaDisciplina.EndEdit();
+
             for (int i = 0; i < dtgSelecionaDisciplina.Rows.Count; i++)
             {
                 if (Convert.ToBoolean(dtgSelecionaDisciplina.Rows[i].Cells["SELECIONA_DISCIPLINA"].Value) == true)
@@ -91,13 +92,12 @@ namespace GradeDeHorario
                     codigo = dtgSelecionaDisciplina.Rows[i].Cells["CODIGO_DISCIPLINA"].Value.ToString();
                     nome = dtgSelecionaDisciplina.Rows[i].Cells["NOME_DISCIPLINA"].Value.ToString();
 
-                    tabelaDisciplina.Rows.Add(codigo, nome);
+                    tabela.Rows.Add(codigo, nome);
                 }
             }
 
+            tabelaDisciplina.DataSource = tabela;
             this.Close();
-
-
         }
 
         private void frmSelecionaDisciplina_Load(object sender, EventArgs e)

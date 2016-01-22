@@ -50,6 +50,8 @@ namespace AcessoDados
         // Edita dados de um professor cadastrado.
         public void EditaProfessor(Modelos.PROFESSOR profAntigo, Modelos.PROFESSOR profAtual)
         {
+            VerificaProfessor(profAtual);
+
             try
             {
                 professorAD = new ProfessorAcessoDados();

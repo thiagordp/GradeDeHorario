@@ -34,12 +34,34 @@ namespace RegraNegocio
             VerificaDisciplina(disciplina);
             VerificaRequisitos(disciplina, disciplinaRequisito);
 
-            disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
-            disciplinaAD.InsereDisciplina(disciplina, disciplinaRequisito);
+            try
+            {
+                disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
+                disciplinaAD.InsereDisciplina(disciplina, disciplinaRequisito);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
         }
 
         // Edita uma disciplina cadastrada.
-        public void EditaDisciplina() { }
+        public void EditaDisciplina(Modelos.DISCIPLINA disciplinaAntiga, Modelos.DISCIPLINA disciplinaNova, DataTable requisitoAntigo, DataTable requisitoNovo)
+        {
+            VerificaDisciplina(disciplinaNova);
+
+            VerificaRequisitos(disciplinaNova, requisitoNovo);
+
+            try
+            {
+                disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
+                disciplinaAD.EditaDisciplina(disciplinaAntiga, disciplinaNova, requisitoAntigo, requisitoNovo);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
+        }
 
         // Apaga uma disciplina informada.
         public void ApagaDisciplina()
@@ -50,17 +72,31 @@ namespace RegraNegocio
         // Retorna uma lista com todas as disciplinas cadastradas.
         public DataTable SelecionaTodaDisciplina()
         {
-            disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
+            try
+            {
+                disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
 
-            return disciplinaAD.SelecionaTodaDisciplina();
+                return disciplinaAD.SelecionaTodaDisciplina();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
         }
 
         // Seleciona a disciplina indicada
         public Modelos.DISCIPLINA SelecionaDisciplina(string codigoDisciplina)
         {
-            disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
+            try
+            {
+                disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
 
-            return disciplinaAD.SelecionaDisciplina(codigoDisciplina);
+                return disciplinaAD.SelecionaDisciplina(codigoDisciplina);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
         }
 
         // Seleciona todo os departamentos.
@@ -76,12 +112,6 @@ namespace RegraNegocio
             {
                 throw new Exception("O campo de código da disciplina não pode ser vazio!");
             }
-            
-            if (SelecionaDisciplina(disciplina.CODIGO_DISCIPLINA) != null)
-            {
-                throw new Exception("Uma disciplina com o código informado já está cadastrada.");
-            }
-
             if (disciplina.NOME_DISCIPLINA.Trim() == "")
             {
                 throw new Exception("O campo de nome da disciplina não pode ser vazio!");
@@ -101,9 +131,36 @@ namespace RegraNegocio
             {
                 if (requisitos.Rows[i].Cells["CODIGO_DISCIPLINA_REQUISITO"].Value.ToString() == disciplina.CODIGO_DISCIPLINA)
                 {
-                    throw new Exception("Lista de Requisitos inválida.\nUma disciplina não pode ser requisito de si própria.");
+                    throw new Exception("Existe alguma disciplina na tabela de requisitos com o mesmo código que a atual.\nUma disciplina não pode ser requisito de si própria.");
                 }
             }
+        }
+
+        private void VerificaRequisitos(Modelos.DISCIPLINA disciplina, DataTable requisitos)
+        {
+
+            for (int i = 0; i < requisitos.Rows.Count; i++)
+            {
+                if (requisitos.Rows[i].Field<string>("CODIGO_DISCIPLINA") == disciplina.CODIGO_DISCIPLINA)
+                {
+                    throw new Exception("Existe alguma disciplina na tabela de requisitos com o mesmo código que a atual.\nUma disciplina não pode ser requisito de si própria.");
+                }
+            }
+        }
+
+        public DataTable SelecionaRequisito(Modelos.DISCIPLINA disciplina)
+        {
+            try
+            {
+                disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
+
+                return disciplinaAD.SelecionaRequisito(disciplina);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
+
         }
     }
 }
