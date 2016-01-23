@@ -16,6 +16,7 @@ namespace GradeDeHorario
         private Modelos.DISCIPLINA disciplinaAntiga = new Modelos.DISCIPLINA();
         private DataTable requisitoAntigo = new DataTable();
         private DataTable requisitoNovo = new DataTable();
+        //private List
 
         private bool novoRegistro = false;
 

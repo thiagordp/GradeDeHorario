@@ -22,10 +22,7 @@ namespace AcessoDados
         SqlCommand comandoSql;
         DataTable dadosTabela;
 
-
-        //
         // Insere uma nova disciplina no banco de dados
-        //
         public void InsereDisciplina(Modelos.DISCIPLINA disciplina, DataGridView requisitos)
         {
             Modelos.DISCIPLINA tempDisciplina;
@@ -72,9 +69,7 @@ namespace AcessoDados
             }
         }
 
-        //
         // Edita os atributos da disciplina indicada de acordo com os dados fornecidos
-        //
         public void EditaDisciplina(Modelos.DISCIPLINA disciplinaAntiga, Modelos.DISCIPLINA disciplinaNova, DataTable requisitoAntigo, DataTable requisitoNovo)
         {
             Modelos.DISCIPLINA tempDisciplina;
@@ -95,13 +90,20 @@ namespace AcessoDados
                         throw new Exception("O novo código para a disciplina já está cadastrado no banco!");
                     }
 
+                    tempDisciplina = contexto.DISCIPLINA.Where(disc => disc.CODIGO_DISCIPLINA == disciplinaAntiga.CODIGO_DISCIPLINA).FirstOrDefault();
+
+                    // Cópia das disciplinas requisitantes.
+                    foreach (Modelos.DISCIPLINA disciplina in tempDisciplina.DISCIPLINA2.ToList()) { disciplinaNova.DISCIPLINA2.Add(disciplina); }
+
+                    // Cópia das fases alocadas.
+                    foreach (Modelos.DISCIPLINA_CURSO disciplina in tempDisciplina.DISCIPLINA_CURSO.ToList()) { disciplinaNova.DISCIPLINA_CURSO.Add(disciplina); }
+
                     contexto.DISCIPLINA.Add(disciplinaNova);
 
-                    tempDisciplina = contexto.DISCIPLINA.Where(disc => disc.CODIGO_DISCIPLINA == disciplinaAntiga.CODIGO_DISCIPLINA).FirstOrDefault();
                     tempDisciplina.DISCIPLINA1.Clear();
-                    contexto.Entry(tempDisciplina).State = System.Data.Entity.EntityState.Modified;
+                    tempDisciplina.DISCIPLINA2.Clear();
+                    tempDisciplina.DISCIPLINA_CURSO.Clear();
                     contexto.Entry(tempDisciplina).State = System.Data.Entity.EntityState.Deleted;
-
                 }
                 else
                 {
@@ -116,9 +118,6 @@ namespace AcessoDados
                     tempDisciplina.DEPARTAMENTO = disciplinaNova.DEPARTAMENTO;
 
                     tempDisciplina.DISCIPLINA1.Clear();
-
-                    contexto.Entry(tempDisciplina).State = System.Data.Entity.EntityState.Modified;
-
                     tempDisciplina.DISCIPLINA1 = disciplinaNova.DISCIPLINA1;
 
                     contexto.Entry(tempDisciplina).State = System.Data.Entity.EntityState.Modified;
@@ -150,7 +149,7 @@ namespace AcessoDados
             }
         }
 
-        // Deleta a disciplina especificada
+        // Deleta a disciplina especificada.
         public void ApagaDisciplina(Modelos.DISCIPLINA disciplina)
         {
             using (Modelos.Entidade contexto = new Modelos.Entidade())
@@ -207,6 +206,7 @@ namespace AcessoDados
             }
         }
 
+        // Retorna uma tabela com as disciplinas-requisito da disciplina especificada.
         public DataTable SelecionaRequisito(Modelos.DISCIPLINA disciplina)
         {
             try
@@ -248,6 +248,7 @@ namespace AcessoDados
             }
         }
 
+        // Verifica se a disciplina possui requisitos.
         public bool VerificaTemRequisito(Modelos.DISCIPLINA disciplina)
         {
             try
@@ -267,6 +268,7 @@ namespace AcessoDados
             }
         }
 
+        // Verifica se a disciplina é requisito de outra(s).
         public bool VerificaERequisito(Modelos.DISCIPLINA disciplina)
         {
             try
@@ -286,6 +288,7 @@ namespace AcessoDados
             }
         }
 
+        // Verifica se a disciplina está alocada em alguma(s) fase(s).
         public bool VerificaAlocacao(Modelos.DISCIPLINA disciplina)
         {
             try
