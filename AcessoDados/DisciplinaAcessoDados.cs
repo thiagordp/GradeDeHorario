@@ -101,7 +101,7 @@ namespace AcessoDados
                     tempDisciplina.DISCIPLINA1.Clear();
                     contexto.Entry(tempDisciplina).State = System.Data.Entity.EntityState.Modified;
                     contexto.Entry(tempDisciplina).State = System.Data.Entity.EntityState.Deleted;
-                    
+
                 }
                 else
                 {
@@ -151,9 +151,17 @@ namespace AcessoDados
         }
 
         // Deleta a disciplina especificada
-        public void ApagaDisciplina()
+        public void ApagaDisciplina(Modelos.DISCIPLINA disciplina)
         {
+            using (Modelos.Entidade contexto = new Modelos.Entidade())
+            {
+                Modelos.DISCIPLINA temp = contexto.DISCIPLINA.Find(disciplina.CODIGO_DISCIPLINA);
 
+                temp.DISCIPLINA1.Clear();
+
+                contexto.Entry(temp).State = System.Data.Entity.EntityState.Deleted;
+                contexto.SaveChanges();
+            }
         }
 
         // Retorna todas as disciplinas cadastradas
@@ -233,6 +241,61 @@ namespace AcessoDados
                 }
 
                 return dadosTabela;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public bool VerificaTemRequisito(Modelos.DISCIPLINA disciplina)
+        {
+            try
+            {
+                using (Modelos.Entidade contexto = new Modelos.Entidade())
+                {
+                    Modelos.DISCIPLINA temp = contexto.DISCIPLINA.Find(disciplina.CODIGO_DISCIPLINA);
+
+                    if (temp.DISCIPLINA1.Count > 0) { return true; }
+
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public bool VerificaERequisito(Modelos.DISCIPLINA disciplina)
+        {
+            try
+            {
+                using (Modelos.Entidade contexto = new Modelos.Entidade())
+                {
+                    Modelos.DISCIPLINA temp = contexto.DISCIPLINA.Find(disciplina.CODIGO_DISCIPLINA);
+
+                    if (temp.DISCIPLINA2.Count > 0) { return true; }
+                }
+
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public bool VerificaAlocacao(Modelos.DISCIPLINA disciplina)
+        {
+            try
+            {
+                using (Modelos.Entidade contexto = new Modelos.Entidade())
+                {
+                    if ((contexto.DISCIPLINA.Find(disciplina.CODIGO_DISCIPLINA)).DISCIPLINA_CURSO.Count > 0) { return true; }
+                }
+
+                return false;
             }
             catch (Exception ex)
             {

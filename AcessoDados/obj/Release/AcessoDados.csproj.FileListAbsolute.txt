@@ -1,0 +1,12 @@
+D:\Projetos\C#\GradeDeHorario\AcessoDados\bin\Release\AcessoDados.dll.config
+D:\Projetos\C#\GradeDeHorario\AcessoDados\bin\Release\AcessoDados.dll
+D:\Projetos\C#\GradeDeHorario\AcessoDados\bin\Release\AcessoDados.pdb
+D:\Projetos\C#\GradeDeHorario\AcessoDados\bin\Release\EntityFramework.dll
+D:\Projetos\C#\GradeDeHorario\AcessoDados\bin\Release\EntityFramework.SqlServer.dll
+D:\Projetos\C#\GradeDeHorario\AcessoDados\bin\Release\Modelos.dll
+D:\Projetos\C#\GradeDeHorario\AcessoDados\bin\Release\Modelos.pdb
+D:\Projetos\C#\GradeDeHorario\AcessoDados\bin\Release\EntityFramework.xml
+D:\Projetos\C#\GradeDeHorario\AcessoDados\bin\Release\EntityFramework.SqlServer.xml
+D:\Projetos\C#\GradeDeHorario\AcessoDados\obj\Release\AcessoDados.csprojResolveAssemblyReference.cache
+D:\Projetos\C#\GradeDeHorario\AcessoDados\obj\Release\AcessoDados.dll
+D:\Projetos\C#\GradeDeHorario\AcessoDados\obj\Release\AcessoDados.pdb

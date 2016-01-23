@@ -1,0 +1,14 @@
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Release\RegraNegocio.dll.config
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Release\RegraNegocio.dll
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Release\RegraNegocio.pdb
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Release\AcessoDados.dll
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Release\EntityFramework.dll
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Release\EntityFramework.SqlServer.dll
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Release\Modelos.dll
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Release\AcessoDados.pdb
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Release\Modelos.pdb
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Release\EntityFramework.xml
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\bin\Release\EntityFramework.SqlServer.xml
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\obj\Release\RegraNegocio.csprojResolveAssemblyReference.cache
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\obj\Release\RegraNegocio.dll
+D:\Projetos\C#\GradeDeHorario\RegraNegocio\obj\Release\RegraNegocio.pdb

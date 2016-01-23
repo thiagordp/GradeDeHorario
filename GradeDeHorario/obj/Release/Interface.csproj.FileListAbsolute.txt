@@ -1,0 +1,28 @@
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Release\Grade de Horários - UFSC Araranguá.exe.config
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Release\Grade de Horários - UFSC Araranguá.exe
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Release\Grade de Horários - UFSC Araranguá.pdb
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Release\EntityFramework.dll
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Release\EntityFramework.SqlServer.dll
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Release\Modelos.dll
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Release\RegraNegocio.dll
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Release\AcessoDados.dll
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Release\Modelos.pdb
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Release\RegraNegocio.pdb
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Release\EntityFramework.xml
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Release\EntityFramework.SqlServer.xml
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Release\AcessoDados.pdb
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\Interface.csprojResolveAssemblyReference.cache
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\GradeDeHorario.frmDisciplina.resources
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\GradeDeHorario.frmFase.resources
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\GradeDeHorario.frmGradeHorario.resources
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\GradeDeHorario.frmInfraEstrutura.resources
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\GradeDeHorario.frmPrincipal.resources
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\GradeDeHorario.frmProfessor.resources
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\GradeDeHorario.frmSelecionaCurso.resources
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\GradeDeHorario.frmSelecionaDisciplina.resources
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\GradeDeHorario.frmSemestre.resources
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\GradeDeHorario.frmTurma.resources
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\GradeDeHorario.Properties.Resources.resources
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\Interface.csproj.GenerateResource.Cache
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\Grade de Horários - UFSC Araranguá.exe
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\Grade de Horários - UFSC Araranguá.pdb

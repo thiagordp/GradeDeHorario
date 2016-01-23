@@ -70,10 +70,14 @@ namespace GradeDeHorario
             {
                 try
                 {
-                    // Excluir disciplina
+                    disciplinaRN.ApagaDisciplina(disciplinaAntiga);
 
                     LimparTudo();
                     EstadoEditacao(false);
+                    btnNovo.Enabled = true;
+                    PreencheTabelaDisciplina();
+                    PreencheListaDepartamento();
+
                     MessageBox.Show("Disciplina excluída com sucesso!", "Exclusão realizada", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
@@ -87,6 +91,7 @@ namespace GradeDeHorario
         {
             LimparTexto();
             PreencheVazio(ref dtgDisciplinaRequisito);
+            btnNovo.Enabled = true;
         }
 
         private void PreencheVazio(ref DataGridView dtg)
@@ -169,6 +174,7 @@ namespace GradeDeHorario
             }
             novoRegistro = false;
             EstadoEditacao(true);
+            btnNovo.Enabled = false;
 
             txtCodigo.Text = dtgDisciplina.Rows[e.RowIndex].Cells["CODIGO_DISCIPLINA"].Value.ToString();
             txtNomeDisciplina.Text = dtgDisciplina.Rows[e.RowIndex].Cells["NOME_DISCIPLINA"].Value.ToString();
@@ -187,7 +193,7 @@ namespace GradeDeHorario
 
             if (requisitoNovo == null)
             {
-                requisitoAntigo = new DataTable();
+                requisitoAntigo = requisitoNovo = new DataTable();
             }
             // Verificar como resgatar os requisitos
         }

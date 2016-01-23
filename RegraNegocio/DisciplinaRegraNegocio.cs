@@ -22,7 +22,6 @@ namespace RegraNegocio
         private AcessoDados.DisciplinaAcessoDados disciplinaAD;
         private Form frmDisciplina;
 
-
         public DisciplinaRegraNegocio(Form frm)
         {
             frmDisciplina = frm;
@@ -49,7 +48,6 @@ namespace RegraNegocio
         public void EditaDisciplina(Modelos.DISCIPLINA disciplinaAntiga, Modelos.DISCIPLINA disciplinaNova, DataTable requisitoAntigo, DataTable requisitoNovo)
         {
             VerificaDisciplina(disciplinaNova);
-
             VerificaRequisitos(disciplinaNova, requisitoNovo);
 
             try
@@ -64,9 +62,39 @@ namespace RegraNegocio
         }
 
         // Apaga uma disciplina informada.
-        public void ApagaDisciplina()
+        public void ApagaDisciplina(Modelos.DISCIPLINA disciplina)
         {
+            try
+            {
+                if (disciplina.CODIGO_DISCIPLINA.Trim() == "")
+                {
+                    throw new Exception("O campo código não pode ser vazio!");
+                }
 
+                Modelos.DISCIPLINA temp = SelecionaDisciplina(disciplina.CODIGO_DISCIPLINA);
+
+                if (temp == null)
+                {
+                    throw new Exception("A disciplina não existe!\nVerifique se existe alguma aplicação externa que possa estar interagindo com o banco de dados e feche-a!");
+                }
+
+                if (VerificaERequisito(temp) == true)
+                {
+                    throw new Exception("Não é possível excluir a disciplina selecionada pois ela é requisito de uma ou mais disciplinas.\nRetire-a do papel de requisito é tente novamente.");
+                }
+
+                if (VerificaAlocacao(temp) == true)
+                {
+                    throw new Exception("Não é possível excluir a disciplina selecionada!\nEla faz parte do currículo de algum curso.");
+                }
+
+                disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
+                disciplinaAD.ApagaDisciplina(disciplina);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
         }
 
         // Retorna uma lista com todas as disciplinas cadastradas.
@@ -99,6 +127,20 @@ namespace RegraNegocio
             }
         }
 
+        private bool VerificaTemRequisito(Modelos.DISCIPLINA disciplina)
+        {
+            disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
+
+            return disciplinaAD.VerificaTemRequisito(disciplina);
+        }
+
+        private bool VerificaERequisito(Modelos.DISCIPLINA disciplina)
+        {
+            disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
+
+            return disciplinaAD.VerificaERequisito(disciplina);
+        }
+
         // Seleciona todo os departamentos.
         public DataTable SelecionaTodoDepartamento()
         {
@@ -121,7 +163,6 @@ namespace RegraNegocio
             {
                 throw new Exception("É necessário escolher o departamento ao qual a disciplina será vinculada!");
             }
-
         }
 
         // Verifica a lista de requisitos para a disciplina informada.
@@ -160,7 +201,13 @@ namespace RegraNegocio
             {
                 throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
             }
+        }
 
+        private bool VerificaAlocacao(Modelos.DISCIPLINA disciplina)
+        {
+            disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
+
+            return disciplinaAD.VerificaAlocacao(disciplina);
         }
     }
 }
