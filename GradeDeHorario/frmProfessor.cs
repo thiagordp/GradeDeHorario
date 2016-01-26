@@ -36,7 +36,6 @@ namespace GradeDeHorario
                 try
                 {
                     professorRN = new AcessoDados.ProfessorRegraNegocio();
-
                     professorRN.ApagaProfessor(profAntigo);
 
                     // Excluir professor

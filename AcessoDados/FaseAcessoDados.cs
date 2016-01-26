@@ -8,33 +8,36 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
-public class FaseAcessoDados
+namespace AcessoDados
 {
-    //
-    // Insere uma nova fase com, o valor da última fase mais um, no banco de dados
-    //
-    public void InsereFase() { }
+    public class FaseAcessoDados
+    {
+        //
+        // Insere uma nova fase com, o valor da última fase mais um, no banco de dados
+        //
+        public void InsereFase() { }
 
-    //
-    // Edita os atributos da fase indicada de acordo com os dados fornecidos
-    //
-    public void EditaFase() { }
+        //
+        // Edita os atributos da fase indicada de acordo com os dados fornecidos
+        //
+        public void EditaFase() { }
 
-    //
-    // Deleta a fase especificada
-    //
-    public void ApagaFase() { }
+        //
+        // Deleta a fase especificada
+        //
+        public void ApagaFase() { }
 
-    //
-    // Retorna todas as fases cadastradas
-    //
-    public void SelecionaTodaFase() { }
+        //
+        // Retorna todas as fases cadastradas
+        //
+        public void SelecionaTodaFase() { }
 
-    //
-    // Retorna as fase que contém o nome indicado -- REVER O FILTRO
-    //
-    public void SelecionaFase(string filtro) { }
+        //
+        // Retorna as fase que contém o nome indicado -- REVER O FILTRO
+        //
+        public void SelecionaFase(string filtro) { }
+
+    }
+
 
 }
-

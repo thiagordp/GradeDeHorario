@@ -22,6 +22,7 @@ namespace Modelos
     
         public int CODIGO_CURSO { get; set; }
         public string NOME_CURSO { get; set; }
+        public Nullable<int> QTD_FASE { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DISCIPLINA_CURSO> DISCIPLINA_CURSO { get; set; }
