@@ -29,26 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSemestre));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnNovo = new System.Windows.Forms.ToolStripButton();
             this.btnCancelar = new System.Windows.Forms.ToolStripButton();
-            this.btnExcluir = new System.Windows.Forms.ToolStripButton();
             this.btnSalvar = new System.Windows.Forms.ToolStripButton();
+            this.btnExcluir = new System.Windows.Forms.ToolStripButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.gbSemestre = new System.Windows.Forms.GroupBox();
             this.tblDado = new System.Windows.Forms.TableLayoutPanel();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.dtgSemestre = new System.Windows.Forms.DataGridView();
-            this.CODIGO_TURMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SEQ_SEMESTRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NOME_SEMESTRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gbSemestre = new System.Windows.Forms.GroupBox();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.gbSemestre.SuspendLayout();
             this.tblDado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgSemestre)).BeginInit();
-            this.gbSemestre.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -90,19 +91,6 @@
             this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // btnExcluir
-            // 
-            this.btnExcluir.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnExcluir.Enabled = false;
-            this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
-            this.btnExcluir.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnExcluir.Margin = new System.Windows.Forms.Padding(5);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(45, 59);
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
-            // 
             // btnSalvar
             // 
             this.btnSalvar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -116,6 +104,19 @@
             this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnExcluir.Enabled = false;
+            this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
+            this.btnExcluir.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(5);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(45, 59);
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
@@ -125,12 +126,27 @@
             this.tableLayoutPanel1.Controls.Add(this.dtgSemestre, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 69);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(5);
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.Size = new System.Drawing.Size(255, 220);
             this.tableLayoutPanel1.TabIndex = 1;
+            // 
+            // gbSemestre
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.gbSemestre, 2);
+            this.gbSemestre.Controls.Add(this.tblDado);
+            this.gbSemestre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbSemestre.Enabled = false;
+            this.gbSemestre.Location = new System.Drawing.Point(8, 8);
+            this.gbSemestre.Name = "gbSemestre";
+            this.gbSemestre.Size = new System.Drawing.Size(239, 74);
+            this.gbSemestre.TabIndex = 2;
+            this.gbSemestre.TabStop = false;
+            this.gbSemestre.Text = "Semestre";
             // 
             // tblDado
             // 
@@ -147,7 +163,7 @@
             this.tblDado.RowCount = 2;
             this.tblDado.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tblDado.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tblDado.Size = new System.Drawing.Size(243, 55);
+            this.tblDado.Size = new System.Drawing.Size(233, 55);
             this.tblDado.TabIndex = 0;
             // 
             // txtNome
@@ -155,7 +171,7 @@
             this.txtNome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtNome.Location = new System.Drawing.Point(53, 30);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(187, 20);
+            this.txtNome.Size = new System.Drawing.Size(177, 20);
             this.txtNome.TabIndex = 3;
             // 
             // label2
@@ -187,7 +203,7 @@
             this.txtCodigo.Enabled = false;
             this.txtCodigo.Location = new System.Drawing.Point(53, 3);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(187, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(177, 20);
             this.txtCodigo.TabIndex = 2;
             // 
             // dtgSemestre
@@ -196,51 +212,42 @@
             this.dtgSemestre.AllowUserToDeleteRows = false;
             this.dtgSemestre.AllowUserToResizeColumns = false;
             this.dtgSemestre.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dtgSemestre.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgSemestre.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dtgSemestre.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dtgSemestre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgSemestre.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_TURMA,
+            this.SEQ_SEMESTRE,
             this.NOME_SEMESTRE});
             this.tableLayoutPanel1.SetColumnSpan(this.dtgSemestre, 2);
             this.dtgSemestre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgSemestre.Location = new System.Drawing.Point(5, 85);
+            this.dtgSemestre.Location = new System.Drawing.Point(10, 90);
             this.dtgSemestre.Margin = new System.Windows.Forms.Padding(5);
             this.dtgSemestre.Name = "dtgSemestre";
             this.dtgSemestre.ReadOnly = true;
             this.dtgSemestre.RowHeadersVisible = false;
             this.dtgSemestre.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dtgSemestre.Size = new System.Drawing.Size(245, 131);
+            this.dtgSemestre.Size = new System.Drawing.Size(235, 120);
             this.dtgSemestre.TabIndex = 1;
             this.dtgSemestre.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgSemestre_CellDoubleClick);
             // 
-            // CODIGO_TURMA
+            // SEQ_SEMESTRE
             // 
-            this.CODIGO_TURMA.HeaderText = "Código";
-            this.CODIGO_TURMA.Name = "CODIGO_TURMA";
-            this.CODIGO_TURMA.ReadOnly = true;
-            this.CODIGO_TURMA.Visible = false;
+            this.SEQ_SEMESTRE.DataPropertyName = "SEQ_SEMESTRE";
+            this.SEQ_SEMESTRE.HeaderText = "Código";
+            this.SEQ_SEMESTRE.Name = "SEQ_SEMESTRE";
+            this.SEQ_SEMESTRE.ReadOnly = true;
+            this.SEQ_SEMESTRE.Visible = false;
             // 
             // NOME_SEMESTRE
             // 
             this.NOME_SEMESTRE.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NOME_SEMESTRE.DataPropertyName = "NOME_SEMESTRE";
             this.NOME_SEMESTRE.HeaderText = "Nome";
             this.NOME_SEMESTRE.Name = "NOME_SEMESTRE";
             this.NOME_SEMESTRE.ReadOnly = true;
             this.NOME_SEMESTRE.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // gbSemestre
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.gbSemestre, 2);
-            this.gbSemestre.Controls.Add(this.tblDado);
-            this.gbSemestre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbSemestre.Enabled = false;
-            this.gbSemestre.Location = new System.Drawing.Point(3, 3);
-            this.gbSemestre.Name = "gbSemestre";
-            this.gbSemestre.Size = new System.Drawing.Size(249, 74);
-            this.gbSemestre.TabIndex = 2;
-            this.gbSemestre.TabStop = false;
-            this.gbSemestre.Text = "Semestre";
             // 
             // frmSemestre
             // 
@@ -260,10 +267,10 @@
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.gbSemestre.ResumeLayout(false);
             this.tblDado.ResumeLayout(false);
             this.tblDado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgSemestre)).EndInit();
-            this.gbSemestre.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,9 +290,9 @@
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.DataGridView dtgSemestre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA;
         private System.Windows.Forms.DataGridViewTextBoxColumn NOME_TURMA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NOME_SEMESTRE;
         private System.Windows.Forms.GroupBox gbSemestre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_SEMESTRE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NOME_SEMESTRE;
     }
 }

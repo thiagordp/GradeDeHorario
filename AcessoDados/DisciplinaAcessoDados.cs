@@ -305,5 +305,33 @@ namespace AcessoDados
                 throw new Exception(ex.Message);
             }
         }
+
+      
+        public DataTable SelecionaDisciplinaPorNome(string nome)
+        {
+            sql = new StringBuilder();
+            comandoSql = new SqlCommand();
+            dadosTabela = new DataTable();
+
+            using (SqlConnection conexao = new SqlConnection(Conexao.stringConexao))
+            {
+                sql.Append("SELECT	CODIGO_DISCIPLINA, NOME_DISCIPLINA, CREDITO_DISCIPLINA,");
+                sql.Append("        DISCIPLINA.CODIGO_DEPARTAMENTO, NOME_DEPARTAMENTO ");
+                sql.Append("        FROM DISCIPLINA INNER JOIN DEPARTAMENTO");
+                sql.Append("        ON DISCIPLINA.CODIGO_DEPARTAMENTO = DEPARTAMENTO.CODIGO_DEPARTAMENTO");
+                sql.Append("        WHERE NOME_DISCIPLINA LIKE '" + nome + "%'");
+                sql.Append("        ORDER BY NOME_DISCIPLINA ASC; ");
+
+
+                comandoSql.CommandText = sql.ToString();
+                comandoSql.Connection = conexao;
+
+                conexao.Open();
+
+                dadosTabela.Load(comandoSql.ExecuteReader());
+
+                return dadosTabela;
+            }
+        }
     }
 }

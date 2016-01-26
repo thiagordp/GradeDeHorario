@@ -16,8 +16,6 @@ namespace GradeDeHorario
         private Modelos.DISCIPLINA disciplinaAntiga = new Modelos.DISCIPLINA();
         private DataTable requisitoAntigo = new DataTable();
         private DataTable requisitoNovo = new DataTable();
-        //private List
-
         private bool novoRegistro = false;
 
         public frmDisciplina()
@@ -250,6 +248,12 @@ namespace GradeDeHorario
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void txtPesquisaDisciplina_TextChanged(object sender, EventArgs e)
+        {
+            disciplinaRN = new RegraNegocio.DisciplinaRegraNegocio(this);
+            dtgDisciplina.DataSource = disciplinaRN.SelecionaDisciplinaPorNome(txtPesquisaDisciplina.Text);
         }
     }
 }

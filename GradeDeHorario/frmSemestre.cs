@@ -13,24 +13,67 @@ namespace GradeDeHorario
     public partial class frmSemestre : Form
     {
         private Modelos.CURSO curso;
+        private bool novoRegistro;
+        private RegraNegocio.SemestreRegraNegocio semestreRN;
+
 
         public frmSemestre(Modelos.CURSO curso)
         {
             InitializeComponent();
 
             this.curso = curso;
+            PreencheTabela();
         }
 
         private void btnNovo_Click(object sender, EventArgs e)
         {
-            EstadoEditacao(true);
-            btnExcluir.Enabled = false;
+            try
+            {
+                EstadoEditacao(true);
+                btnExcluir.Enabled = btnNovo.Enabled = false;
+
+                novoRegistro = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            EstadoEditacao(false);
-            LimparTudo();
+            try
+            {
+                Modelos.SEMESTRE semestre = new Modelos.SEMESTRE();
+
+                semestre.NOME_SEMESTRE = txtNome.Text;
+                if (txtCodigo.Text.Trim().Count() > 0)
+                {
+                    semestre.SEQ_SEMESTRE = Convert.ToInt32(txtCodigo.Text);
+                }
+
+                semestreRN = new RegraNegocio.SemestreRegraNegocio();
+
+                if (novoRegistro == true)
+                {
+                    semestreRN.InsereSemestre(semestre);
+                }
+                else
+                {
+                    semestreRN.AlteraSemestre(semestre);
+                }
+
+                LimparTudo();
+                PreencheTabela();
+                MessageBox.Show("Alterações realizadas com sucesso!", "Alterações concluídas", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                EstadoEditacao(false);
+                btnNovo.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -39,9 +82,16 @@ namespace GradeDeHorario
             {
                 try
                 {
-                    // Excluir semestre
-                    LimparTudo();
+                    Modelos.SEMESTRE semestre = new Modelos.SEMESTRE();
 
+                    semestre.SEQ_SEMESTRE = Convert.ToInt32(txtCodigo.Text);
+                    semestre.NOME_SEMESTRE = txtNome.Text;
+
+                    semestreRN = new RegraNegocio.SemestreRegraNegocio();
+                    semestreRN.ApagaSemestre(semestre);
+
+                    LimparTudo();
+                    PreencheTabela();
                     EstadoEditacao(false);
                     btnExcluir.Enabled = false;
                     MessageBox.Show("Semestre excluído com sucesso!", "Exclusão realizada", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -56,18 +106,21 @@ namespace GradeDeHorario
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             EstadoEditacao(false);
+            LimparTudo();
             btnExcluir.Enabled = false;
         }
 
         private void dtgSemestre_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             btnExcluir.Enabled = true;
+            btnNovo.Enabled = false;
+            novoRegistro = false;
             EstadoEditacao(true);
 
             try
             {
-                txtCodigo.Text = dtgSemestre.Rows[e.RowIndex].Cells["CODIGO"].Value.ToString();
-                txtNome.Text = dtgSemestre.Rows[e.RowIndex].Cells["NOME"].Value.ToString();
+                txtCodigo.Text = dtgSemestre.Rows[e.RowIndex].Cells["SEQ_SEMESTRE"].Value.ToString();
+                txtNome.Text = dtgSemestre.Rows[e.RowIndex].Cells["NOME_SEMESTRE"].Value.ToString();
             }
             catch (Exception ex)
             {
@@ -83,13 +136,15 @@ namespace GradeDeHorario
 
         private void LimparTudo()
         {
-            foreach (Component componente in this.Controls)
-            {
-                if (componente is TextBox)
-                {
-                    (componente as TextBox).Clear();
-                }
-            }
+            txtCodigo.Clear();
+            txtNome.Clear();
+        }
+
+        private void PreencheTabela()
+        {
+            semestreRN = new RegraNegocio.SemestreRegraNegocio();
+
+            dtgSemestre.DataSource = semestreRN.SelecionaTodoSemestre();
         }
     }
 }

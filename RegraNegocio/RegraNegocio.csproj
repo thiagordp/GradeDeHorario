@@ -63,6 +63,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SelecionaCursoRegraNegocio.cs" />
     <Compile Include="SelecionaDisciplinaRegraNegocio.cs" />
+    <Compile Include="SemestreRegraNegocio.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AcessoDados\AcessoDados.csproj">

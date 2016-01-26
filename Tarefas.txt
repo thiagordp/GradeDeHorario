@@ -7,15 +7,15 @@ frmDisciplina:
     
     ✓ Comportamento da Interface.
     ✓ Inserção, edição, exclusão e listagem de disciplinas.
-    • Comportamento para a disciplina que é requisito.
+    ✓ Comportamento para a disciplina que é requisito.
     ✓ Comunicação com o formulário de disciplinas requisito.
     ✓ Inserção, edição, exclusão e listagem de disciplinas requisito.
 ----------------------------------------------------------------------------------------------
 frmSelecionaDisciplina:
 
-    • Comportamento de interface
-    • Listagem e seleção de disciplinas
-    • Comunicação com o frmDisciplina: envio da lista com as disc. selec.
+    ✓ Comportamento de interface
+    ✓ Listagem e seleção de disciplinas
+    ✓ Comunicação com o frmDisciplina: envio da lista com as disc. selec.
 ----------------------------------------------------------------------------------------------
 frmFase:
 
@@ -26,8 +26,8 @@ frmFase:
 ----------------------------------------------------------------------------------------------
 frmSemestre:
 
-    • Comportamento de interface.
-    • Inserção, edição, exclusão e listagem de semestres.
+    ✓ Comportamento de interface.
+    ✓ Inserção, edição, exclusão e listagem de semestres.
 ----------------------------------------------------------------------------------------------
 frmTurma:
 

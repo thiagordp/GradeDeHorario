@@ -36,7 +36,6 @@
             this.btnTurma = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnProfessor = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnInfraEstrutura = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
@@ -55,13 +54,12 @@
             this.tsBarraMenu.ImageScalingSize = new System.Drawing.Size(40, 40);
             this.tsBarraMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnDisciplina,
-            this.btnFase,
             this.btnSemestre,
-            this.btnTurma,
-            this.toolStripSeparator1,
             this.btnProfessor,
-            this.toolStripSeparator2,
             this.btnInfraEstrutura,
+            this.toolStripSeparator1,
+            this.btnFase,
+            this.btnTurma,
             this.toolStripSeparator3,
             this.toolStripButton1});
             this.tsBarraMenu.Location = new System.Drawing.Point(0, 0);
@@ -131,12 +129,6 @@
             this.btnProfessor.Text = "Professores";
             this.btnProfessor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnProfessor.Click += new System.EventHandler(this.btnProfessor_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Margin = new System.Windows.Forms.Padding(5);
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 57);
             // 
             // btnInfraEstrutura
             // 
@@ -237,7 +229,6 @@
         private System.Windows.Forms.ToolStripButton btnSemestre;
         private System.Windows.Forms.ToolStripButton btnTurma;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
     }

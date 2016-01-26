@@ -209,5 +209,20 @@ namespace RegraNegocio
 
             return disciplinaAD.VerificaAlocacao(disciplina);
         }
+
+        public DataTable SelecionaDisciplinaPorNome(string nome)
+        {
+            try
+            {
+                disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
+               
+                return disciplinaAD.SelecionaDisciplinaPorNome(nome);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
+            
+        }
     }
 }
