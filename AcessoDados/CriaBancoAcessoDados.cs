@@ -116,22 +116,22 @@ namespace AcessoDados
                 curso = new Modelos.CURSO();
                 curso.CODIGO_CURSO = 653;
                 curso.NOME_CURSO = "ENGENHARIA DE ENERGIA";
-                cursos.Add(curso);
                 curso.QTD_FASE = 10;
+                cursos.Add(curso);
 
                 // Inserção do curso de Engenharia de Computação.
                 curso = new Modelos.CURSO();
                 curso.CODIGO_CURSO = 655;
                 curso.NOME_CURSO = "ENGENHARIA DE COMPUTAÇÃO";
-                cursos.Add(curso);
                 curso.QTD_FASE = 10;
+                cursos.Add(curso);
 
                 // Inserção do curso de TIC.
                 curso = new Modelos.CURSO();
                 curso.CODIGO_CURSO = 652;
                 curso.NOME_CURSO = "TECNOLOGIAS DA INFORMAÇÃO E COMUNICAÇÃO";
-                cursos.Add(curso);
                 curso.QTD_FASE = 6;
+                cursos.Add(curso);
 
                 using (Modelos.Entidade contexto = new Modelos.Entidade())
                 {

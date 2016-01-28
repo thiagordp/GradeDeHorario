@@ -204,6 +204,7 @@
   <ItemGroup>
     <Content Include="logo.ico" />
     <Content Include="logo_default.ico" />
+    <None Include="Resources\ic_edit.png" />
     <None Include="Resources\ic_teacher.png" />
     <None Include="Resources\ic_turma.png" />
     <None Include="Resources\ic_semestre.png" />

@@ -6,14 +6,165 @@
 //------------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace RegraNegocio
 {
     public class FaseRegraNegocio
     {
+        private Modelos.CURSO curso;
+        private AcessoDados.FaseAcessoDados faseAD = new AcessoDados.FaseAcessoDados();
 
+        //
+        public DataTable SelecionaDisciplina(string nome)
+        {
+            faseAD = new AcessoDados.FaseAcessoDados();
+
+            return faseAD.SelecionaDisciplina(nome);
+        }
+
+        //
+        // Insere uma nova fase com, o valor da última fase mais um, no banco de dados
+        //
+        public void InsereFase() { }
+
+        //
+        // Edita os atributos da fase indicada de acordo com os dados fornecidos
+        //
+        public void EditaFase() { }
+
+        //
+        // Deleta a fase especificada
+        //
+        public void ApagaFase() { }
+
+        //
+        // Retorna todas as fases cadastradas
+        //
+        public void SelecionaTodaFase() { }
+
+        //
+        // Retorna as fase que contém o nome indicado -- REVER O FILTRO
+        //
+        public void SelecionaFase(string filtro)
+        {
+
+        }
+
+        //
+        public DataTable SelecionaDisciplinaFase(int fase, int curso)
+        {
+            try
+            {
+                faseAD = new AcessoDados.FaseAcessoDados();
+
+                return faseAD.SelecionaDisciplinaFase(fase, curso);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
+        }
+
+        //
+        public void SalvaFase(DataGridView tabelaAntiga, DataGridView tabelaNova, int fase, int curso)
+        {
+            try
+            {
+                faseAD = new AcessoDados.FaseAcessoDados();
+                // faseAD.SalvaFase(tabelaAntiga, tabelaNova, fase, curso);
+
+                // Caso não tenha nenhuma disciplina naquela fase já cadastrada.
+                if (tabelaAntiga.Rows.Count == 0)
+                {
+                    Modelos.DISCIPLINA_CURSO novaDiscFase;
+                    List<Modelos.DISCIPLINA_CURSO> listaFase = new List<Modelos.DISCIPLINA_CURSO>();
+
+                    for (int i = 0; i < tabelaNova.Rows.Count; i++)
+                    {
+                        novaDiscFase = new Modelos.DISCIPLINA_CURSO();
+                        novaDiscFase.CODIGO_CURSO = curso;
+                        novaDiscFase.CODIGO_DISCIPLINA = tabelaNova.Rows[i].Cells["CODIGO_DISCIPLINA"].Value.ToString();
+                        novaDiscFase.FASE_DISCIPLINA_CURSO = fase;
+
+                        listaFase.Add(novaDiscFase);
+                    }
+
+                    faseAD = new AcessoDados.FaseAcessoDados();
+                    faseAD.InsereListaDisciplinaFase(listaFase);
+                }
+                else
+                {
+                    List<Modelos.DISCIPLINA_CURSO> listaEdita = new List<Modelos.DISCIPLINA_CURSO>();
+                    List<Modelos.DISCIPLINA_CURSO> listaExclui = new List<Modelos.DISCIPLINA_CURSO>();
+                    List<Modelos.DISCIPLINA_CURSO> listaInsere = new List<Modelos.DISCIPLINA_CURSO>();
+                    List<Modelos.DISCIPLINA_CURSO> listaFaseAntiga = faseAD.SelecionaFaseCurso(fase, curso);
+                    List<Modelos.DISCIPLINA_CURSO> listaFaseNova = PreencheFase(tabelaNova, fase, curso);
+                    List<Modelos.DISCIPLINA_CURSO> lista = PreencheFase(tabelaNova, fase, curso);
+
+
+                    for (int i = 0; i < listaFaseNova.Count; i++)
+                    {
+                        Modelos.DISCIPLINA_CURSO temp = listaFaseAntiga.Find(p => (p.CODIGO_DISCIPLINA == lista.ElementAt(i).CODIGO_DISCIPLINA) && (p.CODIGO_CURSO == curso));
+
+                        if (temp == null)
+                        {
+                            // É uma nova disciplina.
+                            listaInsere.Add(listaFaseNova.ElementAt(i));
+                        }
+                        else
+                        {
+                            listaFaseNova.ElementAt(i).SEQ_DISCIPLINA_CURSO = temp.SEQ_DISCIPLINA_CURSO;
+
+                            listaEdita.Add(listaFaseNova.ElementAt(i));
+
+                            // listaFaseAntiga.Remove(listaFaseNova.ElementAt(i)); //não removeu
+                            listaFaseAntiga.Remove(listaFaseAntiga.Find(p => p.SEQ_DISCIPLINA_CURSO == listaFaseNova.ElementAt(i).SEQ_DISCIPLINA_CURSO));
+                        }
+                    }
+
+                    for (int i = 0; i < listaFaseAntiga.Count; i++)
+                    {
+                        // NULL!
+                        Modelos.DISCIPLINA_CURSO temp = faseAD.SelecionaFaseCurso(fase, curso).Find(p => (p.CODIGO_DISCIPLINA == listaFaseAntiga.ElementAt(i).CODIGO_DISCIPLINA) && (p.CODIGO_CURSO == curso));
+
+                        listaFaseAntiga.ElementAt(i).SEQ_DISCIPLINA_CURSO = temp.SEQ_DISCIPLINA_CURSO;
+
+                        listaExclui.Add(listaFaseAntiga.ElementAt(i));
+                    }
+
+                    faseAD.SalvaFase(listaEdita, listaExclui, listaInsere);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
+        }
+
+        private List<Modelos.DISCIPLINA_CURSO> PreencheFase(DataGridView tabela, int fase, int curso)
+        {
+            string codigo;
+
+            Modelos.DISCIPLINA_CURSO temp;
+
+            List<Modelos.DISCIPLINA_CURSO> lista = new List<Modelos.DISCIPLINA_CURSO>();
+
+            for (int i = 0; i < tabela.Rows.Count; i++)
+            {
+                temp = new Modelos.DISCIPLINA_CURSO();
+                temp.CODIGO_DISCIPLINA = tabela.Rows[i].Cells["CODIGO_DISCIPLINA"].Value.ToString();
+                temp.CODIGO_CURSO = curso;
+                temp.FASE_DISCIPLINA_CURSO = fase;
+
+                lista.Add(temp);
+            }
+
+            return lista;
+        }
     }
 }
 
