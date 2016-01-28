@@ -53,11 +53,11 @@
             this.cbbFase = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dtgListaDisciplina = new System.Windows.Forms.DataGridView();
-            this.txtPesquisaDisciplina = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.CODIGO_DISCIPLINA_FASE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NOME_DISCIPLINA_FASE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CREDITO_DISCIPLINA_FASE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtPesquisaDisciplina = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.tbFase.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgDisciplinaFase)).BeginInit();
@@ -325,28 +325,6 @@
             this.dtgListaDisciplina.TabIndex = 1;
             this.dtgListaDisciplina.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgListaDisciplina_CellDoubleClick);
             // 
-            // txtPesquisaDisciplina
-            // 
-            this.txtPesquisaDisciplina.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtPesquisaDisciplina.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtPesquisaDisciplina.Location = new System.Drawing.Point(521, 36);
-            this.txtPesquisaDisciplina.Name = "txtPesquisaDisciplina";
-            this.txtPesquisaDisciplina.Size = new System.Drawing.Size(325, 22);
-            this.txtPesquisaDisciplina.TabIndex = 3;
-            this.txtPesquisaDisciplina.TextChanged += new System.EventHandler(this.txtPesquisaDisciplina_TextChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(521, 3);
-            this.label2.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(325, 27);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Pesquisa de disciplinas:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // CODIGO_DISCIPLINA_FASE
             // 
             this.CODIGO_DISCIPLINA_FASE.DataPropertyName = "CODIGO_DISCIPLINA";
@@ -370,7 +348,28 @@
             this.CREDITO_DISCIPLINA_FASE.HeaderText = "Crédito";
             this.CREDITO_DISCIPLINA_FASE.Name = "CREDITO_DISCIPLINA_FASE";
             this.CREDITO_DISCIPLINA_FASE.Visible = false;
-            this.CREDITO_DISCIPLINA_FASE.Width = 5;
+            // 
+            // txtPesquisaDisciplina
+            // 
+            this.txtPesquisaDisciplina.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtPesquisaDisciplina.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtPesquisaDisciplina.Location = new System.Drawing.Point(521, 36);
+            this.txtPesquisaDisciplina.Name = "txtPesquisaDisciplina";
+            this.txtPesquisaDisciplina.Size = new System.Drawing.Size(325, 22);
+            this.txtPesquisaDisciplina.TabIndex = 3;
+            this.txtPesquisaDisciplina.TextChanged += new System.EventHandler(this.txtPesquisaDisciplina_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Location = new System.Drawing.Point(521, 3);
+            this.label2.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(325, 27);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Pesquisa de disciplinas:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // frmFase
             // 

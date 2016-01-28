@@ -74,10 +74,6 @@ public class InfraestruturaRegraNegocio
         {
             throw new Exception("Selecione um tipo de espaço!");
         }
-        if (espaco.TIPO_ESPACO == "LABORATÓRIO" && espaco.NUMERO_PC_ESPACO == 0)
-        {
-            throw new Exception("O número de computadores deve ser maior que zero!");
-        }
     }
 
     // Apaga o objeto de InfraEstrutura indicado.

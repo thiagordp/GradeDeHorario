@@ -307,7 +307,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 1);
@@ -380,7 +380,7 @@
             this.txtNomeDisciplina.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtNomeDisciplina.Location = new System.Drawing.Point(73, 29);
             this.txtNomeDisciplina.Name = "txtNomeDisciplina";
-            this.txtNomeDisciplina.Size = new System.Drawing.Size(373, 22);
+            this.txtNomeDisciplina.Size = new System.Drawing.Size(372, 22);
             this.txtNomeDisciplina.TabIndex = 4;
             // 
             // nudCreditoDisplicina
@@ -433,14 +433,14 @@
             this.NOME_DISCIPLINA_REQUISITO});
             this.tableLayoutPanel2.SetColumnSpan(this.dtgDisciplinaRequisito, 2);
             this.dtgDisciplinaRequisito.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgDisciplinaRequisito.Location = new System.Drawing.Point(452, 29);
+            this.dtgDisciplinaRequisito.Location = new System.Drawing.Point(451, 29);
             this.dtgDisciplinaRequisito.Name = "dtgDisciplinaRequisito";
             this.dtgDisciplinaRequisito.ReadOnly = true;
             this.dtgDisciplinaRequisito.RowHeadersVisible = false;
             this.tableLayoutPanel2.SetRowSpan(this.dtgDisciplinaRequisito, 2);
             this.dtgDisciplinaRequisito.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dtgDisciplinaRequisito.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgDisciplinaRequisito.Size = new System.Drawing.Size(297, 49);
+            this.dtgDisciplinaRequisito.Size = new System.Drawing.Size(298, 49);
             this.dtgDisciplinaRequisito.TabIndex = 8;
             // 
             // CODIGO_DISCIPLINA_REQUISITO
@@ -466,9 +466,9 @@
             // 
             this.panel1.Controls.Add(this.btnSelecionaRequisito);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(705, 3);
+            this.panel1.Location = new System.Drawing.Point(703, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(44, 20);
+            this.panel1.Size = new System.Drawing.Size(46, 20);
             this.panel1.TabIndex = 5;
             // 
             // btnSelecionaRequisito
@@ -476,7 +476,7 @@
             this.btnSelecionaRequisito.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSelecionaRequisito.Location = new System.Drawing.Point(0, 0);
             this.btnSelecionaRequisito.Name = "btnSelecionaRequisito";
-            this.btnSelecionaRequisito.Size = new System.Drawing.Size(44, 20);
+            this.btnSelecionaRequisito.Size = new System.Drawing.Size(46, 20);
             this.btnSelecionaRequisito.TabIndex = 4;
             this.btnSelecionaRequisito.Text = "...";
             this.btnSelecionaRequisito.UseVisualStyleBackColor = true;
@@ -486,9 +486,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(452, 0);
+            this.label5.Location = new System.Drawing.Point(451, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(247, 26);
+            this.label5.Size = new System.Drawing.Size(246, 26);
             this.label5.TabIndex = 9;
             this.label5.Text = "Disciplinas Pré-requisito";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -499,7 +499,7 @@
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Location = new System.Drawing.Point(136, 52);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 29);
+            this.label4.Size = new System.Drawing.Size(88, 29);
             this.label4.TabIndex = 10;
             this.label4.Text = "Departamento:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -509,7 +509,7 @@
             this.cbbDepartamento.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbbDepartamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbDepartamento.FormattingEnabled = true;
-            this.cbbDepartamento.Location = new System.Drawing.Point(231, 55);
+            this.cbbDepartamento.Location = new System.Drawing.Point(230, 55);
             this.cbbDepartamento.Name = "cbbDepartamento";
             this.cbbDepartamento.Size = new System.Drawing.Size(215, 21);
             this.cbbDepartamento.TabIndex = 11;

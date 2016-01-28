@@ -109,9 +109,16 @@ namespace GradeDeHorario
         //
         private void dtgDisciplinaFase_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            dtgDisciplinaFase.Rows.RemoveAt(e.RowIndex);
-            dtgDisciplinaFase.Sort(dtgDisciplinaFase.Columns[1], ListSortDirection.Ascending);
-            dtgDisciplinaFase.ClearSelection();
+            try
+            {
+                dtgDisciplinaFase.Rows.RemoveAt(e.RowIndex);
+                dtgDisciplinaFase.Sort(dtgDisciplinaFase.Columns[1], ListSortDirection.Ascending);
+                dtgDisciplinaFase.ClearSelection();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         //

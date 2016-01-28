@@ -164,37 +164,44 @@ namespace GradeDeHorario
 
         private void dtgDisciplina_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            Modelos.DISCIPLINA temp = new Modelos.DISCIPLINA();
-
-            if (gbDisciplina.Enabled == true)
+            try
             {
-                MessageBox.Show("Não é possível editar a disciplina selecionada enquanto outra estiver sendo criada ou editada.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                Modelos.DISCIPLINA temp = new Modelos.DISCIPLINA();
+
+                if (gbDisciplina.Enabled == true)
+                {
+                    MessageBox.Show("Não é possível editar a disciplina selecionada enquanto outra estiver sendo criada ou editada.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                novoRegistro = false;
+                EstadoEditacao(true);
+                btnNovo.Enabled = false;
+
+                txtCodigo.Text = dtgDisciplina.Rows[e.RowIndex].Cells["CODIGO_DISCIPLINA"].Value.ToString();
+                txtNomeDisciplina.Text = dtgDisciplina.Rows[e.RowIndex].Cells["NOME_DISCIPLINA"].Value.ToString();
+                nudCreditoDisplicina.Value = Convert.ToDecimal(dtgDisciplina.Rows[e.RowIndex].Cells["CREDITO_DISCIPLINA"].Value.ToString());
+                cbbDepartamento.SelectedValue = dtgDisciplina.Rows[e.RowIndex].Cells["CODIGO_DEPARTAMENTO"].Value.ToString();
+
+                temp.CODIGO_DISCIPLINA = txtCodigo.Text;
+                PreencheTabelaRequisitos(temp);
+
+                disciplinaAntiga.CODIGO_DISCIPLINA = txtCodigo.Text;
+                disciplinaAntiga.NOME_DISCIPLINA = txtNomeDisciplina.Text;
+                disciplinaAntiga.CREDITO_DISCIPLINA = Convert.ToInt32(nudCreditoDisplicina.Value.ToString());
+                disciplinaAntiga.CODIGO_DEPARTAMENTO = Convert.ToInt32(cbbDepartamento.SelectedValue.ToString());
+
+                requisitoAntigo = requisitoNovo = dtgDisciplinaRequisito.DataSource as DataTable;
+
+                if (requisitoNovo == null)
+                {
+                    requisitoAntigo = requisitoNovo = new DataTable();
+                }
             }
-            novoRegistro = false;
-            EstadoEditacao(true);
-            btnNovo.Enabled = false;
-
-            txtCodigo.Text = dtgDisciplina.Rows[e.RowIndex].Cells["CODIGO_DISCIPLINA"].Value.ToString();
-            txtNomeDisciplina.Text = dtgDisciplina.Rows[e.RowIndex].Cells["NOME_DISCIPLINA"].Value.ToString();
-            nudCreditoDisplicina.Value = Convert.ToDecimal(dtgDisciplina.Rows[e.RowIndex].Cells["CREDITO_DISCIPLINA"].Value.ToString());
-            cbbDepartamento.SelectedValue = dtgDisciplina.Rows[e.RowIndex].Cells["CODIGO_DEPARTAMENTO"].Value.ToString();
-
-            temp.CODIGO_DISCIPLINA = txtCodigo.Text;
-            PreencheTabelaRequisitos(temp);
-
-            disciplinaAntiga.CODIGO_DISCIPLINA = txtCodigo.Text;
-            disciplinaAntiga.NOME_DISCIPLINA = txtNomeDisciplina.Text;
-            disciplinaAntiga.CREDITO_DISCIPLINA = Convert.ToInt32(nudCreditoDisplicina.Value.ToString());
-            disciplinaAntiga.CODIGO_DEPARTAMENTO = Convert.ToInt32(cbbDepartamento.SelectedValue.ToString());
-
-            requisitoAntigo = requisitoNovo = dtgDisciplinaRequisito.DataSource as DataTable;
-
-            if (requisitoNovo == null)
+            catch (Exception ex)
             {
-                requisitoAntigo = requisitoNovo = new DataTable();
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            // Verificar como resgatar os requisitos
+            
         }
 
         private void frmDisciplina_Load(object sender, EventArgs e)

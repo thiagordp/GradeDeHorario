@@ -19,10 +19,10 @@ frmSelecionaDisciplina:
 ----------------------------------------------------------------------------------------------
 frmFase:
 
-    • Comportamento de interface.
-    • Pesquisa e listagem de todas as disciplinas.
-    • Inserção, edição, exclusão e listagem de fases de acordo com o curso.
-    • Inserção, edição, exclusão e listagem de disciplinas de acordo com a fase do curso.
+    ✓ Comportamento de interface.
+    ✓ Pesquisa e listagem de todas as disciplinas.
+    ✓ Inserção, edição, exclusão e listagem de fases de acordo com o curso.
+    ✓ Inserção, edição, exclusão e listagem de disciplinas de acordo com a fase do curso.
 ----------------------------------------------------------------------------------------------
 frmSemestre:
 
@@ -38,11 +38,11 @@ frmTurma:
 ----------------------------------------------------------------------------------------------
 frmProfessor:
 
-    • CONCLUÍDO
+    ✓ CONCLUÍDO
 ----------------------------------------------------------------------------------------------
 frmInfraestrutura
 
-    • CONCLUÍDO
+    ✓ CONCLUÍDO
 ----------------------------------------------------------------------------------------------
 frmGradeHorario
 

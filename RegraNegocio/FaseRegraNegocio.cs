@@ -27,34 +27,6 @@ namespace RegraNegocio
         }
 
         //
-        // Insere uma nova fase com, o valor da última fase mais um, no banco de dados
-        //
-        public void InsereFase() { }
-
-        //
-        // Edita os atributos da fase indicada de acordo com os dados fornecidos
-        //
-        public void EditaFase() { }
-
-        //
-        // Deleta a fase especificada
-        //
-        public void ApagaFase() { }
-
-        //
-        // Retorna todas as fases cadastradas
-        //
-        public void SelecionaTodaFase() { }
-
-        //
-        // Retorna as fase que contém o nome indicado -- REVER O FILTRO
-        //
-        public void SelecionaFase(string filtro)
-        {
-
-        }
-
-        //
         public DataTable SelecionaDisciplinaFase(int fase, int curso)
         {
             try
@@ -90,6 +62,13 @@ namespace RegraNegocio
                         novaDiscFase.CODIGO_DISCIPLINA = tabelaNova.Rows[i].Cells["CODIGO_DISCIPLINA"].Value.ToString();
                         novaDiscFase.FASE_DISCIPLINA_CURSO = fase;
 
+                        Modelos.DISCIPLINA_CURSO temp = faseAD.VerificaDisciplinaCurso(novaDiscFase.CODIGO_DISCIPLINA, curso);
+
+                        if (temp != null)
+                        {
+                            throw new Exception("A disciplina de código " + novaDiscFase.CODIGO_DISCIPLINA + " já está vinculada à " + temp.FASE_DISCIPLINA_CURSO.ToString() + "ª fase desse curso.\nRemova a restrição e tente novamente.");
+                        }
+
                         listaFase.Add(novaDiscFase);
                     }
 
@@ -108,16 +87,23 @@ namespace RegraNegocio
 
                     for (int i = 0; i < listaFaseNova.Count; i++)
                     {
-                        Modelos.DISCIPLINA_CURSO temp = listaFaseAntiga.Find(p => (p.CODIGO_DISCIPLINA == lista.ElementAt(i).CODIGO_DISCIPLINA) && (p.CODIGO_CURSO == curso));
+                        Modelos.DISCIPLINA_CURSO discLista = listaFaseAntiga.Find(p => (p.CODIGO_DISCIPLINA == lista.ElementAt(i).CODIGO_DISCIPLINA) && (p.CODIGO_CURSO == curso));
 
-                        if (temp == null)
+                        if (discLista == null)
                         {
+                            Modelos.DISCIPLINA_CURSO discFaseBD = faseAD.VerificaDisciplinaCurso(listaFaseNova.ElementAt(i).CODIGO_DISCIPLINA, curso);
+
+                            if (discFaseBD != null) // Verifica se a disciplina já está vinculada à uma fase.
+                            {
+                                throw new Exception("A disciplina de código " + listaFaseNova.ElementAt(i).CODIGO_DISCIPLINA + " já está vinculada à " + discFaseBD.FASE_DISCIPLINA_CURSO.ToString() + "ª fase desse curso.\nRemova a restrição e tente novamente.");
+                            }
+
                             // É uma nova disciplina.
                             listaInsere.Add(listaFaseNova.ElementAt(i));
                         }
                         else
                         {
-                            listaFaseNova.ElementAt(i).SEQ_DISCIPLINA_CURSO = temp.SEQ_DISCIPLINA_CURSO;
+                            listaFaseNova.ElementAt(i).SEQ_DISCIPLINA_CURSO = discLista.SEQ_DISCIPLINA_CURSO;
 
                             listaEdita.Add(listaFaseNova.ElementAt(i));
 
