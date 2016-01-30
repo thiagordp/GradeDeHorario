@@ -17,16 +17,16 @@ namespace AcessoDados
         // Cria o banco no SQL Server caso não exista.
         public void CriarBanco(string ScriptBancoConstrucao, string ScriptTabelasConstrucao)
         {
-            StringBuilder sql = new StringBuilder();
-            SqlCommand comandoSql = new SqlCommand();
+            StringBuilder sql = new StringBuilder();        // Armazena a consulta SQL
+            SqlCommand comandoSql = new SqlCommand();       // A partir da script SQL e de uma conexão com o banco, executa a script sobre o banco.
 
             try
             {
-                using (SqlConnection conexao = new SqlConnection(@"Server= localhost\SQLEXPRESS; Integrated Security = SSPI"))
+                using (SqlConnection conexao = new SqlConnection(Conexao.stringConexao))
                 {
                     conexao.Open();
 
-                    sql.Append(ScriptBancoConstrucao);
+                    sql.Append(ScriptBancoConstrucao); // Adiciona o script para criação do banco de dados
 
                     comandoSql.CommandText = sql.ToString();
                     comandoSql.Connection = conexao;
@@ -43,7 +43,7 @@ namespace AcessoDados
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message + "\n" + ex.StackTrace);
+                throw new Exception(ex.Message);
             }
         }
 
@@ -52,9 +52,8 @@ namespace AcessoDados
         {
             try
             {
-                //Usa-se uma lista para fazer a inserção de todos os departamentos.
-                List<Modelos.DEPARTAMENTO> departamentos = new List<Modelos.DEPARTAMENTO>();
-                Modelos.DEPARTAMENTO departamento;
+                List<Modelos.DEPARTAMENTO> departamentos = new List<Modelos.DEPARTAMENTO>();        // Usa-se uma lista para fazer a inserção de todos os departamentos.
+                Modelos.DEPARTAMENTO departamento;                                                  // Objeto temporário para armazenamento dos dados de cada departamento.
 
                 // Inserção do Departamento de Computação.
                 departamento = new Modelos.DEPARTAMENTO();
@@ -85,9 +84,9 @@ namespace AcessoDados
                 {
                     foreach (Modelos.DEPARTAMENTO depto in departamentos)
                     {
-                        contexto.DEPARTAMENTO.Add(depto);
+                        contexto.DEPARTAMENTO.Add(depto); // Adiciona o departamento aos cadastrados.
                     }
-                    contexto.SaveChanges();
+                    contexto.SaveChanges();         // Salva as alterações.
                 }
             }
             catch (Exception ex)
@@ -157,10 +156,10 @@ namespace AcessoDados
 
             try
             {
-                using (SqlConnection conexao = new SqlConnection(@"Server= localhost\SQLEXPRESS; database=master; Integrated Security=SSPI"))
+                using (SqlConnection conexao = new SqlConnection(Conexao.stringConexao))
                 {
                     conexao.Open();
-                    sql.Append("SELECT * FROM sys.databases where name = 'GradeHorario'");
+                    sql.Append("SELECT * FROM sys.databases where name = 'GradeHorario'");      // Consulta para verificar se existe algum banco nomeado 'GradeHorario'
 
                     comandoSql.CommandText = sql.ToString();
                     comandoSql.Connection = conexao;
@@ -170,7 +169,7 @@ namespace AcessoDados
             }
             catch (Exception ex)
             {
-                throw new Exception("VerificarBanco(): \"" + ex.Message + "\"");
+                throw new Exception(ex.Message);
             }
         }
     }

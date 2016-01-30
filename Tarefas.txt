@@ -23,6 +23,8 @@ frmFase:
     ✓ Pesquisa e listagem de todas as disciplinas.
     ✓ Inserção, edição, exclusão e listagem de fases de acordo com o curso.
     ✓ Inserção, edição, exclusão e listagem de disciplinas de acordo com a fase do curso.
+    • Verificar se existe alguma disciplina requisito em uma fase anterior a requisitante.
+    • Verificar se existe alguma disciplina requisitante em uma fase posterior a requisito.
 ----------------------------------------------------------------------------------------------
 frmSemestre:
 

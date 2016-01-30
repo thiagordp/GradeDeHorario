@@ -35,7 +35,7 @@ namespace AcessoDados
         }
 
         //
-        public DataTable SelecionaDisciplina(string nome)
+        public DataTable SelecionaDisciplinaLikeNome(string nome)
         {
             sql = new StringBuilder();
             comandoSql = new SqlCommand();
@@ -172,6 +172,45 @@ namespace AcessoDados
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
+            }
+        }
+
+        public void VerificaFaseRequisito(ref Modelos.DISCIPLINA disciplina, ref List<Modelos.DISCIPLINA> requisito, ref List<Modelos.DISCIPLINA> requisitante)
+        {
+            try
+            {
+                using (Modelos.Entidade contexto = new Modelos.Entidade())
+                {
+                    disciplina = contexto.DISCIPLINA.Find(disciplina.CODIGO_DISCIPLINA);
+
+                    if (disciplina == null)
+                    {
+                        throw new Exception("Disciplina não existe.");
+                    }
+                    requisito = disciplina.DISCIPLINA1.ToList();
+                    requisitante = disciplina.DISCIPLINA2.ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        // Retorna a fase da disciplina em um curso.
+        // Retorna -1 caso não esteja em nenhuma fase.
+        public int FaseDisciplina(string codigoDisciplina, int curso)
+        {
+            using (Modelos.Entidade contexto = new Modelos.Entidade())
+            {
+                Modelos.DISCIPLINA_CURSO discCurso = contexto.DISCIPLINA_CURSO.ToList().Where(p => p.CODIGO_CURSO == curso && p.CODIGO_DISCIPLINA == codigoDisciplina).First();
+
+                if (discCurso == null)
+                {
+                    return -1;
+                }
+
+                return Convert.ToInt32(discCurso.FASE_DISCIPLINA_CURSO);
             }
         }
     }

@@ -179,7 +179,7 @@ namespace GradeDeHorario
             cbbFase.SelectedIndex = -1;
         }
 
-        //
+        // Preenche a lista de pesquisa de disciplinas com aquelas que comecem com o conteúdo de 'nome'.
         private void PreencheListaDisciplina(string nome)
         {
             faseRN = new RegraNegocio.FaseRegraNegocio();
@@ -187,13 +187,12 @@ namespace GradeDeHorario
             dtgListaDisciplina.DataSource = faseRN.SelecionaDisciplina(nome);
         }
 
-        //
         private void txtPesquisaDisciplina_TextChanged(object sender, EventArgs e)
         {
             PreencheListaDisciplina(txtPesquisaDisciplina.Text);
         }
 
-        //
+        // 
         private void PreencheTabelaDisciplina()
         {
             faseRN = new RegraNegocio.FaseRegraNegocio();
