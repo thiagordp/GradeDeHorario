@@ -154,5 +154,35 @@ namespace AcessoDados
                 throw new Exception(ex.Message);
             }
         }
+
+        public DataTable SelecionaTodoSemestre()
+        {
+            StringBuilder sql = new StringBuilder();
+            DataTable dadosTabela = new DataTable();
+            SqlCommand comandoSql = new SqlCommand();
+
+            try
+            {
+                using (SqlConnection conexao = new SqlConnection(Conexao.stringConexao))
+                {
+                    conexao.Open();
+
+                    sql.Append("SELECT SEQ_SEMESTRE, NOME_SEMESTRE ");
+                    sql.Append("FROM SEMESTRE ");
+                    sql.Append("ORDER BY NOME_SEMESTRE ASC");
+
+                    comandoSql.CommandText = sql.ToString();
+                    comandoSql.Connection = conexao;
+
+                    dadosTabela.Load(comandoSql.ExecuteReader());
+
+                    return dadosTabela;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

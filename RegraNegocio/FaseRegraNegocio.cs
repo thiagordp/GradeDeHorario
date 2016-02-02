@@ -63,9 +63,7 @@ namespace RegraNegocio
                         {
                             throw new Exception("A disciplina de código " + novaDiscFase.CODIGO_DISCIPLINA + " já está vinculada à " + temp.FASE_DISCIPLINA_CURSO.ToString() + "ª fase desse curso.\nRemova a restrição e tente novamente.");
                         }
-
-
-
+                        
                         listaFase.Add(novaDiscFase);
                     }
 

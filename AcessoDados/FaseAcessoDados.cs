@@ -13,7 +13,7 @@ namespace AcessoDados
         StringBuilder sql;
         SqlCommand comandoSql;
         DataTable dadosTabela;
-        
+
         // Adiciona Fase
         public void InsereListaDisciplinaFase(List<Modelos.DISCIPLINA_CURSO> disciplinaFase)
         {

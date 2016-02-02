@@ -21,9 +21,13 @@ namespace GradeDeHorario
             InitializeComponent();
             this.curso = curso;
             InicializaGrade();
+
+            // Inicializações
             PreenchePesquisaDisciplina(txtPesquisaDisciplina.Text);
             PreenchePesquisaProfessor(txtPesquisaProfessor.Text);
             PreenchePesquisaEspaco(txtPesquisaEspaco.Text);
+            PreencheListaFase();
+            PreencheListaSemestre();
         }
 
         //Adicionar no BD um n..n na Grade com a Disc_Turma
@@ -116,5 +120,48 @@ namespace GradeDeHorario
                 MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void PreencheListaFase()
+        {
+            int qtd_fase = Convert.ToInt32(curso.QTD_FASE);
+            cbbSelectFase.Items.Clear();
+
+            DataTable tabela = new DataTable();
+
+            tabela.Columns.Add("NUMERO_FASE", typeof(int));
+            tabela.Columns.Add("NOME_FASE", typeof(string));
+
+            for (int i = 1; i <= qtd_fase; i++)
+            {
+                tabela.Rows.Add(i, i.ToString() + "a FASE");
+            }
+
+            cbbSelectFase.ComboBox.DataSource = tabela;
+
+            cbbSelectFase.ComboBox.ValueMember = "NUMERO_FASE";
+            cbbSelectFase.ComboBox.DisplayMember = "NOME_FASE";
+
+            cbbSelectFase.SelectedIndex = -1;
+        }
+
+        private void PreencheListaSemestre()
+        {
+            try
+            {
+                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(curso);
+
+                cbbSelectSemestre.ComboBox.DataSource = gradeRN.SelecionaTodoSemestre();
+                cbbSelectSemestre.ComboBox.ValueMember = "SEQ_SEMESTRE";
+                cbbSelectSemestre.ComboBox.DisplayMember = "NOME_SEMESTRE";
+
+                cbbSelectSemestre.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
     }
+
 }

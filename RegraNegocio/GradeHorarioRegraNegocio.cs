@@ -7,6 +7,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 
@@ -86,6 +87,13 @@ namespace RegraNegocio
             {
                 throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
             }
+        }
+
+        public DataTable SelecionaTodoSemestre()
+        {
+            gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso);
+
+            return gradeAD.SelecionaTodoSemestre();
         }
     }
 }
