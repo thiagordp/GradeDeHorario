@@ -60,4 +60,14 @@ frmGradeHorario
     • Adição de Disc, Prof, e Lab. (DPL) em uma célula da grade.
     • Verificar a validade da DPL para tal horário.
     • Imprimir PDF com a grade atual com todas a info de acordo com o modelo.
+    
+    
+    
+01/02/2016
+    
+    • Modelar Layout
+    • Implementar comportamento da interface.
+    
+    • pesquisa sobre hough circles: teoria
+        ○ Tentar aplicar em algo. 
 ----------------------------------------------------------------------------------------------

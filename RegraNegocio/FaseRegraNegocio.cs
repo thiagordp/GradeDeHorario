@@ -113,9 +113,7 @@ namespace RegraNegocio
                     {
                         // NULL!
                         Modelos.DISCIPLINA_CURSO temp = faseAD.SelecionaFaseCurso(fase, curso).Find(p => (p.CODIGO_DISCIPLINA == listaFaseAntiga.ElementAt(i).CODIGO_DISCIPLINA) && (p.CODIGO_CURSO == curso));
-
                         listaFaseAntiga.ElementAt(i).SEQ_DISCIPLINA_CURSO = temp.SEQ_DISCIPLINA_CURSO;
-
                         listaExclui.Add(listaFaseAntiga.ElementAt(i));
                     }
 

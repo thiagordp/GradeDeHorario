@@ -6,34 +6,153 @@
 //------------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 
-public class GradeHorarioAcessoDados
+namespace AcessoDados
 {
-    //
-    // Insere uma nova grade no banco de dados
-    //
-    public void InsereGrade() { }
+    public class GradeHorarioAcessoDados
+    {
+        /// <summary>
+        /// Objeto que referencia o curso da grade atual.
+        /// </summary>
+        private Modelos.CURSO curso;
 
-    //
-    // Edita os atributos da grade indicada de acordo com os dados fornecidos
-    //
-    public void EditaGrade() { }
+        public GradeHorarioAcessoDados(Modelos.CURSO curso)
+        {
+            this.curso = curso;
+        }
 
-    //
-    // Deleta a grade especificada
-    //
-    public void ApagaGrade() { }
+        //
+        // Insere uma nova grade no banco de dados
+        //
+        public void InsereGrade() { }
 
-    //
-    // Retorna todas as grade cadastradas
-    //
-    public void SelecionaTodaGrade() { }
+        //
+        // Edita os atributos da grade indicada de acordo com os dados fornecidos
+        //
+        public void EditaGrade() { }
 
-    //
-    // Retorna as grade que contém o nome indicado -- REVER O FILTRO
-    //
-    public void SelecionaGrade(string filtro) { }
+        //
+        // Deleta a grade especificada
+        //
+        public void ApagaGrade() { }
+
+        //
+        // Retorna todas as grade cadastradas
+        //
+        public void SelecionaTodaGrade() { }
+
+        //
+        // Retorna as grade que contém o nome indicado -- REVER O FILTRO
+        //
+        public void SelecionaGrade(string filtro) { }
+
+        /// <summary>
+        /// Seleciona um conjunto de disciplinas com base no filtro.
+        /// </summary>
+        /// <param name="filtro">Filtro para a pesquisa, sendo o começo do nome.</param>
+        /// <returns>Retorna o conjunto de disciplinas que estão de acordo com o friltro.</returns>
+        public DataTable SelecionaDisciplina(string filtro)
+        {
+            DataTable dadosTabela = new DataTable();
+            StringBuilder sql = new StringBuilder();
+            SqlCommand comandoSql = new SqlCommand();
+
+            try
+            {
+                sql.Append("SELECT CODIGO_DISCIPLINA, NOME_DISCIPLINA ");
+                sql.Append("FROM DISCIPLINA ");
+                sql.Append("WHERE NOME_DISCIPLINA LIKE \'" + filtro + "%' ");
+                sql.Append("ORDER BY NOME_DISCIPLINA ASC");
+
+                using (SqlConnection conexao = new SqlConnection(Conexao.stringConexao))
+                {
+                    conexao.Open();
+                    comandoSql.CommandText = sql.ToString();
+                    comandoSql.Connection = conexao;
+
+                    dadosTabela.Load(comandoSql.ExecuteReader());
+                }
+
+                return dadosTabela;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// Seleciona um conjunto de professores(as) com base no filtro.
+        /// </summary>
+        /// <param name="filtro">Contém uma cadeia de caracteres nas quais o nome do(a) professor(a) deve iniciar.</param>
+        /// <returns>Conjunto de professor de acordo com o filtro</returns>
+        public DataTable SelecionaProfessor(string filtro)
+        {
+            DataTable dadosTabela = new DataTable();
+            StringBuilder sql = new StringBuilder();
+            SqlCommand comandoSql = new SqlCommand();
+
+            try
+            {
+                sql.Append("SELECT CODIGO_PROFESSOR, NOME_PROFESSOR ");
+                sql.Append("FROM PROFESSOR ");
+                sql.Append("WHERE NOME_PROFESSOR LIKE \'" + filtro + "%' ");
+                sql.Append("ORDER BY NOME_PROFESSOR ASC");
+
+                using (SqlConnection conexao = new SqlConnection(Conexao.stringConexao))
+                {
+                    conexao.Open();
+                    comandoSql.CommandText = sql.ToString();
+                    comandoSql.Connection = conexao;
+
+                    dadosTabela.Load(comandoSql.ExecuteReader());
+                }
+
+                return dadosTabela;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// Seleciona um conjunto de espaços com base no filtro.
+        /// </summary>
+        /// <param name="filtro">Filtro para a pesquisa, sendo o começo do código do espaço.</param>
+        /// <returns>Conjundo de espaços</returns>
+        public DataTable SelecionaEspaco(string filtro)
+        {
+            DataTable dadosTabela = new DataTable();
+            StringBuilder sql = new StringBuilder();
+            SqlCommand comandoSql = new SqlCommand();
+
+            try
+            {
+                sql.Append("SELECT CODIGO_ESPACO, TIPO_ESPACO ");
+                sql.Append("FROM ESPACO ");
+                sql.Append("WHERE CODIGO_ESPACO LIKE \'" + filtro + "%' ");
+                sql.Append("ORDER BY CODIGO_ESPACO ASC");
+
+                using (SqlConnection conexao = new SqlConnection(Conexao.stringConexao))
+                {
+                    conexao.Open();
+                    comandoSql.CommandText = sql.ToString();
+                    comandoSql.Connection = conexao;
+
+                    dadosTabela.Load(comandoSql.ExecuteReader());
+                }
+
+                return dadosTabela;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+    }
 }
-
