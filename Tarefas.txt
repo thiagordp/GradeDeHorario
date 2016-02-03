@@ -23,8 +23,6 @@ frmFase:
     ✓ Pesquisa e listagem de todas as disciplinas.
     ✓ Inserção, edição, exclusão e listagem de fases de acordo com o curso.
     ✓ Inserção, edição, exclusão e listagem de disciplinas de acordo com a fase do curso.
-    • Verificar se existe alguma disciplina requisito em uma fase anterior a requisitante.
-    • Verificar se existe alguma disciplina requisitante em uma fase posterior a requisito.
 ----------------------------------------------------------------------------------------------
 frmSemestre:
 
@@ -50,24 +48,14 @@ frmGradeHorario
 
     • Comportamento da interface.
     • Layout da grade.
-    • Listagem de fases
-    • Listagem de semestres
+    ✓ Listagem de fases
+    ✓ Listagem de semestres
     • Carregar a grade para a fase e o semestre indicados.
     • Salvamento da grade.
-    • Listagem de disciplinas
-    • Listagem de Professores
-    • Listagem de Salas
+    ✓ Listagem de disciplinas
+    ✓ Listagem de Professores
+    ✓ Listagem de Salas
     • Adição de Disc, Prof, e Lab. (DPL) em uma célula da grade.
     • Verificar a validade da DPL para tal horário.
     • Imprimir PDF com a grade atual com todas a info de acordo com o modelo.
-    
-    
-    
-01/02/2016
-    
-    • Modelar Layout
-    • Implementar comportamento da interface.
-    
-    • pesquisa sobre hough circles: teoria
-        ○ Tentar aplicar em algo. 
 ----------------------------------------------------------------------------------------------

@@ -20,7 +20,14 @@ namespace GradeDeHorario
         {
             InitializeComponent();
             this.curso = curso;
+
+        }
+
+        private void frmGradeHorario_Load(object sender, EventArgs e)
+        {
             InicializaGrade();
+
+            this.Text += " - " + curso.NOME_CURSO;
 
             // Inicializações
             PreenchePesquisaDisciplina(txtPesquisaDisciplina.Text);
@@ -28,6 +35,42 @@ namespace GradeDeHorario
             PreenchePesquisaEspaco(txtPesquisaEspaco.Text);
             PreencheListaFase();
             PreencheListaSemestre();
+
+
+            foreach (Component tabela in tblGrade.Controls)
+            {
+                DataGridView data;
+
+
+                if (tabela is DataGridView)
+                {
+                    data = (tabela as DataGridView);
+
+                    if (tblGrade.GetCellPosition(data).Row <= 5)
+                    {
+                        data.BackgroundColor = Color.DarkKhaki;
+                    }
+                    else if (tblGrade.GetCellPosition(data).Row > 5 && tblGrade.GetCellPosition(data).Row < 11)
+                    {
+                        if (data.Name.Contains("grade") == true)
+                        {
+                            data.Rows.Add("ARA1234", "01665", "ARA301", "Fulano");
+                        }
+                        data.ClearSelection();
+
+                        data.BackgroundColor = Color.SeaGreen;
+                    }
+                    else
+                    {
+                        data.BackgroundColor = Color.SteelBlue;
+                    }
+                }
+            }
+
+            (tblGrade.GetControlFromPosition(1, 1) as DataGridView).Rows.Add("ARA4513", "01655", "ARA302", "Fulano");
+            (tblGrade.GetControlFromPosition(1, 1) as DataGridView).ClearSelection();
+            (tblGrade.GetControlFromPosition(6, 13) as DataGridView).Rows.Add("ARA2635", "01655", "ARC119", "Fulano");
+            (tblGrade.GetControlFromPosition(6, 13) as DataGridView).ClearSelection();
         }
 
         //Adicionar no BD um n..n na Grade com a Disc_Turma
@@ -43,24 +86,10 @@ namespace GradeDeHorario
 
             grade11.Height = grade11.Rows.GetRowsHeight(DataGridViewElementStates.None)-5; // Altura automática com base no conteúdo da tabela.
             */
-            grade11.Rows.Add("123", "123", "123");
-            grade11.Rows.Add("abc", "abc", "abc");
-            grade11.Rows.Add("123", "123", "123");
-            grade11.Rows.Add("abc", "abc", "abc");
 
-
-            /*   grade12.Rows.Add("123", "123", "123");
-               grade12.Rows.Add("abc", "abc", "abc");
-               grade12.Rows.Add("123", "123", "123");
-               grade12.Rows.Add("abc", "abc", "abc");
-
-               grade13.Rows.Add("123", "123", "123");
-               grade13.Rows.Add("abc", "abc", "abc");
-               grade14.Rows.Add("123", "123", "123");
-               grade15.Rows.Add("abc", "abc", "abc");*/
             //       tblGrade.RowStyles[1].Height = (float) (grade11.Rows.GetRowsHeight(DataGridViewElementStates.Visible));
 
-            grade11.Height = grade11.Rows.GetRowsHeight(DataGridViewElementStates.None) - 5;
+            //    grade11.Height = grade11.Rows.GetRowsHeight(DataGridViewElementStates.None) - 5;
         }
 
         private void txtPesquisaDisciplina_TextChanged(object sender, EventArgs e)
@@ -75,6 +104,7 @@ namespace GradeDeHorario
                 gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(curso);
 
                 dtgPesquisaDisciplina.DataSource = gradeRN.SelecionaDisciplina(filtro);
+                dtgPesquisaDisciplina.ClearSelection();
             }
             catch (Exception ex)
             {
@@ -94,6 +124,7 @@ namespace GradeDeHorario
                 gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(curso);
 
                 dtgPesquisaProfessor.DataSource = gradeRN.SelecionaProfessor(filtro);
+                dtgPesquisaProfessor.ClearSelection();
             }
             catch (Exception ex)
             {
@@ -106,7 +137,6 @@ namespace GradeDeHorario
             PreenchePesquisaEspaco(txtPesquisaEspaco.Text);
         }
 
-
         private void PreenchePesquisaEspaco(string filtro)
         {
             try
@@ -114,6 +144,7 @@ namespace GradeDeHorario
                 gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(curso);
 
                 dtgPesquisaEspaco.DataSource = gradeRN.SelecionaEspaco(filtro);
+                dtgPesquisaEspaco.ClearSelection();
             }
             catch (Exception ex)
             {
@@ -162,6 +193,8 @@ namespace GradeDeHorario
             }
 
         }
+
+
     }
 
 }
