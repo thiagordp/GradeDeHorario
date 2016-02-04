@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////    CRIAÇÃO DO BANCO DE DADOS NO COMPUTADOR DO USUÁRIO DO SISTEMA    /////////////////
@@ -14,7 +15,21 @@ namespace AcessoDados
 {
     public class CriaBancoAcessoDados
     {
-        // Cria o banco no SQL Server caso não exista.
+        /// <summary>
+        /// Número de linhas da grade
+        /// </summary>
+        const int LINHA = 14;
+
+        /// <summary>
+        /// Número de colunas da grade
+        /// </summary>
+        const int COLUNA = 6;
+
+        /// <summary>
+        /// Cria o banco no SQL Server caso não exista.
+        /// </summary>
+        /// <param name="ScriptBancoConstrucao">Script para criação do banco de dados.</param>
+        /// <param name="ScriptTabelasConstrucao">Script para criação das tabelas no banco.</param>
         public void CriarBanco(string ScriptBancoConstrucao, string ScriptTabelasConstrucao)
         {
             StringBuilder sql = new StringBuilder();        // Armazena a consulta SQL
@@ -47,7 +62,50 @@ namespace AcessoDados
             }
         }
 
-        // Inserção dos departamentos.
+        /// <summary>
+        /// Cria, automaticamente, as células que armazenam horário e data para a grade.
+        /// </summary>
+        public void CriaGradeBase()
+        {
+            try
+            {
+                List<Modelos.GRADE> grades = new List<Modelos.GRADE>();
+                Modelos.GRADE grade;
+
+                int k = 1;
+
+                for (int i = 1; i <= COLUNA; i++) // colunas
+                {
+                    for (int j = 1; j <= LINHA; j++)
+                    {
+                        grade = new Modelos.GRADE();
+
+                        grade.DIA_SEMANA_GRADE = i;
+                        grade.HORARIO_GRADE = j;
+                        grade.SEQ_GRADE = k++;
+
+                        grades.Add(grade);
+                    }
+                }
+
+                using (Modelos.Entidade contexto = new Modelos.Entidade())
+                {
+                    foreach (Modelos.GRADE gr in grades)
+                    {
+                        contexto.GRADE.Add(gr);
+                    }
+                    contexto.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// Inserção dos departamentos.
+        /// </summary>
         public void CriaDepartamento()
         {
             try
@@ -95,7 +153,9 @@ namespace AcessoDados
             }
         }
 
-        // Inserção dos cursos.
+        /// <summary>
+        /// Inserção dos cursos no banco de dados.
+        /// </summary>
         public void CriaCurso()
         {
             try
@@ -147,7 +207,10 @@ namespace AcessoDados
             }
         }
 
-        // Verifica a existência do banco de dados no sistema
+        /// <summary>
+        /// Verifica a existência do banco de dados no sistema de banco de dados.
+        /// </summary>
+        /// <returns>Tabela contendo os bancos que tem o nome 'GradeHorario'</returns>
         public DataTable VerificaBanco()
         {
             SqlCommand comandoSql = new SqlCommand();

@@ -30,17 +30,24 @@ namespace GradeDeHorario
             this.Text += " - " + curso.NOME_CURSO;
 
             // Inicializações
-            PreenchePesquisaDisciplina(txtPesquisaDisciplina.Text);
-            PreenchePesquisaProfessor(txtPesquisaProfessor.Text);
-            PreenchePesquisaEspaco(txtPesquisaEspaco.Text);
             PreencheListaFase();
             PreencheListaSemestre();
+            LayoutGrade();
 
 
+            (tblGrade.GetControlFromPosition(1, 1) as DataGridView).Rows.Add("ARA4513", "01655", "ARA302", "Fulano");
+            (tblGrade.GetControlFromPosition(1, 1) as DataGridView).ClearSelection();
+            (tblGrade.GetControlFromPosition(6, 13) as DataGridView).Rows.Add("ARA2635", "01655", "ARC119", "Fulano");
+            (tblGrade.GetControlFromPosition(6, 13) as DataGridView).ClearSelection();
+            (tblGrade.GetControlFromPosition(5, 10) as DataGridView).Rows.Add("ARA2635", "01655", "ARC119", "Fulano");
+            (tblGrade.GetControlFromPosition(5, 10) as DataGridView).ClearSelection();
+        }
+
+        private void LayoutGrade()
+        {
             foreach (Component tabela in tblGrade.Controls)
             {
                 DataGridView data;
-
 
                 if (tabela is DataGridView)
                 {
@@ -52,12 +59,6 @@ namespace GradeDeHorario
                     }
                     else if (tblGrade.GetCellPosition(data).Row > 5 && tblGrade.GetCellPosition(data).Row < 11)
                     {
-                        if (data.Name.Contains("grade") == true)
-                        {
-                            data.Rows.Add("ARA1234", "01665", "ARA301", "Fulano");
-                        }
-                        data.ClearSelection();
-
                         data.BackgroundColor = Color.SeaGreen;
                     }
                     else
@@ -66,14 +67,8 @@ namespace GradeDeHorario
                     }
                 }
             }
-
-            (tblGrade.GetControlFromPosition(1, 1) as DataGridView).Rows.Add("ARA4513", "01655", "ARA302", "Fulano");
-            (tblGrade.GetControlFromPosition(1, 1) as DataGridView).ClearSelection();
-            (tblGrade.GetControlFromPosition(6, 13) as DataGridView).Rows.Add("ARA2635", "01655", "ARC119", "Fulano");
-            (tblGrade.GetControlFromPosition(6, 13) as DataGridView).ClearSelection();
         }
 
-        //Adicionar no BD um n..n na Grade com a Disc_Turma
         private void InicializaGrade()
         {
             /*
@@ -191,10 +186,102 @@ namespace GradeDeHorario
             {
                 MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        /// <summary>
+        /// Carrega uma grade de horários com base nos parâmetros.
+        /// </summary>
+        /// <param name="curso"></param>
+        /// <param name="fase"></param>
+        /// <param name="semestre"></param>
+        private void CarregaGrade(int curso, int fase, int semestre)
+        {
+            gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(this.curso);
+
+            List<DataGridView> grade = gradeRN.CarregaGrade(curso, fase, semestre);
+        }
+
+        private void btnCarregaGrade_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                CarregaGrade(
+                    curso.CODIGO_CURSO,
+                    Convert.ToInt32(cbbSelectFase.ComboBox.SelectedValue),
+                    Convert.ToInt32(cbbSelectSemestre.ComboBox.SelectedValue));
+
+                btnEditar.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro ao carregar a grade", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void cbbSelectFase_Click(object sender, EventArgs e)
+        {
+            btnEditar.Enabled = false;
+        }
+
+        private void cbbSelectSemestre_Click(object sender, EventArgs e)
+        {
+            btnEditar.Enabled = false;
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                PreenchePesquisaDisciplina(txtPesquisaDisciplina.Text);
+                PreenchePesquisaProfessor(txtPesquisaProfessor.Text);
+                PreenchePesquisaEspaco(txtPesquisaEspaco.Text);
+
+                cbbSelectFase.Enabled = cbbSelectSemestre.Enabled = btnCarregaGrade.Enabled = btnEditar.Enabled = false;
+                btnCancelar.Enabled = btnSalvar.Enabled = btnGerarRelatorio.Enabled = tblGrade.Enabled = gbDisciplina.Enabled = gbProfessor.Enabled = gbSala.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnGerarRelatorio_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Em estágio de implementação.", "Implementando", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            cbbSelectFase.Enabled = cbbSelectSemestre.Enabled = btnCarregaGrade.Enabled = true;
+            btnCancelar.Enabled = btnSalvar.Enabled = btnGerarRelatorio.Enabled = tblGrade.Enabled = gbDisciplina.Enabled = gbProfessor.Enabled = gbSala.Enabled = btnEditar.Enabled = false;
+        }
+
+        private void gradeXX_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
 
+        private void grade_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            DataGridView grade = (sender as DataGridView);
 
+            string disciplina, turma, professor, espaco;
+
+            disciplina = dtgPesquisaDisciplina.Rows[Convert.ToInt32(dtgPesquisaDisciplina.CurrentRow.Index)].Cells["COD_DISC_PESQUISA"].Value.ToString();
+
+            grade.Rows.Add(disciplina);
+        }
     }
-
 }

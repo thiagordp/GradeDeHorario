@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.tsBarraMenu = new System.Windows.Forms.ToolStrip();
             this.btnDisciplina = new System.Windows.Forms.ToolStripButton();
-            this.btnFase = new System.Windows.Forms.ToolStripButton();
             this.btnSemestre = new System.Windows.Forms.ToolStripButton();
-            this.btnTurma = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnProfessor = new System.Windows.Forms.ToolStripButton();
             this.btnInfraEstrutura = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnFase = new System.Windows.Forms.ToolStripButton();
+            this.btnTurma = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -80,17 +80,6 @@
             this.btnDisciplina.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnDisciplina.Click += new System.EventHandler(this.btnDisciplina_Click);
             // 
-            // btnFase
-            // 
-            this.btnFase.Image = ((System.Drawing.Image)(resources.GetObject("btnFase.Image")));
-            this.btnFase.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnFase.Margin = new System.Windows.Forms.Padding(5);
-            this.btnFase.Name = "btnFase";
-            this.btnFase.Size = new System.Drawing.Size(44, 57);
-            this.btnFase.Text = "Fases";
-            this.btnFase.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnFase.Click += new System.EventHandler(this.btnFase_Click);
-            // 
             // btnSemestre
             // 
             this.btnSemestre.Image = global::GradeDeHorario.Properties.Resources.ic_semestre;
@@ -101,23 +90,6 @@
             this.btnSemestre.Text = "Semestres";
             this.btnSemestre.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnSemestre.Click += new System.EventHandler(this.btnSemestre_Click);
-            // 
-            // btnTurma
-            // 
-            this.btnTurma.Image = global::GradeDeHorario.Properties.Resources.ic_turma;
-            this.btnTurma.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnTurma.Margin = new System.Windows.Forms.Padding(5);
-            this.btnTurma.Name = "btnTurma";
-            this.btnTurma.Size = new System.Drawing.Size(47, 57);
-            this.btnTurma.Text = "Turmas";
-            this.btnTurma.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnTurma.Click += new System.EventHandler(this.btnTurma_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Margin = new System.Windows.Forms.Padding(5);
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 57);
             // 
             // btnProfessor
             // 
@@ -142,6 +114,34 @@
             this.btnInfraEstrutura.ToolTipText = "Infraestrutura de salas e laboratórios";
             this.btnInfraEstrutura.Click += new System.EventHandler(this.btnInfraEstrutura_Click);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Margin = new System.Windows.Forms.Padding(5);
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 57);
+            // 
+            // btnFase
+            // 
+            this.btnFase.Image = ((System.Drawing.Image)(resources.GetObject("btnFase.Image")));
+            this.btnFase.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnFase.Margin = new System.Windows.Forms.Padding(5);
+            this.btnFase.Name = "btnFase";
+            this.btnFase.Size = new System.Drawing.Size(44, 57);
+            this.btnFase.Text = "Fases";
+            this.btnFase.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnFase.Click += new System.EventHandler(this.btnFase_Click);
+            // 
+            // btnTurma
+            // 
+            this.btnTurma.Image = global::GradeDeHorario.Properties.Resources.ic_turma;
+            this.btnTurma.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnTurma.Margin = new System.Windows.Forms.Padding(5);
+            this.btnTurma.Name = "btnTurma";
+            this.btnTurma.Size = new System.Drawing.Size(47, 57);
+            this.btnTurma.Text = "Turmas";
+            this.btnTurma.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnTurma.Click += new System.EventHandler(this.btnTurma_Click);
+            // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Margin = new System.Windows.Forms.Padding(5);
@@ -150,7 +150,7 @@
             // 
             // toolStripButton1
             // 
-            this.toolStripButton1.Image = global::GradeDeHorario.Properties.Resources.logo;
+            this.toolStripButton1.Image = global::GradeDeHorario.Properties.Resources.logo_default;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Margin = new System.Windows.Forms.Padding(5);
             this.toolStripButton1.Name = "toolStripButton1";

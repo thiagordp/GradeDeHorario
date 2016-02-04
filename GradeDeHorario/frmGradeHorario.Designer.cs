@@ -46,21 +46,22 @@
             this.btnCarregaGrade = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnGerarRelatorio = new System.Windows.Forms.ToolStripButton();
+            this.btnEditar = new System.Windows.Forms.ToolStripButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbDisciplina = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.txtPesquisaDisciplina = new System.Windows.Forms.TextBox();
             this.dtgPesquisaDisciplina = new System.Windows.Forms.DataGridView();
             this.COD_DISC_PESQUISA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NOME_DISC_PESQUISA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gbProfessor = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.dtgPesquisaProfessor = new System.Windows.Forms.DataGridView();
             this.COD_PROF_PESQUISA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NOME_PROF_PESQUISA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtPesquisaProfessor = new System.Windows.Forms.TextBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gbSala = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.dtgPesquisaEspaco = new System.Windows.Forms.DataGridView();
             this.COD_ESP_PESQUISA = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -511,13 +512,13 @@
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gbDisciplina.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgPesquisaDisciplina)).BeginInit();
-            this.groupBox2.SuspendLayout();
+            this.gbProfessor.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgPesquisaProfessor)).BeginInit();
-            this.groupBox3.SuspendLayout();
+            this.gbSala.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgPesquisaEspaco)).BeginInit();
             this.tblGrade.SuspendLayout();
@@ -622,12 +623,13 @@
             this.cbbSelectSemestre,
             this.btnCarregaGrade,
             this.toolStripSeparator2,
-            this.btnGerarRelatorio});
+            this.btnGerarRelatorio,
+            this.btnEditar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(884, 69);
             this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.Text = "Test";
             // 
             // toolStripLabel1
             // 
@@ -639,6 +641,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnCancelar.Enabled = false;
             this.btnCancelar.Image = global::GradeDeHorario.Properties.Resources.ic_menu_close;
             this.btnCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(5);
@@ -646,10 +649,12 @@
             this.btnCancelar.Size = new System.Drawing.Size(57, 59);
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnSalvar
             // 
             this.btnSalvar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnSalvar.Enabled = false;
             this.btnSalvar.Image = global::GradeDeHorario.Properties.Resources.ic_button;
             this.btnSalvar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(5);
@@ -657,11 +662,12 @@
             this.btnSalvar.Size = new System.Drawing.Size(44, 59);
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // cbbSelectFase
             // 
             this.cbbSelectFase.AutoToolTip = true;
-            this.cbbSelectFase.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.cbbSelectFase.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.cbbSelectFase.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbSelectFase.FlatStyle = System.Windows.Forms.FlatStyle.Standard;
             this.cbbSelectFase.ForeColor = System.Drawing.SystemColors.WindowText;
@@ -673,8 +679,9 @@
             this.cbbSelectFase.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.cbbSelectFase.MaxDropDownItems = 10;
             this.cbbSelectFase.Name = "cbbSelectFase";
-            this.cbbSelectFase.Size = new System.Drawing.Size(150, 69);
+            this.cbbSelectFase.Size = new System.Drawing.Size(75, 69);
             this.cbbSelectFase.ToolTipText = "Selecione a fase";
+            this.cbbSelectFase.Click += new System.EventHandler(this.cbbSelectFase_Click);
             // 
             // toolStripSeparator1
             // 
@@ -690,12 +697,13 @@
             // 
             // cbbSelectSemestre
             // 
-            this.cbbSelectSemestre.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.cbbSelectSemestre.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.cbbSelectSemestre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbSelectSemestre.FlatStyle = System.Windows.Forms.FlatStyle.Standard;
             this.cbbSelectSemestre.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.cbbSelectSemestre.Name = "cbbSelectSemestre";
-            this.cbbSelectSemestre.Size = new System.Drawing.Size(121, 69);
+            this.cbbSelectSemestre.Size = new System.Drawing.Size(75, 69);
+            this.cbbSelectSemestre.Click += new System.EventHandler(this.cbbSelectSemestre_Click);
             // 
             // btnCarregaGrade
             // 
@@ -706,6 +714,7 @@
             this.btnCarregaGrade.Size = new System.Drawing.Size(56, 59);
             this.btnCarregaGrade.Text = "Carregar";
             this.btnCarregaGrade.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnCarregaGrade.Click += new System.EventHandler(this.btnCarregaGrade_Click);
             // 
             // toolStripSeparator2
             // 
@@ -717,6 +726,7 @@
             // btnGerarRelatorio
             // 
             this.btnGerarRelatorio.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnGerarRelatorio.Enabled = false;
             this.btnGerarRelatorio.Image = global::GradeDeHorario.Properties.Resources.ic_relatorio;
             this.btnGerarRelatorio.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnGerarRelatorio.Margin = new System.Windows.Forms.Padding(5);
@@ -725,6 +735,19 @@
             this.btnGerarRelatorio.Text = "Relatório";
             this.btnGerarRelatorio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnGerarRelatorio.ToolTipText = "Gerar relatório com os horários estabelecidos";
+            this.btnGerarRelatorio.Click += new System.EventHandler(this.btnGerarRelatorio_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Enabled = false;
+            this.btnEditar.Image = global::GradeDeHorario.Properties.Resources.ic_edit;
+            this.btnEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(44, 59);
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -746,9 +769,9 @@
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.groupBox1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.groupBox2, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.groupBox3, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.gbDisciplina, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.gbProfessor, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.gbSala, 0, 2);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(687, 5);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
@@ -760,17 +783,18 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(192, 482);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
-            // groupBox1
+            // gbDisciplina
             // 
-            this.groupBox1.Controls.Add(this.tableLayoutPanel3);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(5);
-            this.groupBox1.Size = new System.Drawing.Size(186, 154);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Disciplinas";
+            this.gbDisciplina.Controls.Add(this.tableLayoutPanel3);
+            this.gbDisciplina.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbDisciplina.Enabled = false;
+            this.gbDisciplina.Location = new System.Drawing.Point(3, 3);
+            this.gbDisciplina.Name = "gbDisciplina";
+            this.gbDisciplina.Padding = new System.Windows.Forms.Padding(5);
+            this.gbDisciplina.Size = new System.Drawing.Size(186, 154);
+            this.gbDisciplina.TabIndex = 0;
+            this.gbDisciplina.TabStop = false;
+            this.gbDisciplina.Text = "Disciplinas";
             // 
             // tableLayoutPanel3
             // 
@@ -827,6 +851,7 @@
             this.dtgPesquisaDisciplina.Location = new System.Drawing.Point(3, 28);
             this.dtgPesquisaDisciplina.MultiSelect = false;
             this.dtgPesquisaDisciplina.Name = "dtgPesquisaDisciplina";
+            this.dtgPesquisaDisciplina.ReadOnly = true;
             this.dtgPesquisaDisciplina.RowHeadersVisible = false;
             this.dtgPesquisaDisciplina.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgPesquisaDisciplina.Size = new System.Drawing.Size(170, 100);
@@ -850,16 +875,17 @@
             this.NOME_DISC_PESQUISA.Name = "NOME_DISC_PESQUISA";
             this.NOME_DISC_PESQUISA.ReadOnly = true;
             // 
-            // groupBox2
+            // gbProfessor
             // 
-            this.groupBox2.Controls.Add(this.tableLayoutPanel4);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(3, 163);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(186, 154);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Professores";
+            this.gbProfessor.Controls.Add(this.tableLayoutPanel4);
+            this.gbProfessor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbProfessor.Enabled = false;
+            this.gbProfessor.Location = new System.Drawing.Point(3, 163);
+            this.gbProfessor.Name = "gbProfessor";
+            this.gbProfessor.Size = new System.Drawing.Size(186, 154);
+            this.gbProfessor.TabIndex = 1;
+            this.gbProfessor.TabStop = false;
+            this.gbProfessor.Text = "Professores";
             // 
             // tableLayoutPanel4
             // 
@@ -905,6 +931,7 @@
             this.dtgPesquisaProfessor.Location = new System.Drawing.Point(3, 28);
             this.dtgPesquisaProfessor.MultiSelect = false;
             this.dtgPesquisaProfessor.Name = "dtgPesquisaProfessor";
+            this.dtgPesquisaProfessor.ReadOnly = true;
             this.dtgPesquisaProfessor.RowHeadersVisible = false;
             this.dtgPesquisaProfessor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgPesquisaProfessor.Size = new System.Drawing.Size(174, 104);
@@ -917,6 +944,7 @@
             this.COD_PROF_PESQUISA.HeaderText = "Código";
             this.COD_PROF_PESQUISA.MinimumWidth = 30;
             this.COD_PROF_PESQUISA.Name = "COD_PROF_PESQUISA";
+            this.COD_PROF_PESQUISA.ReadOnly = true;
             this.COD_PROF_PESQUISA.Width = 30;
             // 
             // NOME_PROF_PESQUISA
@@ -925,6 +953,7 @@
             this.NOME_PROF_PESQUISA.DataPropertyName = "NOME_PROFESSOR";
             this.NOME_PROF_PESQUISA.HeaderText = "Nome";
             this.NOME_PROF_PESQUISA.Name = "NOME_PROF_PESQUISA";
+            this.NOME_PROF_PESQUISA.ReadOnly = true;
             // 
             // txtPesquisaProfessor
             // 
@@ -937,16 +966,17 @@
             this.txtPesquisaProfessor.WordWrap = false;
             this.txtPesquisaProfessor.TextChanged += new System.EventHandler(this.txtPesquisaProfessor_TextChanged);
             // 
-            // groupBox3
+            // gbSala
             // 
-            this.groupBox3.Controls.Add(this.tableLayoutPanel5);
-            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox3.Location = new System.Drawing.Point(3, 323);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(186, 156);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Salas e laboratórios";
+            this.gbSala.Controls.Add(this.tableLayoutPanel5);
+            this.gbSala.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbSala.Enabled = false;
+            this.gbSala.Location = new System.Drawing.Point(3, 323);
+            this.gbSala.Name = "gbSala";
+            this.gbSala.Size = new System.Drawing.Size(186, 156);
+            this.gbSala.TabIndex = 2;
+            this.gbSala.TabStop = false;
+            this.gbSala.Text = "Salas e laboratórios";
             // 
             // tableLayoutPanel5
             // 
@@ -992,6 +1022,7 @@
             this.dtgPesquisaEspaco.Location = new System.Drawing.Point(3, 28);
             this.dtgPesquisaEspaco.MultiSelect = false;
             this.dtgPesquisaEspaco.Name = "dtgPesquisaEspaco";
+            this.dtgPesquisaEspaco.ReadOnly = true;
             this.dtgPesquisaEspaco.RowHeadersVisible = false;
             this.dtgPesquisaEspaco.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dtgPesquisaEspaco.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -1005,6 +1036,7 @@
             this.COD_ESP_PESQUISA.HeaderText = "Código";
             this.COD_ESP_PESQUISA.MinimumWidth = 50;
             this.COD_ESP_PESQUISA.Name = "COD_ESP_PESQUISA";
+            this.COD_ESP_PESQUISA.ReadOnly = true;
             // 
             // TIPO_ESP_PESQUISA
             // 
@@ -1012,6 +1044,7 @@
             this.TIPO_ESP_PESQUISA.DataPropertyName = "TIPO_ESPACO";
             this.TIPO_ESP_PESQUISA.HeaderText = "Tipo";
             this.TIPO_ESP_PESQUISA.Name = "TIPO_ESP_PESQUISA";
+            this.TIPO_ESP_PESQUISA.ReadOnly = true;
             // 
             // txtPesquisaEspaco
             // 
@@ -1142,6 +1175,7 @@
             this.tblGrade.Controls.Add(this.grade613, 6, 13);
             this.tblGrade.Controls.Add(this.grade614, 6, 14);
             this.tblGrade.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblGrade.Enabled = false;
             this.tblGrade.Location = new System.Drawing.Point(10, 10);
             this.tblGrade.Margin = new System.Windows.Forms.Padding(5);
             this.tblGrade.Name = "tblGrade";
@@ -1505,6 +1539,7 @@
             this.grade11.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade11.Size = new System.Drawing.Size(89, 27);
             this.grade11.TabIndex = 150;
+            this.grade11.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.grade_MouseDoubleClick);
             // 
             // CODIGO_DISCIPLINA_11
             // 
@@ -2457,6 +2492,7 @@
             this.grade21.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade21.Size = new System.Drawing.Size(89, 27);
             this.grade21.TabIndex = 150;
+            this.grade21.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.grade_MouseDoubleClick);
             // 
             // CODIGO_DISCIPLINA_21
             // 
@@ -7206,15 +7242,15 @@
             this.toolStrip1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
+            this.gbDisciplina.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgPesquisaDisciplina)).EndInit();
-            this.groupBox2.ResumeLayout(false);
+            this.gbProfessor.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgPesquisaProfessor)).EndInit();
-            this.groupBox3.ResumeLayout(false);
+            this.gbSala.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgPesquisaEspaco)).EndInit();
@@ -7324,9 +7360,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gbDisciplina;
+        private System.Windows.Forms.GroupBox gbProfessor;
+        private System.Windows.Forms.GroupBox gbSala;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TextBox txtPesquisaDisciplina;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
@@ -7784,5 +7820,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_11;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_11;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR_11;
+        private System.Windows.Forms.ToolStripButton btnEditar;
     }
 }

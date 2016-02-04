@@ -31,6 +31,7 @@ namespace GradeDeHorario
                     novoBanco.CriarBanco();
                     novoBanco.CriaDepartamento();
                     novoBanco.CriaCurso();
+                    novoBanco.CriaGradeBase();
                 }
 
                 Application.Run(new frmSelecionaCurso());       // Executando a aplicação.

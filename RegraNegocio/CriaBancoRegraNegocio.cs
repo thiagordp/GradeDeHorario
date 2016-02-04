@@ -42,7 +42,7 @@ namespace RegraNegocio
             }
             catch (Exception ex)
             {
-                throw new Exception("Erro no método CriaBanco() da classe CriaBancoRegraNegocio.\n\nDetalhe do erro: \"" + ex.Message + "\""); ;
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
             }
 
         }
@@ -57,7 +57,7 @@ namespace RegraNegocio
             }
             catch (Exception ex)
             {
-                throw new Exception("Erro no método CriaDepartamento.\n\nDetalhe:\n\n" + ex.Message);
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
             }
         }
 
@@ -71,7 +71,20 @@ namespace RegraNegocio
             }
             catch (Exception ex)
             {
-                throw new Exception("Erro no método CriaCurso.\n\nDetalhe:\n\n" + ex.Message); ;
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
+        }
+
+        public void CriaGradeBase()
+        {
+            try
+            {
+                criaBanco = new AcessoDados.CriaBancoAcessoDados();
+                criaBanco.CriaGradeBase();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
             }
         }
 
@@ -85,7 +98,7 @@ namespace RegraNegocio
             }
             catch (Exception ex)
             {
-                throw new Exception("Erro no método VerificaBanco.\n\nDetalhe:\n\n" + ex.Message);
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
             }
         }
     }

@@ -10,6 +10,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace RegraNegocio
 {
@@ -94,6 +95,29 @@ namespace RegraNegocio
             gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso);
 
             return gradeAD.SelecionaTodoSemestre();
+        }
+
+        public List<DataGridView> CarregaGrade(int curso, int fase, int semestre)
+        {
+            VerificaCarregaGrade(curso, fase, semestre);
+
+            return null;
+        }
+
+        public void VerificaCarregaGrade(int curso, int fase, int semestre)
+        {
+            if (curso <= 0)
+            {
+                throw new Exception("Curso inválido!");
+            }
+            if (fase == 0)
+            {
+                throw new Exception("É necessário escolher uma fase para carregar uma grade.");
+            }
+            if (semestre == 0)
+            {
+                throw new Exception("É necessário escolher um semestre para carregar uma grade.");
+            }
         }
     }
 }
