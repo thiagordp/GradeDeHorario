@@ -39,7 +39,6 @@ D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Debug\AcessoDados.pdb
 D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\Interface.csprojResolveAssemblyReference.cache
 D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.frmDisciplina.resources
 D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.frmFase.resources
-D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.frmGradeHorario.resources
 D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.frmInfraEstrutura.resources
 D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.frmPrincipal.resources
 D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.frmProfessor.resources
@@ -54,3 +53,4 @@ D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Debug\Grade de Horários - UFSC
 D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Debug\Grade de Horários - UFSC Araranguá.pdb
 D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\Grade de Horários - UFSC Araranguá.exe
 D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\Grade de Horários - UFSC Araranguá.pdb
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.frmGradeHorario.resources

@@ -14,7 +14,7 @@ namespace GradeDeHorario
     {
         private Modelos.CURSO curso { set; get; }
         private RegraNegocio.GradeHorarioRegraNegocio gradeRN;
-
+        private DataGridView hoverGrade;
 
         public frmGradeHorario(Modelos.CURSO curso)
         {
@@ -268,12 +268,7 @@ namespace GradeDeHorario
             btnCancelar.Enabled = btnSalvar.Enabled = btnGerarRelatorio.Enabled = tblGrade.Enabled = gbDisciplina.Enabled = gbProfessor.Enabled = gbSala.Enabled = btnEditar.Enabled = false;
         }
 
-        private void gradeXX_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void grade_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void gradeXX_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             DataGridView grade = (sender as DataGridView);
 
@@ -282,6 +277,45 @@ namespace GradeDeHorario
             disciplina = dtgPesquisaDisciplina.Rows[Convert.ToInt32(dtgPesquisaDisciplina.CurrentRow.Index)].Cells["COD_DISC_PESQUISA"].Value.ToString();
 
             grade.Rows.Add(disciplina);
+        }
+
+        private void gradeXX_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            AutoSizeGrade(sender);
+        }
+
+        private void AutoSizeGrade(object grade)
+        {
+            if (grade is DataGridView)
+            {
+                (grade as DataGridView).Height = (grade as DataGridView).Rows.GetRowsHeight(DataGridViewElementStates.None);
+            }
+        }
+
+        private void itmInserir_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(hoverGrade.Name);
+            
+        }
+
+        private void itmEditar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Edita");
+        }
+
+        private void itmExcluir_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Excluir");
+        }
+
+        private void gradeXX_MouseMove(object sender, MouseEventArgs e)
+        {
+            hoverGrade = sender as DataGridView;
+        }
+
+        private void dtgPesquisaDisciplina_MouseClick(object sender, MouseEventArgs e)
+        {
+
         }
     }
 }
