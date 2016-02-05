@@ -295,7 +295,7 @@ namespace GradeDeHorario
         private void itmInserir_Click(object sender, EventArgs e)
         {
             MessageBox.Show(hoverGrade.Name);
-            
+
         }
 
         private void itmEditar_Click(object sender, EventArgs e)
@@ -316,6 +316,25 @@ namespace GradeDeHorario
         private void dtgPesquisaDisciplina_MouseClick(object sender, MouseEventArgs e)
         {
 
+        }
+
+        private void itmDetalhes_Click(object sender, EventArgs e)
+        {
+            if (hoverGrade.Rows.Count.Equals(0)) { return; }
+
+            if (hoverGrade.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("É necessário selecionar uma célula para visualizar seus detalhes.", "Selecione uma célula", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(this.curso);
+
+            string msg = "";
+
+
+
+            MessageBox.Show(msg, "Detalhe", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

@@ -95,9 +95,9 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.grade12 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -108,752 +108,753 @@
             this.itmEditar = new System.Windows.Forms.ToolStripMenuItem();
             this.itmExcluir = new System.Windows.Forms.ToolStripMenuItem();
             this.grade13 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade14 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade15 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade16 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade17 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade18 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade19 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade110 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade111 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade112 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_112 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_112 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_112 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_112 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_112 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_112 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_112 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_112 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_112 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade113 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_113 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_113 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_113 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_113 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_113 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_113 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_113 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_113 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_113 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade114 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade21 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade22 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade23 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade24 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade25 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade26 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade27 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade28 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade29 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade210 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_210 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_210 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_210 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_210 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_210 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_210 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_210 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_210 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_210 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade211 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_211 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_211 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_211 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_211 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_211 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_211 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_211 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_211 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_211 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade212 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_212 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_212 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_212 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_212 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_212 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_212 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_212 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_212 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_212 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade213 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_213 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_213 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_213 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_213 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_213 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_213 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_213 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_213 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_213 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade214 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_214 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_214 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_214 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_214 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_214 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_214 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_214 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_214 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_214 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade31 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade32 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade33 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade34 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade35 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade36 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade37 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade38 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade39 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade310 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_310 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_310 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_310 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_310 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_310 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_310 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_310 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_310 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_310 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade311 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_311 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_311 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_311 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_311 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_311 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_311 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_311 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_311 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_311 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade312 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_312 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_312 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_312 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_312 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_312 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_312 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_312 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_312 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_312 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade313 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_313 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_313 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_313 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_313 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_313 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_313 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_313 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_313 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_313 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade314 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_314 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_314 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_314 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_314 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_314 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_314 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_314 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_314 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_314 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade41 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade42 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade43 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade44 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade45 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade46 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade47 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade48 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade49 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade410 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_410 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_410 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_410 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_410 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_410 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_410 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_410 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_410 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_410 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade411 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_411 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_411 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_411 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_411 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_411 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_411 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_411 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_411 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_411 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade412 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_412 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_412 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_412 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_412 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_412 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_412 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_412 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_412 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_412 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade413 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_413 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_413 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_413 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_413 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_413 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_413 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_413 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_413 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_413 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade414 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_414 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_414 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_414 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_414 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_414 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_414 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_414 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_414 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_414 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade51 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade52 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade53 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade54 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade55 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade56 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade57 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade58 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade59 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade510 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_510 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_510 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_510 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_510 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_510 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_510 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_510 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_510 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_510 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade511 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_511 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_511 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_511 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_511 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_511 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_511 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_511 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_511 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_511 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade512 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_512 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_512 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_512 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_512 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_512 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_512 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_512 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_512 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_512 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade513 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_513 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_513 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_513 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_513 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_513 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_513 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_513 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_513 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_513 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade514 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_514 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_514 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_514 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_514 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_514 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_514 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_514 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_514 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_514 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade61 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade62 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade63 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade64 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade65 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade66 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade67 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade68 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade69 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade610 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_610 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_610 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_610 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_610 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_610 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_610 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_610 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_610 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_610 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade611 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_611 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_611 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_611 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_611 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_611 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_611 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_611 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_611 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_611 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade612 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_612 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_612 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_612 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_612 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_612 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_612 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_612 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_612 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_612 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade613 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_613 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_613 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_613 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_613 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_613 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_613 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_613 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_613 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_613 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade614 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_614 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_614 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_614 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_614 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_614 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_614 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_614 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_614 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_614 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade11 = new System.Windows.Forms.DataGridView();
-            this.CODIGO_DISCIPLINA_11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO_GRADE_11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_DISCIPLINA_11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SEQ_TURMA_11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itmDetalhes = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -1899,9 +1900,9 @@
             this.grade12.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade12.ColumnHeadersVisible = false;
             this.grade12.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_12,
             this.HORARIO_GRADE_12,
             this.DIA_SEMANA_GRADE_12,
+            this.CODIGO_DISCIPLINA_12,
             this.SEQ_TURMA_12,
             this.CODIGO_ESPACO_12,
             this.CODIGO_PROFESSOR1_12,
@@ -1921,16 +1922,6 @@
             this.grade12.TabIndex = 150;
             this.grade12.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_12
-            // 
-            this.CODIGO_DISCIPLINA_12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_12.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_12.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_12.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_12.Name = "CODIGO_DISCIPLINA_12";
-            this.CODIGO_DISCIPLINA_12.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_12.Width = 20;
-            // 
             // HORARIO_GRADE_12
             // 
             this.HORARIO_GRADE_12.Name = "HORARIO_GRADE_12";
@@ -1940,6 +1931,16 @@
             // 
             this.DIA_SEMANA_GRADE_12.Name = "DIA_SEMANA_GRADE_12";
             this.DIA_SEMANA_GRADE_12.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_12
+            // 
+            this.CODIGO_DISCIPLINA_12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_12.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_12.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_12.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_12.Name = "CODIGO_DISCIPLINA_12";
+            this.CODIGO_DISCIPLINA_12.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_12.Width = 20;
             // 
             // SEQ_TURMA_12
             // 
@@ -1989,15 +1990,16 @@
             this.menuContexto.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.itmInserir,
             this.itmEditar,
-            this.itmExcluir});
+            this.itmExcluir,
+            this.itmDetalhes});
             this.menuContexto.Name = "menuContexto";
-            this.menuContexto.Size = new System.Drawing.Size(109, 70);
+            this.menuContexto.Size = new System.Drawing.Size(153, 114);
             // 
             // itmInserir
             // 
             this.itmInserir.Image = global::GradeDeHorario.Properties.Resources.ic_save_all;
             this.itmInserir.Name = "itmInserir";
-            this.itmInserir.Size = new System.Drawing.Size(108, 22);
+            this.itmInserir.Size = new System.Drawing.Size(152, 22);
             this.itmInserir.Text = "Inserir";
             this.itmInserir.Click += new System.EventHandler(this.itmInserir_Click);
             // 
@@ -2005,7 +2007,7 @@
             // 
             this.itmEditar.Image = global::GradeDeHorario.Properties.Resources.ic_edit;
             this.itmEditar.Name = "itmEditar";
-            this.itmEditar.Size = new System.Drawing.Size(108, 22);
+            this.itmEditar.Size = new System.Drawing.Size(152, 22);
             this.itmEditar.Text = "Editar";
             this.itmEditar.Click += new System.EventHandler(this.itmEditar_Click);
             // 
@@ -2013,7 +2015,7 @@
             // 
             this.itmExcluir.Image = global::GradeDeHorario.Properties.Resources.ic_delete;
             this.itmExcluir.Name = "itmExcluir";
-            this.itmExcluir.Size = new System.Drawing.Size(108, 22);
+            this.itmExcluir.Size = new System.Drawing.Size(152, 22);
             this.itmExcluir.Text = "Excluir";
             this.itmExcluir.Click += new System.EventHandler(this.itmExcluir_Click);
             // 
@@ -2032,9 +2034,9 @@
             this.grade13.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade13.ColumnHeadersVisible = false;
             this.grade13.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_13,
             this.HORARIO_GRADE_13,
             this.DIA_SEMANA_GRADE_13,
+            this.CODIGO_DISCIPLINA_13,
             this.SEQ_TURMA_13,
             this.CODIGO_ESPACO_13,
             this.CODIGO_PROFESSOR1_13,
@@ -2054,16 +2056,6 @@
             this.grade13.TabIndex = 150;
             this.grade13.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_13
-            // 
-            this.CODIGO_DISCIPLINA_13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_13.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_13.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_13.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_13.Name = "CODIGO_DISCIPLINA_13";
-            this.CODIGO_DISCIPLINA_13.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_13.Width = 20;
-            // 
             // HORARIO_GRADE_13
             // 
             this.HORARIO_GRADE_13.Name = "HORARIO_GRADE_13";
@@ -2073,6 +2065,16 @@
             // 
             this.DIA_SEMANA_GRADE_13.Name = "DIA_SEMANA_GRADE_13";
             this.DIA_SEMANA_GRADE_13.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_13
+            // 
+            this.CODIGO_DISCIPLINA_13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_13.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_13.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_13.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_13.Name = "CODIGO_DISCIPLINA_13";
+            this.CODIGO_DISCIPLINA_13.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_13.Width = 20;
             // 
             // SEQ_TURMA_13
             // 
@@ -2132,9 +2134,9 @@
             this.grade14.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade14.ColumnHeadersVisible = false;
             this.grade14.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_14,
             this.HORARIO_GRADE_14,
             this.DIA_SEMANA_GRADE_14,
+            this.CODIGO_DISCIPLINA_14,
             this.SEQ_TURMA_14,
             this.CODIGO_ESPACO_14,
             this.CODIGO_PROFESSOR1_14,
@@ -2154,16 +2156,6 @@
             this.grade14.TabIndex = 150;
             this.grade14.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_14
-            // 
-            this.CODIGO_DISCIPLINA_14.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_14.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_14.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_14.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_14.Name = "CODIGO_DISCIPLINA_14";
-            this.CODIGO_DISCIPLINA_14.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_14.Width = 20;
-            // 
             // HORARIO_GRADE_14
             // 
             this.HORARIO_GRADE_14.Name = "HORARIO_GRADE_14";
@@ -2173,6 +2165,16 @@
             // 
             this.DIA_SEMANA_GRADE_14.Name = "DIA_SEMANA_GRADE_14";
             this.DIA_SEMANA_GRADE_14.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_14
+            // 
+            this.CODIGO_DISCIPLINA_14.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_14.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_14.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_14.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_14.Name = "CODIGO_DISCIPLINA_14";
+            this.CODIGO_DISCIPLINA_14.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_14.Width = 20;
             // 
             // SEQ_TURMA_14
             // 
@@ -2232,9 +2234,9 @@
             this.grade15.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade15.ColumnHeadersVisible = false;
             this.grade15.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_15,
             this.HORARIO_GRADE_15,
             this.DIA_SEMANA_GRADE_15,
+            this.CODIGO_DISCIPLINA_15,
             this.SEQ_TURMA_15,
             this.CODIGO_ESPACO_15,
             this.CODIGO_PROFESSOR1_15,
@@ -2254,16 +2256,6 @@
             this.grade15.TabIndex = 150;
             this.grade15.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_15
-            // 
-            this.CODIGO_DISCIPLINA_15.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_15.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_15.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_15.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_15.Name = "CODIGO_DISCIPLINA_15";
-            this.CODIGO_DISCIPLINA_15.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_15.Width = 20;
-            // 
             // HORARIO_GRADE_15
             // 
             this.HORARIO_GRADE_15.Name = "HORARIO_GRADE_15";
@@ -2273,6 +2265,16 @@
             // 
             this.DIA_SEMANA_GRADE_15.Name = "DIA_SEMANA_GRADE_15";
             this.DIA_SEMANA_GRADE_15.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_15
+            // 
+            this.CODIGO_DISCIPLINA_15.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_15.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_15.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_15.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_15.Name = "CODIGO_DISCIPLINA_15";
+            this.CODIGO_DISCIPLINA_15.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_15.Width = 20;
             // 
             // SEQ_TURMA_15
             // 
@@ -2332,9 +2334,9 @@
             this.grade16.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade16.ColumnHeadersVisible = false;
             this.grade16.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_16,
             this.HORARIO_GRADE_16,
             this.DIA_SEMANA_GRADE_16,
+            this.CODIGO_DISCIPLINA_16,
             this.SEQ_TURMA_16,
             this.CODIGO_ESPACO_16,
             this.CODIGO_PROFESSOR1_16,
@@ -2354,16 +2356,6 @@
             this.grade16.TabIndex = 150;
             this.grade16.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_16
-            // 
-            this.CODIGO_DISCIPLINA_16.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_16.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_16.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_16.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_16.Name = "CODIGO_DISCIPLINA_16";
-            this.CODIGO_DISCIPLINA_16.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_16.Width = 20;
-            // 
             // HORARIO_GRADE_16
             // 
             this.HORARIO_GRADE_16.Name = "HORARIO_GRADE_16";
@@ -2373,6 +2365,16 @@
             // 
             this.DIA_SEMANA_GRADE_16.Name = "DIA_SEMANA_GRADE_16";
             this.DIA_SEMANA_GRADE_16.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_16
+            // 
+            this.CODIGO_DISCIPLINA_16.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_16.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_16.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_16.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_16.Name = "CODIGO_DISCIPLINA_16";
+            this.CODIGO_DISCIPLINA_16.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_16.Width = 20;
             // 
             // SEQ_TURMA_16
             // 
@@ -2432,9 +2434,9 @@
             this.grade17.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade17.ColumnHeadersVisible = false;
             this.grade17.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_17,
             this.HORARIO_GRADE_17,
             this.DIA_SEMANA_GRADE_17,
+            this.CODIGO_DISCIPLINA_17,
             this.SEQ_TURMA_17,
             this.CODIGO_ESPACO_17,
             this.CODIGO_PROFESSOR1_17,
@@ -2454,16 +2456,6 @@
             this.grade17.TabIndex = 150;
             this.grade17.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_17
-            // 
-            this.CODIGO_DISCIPLINA_17.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_17.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_17.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_17.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_17.Name = "CODIGO_DISCIPLINA_17";
-            this.CODIGO_DISCIPLINA_17.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_17.Width = 20;
-            // 
             // HORARIO_GRADE_17
             // 
             this.HORARIO_GRADE_17.Name = "HORARIO_GRADE_17";
@@ -2473,6 +2465,16 @@
             // 
             this.DIA_SEMANA_GRADE_17.Name = "DIA_SEMANA_GRADE_17";
             this.DIA_SEMANA_GRADE_17.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_17
+            // 
+            this.CODIGO_DISCIPLINA_17.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_17.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_17.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_17.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_17.Name = "CODIGO_DISCIPLINA_17";
+            this.CODIGO_DISCIPLINA_17.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_17.Width = 20;
             // 
             // SEQ_TURMA_17
             // 
@@ -2532,9 +2534,9 @@
             this.grade18.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade18.ColumnHeadersVisible = false;
             this.grade18.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_18,
             this.HORARIO_GRADE_18,
             this.DIA_SEMANA_GRADE_18,
+            this.CODIGO_DISCIPLINA_18,
             this.SEQ_TURMA_18,
             this.CODIGO_ESPACO_18,
             this.CODIGO_PROFESSOR1_18,
@@ -2554,16 +2556,6 @@
             this.grade18.TabIndex = 150;
             this.grade18.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_18
-            // 
-            this.CODIGO_DISCIPLINA_18.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_18.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_18.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_18.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_18.Name = "CODIGO_DISCIPLINA_18";
-            this.CODIGO_DISCIPLINA_18.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_18.Width = 20;
-            // 
             // HORARIO_GRADE_18
             // 
             this.HORARIO_GRADE_18.Name = "HORARIO_GRADE_18";
@@ -2573,6 +2565,16 @@
             // 
             this.DIA_SEMANA_GRADE_18.Name = "DIA_SEMANA_GRADE_18";
             this.DIA_SEMANA_GRADE_18.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_18
+            // 
+            this.CODIGO_DISCIPLINA_18.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_18.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_18.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_18.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_18.Name = "CODIGO_DISCIPLINA_18";
+            this.CODIGO_DISCIPLINA_18.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_18.Width = 20;
             // 
             // SEQ_TURMA_18
             // 
@@ -2632,9 +2634,9 @@
             this.grade19.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade19.ColumnHeadersVisible = false;
             this.grade19.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_19,
             this.HORARIO_GRADE_19,
             this.DIA_SEMANA_GRADE_19,
+            this.CODIGO_DISCIPLINA_19,
             this.SEQ_TURMA_19,
             this.CODIGO_ESPACO_19,
             this.CODIGO_PROFESSOR1_19,
@@ -2654,16 +2656,6 @@
             this.grade19.TabIndex = 150;
             this.grade19.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_19
-            // 
-            this.CODIGO_DISCIPLINA_19.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_19.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_19.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_19.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_19.Name = "CODIGO_DISCIPLINA_19";
-            this.CODIGO_DISCIPLINA_19.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_19.Width = 20;
-            // 
             // HORARIO_GRADE_19
             // 
             this.HORARIO_GRADE_19.Name = "HORARIO_GRADE_19";
@@ -2673,6 +2665,16 @@
             // 
             this.DIA_SEMANA_GRADE_19.Name = "DIA_SEMANA_GRADE_19";
             this.DIA_SEMANA_GRADE_19.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_19
+            // 
+            this.CODIGO_DISCIPLINA_19.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_19.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_19.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_19.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_19.Name = "CODIGO_DISCIPLINA_19";
+            this.CODIGO_DISCIPLINA_19.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_19.Width = 20;
             // 
             // SEQ_TURMA_19
             // 
@@ -2732,9 +2734,9 @@
             this.grade110.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade110.ColumnHeadersVisible = false;
             this.grade110.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_110,
             this.HORARIO_GRADE_110,
             this.DIA_SEMANA_GRADE_110,
+            this.CODIGO_DISCIPLINA_110,
             this.SEQ_TURMA_110,
             this.CODIGO_ESPACO_110,
             this.CODIGO_PROFESSOR1_110,
@@ -2754,16 +2756,6 @@
             this.grade110.TabIndex = 150;
             this.grade110.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_110
-            // 
-            this.CODIGO_DISCIPLINA_110.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_110.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_110.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_110.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_110.Name = "CODIGO_DISCIPLINA_110";
-            this.CODIGO_DISCIPLINA_110.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_110.Width = 20;
-            // 
             // HORARIO_GRADE_110
             // 
             this.HORARIO_GRADE_110.Name = "HORARIO_GRADE_110";
@@ -2773,6 +2765,16 @@
             // 
             this.DIA_SEMANA_GRADE_110.Name = "DIA_SEMANA_GRADE_110";
             this.DIA_SEMANA_GRADE_110.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_110
+            // 
+            this.CODIGO_DISCIPLINA_110.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_110.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_110.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_110.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_110.Name = "CODIGO_DISCIPLINA_110";
+            this.CODIGO_DISCIPLINA_110.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_110.Width = 20;
             // 
             // SEQ_TURMA_110
             // 
@@ -2832,9 +2834,9 @@
             this.grade111.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade111.ColumnHeadersVisible = false;
             this.grade111.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_111,
             this.HORARIO_GRADE_111,
             this.DIA_SEMANA_GRADE_111,
+            this.CODIGO_DISCIPLINA_111,
             this.SEQ_TURMA_111,
             this.CODIGO_ESPACO_111,
             this.CODIGO_PROFESSOR1_111,
@@ -2854,16 +2856,6 @@
             this.grade111.TabIndex = 150;
             this.grade111.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_111
-            // 
-            this.CODIGO_DISCIPLINA_111.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_111.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_111.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_111.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_111.Name = "CODIGO_DISCIPLINA_111";
-            this.CODIGO_DISCIPLINA_111.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_111.Width = 20;
-            // 
             // HORARIO_GRADE_111
             // 
             this.HORARIO_GRADE_111.Name = "HORARIO_GRADE_111";
@@ -2873,6 +2865,16 @@
             // 
             this.DIA_SEMANA_GRADE_111.Name = "DIA_SEMANA_GRADE_111";
             this.DIA_SEMANA_GRADE_111.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_111
+            // 
+            this.CODIGO_DISCIPLINA_111.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_111.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_111.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_111.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_111.Name = "CODIGO_DISCIPLINA_111";
+            this.CODIGO_DISCIPLINA_111.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_111.Width = 20;
             // 
             // SEQ_TURMA_111
             // 
@@ -2932,9 +2934,9 @@
             this.grade112.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade112.ColumnHeadersVisible = false;
             this.grade112.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_112,
             this.HORARIO_GRADE_112,
             this.DIA_SEMANA_GRADE_112,
+            this.CODIGO_DISCIPLINA_112,
             this.SEQ_TURMA_112,
             this.CODIGO_ESPACO_112,
             this.CODIGO_PROFESSOR1_112,
@@ -2954,16 +2956,6 @@
             this.grade112.TabIndex = 150;
             this.grade112.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_112
-            // 
-            this.CODIGO_DISCIPLINA_112.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_112.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_112.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_112.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_112.Name = "CODIGO_DISCIPLINA_112";
-            this.CODIGO_DISCIPLINA_112.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_112.Width = 20;
-            // 
             // HORARIO_GRADE_112
             // 
             this.HORARIO_GRADE_112.Name = "HORARIO_GRADE_112";
@@ -2973,6 +2965,16 @@
             // 
             this.DIA_SEMANA_GRADE_112.Name = "DIA_SEMANA_GRADE_112";
             this.DIA_SEMANA_GRADE_112.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_112
+            // 
+            this.CODIGO_DISCIPLINA_112.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_112.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_112.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_112.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_112.Name = "CODIGO_DISCIPLINA_112";
+            this.CODIGO_DISCIPLINA_112.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_112.Width = 20;
             // 
             // SEQ_TURMA_112
             // 
@@ -3032,9 +3034,9 @@
             this.grade113.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade113.ColumnHeadersVisible = false;
             this.grade113.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_113,
             this.HORARIO_GRADE_113,
             this.DIA_SEMANA_GRADE_113,
+            this.CODIGO_DISCIPLINA_113,
             this.SEQ_TURMA_113,
             this.CODIGO_ESPACO_113,
             this.CODIGO_PROFESSOR1_113,
@@ -3054,16 +3056,6 @@
             this.grade113.TabIndex = 150;
             this.grade113.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_113
-            // 
-            this.CODIGO_DISCIPLINA_113.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_113.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_113.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_113.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_113.Name = "CODIGO_DISCIPLINA_113";
-            this.CODIGO_DISCIPLINA_113.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_113.Width = 20;
-            // 
             // HORARIO_GRADE_113
             // 
             this.HORARIO_GRADE_113.Name = "HORARIO_GRADE_113";
@@ -3073,6 +3065,16 @@
             // 
             this.DIA_SEMANA_GRADE_113.Name = "DIA_SEMANA_GRADE_113";
             this.DIA_SEMANA_GRADE_113.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_113
+            // 
+            this.CODIGO_DISCIPLINA_113.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_113.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_113.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_113.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_113.Name = "CODIGO_DISCIPLINA_113";
+            this.CODIGO_DISCIPLINA_113.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_113.Width = 20;
             // 
             // SEQ_TURMA_113
             // 
@@ -3132,9 +3134,9 @@
             this.grade114.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade114.ColumnHeadersVisible = false;
             this.grade114.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_114,
             this.HORARIO_GRADE_114,
             this.DIA_SEMANA_GRADE_114,
+            this.CODIGO_DISCIPLINA_114,
             this.SEQ_TURMA_114,
             this.CODIGO_ESPACO_114,
             this.CODIGO_PROFESSOR1_114,
@@ -3154,16 +3156,6 @@
             this.grade114.TabIndex = 150;
             this.grade114.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_114
-            // 
-            this.CODIGO_DISCIPLINA_114.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_114.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_114.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_114.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_114.Name = "CODIGO_DISCIPLINA_114";
-            this.CODIGO_DISCIPLINA_114.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_114.Width = 20;
-            // 
             // HORARIO_GRADE_114
             // 
             this.HORARIO_GRADE_114.Name = "HORARIO_GRADE_114";
@@ -3173,6 +3165,16 @@
             // 
             this.DIA_SEMANA_GRADE_114.Name = "DIA_SEMANA_GRADE_114";
             this.DIA_SEMANA_GRADE_114.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_114
+            // 
+            this.CODIGO_DISCIPLINA_114.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_114.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_114.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_114.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_114.Name = "CODIGO_DISCIPLINA_114";
+            this.CODIGO_DISCIPLINA_114.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_114.Width = 20;
             // 
             // SEQ_TURMA_114
             // 
@@ -3232,9 +3234,9 @@
             this.grade21.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade21.ColumnHeadersVisible = false;
             this.grade21.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_21,
             this.HORARIO_GRADE_21,
             this.DIA_SEMANA_GRADE_21,
+            this.CODIGO_DISCIPLINA_21,
             this.SEQ_TURMA_21,
             this.CODIGO_ESPACO_21,
             this.CODIGO_PROFESSOR1_21,
@@ -3254,16 +3256,6 @@
             this.grade21.TabIndex = 150;
             this.grade21.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_21
-            // 
-            this.CODIGO_DISCIPLINA_21.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_21.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_21.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_21.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_21.Name = "CODIGO_DISCIPLINA_21";
-            this.CODIGO_DISCIPLINA_21.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_21.Width = 20;
-            // 
             // HORARIO_GRADE_21
             // 
             this.HORARIO_GRADE_21.Name = "HORARIO_GRADE_21";
@@ -3273,6 +3265,16 @@
             // 
             this.DIA_SEMANA_GRADE_21.Name = "DIA_SEMANA_GRADE_21";
             this.DIA_SEMANA_GRADE_21.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_21
+            // 
+            this.CODIGO_DISCIPLINA_21.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_21.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_21.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_21.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_21.Name = "CODIGO_DISCIPLINA_21";
+            this.CODIGO_DISCIPLINA_21.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_21.Width = 20;
             // 
             // SEQ_TURMA_21
             // 
@@ -3332,9 +3334,9 @@
             this.grade22.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade22.ColumnHeadersVisible = false;
             this.grade22.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_22,
             this.HORARIO_GRADE_22,
             this.DIA_SEMANA_GRADE_22,
+            this.CODIGO_DISCIPLINA_22,
             this.SEQ_TURMA_22,
             this.CODIGO_ESPACO_22,
             this.CODIGO_PROFESSOR1_22,
@@ -3354,16 +3356,6 @@
             this.grade22.TabIndex = 150;
             this.grade22.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_22
-            // 
-            this.CODIGO_DISCIPLINA_22.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_22.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_22.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_22.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_22.Name = "CODIGO_DISCIPLINA_22";
-            this.CODIGO_DISCIPLINA_22.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_22.Width = 20;
-            // 
             // HORARIO_GRADE_22
             // 
             this.HORARIO_GRADE_22.Name = "HORARIO_GRADE_22";
@@ -3373,6 +3365,16 @@
             // 
             this.DIA_SEMANA_GRADE_22.Name = "DIA_SEMANA_GRADE_22";
             this.DIA_SEMANA_GRADE_22.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_22
+            // 
+            this.CODIGO_DISCIPLINA_22.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_22.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_22.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_22.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_22.Name = "CODIGO_DISCIPLINA_22";
+            this.CODIGO_DISCIPLINA_22.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_22.Width = 20;
             // 
             // SEQ_TURMA_22
             // 
@@ -3432,9 +3434,9 @@
             this.grade23.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade23.ColumnHeadersVisible = false;
             this.grade23.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_23,
             this.HORARIO_GRADE_23,
             this.DIA_SEMANA_GRADE_23,
+            this.CODIGO_DISCIPLINA_23,
             this.SEQ_TURMA_23,
             this.CODIGO_ESPACO_23,
             this.CODIGO_PROFESSOR1_23,
@@ -3454,16 +3456,6 @@
             this.grade23.TabIndex = 150;
             this.grade23.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_23
-            // 
-            this.CODIGO_DISCIPLINA_23.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_23.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_23.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_23.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_23.Name = "CODIGO_DISCIPLINA_23";
-            this.CODIGO_DISCIPLINA_23.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_23.Width = 20;
-            // 
             // HORARIO_GRADE_23
             // 
             this.HORARIO_GRADE_23.Name = "HORARIO_GRADE_23";
@@ -3473,6 +3465,16 @@
             // 
             this.DIA_SEMANA_GRADE_23.Name = "DIA_SEMANA_GRADE_23";
             this.DIA_SEMANA_GRADE_23.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_23
+            // 
+            this.CODIGO_DISCIPLINA_23.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_23.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_23.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_23.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_23.Name = "CODIGO_DISCIPLINA_23";
+            this.CODIGO_DISCIPLINA_23.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_23.Width = 20;
             // 
             // SEQ_TURMA_23
             // 
@@ -3532,9 +3534,9 @@
             this.grade24.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade24.ColumnHeadersVisible = false;
             this.grade24.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_24,
             this.HORARIO_GRADE_24,
             this.DIA_SEMANA_GRADE_24,
+            this.CODIGO_DISCIPLINA_24,
             this.SEQ_TURMA_24,
             this.CODIGO_ESPACO_24,
             this.CODIGO_PROFESSOR1_24,
@@ -3554,16 +3556,6 @@
             this.grade24.TabIndex = 150;
             this.grade24.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_24
-            // 
-            this.CODIGO_DISCIPLINA_24.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_24.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_24.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_24.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_24.Name = "CODIGO_DISCIPLINA_24";
-            this.CODIGO_DISCIPLINA_24.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_24.Width = 20;
-            // 
             // HORARIO_GRADE_24
             // 
             this.HORARIO_GRADE_24.Name = "HORARIO_GRADE_24";
@@ -3573,6 +3565,16 @@
             // 
             this.DIA_SEMANA_GRADE_24.Name = "DIA_SEMANA_GRADE_24";
             this.DIA_SEMANA_GRADE_24.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_24
+            // 
+            this.CODIGO_DISCIPLINA_24.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_24.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_24.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_24.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_24.Name = "CODIGO_DISCIPLINA_24";
+            this.CODIGO_DISCIPLINA_24.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_24.Width = 20;
             // 
             // SEQ_TURMA_24
             // 
@@ -3632,9 +3634,9 @@
             this.grade25.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade25.ColumnHeadersVisible = false;
             this.grade25.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_25,
             this.HORARIO_GRADE_25,
             this.DIA_SEMANA_GRADE_25,
+            this.CODIGO_DISCIPLINA_25,
             this.SEQ_TURMA_25,
             this.CODIGO_ESPACO_25,
             this.CODIGO_PROFESSOR1_25,
@@ -3654,16 +3656,6 @@
             this.grade25.TabIndex = 150;
             this.grade25.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_25
-            // 
-            this.CODIGO_DISCIPLINA_25.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_25.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_25.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_25.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_25.Name = "CODIGO_DISCIPLINA_25";
-            this.CODIGO_DISCIPLINA_25.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_25.Width = 20;
-            // 
             // HORARIO_GRADE_25
             // 
             this.HORARIO_GRADE_25.Name = "HORARIO_GRADE_25";
@@ -3673,6 +3665,16 @@
             // 
             this.DIA_SEMANA_GRADE_25.Name = "DIA_SEMANA_GRADE_25";
             this.DIA_SEMANA_GRADE_25.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_25
+            // 
+            this.CODIGO_DISCIPLINA_25.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_25.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_25.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_25.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_25.Name = "CODIGO_DISCIPLINA_25";
+            this.CODIGO_DISCIPLINA_25.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_25.Width = 20;
             // 
             // SEQ_TURMA_25
             // 
@@ -3732,9 +3734,9 @@
             this.grade26.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade26.ColumnHeadersVisible = false;
             this.grade26.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_26,
             this.HORARIO_GRADE_26,
             this.DIA_SEMANA_GRADE_26,
+            this.CODIGO_DISCIPLINA_26,
             this.SEQ_TURMA_26,
             this.CODIGO_ESPACO_26,
             this.CODIGO_PROFESSOR1_26,
@@ -3754,16 +3756,6 @@
             this.grade26.TabIndex = 150;
             this.grade26.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_26
-            // 
-            this.CODIGO_DISCIPLINA_26.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_26.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_26.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_26.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_26.Name = "CODIGO_DISCIPLINA_26";
-            this.CODIGO_DISCIPLINA_26.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_26.Width = 20;
-            // 
             // HORARIO_GRADE_26
             // 
             this.HORARIO_GRADE_26.Name = "HORARIO_GRADE_26";
@@ -3773,6 +3765,16 @@
             // 
             this.DIA_SEMANA_GRADE_26.Name = "DIA_SEMANA_GRADE_26";
             this.DIA_SEMANA_GRADE_26.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_26
+            // 
+            this.CODIGO_DISCIPLINA_26.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_26.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_26.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_26.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_26.Name = "CODIGO_DISCIPLINA_26";
+            this.CODIGO_DISCIPLINA_26.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_26.Width = 20;
             // 
             // SEQ_TURMA_26
             // 
@@ -3832,9 +3834,9 @@
             this.grade27.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade27.ColumnHeadersVisible = false;
             this.grade27.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_27,
             this.HORARIO_GRADE_27,
             this.DIA_SEMANA_GRADE_27,
+            this.CODIGO_DISCIPLINA_27,
             this.SEQ_TURMA_27,
             this.CODIGO_ESPACO_27,
             this.CODIGO_PROFESSOR1_27,
@@ -3854,16 +3856,6 @@
             this.grade27.TabIndex = 150;
             this.grade27.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_27
-            // 
-            this.CODIGO_DISCIPLINA_27.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_27.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_27.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_27.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_27.Name = "CODIGO_DISCIPLINA_27";
-            this.CODIGO_DISCIPLINA_27.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_27.Width = 20;
-            // 
             // HORARIO_GRADE_27
             // 
             this.HORARIO_GRADE_27.Name = "HORARIO_GRADE_27";
@@ -3873,6 +3865,16 @@
             // 
             this.DIA_SEMANA_GRADE_27.Name = "DIA_SEMANA_GRADE_27";
             this.DIA_SEMANA_GRADE_27.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_27
+            // 
+            this.CODIGO_DISCIPLINA_27.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_27.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_27.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_27.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_27.Name = "CODIGO_DISCIPLINA_27";
+            this.CODIGO_DISCIPLINA_27.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_27.Width = 20;
             // 
             // SEQ_TURMA_27
             // 
@@ -3932,9 +3934,9 @@
             this.grade28.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade28.ColumnHeadersVisible = false;
             this.grade28.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_28,
             this.HORARIO_GRADE_28,
             this.DIA_SEMANA_GRADE_28,
+            this.CODIGO_DISCIPLINA_28,
             this.SEQ_TURMA_28,
             this.CODIGO_ESPACO_28,
             this.CODIGO_PROFESSOR1_28,
@@ -3954,16 +3956,6 @@
             this.grade28.TabIndex = 150;
             this.grade28.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_28
-            // 
-            this.CODIGO_DISCIPLINA_28.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_28.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_28.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_28.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_28.Name = "CODIGO_DISCIPLINA_28";
-            this.CODIGO_DISCIPLINA_28.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_28.Width = 20;
-            // 
             // HORARIO_GRADE_28
             // 
             this.HORARIO_GRADE_28.Name = "HORARIO_GRADE_28";
@@ -3973,6 +3965,16 @@
             // 
             this.DIA_SEMANA_GRADE_28.Name = "DIA_SEMANA_GRADE_28";
             this.DIA_SEMANA_GRADE_28.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_28
+            // 
+            this.CODIGO_DISCIPLINA_28.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_28.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_28.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_28.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_28.Name = "CODIGO_DISCIPLINA_28";
+            this.CODIGO_DISCIPLINA_28.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_28.Width = 20;
             // 
             // SEQ_TURMA_28
             // 
@@ -4032,9 +4034,9 @@
             this.grade29.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade29.ColumnHeadersVisible = false;
             this.grade29.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_29,
             this.HORARIO_GRADE_29,
             this.DIA_SEMANA_GRADE_29,
+            this.CODIGO_DISCIPLINA_29,
             this.SEQ_TURMA_29,
             this.CODIGO_ESPACO_29,
             this.CODIGO_PROFESSOR1_29,
@@ -4054,16 +4056,6 @@
             this.grade29.TabIndex = 150;
             this.grade29.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_29
-            // 
-            this.CODIGO_DISCIPLINA_29.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_29.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_29.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_29.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_29.Name = "CODIGO_DISCIPLINA_29";
-            this.CODIGO_DISCIPLINA_29.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_29.Width = 20;
-            // 
             // HORARIO_GRADE_29
             // 
             this.HORARIO_GRADE_29.Name = "HORARIO_GRADE_29";
@@ -4073,6 +4065,16 @@
             // 
             this.DIA_SEMANA_GRADE_29.Name = "DIA_SEMANA_GRADE_29";
             this.DIA_SEMANA_GRADE_29.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_29
+            // 
+            this.CODIGO_DISCIPLINA_29.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_29.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_29.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_29.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_29.Name = "CODIGO_DISCIPLINA_29";
+            this.CODIGO_DISCIPLINA_29.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_29.Width = 20;
             // 
             // SEQ_TURMA_29
             // 
@@ -4132,9 +4134,9 @@
             this.grade210.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade210.ColumnHeadersVisible = false;
             this.grade210.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_210,
             this.HORARIO_GRADE_210,
             this.DIA_SEMANA_GRADE_210,
+            this.CODIGO_DISCIPLINA_210,
             this.SEQ_TURMA_210,
             this.CODIGO_ESPACO_210,
             this.CODIGO_PROFESSOR1_210,
@@ -4154,16 +4156,6 @@
             this.grade210.TabIndex = 150;
             this.grade210.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_210
-            // 
-            this.CODIGO_DISCIPLINA_210.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_210.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_210.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_210.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_210.Name = "CODIGO_DISCIPLINA_210";
-            this.CODIGO_DISCIPLINA_210.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_210.Width = 20;
-            // 
             // HORARIO_GRADE_210
             // 
             this.HORARIO_GRADE_210.Name = "HORARIO_GRADE_210";
@@ -4173,6 +4165,16 @@
             // 
             this.DIA_SEMANA_GRADE_210.Name = "DIA_SEMANA_GRADE_210";
             this.DIA_SEMANA_GRADE_210.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_210
+            // 
+            this.CODIGO_DISCIPLINA_210.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_210.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_210.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_210.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_210.Name = "CODIGO_DISCIPLINA_210";
+            this.CODIGO_DISCIPLINA_210.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_210.Width = 20;
             // 
             // SEQ_TURMA_210
             // 
@@ -4232,9 +4234,9 @@
             this.grade211.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade211.ColumnHeadersVisible = false;
             this.grade211.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_211,
             this.HORARIO_GRADE_211,
             this.DIA_SEMANA_GRADE_211,
+            this.CODIGO_DISCIPLINA_211,
             this.SEQ_TURMA_211,
             this.CODIGO_ESPACO_211,
             this.CODIGO_PROFESSOR1_211,
@@ -4254,16 +4256,6 @@
             this.grade211.TabIndex = 150;
             this.grade211.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_211
-            // 
-            this.CODIGO_DISCIPLINA_211.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_211.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_211.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_211.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_211.Name = "CODIGO_DISCIPLINA_211";
-            this.CODIGO_DISCIPLINA_211.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_211.Width = 20;
-            // 
             // HORARIO_GRADE_211
             // 
             this.HORARIO_GRADE_211.Name = "HORARIO_GRADE_211";
@@ -4273,6 +4265,16 @@
             // 
             this.DIA_SEMANA_GRADE_211.Name = "DIA_SEMANA_GRADE_211";
             this.DIA_SEMANA_GRADE_211.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_211
+            // 
+            this.CODIGO_DISCIPLINA_211.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_211.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_211.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_211.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_211.Name = "CODIGO_DISCIPLINA_211";
+            this.CODIGO_DISCIPLINA_211.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_211.Width = 20;
             // 
             // SEQ_TURMA_211
             // 
@@ -4332,9 +4334,9 @@
             this.grade212.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade212.ColumnHeadersVisible = false;
             this.grade212.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_212,
             this.HORARIO_GRADE_212,
             this.DIA_SEMANA_GRADE_212,
+            this.CODIGO_DISCIPLINA_212,
             this.SEQ_TURMA_212,
             this.CODIGO_ESPACO_212,
             this.CODIGO_PROFESSOR1_212,
@@ -4354,16 +4356,6 @@
             this.grade212.TabIndex = 150;
             this.grade212.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_212
-            // 
-            this.CODIGO_DISCIPLINA_212.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_212.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_212.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_212.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_212.Name = "CODIGO_DISCIPLINA_212";
-            this.CODIGO_DISCIPLINA_212.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_212.Width = 20;
-            // 
             // HORARIO_GRADE_212
             // 
             this.HORARIO_GRADE_212.Name = "HORARIO_GRADE_212";
@@ -4373,6 +4365,16 @@
             // 
             this.DIA_SEMANA_GRADE_212.Name = "DIA_SEMANA_GRADE_212";
             this.DIA_SEMANA_GRADE_212.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_212
+            // 
+            this.CODIGO_DISCIPLINA_212.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_212.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_212.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_212.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_212.Name = "CODIGO_DISCIPLINA_212";
+            this.CODIGO_DISCIPLINA_212.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_212.Width = 20;
             // 
             // SEQ_TURMA_212
             // 
@@ -4432,9 +4434,9 @@
             this.grade213.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade213.ColumnHeadersVisible = false;
             this.grade213.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_213,
             this.HORARIO_GRADE_213,
             this.DIA_SEMANA_GRADE_213,
+            this.CODIGO_DISCIPLINA_213,
             this.SEQ_TURMA_213,
             this.CODIGO_ESPACO_213,
             this.CODIGO_PROFESSOR1_213,
@@ -4454,16 +4456,6 @@
             this.grade213.TabIndex = 150;
             this.grade213.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_213
-            // 
-            this.CODIGO_DISCIPLINA_213.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_213.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_213.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_213.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_213.Name = "CODIGO_DISCIPLINA_213";
-            this.CODIGO_DISCIPLINA_213.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_213.Width = 20;
-            // 
             // HORARIO_GRADE_213
             // 
             this.HORARIO_GRADE_213.Name = "HORARIO_GRADE_213";
@@ -4473,6 +4465,16 @@
             // 
             this.DIA_SEMANA_GRADE_213.Name = "DIA_SEMANA_GRADE_213";
             this.DIA_SEMANA_GRADE_213.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_213
+            // 
+            this.CODIGO_DISCIPLINA_213.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_213.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_213.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_213.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_213.Name = "CODIGO_DISCIPLINA_213";
+            this.CODIGO_DISCIPLINA_213.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_213.Width = 20;
             // 
             // SEQ_TURMA_213
             // 
@@ -4532,9 +4534,9 @@
             this.grade214.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade214.ColumnHeadersVisible = false;
             this.grade214.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_214,
             this.HORARIO_GRADE_214,
             this.DIA_SEMANA_GRADE_214,
+            this.CODIGO_DISCIPLINA_214,
             this.SEQ_TURMA_214,
             this.CODIGO_ESPACO_214,
             this.CODIGO_PROFESSOR1_214,
@@ -4554,16 +4556,6 @@
             this.grade214.TabIndex = 150;
             this.grade214.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_214
-            // 
-            this.CODIGO_DISCIPLINA_214.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_214.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_214.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_214.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_214.Name = "CODIGO_DISCIPLINA_214";
-            this.CODIGO_DISCIPLINA_214.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_214.Width = 20;
-            // 
             // HORARIO_GRADE_214
             // 
             this.HORARIO_GRADE_214.Name = "HORARIO_GRADE_214";
@@ -4573,6 +4565,16 @@
             // 
             this.DIA_SEMANA_GRADE_214.Name = "DIA_SEMANA_GRADE_214";
             this.DIA_SEMANA_GRADE_214.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_214
+            // 
+            this.CODIGO_DISCIPLINA_214.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_214.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_214.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_214.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_214.Name = "CODIGO_DISCIPLINA_214";
+            this.CODIGO_DISCIPLINA_214.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_214.Width = 20;
             // 
             // SEQ_TURMA_214
             // 
@@ -4632,9 +4634,9 @@
             this.grade31.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade31.ColumnHeadersVisible = false;
             this.grade31.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_31,
             this.HORARIO_GRADE_31,
             this.DIA_SEMANA_GRADE_31,
+            this.CODIGO_DISCIPLINA_31,
             this.SEQ_TURMA_31,
             this.CODIGO_ESPACO_31,
             this.CODIGO_PROFESSOR1_31,
@@ -4654,16 +4656,6 @@
             this.grade31.TabIndex = 150;
             this.grade31.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_31
-            // 
-            this.CODIGO_DISCIPLINA_31.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_31.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_31.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_31.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_31.Name = "CODIGO_DISCIPLINA_31";
-            this.CODIGO_DISCIPLINA_31.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_31.Width = 20;
-            // 
             // HORARIO_GRADE_31
             // 
             this.HORARIO_GRADE_31.Name = "HORARIO_GRADE_31";
@@ -4673,6 +4665,16 @@
             // 
             this.DIA_SEMANA_GRADE_31.Name = "DIA_SEMANA_GRADE_31";
             this.DIA_SEMANA_GRADE_31.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_31
+            // 
+            this.CODIGO_DISCIPLINA_31.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_31.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_31.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_31.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_31.Name = "CODIGO_DISCIPLINA_31";
+            this.CODIGO_DISCIPLINA_31.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_31.Width = 20;
             // 
             // SEQ_TURMA_31
             // 
@@ -4732,9 +4734,9 @@
             this.grade32.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade32.ColumnHeadersVisible = false;
             this.grade32.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_32,
             this.HORARIO_GRADE_32,
             this.DIA_SEMANA_GRADE_32,
+            this.CODIGO_DISCIPLINA_32,
             this.SEQ_TURMA_32,
             this.CODIGO_ESPACO_32,
             this.CODIGO_PROFESSOR1_32,
@@ -4754,16 +4756,6 @@
             this.grade32.TabIndex = 150;
             this.grade32.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_32
-            // 
-            this.CODIGO_DISCIPLINA_32.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_32.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_32.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_32.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_32.Name = "CODIGO_DISCIPLINA_32";
-            this.CODIGO_DISCIPLINA_32.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_32.Width = 20;
-            // 
             // HORARIO_GRADE_32
             // 
             this.HORARIO_GRADE_32.Name = "HORARIO_GRADE_32";
@@ -4773,6 +4765,16 @@
             // 
             this.DIA_SEMANA_GRADE_32.Name = "DIA_SEMANA_GRADE_32";
             this.DIA_SEMANA_GRADE_32.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_32
+            // 
+            this.CODIGO_DISCIPLINA_32.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_32.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_32.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_32.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_32.Name = "CODIGO_DISCIPLINA_32";
+            this.CODIGO_DISCIPLINA_32.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_32.Width = 20;
             // 
             // SEQ_TURMA_32
             // 
@@ -4832,9 +4834,9 @@
             this.grade33.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade33.ColumnHeadersVisible = false;
             this.grade33.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_33,
             this.HORARIO_GRADE_33,
             this.DIA_SEMANA_GRADE_33,
+            this.CODIGO_DISCIPLINA_33,
             this.SEQ_TURMA_33,
             this.CODIGO_ESPACO_33,
             this.CODIGO_PROFESSOR1_33,
@@ -4854,16 +4856,6 @@
             this.grade33.TabIndex = 150;
             this.grade33.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_33
-            // 
-            this.CODIGO_DISCIPLINA_33.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_33.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_33.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_33.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_33.Name = "CODIGO_DISCIPLINA_33";
-            this.CODIGO_DISCIPLINA_33.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_33.Width = 20;
-            // 
             // HORARIO_GRADE_33
             // 
             this.HORARIO_GRADE_33.Name = "HORARIO_GRADE_33";
@@ -4873,6 +4865,16 @@
             // 
             this.DIA_SEMANA_GRADE_33.Name = "DIA_SEMANA_GRADE_33";
             this.DIA_SEMANA_GRADE_33.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_33
+            // 
+            this.CODIGO_DISCIPLINA_33.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_33.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_33.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_33.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_33.Name = "CODIGO_DISCIPLINA_33";
+            this.CODIGO_DISCIPLINA_33.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_33.Width = 20;
             // 
             // SEQ_TURMA_33
             // 
@@ -4932,9 +4934,9 @@
             this.grade34.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade34.ColumnHeadersVisible = false;
             this.grade34.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_34,
             this.HORARIO_GRADE_34,
             this.DIA_SEMANA_GRADE_34,
+            this.CODIGO_DISCIPLINA_34,
             this.SEQ_TURMA_34,
             this.CODIGO_ESPACO_34,
             this.CODIGO_PROFESSOR1_34,
@@ -4954,16 +4956,6 @@
             this.grade34.TabIndex = 150;
             this.grade34.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_34
-            // 
-            this.CODIGO_DISCIPLINA_34.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_34.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_34.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_34.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_34.Name = "CODIGO_DISCIPLINA_34";
-            this.CODIGO_DISCIPLINA_34.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_34.Width = 20;
-            // 
             // HORARIO_GRADE_34
             // 
             this.HORARIO_GRADE_34.Name = "HORARIO_GRADE_34";
@@ -4973,6 +4965,16 @@
             // 
             this.DIA_SEMANA_GRADE_34.Name = "DIA_SEMANA_GRADE_34";
             this.DIA_SEMANA_GRADE_34.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_34
+            // 
+            this.CODIGO_DISCIPLINA_34.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_34.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_34.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_34.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_34.Name = "CODIGO_DISCIPLINA_34";
+            this.CODIGO_DISCIPLINA_34.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_34.Width = 20;
             // 
             // SEQ_TURMA_34
             // 
@@ -5032,9 +5034,9 @@
             this.grade35.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade35.ColumnHeadersVisible = false;
             this.grade35.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_35,
             this.HORARIO_GRADE_35,
             this.DIA_SEMANA_GRADE_35,
+            this.CODIGO_DISCIPLINA_35,
             this.SEQ_TURMA_35,
             this.CODIGO_ESPACO_35,
             this.CODIGO_PROFESSOR1_35,
@@ -5054,16 +5056,6 @@
             this.grade35.TabIndex = 150;
             this.grade35.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_35
-            // 
-            this.CODIGO_DISCIPLINA_35.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_35.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_35.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_35.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_35.Name = "CODIGO_DISCIPLINA_35";
-            this.CODIGO_DISCIPLINA_35.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_35.Width = 20;
-            // 
             // HORARIO_GRADE_35
             // 
             this.HORARIO_GRADE_35.Name = "HORARIO_GRADE_35";
@@ -5073,6 +5065,16 @@
             // 
             this.DIA_SEMANA_GRADE_35.Name = "DIA_SEMANA_GRADE_35";
             this.DIA_SEMANA_GRADE_35.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_35
+            // 
+            this.CODIGO_DISCIPLINA_35.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_35.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_35.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_35.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_35.Name = "CODIGO_DISCIPLINA_35";
+            this.CODIGO_DISCIPLINA_35.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_35.Width = 20;
             // 
             // SEQ_TURMA_35
             // 
@@ -5132,9 +5134,9 @@
             this.grade36.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade36.ColumnHeadersVisible = false;
             this.grade36.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_36,
             this.HORARIO_GRADE_36,
             this.DIA_SEMANA_GRADE_36,
+            this.CODIGO_DISCIPLINA_36,
             this.SEQ_TURMA_36,
             this.CODIGO_ESPACO_36,
             this.CODIGO_PROFESSOR1_36,
@@ -5154,16 +5156,6 @@
             this.grade36.TabIndex = 150;
             this.grade36.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_36
-            // 
-            this.CODIGO_DISCIPLINA_36.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_36.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_36.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_36.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_36.Name = "CODIGO_DISCIPLINA_36";
-            this.CODIGO_DISCIPLINA_36.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_36.Width = 20;
-            // 
             // HORARIO_GRADE_36
             // 
             this.HORARIO_GRADE_36.Name = "HORARIO_GRADE_36";
@@ -5173,6 +5165,16 @@
             // 
             this.DIA_SEMANA_GRADE_36.Name = "DIA_SEMANA_GRADE_36";
             this.DIA_SEMANA_GRADE_36.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_36
+            // 
+            this.CODIGO_DISCIPLINA_36.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_36.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_36.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_36.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_36.Name = "CODIGO_DISCIPLINA_36";
+            this.CODIGO_DISCIPLINA_36.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_36.Width = 20;
             // 
             // SEQ_TURMA_36
             // 
@@ -5232,9 +5234,9 @@
             this.grade37.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade37.ColumnHeadersVisible = false;
             this.grade37.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_37,
             this.HORARIO_GRADE_37,
             this.DIA_SEMANA_GRADE_37,
+            this.CODIGO_DISCIPLINA_37,
             this.SEQ_TURMA_37,
             this.CODIGO_ESPACO_37,
             this.CODIGO_PROFESSOR1_37,
@@ -5254,16 +5256,6 @@
             this.grade37.TabIndex = 150;
             this.grade37.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_37
-            // 
-            this.CODIGO_DISCIPLINA_37.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_37.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_37.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_37.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_37.Name = "CODIGO_DISCIPLINA_37";
-            this.CODIGO_DISCIPLINA_37.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_37.Width = 20;
-            // 
             // HORARIO_GRADE_37
             // 
             this.HORARIO_GRADE_37.Name = "HORARIO_GRADE_37";
@@ -5273,6 +5265,16 @@
             // 
             this.DIA_SEMANA_GRADE_37.Name = "DIA_SEMANA_GRADE_37";
             this.DIA_SEMANA_GRADE_37.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_37
+            // 
+            this.CODIGO_DISCIPLINA_37.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_37.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_37.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_37.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_37.Name = "CODIGO_DISCIPLINA_37";
+            this.CODIGO_DISCIPLINA_37.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_37.Width = 20;
             // 
             // SEQ_TURMA_37
             // 
@@ -5332,9 +5334,9 @@
             this.grade38.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade38.ColumnHeadersVisible = false;
             this.grade38.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_38,
             this.HORARIO_GRADE_38,
             this.DIA_SEMANA_GRADE_38,
+            this.CODIGO_DISCIPLINA_38,
             this.SEQ_TURMA_38,
             this.CODIGO_ESPACO_38,
             this.CODIGO_PROFESSOR1_38,
@@ -5354,16 +5356,6 @@
             this.grade38.TabIndex = 150;
             this.grade38.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_38
-            // 
-            this.CODIGO_DISCIPLINA_38.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_38.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_38.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_38.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_38.Name = "CODIGO_DISCIPLINA_38";
-            this.CODIGO_DISCIPLINA_38.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_38.Width = 20;
-            // 
             // HORARIO_GRADE_38
             // 
             this.HORARIO_GRADE_38.Name = "HORARIO_GRADE_38";
@@ -5373,6 +5365,16 @@
             // 
             this.DIA_SEMANA_GRADE_38.Name = "DIA_SEMANA_GRADE_38";
             this.DIA_SEMANA_GRADE_38.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_38
+            // 
+            this.CODIGO_DISCIPLINA_38.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_38.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_38.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_38.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_38.Name = "CODIGO_DISCIPLINA_38";
+            this.CODIGO_DISCIPLINA_38.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_38.Width = 20;
             // 
             // SEQ_TURMA_38
             // 
@@ -5432,9 +5434,9 @@
             this.grade39.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade39.ColumnHeadersVisible = false;
             this.grade39.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_39,
             this.HORARIO_GRADE_39,
             this.DIA_SEMANA_GRADE_39,
+            this.CODIGO_DISCIPLINA_39,
             this.SEQ_TURMA_39,
             this.CODIGO_ESPACO_39,
             this.CODIGO_PROFESSOR1_39,
@@ -5454,16 +5456,6 @@
             this.grade39.TabIndex = 150;
             this.grade39.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_39
-            // 
-            this.CODIGO_DISCIPLINA_39.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_39.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_39.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_39.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_39.Name = "CODIGO_DISCIPLINA_39";
-            this.CODIGO_DISCIPLINA_39.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_39.Width = 20;
-            // 
             // HORARIO_GRADE_39
             // 
             this.HORARIO_GRADE_39.Name = "HORARIO_GRADE_39";
@@ -5473,6 +5465,16 @@
             // 
             this.DIA_SEMANA_GRADE_39.Name = "DIA_SEMANA_GRADE_39";
             this.DIA_SEMANA_GRADE_39.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_39
+            // 
+            this.CODIGO_DISCIPLINA_39.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_39.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_39.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_39.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_39.Name = "CODIGO_DISCIPLINA_39";
+            this.CODIGO_DISCIPLINA_39.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_39.Width = 20;
             // 
             // SEQ_TURMA_39
             // 
@@ -5532,9 +5534,9 @@
             this.grade310.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade310.ColumnHeadersVisible = false;
             this.grade310.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_310,
             this.HORARIO_GRADE_310,
             this.DIA_SEMANA_GRADE_310,
+            this.CODIGO_DISCIPLINA_310,
             this.SEQ_TURMA_310,
             this.CODIGO_ESPACO_310,
             this.CODIGO_PROFESSOR1_310,
@@ -5554,16 +5556,6 @@
             this.grade310.TabIndex = 150;
             this.grade310.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_310
-            // 
-            this.CODIGO_DISCIPLINA_310.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_310.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_310.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_310.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_310.Name = "CODIGO_DISCIPLINA_310";
-            this.CODIGO_DISCIPLINA_310.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_310.Width = 20;
-            // 
             // HORARIO_GRADE_310
             // 
             this.HORARIO_GRADE_310.Name = "HORARIO_GRADE_310";
@@ -5573,6 +5565,16 @@
             // 
             this.DIA_SEMANA_GRADE_310.Name = "DIA_SEMANA_GRADE_310";
             this.DIA_SEMANA_GRADE_310.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_310
+            // 
+            this.CODIGO_DISCIPLINA_310.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_310.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_310.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_310.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_310.Name = "CODIGO_DISCIPLINA_310";
+            this.CODIGO_DISCIPLINA_310.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_310.Width = 20;
             // 
             // SEQ_TURMA_310
             // 
@@ -5632,9 +5634,9 @@
             this.grade311.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade311.ColumnHeadersVisible = false;
             this.grade311.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_311,
             this.HORARIO_GRADE_311,
             this.DIA_SEMANA_GRADE_311,
+            this.CODIGO_DISCIPLINA_311,
             this.SEQ_TURMA_311,
             this.CODIGO_ESPACO_311,
             this.CODIGO_PROFESSOR1_311,
@@ -5654,16 +5656,6 @@
             this.grade311.TabIndex = 150;
             this.grade311.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_311
-            // 
-            this.CODIGO_DISCIPLINA_311.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_311.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_311.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_311.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_311.Name = "CODIGO_DISCIPLINA_311";
-            this.CODIGO_DISCIPLINA_311.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_311.Width = 20;
-            // 
             // HORARIO_GRADE_311
             // 
             this.HORARIO_GRADE_311.Name = "HORARIO_GRADE_311";
@@ -5673,6 +5665,16 @@
             // 
             this.DIA_SEMANA_GRADE_311.Name = "DIA_SEMANA_GRADE_311";
             this.DIA_SEMANA_GRADE_311.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_311
+            // 
+            this.CODIGO_DISCIPLINA_311.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_311.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_311.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_311.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_311.Name = "CODIGO_DISCIPLINA_311";
+            this.CODIGO_DISCIPLINA_311.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_311.Width = 20;
             // 
             // SEQ_TURMA_311
             // 
@@ -5732,9 +5734,9 @@
             this.grade312.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade312.ColumnHeadersVisible = false;
             this.grade312.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_312,
             this.HORARIO_GRADE_312,
             this.DIA_SEMANA_GRADE_312,
+            this.CODIGO_DISCIPLINA_312,
             this.SEQ_TURMA_312,
             this.CODIGO_ESPACO_312,
             this.CODIGO_PROFESSOR1_312,
@@ -5754,16 +5756,6 @@
             this.grade312.TabIndex = 150;
             this.grade312.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_312
-            // 
-            this.CODIGO_DISCIPLINA_312.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_312.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_312.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_312.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_312.Name = "CODIGO_DISCIPLINA_312";
-            this.CODIGO_DISCIPLINA_312.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_312.Width = 20;
-            // 
             // HORARIO_GRADE_312
             // 
             this.HORARIO_GRADE_312.Name = "HORARIO_GRADE_312";
@@ -5773,6 +5765,16 @@
             // 
             this.DIA_SEMANA_GRADE_312.Name = "DIA_SEMANA_GRADE_312";
             this.DIA_SEMANA_GRADE_312.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_312
+            // 
+            this.CODIGO_DISCIPLINA_312.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_312.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_312.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_312.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_312.Name = "CODIGO_DISCIPLINA_312";
+            this.CODIGO_DISCIPLINA_312.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_312.Width = 20;
             // 
             // SEQ_TURMA_312
             // 
@@ -5832,9 +5834,9 @@
             this.grade313.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade313.ColumnHeadersVisible = false;
             this.grade313.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_313,
             this.HORARIO_GRADE_313,
             this.DIA_SEMANA_GRADE_313,
+            this.CODIGO_DISCIPLINA_313,
             this.SEQ_TURMA_313,
             this.CODIGO_ESPACO_313,
             this.CODIGO_PROFESSOR1_313,
@@ -5854,16 +5856,6 @@
             this.grade313.TabIndex = 150;
             this.grade313.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_313
-            // 
-            this.CODIGO_DISCIPLINA_313.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_313.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_313.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_313.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_313.Name = "CODIGO_DISCIPLINA_313";
-            this.CODIGO_DISCIPLINA_313.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_313.Width = 20;
-            // 
             // HORARIO_GRADE_313
             // 
             this.HORARIO_GRADE_313.Name = "HORARIO_GRADE_313";
@@ -5873,6 +5865,16 @@
             // 
             this.DIA_SEMANA_GRADE_313.Name = "DIA_SEMANA_GRADE_313";
             this.DIA_SEMANA_GRADE_313.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_313
+            // 
+            this.CODIGO_DISCIPLINA_313.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_313.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_313.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_313.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_313.Name = "CODIGO_DISCIPLINA_313";
+            this.CODIGO_DISCIPLINA_313.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_313.Width = 20;
             // 
             // SEQ_TURMA_313
             // 
@@ -5932,9 +5934,9 @@
             this.grade314.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade314.ColumnHeadersVisible = false;
             this.grade314.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_314,
             this.HORARIO_GRADE_314,
             this.DIA_SEMANA_GRADE_314,
+            this.CODIGO_DISCIPLINA_314,
             this.SEQ_TURMA_314,
             this.CODIGO_ESPACO_314,
             this.CODIGO_PROFESSOR1_314,
@@ -5954,16 +5956,6 @@
             this.grade314.TabIndex = 150;
             this.grade314.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_314
-            // 
-            this.CODIGO_DISCIPLINA_314.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_314.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_314.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_314.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_314.Name = "CODIGO_DISCIPLINA_314";
-            this.CODIGO_DISCIPLINA_314.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_314.Width = 20;
-            // 
             // HORARIO_GRADE_314
             // 
             this.HORARIO_GRADE_314.Name = "HORARIO_GRADE_314";
@@ -5973,6 +5965,16 @@
             // 
             this.DIA_SEMANA_GRADE_314.Name = "DIA_SEMANA_GRADE_314";
             this.DIA_SEMANA_GRADE_314.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_314
+            // 
+            this.CODIGO_DISCIPLINA_314.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_314.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_314.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_314.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_314.Name = "CODIGO_DISCIPLINA_314";
+            this.CODIGO_DISCIPLINA_314.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_314.Width = 20;
             // 
             // SEQ_TURMA_314
             // 
@@ -6032,9 +6034,9 @@
             this.grade41.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade41.ColumnHeadersVisible = false;
             this.grade41.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_41,
             this.HORARIO_GRADE_41,
             this.DIA_SEMANA_GRADE_41,
+            this.CODIGO_DISCIPLINA_41,
             this.SEQ_TURMA_41,
             this.CODIGO_ESPACO_41,
             this.CODIGO_PROFESSOR1_41,
@@ -6054,16 +6056,6 @@
             this.grade41.TabIndex = 150;
             this.grade41.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_41
-            // 
-            this.CODIGO_DISCIPLINA_41.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_41.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_41.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_41.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_41.Name = "CODIGO_DISCIPLINA_41";
-            this.CODIGO_DISCIPLINA_41.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_41.Width = 20;
-            // 
             // HORARIO_GRADE_41
             // 
             this.HORARIO_GRADE_41.Name = "HORARIO_GRADE_41";
@@ -6073,6 +6065,16 @@
             // 
             this.DIA_SEMANA_GRADE_41.Name = "DIA_SEMANA_GRADE_41";
             this.DIA_SEMANA_GRADE_41.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_41
+            // 
+            this.CODIGO_DISCIPLINA_41.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_41.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_41.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_41.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_41.Name = "CODIGO_DISCIPLINA_41";
+            this.CODIGO_DISCIPLINA_41.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_41.Width = 20;
             // 
             // SEQ_TURMA_41
             // 
@@ -6132,9 +6134,9 @@
             this.grade42.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade42.ColumnHeadersVisible = false;
             this.grade42.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_42,
             this.HORARIO_GRADE_42,
             this.DIA_SEMANA_GRADE_42,
+            this.CODIGO_DISCIPLINA_42,
             this.SEQ_TURMA_42,
             this.CODIGO_ESPACO_42,
             this.CODIGO_PROFESSOR1_42,
@@ -6154,16 +6156,6 @@
             this.grade42.TabIndex = 150;
             this.grade42.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_42
-            // 
-            this.CODIGO_DISCIPLINA_42.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_42.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_42.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_42.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_42.Name = "CODIGO_DISCIPLINA_42";
-            this.CODIGO_DISCIPLINA_42.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_42.Width = 20;
-            // 
             // HORARIO_GRADE_42
             // 
             this.HORARIO_GRADE_42.Name = "HORARIO_GRADE_42";
@@ -6173,6 +6165,16 @@
             // 
             this.DIA_SEMANA_GRADE_42.Name = "DIA_SEMANA_GRADE_42";
             this.DIA_SEMANA_GRADE_42.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_42
+            // 
+            this.CODIGO_DISCIPLINA_42.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_42.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_42.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_42.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_42.Name = "CODIGO_DISCIPLINA_42";
+            this.CODIGO_DISCIPLINA_42.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_42.Width = 20;
             // 
             // SEQ_TURMA_42
             // 
@@ -6232,9 +6234,9 @@
             this.grade43.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade43.ColumnHeadersVisible = false;
             this.grade43.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_43,
             this.HORARIO_GRADE_43,
             this.DIA_SEMANA_GRADE_43,
+            this.CODIGO_DISCIPLINA_43,
             this.SEQ_TURMA_43,
             this.CODIGO_ESPACO_43,
             this.CODIGO_PROFESSOR1_43,
@@ -6254,16 +6256,6 @@
             this.grade43.TabIndex = 150;
             this.grade43.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_43
-            // 
-            this.CODIGO_DISCIPLINA_43.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_43.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_43.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_43.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_43.Name = "CODIGO_DISCIPLINA_43";
-            this.CODIGO_DISCIPLINA_43.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_43.Width = 20;
-            // 
             // HORARIO_GRADE_43
             // 
             this.HORARIO_GRADE_43.Name = "HORARIO_GRADE_43";
@@ -6273,6 +6265,16 @@
             // 
             this.DIA_SEMANA_GRADE_43.Name = "DIA_SEMANA_GRADE_43";
             this.DIA_SEMANA_GRADE_43.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_43
+            // 
+            this.CODIGO_DISCIPLINA_43.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_43.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_43.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_43.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_43.Name = "CODIGO_DISCIPLINA_43";
+            this.CODIGO_DISCIPLINA_43.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_43.Width = 20;
             // 
             // SEQ_TURMA_43
             // 
@@ -6332,9 +6334,9 @@
             this.grade44.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade44.ColumnHeadersVisible = false;
             this.grade44.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_44,
             this.HORARIO_GRADE_44,
             this.DIA_SEMANA_GRADE_44,
+            this.CODIGO_DISCIPLINA_44,
             this.SEQ_TURMA_44,
             this.CODIGO_ESPACO_44,
             this.CODIGO_PROFESSOR1_44,
@@ -6354,16 +6356,6 @@
             this.grade44.TabIndex = 150;
             this.grade44.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_44
-            // 
-            this.CODIGO_DISCIPLINA_44.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_44.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_44.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_44.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_44.Name = "CODIGO_DISCIPLINA_44";
-            this.CODIGO_DISCIPLINA_44.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_44.Width = 20;
-            // 
             // HORARIO_GRADE_44
             // 
             this.HORARIO_GRADE_44.Name = "HORARIO_GRADE_44";
@@ -6373,6 +6365,16 @@
             // 
             this.DIA_SEMANA_GRADE_44.Name = "DIA_SEMANA_GRADE_44";
             this.DIA_SEMANA_GRADE_44.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_44
+            // 
+            this.CODIGO_DISCIPLINA_44.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_44.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_44.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_44.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_44.Name = "CODIGO_DISCIPLINA_44";
+            this.CODIGO_DISCIPLINA_44.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_44.Width = 20;
             // 
             // SEQ_TURMA_44
             // 
@@ -6432,9 +6434,9 @@
             this.grade45.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade45.ColumnHeadersVisible = false;
             this.grade45.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_45,
             this.HORARIO_GRADE_45,
             this.DIA_SEMANA_GRADE_45,
+            this.CODIGO_DISCIPLINA_45,
             this.SEQ_TURMA_45,
             this.CODIGO_ESPACO_45,
             this.CODIGO_PROFESSOR1_45,
@@ -6454,16 +6456,6 @@
             this.grade45.TabIndex = 150;
             this.grade45.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_45
-            // 
-            this.CODIGO_DISCIPLINA_45.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_45.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_45.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_45.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_45.Name = "CODIGO_DISCIPLINA_45";
-            this.CODIGO_DISCIPLINA_45.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_45.Width = 20;
-            // 
             // HORARIO_GRADE_45
             // 
             this.HORARIO_GRADE_45.Name = "HORARIO_GRADE_45";
@@ -6473,6 +6465,16 @@
             // 
             this.DIA_SEMANA_GRADE_45.Name = "DIA_SEMANA_GRADE_45";
             this.DIA_SEMANA_GRADE_45.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_45
+            // 
+            this.CODIGO_DISCIPLINA_45.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_45.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_45.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_45.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_45.Name = "CODIGO_DISCIPLINA_45";
+            this.CODIGO_DISCIPLINA_45.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_45.Width = 20;
             // 
             // SEQ_TURMA_45
             // 
@@ -6532,9 +6534,9 @@
             this.grade46.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade46.ColumnHeadersVisible = false;
             this.grade46.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_46,
             this.HORARIO_GRADE_46,
             this.DIA_SEMANA_GRADE_46,
+            this.CODIGO_DISCIPLINA_46,
             this.SEQ_TURMA_46,
             this.CODIGO_ESPACO_46,
             this.CODIGO_PROFESSOR1_46,
@@ -6554,16 +6556,6 @@
             this.grade46.TabIndex = 150;
             this.grade46.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_46
-            // 
-            this.CODIGO_DISCIPLINA_46.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_46.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_46.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_46.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_46.Name = "CODIGO_DISCIPLINA_46";
-            this.CODIGO_DISCIPLINA_46.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_46.Width = 20;
-            // 
             // HORARIO_GRADE_46
             // 
             this.HORARIO_GRADE_46.Name = "HORARIO_GRADE_46";
@@ -6573,6 +6565,16 @@
             // 
             this.DIA_SEMANA_GRADE_46.Name = "DIA_SEMANA_GRADE_46";
             this.DIA_SEMANA_GRADE_46.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_46
+            // 
+            this.CODIGO_DISCIPLINA_46.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_46.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_46.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_46.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_46.Name = "CODIGO_DISCIPLINA_46";
+            this.CODIGO_DISCIPLINA_46.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_46.Width = 20;
             // 
             // SEQ_TURMA_46
             // 
@@ -6632,9 +6634,9 @@
             this.grade47.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade47.ColumnHeadersVisible = false;
             this.grade47.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_47,
             this.HORARIO_GRADE_47,
             this.DIA_SEMANA_GRADE_47,
+            this.CODIGO_DISCIPLINA_47,
             this.SEQ_TURMA_47,
             this.CODIGO_ESPACO_47,
             this.CODIGO_PROFESSOR1_47,
@@ -6654,16 +6656,6 @@
             this.grade47.TabIndex = 150;
             this.grade47.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_47
-            // 
-            this.CODIGO_DISCIPLINA_47.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_47.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_47.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_47.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_47.Name = "CODIGO_DISCIPLINA_47";
-            this.CODIGO_DISCIPLINA_47.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_47.Width = 20;
-            // 
             // HORARIO_GRADE_47
             // 
             this.HORARIO_GRADE_47.Name = "HORARIO_GRADE_47";
@@ -6673,6 +6665,16 @@
             // 
             this.DIA_SEMANA_GRADE_47.Name = "DIA_SEMANA_GRADE_47";
             this.DIA_SEMANA_GRADE_47.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_47
+            // 
+            this.CODIGO_DISCIPLINA_47.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_47.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_47.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_47.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_47.Name = "CODIGO_DISCIPLINA_47";
+            this.CODIGO_DISCIPLINA_47.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_47.Width = 20;
             // 
             // SEQ_TURMA_47
             // 
@@ -6732,9 +6734,9 @@
             this.grade48.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade48.ColumnHeadersVisible = false;
             this.grade48.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_48,
             this.HORARIO_GRADE_48,
             this.DIA_SEMANA_GRADE_48,
+            this.CODIGO_DISCIPLINA_48,
             this.SEQ_TURMA_48,
             this.CODIGO_ESPACO_48,
             this.CODIGO_PROFESSOR1_48,
@@ -6754,16 +6756,6 @@
             this.grade48.TabIndex = 150;
             this.grade48.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_48
-            // 
-            this.CODIGO_DISCIPLINA_48.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_48.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_48.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_48.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_48.Name = "CODIGO_DISCIPLINA_48";
-            this.CODIGO_DISCIPLINA_48.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_48.Width = 20;
-            // 
             // HORARIO_GRADE_48
             // 
             this.HORARIO_GRADE_48.Name = "HORARIO_GRADE_48";
@@ -6773,6 +6765,16 @@
             // 
             this.DIA_SEMANA_GRADE_48.Name = "DIA_SEMANA_GRADE_48";
             this.DIA_SEMANA_GRADE_48.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_48
+            // 
+            this.CODIGO_DISCIPLINA_48.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_48.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_48.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_48.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_48.Name = "CODIGO_DISCIPLINA_48";
+            this.CODIGO_DISCIPLINA_48.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_48.Width = 20;
             // 
             // SEQ_TURMA_48
             // 
@@ -6832,9 +6834,9 @@
             this.grade49.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade49.ColumnHeadersVisible = false;
             this.grade49.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_49,
             this.HORARIO_GRADE_49,
             this.DIA_SEMANA_GRADE_49,
+            this.CODIGO_DISCIPLINA_49,
             this.SEQ_TURMA_49,
             this.CODIGO_ESPACO_49,
             this.CODIGO_PROFESSOR1_49,
@@ -6854,16 +6856,6 @@
             this.grade49.TabIndex = 150;
             this.grade49.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_49
-            // 
-            this.CODIGO_DISCIPLINA_49.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_49.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_49.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_49.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_49.Name = "CODIGO_DISCIPLINA_49";
-            this.CODIGO_DISCIPLINA_49.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_49.Width = 20;
-            // 
             // HORARIO_GRADE_49
             // 
             this.HORARIO_GRADE_49.Name = "HORARIO_GRADE_49";
@@ -6873,6 +6865,16 @@
             // 
             this.DIA_SEMANA_GRADE_49.Name = "DIA_SEMANA_GRADE_49";
             this.DIA_SEMANA_GRADE_49.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_49
+            // 
+            this.CODIGO_DISCIPLINA_49.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_49.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_49.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_49.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_49.Name = "CODIGO_DISCIPLINA_49";
+            this.CODIGO_DISCIPLINA_49.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_49.Width = 20;
             // 
             // SEQ_TURMA_49
             // 
@@ -6932,9 +6934,9 @@
             this.grade410.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade410.ColumnHeadersVisible = false;
             this.grade410.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_410,
             this.HORARIO_GRADE_410,
             this.DIA_SEMANA_GRADE_410,
+            this.CODIGO_DISCIPLINA_410,
             this.SEQ_TURMA_410,
             this.CODIGO_ESPACO_410,
             this.CODIGO_PROFESSOR1_410,
@@ -6954,16 +6956,6 @@
             this.grade410.TabIndex = 150;
             this.grade410.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_410
-            // 
-            this.CODIGO_DISCIPLINA_410.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_410.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_410.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_410.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_410.Name = "CODIGO_DISCIPLINA_410";
-            this.CODIGO_DISCIPLINA_410.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_410.Width = 20;
-            // 
             // HORARIO_GRADE_410
             // 
             this.HORARIO_GRADE_410.Name = "HORARIO_GRADE_410";
@@ -6973,6 +6965,16 @@
             // 
             this.DIA_SEMANA_GRADE_410.Name = "DIA_SEMANA_GRADE_410";
             this.DIA_SEMANA_GRADE_410.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_410
+            // 
+            this.CODIGO_DISCIPLINA_410.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_410.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_410.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_410.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_410.Name = "CODIGO_DISCIPLINA_410";
+            this.CODIGO_DISCIPLINA_410.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_410.Width = 20;
             // 
             // SEQ_TURMA_410
             // 
@@ -7032,9 +7034,9 @@
             this.grade411.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade411.ColumnHeadersVisible = false;
             this.grade411.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_411,
             this.HORARIO_GRADE_411,
             this.DIA_SEMANA_GRADE_411,
+            this.CODIGO_DISCIPLINA_411,
             this.SEQ_TURMA_411,
             this.CODIGO_ESPACO_411,
             this.CODIGO_PROFESSOR1_411,
@@ -7054,16 +7056,6 @@
             this.grade411.TabIndex = 150;
             this.grade411.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_411
-            // 
-            this.CODIGO_DISCIPLINA_411.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_411.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_411.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_411.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_411.Name = "CODIGO_DISCIPLINA_411";
-            this.CODIGO_DISCIPLINA_411.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_411.Width = 20;
-            // 
             // HORARIO_GRADE_411
             // 
             this.HORARIO_GRADE_411.Name = "HORARIO_GRADE_411";
@@ -7073,6 +7065,16 @@
             // 
             this.DIA_SEMANA_GRADE_411.Name = "DIA_SEMANA_GRADE_411";
             this.DIA_SEMANA_GRADE_411.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_411
+            // 
+            this.CODIGO_DISCIPLINA_411.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_411.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_411.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_411.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_411.Name = "CODIGO_DISCIPLINA_411";
+            this.CODIGO_DISCIPLINA_411.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_411.Width = 20;
             // 
             // SEQ_TURMA_411
             // 
@@ -7132,9 +7134,9 @@
             this.grade412.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade412.ColumnHeadersVisible = false;
             this.grade412.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_412,
             this.HORARIO_GRADE_412,
             this.DIA_SEMANA_GRADE_412,
+            this.CODIGO_DISCIPLINA_412,
             this.SEQ_TURMA_412,
             this.CODIGO_ESPACO_412,
             this.CODIGO_PROFESSOR1_412,
@@ -7154,16 +7156,6 @@
             this.grade412.TabIndex = 150;
             this.grade412.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_412
-            // 
-            this.CODIGO_DISCIPLINA_412.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_412.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_412.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_412.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_412.Name = "CODIGO_DISCIPLINA_412";
-            this.CODIGO_DISCIPLINA_412.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_412.Width = 20;
-            // 
             // HORARIO_GRADE_412
             // 
             this.HORARIO_GRADE_412.Name = "HORARIO_GRADE_412";
@@ -7173,6 +7165,16 @@
             // 
             this.DIA_SEMANA_GRADE_412.Name = "DIA_SEMANA_GRADE_412";
             this.DIA_SEMANA_GRADE_412.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_412
+            // 
+            this.CODIGO_DISCIPLINA_412.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_412.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_412.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_412.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_412.Name = "CODIGO_DISCIPLINA_412";
+            this.CODIGO_DISCIPLINA_412.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_412.Width = 20;
             // 
             // SEQ_TURMA_412
             // 
@@ -7232,9 +7234,9 @@
             this.grade413.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade413.ColumnHeadersVisible = false;
             this.grade413.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_413,
             this.HORARIO_GRADE_413,
             this.DIA_SEMANA_GRADE_413,
+            this.CODIGO_DISCIPLINA_413,
             this.SEQ_TURMA_413,
             this.CODIGO_ESPACO_413,
             this.CODIGO_PROFESSOR1_413,
@@ -7254,16 +7256,6 @@
             this.grade413.TabIndex = 150;
             this.grade413.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_413
-            // 
-            this.CODIGO_DISCIPLINA_413.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_413.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_413.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_413.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_413.Name = "CODIGO_DISCIPLINA_413";
-            this.CODIGO_DISCIPLINA_413.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_413.Width = 20;
-            // 
             // HORARIO_GRADE_413
             // 
             this.HORARIO_GRADE_413.Name = "HORARIO_GRADE_413";
@@ -7273,6 +7265,16 @@
             // 
             this.DIA_SEMANA_GRADE_413.Name = "DIA_SEMANA_GRADE_413";
             this.DIA_SEMANA_GRADE_413.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_413
+            // 
+            this.CODIGO_DISCIPLINA_413.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_413.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_413.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_413.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_413.Name = "CODIGO_DISCIPLINA_413";
+            this.CODIGO_DISCIPLINA_413.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_413.Width = 20;
             // 
             // SEQ_TURMA_413
             // 
@@ -7332,9 +7334,9 @@
             this.grade414.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade414.ColumnHeadersVisible = false;
             this.grade414.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_414,
             this.HORARIO_GRADE_414,
             this.DIA_SEMANA_GRADE_414,
+            this.CODIGO_DISCIPLINA_414,
             this.SEQ_TURMA_414,
             this.CODIGO_ESPACO_414,
             this.CODIGO_PROFESSOR1_414,
@@ -7354,16 +7356,6 @@
             this.grade414.TabIndex = 150;
             this.grade414.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_414
-            // 
-            this.CODIGO_DISCIPLINA_414.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_414.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_414.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_414.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_414.Name = "CODIGO_DISCIPLINA_414";
-            this.CODIGO_DISCIPLINA_414.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_414.Width = 20;
-            // 
             // HORARIO_GRADE_414
             // 
             this.HORARIO_GRADE_414.Name = "HORARIO_GRADE_414";
@@ -7373,6 +7365,16 @@
             // 
             this.DIA_SEMANA_GRADE_414.Name = "DIA_SEMANA_GRADE_414";
             this.DIA_SEMANA_GRADE_414.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_414
+            // 
+            this.CODIGO_DISCIPLINA_414.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_414.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_414.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_414.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_414.Name = "CODIGO_DISCIPLINA_414";
+            this.CODIGO_DISCIPLINA_414.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_414.Width = 20;
             // 
             // SEQ_TURMA_414
             // 
@@ -7432,9 +7434,9 @@
             this.grade51.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade51.ColumnHeadersVisible = false;
             this.grade51.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_51,
             this.HORARIO_GRADE_51,
             this.DIA_SEMANA_GRADE_51,
+            this.CODIGO_DISCIPLINA_51,
             this.SEQ_TURMA_51,
             this.CODIGO_ESPACO_51,
             this.CODIGO_PROFESSOR1_51,
@@ -7454,16 +7456,6 @@
             this.grade51.TabIndex = 150;
             this.grade51.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_51
-            // 
-            this.CODIGO_DISCIPLINA_51.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_51.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_51.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_51.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_51.Name = "CODIGO_DISCIPLINA_51";
-            this.CODIGO_DISCIPLINA_51.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_51.Width = 20;
-            // 
             // HORARIO_GRADE_51
             // 
             this.HORARIO_GRADE_51.Name = "HORARIO_GRADE_51";
@@ -7473,6 +7465,16 @@
             // 
             this.DIA_SEMANA_GRADE_51.Name = "DIA_SEMANA_GRADE_51";
             this.DIA_SEMANA_GRADE_51.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_51
+            // 
+            this.CODIGO_DISCIPLINA_51.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_51.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_51.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_51.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_51.Name = "CODIGO_DISCIPLINA_51";
+            this.CODIGO_DISCIPLINA_51.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_51.Width = 20;
             // 
             // SEQ_TURMA_51
             // 
@@ -7532,9 +7534,9 @@
             this.grade52.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade52.ColumnHeadersVisible = false;
             this.grade52.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_52,
             this.HORARIO_GRADE_52,
             this.DIA_SEMANA_GRADE_52,
+            this.CODIGO_DISCIPLINA_52,
             this.SEQ_TURMA_52,
             this.CODIGO_ESPACO_52,
             this.CODIGO_PROFESSOR1_52,
@@ -7554,16 +7556,6 @@
             this.grade52.TabIndex = 150;
             this.grade52.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_52
-            // 
-            this.CODIGO_DISCIPLINA_52.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_52.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_52.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_52.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_52.Name = "CODIGO_DISCIPLINA_52";
-            this.CODIGO_DISCIPLINA_52.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_52.Width = 20;
-            // 
             // HORARIO_GRADE_52
             // 
             this.HORARIO_GRADE_52.Name = "HORARIO_GRADE_52";
@@ -7573,6 +7565,16 @@
             // 
             this.DIA_SEMANA_GRADE_52.Name = "DIA_SEMANA_GRADE_52";
             this.DIA_SEMANA_GRADE_52.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_52
+            // 
+            this.CODIGO_DISCIPLINA_52.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_52.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_52.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_52.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_52.Name = "CODIGO_DISCIPLINA_52";
+            this.CODIGO_DISCIPLINA_52.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_52.Width = 20;
             // 
             // SEQ_TURMA_52
             // 
@@ -7632,9 +7634,9 @@
             this.grade53.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade53.ColumnHeadersVisible = false;
             this.grade53.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_53,
             this.HORARIO_GRADE_53,
             this.DIA_SEMANA_GRADE_53,
+            this.CODIGO_DISCIPLINA_53,
             this.SEQ_TURMA_53,
             this.CODIGO_ESPACO_53,
             this.CODIGO_PROFESSOR1_53,
@@ -7654,16 +7656,6 @@
             this.grade53.TabIndex = 150;
             this.grade53.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_53
-            // 
-            this.CODIGO_DISCIPLINA_53.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_53.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_53.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_53.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_53.Name = "CODIGO_DISCIPLINA_53";
-            this.CODIGO_DISCIPLINA_53.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_53.Width = 20;
-            // 
             // HORARIO_GRADE_53
             // 
             this.HORARIO_GRADE_53.Name = "HORARIO_GRADE_53";
@@ -7673,6 +7665,16 @@
             // 
             this.DIA_SEMANA_GRADE_53.Name = "DIA_SEMANA_GRADE_53";
             this.DIA_SEMANA_GRADE_53.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_53
+            // 
+            this.CODIGO_DISCIPLINA_53.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_53.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_53.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_53.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_53.Name = "CODIGO_DISCIPLINA_53";
+            this.CODIGO_DISCIPLINA_53.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_53.Width = 20;
             // 
             // SEQ_TURMA_53
             // 
@@ -7732,9 +7734,9 @@
             this.grade54.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade54.ColumnHeadersVisible = false;
             this.grade54.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_54,
             this.HORARIO_GRADE_54,
             this.DIA_SEMANA_GRADE_54,
+            this.CODIGO_DISCIPLINA_54,
             this.SEQ_TURMA_54,
             this.CODIGO_ESPACO_54,
             this.CODIGO_PROFESSOR1_54,
@@ -7754,16 +7756,6 @@
             this.grade54.TabIndex = 150;
             this.grade54.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_54
-            // 
-            this.CODIGO_DISCIPLINA_54.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_54.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_54.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_54.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_54.Name = "CODIGO_DISCIPLINA_54";
-            this.CODIGO_DISCIPLINA_54.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_54.Width = 20;
-            // 
             // HORARIO_GRADE_54
             // 
             this.HORARIO_GRADE_54.Name = "HORARIO_GRADE_54";
@@ -7773,6 +7765,16 @@
             // 
             this.DIA_SEMANA_GRADE_54.Name = "DIA_SEMANA_GRADE_54";
             this.DIA_SEMANA_GRADE_54.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_54
+            // 
+            this.CODIGO_DISCIPLINA_54.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_54.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_54.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_54.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_54.Name = "CODIGO_DISCIPLINA_54";
+            this.CODIGO_DISCIPLINA_54.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_54.Width = 20;
             // 
             // SEQ_TURMA_54
             // 
@@ -7832,9 +7834,9 @@
             this.grade55.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade55.ColumnHeadersVisible = false;
             this.grade55.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_55,
             this.HORARIO_GRADE_55,
             this.DIA_SEMANA_GRADE_55,
+            this.CODIGO_DISCIPLINA_55,
             this.SEQ_TURMA_55,
             this.CODIGO_ESPACO_55,
             this.CODIGO_PROFESSOR1_55,
@@ -7854,16 +7856,6 @@
             this.grade55.TabIndex = 150;
             this.grade55.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_55
-            // 
-            this.CODIGO_DISCIPLINA_55.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_55.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_55.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_55.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_55.Name = "CODIGO_DISCIPLINA_55";
-            this.CODIGO_DISCIPLINA_55.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_55.Width = 20;
-            // 
             // HORARIO_GRADE_55
             // 
             this.HORARIO_GRADE_55.Name = "HORARIO_GRADE_55";
@@ -7873,6 +7865,16 @@
             // 
             this.DIA_SEMANA_GRADE_55.Name = "DIA_SEMANA_GRADE_55";
             this.DIA_SEMANA_GRADE_55.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_55
+            // 
+            this.CODIGO_DISCIPLINA_55.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_55.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_55.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_55.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_55.Name = "CODIGO_DISCIPLINA_55";
+            this.CODIGO_DISCIPLINA_55.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_55.Width = 20;
             // 
             // SEQ_TURMA_55
             // 
@@ -7932,9 +7934,9 @@
             this.grade56.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade56.ColumnHeadersVisible = false;
             this.grade56.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_56,
             this.HORARIO_GRADE_56,
             this.DIA_SEMANA_GRADE_56,
+            this.CODIGO_DISCIPLINA_56,
             this.SEQ_TURMA_56,
             this.CODIGO_ESPACO_56,
             this.CODIGO_PROFESSOR1_56,
@@ -7954,16 +7956,6 @@
             this.grade56.TabIndex = 150;
             this.grade56.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_56
-            // 
-            this.CODIGO_DISCIPLINA_56.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_56.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_56.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_56.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_56.Name = "CODIGO_DISCIPLINA_56";
-            this.CODIGO_DISCIPLINA_56.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_56.Width = 20;
-            // 
             // HORARIO_GRADE_56
             // 
             this.HORARIO_GRADE_56.Name = "HORARIO_GRADE_56";
@@ -7973,6 +7965,16 @@
             // 
             this.DIA_SEMANA_GRADE_56.Name = "DIA_SEMANA_GRADE_56";
             this.DIA_SEMANA_GRADE_56.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_56
+            // 
+            this.CODIGO_DISCIPLINA_56.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_56.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_56.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_56.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_56.Name = "CODIGO_DISCIPLINA_56";
+            this.CODIGO_DISCIPLINA_56.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_56.Width = 20;
             // 
             // SEQ_TURMA_56
             // 
@@ -8032,9 +8034,9 @@
             this.grade57.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade57.ColumnHeadersVisible = false;
             this.grade57.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_57,
             this.HORARIO_GRADE_57,
             this.DIA_SEMANA_GRADE_57,
+            this.CODIGO_DISCIPLINA_57,
             this.SEQ_TURMA_57,
             this.CODIGO_ESPACO_57,
             this.CODIGO_PROFESSOR1_57,
@@ -8054,16 +8056,6 @@
             this.grade57.TabIndex = 150;
             this.grade57.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_57
-            // 
-            this.CODIGO_DISCIPLINA_57.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_57.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_57.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_57.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_57.Name = "CODIGO_DISCIPLINA_57";
-            this.CODIGO_DISCIPLINA_57.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_57.Width = 20;
-            // 
             // HORARIO_GRADE_57
             // 
             this.HORARIO_GRADE_57.Name = "HORARIO_GRADE_57";
@@ -8073,6 +8065,16 @@
             // 
             this.DIA_SEMANA_GRADE_57.Name = "DIA_SEMANA_GRADE_57";
             this.DIA_SEMANA_GRADE_57.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_57
+            // 
+            this.CODIGO_DISCIPLINA_57.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_57.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_57.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_57.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_57.Name = "CODIGO_DISCIPLINA_57";
+            this.CODIGO_DISCIPLINA_57.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_57.Width = 20;
             // 
             // SEQ_TURMA_57
             // 
@@ -8132,9 +8134,9 @@
             this.grade58.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade58.ColumnHeadersVisible = false;
             this.grade58.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_58,
             this.HORARIO_GRADE_58,
             this.DIA_SEMANA_GRADE_58,
+            this.CODIGO_DISCIPLINA_58,
             this.SEQ_TURMA_58,
             this.CODIGO_ESPACO_58,
             this.CODIGO_PROFESSOR1_58,
@@ -8154,16 +8156,6 @@
             this.grade58.TabIndex = 150;
             this.grade58.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_58
-            // 
-            this.CODIGO_DISCIPLINA_58.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_58.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_58.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_58.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_58.Name = "CODIGO_DISCIPLINA_58";
-            this.CODIGO_DISCIPLINA_58.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_58.Width = 20;
-            // 
             // HORARIO_GRADE_58
             // 
             this.HORARIO_GRADE_58.Name = "HORARIO_GRADE_58";
@@ -8173,6 +8165,16 @@
             // 
             this.DIA_SEMANA_GRADE_58.Name = "DIA_SEMANA_GRADE_58";
             this.DIA_SEMANA_GRADE_58.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_58
+            // 
+            this.CODIGO_DISCIPLINA_58.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_58.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_58.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_58.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_58.Name = "CODIGO_DISCIPLINA_58";
+            this.CODIGO_DISCIPLINA_58.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_58.Width = 20;
             // 
             // SEQ_TURMA_58
             // 
@@ -8232,9 +8234,9 @@
             this.grade59.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade59.ColumnHeadersVisible = false;
             this.grade59.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_59,
             this.HORARIO_GRADE_59,
             this.DIA_SEMANA_GRADE_59,
+            this.CODIGO_DISCIPLINA_59,
             this.SEQ_TURMA_59,
             this.CODIGO_ESPACO_59,
             this.CODIGO_PROFESSOR1_59,
@@ -8254,16 +8256,6 @@
             this.grade59.TabIndex = 150;
             this.grade59.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_59
-            // 
-            this.CODIGO_DISCIPLINA_59.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_59.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_59.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_59.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_59.Name = "CODIGO_DISCIPLINA_59";
-            this.CODIGO_DISCIPLINA_59.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_59.Width = 20;
-            // 
             // HORARIO_GRADE_59
             // 
             this.HORARIO_GRADE_59.Name = "HORARIO_GRADE_59";
@@ -8273,6 +8265,16 @@
             // 
             this.DIA_SEMANA_GRADE_59.Name = "DIA_SEMANA_GRADE_59";
             this.DIA_SEMANA_GRADE_59.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_59
+            // 
+            this.CODIGO_DISCIPLINA_59.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_59.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_59.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_59.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_59.Name = "CODIGO_DISCIPLINA_59";
+            this.CODIGO_DISCIPLINA_59.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_59.Width = 20;
             // 
             // SEQ_TURMA_59
             // 
@@ -8332,9 +8334,9 @@
             this.grade510.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade510.ColumnHeadersVisible = false;
             this.grade510.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_510,
             this.HORARIO_GRADE_510,
             this.DIA_SEMANA_GRADE_510,
+            this.CODIGO_DISCIPLINA_510,
             this.SEQ_TURMA_510,
             this.CODIGO_ESPACO_510,
             this.CODIGO_PROFESSOR1_510,
@@ -8354,16 +8356,6 @@
             this.grade510.TabIndex = 150;
             this.grade510.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_510
-            // 
-            this.CODIGO_DISCIPLINA_510.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_510.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_510.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_510.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_510.Name = "CODIGO_DISCIPLINA_510";
-            this.CODIGO_DISCIPLINA_510.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_510.Width = 20;
-            // 
             // HORARIO_GRADE_510
             // 
             this.HORARIO_GRADE_510.Name = "HORARIO_GRADE_510";
@@ -8373,6 +8365,16 @@
             // 
             this.DIA_SEMANA_GRADE_510.Name = "DIA_SEMANA_GRADE_510";
             this.DIA_SEMANA_GRADE_510.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_510
+            // 
+            this.CODIGO_DISCIPLINA_510.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_510.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_510.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_510.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_510.Name = "CODIGO_DISCIPLINA_510";
+            this.CODIGO_DISCIPLINA_510.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_510.Width = 20;
             // 
             // SEQ_TURMA_510
             // 
@@ -8432,9 +8434,9 @@
             this.grade511.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade511.ColumnHeadersVisible = false;
             this.grade511.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_511,
             this.HORARIO_GRADE_511,
             this.DIA_SEMANA_GRADE_511,
+            this.CODIGO_DISCIPLINA_511,
             this.SEQ_TURMA_511,
             this.CODIGO_ESPACO_511,
             this.CODIGO_PROFESSOR1_511,
@@ -8454,16 +8456,6 @@
             this.grade511.TabIndex = 150;
             this.grade511.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_511
-            // 
-            this.CODIGO_DISCIPLINA_511.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_511.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_511.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_511.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_511.Name = "CODIGO_DISCIPLINA_511";
-            this.CODIGO_DISCIPLINA_511.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_511.Width = 20;
-            // 
             // HORARIO_GRADE_511
             // 
             this.HORARIO_GRADE_511.Name = "HORARIO_GRADE_511";
@@ -8473,6 +8465,16 @@
             // 
             this.DIA_SEMANA_GRADE_511.Name = "DIA_SEMANA_GRADE_511";
             this.DIA_SEMANA_GRADE_511.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_511
+            // 
+            this.CODIGO_DISCIPLINA_511.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_511.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_511.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_511.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_511.Name = "CODIGO_DISCIPLINA_511";
+            this.CODIGO_DISCIPLINA_511.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_511.Width = 20;
             // 
             // SEQ_TURMA_511
             // 
@@ -8532,9 +8534,9 @@
             this.grade512.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade512.ColumnHeadersVisible = false;
             this.grade512.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_512,
             this.HORARIO_GRADE_512,
             this.DIA_SEMANA_GRADE_512,
+            this.CODIGO_DISCIPLINA_512,
             this.SEQ_TURMA_512,
             this.CODIGO_ESPACO_512,
             this.CODIGO_PROFESSOR1_512,
@@ -8554,16 +8556,6 @@
             this.grade512.TabIndex = 150;
             this.grade512.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_512
-            // 
-            this.CODIGO_DISCIPLINA_512.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_512.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_512.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_512.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_512.Name = "CODIGO_DISCIPLINA_512";
-            this.CODIGO_DISCIPLINA_512.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_512.Width = 20;
-            // 
             // HORARIO_GRADE_512
             // 
             this.HORARIO_GRADE_512.Name = "HORARIO_GRADE_512";
@@ -8573,6 +8565,16 @@
             // 
             this.DIA_SEMANA_GRADE_512.Name = "DIA_SEMANA_GRADE_512";
             this.DIA_SEMANA_GRADE_512.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_512
+            // 
+            this.CODIGO_DISCIPLINA_512.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_512.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_512.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_512.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_512.Name = "CODIGO_DISCIPLINA_512";
+            this.CODIGO_DISCIPLINA_512.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_512.Width = 20;
             // 
             // SEQ_TURMA_512
             // 
@@ -8632,9 +8634,9 @@
             this.grade513.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade513.ColumnHeadersVisible = false;
             this.grade513.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_513,
             this.HORARIO_GRADE_513,
             this.DIA_SEMANA_GRADE_513,
+            this.CODIGO_DISCIPLINA_513,
             this.SEQ_TURMA_513,
             this.CODIGO_ESPACO_513,
             this.CODIGO_PROFESSOR1_513,
@@ -8654,16 +8656,6 @@
             this.grade513.TabIndex = 150;
             this.grade513.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_513
-            // 
-            this.CODIGO_DISCIPLINA_513.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_513.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_513.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_513.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_513.Name = "CODIGO_DISCIPLINA_513";
-            this.CODIGO_DISCIPLINA_513.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_513.Width = 20;
-            // 
             // HORARIO_GRADE_513
             // 
             this.HORARIO_GRADE_513.Name = "HORARIO_GRADE_513";
@@ -8673,6 +8665,16 @@
             // 
             this.DIA_SEMANA_GRADE_513.Name = "DIA_SEMANA_GRADE_513";
             this.DIA_SEMANA_GRADE_513.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_513
+            // 
+            this.CODIGO_DISCIPLINA_513.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_513.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_513.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_513.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_513.Name = "CODIGO_DISCIPLINA_513";
+            this.CODIGO_DISCIPLINA_513.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_513.Width = 20;
             // 
             // SEQ_TURMA_513
             // 
@@ -8732,9 +8734,9 @@
             this.grade514.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade514.ColumnHeadersVisible = false;
             this.grade514.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_514,
             this.HORARIO_GRADE_514,
             this.DIA_SEMANA_GRADE_514,
+            this.CODIGO_DISCIPLINA_514,
             this.SEQ_TURMA_514,
             this.CODIGO_ESPACO_514,
             this.CODIGO_PROFESSOR1_514,
@@ -8754,16 +8756,6 @@
             this.grade514.TabIndex = 150;
             this.grade514.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_514
-            // 
-            this.CODIGO_DISCIPLINA_514.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_514.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_514.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_514.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_514.Name = "CODIGO_DISCIPLINA_514";
-            this.CODIGO_DISCIPLINA_514.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_514.Width = 20;
-            // 
             // HORARIO_GRADE_514
             // 
             this.HORARIO_GRADE_514.Name = "HORARIO_GRADE_514";
@@ -8773,6 +8765,16 @@
             // 
             this.DIA_SEMANA_GRADE_514.Name = "DIA_SEMANA_GRADE_514";
             this.DIA_SEMANA_GRADE_514.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_514
+            // 
+            this.CODIGO_DISCIPLINA_514.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_514.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_514.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_514.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_514.Name = "CODIGO_DISCIPLINA_514";
+            this.CODIGO_DISCIPLINA_514.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_514.Width = 20;
             // 
             // SEQ_TURMA_514
             // 
@@ -8832,9 +8834,9 @@
             this.grade61.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade61.ColumnHeadersVisible = false;
             this.grade61.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_61,
             this.HORARIO_GRADE_61,
             this.DIA_SEMANA_GRADE_61,
+            this.CODIGO_DISCIPLINA_61,
             this.SEQ_TURMA_61,
             this.CODIGO_ESPACO_61,
             this.CODIGO_PROFESSOR1_61,
@@ -8854,16 +8856,6 @@
             this.grade61.TabIndex = 150;
             this.grade61.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_61
-            // 
-            this.CODIGO_DISCIPLINA_61.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_61.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_61.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_61.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_61.Name = "CODIGO_DISCIPLINA_61";
-            this.CODIGO_DISCIPLINA_61.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_61.Width = 20;
-            // 
             // HORARIO_GRADE_61
             // 
             this.HORARIO_GRADE_61.Name = "HORARIO_GRADE_61";
@@ -8873,6 +8865,16 @@
             // 
             this.DIA_SEMANA_GRADE_61.Name = "DIA_SEMANA_GRADE_61";
             this.DIA_SEMANA_GRADE_61.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_61
+            // 
+            this.CODIGO_DISCIPLINA_61.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_61.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_61.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_61.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_61.Name = "CODIGO_DISCIPLINA_61";
+            this.CODIGO_DISCIPLINA_61.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_61.Width = 20;
             // 
             // SEQ_TURMA_61
             // 
@@ -8932,9 +8934,9 @@
             this.grade62.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade62.ColumnHeadersVisible = false;
             this.grade62.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_62,
             this.HORARIO_GRADE_62,
             this.DIA_SEMANA_GRADE_62,
+            this.CODIGO_DISCIPLINA_62,
             this.SEQ_TURMA_62,
             this.CODIGO_ESPACO_62,
             this.CODIGO_PROFESSOR1_62,
@@ -8954,16 +8956,6 @@
             this.grade62.TabIndex = 150;
             this.grade62.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_62
-            // 
-            this.CODIGO_DISCIPLINA_62.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_62.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_62.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_62.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_62.Name = "CODIGO_DISCIPLINA_62";
-            this.CODIGO_DISCIPLINA_62.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_62.Width = 20;
-            // 
             // HORARIO_GRADE_62
             // 
             this.HORARIO_GRADE_62.Name = "HORARIO_GRADE_62";
@@ -8973,6 +8965,16 @@
             // 
             this.DIA_SEMANA_GRADE_62.Name = "DIA_SEMANA_GRADE_62";
             this.DIA_SEMANA_GRADE_62.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_62
+            // 
+            this.CODIGO_DISCIPLINA_62.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_62.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_62.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_62.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_62.Name = "CODIGO_DISCIPLINA_62";
+            this.CODIGO_DISCIPLINA_62.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_62.Width = 20;
             // 
             // SEQ_TURMA_62
             // 
@@ -9032,9 +9034,9 @@
             this.grade63.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade63.ColumnHeadersVisible = false;
             this.grade63.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_63,
             this.HORARIO_GRADE_63,
             this.DIA_SEMANA_GRADE_63,
+            this.CODIGO_DISCIPLINA_63,
             this.SEQ_TURMA_63,
             this.CODIGO_ESPACO_63,
             this.CODIGO_PROFESSOR1_63,
@@ -9054,16 +9056,6 @@
             this.grade63.TabIndex = 150;
             this.grade63.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_63
-            // 
-            this.CODIGO_DISCIPLINA_63.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_63.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_63.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_63.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_63.Name = "CODIGO_DISCIPLINA_63";
-            this.CODIGO_DISCIPLINA_63.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_63.Width = 20;
-            // 
             // HORARIO_GRADE_63
             // 
             this.HORARIO_GRADE_63.Name = "HORARIO_GRADE_63";
@@ -9073,6 +9065,16 @@
             // 
             this.DIA_SEMANA_GRADE_63.Name = "DIA_SEMANA_GRADE_63";
             this.DIA_SEMANA_GRADE_63.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_63
+            // 
+            this.CODIGO_DISCIPLINA_63.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_63.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_63.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_63.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_63.Name = "CODIGO_DISCIPLINA_63";
+            this.CODIGO_DISCIPLINA_63.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_63.Width = 20;
             // 
             // SEQ_TURMA_63
             // 
@@ -9132,9 +9134,9 @@
             this.grade64.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade64.ColumnHeadersVisible = false;
             this.grade64.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_64,
             this.HORARIO_GRADE_64,
             this.DIA_SEMANA_GRADE_64,
+            this.CODIGO_DISCIPLINA_64,
             this.SEQ_TURMA_64,
             this.CODIGO_ESPACO_64,
             this.CODIGO_PROFESSOR1_64,
@@ -9154,16 +9156,6 @@
             this.grade64.TabIndex = 150;
             this.grade64.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_64
-            // 
-            this.CODIGO_DISCIPLINA_64.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_64.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_64.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_64.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_64.Name = "CODIGO_DISCIPLINA_64";
-            this.CODIGO_DISCIPLINA_64.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_64.Width = 20;
-            // 
             // HORARIO_GRADE_64
             // 
             this.HORARIO_GRADE_64.Name = "HORARIO_GRADE_64";
@@ -9173,6 +9165,16 @@
             // 
             this.DIA_SEMANA_GRADE_64.Name = "DIA_SEMANA_GRADE_64";
             this.DIA_SEMANA_GRADE_64.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_64
+            // 
+            this.CODIGO_DISCIPLINA_64.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_64.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_64.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_64.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_64.Name = "CODIGO_DISCIPLINA_64";
+            this.CODIGO_DISCIPLINA_64.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_64.Width = 20;
             // 
             // SEQ_TURMA_64
             // 
@@ -9232,9 +9234,9 @@
             this.grade65.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade65.ColumnHeadersVisible = false;
             this.grade65.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_65,
             this.HORARIO_GRADE_65,
             this.DIA_SEMANA_GRADE_65,
+            this.CODIGO_DISCIPLINA_65,
             this.SEQ_TURMA_65,
             this.CODIGO_ESPACO_65,
             this.CODIGO_PROFESSOR1_65,
@@ -9254,16 +9256,6 @@
             this.grade65.TabIndex = 150;
             this.grade65.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_65
-            // 
-            this.CODIGO_DISCIPLINA_65.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_65.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_65.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_65.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_65.Name = "CODIGO_DISCIPLINA_65";
-            this.CODIGO_DISCIPLINA_65.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_65.Width = 20;
-            // 
             // HORARIO_GRADE_65
             // 
             this.HORARIO_GRADE_65.Name = "HORARIO_GRADE_65";
@@ -9273,6 +9265,16 @@
             // 
             this.DIA_SEMANA_GRADE_65.Name = "DIA_SEMANA_GRADE_65";
             this.DIA_SEMANA_GRADE_65.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_65
+            // 
+            this.CODIGO_DISCIPLINA_65.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_65.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_65.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_65.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_65.Name = "CODIGO_DISCIPLINA_65";
+            this.CODIGO_DISCIPLINA_65.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_65.Width = 20;
             // 
             // SEQ_TURMA_65
             // 
@@ -9332,9 +9334,9 @@
             this.grade66.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade66.ColumnHeadersVisible = false;
             this.grade66.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_66,
             this.HORARIO_GRADE_66,
             this.DIA_SEMANA_GRADE_66,
+            this.CODIGO_DISCIPLINA_66,
             this.SEQ_TURMA_66,
             this.CODIGO_ESPACO_66,
             this.CODIGO_PROFESSOR1_66,
@@ -9354,16 +9356,6 @@
             this.grade66.TabIndex = 150;
             this.grade66.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_66
-            // 
-            this.CODIGO_DISCIPLINA_66.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_66.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_66.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_66.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_66.Name = "CODIGO_DISCIPLINA_66";
-            this.CODIGO_DISCIPLINA_66.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_66.Width = 20;
-            // 
             // HORARIO_GRADE_66
             // 
             this.HORARIO_GRADE_66.Name = "HORARIO_GRADE_66";
@@ -9373,6 +9365,16 @@
             // 
             this.DIA_SEMANA_GRADE_66.Name = "DIA_SEMANA_GRADE_66";
             this.DIA_SEMANA_GRADE_66.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_66
+            // 
+            this.CODIGO_DISCIPLINA_66.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_66.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_66.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_66.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_66.Name = "CODIGO_DISCIPLINA_66";
+            this.CODIGO_DISCIPLINA_66.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_66.Width = 20;
             // 
             // SEQ_TURMA_66
             // 
@@ -9432,9 +9434,9 @@
             this.grade67.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade67.ColumnHeadersVisible = false;
             this.grade67.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_67,
             this.HORARIO_GRADE_67,
             this.DIA_SEMANA_GRADE_67,
+            this.CODIGO_DISCIPLINA_67,
             this.SEQ_TURMA_67,
             this.CODIGO_ESPACO_67,
             this.CODIGO_PROFESSOR1_67,
@@ -9454,16 +9456,6 @@
             this.grade67.TabIndex = 150;
             this.grade67.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_67
-            // 
-            this.CODIGO_DISCIPLINA_67.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_67.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_67.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_67.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_67.Name = "CODIGO_DISCIPLINA_67";
-            this.CODIGO_DISCIPLINA_67.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_67.Width = 20;
-            // 
             // HORARIO_GRADE_67
             // 
             this.HORARIO_GRADE_67.Name = "HORARIO_GRADE_67";
@@ -9473,6 +9465,16 @@
             // 
             this.DIA_SEMANA_GRADE_67.Name = "DIA_SEMANA_GRADE_67";
             this.DIA_SEMANA_GRADE_67.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_67
+            // 
+            this.CODIGO_DISCIPLINA_67.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_67.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_67.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_67.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_67.Name = "CODIGO_DISCIPLINA_67";
+            this.CODIGO_DISCIPLINA_67.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_67.Width = 20;
             // 
             // SEQ_TURMA_67
             // 
@@ -9532,9 +9534,9 @@
             this.grade68.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade68.ColumnHeadersVisible = false;
             this.grade68.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_68,
             this.HORARIO_GRADE_68,
             this.DIA_SEMANA_GRADE_68,
+            this.CODIGO_DISCIPLINA_68,
             this.SEQ_TURMA_68,
             this.CODIGO_ESPACO_68,
             this.CODIGO_PROFESSOR1_68,
@@ -9554,16 +9556,6 @@
             this.grade68.TabIndex = 150;
             this.grade68.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_68
-            // 
-            this.CODIGO_DISCIPLINA_68.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_68.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_68.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_68.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_68.Name = "CODIGO_DISCIPLINA_68";
-            this.CODIGO_DISCIPLINA_68.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_68.Width = 20;
-            // 
             // HORARIO_GRADE_68
             // 
             this.HORARIO_GRADE_68.Name = "HORARIO_GRADE_68";
@@ -9573,6 +9565,16 @@
             // 
             this.DIA_SEMANA_GRADE_68.Name = "DIA_SEMANA_GRADE_68";
             this.DIA_SEMANA_GRADE_68.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_68
+            // 
+            this.CODIGO_DISCIPLINA_68.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_68.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_68.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_68.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_68.Name = "CODIGO_DISCIPLINA_68";
+            this.CODIGO_DISCIPLINA_68.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_68.Width = 20;
             // 
             // SEQ_TURMA_68
             // 
@@ -9632,9 +9634,9 @@
             this.grade69.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade69.ColumnHeadersVisible = false;
             this.grade69.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_69,
             this.HORARIO_GRADE_69,
             this.DIA_SEMANA_GRADE_69,
+            this.CODIGO_DISCIPLINA_69,
             this.SEQ_TURMA_69,
             this.CODIGO_ESPACO_69,
             this.CODIGO_PROFESSOR1_69,
@@ -9654,16 +9656,6 @@
             this.grade69.TabIndex = 150;
             this.grade69.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_69
-            // 
-            this.CODIGO_DISCIPLINA_69.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_69.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_69.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_69.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_69.Name = "CODIGO_DISCIPLINA_69";
-            this.CODIGO_DISCIPLINA_69.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_69.Width = 20;
-            // 
             // HORARIO_GRADE_69
             // 
             this.HORARIO_GRADE_69.Name = "HORARIO_GRADE_69";
@@ -9673,6 +9665,16 @@
             // 
             this.DIA_SEMANA_GRADE_69.Name = "DIA_SEMANA_GRADE_69";
             this.DIA_SEMANA_GRADE_69.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_69
+            // 
+            this.CODIGO_DISCIPLINA_69.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_69.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_69.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_69.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_69.Name = "CODIGO_DISCIPLINA_69";
+            this.CODIGO_DISCIPLINA_69.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_69.Width = 20;
             // 
             // SEQ_TURMA_69
             // 
@@ -9732,9 +9734,9 @@
             this.grade610.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade610.ColumnHeadersVisible = false;
             this.grade610.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_610,
             this.HORARIO_GRADE_610,
             this.DIA_SEMANA_GRADE_610,
+            this.CODIGO_DISCIPLINA_610,
             this.SEQ_TURMA_610,
             this.CODIGO_ESPACO_610,
             this.CODIGO_PROFESSOR1_610,
@@ -9754,16 +9756,6 @@
             this.grade610.TabIndex = 150;
             this.grade610.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_610
-            // 
-            this.CODIGO_DISCIPLINA_610.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_610.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_610.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_610.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_610.Name = "CODIGO_DISCIPLINA_610";
-            this.CODIGO_DISCIPLINA_610.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_610.Width = 20;
-            // 
             // HORARIO_GRADE_610
             // 
             this.HORARIO_GRADE_610.Name = "HORARIO_GRADE_610";
@@ -9773,6 +9765,16 @@
             // 
             this.DIA_SEMANA_GRADE_610.Name = "DIA_SEMANA_GRADE_610";
             this.DIA_SEMANA_GRADE_610.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_610
+            // 
+            this.CODIGO_DISCIPLINA_610.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_610.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_610.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_610.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_610.Name = "CODIGO_DISCIPLINA_610";
+            this.CODIGO_DISCIPLINA_610.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_610.Width = 20;
             // 
             // SEQ_TURMA_610
             // 
@@ -9832,9 +9834,9 @@
             this.grade611.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade611.ColumnHeadersVisible = false;
             this.grade611.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_611,
             this.HORARIO_GRADE_611,
             this.DIA_SEMANA_GRADE_611,
+            this.CODIGO_DISCIPLINA_611,
             this.SEQ_TURMA_611,
             this.CODIGO_ESPACO_611,
             this.CODIGO_PROFESSOR1_611,
@@ -9854,16 +9856,6 @@
             this.grade611.TabIndex = 150;
             this.grade611.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_611
-            // 
-            this.CODIGO_DISCIPLINA_611.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_611.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_611.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_611.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_611.Name = "CODIGO_DISCIPLINA_611";
-            this.CODIGO_DISCIPLINA_611.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_611.Width = 20;
-            // 
             // HORARIO_GRADE_611
             // 
             this.HORARIO_GRADE_611.Name = "HORARIO_GRADE_611";
@@ -9873,6 +9865,16 @@
             // 
             this.DIA_SEMANA_GRADE_611.Name = "DIA_SEMANA_GRADE_611";
             this.DIA_SEMANA_GRADE_611.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_611
+            // 
+            this.CODIGO_DISCIPLINA_611.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_611.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_611.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_611.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_611.Name = "CODIGO_DISCIPLINA_611";
+            this.CODIGO_DISCIPLINA_611.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_611.Width = 20;
             // 
             // SEQ_TURMA_611
             // 
@@ -9932,9 +9934,9 @@
             this.grade612.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade612.ColumnHeadersVisible = false;
             this.grade612.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_612,
             this.HORARIO_GRADE_612,
             this.DIA_SEMANA_GRADE_612,
+            this.CODIGO_DISCIPLINA_612,
             this.SEQ_TURMA_612,
             this.CODIGO_ESPACO_612,
             this.CODIGO_PROFESSOR1_612,
@@ -9954,16 +9956,6 @@
             this.grade612.TabIndex = 150;
             this.grade612.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_612
-            // 
-            this.CODIGO_DISCIPLINA_612.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_612.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_612.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_612.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_612.Name = "CODIGO_DISCIPLINA_612";
-            this.CODIGO_DISCIPLINA_612.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_612.Width = 20;
-            // 
             // HORARIO_GRADE_612
             // 
             this.HORARIO_GRADE_612.Name = "HORARIO_GRADE_612";
@@ -9973,6 +9965,16 @@
             // 
             this.DIA_SEMANA_GRADE_612.Name = "DIA_SEMANA_GRADE_612";
             this.DIA_SEMANA_GRADE_612.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_612
+            // 
+            this.CODIGO_DISCIPLINA_612.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_612.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_612.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_612.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_612.Name = "CODIGO_DISCIPLINA_612";
+            this.CODIGO_DISCIPLINA_612.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_612.Width = 20;
             // 
             // SEQ_TURMA_612
             // 
@@ -10032,9 +10034,9 @@
             this.grade613.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade613.ColumnHeadersVisible = false;
             this.grade613.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_613,
             this.HORARIO_GRADE_613,
             this.DIA_SEMANA_GRADE_613,
+            this.CODIGO_DISCIPLINA_613,
             this.SEQ_TURMA_613,
             this.CODIGO_ESPACO_613,
             this.CODIGO_PROFESSOR1_613,
@@ -10054,16 +10056,6 @@
             this.grade613.TabIndex = 150;
             this.grade613.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_613
-            // 
-            this.CODIGO_DISCIPLINA_613.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_613.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_613.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_613.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_613.Name = "CODIGO_DISCIPLINA_613";
-            this.CODIGO_DISCIPLINA_613.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_613.Width = 20;
-            // 
             // HORARIO_GRADE_613
             // 
             this.HORARIO_GRADE_613.Name = "HORARIO_GRADE_613";
@@ -10073,6 +10065,16 @@
             // 
             this.DIA_SEMANA_GRADE_613.Name = "DIA_SEMANA_GRADE_613";
             this.DIA_SEMANA_GRADE_613.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_613
+            // 
+            this.CODIGO_DISCIPLINA_613.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_613.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_613.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_613.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_613.Name = "CODIGO_DISCIPLINA_613";
+            this.CODIGO_DISCIPLINA_613.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_613.Width = 20;
             // 
             // SEQ_TURMA_613
             // 
@@ -10132,9 +10134,9 @@
             this.grade614.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade614.ColumnHeadersVisible = false;
             this.grade614.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_614,
             this.HORARIO_GRADE_614,
             this.DIA_SEMANA_GRADE_614,
+            this.CODIGO_DISCIPLINA_614,
             this.SEQ_TURMA_614,
             this.CODIGO_ESPACO_614,
             this.CODIGO_PROFESSOR1_614,
@@ -10154,16 +10156,6 @@
             this.grade614.TabIndex = 150;
             this.grade614.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_614
-            // 
-            this.CODIGO_DISCIPLINA_614.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_614.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_614.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_614.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_614.Name = "CODIGO_DISCIPLINA_614";
-            this.CODIGO_DISCIPLINA_614.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_614.Width = 20;
-            // 
             // HORARIO_GRADE_614
             // 
             this.HORARIO_GRADE_614.Name = "HORARIO_GRADE_614";
@@ -10173,6 +10165,16 @@
             // 
             this.DIA_SEMANA_GRADE_614.Name = "DIA_SEMANA_GRADE_614";
             this.DIA_SEMANA_GRADE_614.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_614
+            // 
+            this.CODIGO_DISCIPLINA_614.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_614.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_614.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_614.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_614.Name = "CODIGO_DISCIPLINA_614";
+            this.CODIGO_DISCIPLINA_614.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_614.Width = 20;
             // 
             // SEQ_TURMA_614
             // 
@@ -10232,9 +10234,9 @@
             this.grade11.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grade11.ColumnHeadersVisible = false;
             this.grade11.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_DISCIPLINA_11,
             this.HORARIO_GRADE_11,
             this.DIA_SEMANA_GRADE_11,
+            this.CODIGO_DISCIPLINA_11,
             this.SEQ_TURMA_11,
             this.CODIGO_ESPACO_11,
             this.CODIGO_PROFESSOR1_11,
@@ -10254,16 +10256,6 @@
             this.grade11.TabIndex = 150;
             this.grade11.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
-            // CODIGO_DISCIPLINA_11
-            // 
-            this.CODIGO_DISCIPLINA_11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CODIGO_DISCIPLINA_11.DataPropertyName = "CODIGO_DISCIPLINA";
-            this.CODIGO_DISCIPLINA_11.HeaderText = "Disciplina";
-            this.CODIGO_DISCIPLINA_11.MinimumWidth = 20;
-            this.CODIGO_DISCIPLINA_11.Name = "CODIGO_DISCIPLINA_11";
-            this.CODIGO_DISCIPLINA_11.ReadOnly = true;
-            this.CODIGO_DISCIPLINA_11.Width = 20;
-            // 
             // HORARIO_GRADE_11
             // 
             this.HORARIO_GRADE_11.Name = "HORARIO_GRADE_11";
@@ -10273,6 +10265,16 @@
             // 
             this.DIA_SEMANA_GRADE_11.Name = "DIA_SEMANA_GRADE_11";
             this.DIA_SEMANA_GRADE_11.ReadOnly = true;
+            // 
+            // CODIGO_DISCIPLINA_11
+            // 
+            this.CODIGO_DISCIPLINA_11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_DISCIPLINA_11.DataPropertyName = "CODIGO_DISCIPLINA";
+            this.CODIGO_DISCIPLINA_11.HeaderText = "Disciplina";
+            this.CODIGO_DISCIPLINA_11.MinimumWidth = 20;
+            this.CODIGO_DISCIPLINA_11.Name = "CODIGO_DISCIPLINA_11";
+            this.CODIGO_DISCIPLINA_11.ReadOnly = true;
+            this.CODIGO_DISCIPLINA_11.Width = 20;
             // 
             // SEQ_TURMA_11
             // 
@@ -10316,6 +10318,14 @@
             this.CODIGO_PROFESSOR3_11.Name = "CODIGO_PROFESSOR3_11";
             this.CODIGO_PROFESSOR3_11.ReadOnly = true;
             this.CODIGO_PROFESSOR3_11.Visible = false;
+            // 
+            // itmDetalhes
+            // 
+            this.itmDetalhes.Image = global::GradeDeHorario.Properties.Resources.ic_info;
+            this.itmDetalhes.Name = "itmDetalhes";
+            this.itmDetalhes.Size = new System.Drawing.Size(152, 22);
+            this.itmDetalhes.Text = "Detalhes";
+            this.itmDetalhes.Click += new System.EventHandler(this.itmDetalhes_Click);
             // 
             // frmGradeHorario
             // 
@@ -11260,5 +11270,6 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn SELECT_ESPACO;
         private System.Windows.Forms.DataGridViewTextBoxColumn COD_ESP_PESQUISA;
         private System.Windows.Forms.DataGridViewTextBoxColumn TIPO_ESP_PESQUISA;
+        private System.Windows.Forms.ToolStripMenuItem itmDetalhes;
     }
 }

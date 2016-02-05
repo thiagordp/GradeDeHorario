@@ -119,6 +119,11 @@ namespace RegraNegocio
                 throw new Exception("É necessário escolher um semestre para carregar uma grade.");
             }
         }
+
+        public string SelecionaDetalhe(int hora, int dia, string disciplina, string turma, int prof1, int prof2, int prof3)
+        {
+            return null;
+        }
     }
 }
 
