@@ -98,7 +98,7 @@
             this.HORARIO_GRADE_12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -107,11 +107,12 @@
             this.itmInserir = new System.Windows.Forms.ToolStripMenuItem();
             this.itmEditar = new System.Windows.Forms.ToolStripMenuItem();
             this.itmExcluir = new System.Windows.Forms.ToolStripMenuItem();
+            this.itmDetalhes = new System.Windows.Forms.ToolStripMenuItem();
             this.grade13 = new System.Windows.Forms.DataGridView();
             this.HORARIO_GRADE_13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -120,7 +121,7 @@
             this.HORARIO_GRADE_14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -129,7 +130,7 @@
             this.HORARIO_GRADE_15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -138,7 +139,7 @@
             this.HORARIO_GRADE_16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -147,7 +148,7 @@
             this.HORARIO_GRADE_17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -156,7 +157,7 @@
             this.HORARIO_GRADE_18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -165,7 +166,7 @@
             this.HORARIO_GRADE_19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -174,7 +175,7 @@
             this.HORARIO_GRADE_110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_110 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -183,7 +184,7 @@
             this.HORARIO_GRADE_111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_111 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -192,7 +193,7 @@
             this.HORARIO_GRADE_112 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_112 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_112 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_112 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_112 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_112 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_112 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_112 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -201,7 +202,7 @@
             this.HORARIO_GRADE_113 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_113 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_113 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_113 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_113 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_113 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_113 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_113 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -210,7 +211,7 @@
             this.HORARIO_GRADE_114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_114 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -219,7 +220,7 @@
             this.HORARIO_GRADE_21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -228,7 +229,7 @@
             this.HORARIO_GRADE_22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -237,7 +238,7 @@
             this.HORARIO_GRADE_23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -246,7 +247,7 @@
             this.HORARIO_GRADE_24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -255,7 +256,7 @@
             this.HORARIO_GRADE_25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -264,7 +265,7 @@
             this.HORARIO_GRADE_26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -273,7 +274,7 @@
             this.HORARIO_GRADE_27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -282,7 +283,7 @@
             this.HORARIO_GRADE_28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -291,7 +292,7 @@
             this.HORARIO_GRADE_29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -300,7 +301,7 @@
             this.HORARIO_GRADE_210 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_210 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_210 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_210 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_210 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_210 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_210 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_210 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -309,7 +310,7 @@
             this.HORARIO_GRADE_211 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_211 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_211 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_211 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_211 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_211 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_211 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_211 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -318,7 +319,7 @@
             this.HORARIO_GRADE_212 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_212 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_212 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_212 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_212 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_212 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_212 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_212 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -327,7 +328,7 @@
             this.HORARIO_GRADE_213 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_213 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_213 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_213 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_213 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_213 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_213 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_213 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -336,7 +337,7 @@
             this.HORARIO_GRADE_214 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_214 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_214 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_214 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_214 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_214 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_214 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_214 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -345,7 +346,7 @@
             this.HORARIO_GRADE_31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -354,7 +355,7 @@
             this.HORARIO_GRADE_32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -363,7 +364,7 @@
             this.HORARIO_GRADE_33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -372,7 +373,7 @@
             this.HORARIO_GRADE_34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -381,7 +382,7 @@
             this.HORARIO_GRADE_35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -390,7 +391,7 @@
             this.HORARIO_GRADE_36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -399,7 +400,7 @@
             this.HORARIO_GRADE_37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -408,7 +409,7 @@
             this.HORARIO_GRADE_38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -417,7 +418,7 @@
             this.HORARIO_GRADE_39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -426,7 +427,7 @@
             this.HORARIO_GRADE_310 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_310 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_310 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_310 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_310 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_310 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_310 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_310 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -435,7 +436,7 @@
             this.HORARIO_GRADE_311 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_311 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_311 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_311 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_311 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_311 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_311 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_311 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -444,7 +445,7 @@
             this.HORARIO_GRADE_312 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_312 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_312 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_312 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_312 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_312 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_312 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_312 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -453,7 +454,7 @@
             this.HORARIO_GRADE_313 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_313 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_313 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_313 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_313 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_313 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_313 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_313 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -462,7 +463,7 @@
             this.HORARIO_GRADE_314 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_314 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_314 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_314 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_314 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_314 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_314 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_314 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -471,7 +472,7 @@
             this.HORARIO_GRADE_41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -480,7 +481,7 @@
             this.HORARIO_GRADE_42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -489,7 +490,7 @@
             this.HORARIO_GRADE_43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -498,7 +499,7 @@
             this.HORARIO_GRADE_44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -507,7 +508,7 @@
             this.HORARIO_GRADE_45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -516,7 +517,7 @@
             this.HORARIO_GRADE_46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -525,7 +526,7 @@
             this.HORARIO_GRADE_47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -534,7 +535,7 @@
             this.HORARIO_GRADE_48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -543,7 +544,7 @@
             this.HORARIO_GRADE_49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -552,7 +553,7 @@
             this.HORARIO_GRADE_410 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_410 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_410 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_410 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_410 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_410 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_410 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_410 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -561,7 +562,7 @@
             this.HORARIO_GRADE_411 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_411 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_411 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_411 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_411 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_411 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_411 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_411 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -570,7 +571,7 @@
             this.HORARIO_GRADE_412 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_412 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_412 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_412 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_412 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_412 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_412 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_412 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -579,7 +580,7 @@
             this.HORARIO_GRADE_413 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_413 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_413 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_413 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_413 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_413 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_413 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_413 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -588,7 +589,7 @@
             this.HORARIO_GRADE_414 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_414 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_414 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_414 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_414 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_414 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_414 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_414 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -597,7 +598,7 @@
             this.HORARIO_GRADE_51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -606,7 +607,7 @@
             this.HORARIO_GRADE_52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -615,7 +616,7 @@
             this.HORARIO_GRADE_53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -624,7 +625,7 @@
             this.HORARIO_GRADE_54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -633,7 +634,7 @@
             this.HORARIO_GRADE_55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -642,7 +643,7 @@
             this.HORARIO_GRADE_56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_56 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -651,7 +652,7 @@
             this.HORARIO_GRADE_57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_57 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -660,7 +661,7 @@
             this.HORARIO_GRADE_58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_58 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -669,7 +670,7 @@
             this.HORARIO_GRADE_59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_59 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -678,7 +679,7 @@
             this.HORARIO_GRADE_510 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_510 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_510 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_510 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_510 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_510 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_510 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_510 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -687,7 +688,7 @@
             this.HORARIO_GRADE_511 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_511 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_511 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_511 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_511 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_511 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_511 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_511 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -696,7 +697,7 @@
             this.HORARIO_GRADE_512 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_512 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_512 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_512 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_512 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_512 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_512 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_512 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -705,7 +706,7 @@
             this.HORARIO_GRADE_513 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_513 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_513 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_513 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_513 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_513 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_513 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_513 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -714,7 +715,7 @@
             this.HORARIO_GRADE_514 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_514 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_514 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_514 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_514 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_514 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_514 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_514 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -723,7 +724,7 @@
             this.HORARIO_GRADE_61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_61 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -732,7 +733,7 @@
             this.HORARIO_GRADE_62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_62 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -741,7 +742,7 @@
             this.HORARIO_GRADE_63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_63 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -750,7 +751,7 @@
             this.HORARIO_GRADE_64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -759,7 +760,7 @@
             this.HORARIO_GRADE_65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_65 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -768,7 +769,7 @@
             this.HORARIO_GRADE_66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_66 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -777,7 +778,7 @@
             this.HORARIO_GRADE_67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_67 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -786,7 +787,7 @@
             this.HORARIO_GRADE_68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_68 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -795,7 +796,7 @@
             this.HORARIO_GRADE_69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_69 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -804,7 +805,7 @@
             this.HORARIO_GRADE_610 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_610 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_610 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_610 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_610 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_610 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_610 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_610 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -813,7 +814,7 @@
             this.HORARIO_GRADE_611 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_611 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_611 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_611 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_611 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_611 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_611 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_611 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -822,7 +823,7 @@
             this.HORARIO_GRADE_612 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_612 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_612 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_612 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_612 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_612 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_612 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_612 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -831,7 +832,7 @@
             this.HORARIO_GRADE_613 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_613 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_613 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_613 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_613 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_613 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_613 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_613 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -840,7 +841,7 @@
             this.HORARIO_GRADE_614 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_614 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_614 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_614 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_614 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_614 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_614 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_614 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -849,12 +850,11 @@
             this.HORARIO_GRADE_11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DIA_SEMANA_GRADE_11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_DISCIPLINA_11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEQ_TURMA_11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA_11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_ESPACO_11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR1_11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR2_11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CODIGO_PROFESSOR3_11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itmDetalhes = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -1903,7 +1903,7 @@
             this.HORARIO_GRADE_12,
             this.DIA_SEMANA_GRADE_12,
             this.CODIGO_DISCIPLINA_12,
-            this.SEQ_TURMA_12,
+            this.CODIGO_TURMA_12,
             this.CODIGO_ESPACO_12,
             this.CODIGO_PROFESSOR1_12,
             this.CODIGO_PROFESSOR2_12,
@@ -1924,13 +1924,18 @@
             // 
             // HORARIO_GRADE_12
             // 
+            this.HORARIO_GRADE_12.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_12.HeaderText = "HORARIO_GRADE_12";
             this.HORARIO_GRADE_12.Name = "HORARIO_GRADE_12";
             this.HORARIO_GRADE_12.ReadOnly = true;
+            this.HORARIO_GRADE_12.Visible = false;
             // 
             // DIA_SEMANA_GRADE_12
             // 
+            this.DIA_SEMANA_GRADE_12.HeaderText = "DIA_SEMANA_GRADE_12";
             this.DIA_SEMANA_GRADE_12.Name = "DIA_SEMANA_GRADE_12";
             this.DIA_SEMANA_GRADE_12.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_12.Visible = false;
             // 
             // CODIGO_DISCIPLINA_12
             // 
@@ -1942,14 +1947,14 @@
             this.CODIGO_DISCIPLINA_12.ReadOnly = true;
             this.CODIGO_DISCIPLINA_12.Width = 20;
             // 
-            // SEQ_TURMA_12
+            // CODIGO_TURMA_12
             // 
-            this.SEQ_TURMA_12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_12.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_12.HeaderText = "Turma";
-            this.SEQ_TURMA_12.MinimumWidth = 20;
-            this.SEQ_TURMA_12.Name = "SEQ_TURMA_12";
-            this.SEQ_TURMA_12.ReadOnly = true;
+            this.CODIGO_TURMA_12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_12.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_12.HeaderText = "Turma";
+            this.CODIGO_TURMA_12.MinimumWidth = 20;
+            this.CODIGO_TURMA_12.Name = "CODIGO_TURMA_12";
+            this.CODIGO_TURMA_12.ReadOnly = true;
             // 
             // CODIGO_ESPACO_12
             // 
@@ -1993,13 +1998,13 @@
             this.itmExcluir,
             this.itmDetalhes});
             this.menuContexto.Name = "menuContexto";
-            this.menuContexto.Size = new System.Drawing.Size(153, 114);
+            this.menuContexto.Size = new System.Drawing.Size(120, 92);
             // 
             // itmInserir
             // 
             this.itmInserir.Image = global::GradeDeHorario.Properties.Resources.ic_save_all;
             this.itmInserir.Name = "itmInserir";
-            this.itmInserir.Size = new System.Drawing.Size(152, 22);
+            this.itmInserir.Size = new System.Drawing.Size(119, 22);
             this.itmInserir.Text = "Inserir";
             this.itmInserir.Click += new System.EventHandler(this.itmInserir_Click);
             // 
@@ -2007,7 +2012,7 @@
             // 
             this.itmEditar.Image = global::GradeDeHorario.Properties.Resources.ic_edit;
             this.itmEditar.Name = "itmEditar";
-            this.itmEditar.Size = new System.Drawing.Size(152, 22);
+            this.itmEditar.Size = new System.Drawing.Size(119, 22);
             this.itmEditar.Text = "Editar";
             this.itmEditar.Click += new System.EventHandler(this.itmEditar_Click);
             // 
@@ -2015,9 +2020,17 @@
             // 
             this.itmExcluir.Image = global::GradeDeHorario.Properties.Resources.ic_delete;
             this.itmExcluir.Name = "itmExcluir";
-            this.itmExcluir.Size = new System.Drawing.Size(152, 22);
+            this.itmExcluir.Size = new System.Drawing.Size(119, 22);
             this.itmExcluir.Text = "Excluir";
             this.itmExcluir.Click += new System.EventHandler(this.itmExcluir_Click);
+            // 
+            // itmDetalhes
+            // 
+            this.itmDetalhes.Image = global::GradeDeHorario.Properties.Resources.ic_info;
+            this.itmDetalhes.Name = "itmDetalhes";
+            this.itmDetalhes.Size = new System.Drawing.Size(119, 22);
+            this.itmDetalhes.Text = "Detalhes";
+            this.itmDetalhes.Click += new System.EventHandler(this.itmDetalhes_Click);
             // 
             // grade13
             // 
@@ -2037,7 +2050,7 @@
             this.HORARIO_GRADE_13,
             this.DIA_SEMANA_GRADE_13,
             this.CODIGO_DISCIPLINA_13,
-            this.SEQ_TURMA_13,
+            this.CODIGO_TURMA_13,
             this.CODIGO_ESPACO_13,
             this.CODIGO_PROFESSOR1_13,
             this.CODIGO_PROFESSOR2_13,
@@ -2058,13 +2071,18 @@
             // 
             // HORARIO_GRADE_13
             // 
+            this.HORARIO_GRADE_13.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_13.HeaderText = "HORARIO_GRADE_13";
             this.HORARIO_GRADE_13.Name = "HORARIO_GRADE_13";
             this.HORARIO_GRADE_13.ReadOnly = true;
+            this.HORARIO_GRADE_13.Visible = false;
             // 
             // DIA_SEMANA_GRADE_13
             // 
+            this.DIA_SEMANA_GRADE_13.HeaderText = "DIA_SEMANA_GRADE_13";
             this.DIA_SEMANA_GRADE_13.Name = "DIA_SEMANA_GRADE_13";
             this.DIA_SEMANA_GRADE_13.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_13.Visible = false;
             // 
             // CODIGO_DISCIPLINA_13
             // 
@@ -2076,14 +2094,14 @@
             this.CODIGO_DISCIPLINA_13.ReadOnly = true;
             this.CODIGO_DISCIPLINA_13.Width = 20;
             // 
-            // SEQ_TURMA_13
+            // CODIGO_TURMA_13
             // 
-            this.SEQ_TURMA_13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_13.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_13.HeaderText = "Turma";
-            this.SEQ_TURMA_13.MinimumWidth = 20;
-            this.SEQ_TURMA_13.Name = "SEQ_TURMA_13";
-            this.SEQ_TURMA_13.ReadOnly = true;
+            this.CODIGO_TURMA_13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_13.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_13.HeaderText = "Turma";
+            this.CODIGO_TURMA_13.MinimumWidth = 20;
+            this.CODIGO_TURMA_13.Name = "CODIGO_TURMA_13";
+            this.CODIGO_TURMA_13.ReadOnly = true;
             // 
             // CODIGO_ESPACO_13
             // 
@@ -2137,7 +2155,7 @@
             this.HORARIO_GRADE_14,
             this.DIA_SEMANA_GRADE_14,
             this.CODIGO_DISCIPLINA_14,
-            this.SEQ_TURMA_14,
+            this.CODIGO_TURMA_14,
             this.CODIGO_ESPACO_14,
             this.CODIGO_PROFESSOR1_14,
             this.CODIGO_PROFESSOR2_14,
@@ -2158,13 +2176,18 @@
             // 
             // HORARIO_GRADE_14
             // 
+            this.HORARIO_GRADE_14.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_14.HeaderText = "HORARIO_GRADE_14";
             this.HORARIO_GRADE_14.Name = "HORARIO_GRADE_14";
             this.HORARIO_GRADE_14.ReadOnly = true;
+            this.HORARIO_GRADE_14.Visible = false;
             // 
             // DIA_SEMANA_GRADE_14
             // 
+            this.DIA_SEMANA_GRADE_14.HeaderText = "DIA_SEMANA_GRADE_14";
             this.DIA_SEMANA_GRADE_14.Name = "DIA_SEMANA_GRADE_14";
             this.DIA_SEMANA_GRADE_14.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_14.Visible = false;
             // 
             // CODIGO_DISCIPLINA_14
             // 
@@ -2176,14 +2199,14 @@
             this.CODIGO_DISCIPLINA_14.ReadOnly = true;
             this.CODIGO_DISCIPLINA_14.Width = 20;
             // 
-            // SEQ_TURMA_14
+            // CODIGO_TURMA_14
             // 
-            this.SEQ_TURMA_14.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_14.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_14.HeaderText = "Turma";
-            this.SEQ_TURMA_14.MinimumWidth = 20;
-            this.SEQ_TURMA_14.Name = "SEQ_TURMA_14";
-            this.SEQ_TURMA_14.ReadOnly = true;
+            this.CODIGO_TURMA_14.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_14.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_14.HeaderText = "Turma";
+            this.CODIGO_TURMA_14.MinimumWidth = 20;
+            this.CODIGO_TURMA_14.Name = "CODIGO_TURMA_14";
+            this.CODIGO_TURMA_14.ReadOnly = true;
             // 
             // CODIGO_ESPACO_14
             // 
@@ -2237,7 +2260,7 @@
             this.HORARIO_GRADE_15,
             this.DIA_SEMANA_GRADE_15,
             this.CODIGO_DISCIPLINA_15,
-            this.SEQ_TURMA_15,
+            this.CODIGO_TURMA_15,
             this.CODIGO_ESPACO_15,
             this.CODIGO_PROFESSOR1_15,
             this.CODIGO_PROFESSOR2_15,
@@ -2258,13 +2281,18 @@
             // 
             // HORARIO_GRADE_15
             // 
+            this.HORARIO_GRADE_15.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_15.HeaderText = "HORARIO_GRADE_15";
             this.HORARIO_GRADE_15.Name = "HORARIO_GRADE_15";
             this.HORARIO_GRADE_15.ReadOnly = true;
+            this.HORARIO_GRADE_15.Visible = false;
             // 
             // DIA_SEMANA_GRADE_15
             // 
+            this.DIA_SEMANA_GRADE_15.HeaderText = "DIA_SEMANA_GRADE_15";
             this.DIA_SEMANA_GRADE_15.Name = "DIA_SEMANA_GRADE_15";
             this.DIA_SEMANA_GRADE_15.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_15.Visible = false;
             // 
             // CODIGO_DISCIPLINA_15
             // 
@@ -2276,14 +2304,14 @@
             this.CODIGO_DISCIPLINA_15.ReadOnly = true;
             this.CODIGO_DISCIPLINA_15.Width = 20;
             // 
-            // SEQ_TURMA_15
+            // CODIGO_TURMA_15
             // 
-            this.SEQ_TURMA_15.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_15.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_15.HeaderText = "Turma";
-            this.SEQ_TURMA_15.MinimumWidth = 20;
-            this.SEQ_TURMA_15.Name = "SEQ_TURMA_15";
-            this.SEQ_TURMA_15.ReadOnly = true;
+            this.CODIGO_TURMA_15.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_15.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_15.HeaderText = "Turma";
+            this.CODIGO_TURMA_15.MinimumWidth = 20;
+            this.CODIGO_TURMA_15.Name = "CODIGO_TURMA_15";
+            this.CODIGO_TURMA_15.ReadOnly = true;
             // 
             // CODIGO_ESPACO_15
             // 
@@ -2337,7 +2365,7 @@
             this.HORARIO_GRADE_16,
             this.DIA_SEMANA_GRADE_16,
             this.CODIGO_DISCIPLINA_16,
-            this.SEQ_TURMA_16,
+            this.CODIGO_TURMA_16,
             this.CODIGO_ESPACO_16,
             this.CODIGO_PROFESSOR1_16,
             this.CODIGO_PROFESSOR2_16,
@@ -2358,13 +2386,18 @@
             // 
             // HORARIO_GRADE_16
             // 
+            this.HORARIO_GRADE_16.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_16.HeaderText = "HORARIO_GRADE_16";
             this.HORARIO_GRADE_16.Name = "HORARIO_GRADE_16";
             this.HORARIO_GRADE_16.ReadOnly = true;
+            this.HORARIO_GRADE_16.Visible = false;
             // 
             // DIA_SEMANA_GRADE_16
             // 
+            this.DIA_SEMANA_GRADE_16.HeaderText = "DIA_SEMANA_GRADE_16";
             this.DIA_SEMANA_GRADE_16.Name = "DIA_SEMANA_GRADE_16";
             this.DIA_SEMANA_GRADE_16.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_16.Visible = false;
             // 
             // CODIGO_DISCIPLINA_16
             // 
@@ -2376,14 +2409,14 @@
             this.CODIGO_DISCIPLINA_16.ReadOnly = true;
             this.CODIGO_DISCIPLINA_16.Width = 20;
             // 
-            // SEQ_TURMA_16
+            // CODIGO_TURMA_16
             // 
-            this.SEQ_TURMA_16.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_16.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_16.HeaderText = "Turma";
-            this.SEQ_TURMA_16.MinimumWidth = 20;
-            this.SEQ_TURMA_16.Name = "SEQ_TURMA_16";
-            this.SEQ_TURMA_16.ReadOnly = true;
+            this.CODIGO_TURMA_16.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_16.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_16.HeaderText = "Turma";
+            this.CODIGO_TURMA_16.MinimumWidth = 20;
+            this.CODIGO_TURMA_16.Name = "CODIGO_TURMA_16";
+            this.CODIGO_TURMA_16.ReadOnly = true;
             // 
             // CODIGO_ESPACO_16
             // 
@@ -2437,7 +2470,7 @@
             this.HORARIO_GRADE_17,
             this.DIA_SEMANA_GRADE_17,
             this.CODIGO_DISCIPLINA_17,
-            this.SEQ_TURMA_17,
+            this.CODIGO_TURMA_17,
             this.CODIGO_ESPACO_17,
             this.CODIGO_PROFESSOR1_17,
             this.CODIGO_PROFESSOR2_17,
@@ -2458,13 +2491,18 @@
             // 
             // HORARIO_GRADE_17
             // 
+            this.HORARIO_GRADE_17.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_17.HeaderText = "HORARIO_GRADE_17";
             this.HORARIO_GRADE_17.Name = "HORARIO_GRADE_17";
             this.HORARIO_GRADE_17.ReadOnly = true;
+            this.HORARIO_GRADE_17.Visible = false;
             // 
             // DIA_SEMANA_GRADE_17
             // 
+            this.DIA_SEMANA_GRADE_17.HeaderText = "DIA_SEMANA_GRADE_17";
             this.DIA_SEMANA_GRADE_17.Name = "DIA_SEMANA_GRADE_17";
             this.DIA_SEMANA_GRADE_17.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_17.Visible = false;
             // 
             // CODIGO_DISCIPLINA_17
             // 
@@ -2476,14 +2514,14 @@
             this.CODIGO_DISCIPLINA_17.ReadOnly = true;
             this.CODIGO_DISCIPLINA_17.Width = 20;
             // 
-            // SEQ_TURMA_17
+            // CODIGO_TURMA_17
             // 
-            this.SEQ_TURMA_17.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_17.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_17.HeaderText = "Turma";
-            this.SEQ_TURMA_17.MinimumWidth = 20;
-            this.SEQ_TURMA_17.Name = "SEQ_TURMA_17";
-            this.SEQ_TURMA_17.ReadOnly = true;
+            this.CODIGO_TURMA_17.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_17.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_17.HeaderText = "Turma";
+            this.CODIGO_TURMA_17.MinimumWidth = 20;
+            this.CODIGO_TURMA_17.Name = "CODIGO_TURMA_17";
+            this.CODIGO_TURMA_17.ReadOnly = true;
             // 
             // CODIGO_ESPACO_17
             // 
@@ -2537,7 +2575,7 @@
             this.HORARIO_GRADE_18,
             this.DIA_SEMANA_GRADE_18,
             this.CODIGO_DISCIPLINA_18,
-            this.SEQ_TURMA_18,
+            this.CODIGO_TURMA_18,
             this.CODIGO_ESPACO_18,
             this.CODIGO_PROFESSOR1_18,
             this.CODIGO_PROFESSOR2_18,
@@ -2558,13 +2596,18 @@
             // 
             // HORARIO_GRADE_18
             // 
+            this.HORARIO_GRADE_18.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_18.HeaderText = "HORARIO_GRADE_18";
             this.HORARIO_GRADE_18.Name = "HORARIO_GRADE_18";
             this.HORARIO_GRADE_18.ReadOnly = true;
+            this.HORARIO_GRADE_18.Visible = false;
             // 
             // DIA_SEMANA_GRADE_18
             // 
+            this.DIA_SEMANA_GRADE_18.HeaderText = "DIA_SEMANA_GRADE_18";
             this.DIA_SEMANA_GRADE_18.Name = "DIA_SEMANA_GRADE_18";
             this.DIA_SEMANA_GRADE_18.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_18.Visible = false;
             // 
             // CODIGO_DISCIPLINA_18
             // 
@@ -2576,14 +2619,14 @@
             this.CODIGO_DISCIPLINA_18.ReadOnly = true;
             this.CODIGO_DISCIPLINA_18.Width = 20;
             // 
-            // SEQ_TURMA_18
+            // CODIGO_TURMA_18
             // 
-            this.SEQ_TURMA_18.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_18.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_18.HeaderText = "Turma";
-            this.SEQ_TURMA_18.MinimumWidth = 20;
-            this.SEQ_TURMA_18.Name = "SEQ_TURMA_18";
-            this.SEQ_TURMA_18.ReadOnly = true;
+            this.CODIGO_TURMA_18.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_18.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_18.HeaderText = "Turma";
+            this.CODIGO_TURMA_18.MinimumWidth = 20;
+            this.CODIGO_TURMA_18.Name = "CODIGO_TURMA_18";
+            this.CODIGO_TURMA_18.ReadOnly = true;
             // 
             // CODIGO_ESPACO_18
             // 
@@ -2637,7 +2680,7 @@
             this.HORARIO_GRADE_19,
             this.DIA_SEMANA_GRADE_19,
             this.CODIGO_DISCIPLINA_19,
-            this.SEQ_TURMA_19,
+            this.CODIGO_TURMA_19,
             this.CODIGO_ESPACO_19,
             this.CODIGO_PROFESSOR1_19,
             this.CODIGO_PROFESSOR2_19,
@@ -2658,13 +2701,18 @@
             // 
             // HORARIO_GRADE_19
             // 
+            this.HORARIO_GRADE_19.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_19.HeaderText = "HORARIO_GRADE_19";
             this.HORARIO_GRADE_19.Name = "HORARIO_GRADE_19";
             this.HORARIO_GRADE_19.ReadOnly = true;
+            this.HORARIO_GRADE_19.Visible = false;
             // 
             // DIA_SEMANA_GRADE_19
             // 
+            this.DIA_SEMANA_GRADE_19.HeaderText = "DIA_SEMANA_GRADE_19";
             this.DIA_SEMANA_GRADE_19.Name = "DIA_SEMANA_GRADE_19";
             this.DIA_SEMANA_GRADE_19.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_19.Visible = false;
             // 
             // CODIGO_DISCIPLINA_19
             // 
@@ -2676,14 +2724,14 @@
             this.CODIGO_DISCIPLINA_19.ReadOnly = true;
             this.CODIGO_DISCIPLINA_19.Width = 20;
             // 
-            // SEQ_TURMA_19
+            // CODIGO_TURMA_19
             // 
-            this.SEQ_TURMA_19.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_19.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_19.HeaderText = "Turma";
-            this.SEQ_TURMA_19.MinimumWidth = 20;
-            this.SEQ_TURMA_19.Name = "SEQ_TURMA_19";
-            this.SEQ_TURMA_19.ReadOnly = true;
+            this.CODIGO_TURMA_19.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_19.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_19.HeaderText = "Turma";
+            this.CODIGO_TURMA_19.MinimumWidth = 20;
+            this.CODIGO_TURMA_19.Name = "CODIGO_TURMA_19";
+            this.CODIGO_TURMA_19.ReadOnly = true;
             // 
             // CODIGO_ESPACO_19
             // 
@@ -2737,7 +2785,7 @@
             this.HORARIO_GRADE_110,
             this.DIA_SEMANA_GRADE_110,
             this.CODIGO_DISCIPLINA_110,
-            this.SEQ_TURMA_110,
+            this.CODIGO_TURMA_110,
             this.CODIGO_ESPACO_110,
             this.CODIGO_PROFESSOR1_110,
             this.CODIGO_PROFESSOR2_110,
@@ -2758,13 +2806,18 @@
             // 
             // HORARIO_GRADE_110
             // 
+            this.HORARIO_GRADE_110.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_110.HeaderText = "HORARIO_GRADE_110";
             this.HORARIO_GRADE_110.Name = "HORARIO_GRADE_110";
             this.HORARIO_GRADE_110.ReadOnly = true;
+            this.HORARIO_GRADE_110.Visible = false;
             // 
             // DIA_SEMANA_GRADE_110
             // 
+            this.DIA_SEMANA_GRADE_110.HeaderText = "DIA_SEMANA_GRADE_110";
             this.DIA_SEMANA_GRADE_110.Name = "DIA_SEMANA_GRADE_110";
             this.DIA_SEMANA_GRADE_110.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_110.Visible = false;
             // 
             // CODIGO_DISCIPLINA_110
             // 
@@ -2776,14 +2829,14 @@
             this.CODIGO_DISCIPLINA_110.ReadOnly = true;
             this.CODIGO_DISCIPLINA_110.Width = 20;
             // 
-            // SEQ_TURMA_110
+            // CODIGO_TURMA_110
             // 
-            this.SEQ_TURMA_110.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_110.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_110.HeaderText = "Turma";
-            this.SEQ_TURMA_110.MinimumWidth = 20;
-            this.SEQ_TURMA_110.Name = "SEQ_TURMA_110";
-            this.SEQ_TURMA_110.ReadOnly = true;
+            this.CODIGO_TURMA_110.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_110.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_110.HeaderText = "Turma";
+            this.CODIGO_TURMA_110.MinimumWidth = 20;
+            this.CODIGO_TURMA_110.Name = "CODIGO_TURMA_110";
+            this.CODIGO_TURMA_110.ReadOnly = true;
             // 
             // CODIGO_ESPACO_110
             // 
@@ -2837,7 +2890,7 @@
             this.HORARIO_GRADE_111,
             this.DIA_SEMANA_GRADE_111,
             this.CODIGO_DISCIPLINA_111,
-            this.SEQ_TURMA_111,
+            this.CODIGO_TURMA_111,
             this.CODIGO_ESPACO_111,
             this.CODIGO_PROFESSOR1_111,
             this.CODIGO_PROFESSOR2_111,
@@ -2858,13 +2911,18 @@
             // 
             // HORARIO_GRADE_111
             // 
+            this.HORARIO_GRADE_111.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_111.HeaderText = "HORARIO_GRADE_111";
             this.HORARIO_GRADE_111.Name = "HORARIO_GRADE_111";
             this.HORARIO_GRADE_111.ReadOnly = true;
+            this.HORARIO_GRADE_111.Visible = false;
             // 
             // DIA_SEMANA_GRADE_111
             // 
+            this.DIA_SEMANA_GRADE_111.HeaderText = "DIA_SEMANA_GRADE_111";
             this.DIA_SEMANA_GRADE_111.Name = "DIA_SEMANA_GRADE_111";
             this.DIA_SEMANA_GRADE_111.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_111.Visible = false;
             // 
             // CODIGO_DISCIPLINA_111
             // 
@@ -2876,14 +2934,14 @@
             this.CODIGO_DISCIPLINA_111.ReadOnly = true;
             this.CODIGO_DISCIPLINA_111.Width = 20;
             // 
-            // SEQ_TURMA_111
+            // CODIGO_TURMA_111
             // 
-            this.SEQ_TURMA_111.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_111.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_111.HeaderText = "Turma";
-            this.SEQ_TURMA_111.MinimumWidth = 20;
-            this.SEQ_TURMA_111.Name = "SEQ_TURMA_111";
-            this.SEQ_TURMA_111.ReadOnly = true;
+            this.CODIGO_TURMA_111.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_111.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_111.HeaderText = "Turma";
+            this.CODIGO_TURMA_111.MinimumWidth = 20;
+            this.CODIGO_TURMA_111.Name = "CODIGO_TURMA_111";
+            this.CODIGO_TURMA_111.ReadOnly = true;
             // 
             // CODIGO_ESPACO_111
             // 
@@ -2937,7 +2995,7 @@
             this.HORARIO_GRADE_112,
             this.DIA_SEMANA_GRADE_112,
             this.CODIGO_DISCIPLINA_112,
-            this.SEQ_TURMA_112,
+            this.CODIGO_TURMA_112,
             this.CODIGO_ESPACO_112,
             this.CODIGO_PROFESSOR1_112,
             this.CODIGO_PROFESSOR2_112,
@@ -2958,13 +3016,18 @@
             // 
             // HORARIO_GRADE_112
             // 
+            this.HORARIO_GRADE_112.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_112.HeaderText = "HORARIO_GRADE_112";
             this.HORARIO_GRADE_112.Name = "HORARIO_GRADE_112";
             this.HORARIO_GRADE_112.ReadOnly = true;
+            this.HORARIO_GRADE_112.Visible = false;
             // 
             // DIA_SEMANA_GRADE_112
             // 
+            this.DIA_SEMANA_GRADE_112.HeaderText = "DIA_SEMANA_GRADE_112";
             this.DIA_SEMANA_GRADE_112.Name = "DIA_SEMANA_GRADE_112";
             this.DIA_SEMANA_GRADE_112.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_112.Visible = false;
             // 
             // CODIGO_DISCIPLINA_112
             // 
@@ -2976,14 +3039,14 @@
             this.CODIGO_DISCIPLINA_112.ReadOnly = true;
             this.CODIGO_DISCIPLINA_112.Width = 20;
             // 
-            // SEQ_TURMA_112
+            // CODIGO_TURMA_112
             // 
-            this.SEQ_TURMA_112.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_112.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_112.HeaderText = "Turma";
-            this.SEQ_TURMA_112.MinimumWidth = 20;
-            this.SEQ_TURMA_112.Name = "SEQ_TURMA_112";
-            this.SEQ_TURMA_112.ReadOnly = true;
+            this.CODIGO_TURMA_112.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_112.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_112.HeaderText = "Turma";
+            this.CODIGO_TURMA_112.MinimumWidth = 20;
+            this.CODIGO_TURMA_112.Name = "CODIGO_TURMA_112";
+            this.CODIGO_TURMA_112.ReadOnly = true;
             // 
             // CODIGO_ESPACO_112
             // 
@@ -3037,7 +3100,7 @@
             this.HORARIO_GRADE_113,
             this.DIA_SEMANA_GRADE_113,
             this.CODIGO_DISCIPLINA_113,
-            this.SEQ_TURMA_113,
+            this.CODIGO_TURMA_113,
             this.CODIGO_ESPACO_113,
             this.CODIGO_PROFESSOR1_113,
             this.CODIGO_PROFESSOR2_113,
@@ -3058,13 +3121,18 @@
             // 
             // HORARIO_GRADE_113
             // 
+            this.HORARIO_GRADE_113.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_113.HeaderText = "HORARIO_GRADE_113";
             this.HORARIO_GRADE_113.Name = "HORARIO_GRADE_113";
             this.HORARIO_GRADE_113.ReadOnly = true;
+            this.HORARIO_GRADE_113.Visible = false;
             // 
             // DIA_SEMANA_GRADE_113
             // 
+            this.DIA_SEMANA_GRADE_113.HeaderText = "DIA_SEMANA_GRADE_113";
             this.DIA_SEMANA_GRADE_113.Name = "DIA_SEMANA_GRADE_113";
             this.DIA_SEMANA_GRADE_113.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_113.Visible = false;
             // 
             // CODIGO_DISCIPLINA_113
             // 
@@ -3076,14 +3144,14 @@
             this.CODIGO_DISCIPLINA_113.ReadOnly = true;
             this.CODIGO_DISCIPLINA_113.Width = 20;
             // 
-            // SEQ_TURMA_113
+            // CODIGO_TURMA_113
             // 
-            this.SEQ_TURMA_113.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_113.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_113.HeaderText = "Turma";
-            this.SEQ_TURMA_113.MinimumWidth = 20;
-            this.SEQ_TURMA_113.Name = "SEQ_TURMA_113";
-            this.SEQ_TURMA_113.ReadOnly = true;
+            this.CODIGO_TURMA_113.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_113.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_113.HeaderText = "Turma";
+            this.CODIGO_TURMA_113.MinimumWidth = 20;
+            this.CODIGO_TURMA_113.Name = "CODIGO_TURMA_113";
+            this.CODIGO_TURMA_113.ReadOnly = true;
             // 
             // CODIGO_ESPACO_113
             // 
@@ -3137,7 +3205,7 @@
             this.HORARIO_GRADE_114,
             this.DIA_SEMANA_GRADE_114,
             this.CODIGO_DISCIPLINA_114,
-            this.SEQ_TURMA_114,
+            this.CODIGO_TURMA_114,
             this.CODIGO_ESPACO_114,
             this.CODIGO_PROFESSOR1_114,
             this.CODIGO_PROFESSOR2_114,
@@ -3158,13 +3226,18 @@
             // 
             // HORARIO_GRADE_114
             // 
+            this.HORARIO_GRADE_114.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_114.HeaderText = "HORARIO_GRADE_114";
             this.HORARIO_GRADE_114.Name = "HORARIO_GRADE_114";
             this.HORARIO_GRADE_114.ReadOnly = true;
+            this.HORARIO_GRADE_114.Visible = false;
             // 
             // DIA_SEMANA_GRADE_114
             // 
+            this.DIA_SEMANA_GRADE_114.HeaderText = "DIA_SEMANA_GRADE_114";
             this.DIA_SEMANA_GRADE_114.Name = "DIA_SEMANA_GRADE_114";
             this.DIA_SEMANA_GRADE_114.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_114.Visible = false;
             // 
             // CODIGO_DISCIPLINA_114
             // 
@@ -3176,14 +3249,14 @@
             this.CODIGO_DISCIPLINA_114.ReadOnly = true;
             this.CODIGO_DISCIPLINA_114.Width = 20;
             // 
-            // SEQ_TURMA_114
+            // CODIGO_TURMA_114
             // 
-            this.SEQ_TURMA_114.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_114.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_114.HeaderText = "Turma";
-            this.SEQ_TURMA_114.MinimumWidth = 20;
-            this.SEQ_TURMA_114.Name = "SEQ_TURMA_114";
-            this.SEQ_TURMA_114.ReadOnly = true;
+            this.CODIGO_TURMA_114.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_114.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_114.HeaderText = "Turma";
+            this.CODIGO_TURMA_114.MinimumWidth = 20;
+            this.CODIGO_TURMA_114.Name = "CODIGO_TURMA_114";
+            this.CODIGO_TURMA_114.ReadOnly = true;
             // 
             // CODIGO_ESPACO_114
             // 
@@ -3237,7 +3310,7 @@
             this.HORARIO_GRADE_21,
             this.DIA_SEMANA_GRADE_21,
             this.CODIGO_DISCIPLINA_21,
-            this.SEQ_TURMA_21,
+            this.CODIGO_TURMA_21,
             this.CODIGO_ESPACO_21,
             this.CODIGO_PROFESSOR1_21,
             this.CODIGO_PROFESSOR2_21,
@@ -3258,13 +3331,18 @@
             // 
             // HORARIO_GRADE_21
             // 
+            this.HORARIO_GRADE_21.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_21.HeaderText = "HORARIO_GRADE_21";
             this.HORARIO_GRADE_21.Name = "HORARIO_GRADE_21";
             this.HORARIO_GRADE_21.ReadOnly = true;
+            this.HORARIO_GRADE_21.Visible = false;
             // 
             // DIA_SEMANA_GRADE_21
             // 
+            this.DIA_SEMANA_GRADE_21.HeaderText = "DIA_SEMANA_GRADE_21";
             this.DIA_SEMANA_GRADE_21.Name = "DIA_SEMANA_GRADE_21";
             this.DIA_SEMANA_GRADE_21.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_21.Visible = false;
             // 
             // CODIGO_DISCIPLINA_21
             // 
@@ -3276,14 +3354,14 @@
             this.CODIGO_DISCIPLINA_21.ReadOnly = true;
             this.CODIGO_DISCIPLINA_21.Width = 20;
             // 
-            // SEQ_TURMA_21
+            // CODIGO_TURMA_21
             // 
-            this.SEQ_TURMA_21.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_21.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_21.HeaderText = "Turma";
-            this.SEQ_TURMA_21.MinimumWidth = 20;
-            this.SEQ_TURMA_21.Name = "SEQ_TURMA_21";
-            this.SEQ_TURMA_21.ReadOnly = true;
+            this.CODIGO_TURMA_21.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_21.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_21.HeaderText = "Turma";
+            this.CODIGO_TURMA_21.MinimumWidth = 20;
+            this.CODIGO_TURMA_21.Name = "CODIGO_TURMA_21";
+            this.CODIGO_TURMA_21.ReadOnly = true;
             // 
             // CODIGO_ESPACO_21
             // 
@@ -3337,7 +3415,7 @@
             this.HORARIO_GRADE_22,
             this.DIA_SEMANA_GRADE_22,
             this.CODIGO_DISCIPLINA_22,
-            this.SEQ_TURMA_22,
+            this.CODIGO_TURMA_22,
             this.CODIGO_ESPACO_22,
             this.CODIGO_PROFESSOR1_22,
             this.CODIGO_PROFESSOR2_22,
@@ -3358,13 +3436,18 @@
             // 
             // HORARIO_GRADE_22
             // 
+            this.HORARIO_GRADE_22.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_22.HeaderText = "HORARIO_GRADE_22";
             this.HORARIO_GRADE_22.Name = "HORARIO_GRADE_22";
             this.HORARIO_GRADE_22.ReadOnly = true;
+            this.HORARIO_GRADE_22.Visible = false;
             // 
             // DIA_SEMANA_GRADE_22
             // 
+            this.DIA_SEMANA_GRADE_22.HeaderText = "DIA_SEMANA_GRADE_22";
             this.DIA_SEMANA_GRADE_22.Name = "DIA_SEMANA_GRADE_22";
             this.DIA_SEMANA_GRADE_22.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_22.Visible = false;
             // 
             // CODIGO_DISCIPLINA_22
             // 
@@ -3376,14 +3459,14 @@
             this.CODIGO_DISCIPLINA_22.ReadOnly = true;
             this.CODIGO_DISCIPLINA_22.Width = 20;
             // 
-            // SEQ_TURMA_22
+            // CODIGO_TURMA_22
             // 
-            this.SEQ_TURMA_22.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_22.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_22.HeaderText = "Turma";
-            this.SEQ_TURMA_22.MinimumWidth = 20;
-            this.SEQ_TURMA_22.Name = "SEQ_TURMA_22";
-            this.SEQ_TURMA_22.ReadOnly = true;
+            this.CODIGO_TURMA_22.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_22.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_22.HeaderText = "Turma";
+            this.CODIGO_TURMA_22.MinimumWidth = 20;
+            this.CODIGO_TURMA_22.Name = "CODIGO_TURMA_22";
+            this.CODIGO_TURMA_22.ReadOnly = true;
             // 
             // CODIGO_ESPACO_22
             // 
@@ -3437,7 +3520,7 @@
             this.HORARIO_GRADE_23,
             this.DIA_SEMANA_GRADE_23,
             this.CODIGO_DISCIPLINA_23,
-            this.SEQ_TURMA_23,
+            this.CODIGO_TURMA_23,
             this.CODIGO_ESPACO_23,
             this.CODIGO_PROFESSOR1_23,
             this.CODIGO_PROFESSOR2_23,
@@ -3458,13 +3541,18 @@
             // 
             // HORARIO_GRADE_23
             // 
+            this.HORARIO_GRADE_23.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_23.HeaderText = "HORARIO_GRADE_23";
             this.HORARIO_GRADE_23.Name = "HORARIO_GRADE_23";
             this.HORARIO_GRADE_23.ReadOnly = true;
+            this.HORARIO_GRADE_23.Visible = false;
             // 
             // DIA_SEMANA_GRADE_23
             // 
+            this.DIA_SEMANA_GRADE_23.HeaderText = "DIA_SEMANA_GRADE_23";
             this.DIA_SEMANA_GRADE_23.Name = "DIA_SEMANA_GRADE_23";
             this.DIA_SEMANA_GRADE_23.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_23.Visible = false;
             // 
             // CODIGO_DISCIPLINA_23
             // 
@@ -3476,14 +3564,14 @@
             this.CODIGO_DISCIPLINA_23.ReadOnly = true;
             this.CODIGO_DISCIPLINA_23.Width = 20;
             // 
-            // SEQ_TURMA_23
+            // CODIGO_TURMA_23
             // 
-            this.SEQ_TURMA_23.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_23.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_23.HeaderText = "Turma";
-            this.SEQ_TURMA_23.MinimumWidth = 20;
-            this.SEQ_TURMA_23.Name = "SEQ_TURMA_23";
-            this.SEQ_TURMA_23.ReadOnly = true;
+            this.CODIGO_TURMA_23.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_23.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_23.HeaderText = "Turma";
+            this.CODIGO_TURMA_23.MinimumWidth = 20;
+            this.CODIGO_TURMA_23.Name = "CODIGO_TURMA_23";
+            this.CODIGO_TURMA_23.ReadOnly = true;
             // 
             // CODIGO_ESPACO_23
             // 
@@ -3537,7 +3625,7 @@
             this.HORARIO_GRADE_24,
             this.DIA_SEMANA_GRADE_24,
             this.CODIGO_DISCIPLINA_24,
-            this.SEQ_TURMA_24,
+            this.CODIGO_TURMA_24,
             this.CODIGO_ESPACO_24,
             this.CODIGO_PROFESSOR1_24,
             this.CODIGO_PROFESSOR2_24,
@@ -3558,13 +3646,18 @@
             // 
             // HORARIO_GRADE_24
             // 
+            this.HORARIO_GRADE_24.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_24.HeaderText = "HORARIO_GRADE_24";
             this.HORARIO_GRADE_24.Name = "HORARIO_GRADE_24";
             this.HORARIO_GRADE_24.ReadOnly = true;
+            this.HORARIO_GRADE_24.Visible = false;
             // 
             // DIA_SEMANA_GRADE_24
             // 
+            this.DIA_SEMANA_GRADE_24.HeaderText = "DIA_SEMANA_GRADE_24";
             this.DIA_SEMANA_GRADE_24.Name = "DIA_SEMANA_GRADE_24";
             this.DIA_SEMANA_GRADE_24.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_24.Visible = false;
             // 
             // CODIGO_DISCIPLINA_24
             // 
@@ -3576,14 +3669,14 @@
             this.CODIGO_DISCIPLINA_24.ReadOnly = true;
             this.CODIGO_DISCIPLINA_24.Width = 20;
             // 
-            // SEQ_TURMA_24
+            // CODIGO_TURMA_24
             // 
-            this.SEQ_TURMA_24.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_24.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_24.HeaderText = "Turma";
-            this.SEQ_TURMA_24.MinimumWidth = 20;
-            this.SEQ_TURMA_24.Name = "SEQ_TURMA_24";
-            this.SEQ_TURMA_24.ReadOnly = true;
+            this.CODIGO_TURMA_24.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_24.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_24.HeaderText = "Turma";
+            this.CODIGO_TURMA_24.MinimumWidth = 20;
+            this.CODIGO_TURMA_24.Name = "CODIGO_TURMA_24";
+            this.CODIGO_TURMA_24.ReadOnly = true;
             // 
             // CODIGO_ESPACO_24
             // 
@@ -3637,7 +3730,7 @@
             this.HORARIO_GRADE_25,
             this.DIA_SEMANA_GRADE_25,
             this.CODIGO_DISCIPLINA_25,
-            this.SEQ_TURMA_25,
+            this.CODIGO_TURMA_25,
             this.CODIGO_ESPACO_25,
             this.CODIGO_PROFESSOR1_25,
             this.CODIGO_PROFESSOR2_25,
@@ -3658,13 +3751,18 @@
             // 
             // HORARIO_GRADE_25
             // 
+            this.HORARIO_GRADE_25.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_25.HeaderText = "HORARIO_GRADE_25";
             this.HORARIO_GRADE_25.Name = "HORARIO_GRADE_25";
             this.HORARIO_GRADE_25.ReadOnly = true;
+            this.HORARIO_GRADE_25.Visible = false;
             // 
             // DIA_SEMANA_GRADE_25
             // 
+            this.DIA_SEMANA_GRADE_25.HeaderText = "DIA_SEMANA_GRADE_25";
             this.DIA_SEMANA_GRADE_25.Name = "DIA_SEMANA_GRADE_25";
             this.DIA_SEMANA_GRADE_25.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_25.Visible = false;
             // 
             // CODIGO_DISCIPLINA_25
             // 
@@ -3676,14 +3774,14 @@
             this.CODIGO_DISCIPLINA_25.ReadOnly = true;
             this.CODIGO_DISCIPLINA_25.Width = 20;
             // 
-            // SEQ_TURMA_25
+            // CODIGO_TURMA_25
             // 
-            this.SEQ_TURMA_25.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_25.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_25.HeaderText = "Turma";
-            this.SEQ_TURMA_25.MinimumWidth = 20;
-            this.SEQ_TURMA_25.Name = "SEQ_TURMA_25";
-            this.SEQ_TURMA_25.ReadOnly = true;
+            this.CODIGO_TURMA_25.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_25.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_25.HeaderText = "Turma";
+            this.CODIGO_TURMA_25.MinimumWidth = 20;
+            this.CODIGO_TURMA_25.Name = "CODIGO_TURMA_25";
+            this.CODIGO_TURMA_25.ReadOnly = true;
             // 
             // CODIGO_ESPACO_25
             // 
@@ -3737,7 +3835,7 @@
             this.HORARIO_GRADE_26,
             this.DIA_SEMANA_GRADE_26,
             this.CODIGO_DISCIPLINA_26,
-            this.SEQ_TURMA_26,
+            this.CODIGO_TURMA_26,
             this.CODIGO_ESPACO_26,
             this.CODIGO_PROFESSOR1_26,
             this.CODIGO_PROFESSOR2_26,
@@ -3758,13 +3856,18 @@
             // 
             // HORARIO_GRADE_26
             // 
+            this.HORARIO_GRADE_26.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_26.HeaderText = "HORARIO_GRADE_26";
             this.HORARIO_GRADE_26.Name = "HORARIO_GRADE_26";
             this.HORARIO_GRADE_26.ReadOnly = true;
+            this.HORARIO_GRADE_26.Visible = false;
             // 
             // DIA_SEMANA_GRADE_26
             // 
+            this.DIA_SEMANA_GRADE_26.HeaderText = "DIA_SEMANA_GRADE_26";
             this.DIA_SEMANA_GRADE_26.Name = "DIA_SEMANA_GRADE_26";
             this.DIA_SEMANA_GRADE_26.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_26.Visible = false;
             // 
             // CODIGO_DISCIPLINA_26
             // 
@@ -3776,14 +3879,14 @@
             this.CODIGO_DISCIPLINA_26.ReadOnly = true;
             this.CODIGO_DISCIPLINA_26.Width = 20;
             // 
-            // SEQ_TURMA_26
+            // CODIGO_TURMA_26
             // 
-            this.SEQ_TURMA_26.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_26.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_26.HeaderText = "Turma";
-            this.SEQ_TURMA_26.MinimumWidth = 20;
-            this.SEQ_TURMA_26.Name = "SEQ_TURMA_26";
-            this.SEQ_TURMA_26.ReadOnly = true;
+            this.CODIGO_TURMA_26.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_26.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_26.HeaderText = "Turma";
+            this.CODIGO_TURMA_26.MinimumWidth = 20;
+            this.CODIGO_TURMA_26.Name = "CODIGO_TURMA_26";
+            this.CODIGO_TURMA_26.ReadOnly = true;
             // 
             // CODIGO_ESPACO_26
             // 
@@ -3837,7 +3940,7 @@
             this.HORARIO_GRADE_27,
             this.DIA_SEMANA_GRADE_27,
             this.CODIGO_DISCIPLINA_27,
-            this.SEQ_TURMA_27,
+            this.CODIGO_TURMA_27,
             this.CODIGO_ESPACO_27,
             this.CODIGO_PROFESSOR1_27,
             this.CODIGO_PROFESSOR2_27,
@@ -3858,13 +3961,18 @@
             // 
             // HORARIO_GRADE_27
             // 
+            this.HORARIO_GRADE_27.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_27.HeaderText = "HORARIO_GRADE_27";
             this.HORARIO_GRADE_27.Name = "HORARIO_GRADE_27";
             this.HORARIO_GRADE_27.ReadOnly = true;
+            this.HORARIO_GRADE_27.Visible = false;
             // 
             // DIA_SEMANA_GRADE_27
             // 
+            this.DIA_SEMANA_GRADE_27.HeaderText = "DIA_SEMANA_GRADE_27";
             this.DIA_SEMANA_GRADE_27.Name = "DIA_SEMANA_GRADE_27";
             this.DIA_SEMANA_GRADE_27.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_27.Visible = false;
             // 
             // CODIGO_DISCIPLINA_27
             // 
@@ -3876,14 +3984,14 @@
             this.CODIGO_DISCIPLINA_27.ReadOnly = true;
             this.CODIGO_DISCIPLINA_27.Width = 20;
             // 
-            // SEQ_TURMA_27
+            // CODIGO_TURMA_27
             // 
-            this.SEQ_TURMA_27.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_27.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_27.HeaderText = "Turma";
-            this.SEQ_TURMA_27.MinimumWidth = 20;
-            this.SEQ_TURMA_27.Name = "SEQ_TURMA_27";
-            this.SEQ_TURMA_27.ReadOnly = true;
+            this.CODIGO_TURMA_27.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_27.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_27.HeaderText = "Turma";
+            this.CODIGO_TURMA_27.MinimumWidth = 20;
+            this.CODIGO_TURMA_27.Name = "CODIGO_TURMA_27";
+            this.CODIGO_TURMA_27.ReadOnly = true;
             // 
             // CODIGO_ESPACO_27
             // 
@@ -3937,7 +4045,7 @@
             this.HORARIO_GRADE_28,
             this.DIA_SEMANA_GRADE_28,
             this.CODIGO_DISCIPLINA_28,
-            this.SEQ_TURMA_28,
+            this.CODIGO_TURMA_28,
             this.CODIGO_ESPACO_28,
             this.CODIGO_PROFESSOR1_28,
             this.CODIGO_PROFESSOR2_28,
@@ -3958,13 +4066,18 @@
             // 
             // HORARIO_GRADE_28
             // 
+            this.HORARIO_GRADE_28.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_28.HeaderText = "HORARIO_GRADE_28";
             this.HORARIO_GRADE_28.Name = "HORARIO_GRADE_28";
             this.HORARIO_GRADE_28.ReadOnly = true;
+            this.HORARIO_GRADE_28.Visible = false;
             // 
             // DIA_SEMANA_GRADE_28
             // 
+            this.DIA_SEMANA_GRADE_28.HeaderText = "DIA_SEMANA_GRADE_28";
             this.DIA_SEMANA_GRADE_28.Name = "DIA_SEMANA_GRADE_28";
             this.DIA_SEMANA_GRADE_28.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_28.Visible = false;
             // 
             // CODIGO_DISCIPLINA_28
             // 
@@ -3976,14 +4089,14 @@
             this.CODIGO_DISCIPLINA_28.ReadOnly = true;
             this.CODIGO_DISCIPLINA_28.Width = 20;
             // 
-            // SEQ_TURMA_28
+            // CODIGO_TURMA_28
             // 
-            this.SEQ_TURMA_28.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_28.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_28.HeaderText = "Turma";
-            this.SEQ_TURMA_28.MinimumWidth = 20;
-            this.SEQ_TURMA_28.Name = "SEQ_TURMA_28";
-            this.SEQ_TURMA_28.ReadOnly = true;
+            this.CODIGO_TURMA_28.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_28.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_28.HeaderText = "Turma";
+            this.CODIGO_TURMA_28.MinimumWidth = 20;
+            this.CODIGO_TURMA_28.Name = "CODIGO_TURMA_28";
+            this.CODIGO_TURMA_28.ReadOnly = true;
             // 
             // CODIGO_ESPACO_28
             // 
@@ -4037,7 +4150,7 @@
             this.HORARIO_GRADE_29,
             this.DIA_SEMANA_GRADE_29,
             this.CODIGO_DISCIPLINA_29,
-            this.SEQ_TURMA_29,
+            this.CODIGO_TURMA_29,
             this.CODIGO_ESPACO_29,
             this.CODIGO_PROFESSOR1_29,
             this.CODIGO_PROFESSOR2_29,
@@ -4058,13 +4171,18 @@
             // 
             // HORARIO_GRADE_29
             // 
+            this.HORARIO_GRADE_29.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_29.HeaderText = "HORARIO_GRADE_29";
             this.HORARIO_GRADE_29.Name = "HORARIO_GRADE_29";
             this.HORARIO_GRADE_29.ReadOnly = true;
+            this.HORARIO_GRADE_29.Visible = false;
             // 
             // DIA_SEMANA_GRADE_29
             // 
+            this.DIA_SEMANA_GRADE_29.HeaderText = "DIA_SEMANA_GRADE_29";
             this.DIA_SEMANA_GRADE_29.Name = "DIA_SEMANA_GRADE_29";
             this.DIA_SEMANA_GRADE_29.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_29.Visible = false;
             // 
             // CODIGO_DISCIPLINA_29
             // 
@@ -4076,14 +4194,14 @@
             this.CODIGO_DISCIPLINA_29.ReadOnly = true;
             this.CODIGO_DISCIPLINA_29.Width = 20;
             // 
-            // SEQ_TURMA_29
+            // CODIGO_TURMA_29
             // 
-            this.SEQ_TURMA_29.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_29.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_29.HeaderText = "Turma";
-            this.SEQ_TURMA_29.MinimumWidth = 20;
-            this.SEQ_TURMA_29.Name = "SEQ_TURMA_29";
-            this.SEQ_TURMA_29.ReadOnly = true;
+            this.CODIGO_TURMA_29.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_29.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_29.HeaderText = "Turma";
+            this.CODIGO_TURMA_29.MinimumWidth = 20;
+            this.CODIGO_TURMA_29.Name = "CODIGO_TURMA_29";
+            this.CODIGO_TURMA_29.ReadOnly = true;
             // 
             // CODIGO_ESPACO_29
             // 
@@ -4137,7 +4255,7 @@
             this.HORARIO_GRADE_210,
             this.DIA_SEMANA_GRADE_210,
             this.CODIGO_DISCIPLINA_210,
-            this.SEQ_TURMA_210,
+            this.CODIGO_TURMA_210,
             this.CODIGO_ESPACO_210,
             this.CODIGO_PROFESSOR1_210,
             this.CODIGO_PROFESSOR2_210,
@@ -4158,13 +4276,18 @@
             // 
             // HORARIO_GRADE_210
             // 
+            this.HORARIO_GRADE_210.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_210.HeaderText = "HORARIO_GRADE_210";
             this.HORARIO_GRADE_210.Name = "HORARIO_GRADE_210";
             this.HORARIO_GRADE_210.ReadOnly = true;
+            this.HORARIO_GRADE_210.Visible = false;
             // 
             // DIA_SEMANA_GRADE_210
             // 
+            this.DIA_SEMANA_GRADE_210.HeaderText = "DIA_SEMANA_GRADE_210";
             this.DIA_SEMANA_GRADE_210.Name = "DIA_SEMANA_GRADE_210";
             this.DIA_SEMANA_GRADE_210.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_210.Visible = false;
             // 
             // CODIGO_DISCIPLINA_210
             // 
@@ -4176,14 +4299,14 @@
             this.CODIGO_DISCIPLINA_210.ReadOnly = true;
             this.CODIGO_DISCIPLINA_210.Width = 20;
             // 
-            // SEQ_TURMA_210
+            // CODIGO_TURMA_210
             // 
-            this.SEQ_TURMA_210.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_210.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_210.HeaderText = "Turma";
-            this.SEQ_TURMA_210.MinimumWidth = 20;
-            this.SEQ_TURMA_210.Name = "SEQ_TURMA_210";
-            this.SEQ_TURMA_210.ReadOnly = true;
+            this.CODIGO_TURMA_210.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_210.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_210.HeaderText = "Turma";
+            this.CODIGO_TURMA_210.MinimumWidth = 20;
+            this.CODIGO_TURMA_210.Name = "CODIGO_TURMA_210";
+            this.CODIGO_TURMA_210.ReadOnly = true;
             // 
             // CODIGO_ESPACO_210
             // 
@@ -4237,7 +4360,7 @@
             this.HORARIO_GRADE_211,
             this.DIA_SEMANA_GRADE_211,
             this.CODIGO_DISCIPLINA_211,
-            this.SEQ_TURMA_211,
+            this.CODIGO_TURMA_211,
             this.CODIGO_ESPACO_211,
             this.CODIGO_PROFESSOR1_211,
             this.CODIGO_PROFESSOR2_211,
@@ -4258,13 +4381,18 @@
             // 
             // HORARIO_GRADE_211
             // 
+            this.HORARIO_GRADE_211.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_211.HeaderText = "HORARIO_GRADE_211";
             this.HORARIO_GRADE_211.Name = "HORARIO_GRADE_211";
             this.HORARIO_GRADE_211.ReadOnly = true;
+            this.HORARIO_GRADE_211.Visible = false;
             // 
             // DIA_SEMANA_GRADE_211
             // 
+            this.DIA_SEMANA_GRADE_211.HeaderText = "DIA_SEMANA_GRADE_211";
             this.DIA_SEMANA_GRADE_211.Name = "DIA_SEMANA_GRADE_211";
             this.DIA_SEMANA_GRADE_211.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_211.Visible = false;
             // 
             // CODIGO_DISCIPLINA_211
             // 
@@ -4276,14 +4404,14 @@
             this.CODIGO_DISCIPLINA_211.ReadOnly = true;
             this.CODIGO_DISCIPLINA_211.Width = 20;
             // 
-            // SEQ_TURMA_211
+            // CODIGO_TURMA_211
             // 
-            this.SEQ_TURMA_211.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_211.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_211.HeaderText = "Turma";
-            this.SEQ_TURMA_211.MinimumWidth = 20;
-            this.SEQ_TURMA_211.Name = "SEQ_TURMA_211";
-            this.SEQ_TURMA_211.ReadOnly = true;
+            this.CODIGO_TURMA_211.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_211.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_211.HeaderText = "Turma";
+            this.CODIGO_TURMA_211.MinimumWidth = 20;
+            this.CODIGO_TURMA_211.Name = "CODIGO_TURMA_211";
+            this.CODIGO_TURMA_211.ReadOnly = true;
             // 
             // CODIGO_ESPACO_211
             // 
@@ -4337,7 +4465,7 @@
             this.HORARIO_GRADE_212,
             this.DIA_SEMANA_GRADE_212,
             this.CODIGO_DISCIPLINA_212,
-            this.SEQ_TURMA_212,
+            this.CODIGO_TURMA_212,
             this.CODIGO_ESPACO_212,
             this.CODIGO_PROFESSOR1_212,
             this.CODIGO_PROFESSOR2_212,
@@ -4358,13 +4486,18 @@
             // 
             // HORARIO_GRADE_212
             // 
+            this.HORARIO_GRADE_212.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_212.HeaderText = "HORARIO_GRADE_212";
             this.HORARIO_GRADE_212.Name = "HORARIO_GRADE_212";
             this.HORARIO_GRADE_212.ReadOnly = true;
+            this.HORARIO_GRADE_212.Visible = false;
             // 
             // DIA_SEMANA_GRADE_212
             // 
+            this.DIA_SEMANA_GRADE_212.HeaderText = "DIA_SEMANA_GRADE_212";
             this.DIA_SEMANA_GRADE_212.Name = "DIA_SEMANA_GRADE_212";
             this.DIA_SEMANA_GRADE_212.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_212.Visible = false;
             // 
             // CODIGO_DISCIPLINA_212
             // 
@@ -4376,14 +4509,14 @@
             this.CODIGO_DISCIPLINA_212.ReadOnly = true;
             this.CODIGO_DISCIPLINA_212.Width = 20;
             // 
-            // SEQ_TURMA_212
+            // CODIGO_TURMA_212
             // 
-            this.SEQ_TURMA_212.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_212.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_212.HeaderText = "Turma";
-            this.SEQ_TURMA_212.MinimumWidth = 20;
-            this.SEQ_TURMA_212.Name = "SEQ_TURMA_212";
-            this.SEQ_TURMA_212.ReadOnly = true;
+            this.CODIGO_TURMA_212.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_212.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_212.HeaderText = "Turma";
+            this.CODIGO_TURMA_212.MinimumWidth = 20;
+            this.CODIGO_TURMA_212.Name = "CODIGO_TURMA_212";
+            this.CODIGO_TURMA_212.ReadOnly = true;
             // 
             // CODIGO_ESPACO_212
             // 
@@ -4437,7 +4570,7 @@
             this.HORARIO_GRADE_213,
             this.DIA_SEMANA_GRADE_213,
             this.CODIGO_DISCIPLINA_213,
-            this.SEQ_TURMA_213,
+            this.CODIGO_TURMA_213,
             this.CODIGO_ESPACO_213,
             this.CODIGO_PROFESSOR1_213,
             this.CODIGO_PROFESSOR2_213,
@@ -4458,13 +4591,18 @@
             // 
             // HORARIO_GRADE_213
             // 
+            this.HORARIO_GRADE_213.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_213.HeaderText = "HORARIO_GRADE_213";
             this.HORARIO_GRADE_213.Name = "HORARIO_GRADE_213";
             this.HORARIO_GRADE_213.ReadOnly = true;
+            this.HORARIO_GRADE_213.Visible = false;
             // 
             // DIA_SEMANA_GRADE_213
             // 
+            this.DIA_SEMANA_GRADE_213.HeaderText = "DIA_SEMANA_GRADE_213";
             this.DIA_SEMANA_GRADE_213.Name = "DIA_SEMANA_GRADE_213";
             this.DIA_SEMANA_GRADE_213.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_213.Visible = false;
             // 
             // CODIGO_DISCIPLINA_213
             // 
@@ -4476,14 +4614,14 @@
             this.CODIGO_DISCIPLINA_213.ReadOnly = true;
             this.CODIGO_DISCIPLINA_213.Width = 20;
             // 
-            // SEQ_TURMA_213
+            // CODIGO_TURMA_213
             // 
-            this.SEQ_TURMA_213.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_213.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_213.HeaderText = "Turma";
-            this.SEQ_TURMA_213.MinimumWidth = 20;
-            this.SEQ_TURMA_213.Name = "SEQ_TURMA_213";
-            this.SEQ_TURMA_213.ReadOnly = true;
+            this.CODIGO_TURMA_213.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_213.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_213.HeaderText = "Turma";
+            this.CODIGO_TURMA_213.MinimumWidth = 20;
+            this.CODIGO_TURMA_213.Name = "CODIGO_TURMA_213";
+            this.CODIGO_TURMA_213.ReadOnly = true;
             // 
             // CODIGO_ESPACO_213
             // 
@@ -4537,7 +4675,7 @@
             this.HORARIO_GRADE_214,
             this.DIA_SEMANA_GRADE_214,
             this.CODIGO_DISCIPLINA_214,
-            this.SEQ_TURMA_214,
+            this.CODIGO_TURMA_214,
             this.CODIGO_ESPACO_214,
             this.CODIGO_PROFESSOR1_214,
             this.CODIGO_PROFESSOR2_214,
@@ -4558,13 +4696,18 @@
             // 
             // HORARIO_GRADE_214
             // 
+            this.HORARIO_GRADE_214.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_214.HeaderText = "HORARIO_GRADE_214";
             this.HORARIO_GRADE_214.Name = "HORARIO_GRADE_214";
             this.HORARIO_GRADE_214.ReadOnly = true;
+            this.HORARIO_GRADE_214.Visible = false;
             // 
             // DIA_SEMANA_GRADE_214
             // 
+            this.DIA_SEMANA_GRADE_214.HeaderText = "DIA_SEMANA_GRADE_214";
             this.DIA_SEMANA_GRADE_214.Name = "DIA_SEMANA_GRADE_214";
             this.DIA_SEMANA_GRADE_214.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_214.Visible = false;
             // 
             // CODIGO_DISCIPLINA_214
             // 
@@ -4576,14 +4719,14 @@
             this.CODIGO_DISCIPLINA_214.ReadOnly = true;
             this.CODIGO_DISCIPLINA_214.Width = 20;
             // 
-            // SEQ_TURMA_214
+            // CODIGO_TURMA_214
             // 
-            this.SEQ_TURMA_214.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_214.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_214.HeaderText = "Turma";
-            this.SEQ_TURMA_214.MinimumWidth = 20;
-            this.SEQ_TURMA_214.Name = "SEQ_TURMA_214";
-            this.SEQ_TURMA_214.ReadOnly = true;
+            this.CODIGO_TURMA_214.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_214.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_214.HeaderText = "Turma";
+            this.CODIGO_TURMA_214.MinimumWidth = 20;
+            this.CODIGO_TURMA_214.Name = "CODIGO_TURMA_214";
+            this.CODIGO_TURMA_214.ReadOnly = true;
             // 
             // CODIGO_ESPACO_214
             // 
@@ -4637,7 +4780,7 @@
             this.HORARIO_GRADE_31,
             this.DIA_SEMANA_GRADE_31,
             this.CODIGO_DISCIPLINA_31,
-            this.SEQ_TURMA_31,
+            this.CODIGO_TURMA_31,
             this.CODIGO_ESPACO_31,
             this.CODIGO_PROFESSOR1_31,
             this.CODIGO_PROFESSOR2_31,
@@ -4658,13 +4801,18 @@
             // 
             // HORARIO_GRADE_31
             // 
+            this.HORARIO_GRADE_31.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_31.HeaderText = "HORARIO_GRADE_31";
             this.HORARIO_GRADE_31.Name = "HORARIO_GRADE_31";
             this.HORARIO_GRADE_31.ReadOnly = true;
+            this.HORARIO_GRADE_31.Visible = false;
             // 
             // DIA_SEMANA_GRADE_31
             // 
+            this.DIA_SEMANA_GRADE_31.HeaderText = "DIA_SEMANA_GRADE_31";
             this.DIA_SEMANA_GRADE_31.Name = "DIA_SEMANA_GRADE_31";
             this.DIA_SEMANA_GRADE_31.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_31.Visible = false;
             // 
             // CODIGO_DISCIPLINA_31
             // 
@@ -4676,14 +4824,14 @@
             this.CODIGO_DISCIPLINA_31.ReadOnly = true;
             this.CODIGO_DISCIPLINA_31.Width = 20;
             // 
-            // SEQ_TURMA_31
+            // CODIGO_TURMA_31
             // 
-            this.SEQ_TURMA_31.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_31.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_31.HeaderText = "Turma";
-            this.SEQ_TURMA_31.MinimumWidth = 20;
-            this.SEQ_TURMA_31.Name = "SEQ_TURMA_31";
-            this.SEQ_TURMA_31.ReadOnly = true;
+            this.CODIGO_TURMA_31.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_31.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_31.HeaderText = "Turma";
+            this.CODIGO_TURMA_31.MinimumWidth = 20;
+            this.CODIGO_TURMA_31.Name = "CODIGO_TURMA_31";
+            this.CODIGO_TURMA_31.ReadOnly = true;
             // 
             // CODIGO_ESPACO_31
             // 
@@ -4737,7 +4885,7 @@
             this.HORARIO_GRADE_32,
             this.DIA_SEMANA_GRADE_32,
             this.CODIGO_DISCIPLINA_32,
-            this.SEQ_TURMA_32,
+            this.CODIGO_TURMA_32,
             this.CODIGO_ESPACO_32,
             this.CODIGO_PROFESSOR1_32,
             this.CODIGO_PROFESSOR2_32,
@@ -4758,13 +4906,18 @@
             // 
             // HORARIO_GRADE_32
             // 
+            this.HORARIO_GRADE_32.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_32.HeaderText = "HORARIO_GRADE_32";
             this.HORARIO_GRADE_32.Name = "HORARIO_GRADE_32";
             this.HORARIO_GRADE_32.ReadOnly = true;
+            this.HORARIO_GRADE_32.Visible = false;
             // 
             // DIA_SEMANA_GRADE_32
             // 
+            this.DIA_SEMANA_GRADE_32.HeaderText = "DIA_SEMANA_GRADE_32";
             this.DIA_SEMANA_GRADE_32.Name = "DIA_SEMANA_GRADE_32";
             this.DIA_SEMANA_GRADE_32.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_32.Visible = false;
             // 
             // CODIGO_DISCIPLINA_32
             // 
@@ -4776,14 +4929,14 @@
             this.CODIGO_DISCIPLINA_32.ReadOnly = true;
             this.CODIGO_DISCIPLINA_32.Width = 20;
             // 
-            // SEQ_TURMA_32
+            // CODIGO_TURMA_32
             // 
-            this.SEQ_TURMA_32.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_32.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_32.HeaderText = "Turma";
-            this.SEQ_TURMA_32.MinimumWidth = 20;
-            this.SEQ_TURMA_32.Name = "SEQ_TURMA_32";
-            this.SEQ_TURMA_32.ReadOnly = true;
+            this.CODIGO_TURMA_32.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_32.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_32.HeaderText = "Turma";
+            this.CODIGO_TURMA_32.MinimumWidth = 20;
+            this.CODIGO_TURMA_32.Name = "CODIGO_TURMA_32";
+            this.CODIGO_TURMA_32.ReadOnly = true;
             // 
             // CODIGO_ESPACO_32
             // 
@@ -4837,7 +4990,7 @@
             this.HORARIO_GRADE_33,
             this.DIA_SEMANA_GRADE_33,
             this.CODIGO_DISCIPLINA_33,
-            this.SEQ_TURMA_33,
+            this.CODIGO_TURMA_33,
             this.CODIGO_ESPACO_33,
             this.CODIGO_PROFESSOR1_33,
             this.CODIGO_PROFESSOR2_33,
@@ -4858,13 +5011,18 @@
             // 
             // HORARIO_GRADE_33
             // 
+            this.HORARIO_GRADE_33.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_33.HeaderText = "HORARIO_GRADE_33";
             this.HORARIO_GRADE_33.Name = "HORARIO_GRADE_33";
             this.HORARIO_GRADE_33.ReadOnly = true;
+            this.HORARIO_GRADE_33.Visible = false;
             // 
             // DIA_SEMANA_GRADE_33
             // 
+            this.DIA_SEMANA_GRADE_33.HeaderText = "DIA_SEMANA_GRADE_33";
             this.DIA_SEMANA_GRADE_33.Name = "DIA_SEMANA_GRADE_33";
             this.DIA_SEMANA_GRADE_33.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_33.Visible = false;
             // 
             // CODIGO_DISCIPLINA_33
             // 
@@ -4876,14 +5034,14 @@
             this.CODIGO_DISCIPLINA_33.ReadOnly = true;
             this.CODIGO_DISCIPLINA_33.Width = 20;
             // 
-            // SEQ_TURMA_33
+            // CODIGO_TURMA_33
             // 
-            this.SEQ_TURMA_33.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_33.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_33.HeaderText = "Turma";
-            this.SEQ_TURMA_33.MinimumWidth = 20;
-            this.SEQ_TURMA_33.Name = "SEQ_TURMA_33";
-            this.SEQ_TURMA_33.ReadOnly = true;
+            this.CODIGO_TURMA_33.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_33.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_33.HeaderText = "Turma";
+            this.CODIGO_TURMA_33.MinimumWidth = 20;
+            this.CODIGO_TURMA_33.Name = "CODIGO_TURMA_33";
+            this.CODIGO_TURMA_33.ReadOnly = true;
             // 
             // CODIGO_ESPACO_33
             // 
@@ -4937,7 +5095,7 @@
             this.HORARIO_GRADE_34,
             this.DIA_SEMANA_GRADE_34,
             this.CODIGO_DISCIPLINA_34,
-            this.SEQ_TURMA_34,
+            this.CODIGO_TURMA_34,
             this.CODIGO_ESPACO_34,
             this.CODIGO_PROFESSOR1_34,
             this.CODIGO_PROFESSOR2_34,
@@ -4958,13 +5116,18 @@
             // 
             // HORARIO_GRADE_34
             // 
+            this.HORARIO_GRADE_34.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_34.HeaderText = "HORARIO_GRADE_34";
             this.HORARIO_GRADE_34.Name = "HORARIO_GRADE_34";
             this.HORARIO_GRADE_34.ReadOnly = true;
+            this.HORARIO_GRADE_34.Visible = false;
             // 
             // DIA_SEMANA_GRADE_34
             // 
+            this.DIA_SEMANA_GRADE_34.HeaderText = "DIA_SEMANA_GRADE_34";
             this.DIA_SEMANA_GRADE_34.Name = "DIA_SEMANA_GRADE_34";
             this.DIA_SEMANA_GRADE_34.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_34.Visible = false;
             // 
             // CODIGO_DISCIPLINA_34
             // 
@@ -4976,14 +5139,14 @@
             this.CODIGO_DISCIPLINA_34.ReadOnly = true;
             this.CODIGO_DISCIPLINA_34.Width = 20;
             // 
-            // SEQ_TURMA_34
+            // CODIGO_TURMA_34
             // 
-            this.SEQ_TURMA_34.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_34.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_34.HeaderText = "Turma";
-            this.SEQ_TURMA_34.MinimumWidth = 20;
-            this.SEQ_TURMA_34.Name = "SEQ_TURMA_34";
-            this.SEQ_TURMA_34.ReadOnly = true;
+            this.CODIGO_TURMA_34.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_34.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_34.HeaderText = "Turma";
+            this.CODIGO_TURMA_34.MinimumWidth = 20;
+            this.CODIGO_TURMA_34.Name = "CODIGO_TURMA_34";
+            this.CODIGO_TURMA_34.ReadOnly = true;
             // 
             // CODIGO_ESPACO_34
             // 
@@ -5037,7 +5200,7 @@
             this.HORARIO_GRADE_35,
             this.DIA_SEMANA_GRADE_35,
             this.CODIGO_DISCIPLINA_35,
-            this.SEQ_TURMA_35,
+            this.CODIGO_TURMA_35,
             this.CODIGO_ESPACO_35,
             this.CODIGO_PROFESSOR1_35,
             this.CODIGO_PROFESSOR2_35,
@@ -5058,13 +5221,18 @@
             // 
             // HORARIO_GRADE_35
             // 
+            this.HORARIO_GRADE_35.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_35.HeaderText = "HORARIO_GRADE_35";
             this.HORARIO_GRADE_35.Name = "HORARIO_GRADE_35";
             this.HORARIO_GRADE_35.ReadOnly = true;
+            this.HORARIO_GRADE_35.Visible = false;
             // 
             // DIA_SEMANA_GRADE_35
             // 
+            this.DIA_SEMANA_GRADE_35.HeaderText = "DIA_SEMANA_GRADE_35";
             this.DIA_SEMANA_GRADE_35.Name = "DIA_SEMANA_GRADE_35";
             this.DIA_SEMANA_GRADE_35.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_35.Visible = false;
             // 
             // CODIGO_DISCIPLINA_35
             // 
@@ -5076,14 +5244,14 @@
             this.CODIGO_DISCIPLINA_35.ReadOnly = true;
             this.CODIGO_DISCIPLINA_35.Width = 20;
             // 
-            // SEQ_TURMA_35
+            // CODIGO_TURMA_35
             // 
-            this.SEQ_TURMA_35.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_35.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_35.HeaderText = "Turma";
-            this.SEQ_TURMA_35.MinimumWidth = 20;
-            this.SEQ_TURMA_35.Name = "SEQ_TURMA_35";
-            this.SEQ_TURMA_35.ReadOnly = true;
+            this.CODIGO_TURMA_35.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_35.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_35.HeaderText = "Turma";
+            this.CODIGO_TURMA_35.MinimumWidth = 20;
+            this.CODIGO_TURMA_35.Name = "CODIGO_TURMA_35";
+            this.CODIGO_TURMA_35.ReadOnly = true;
             // 
             // CODIGO_ESPACO_35
             // 
@@ -5137,7 +5305,7 @@
             this.HORARIO_GRADE_36,
             this.DIA_SEMANA_GRADE_36,
             this.CODIGO_DISCIPLINA_36,
-            this.SEQ_TURMA_36,
+            this.CODIGO_TURMA_36,
             this.CODIGO_ESPACO_36,
             this.CODIGO_PROFESSOR1_36,
             this.CODIGO_PROFESSOR2_36,
@@ -5158,13 +5326,18 @@
             // 
             // HORARIO_GRADE_36
             // 
+            this.HORARIO_GRADE_36.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_36.HeaderText = "HORARIO_GRADE_36";
             this.HORARIO_GRADE_36.Name = "HORARIO_GRADE_36";
             this.HORARIO_GRADE_36.ReadOnly = true;
+            this.HORARIO_GRADE_36.Visible = false;
             // 
             // DIA_SEMANA_GRADE_36
             // 
+            this.DIA_SEMANA_GRADE_36.HeaderText = "DIA_SEMANA_GRADE_36";
             this.DIA_SEMANA_GRADE_36.Name = "DIA_SEMANA_GRADE_36";
             this.DIA_SEMANA_GRADE_36.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_36.Visible = false;
             // 
             // CODIGO_DISCIPLINA_36
             // 
@@ -5176,14 +5349,14 @@
             this.CODIGO_DISCIPLINA_36.ReadOnly = true;
             this.CODIGO_DISCIPLINA_36.Width = 20;
             // 
-            // SEQ_TURMA_36
+            // CODIGO_TURMA_36
             // 
-            this.SEQ_TURMA_36.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_36.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_36.HeaderText = "Turma";
-            this.SEQ_TURMA_36.MinimumWidth = 20;
-            this.SEQ_TURMA_36.Name = "SEQ_TURMA_36";
-            this.SEQ_TURMA_36.ReadOnly = true;
+            this.CODIGO_TURMA_36.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_36.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_36.HeaderText = "Turma";
+            this.CODIGO_TURMA_36.MinimumWidth = 20;
+            this.CODIGO_TURMA_36.Name = "CODIGO_TURMA_36";
+            this.CODIGO_TURMA_36.ReadOnly = true;
             // 
             // CODIGO_ESPACO_36
             // 
@@ -5237,7 +5410,7 @@
             this.HORARIO_GRADE_37,
             this.DIA_SEMANA_GRADE_37,
             this.CODIGO_DISCIPLINA_37,
-            this.SEQ_TURMA_37,
+            this.CODIGO_TURMA_37,
             this.CODIGO_ESPACO_37,
             this.CODIGO_PROFESSOR1_37,
             this.CODIGO_PROFESSOR2_37,
@@ -5258,13 +5431,18 @@
             // 
             // HORARIO_GRADE_37
             // 
+            this.HORARIO_GRADE_37.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_37.HeaderText = "HORARIO_GRADE_37";
             this.HORARIO_GRADE_37.Name = "HORARIO_GRADE_37";
             this.HORARIO_GRADE_37.ReadOnly = true;
+            this.HORARIO_GRADE_37.Visible = false;
             // 
             // DIA_SEMANA_GRADE_37
             // 
+            this.DIA_SEMANA_GRADE_37.HeaderText = "DIA_SEMANA_GRADE_37";
             this.DIA_SEMANA_GRADE_37.Name = "DIA_SEMANA_GRADE_37";
             this.DIA_SEMANA_GRADE_37.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_37.Visible = false;
             // 
             // CODIGO_DISCIPLINA_37
             // 
@@ -5276,14 +5454,14 @@
             this.CODIGO_DISCIPLINA_37.ReadOnly = true;
             this.CODIGO_DISCIPLINA_37.Width = 20;
             // 
-            // SEQ_TURMA_37
+            // CODIGO_TURMA_37
             // 
-            this.SEQ_TURMA_37.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_37.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_37.HeaderText = "Turma";
-            this.SEQ_TURMA_37.MinimumWidth = 20;
-            this.SEQ_TURMA_37.Name = "SEQ_TURMA_37";
-            this.SEQ_TURMA_37.ReadOnly = true;
+            this.CODIGO_TURMA_37.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_37.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_37.HeaderText = "Turma";
+            this.CODIGO_TURMA_37.MinimumWidth = 20;
+            this.CODIGO_TURMA_37.Name = "CODIGO_TURMA_37";
+            this.CODIGO_TURMA_37.ReadOnly = true;
             // 
             // CODIGO_ESPACO_37
             // 
@@ -5337,7 +5515,7 @@
             this.HORARIO_GRADE_38,
             this.DIA_SEMANA_GRADE_38,
             this.CODIGO_DISCIPLINA_38,
-            this.SEQ_TURMA_38,
+            this.CODIGO_TURMA_38,
             this.CODIGO_ESPACO_38,
             this.CODIGO_PROFESSOR1_38,
             this.CODIGO_PROFESSOR2_38,
@@ -5358,13 +5536,18 @@
             // 
             // HORARIO_GRADE_38
             // 
+            this.HORARIO_GRADE_38.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_38.HeaderText = "HORARIO_GRADE_38";
             this.HORARIO_GRADE_38.Name = "HORARIO_GRADE_38";
             this.HORARIO_GRADE_38.ReadOnly = true;
+            this.HORARIO_GRADE_38.Visible = false;
             // 
             // DIA_SEMANA_GRADE_38
             // 
+            this.DIA_SEMANA_GRADE_38.HeaderText = "DIA_SEMANA_GRADE_38";
             this.DIA_SEMANA_GRADE_38.Name = "DIA_SEMANA_GRADE_38";
             this.DIA_SEMANA_GRADE_38.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_38.Visible = false;
             // 
             // CODIGO_DISCIPLINA_38
             // 
@@ -5376,14 +5559,14 @@
             this.CODIGO_DISCIPLINA_38.ReadOnly = true;
             this.CODIGO_DISCIPLINA_38.Width = 20;
             // 
-            // SEQ_TURMA_38
+            // CODIGO_TURMA_38
             // 
-            this.SEQ_TURMA_38.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_38.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_38.HeaderText = "Turma";
-            this.SEQ_TURMA_38.MinimumWidth = 20;
-            this.SEQ_TURMA_38.Name = "SEQ_TURMA_38";
-            this.SEQ_TURMA_38.ReadOnly = true;
+            this.CODIGO_TURMA_38.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_38.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_38.HeaderText = "Turma";
+            this.CODIGO_TURMA_38.MinimumWidth = 20;
+            this.CODIGO_TURMA_38.Name = "CODIGO_TURMA_38";
+            this.CODIGO_TURMA_38.ReadOnly = true;
             // 
             // CODIGO_ESPACO_38
             // 
@@ -5437,7 +5620,7 @@
             this.HORARIO_GRADE_39,
             this.DIA_SEMANA_GRADE_39,
             this.CODIGO_DISCIPLINA_39,
-            this.SEQ_TURMA_39,
+            this.CODIGO_TURMA_39,
             this.CODIGO_ESPACO_39,
             this.CODIGO_PROFESSOR1_39,
             this.CODIGO_PROFESSOR2_39,
@@ -5458,13 +5641,18 @@
             // 
             // HORARIO_GRADE_39
             // 
+            this.HORARIO_GRADE_39.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_39.HeaderText = "HORARIO_GRADE_39";
             this.HORARIO_GRADE_39.Name = "HORARIO_GRADE_39";
             this.HORARIO_GRADE_39.ReadOnly = true;
+            this.HORARIO_GRADE_39.Visible = false;
             // 
             // DIA_SEMANA_GRADE_39
             // 
+            this.DIA_SEMANA_GRADE_39.HeaderText = "DIA_SEMANA_GRADE_39";
             this.DIA_SEMANA_GRADE_39.Name = "DIA_SEMANA_GRADE_39";
             this.DIA_SEMANA_GRADE_39.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_39.Visible = false;
             // 
             // CODIGO_DISCIPLINA_39
             // 
@@ -5476,14 +5664,14 @@
             this.CODIGO_DISCIPLINA_39.ReadOnly = true;
             this.CODIGO_DISCIPLINA_39.Width = 20;
             // 
-            // SEQ_TURMA_39
+            // CODIGO_TURMA_39
             // 
-            this.SEQ_TURMA_39.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_39.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_39.HeaderText = "Turma";
-            this.SEQ_TURMA_39.MinimumWidth = 20;
-            this.SEQ_TURMA_39.Name = "SEQ_TURMA_39";
-            this.SEQ_TURMA_39.ReadOnly = true;
+            this.CODIGO_TURMA_39.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_39.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_39.HeaderText = "Turma";
+            this.CODIGO_TURMA_39.MinimumWidth = 20;
+            this.CODIGO_TURMA_39.Name = "CODIGO_TURMA_39";
+            this.CODIGO_TURMA_39.ReadOnly = true;
             // 
             // CODIGO_ESPACO_39
             // 
@@ -5537,7 +5725,7 @@
             this.HORARIO_GRADE_310,
             this.DIA_SEMANA_GRADE_310,
             this.CODIGO_DISCIPLINA_310,
-            this.SEQ_TURMA_310,
+            this.CODIGO_TURMA_310,
             this.CODIGO_ESPACO_310,
             this.CODIGO_PROFESSOR1_310,
             this.CODIGO_PROFESSOR2_310,
@@ -5558,13 +5746,18 @@
             // 
             // HORARIO_GRADE_310
             // 
+            this.HORARIO_GRADE_310.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_310.HeaderText = "HORARIO_GRADE_310";
             this.HORARIO_GRADE_310.Name = "HORARIO_GRADE_310";
             this.HORARIO_GRADE_310.ReadOnly = true;
+            this.HORARIO_GRADE_310.Visible = false;
             // 
             // DIA_SEMANA_GRADE_310
             // 
+            this.DIA_SEMANA_GRADE_310.HeaderText = "DIA_SEMANA_GRADE_310";
             this.DIA_SEMANA_GRADE_310.Name = "DIA_SEMANA_GRADE_310";
             this.DIA_SEMANA_GRADE_310.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_310.Visible = false;
             // 
             // CODIGO_DISCIPLINA_310
             // 
@@ -5576,14 +5769,14 @@
             this.CODIGO_DISCIPLINA_310.ReadOnly = true;
             this.CODIGO_DISCIPLINA_310.Width = 20;
             // 
-            // SEQ_TURMA_310
+            // CODIGO_TURMA_310
             // 
-            this.SEQ_TURMA_310.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_310.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_310.HeaderText = "Turma";
-            this.SEQ_TURMA_310.MinimumWidth = 20;
-            this.SEQ_TURMA_310.Name = "SEQ_TURMA_310";
-            this.SEQ_TURMA_310.ReadOnly = true;
+            this.CODIGO_TURMA_310.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_310.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_310.HeaderText = "Turma";
+            this.CODIGO_TURMA_310.MinimumWidth = 20;
+            this.CODIGO_TURMA_310.Name = "CODIGO_TURMA_310";
+            this.CODIGO_TURMA_310.ReadOnly = true;
             // 
             // CODIGO_ESPACO_310
             // 
@@ -5637,7 +5830,7 @@
             this.HORARIO_GRADE_311,
             this.DIA_SEMANA_GRADE_311,
             this.CODIGO_DISCIPLINA_311,
-            this.SEQ_TURMA_311,
+            this.CODIGO_TURMA_311,
             this.CODIGO_ESPACO_311,
             this.CODIGO_PROFESSOR1_311,
             this.CODIGO_PROFESSOR2_311,
@@ -5658,13 +5851,18 @@
             // 
             // HORARIO_GRADE_311
             // 
+            this.HORARIO_GRADE_311.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_311.HeaderText = "HORARIO_GRADE_311";
             this.HORARIO_GRADE_311.Name = "HORARIO_GRADE_311";
             this.HORARIO_GRADE_311.ReadOnly = true;
+            this.HORARIO_GRADE_311.Visible = false;
             // 
             // DIA_SEMANA_GRADE_311
             // 
+            this.DIA_SEMANA_GRADE_311.HeaderText = "DIA_SEMANA_GRADE_311";
             this.DIA_SEMANA_GRADE_311.Name = "DIA_SEMANA_GRADE_311";
             this.DIA_SEMANA_GRADE_311.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_311.Visible = false;
             // 
             // CODIGO_DISCIPLINA_311
             // 
@@ -5676,14 +5874,14 @@
             this.CODIGO_DISCIPLINA_311.ReadOnly = true;
             this.CODIGO_DISCIPLINA_311.Width = 20;
             // 
-            // SEQ_TURMA_311
+            // CODIGO_TURMA_311
             // 
-            this.SEQ_TURMA_311.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_311.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_311.HeaderText = "Turma";
-            this.SEQ_TURMA_311.MinimumWidth = 20;
-            this.SEQ_TURMA_311.Name = "SEQ_TURMA_311";
-            this.SEQ_TURMA_311.ReadOnly = true;
+            this.CODIGO_TURMA_311.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_311.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_311.HeaderText = "Turma";
+            this.CODIGO_TURMA_311.MinimumWidth = 20;
+            this.CODIGO_TURMA_311.Name = "CODIGO_TURMA_311";
+            this.CODIGO_TURMA_311.ReadOnly = true;
             // 
             // CODIGO_ESPACO_311
             // 
@@ -5737,7 +5935,7 @@
             this.HORARIO_GRADE_312,
             this.DIA_SEMANA_GRADE_312,
             this.CODIGO_DISCIPLINA_312,
-            this.SEQ_TURMA_312,
+            this.CODIGO_TURMA_312,
             this.CODIGO_ESPACO_312,
             this.CODIGO_PROFESSOR1_312,
             this.CODIGO_PROFESSOR2_312,
@@ -5758,13 +5956,18 @@
             // 
             // HORARIO_GRADE_312
             // 
+            this.HORARIO_GRADE_312.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_312.HeaderText = "HORARIO_GRADE_312";
             this.HORARIO_GRADE_312.Name = "HORARIO_GRADE_312";
             this.HORARIO_GRADE_312.ReadOnly = true;
+            this.HORARIO_GRADE_312.Visible = false;
             // 
             // DIA_SEMANA_GRADE_312
             // 
+            this.DIA_SEMANA_GRADE_312.HeaderText = "DIA_SEMANA_GRADE_312";
             this.DIA_SEMANA_GRADE_312.Name = "DIA_SEMANA_GRADE_312";
             this.DIA_SEMANA_GRADE_312.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_312.Visible = false;
             // 
             // CODIGO_DISCIPLINA_312
             // 
@@ -5776,14 +5979,14 @@
             this.CODIGO_DISCIPLINA_312.ReadOnly = true;
             this.CODIGO_DISCIPLINA_312.Width = 20;
             // 
-            // SEQ_TURMA_312
+            // CODIGO_TURMA_312
             // 
-            this.SEQ_TURMA_312.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_312.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_312.HeaderText = "Turma";
-            this.SEQ_TURMA_312.MinimumWidth = 20;
-            this.SEQ_TURMA_312.Name = "SEQ_TURMA_312";
-            this.SEQ_TURMA_312.ReadOnly = true;
+            this.CODIGO_TURMA_312.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_312.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_312.HeaderText = "Turma";
+            this.CODIGO_TURMA_312.MinimumWidth = 20;
+            this.CODIGO_TURMA_312.Name = "CODIGO_TURMA_312";
+            this.CODIGO_TURMA_312.ReadOnly = true;
             // 
             // CODIGO_ESPACO_312
             // 
@@ -5837,7 +6040,7 @@
             this.HORARIO_GRADE_313,
             this.DIA_SEMANA_GRADE_313,
             this.CODIGO_DISCIPLINA_313,
-            this.SEQ_TURMA_313,
+            this.CODIGO_TURMA_313,
             this.CODIGO_ESPACO_313,
             this.CODIGO_PROFESSOR1_313,
             this.CODIGO_PROFESSOR2_313,
@@ -5858,13 +6061,18 @@
             // 
             // HORARIO_GRADE_313
             // 
+            this.HORARIO_GRADE_313.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_313.HeaderText = "HORARIO_GRADE_313";
             this.HORARIO_GRADE_313.Name = "HORARIO_GRADE_313";
             this.HORARIO_GRADE_313.ReadOnly = true;
+            this.HORARIO_GRADE_313.Visible = false;
             // 
             // DIA_SEMANA_GRADE_313
             // 
+            this.DIA_SEMANA_GRADE_313.HeaderText = "DIA_SEMANA_GRADE_313";
             this.DIA_SEMANA_GRADE_313.Name = "DIA_SEMANA_GRADE_313";
             this.DIA_SEMANA_GRADE_313.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_313.Visible = false;
             // 
             // CODIGO_DISCIPLINA_313
             // 
@@ -5876,14 +6084,14 @@
             this.CODIGO_DISCIPLINA_313.ReadOnly = true;
             this.CODIGO_DISCIPLINA_313.Width = 20;
             // 
-            // SEQ_TURMA_313
+            // CODIGO_TURMA_313
             // 
-            this.SEQ_TURMA_313.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_313.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_313.HeaderText = "Turma";
-            this.SEQ_TURMA_313.MinimumWidth = 20;
-            this.SEQ_TURMA_313.Name = "SEQ_TURMA_313";
-            this.SEQ_TURMA_313.ReadOnly = true;
+            this.CODIGO_TURMA_313.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_313.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_313.HeaderText = "Turma";
+            this.CODIGO_TURMA_313.MinimumWidth = 20;
+            this.CODIGO_TURMA_313.Name = "CODIGO_TURMA_313";
+            this.CODIGO_TURMA_313.ReadOnly = true;
             // 
             // CODIGO_ESPACO_313
             // 
@@ -5937,7 +6145,7 @@
             this.HORARIO_GRADE_314,
             this.DIA_SEMANA_GRADE_314,
             this.CODIGO_DISCIPLINA_314,
-            this.SEQ_TURMA_314,
+            this.CODIGO_TURMA_314,
             this.CODIGO_ESPACO_314,
             this.CODIGO_PROFESSOR1_314,
             this.CODIGO_PROFESSOR2_314,
@@ -5958,13 +6166,18 @@
             // 
             // HORARIO_GRADE_314
             // 
+            this.HORARIO_GRADE_314.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_314.HeaderText = "HORARIO_GRADE_314";
             this.HORARIO_GRADE_314.Name = "HORARIO_GRADE_314";
             this.HORARIO_GRADE_314.ReadOnly = true;
+            this.HORARIO_GRADE_314.Visible = false;
             // 
             // DIA_SEMANA_GRADE_314
             // 
+            this.DIA_SEMANA_GRADE_314.HeaderText = "DIA_SEMANA_GRADE_314";
             this.DIA_SEMANA_GRADE_314.Name = "DIA_SEMANA_GRADE_314";
             this.DIA_SEMANA_GRADE_314.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_314.Visible = false;
             // 
             // CODIGO_DISCIPLINA_314
             // 
@@ -5976,14 +6189,14 @@
             this.CODIGO_DISCIPLINA_314.ReadOnly = true;
             this.CODIGO_DISCIPLINA_314.Width = 20;
             // 
-            // SEQ_TURMA_314
+            // CODIGO_TURMA_314
             // 
-            this.SEQ_TURMA_314.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_314.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_314.HeaderText = "Turma";
-            this.SEQ_TURMA_314.MinimumWidth = 20;
-            this.SEQ_TURMA_314.Name = "SEQ_TURMA_314";
-            this.SEQ_TURMA_314.ReadOnly = true;
+            this.CODIGO_TURMA_314.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_314.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_314.HeaderText = "Turma";
+            this.CODIGO_TURMA_314.MinimumWidth = 20;
+            this.CODIGO_TURMA_314.Name = "CODIGO_TURMA_314";
+            this.CODIGO_TURMA_314.ReadOnly = true;
             // 
             // CODIGO_ESPACO_314
             // 
@@ -6037,7 +6250,7 @@
             this.HORARIO_GRADE_41,
             this.DIA_SEMANA_GRADE_41,
             this.CODIGO_DISCIPLINA_41,
-            this.SEQ_TURMA_41,
+            this.CODIGO_TURMA_41,
             this.CODIGO_ESPACO_41,
             this.CODIGO_PROFESSOR1_41,
             this.CODIGO_PROFESSOR2_41,
@@ -6058,13 +6271,18 @@
             // 
             // HORARIO_GRADE_41
             // 
+            this.HORARIO_GRADE_41.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_41.HeaderText = "HORARIO_GRADE_41";
             this.HORARIO_GRADE_41.Name = "HORARIO_GRADE_41";
             this.HORARIO_GRADE_41.ReadOnly = true;
+            this.HORARIO_GRADE_41.Visible = false;
             // 
             // DIA_SEMANA_GRADE_41
             // 
+            this.DIA_SEMANA_GRADE_41.HeaderText = "DIA_SEMANA_GRADE_41";
             this.DIA_SEMANA_GRADE_41.Name = "DIA_SEMANA_GRADE_41";
             this.DIA_SEMANA_GRADE_41.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_41.Visible = false;
             // 
             // CODIGO_DISCIPLINA_41
             // 
@@ -6076,14 +6294,14 @@
             this.CODIGO_DISCIPLINA_41.ReadOnly = true;
             this.CODIGO_DISCIPLINA_41.Width = 20;
             // 
-            // SEQ_TURMA_41
+            // CODIGO_TURMA_41
             // 
-            this.SEQ_TURMA_41.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_41.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_41.HeaderText = "Turma";
-            this.SEQ_TURMA_41.MinimumWidth = 20;
-            this.SEQ_TURMA_41.Name = "SEQ_TURMA_41";
-            this.SEQ_TURMA_41.ReadOnly = true;
+            this.CODIGO_TURMA_41.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_41.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_41.HeaderText = "Turma";
+            this.CODIGO_TURMA_41.MinimumWidth = 20;
+            this.CODIGO_TURMA_41.Name = "CODIGO_TURMA_41";
+            this.CODIGO_TURMA_41.ReadOnly = true;
             // 
             // CODIGO_ESPACO_41
             // 
@@ -6137,7 +6355,7 @@
             this.HORARIO_GRADE_42,
             this.DIA_SEMANA_GRADE_42,
             this.CODIGO_DISCIPLINA_42,
-            this.SEQ_TURMA_42,
+            this.CODIGO_TURMA_42,
             this.CODIGO_ESPACO_42,
             this.CODIGO_PROFESSOR1_42,
             this.CODIGO_PROFESSOR2_42,
@@ -6158,13 +6376,18 @@
             // 
             // HORARIO_GRADE_42
             // 
+            this.HORARIO_GRADE_42.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_42.HeaderText = "HORARIO_GRADE_42";
             this.HORARIO_GRADE_42.Name = "HORARIO_GRADE_42";
             this.HORARIO_GRADE_42.ReadOnly = true;
+            this.HORARIO_GRADE_42.Visible = false;
             // 
             // DIA_SEMANA_GRADE_42
             // 
+            this.DIA_SEMANA_GRADE_42.HeaderText = "DIA_SEMANA_GRADE_42";
             this.DIA_SEMANA_GRADE_42.Name = "DIA_SEMANA_GRADE_42";
             this.DIA_SEMANA_GRADE_42.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_42.Visible = false;
             // 
             // CODIGO_DISCIPLINA_42
             // 
@@ -6176,14 +6399,14 @@
             this.CODIGO_DISCIPLINA_42.ReadOnly = true;
             this.CODIGO_DISCIPLINA_42.Width = 20;
             // 
-            // SEQ_TURMA_42
+            // CODIGO_TURMA_42
             // 
-            this.SEQ_TURMA_42.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_42.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_42.HeaderText = "Turma";
-            this.SEQ_TURMA_42.MinimumWidth = 20;
-            this.SEQ_TURMA_42.Name = "SEQ_TURMA_42";
-            this.SEQ_TURMA_42.ReadOnly = true;
+            this.CODIGO_TURMA_42.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_42.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_42.HeaderText = "Turma";
+            this.CODIGO_TURMA_42.MinimumWidth = 20;
+            this.CODIGO_TURMA_42.Name = "CODIGO_TURMA_42";
+            this.CODIGO_TURMA_42.ReadOnly = true;
             // 
             // CODIGO_ESPACO_42
             // 
@@ -6237,7 +6460,7 @@
             this.HORARIO_GRADE_43,
             this.DIA_SEMANA_GRADE_43,
             this.CODIGO_DISCIPLINA_43,
-            this.SEQ_TURMA_43,
+            this.CODIGO_TURMA_43,
             this.CODIGO_ESPACO_43,
             this.CODIGO_PROFESSOR1_43,
             this.CODIGO_PROFESSOR2_43,
@@ -6258,13 +6481,18 @@
             // 
             // HORARIO_GRADE_43
             // 
+            this.HORARIO_GRADE_43.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_43.HeaderText = "HORARIO_GRADE_43";
             this.HORARIO_GRADE_43.Name = "HORARIO_GRADE_43";
             this.HORARIO_GRADE_43.ReadOnly = true;
+            this.HORARIO_GRADE_43.Visible = false;
             // 
             // DIA_SEMANA_GRADE_43
             // 
+            this.DIA_SEMANA_GRADE_43.HeaderText = "DIA_SEMANA_GRADE_43";
             this.DIA_SEMANA_GRADE_43.Name = "DIA_SEMANA_GRADE_43";
             this.DIA_SEMANA_GRADE_43.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_43.Visible = false;
             // 
             // CODIGO_DISCIPLINA_43
             // 
@@ -6276,14 +6504,14 @@
             this.CODIGO_DISCIPLINA_43.ReadOnly = true;
             this.CODIGO_DISCIPLINA_43.Width = 20;
             // 
-            // SEQ_TURMA_43
+            // CODIGO_TURMA_43
             // 
-            this.SEQ_TURMA_43.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_43.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_43.HeaderText = "Turma";
-            this.SEQ_TURMA_43.MinimumWidth = 20;
-            this.SEQ_TURMA_43.Name = "SEQ_TURMA_43";
-            this.SEQ_TURMA_43.ReadOnly = true;
+            this.CODIGO_TURMA_43.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_43.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_43.HeaderText = "Turma";
+            this.CODIGO_TURMA_43.MinimumWidth = 20;
+            this.CODIGO_TURMA_43.Name = "CODIGO_TURMA_43";
+            this.CODIGO_TURMA_43.ReadOnly = true;
             // 
             // CODIGO_ESPACO_43
             // 
@@ -6337,7 +6565,7 @@
             this.HORARIO_GRADE_44,
             this.DIA_SEMANA_GRADE_44,
             this.CODIGO_DISCIPLINA_44,
-            this.SEQ_TURMA_44,
+            this.CODIGO_TURMA_44,
             this.CODIGO_ESPACO_44,
             this.CODIGO_PROFESSOR1_44,
             this.CODIGO_PROFESSOR2_44,
@@ -6358,13 +6586,18 @@
             // 
             // HORARIO_GRADE_44
             // 
+            this.HORARIO_GRADE_44.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_44.HeaderText = "HORARIO_GRADE_44";
             this.HORARIO_GRADE_44.Name = "HORARIO_GRADE_44";
             this.HORARIO_GRADE_44.ReadOnly = true;
+            this.HORARIO_GRADE_44.Visible = false;
             // 
             // DIA_SEMANA_GRADE_44
             // 
+            this.DIA_SEMANA_GRADE_44.HeaderText = "DIA_SEMANA_GRADE_44";
             this.DIA_SEMANA_GRADE_44.Name = "DIA_SEMANA_GRADE_44";
             this.DIA_SEMANA_GRADE_44.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_44.Visible = false;
             // 
             // CODIGO_DISCIPLINA_44
             // 
@@ -6376,14 +6609,14 @@
             this.CODIGO_DISCIPLINA_44.ReadOnly = true;
             this.CODIGO_DISCIPLINA_44.Width = 20;
             // 
-            // SEQ_TURMA_44
+            // CODIGO_TURMA_44
             // 
-            this.SEQ_TURMA_44.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_44.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_44.HeaderText = "Turma";
-            this.SEQ_TURMA_44.MinimumWidth = 20;
-            this.SEQ_TURMA_44.Name = "SEQ_TURMA_44";
-            this.SEQ_TURMA_44.ReadOnly = true;
+            this.CODIGO_TURMA_44.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_44.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_44.HeaderText = "Turma";
+            this.CODIGO_TURMA_44.MinimumWidth = 20;
+            this.CODIGO_TURMA_44.Name = "CODIGO_TURMA_44";
+            this.CODIGO_TURMA_44.ReadOnly = true;
             // 
             // CODIGO_ESPACO_44
             // 
@@ -6437,7 +6670,7 @@
             this.HORARIO_GRADE_45,
             this.DIA_SEMANA_GRADE_45,
             this.CODIGO_DISCIPLINA_45,
-            this.SEQ_TURMA_45,
+            this.CODIGO_TURMA_45,
             this.CODIGO_ESPACO_45,
             this.CODIGO_PROFESSOR1_45,
             this.CODIGO_PROFESSOR2_45,
@@ -6458,13 +6691,18 @@
             // 
             // HORARIO_GRADE_45
             // 
+            this.HORARIO_GRADE_45.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_45.HeaderText = "HORARIO_GRADE_45";
             this.HORARIO_GRADE_45.Name = "HORARIO_GRADE_45";
             this.HORARIO_GRADE_45.ReadOnly = true;
+            this.HORARIO_GRADE_45.Visible = false;
             // 
             // DIA_SEMANA_GRADE_45
             // 
+            this.DIA_SEMANA_GRADE_45.HeaderText = "DIA_SEMANA_GRADE_45";
             this.DIA_SEMANA_GRADE_45.Name = "DIA_SEMANA_GRADE_45";
             this.DIA_SEMANA_GRADE_45.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_45.Visible = false;
             // 
             // CODIGO_DISCIPLINA_45
             // 
@@ -6476,14 +6714,14 @@
             this.CODIGO_DISCIPLINA_45.ReadOnly = true;
             this.CODIGO_DISCIPLINA_45.Width = 20;
             // 
-            // SEQ_TURMA_45
+            // CODIGO_TURMA_45
             // 
-            this.SEQ_TURMA_45.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_45.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_45.HeaderText = "Turma";
-            this.SEQ_TURMA_45.MinimumWidth = 20;
-            this.SEQ_TURMA_45.Name = "SEQ_TURMA_45";
-            this.SEQ_TURMA_45.ReadOnly = true;
+            this.CODIGO_TURMA_45.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_45.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_45.HeaderText = "Turma";
+            this.CODIGO_TURMA_45.MinimumWidth = 20;
+            this.CODIGO_TURMA_45.Name = "CODIGO_TURMA_45";
+            this.CODIGO_TURMA_45.ReadOnly = true;
             // 
             // CODIGO_ESPACO_45
             // 
@@ -6537,7 +6775,7 @@
             this.HORARIO_GRADE_46,
             this.DIA_SEMANA_GRADE_46,
             this.CODIGO_DISCIPLINA_46,
-            this.SEQ_TURMA_46,
+            this.CODIGO_TURMA_46,
             this.CODIGO_ESPACO_46,
             this.CODIGO_PROFESSOR1_46,
             this.CODIGO_PROFESSOR2_46,
@@ -6558,13 +6796,18 @@
             // 
             // HORARIO_GRADE_46
             // 
+            this.HORARIO_GRADE_46.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_46.HeaderText = "HORARIO_GRADE_46";
             this.HORARIO_GRADE_46.Name = "HORARIO_GRADE_46";
             this.HORARIO_GRADE_46.ReadOnly = true;
+            this.HORARIO_GRADE_46.Visible = false;
             // 
             // DIA_SEMANA_GRADE_46
             // 
+            this.DIA_SEMANA_GRADE_46.HeaderText = "DIA_SEMANA_GRADE_46";
             this.DIA_SEMANA_GRADE_46.Name = "DIA_SEMANA_GRADE_46";
             this.DIA_SEMANA_GRADE_46.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_46.Visible = false;
             // 
             // CODIGO_DISCIPLINA_46
             // 
@@ -6576,14 +6819,14 @@
             this.CODIGO_DISCIPLINA_46.ReadOnly = true;
             this.CODIGO_DISCIPLINA_46.Width = 20;
             // 
-            // SEQ_TURMA_46
+            // CODIGO_TURMA_46
             // 
-            this.SEQ_TURMA_46.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_46.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_46.HeaderText = "Turma";
-            this.SEQ_TURMA_46.MinimumWidth = 20;
-            this.SEQ_TURMA_46.Name = "SEQ_TURMA_46";
-            this.SEQ_TURMA_46.ReadOnly = true;
+            this.CODIGO_TURMA_46.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_46.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_46.HeaderText = "Turma";
+            this.CODIGO_TURMA_46.MinimumWidth = 20;
+            this.CODIGO_TURMA_46.Name = "CODIGO_TURMA_46";
+            this.CODIGO_TURMA_46.ReadOnly = true;
             // 
             // CODIGO_ESPACO_46
             // 
@@ -6637,7 +6880,7 @@
             this.HORARIO_GRADE_47,
             this.DIA_SEMANA_GRADE_47,
             this.CODIGO_DISCIPLINA_47,
-            this.SEQ_TURMA_47,
+            this.CODIGO_TURMA_47,
             this.CODIGO_ESPACO_47,
             this.CODIGO_PROFESSOR1_47,
             this.CODIGO_PROFESSOR2_47,
@@ -6658,13 +6901,18 @@
             // 
             // HORARIO_GRADE_47
             // 
+            this.HORARIO_GRADE_47.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_47.HeaderText = "HORARIO_GRADE_47";
             this.HORARIO_GRADE_47.Name = "HORARIO_GRADE_47";
             this.HORARIO_GRADE_47.ReadOnly = true;
+            this.HORARIO_GRADE_47.Visible = false;
             // 
             // DIA_SEMANA_GRADE_47
             // 
+            this.DIA_SEMANA_GRADE_47.HeaderText = "DIA_SEMANA_GRADE_47";
             this.DIA_SEMANA_GRADE_47.Name = "DIA_SEMANA_GRADE_47";
             this.DIA_SEMANA_GRADE_47.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_47.Visible = false;
             // 
             // CODIGO_DISCIPLINA_47
             // 
@@ -6676,14 +6924,14 @@
             this.CODIGO_DISCIPLINA_47.ReadOnly = true;
             this.CODIGO_DISCIPLINA_47.Width = 20;
             // 
-            // SEQ_TURMA_47
+            // CODIGO_TURMA_47
             // 
-            this.SEQ_TURMA_47.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_47.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_47.HeaderText = "Turma";
-            this.SEQ_TURMA_47.MinimumWidth = 20;
-            this.SEQ_TURMA_47.Name = "SEQ_TURMA_47";
-            this.SEQ_TURMA_47.ReadOnly = true;
+            this.CODIGO_TURMA_47.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_47.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_47.HeaderText = "Turma";
+            this.CODIGO_TURMA_47.MinimumWidth = 20;
+            this.CODIGO_TURMA_47.Name = "CODIGO_TURMA_47";
+            this.CODIGO_TURMA_47.ReadOnly = true;
             // 
             // CODIGO_ESPACO_47
             // 
@@ -6737,7 +6985,7 @@
             this.HORARIO_GRADE_48,
             this.DIA_SEMANA_GRADE_48,
             this.CODIGO_DISCIPLINA_48,
-            this.SEQ_TURMA_48,
+            this.CODIGO_TURMA_48,
             this.CODIGO_ESPACO_48,
             this.CODIGO_PROFESSOR1_48,
             this.CODIGO_PROFESSOR2_48,
@@ -6758,13 +7006,18 @@
             // 
             // HORARIO_GRADE_48
             // 
+            this.HORARIO_GRADE_48.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_48.HeaderText = "HORARIO_GRADE_48";
             this.HORARIO_GRADE_48.Name = "HORARIO_GRADE_48";
             this.HORARIO_GRADE_48.ReadOnly = true;
+            this.HORARIO_GRADE_48.Visible = false;
             // 
             // DIA_SEMANA_GRADE_48
             // 
+            this.DIA_SEMANA_GRADE_48.HeaderText = "DIA_SEMANA_GRADE_48";
             this.DIA_SEMANA_GRADE_48.Name = "DIA_SEMANA_GRADE_48";
             this.DIA_SEMANA_GRADE_48.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_48.Visible = false;
             // 
             // CODIGO_DISCIPLINA_48
             // 
@@ -6776,14 +7029,14 @@
             this.CODIGO_DISCIPLINA_48.ReadOnly = true;
             this.CODIGO_DISCIPLINA_48.Width = 20;
             // 
-            // SEQ_TURMA_48
+            // CODIGO_TURMA_48
             // 
-            this.SEQ_TURMA_48.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_48.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_48.HeaderText = "Turma";
-            this.SEQ_TURMA_48.MinimumWidth = 20;
-            this.SEQ_TURMA_48.Name = "SEQ_TURMA_48";
-            this.SEQ_TURMA_48.ReadOnly = true;
+            this.CODIGO_TURMA_48.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_48.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_48.HeaderText = "Turma";
+            this.CODIGO_TURMA_48.MinimumWidth = 20;
+            this.CODIGO_TURMA_48.Name = "CODIGO_TURMA_48";
+            this.CODIGO_TURMA_48.ReadOnly = true;
             // 
             // CODIGO_ESPACO_48
             // 
@@ -6837,7 +7090,7 @@
             this.HORARIO_GRADE_49,
             this.DIA_SEMANA_GRADE_49,
             this.CODIGO_DISCIPLINA_49,
-            this.SEQ_TURMA_49,
+            this.CODIGO_TURMA_49,
             this.CODIGO_ESPACO_49,
             this.CODIGO_PROFESSOR1_49,
             this.CODIGO_PROFESSOR2_49,
@@ -6858,13 +7111,18 @@
             // 
             // HORARIO_GRADE_49
             // 
+            this.HORARIO_GRADE_49.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_49.HeaderText = "HORARIO_GRADE_49";
             this.HORARIO_GRADE_49.Name = "HORARIO_GRADE_49";
             this.HORARIO_GRADE_49.ReadOnly = true;
+            this.HORARIO_GRADE_49.Visible = false;
             // 
             // DIA_SEMANA_GRADE_49
             // 
+            this.DIA_SEMANA_GRADE_49.HeaderText = "DIA_SEMANA_GRADE_49";
             this.DIA_SEMANA_GRADE_49.Name = "DIA_SEMANA_GRADE_49";
             this.DIA_SEMANA_GRADE_49.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_49.Visible = false;
             // 
             // CODIGO_DISCIPLINA_49
             // 
@@ -6876,14 +7134,14 @@
             this.CODIGO_DISCIPLINA_49.ReadOnly = true;
             this.CODIGO_DISCIPLINA_49.Width = 20;
             // 
-            // SEQ_TURMA_49
+            // CODIGO_TURMA_49
             // 
-            this.SEQ_TURMA_49.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_49.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_49.HeaderText = "Turma";
-            this.SEQ_TURMA_49.MinimumWidth = 20;
-            this.SEQ_TURMA_49.Name = "SEQ_TURMA_49";
-            this.SEQ_TURMA_49.ReadOnly = true;
+            this.CODIGO_TURMA_49.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_49.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_49.HeaderText = "Turma";
+            this.CODIGO_TURMA_49.MinimumWidth = 20;
+            this.CODIGO_TURMA_49.Name = "CODIGO_TURMA_49";
+            this.CODIGO_TURMA_49.ReadOnly = true;
             // 
             // CODIGO_ESPACO_49
             // 
@@ -6937,7 +7195,7 @@
             this.HORARIO_GRADE_410,
             this.DIA_SEMANA_GRADE_410,
             this.CODIGO_DISCIPLINA_410,
-            this.SEQ_TURMA_410,
+            this.CODIGO_TURMA_410,
             this.CODIGO_ESPACO_410,
             this.CODIGO_PROFESSOR1_410,
             this.CODIGO_PROFESSOR2_410,
@@ -6958,13 +7216,18 @@
             // 
             // HORARIO_GRADE_410
             // 
+            this.HORARIO_GRADE_410.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_410.HeaderText = "HORARIO_GRADE_410";
             this.HORARIO_GRADE_410.Name = "HORARIO_GRADE_410";
             this.HORARIO_GRADE_410.ReadOnly = true;
+            this.HORARIO_GRADE_410.Visible = false;
             // 
             // DIA_SEMANA_GRADE_410
             // 
+            this.DIA_SEMANA_GRADE_410.HeaderText = "DIA_SEMANA_GRADE_410";
             this.DIA_SEMANA_GRADE_410.Name = "DIA_SEMANA_GRADE_410";
             this.DIA_SEMANA_GRADE_410.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_410.Visible = false;
             // 
             // CODIGO_DISCIPLINA_410
             // 
@@ -6976,14 +7239,14 @@
             this.CODIGO_DISCIPLINA_410.ReadOnly = true;
             this.CODIGO_DISCIPLINA_410.Width = 20;
             // 
-            // SEQ_TURMA_410
+            // CODIGO_TURMA_410
             // 
-            this.SEQ_TURMA_410.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_410.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_410.HeaderText = "Turma";
-            this.SEQ_TURMA_410.MinimumWidth = 20;
-            this.SEQ_TURMA_410.Name = "SEQ_TURMA_410";
-            this.SEQ_TURMA_410.ReadOnly = true;
+            this.CODIGO_TURMA_410.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_410.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_410.HeaderText = "Turma";
+            this.CODIGO_TURMA_410.MinimumWidth = 20;
+            this.CODIGO_TURMA_410.Name = "CODIGO_TURMA_410";
+            this.CODIGO_TURMA_410.ReadOnly = true;
             // 
             // CODIGO_ESPACO_410
             // 
@@ -7037,7 +7300,7 @@
             this.HORARIO_GRADE_411,
             this.DIA_SEMANA_GRADE_411,
             this.CODIGO_DISCIPLINA_411,
-            this.SEQ_TURMA_411,
+            this.CODIGO_TURMA_411,
             this.CODIGO_ESPACO_411,
             this.CODIGO_PROFESSOR1_411,
             this.CODIGO_PROFESSOR2_411,
@@ -7058,13 +7321,18 @@
             // 
             // HORARIO_GRADE_411
             // 
+            this.HORARIO_GRADE_411.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_411.HeaderText = "HORARIO_GRADE_411";
             this.HORARIO_GRADE_411.Name = "HORARIO_GRADE_411";
             this.HORARIO_GRADE_411.ReadOnly = true;
+            this.HORARIO_GRADE_411.Visible = false;
             // 
             // DIA_SEMANA_GRADE_411
             // 
+            this.DIA_SEMANA_GRADE_411.HeaderText = "DIA_SEMANA_GRADE_411";
             this.DIA_SEMANA_GRADE_411.Name = "DIA_SEMANA_GRADE_411";
             this.DIA_SEMANA_GRADE_411.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_411.Visible = false;
             // 
             // CODIGO_DISCIPLINA_411
             // 
@@ -7076,14 +7344,14 @@
             this.CODIGO_DISCIPLINA_411.ReadOnly = true;
             this.CODIGO_DISCIPLINA_411.Width = 20;
             // 
-            // SEQ_TURMA_411
+            // CODIGO_TURMA_411
             // 
-            this.SEQ_TURMA_411.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_411.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_411.HeaderText = "Turma";
-            this.SEQ_TURMA_411.MinimumWidth = 20;
-            this.SEQ_TURMA_411.Name = "SEQ_TURMA_411";
-            this.SEQ_TURMA_411.ReadOnly = true;
+            this.CODIGO_TURMA_411.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_411.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_411.HeaderText = "Turma";
+            this.CODIGO_TURMA_411.MinimumWidth = 20;
+            this.CODIGO_TURMA_411.Name = "CODIGO_TURMA_411";
+            this.CODIGO_TURMA_411.ReadOnly = true;
             // 
             // CODIGO_ESPACO_411
             // 
@@ -7137,7 +7405,7 @@
             this.HORARIO_GRADE_412,
             this.DIA_SEMANA_GRADE_412,
             this.CODIGO_DISCIPLINA_412,
-            this.SEQ_TURMA_412,
+            this.CODIGO_TURMA_412,
             this.CODIGO_ESPACO_412,
             this.CODIGO_PROFESSOR1_412,
             this.CODIGO_PROFESSOR2_412,
@@ -7158,13 +7426,18 @@
             // 
             // HORARIO_GRADE_412
             // 
+            this.HORARIO_GRADE_412.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_412.HeaderText = "HORARIO_GRADE_412";
             this.HORARIO_GRADE_412.Name = "HORARIO_GRADE_412";
             this.HORARIO_GRADE_412.ReadOnly = true;
+            this.HORARIO_GRADE_412.Visible = false;
             // 
             // DIA_SEMANA_GRADE_412
             // 
+            this.DIA_SEMANA_GRADE_412.HeaderText = "DIA_SEMANA_GRADE_412";
             this.DIA_SEMANA_GRADE_412.Name = "DIA_SEMANA_GRADE_412";
             this.DIA_SEMANA_GRADE_412.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_412.Visible = false;
             // 
             // CODIGO_DISCIPLINA_412
             // 
@@ -7176,14 +7449,14 @@
             this.CODIGO_DISCIPLINA_412.ReadOnly = true;
             this.CODIGO_DISCIPLINA_412.Width = 20;
             // 
-            // SEQ_TURMA_412
+            // CODIGO_TURMA_412
             // 
-            this.SEQ_TURMA_412.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_412.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_412.HeaderText = "Turma";
-            this.SEQ_TURMA_412.MinimumWidth = 20;
-            this.SEQ_TURMA_412.Name = "SEQ_TURMA_412";
-            this.SEQ_TURMA_412.ReadOnly = true;
+            this.CODIGO_TURMA_412.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_412.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_412.HeaderText = "Turma";
+            this.CODIGO_TURMA_412.MinimumWidth = 20;
+            this.CODIGO_TURMA_412.Name = "CODIGO_TURMA_412";
+            this.CODIGO_TURMA_412.ReadOnly = true;
             // 
             // CODIGO_ESPACO_412
             // 
@@ -7237,7 +7510,7 @@
             this.HORARIO_GRADE_413,
             this.DIA_SEMANA_GRADE_413,
             this.CODIGO_DISCIPLINA_413,
-            this.SEQ_TURMA_413,
+            this.CODIGO_TURMA_413,
             this.CODIGO_ESPACO_413,
             this.CODIGO_PROFESSOR1_413,
             this.CODIGO_PROFESSOR2_413,
@@ -7258,13 +7531,18 @@
             // 
             // HORARIO_GRADE_413
             // 
+            this.HORARIO_GRADE_413.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_413.HeaderText = "HORARIO_GRADE_413";
             this.HORARIO_GRADE_413.Name = "HORARIO_GRADE_413";
             this.HORARIO_GRADE_413.ReadOnly = true;
+            this.HORARIO_GRADE_413.Visible = false;
             // 
             // DIA_SEMANA_GRADE_413
             // 
+            this.DIA_SEMANA_GRADE_413.HeaderText = "DIA_SEMANA_GRADE_413";
             this.DIA_SEMANA_GRADE_413.Name = "DIA_SEMANA_GRADE_413";
             this.DIA_SEMANA_GRADE_413.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_413.Visible = false;
             // 
             // CODIGO_DISCIPLINA_413
             // 
@@ -7276,14 +7554,14 @@
             this.CODIGO_DISCIPLINA_413.ReadOnly = true;
             this.CODIGO_DISCIPLINA_413.Width = 20;
             // 
-            // SEQ_TURMA_413
+            // CODIGO_TURMA_413
             // 
-            this.SEQ_TURMA_413.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_413.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_413.HeaderText = "Turma";
-            this.SEQ_TURMA_413.MinimumWidth = 20;
-            this.SEQ_TURMA_413.Name = "SEQ_TURMA_413";
-            this.SEQ_TURMA_413.ReadOnly = true;
+            this.CODIGO_TURMA_413.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_413.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_413.HeaderText = "Turma";
+            this.CODIGO_TURMA_413.MinimumWidth = 20;
+            this.CODIGO_TURMA_413.Name = "CODIGO_TURMA_413";
+            this.CODIGO_TURMA_413.ReadOnly = true;
             // 
             // CODIGO_ESPACO_413
             // 
@@ -7337,7 +7615,7 @@
             this.HORARIO_GRADE_414,
             this.DIA_SEMANA_GRADE_414,
             this.CODIGO_DISCIPLINA_414,
-            this.SEQ_TURMA_414,
+            this.CODIGO_TURMA_414,
             this.CODIGO_ESPACO_414,
             this.CODIGO_PROFESSOR1_414,
             this.CODIGO_PROFESSOR2_414,
@@ -7358,13 +7636,18 @@
             // 
             // HORARIO_GRADE_414
             // 
+            this.HORARIO_GRADE_414.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_414.HeaderText = "HORARIO_GRADE_414";
             this.HORARIO_GRADE_414.Name = "HORARIO_GRADE_414";
             this.HORARIO_GRADE_414.ReadOnly = true;
+            this.HORARIO_GRADE_414.Visible = false;
             // 
             // DIA_SEMANA_GRADE_414
             // 
+            this.DIA_SEMANA_GRADE_414.HeaderText = "DIA_SEMANA_GRADE_414";
             this.DIA_SEMANA_GRADE_414.Name = "DIA_SEMANA_GRADE_414";
             this.DIA_SEMANA_GRADE_414.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_414.Visible = false;
             // 
             // CODIGO_DISCIPLINA_414
             // 
@@ -7376,14 +7659,14 @@
             this.CODIGO_DISCIPLINA_414.ReadOnly = true;
             this.CODIGO_DISCIPLINA_414.Width = 20;
             // 
-            // SEQ_TURMA_414
+            // CODIGO_TURMA_414
             // 
-            this.SEQ_TURMA_414.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_414.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_414.HeaderText = "Turma";
-            this.SEQ_TURMA_414.MinimumWidth = 20;
-            this.SEQ_TURMA_414.Name = "SEQ_TURMA_414";
-            this.SEQ_TURMA_414.ReadOnly = true;
+            this.CODIGO_TURMA_414.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_414.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_414.HeaderText = "Turma";
+            this.CODIGO_TURMA_414.MinimumWidth = 20;
+            this.CODIGO_TURMA_414.Name = "CODIGO_TURMA_414";
+            this.CODIGO_TURMA_414.ReadOnly = true;
             // 
             // CODIGO_ESPACO_414
             // 
@@ -7437,7 +7720,7 @@
             this.HORARIO_GRADE_51,
             this.DIA_SEMANA_GRADE_51,
             this.CODIGO_DISCIPLINA_51,
-            this.SEQ_TURMA_51,
+            this.CODIGO_TURMA_51,
             this.CODIGO_ESPACO_51,
             this.CODIGO_PROFESSOR1_51,
             this.CODIGO_PROFESSOR2_51,
@@ -7458,13 +7741,18 @@
             // 
             // HORARIO_GRADE_51
             // 
+            this.HORARIO_GRADE_51.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_51.HeaderText = "HORARIO_GRADE_51";
             this.HORARIO_GRADE_51.Name = "HORARIO_GRADE_51";
             this.HORARIO_GRADE_51.ReadOnly = true;
+            this.HORARIO_GRADE_51.Visible = false;
             // 
             // DIA_SEMANA_GRADE_51
             // 
+            this.DIA_SEMANA_GRADE_51.HeaderText = "DIA_SEMANA_GRADE_51";
             this.DIA_SEMANA_GRADE_51.Name = "DIA_SEMANA_GRADE_51";
             this.DIA_SEMANA_GRADE_51.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_51.Visible = false;
             // 
             // CODIGO_DISCIPLINA_51
             // 
@@ -7476,14 +7764,14 @@
             this.CODIGO_DISCIPLINA_51.ReadOnly = true;
             this.CODIGO_DISCIPLINA_51.Width = 20;
             // 
-            // SEQ_TURMA_51
+            // CODIGO_TURMA_51
             // 
-            this.SEQ_TURMA_51.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_51.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_51.HeaderText = "Turma";
-            this.SEQ_TURMA_51.MinimumWidth = 20;
-            this.SEQ_TURMA_51.Name = "SEQ_TURMA_51";
-            this.SEQ_TURMA_51.ReadOnly = true;
+            this.CODIGO_TURMA_51.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_51.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_51.HeaderText = "Turma";
+            this.CODIGO_TURMA_51.MinimumWidth = 20;
+            this.CODIGO_TURMA_51.Name = "CODIGO_TURMA_51";
+            this.CODIGO_TURMA_51.ReadOnly = true;
             // 
             // CODIGO_ESPACO_51
             // 
@@ -7537,7 +7825,7 @@
             this.HORARIO_GRADE_52,
             this.DIA_SEMANA_GRADE_52,
             this.CODIGO_DISCIPLINA_52,
-            this.SEQ_TURMA_52,
+            this.CODIGO_TURMA_52,
             this.CODIGO_ESPACO_52,
             this.CODIGO_PROFESSOR1_52,
             this.CODIGO_PROFESSOR2_52,
@@ -7558,13 +7846,18 @@
             // 
             // HORARIO_GRADE_52
             // 
+            this.HORARIO_GRADE_52.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_52.HeaderText = "HORARIO_GRADE_52";
             this.HORARIO_GRADE_52.Name = "HORARIO_GRADE_52";
             this.HORARIO_GRADE_52.ReadOnly = true;
+            this.HORARIO_GRADE_52.Visible = false;
             // 
             // DIA_SEMANA_GRADE_52
             // 
+            this.DIA_SEMANA_GRADE_52.HeaderText = "DIA_SEMANA_GRADE_52";
             this.DIA_SEMANA_GRADE_52.Name = "DIA_SEMANA_GRADE_52";
             this.DIA_SEMANA_GRADE_52.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_52.Visible = false;
             // 
             // CODIGO_DISCIPLINA_52
             // 
@@ -7576,14 +7869,14 @@
             this.CODIGO_DISCIPLINA_52.ReadOnly = true;
             this.CODIGO_DISCIPLINA_52.Width = 20;
             // 
-            // SEQ_TURMA_52
+            // CODIGO_TURMA_52
             // 
-            this.SEQ_TURMA_52.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_52.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_52.HeaderText = "Turma";
-            this.SEQ_TURMA_52.MinimumWidth = 20;
-            this.SEQ_TURMA_52.Name = "SEQ_TURMA_52";
-            this.SEQ_TURMA_52.ReadOnly = true;
+            this.CODIGO_TURMA_52.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_52.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_52.HeaderText = "Turma";
+            this.CODIGO_TURMA_52.MinimumWidth = 20;
+            this.CODIGO_TURMA_52.Name = "CODIGO_TURMA_52";
+            this.CODIGO_TURMA_52.ReadOnly = true;
             // 
             // CODIGO_ESPACO_52
             // 
@@ -7637,7 +7930,7 @@
             this.HORARIO_GRADE_53,
             this.DIA_SEMANA_GRADE_53,
             this.CODIGO_DISCIPLINA_53,
-            this.SEQ_TURMA_53,
+            this.CODIGO_TURMA_53,
             this.CODIGO_ESPACO_53,
             this.CODIGO_PROFESSOR1_53,
             this.CODIGO_PROFESSOR2_53,
@@ -7658,13 +7951,18 @@
             // 
             // HORARIO_GRADE_53
             // 
+            this.HORARIO_GRADE_53.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_53.HeaderText = "HORARIO_GRADE_53";
             this.HORARIO_GRADE_53.Name = "HORARIO_GRADE_53";
             this.HORARIO_GRADE_53.ReadOnly = true;
+            this.HORARIO_GRADE_53.Visible = false;
             // 
             // DIA_SEMANA_GRADE_53
             // 
+            this.DIA_SEMANA_GRADE_53.HeaderText = "DIA_SEMANA_GRADE_53";
             this.DIA_SEMANA_GRADE_53.Name = "DIA_SEMANA_GRADE_53";
             this.DIA_SEMANA_GRADE_53.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_53.Visible = false;
             // 
             // CODIGO_DISCIPLINA_53
             // 
@@ -7676,14 +7974,14 @@
             this.CODIGO_DISCIPLINA_53.ReadOnly = true;
             this.CODIGO_DISCIPLINA_53.Width = 20;
             // 
-            // SEQ_TURMA_53
+            // CODIGO_TURMA_53
             // 
-            this.SEQ_TURMA_53.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_53.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_53.HeaderText = "Turma";
-            this.SEQ_TURMA_53.MinimumWidth = 20;
-            this.SEQ_TURMA_53.Name = "SEQ_TURMA_53";
-            this.SEQ_TURMA_53.ReadOnly = true;
+            this.CODIGO_TURMA_53.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_53.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_53.HeaderText = "Turma";
+            this.CODIGO_TURMA_53.MinimumWidth = 20;
+            this.CODIGO_TURMA_53.Name = "CODIGO_TURMA_53";
+            this.CODIGO_TURMA_53.ReadOnly = true;
             // 
             // CODIGO_ESPACO_53
             // 
@@ -7737,7 +8035,7 @@
             this.HORARIO_GRADE_54,
             this.DIA_SEMANA_GRADE_54,
             this.CODIGO_DISCIPLINA_54,
-            this.SEQ_TURMA_54,
+            this.CODIGO_TURMA_54,
             this.CODIGO_ESPACO_54,
             this.CODIGO_PROFESSOR1_54,
             this.CODIGO_PROFESSOR2_54,
@@ -7758,13 +8056,18 @@
             // 
             // HORARIO_GRADE_54
             // 
+            this.HORARIO_GRADE_54.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_54.HeaderText = "HORARIO_GRADE_54";
             this.HORARIO_GRADE_54.Name = "HORARIO_GRADE_54";
             this.HORARIO_GRADE_54.ReadOnly = true;
+            this.HORARIO_GRADE_54.Visible = false;
             // 
             // DIA_SEMANA_GRADE_54
             // 
+            this.DIA_SEMANA_GRADE_54.HeaderText = "DIA_SEMANA_GRADE_54";
             this.DIA_SEMANA_GRADE_54.Name = "DIA_SEMANA_GRADE_54";
             this.DIA_SEMANA_GRADE_54.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_54.Visible = false;
             // 
             // CODIGO_DISCIPLINA_54
             // 
@@ -7776,14 +8079,14 @@
             this.CODIGO_DISCIPLINA_54.ReadOnly = true;
             this.CODIGO_DISCIPLINA_54.Width = 20;
             // 
-            // SEQ_TURMA_54
+            // CODIGO_TURMA_54
             // 
-            this.SEQ_TURMA_54.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_54.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_54.HeaderText = "Turma";
-            this.SEQ_TURMA_54.MinimumWidth = 20;
-            this.SEQ_TURMA_54.Name = "SEQ_TURMA_54";
-            this.SEQ_TURMA_54.ReadOnly = true;
+            this.CODIGO_TURMA_54.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_54.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_54.HeaderText = "Turma";
+            this.CODIGO_TURMA_54.MinimumWidth = 20;
+            this.CODIGO_TURMA_54.Name = "CODIGO_TURMA_54";
+            this.CODIGO_TURMA_54.ReadOnly = true;
             // 
             // CODIGO_ESPACO_54
             // 
@@ -7837,7 +8140,7 @@
             this.HORARIO_GRADE_55,
             this.DIA_SEMANA_GRADE_55,
             this.CODIGO_DISCIPLINA_55,
-            this.SEQ_TURMA_55,
+            this.CODIGO_TURMA_55,
             this.CODIGO_ESPACO_55,
             this.CODIGO_PROFESSOR1_55,
             this.CODIGO_PROFESSOR2_55,
@@ -7858,13 +8161,18 @@
             // 
             // HORARIO_GRADE_55
             // 
+            this.HORARIO_GRADE_55.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_55.HeaderText = "HORARIO_GRADE_55";
             this.HORARIO_GRADE_55.Name = "HORARIO_GRADE_55";
             this.HORARIO_GRADE_55.ReadOnly = true;
+            this.HORARIO_GRADE_55.Visible = false;
             // 
             // DIA_SEMANA_GRADE_55
             // 
+            this.DIA_SEMANA_GRADE_55.HeaderText = "DIA_SEMANA_GRADE_55";
             this.DIA_SEMANA_GRADE_55.Name = "DIA_SEMANA_GRADE_55";
             this.DIA_SEMANA_GRADE_55.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_55.Visible = false;
             // 
             // CODIGO_DISCIPLINA_55
             // 
@@ -7876,14 +8184,14 @@
             this.CODIGO_DISCIPLINA_55.ReadOnly = true;
             this.CODIGO_DISCIPLINA_55.Width = 20;
             // 
-            // SEQ_TURMA_55
+            // CODIGO_TURMA_55
             // 
-            this.SEQ_TURMA_55.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_55.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_55.HeaderText = "Turma";
-            this.SEQ_TURMA_55.MinimumWidth = 20;
-            this.SEQ_TURMA_55.Name = "SEQ_TURMA_55";
-            this.SEQ_TURMA_55.ReadOnly = true;
+            this.CODIGO_TURMA_55.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_55.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_55.HeaderText = "Turma";
+            this.CODIGO_TURMA_55.MinimumWidth = 20;
+            this.CODIGO_TURMA_55.Name = "CODIGO_TURMA_55";
+            this.CODIGO_TURMA_55.ReadOnly = true;
             // 
             // CODIGO_ESPACO_55
             // 
@@ -7937,7 +8245,7 @@
             this.HORARIO_GRADE_56,
             this.DIA_SEMANA_GRADE_56,
             this.CODIGO_DISCIPLINA_56,
-            this.SEQ_TURMA_56,
+            this.CODIGO_TURMA_56,
             this.CODIGO_ESPACO_56,
             this.CODIGO_PROFESSOR1_56,
             this.CODIGO_PROFESSOR2_56,
@@ -7958,13 +8266,18 @@
             // 
             // HORARIO_GRADE_56
             // 
+            this.HORARIO_GRADE_56.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_56.HeaderText = "HORARIO_GRADE_56";
             this.HORARIO_GRADE_56.Name = "HORARIO_GRADE_56";
             this.HORARIO_GRADE_56.ReadOnly = true;
+            this.HORARIO_GRADE_56.Visible = false;
             // 
             // DIA_SEMANA_GRADE_56
             // 
+            this.DIA_SEMANA_GRADE_56.HeaderText = "DIA_SEMANA_GRADE_56";
             this.DIA_SEMANA_GRADE_56.Name = "DIA_SEMANA_GRADE_56";
             this.DIA_SEMANA_GRADE_56.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_56.Visible = false;
             // 
             // CODIGO_DISCIPLINA_56
             // 
@@ -7976,14 +8289,14 @@
             this.CODIGO_DISCIPLINA_56.ReadOnly = true;
             this.CODIGO_DISCIPLINA_56.Width = 20;
             // 
-            // SEQ_TURMA_56
+            // CODIGO_TURMA_56
             // 
-            this.SEQ_TURMA_56.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_56.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_56.HeaderText = "Turma";
-            this.SEQ_TURMA_56.MinimumWidth = 20;
-            this.SEQ_TURMA_56.Name = "SEQ_TURMA_56";
-            this.SEQ_TURMA_56.ReadOnly = true;
+            this.CODIGO_TURMA_56.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_56.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_56.HeaderText = "Turma";
+            this.CODIGO_TURMA_56.MinimumWidth = 20;
+            this.CODIGO_TURMA_56.Name = "CODIGO_TURMA_56";
+            this.CODIGO_TURMA_56.ReadOnly = true;
             // 
             // CODIGO_ESPACO_56
             // 
@@ -8037,7 +8350,7 @@
             this.HORARIO_GRADE_57,
             this.DIA_SEMANA_GRADE_57,
             this.CODIGO_DISCIPLINA_57,
-            this.SEQ_TURMA_57,
+            this.CODIGO_TURMA_57,
             this.CODIGO_ESPACO_57,
             this.CODIGO_PROFESSOR1_57,
             this.CODIGO_PROFESSOR2_57,
@@ -8058,13 +8371,18 @@
             // 
             // HORARIO_GRADE_57
             // 
+            this.HORARIO_GRADE_57.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_57.HeaderText = "HORARIO_GRADE_57";
             this.HORARIO_GRADE_57.Name = "HORARIO_GRADE_57";
             this.HORARIO_GRADE_57.ReadOnly = true;
+            this.HORARIO_GRADE_57.Visible = false;
             // 
             // DIA_SEMANA_GRADE_57
             // 
+            this.DIA_SEMANA_GRADE_57.HeaderText = "DIA_SEMANA_GRADE_57";
             this.DIA_SEMANA_GRADE_57.Name = "DIA_SEMANA_GRADE_57";
             this.DIA_SEMANA_GRADE_57.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_57.Visible = false;
             // 
             // CODIGO_DISCIPLINA_57
             // 
@@ -8076,14 +8394,14 @@
             this.CODIGO_DISCIPLINA_57.ReadOnly = true;
             this.CODIGO_DISCIPLINA_57.Width = 20;
             // 
-            // SEQ_TURMA_57
+            // CODIGO_TURMA_57
             // 
-            this.SEQ_TURMA_57.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_57.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_57.HeaderText = "Turma";
-            this.SEQ_TURMA_57.MinimumWidth = 20;
-            this.SEQ_TURMA_57.Name = "SEQ_TURMA_57";
-            this.SEQ_TURMA_57.ReadOnly = true;
+            this.CODIGO_TURMA_57.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_57.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_57.HeaderText = "Turma";
+            this.CODIGO_TURMA_57.MinimumWidth = 20;
+            this.CODIGO_TURMA_57.Name = "CODIGO_TURMA_57";
+            this.CODIGO_TURMA_57.ReadOnly = true;
             // 
             // CODIGO_ESPACO_57
             // 
@@ -8137,7 +8455,7 @@
             this.HORARIO_GRADE_58,
             this.DIA_SEMANA_GRADE_58,
             this.CODIGO_DISCIPLINA_58,
-            this.SEQ_TURMA_58,
+            this.CODIGO_TURMA_58,
             this.CODIGO_ESPACO_58,
             this.CODIGO_PROFESSOR1_58,
             this.CODIGO_PROFESSOR2_58,
@@ -8158,13 +8476,18 @@
             // 
             // HORARIO_GRADE_58
             // 
+            this.HORARIO_GRADE_58.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_58.HeaderText = "HORARIO_GRADE_58";
             this.HORARIO_GRADE_58.Name = "HORARIO_GRADE_58";
             this.HORARIO_GRADE_58.ReadOnly = true;
+            this.HORARIO_GRADE_58.Visible = false;
             // 
             // DIA_SEMANA_GRADE_58
             // 
+            this.DIA_SEMANA_GRADE_58.HeaderText = "DIA_SEMANA_GRADE_58";
             this.DIA_SEMANA_GRADE_58.Name = "DIA_SEMANA_GRADE_58";
             this.DIA_SEMANA_GRADE_58.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_58.Visible = false;
             // 
             // CODIGO_DISCIPLINA_58
             // 
@@ -8176,14 +8499,14 @@
             this.CODIGO_DISCIPLINA_58.ReadOnly = true;
             this.CODIGO_DISCIPLINA_58.Width = 20;
             // 
-            // SEQ_TURMA_58
+            // CODIGO_TURMA_58
             // 
-            this.SEQ_TURMA_58.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_58.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_58.HeaderText = "Turma";
-            this.SEQ_TURMA_58.MinimumWidth = 20;
-            this.SEQ_TURMA_58.Name = "SEQ_TURMA_58";
-            this.SEQ_TURMA_58.ReadOnly = true;
+            this.CODIGO_TURMA_58.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_58.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_58.HeaderText = "Turma";
+            this.CODIGO_TURMA_58.MinimumWidth = 20;
+            this.CODIGO_TURMA_58.Name = "CODIGO_TURMA_58";
+            this.CODIGO_TURMA_58.ReadOnly = true;
             // 
             // CODIGO_ESPACO_58
             // 
@@ -8237,7 +8560,7 @@
             this.HORARIO_GRADE_59,
             this.DIA_SEMANA_GRADE_59,
             this.CODIGO_DISCIPLINA_59,
-            this.SEQ_TURMA_59,
+            this.CODIGO_TURMA_59,
             this.CODIGO_ESPACO_59,
             this.CODIGO_PROFESSOR1_59,
             this.CODIGO_PROFESSOR2_59,
@@ -8258,13 +8581,18 @@
             // 
             // HORARIO_GRADE_59
             // 
+            this.HORARIO_GRADE_59.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_59.HeaderText = "HORARIO_GRADE_59";
             this.HORARIO_GRADE_59.Name = "HORARIO_GRADE_59";
             this.HORARIO_GRADE_59.ReadOnly = true;
+            this.HORARIO_GRADE_59.Visible = false;
             // 
             // DIA_SEMANA_GRADE_59
             // 
+            this.DIA_SEMANA_GRADE_59.HeaderText = "DIA_SEMANA_GRADE_59";
             this.DIA_SEMANA_GRADE_59.Name = "DIA_SEMANA_GRADE_59";
             this.DIA_SEMANA_GRADE_59.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_59.Visible = false;
             // 
             // CODIGO_DISCIPLINA_59
             // 
@@ -8276,14 +8604,14 @@
             this.CODIGO_DISCIPLINA_59.ReadOnly = true;
             this.CODIGO_DISCIPLINA_59.Width = 20;
             // 
-            // SEQ_TURMA_59
+            // CODIGO_TURMA_59
             // 
-            this.SEQ_TURMA_59.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_59.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_59.HeaderText = "Turma";
-            this.SEQ_TURMA_59.MinimumWidth = 20;
-            this.SEQ_TURMA_59.Name = "SEQ_TURMA_59";
-            this.SEQ_TURMA_59.ReadOnly = true;
+            this.CODIGO_TURMA_59.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_59.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_59.HeaderText = "Turma";
+            this.CODIGO_TURMA_59.MinimumWidth = 20;
+            this.CODIGO_TURMA_59.Name = "CODIGO_TURMA_59";
+            this.CODIGO_TURMA_59.ReadOnly = true;
             // 
             // CODIGO_ESPACO_59
             // 
@@ -8337,7 +8665,7 @@
             this.HORARIO_GRADE_510,
             this.DIA_SEMANA_GRADE_510,
             this.CODIGO_DISCIPLINA_510,
-            this.SEQ_TURMA_510,
+            this.CODIGO_TURMA_510,
             this.CODIGO_ESPACO_510,
             this.CODIGO_PROFESSOR1_510,
             this.CODIGO_PROFESSOR2_510,
@@ -8358,13 +8686,18 @@
             // 
             // HORARIO_GRADE_510
             // 
+            this.HORARIO_GRADE_510.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_510.HeaderText = "HORARIO_GRADE_510";
             this.HORARIO_GRADE_510.Name = "HORARIO_GRADE_510";
             this.HORARIO_GRADE_510.ReadOnly = true;
+            this.HORARIO_GRADE_510.Visible = false;
             // 
             // DIA_SEMANA_GRADE_510
             // 
+            this.DIA_SEMANA_GRADE_510.HeaderText = "DIA_SEMANA_GRADE_510";
             this.DIA_SEMANA_GRADE_510.Name = "DIA_SEMANA_GRADE_510";
             this.DIA_SEMANA_GRADE_510.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_510.Visible = false;
             // 
             // CODIGO_DISCIPLINA_510
             // 
@@ -8376,14 +8709,14 @@
             this.CODIGO_DISCIPLINA_510.ReadOnly = true;
             this.CODIGO_DISCIPLINA_510.Width = 20;
             // 
-            // SEQ_TURMA_510
+            // CODIGO_TURMA_510
             // 
-            this.SEQ_TURMA_510.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_510.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_510.HeaderText = "Turma";
-            this.SEQ_TURMA_510.MinimumWidth = 20;
-            this.SEQ_TURMA_510.Name = "SEQ_TURMA_510";
-            this.SEQ_TURMA_510.ReadOnly = true;
+            this.CODIGO_TURMA_510.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_510.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_510.HeaderText = "Turma";
+            this.CODIGO_TURMA_510.MinimumWidth = 20;
+            this.CODIGO_TURMA_510.Name = "CODIGO_TURMA_510";
+            this.CODIGO_TURMA_510.ReadOnly = true;
             // 
             // CODIGO_ESPACO_510
             // 
@@ -8437,7 +8770,7 @@
             this.HORARIO_GRADE_511,
             this.DIA_SEMANA_GRADE_511,
             this.CODIGO_DISCIPLINA_511,
-            this.SEQ_TURMA_511,
+            this.CODIGO_TURMA_511,
             this.CODIGO_ESPACO_511,
             this.CODIGO_PROFESSOR1_511,
             this.CODIGO_PROFESSOR2_511,
@@ -8458,13 +8791,18 @@
             // 
             // HORARIO_GRADE_511
             // 
+            this.HORARIO_GRADE_511.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_511.HeaderText = "HORARIO_GRADE_511";
             this.HORARIO_GRADE_511.Name = "HORARIO_GRADE_511";
             this.HORARIO_GRADE_511.ReadOnly = true;
+            this.HORARIO_GRADE_511.Visible = false;
             // 
             // DIA_SEMANA_GRADE_511
             // 
+            this.DIA_SEMANA_GRADE_511.HeaderText = "DIA_SEMANA_GRADE_511";
             this.DIA_SEMANA_GRADE_511.Name = "DIA_SEMANA_GRADE_511";
             this.DIA_SEMANA_GRADE_511.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_511.Visible = false;
             // 
             // CODIGO_DISCIPLINA_511
             // 
@@ -8476,14 +8814,14 @@
             this.CODIGO_DISCIPLINA_511.ReadOnly = true;
             this.CODIGO_DISCIPLINA_511.Width = 20;
             // 
-            // SEQ_TURMA_511
+            // CODIGO_TURMA_511
             // 
-            this.SEQ_TURMA_511.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_511.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_511.HeaderText = "Turma";
-            this.SEQ_TURMA_511.MinimumWidth = 20;
-            this.SEQ_TURMA_511.Name = "SEQ_TURMA_511";
-            this.SEQ_TURMA_511.ReadOnly = true;
+            this.CODIGO_TURMA_511.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_511.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_511.HeaderText = "Turma";
+            this.CODIGO_TURMA_511.MinimumWidth = 20;
+            this.CODIGO_TURMA_511.Name = "CODIGO_TURMA_511";
+            this.CODIGO_TURMA_511.ReadOnly = true;
             // 
             // CODIGO_ESPACO_511
             // 
@@ -8537,7 +8875,7 @@
             this.HORARIO_GRADE_512,
             this.DIA_SEMANA_GRADE_512,
             this.CODIGO_DISCIPLINA_512,
-            this.SEQ_TURMA_512,
+            this.CODIGO_TURMA_512,
             this.CODIGO_ESPACO_512,
             this.CODIGO_PROFESSOR1_512,
             this.CODIGO_PROFESSOR2_512,
@@ -8558,13 +8896,18 @@
             // 
             // HORARIO_GRADE_512
             // 
+            this.HORARIO_GRADE_512.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_512.HeaderText = "HORARIO_GRADE_512";
             this.HORARIO_GRADE_512.Name = "HORARIO_GRADE_512";
             this.HORARIO_GRADE_512.ReadOnly = true;
+            this.HORARIO_GRADE_512.Visible = false;
             // 
             // DIA_SEMANA_GRADE_512
             // 
+            this.DIA_SEMANA_GRADE_512.HeaderText = "DIA_SEMANA_GRADE_512";
             this.DIA_SEMANA_GRADE_512.Name = "DIA_SEMANA_GRADE_512";
             this.DIA_SEMANA_GRADE_512.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_512.Visible = false;
             // 
             // CODIGO_DISCIPLINA_512
             // 
@@ -8576,14 +8919,14 @@
             this.CODIGO_DISCIPLINA_512.ReadOnly = true;
             this.CODIGO_DISCIPLINA_512.Width = 20;
             // 
-            // SEQ_TURMA_512
+            // CODIGO_TURMA_512
             // 
-            this.SEQ_TURMA_512.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_512.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_512.HeaderText = "Turma";
-            this.SEQ_TURMA_512.MinimumWidth = 20;
-            this.SEQ_TURMA_512.Name = "SEQ_TURMA_512";
-            this.SEQ_TURMA_512.ReadOnly = true;
+            this.CODIGO_TURMA_512.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_512.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_512.HeaderText = "Turma";
+            this.CODIGO_TURMA_512.MinimumWidth = 20;
+            this.CODIGO_TURMA_512.Name = "CODIGO_TURMA_512";
+            this.CODIGO_TURMA_512.ReadOnly = true;
             // 
             // CODIGO_ESPACO_512
             // 
@@ -8637,7 +8980,7 @@
             this.HORARIO_GRADE_513,
             this.DIA_SEMANA_GRADE_513,
             this.CODIGO_DISCIPLINA_513,
-            this.SEQ_TURMA_513,
+            this.CODIGO_TURMA_513,
             this.CODIGO_ESPACO_513,
             this.CODIGO_PROFESSOR1_513,
             this.CODIGO_PROFESSOR2_513,
@@ -8658,13 +9001,18 @@
             // 
             // HORARIO_GRADE_513
             // 
+            this.HORARIO_GRADE_513.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_513.HeaderText = "HORARIO_GRADE_513";
             this.HORARIO_GRADE_513.Name = "HORARIO_GRADE_513";
             this.HORARIO_GRADE_513.ReadOnly = true;
+            this.HORARIO_GRADE_513.Visible = false;
             // 
             // DIA_SEMANA_GRADE_513
             // 
+            this.DIA_SEMANA_GRADE_513.HeaderText = "DIA_SEMANA_GRADE_513";
             this.DIA_SEMANA_GRADE_513.Name = "DIA_SEMANA_GRADE_513";
             this.DIA_SEMANA_GRADE_513.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_513.Visible = false;
             // 
             // CODIGO_DISCIPLINA_513
             // 
@@ -8676,14 +9024,14 @@
             this.CODIGO_DISCIPLINA_513.ReadOnly = true;
             this.CODIGO_DISCIPLINA_513.Width = 20;
             // 
-            // SEQ_TURMA_513
+            // CODIGO_TURMA_513
             // 
-            this.SEQ_TURMA_513.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_513.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_513.HeaderText = "Turma";
-            this.SEQ_TURMA_513.MinimumWidth = 20;
-            this.SEQ_TURMA_513.Name = "SEQ_TURMA_513";
-            this.SEQ_TURMA_513.ReadOnly = true;
+            this.CODIGO_TURMA_513.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_513.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_513.HeaderText = "Turma";
+            this.CODIGO_TURMA_513.MinimumWidth = 20;
+            this.CODIGO_TURMA_513.Name = "CODIGO_TURMA_513";
+            this.CODIGO_TURMA_513.ReadOnly = true;
             // 
             // CODIGO_ESPACO_513
             // 
@@ -8737,7 +9085,7 @@
             this.HORARIO_GRADE_514,
             this.DIA_SEMANA_GRADE_514,
             this.CODIGO_DISCIPLINA_514,
-            this.SEQ_TURMA_514,
+            this.CODIGO_TURMA_514,
             this.CODIGO_ESPACO_514,
             this.CODIGO_PROFESSOR1_514,
             this.CODIGO_PROFESSOR2_514,
@@ -8758,13 +9106,18 @@
             // 
             // HORARIO_GRADE_514
             // 
+            this.HORARIO_GRADE_514.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_514.HeaderText = "HORARIO_GRADE_514";
             this.HORARIO_GRADE_514.Name = "HORARIO_GRADE_514";
             this.HORARIO_GRADE_514.ReadOnly = true;
+            this.HORARIO_GRADE_514.Visible = false;
             // 
             // DIA_SEMANA_GRADE_514
             // 
+            this.DIA_SEMANA_GRADE_514.HeaderText = "DIA_SEMANA_GRADE_514";
             this.DIA_SEMANA_GRADE_514.Name = "DIA_SEMANA_GRADE_514";
             this.DIA_SEMANA_GRADE_514.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_514.Visible = false;
             // 
             // CODIGO_DISCIPLINA_514
             // 
@@ -8776,14 +9129,14 @@
             this.CODIGO_DISCIPLINA_514.ReadOnly = true;
             this.CODIGO_DISCIPLINA_514.Width = 20;
             // 
-            // SEQ_TURMA_514
+            // CODIGO_TURMA_514
             // 
-            this.SEQ_TURMA_514.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_514.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_514.HeaderText = "Turma";
-            this.SEQ_TURMA_514.MinimumWidth = 20;
-            this.SEQ_TURMA_514.Name = "SEQ_TURMA_514";
-            this.SEQ_TURMA_514.ReadOnly = true;
+            this.CODIGO_TURMA_514.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_514.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_514.HeaderText = "Turma";
+            this.CODIGO_TURMA_514.MinimumWidth = 20;
+            this.CODIGO_TURMA_514.Name = "CODIGO_TURMA_514";
+            this.CODIGO_TURMA_514.ReadOnly = true;
             // 
             // CODIGO_ESPACO_514
             // 
@@ -8837,7 +9190,7 @@
             this.HORARIO_GRADE_61,
             this.DIA_SEMANA_GRADE_61,
             this.CODIGO_DISCIPLINA_61,
-            this.SEQ_TURMA_61,
+            this.CODIGO_TURMA_61,
             this.CODIGO_ESPACO_61,
             this.CODIGO_PROFESSOR1_61,
             this.CODIGO_PROFESSOR2_61,
@@ -8858,13 +9211,18 @@
             // 
             // HORARIO_GRADE_61
             // 
+            this.HORARIO_GRADE_61.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_61.HeaderText = "HORARIO_GRADE_61";
             this.HORARIO_GRADE_61.Name = "HORARIO_GRADE_61";
             this.HORARIO_GRADE_61.ReadOnly = true;
+            this.HORARIO_GRADE_61.Visible = false;
             // 
             // DIA_SEMANA_GRADE_61
             // 
+            this.DIA_SEMANA_GRADE_61.HeaderText = "DIA_SEMANA_GRADE_61";
             this.DIA_SEMANA_GRADE_61.Name = "DIA_SEMANA_GRADE_61";
             this.DIA_SEMANA_GRADE_61.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_61.Visible = false;
             // 
             // CODIGO_DISCIPLINA_61
             // 
@@ -8876,14 +9234,14 @@
             this.CODIGO_DISCIPLINA_61.ReadOnly = true;
             this.CODIGO_DISCIPLINA_61.Width = 20;
             // 
-            // SEQ_TURMA_61
+            // CODIGO_TURMA_61
             // 
-            this.SEQ_TURMA_61.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_61.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_61.HeaderText = "Turma";
-            this.SEQ_TURMA_61.MinimumWidth = 20;
-            this.SEQ_TURMA_61.Name = "SEQ_TURMA_61";
-            this.SEQ_TURMA_61.ReadOnly = true;
+            this.CODIGO_TURMA_61.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_61.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_61.HeaderText = "Turma";
+            this.CODIGO_TURMA_61.MinimumWidth = 20;
+            this.CODIGO_TURMA_61.Name = "CODIGO_TURMA_61";
+            this.CODIGO_TURMA_61.ReadOnly = true;
             // 
             // CODIGO_ESPACO_61
             // 
@@ -8937,7 +9295,7 @@
             this.HORARIO_GRADE_62,
             this.DIA_SEMANA_GRADE_62,
             this.CODIGO_DISCIPLINA_62,
-            this.SEQ_TURMA_62,
+            this.CODIGO_TURMA_62,
             this.CODIGO_ESPACO_62,
             this.CODIGO_PROFESSOR1_62,
             this.CODIGO_PROFESSOR2_62,
@@ -8958,13 +9316,18 @@
             // 
             // HORARIO_GRADE_62
             // 
+            this.HORARIO_GRADE_62.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_62.HeaderText = "HORARIO_GRADE_62";
             this.HORARIO_GRADE_62.Name = "HORARIO_GRADE_62";
             this.HORARIO_GRADE_62.ReadOnly = true;
+            this.HORARIO_GRADE_62.Visible = false;
             // 
             // DIA_SEMANA_GRADE_62
             // 
+            this.DIA_SEMANA_GRADE_62.HeaderText = "DIA_SEMANA_GRADE_62";
             this.DIA_SEMANA_GRADE_62.Name = "DIA_SEMANA_GRADE_62";
             this.DIA_SEMANA_GRADE_62.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_62.Visible = false;
             // 
             // CODIGO_DISCIPLINA_62
             // 
@@ -8976,14 +9339,14 @@
             this.CODIGO_DISCIPLINA_62.ReadOnly = true;
             this.CODIGO_DISCIPLINA_62.Width = 20;
             // 
-            // SEQ_TURMA_62
+            // CODIGO_TURMA_62
             // 
-            this.SEQ_TURMA_62.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_62.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_62.HeaderText = "Turma";
-            this.SEQ_TURMA_62.MinimumWidth = 20;
-            this.SEQ_TURMA_62.Name = "SEQ_TURMA_62";
-            this.SEQ_TURMA_62.ReadOnly = true;
+            this.CODIGO_TURMA_62.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_62.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_62.HeaderText = "Turma";
+            this.CODIGO_TURMA_62.MinimumWidth = 20;
+            this.CODIGO_TURMA_62.Name = "CODIGO_TURMA_62";
+            this.CODIGO_TURMA_62.ReadOnly = true;
             // 
             // CODIGO_ESPACO_62
             // 
@@ -9037,7 +9400,7 @@
             this.HORARIO_GRADE_63,
             this.DIA_SEMANA_GRADE_63,
             this.CODIGO_DISCIPLINA_63,
-            this.SEQ_TURMA_63,
+            this.CODIGO_TURMA_63,
             this.CODIGO_ESPACO_63,
             this.CODIGO_PROFESSOR1_63,
             this.CODIGO_PROFESSOR2_63,
@@ -9058,13 +9421,18 @@
             // 
             // HORARIO_GRADE_63
             // 
+            this.HORARIO_GRADE_63.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_63.HeaderText = "HORARIO_GRADE_63";
             this.HORARIO_GRADE_63.Name = "HORARIO_GRADE_63";
             this.HORARIO_GRADE_63.ReadOnly = true;
+            this.HORARIO_GRADE_63.Visible = false;
             // 
             // DIA_SEMANA_GRADE_63
             // 
+            this.DIA_SEMANA_GRADE_63.HeaderText = "DIA_SEMANA_GRADE_63";
             this.DIA_SEMANA_GRADE_63.Name = "DIA_SEMANA_GRADE_63";
             this.DIA_SEMANA_GRADE_63.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_63.Visible = false;
             // 
             // CODIGO_DISCIPLINA_63
             // 
@@ -9076,14 +9444,14 @@
             this.CODIGO_DISCIPLINA_63.ReadOnly = true;
             this.CODIGO_DISCIPLINA_63.Width = 20;
             // 
-            // SEQ_TURMA_63
+            // CODIGO_TURMA_63
             // 
-            this.SEQ_TURMA_63.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_63.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_63.HeaderText = "Turma";
-            this.SEQ_TURMA_63.MinimumWidth = 20;
-            this.SEQ_TURMA_63.Name = "SEQ_TURMA_63";
-            this.SEQ_TURMA_63.ReadOnly = true;
+            this.CODIGO_TURMA_63.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_63.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_63.HeaderText = "Turma";
+            this.CODIGO_TURMA_63.MinimumWidth = 20;
+            this.CODIGO_TURMA_63.Name = "CODIGO_TURMA_63";
+            this.CODIGO_TURMA_63.ReadOnly = true;
             // 
             // CODIGO_ESPACO_63
             // 
@@ -9137,7 +9505,7 @@
             this.HORARIO_GRADE_64,
             this.DIA_SEMANA_GRADE_64,
             this.CODIGO_DISCIPLINA_64,
-            this.SEQ_TURMA_64,
+            this.CODIGO_TURMA_64,
             this.CODIGO_ESPACO_64,
             this.CODIGO_PROFESSOR1_64,
             this.CODIGO_PROFESSOR2_64,
@@ -9158,13 +9526,18 @@
             // 
             // HORARIO_GRADE_64
             // 
+            this.HORARIO_GRADE_64.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_64.HeaderText = "HORARIO_GRADE_64";
             this.HORARIO_GRADE_64.Name = "HORARIO_GRADE_64";
             this.HORARIO_GRADE_64.ReadOnly = true;
+            this.HORARIO_GRADE_64.Visible = false;
             // 
             // DIA_SEMANA_GRADE_64
             // 
+            this.DIA_SEMANA_GRADE_64.HeaderText = "DIA_SEMANA_GRADE_64";
             this.DIA_SEMANA_GRADE_64.Name = "DIA_SEMANA_GRADE_64";
             this.DIA_SEMANA_GRADE_64.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_64.Visible = false;
             // 
             // CODIGO_DISCIPLINA_64
             // 
@@ -9176,14 +9549,14 @@
             this.CODIGO_DISCIPLINA_64.ReadOnly = true;
             this.CODIGO_DISCIPLINA_64.Width = 20;
             // 
-            // SEQ_TURMA_64
+            // CODIGO_TURMA_64
             // 
-            this.SEQ_TURMA_64.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_64.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_64.HeaderText = "Turma";
-            this.SEQ_TURMA_64.MinimumWidth = 20;
-            this.SEQ_TURMA_64.Name = "SEQ_TURMA_64";
-            this.SEQ_TURMA_64.ReadOnly = true;
+            this.CODIGO_TURMA_64.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_64.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_64.HeaderText = "Turma";
+            this.CODIGO_TURMA_64.MinimumWidth = 20;
+            this.CODIGO_TURMA_64.Name = "CODIGO_TURMA_64";
+            this.CODIGO_TURMA_64.ReadOnly = true;
             // 
             // CODIGO_ESPACO_64
             // 
@@ -9237,7 +9610,7 @@
             this.HORARIO_GRADE_65,
             this.DIA_SEMANA_GRADE_65,
             this.CODIGO_DISCIPLINA_65,
-            this.SEQ_TURMA_65,
+            this.CODIGO_TURMA_65,
             this.CODIGO_ESPACO_65,
             this.CODIGO_PROFESSOR1_65,
             this.CODIGO_PROFESSOR2_65,
@@ -9258,13 +9631,18 @@
             // 
             // HORARIO_GRADE_65
             // 
+            this.HORARIO_GRADE_65.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_65.HeaderText = "HORARIO_GRADE_65";
             this.HORARIO_GRADE_65.Name = "HORARIO_GRADE_65";
             this.HORARIO_GRADE_65.ReadOnly = true;
+            this.HORARIO_GRADE_65.Visible = false;
             // 
             // DIA_SEMANA_GRADE_65
             // 
+            this.DIA_SEMANA_GRADE_65.HeaderText = "DIA_SEMANA_GRADE_65";
             this.DIA_SEMANA_GRADE_65.Name = "DIA_SEMANA_GRADE_65";
             this.DIA_SEMANA_GRADE_65.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_65.Visible = false;
             // 
             // CODIGO_DISCIPLINA_65
             // 
@@ -9276,14 +9654,14 @@
             this.CODIGO_DISCIPLINA_65.ReadOnly = true;
             this.CODIGO_DISCIPLINA_65.Width = 20;
             // 
-            // SEQ_TURMA_65
+            // CODIGO_TURMA_65
             // 
-            this.SEQ_TURMA_65.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_65.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_65.HeaderText = "Turma";
-            this.SEQ_TURMA_65.MinimumWidth = 20;
-            this.SEQ_TURMA_65.Name = "SEQ_TURMA_65";
-            this.SEQ_TURMA_65.ReadOnly = true;
+            this.CODIGO_TURMA_65.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_65.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_65.HeaderText = "Turma";
+            this.CODIGO_TURMA_65.MinimumWidth = 20;
+            this.CODIGO_TURMA_65.Name = "CODIGO_TURMA_65";
+            this.CODIGO_TURMA_65.ReadOnly = true;
             // 
             // CODIGO_ESPACO_65
             // 
@@ -9337,7 +9715,7 @@
             this.HORARIO_GRADE_66,
             this.DIA_SEMANA_GRADE_66,
             this.CODIGO_DISCIPLINA_66,
-            this.SEQ_TURMA_66,
+            this.CODIGO_TURMA_66,
             this.CODIGO_ESPACO_66,
             this.CODIGO_PROFESSOR1_66,
             this.CODIGO_PROFESSOR2_66,
@@ -9358,13 +9736,18 @@
             // 
             // HORARIO_GRADE_66
             // 
+            this.HORARIO_GRADE_66.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_66.HeaderText = "HORARIO_GRADE_66";
             this.HORARIO_GRADE_66.Name = "HORARIO_GRADE_66";
             this.HORARIO_GRADE_66.ReadOnly = true;
+            this.HORARIO_GRADE_66.Visible = false;
             // 
             // DIA_SEMANA_GRADE_66
             // 
+            this.DIA_SEMANA_GRADE_66.HeaderText = "DIA_SEMANA_GRADE_66";
             this.DIA_SEMANA_GRADE_66.Name = "DIA_SEMANA_GRADE_66";
             this.DIA_SEMANA_GRADE_66.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_66.Visible = false;
             // 
             // CODIGO_DISCIPLINA_66
             // 
@@ -9376,14 +9759,14 @@
             this.CODIGO_DISCIPLINA_66.ReadOnly = true;
             this.CODIGO_DISCIPLINA_66.Width = 20;
             // 
-            // SEQ_TURMA_66
+            // CODIGO_TURMA_66
             // 
-            this.SEQ_TURMA_66.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_66.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_66.HeaderText = "Turma";
-            this.SEQ_TURMA_66.MinimumWidth = 20;
-            this.SEQ_TURMA_66.Name = "SEQ_TURMA_66";
-            this.SEQ_TURMA_66.ReadOnly = true;
+            this.CODIGO_TURMA_66.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_66.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_66.HeaderText = "Turma";
+            this.CODIGO_TURMA_66.MinimumWidth = 20;
+            this.CODIGO_TURMA_66.Name = "CODIGO_TURMA_66";
+            this.CODIGO_TURMA_66.ReadOnly = true;
             // 
             // CODIGO_ESPACO_66
             // 
@@ -9437,7 +9820,7 @@
             this.HORARIO_GRADE_67,
             this.DIA_SEMANA_GRADE_67,
             this.CODIGO_DISCIPLINA_67,
-            this.SEQ_TURMA_67,
+            this.CODIGO_TURMA_67,
             this.CODIGO_ESPACO_67,
             this.CODIGO_PROFESSOR1_67,
             this.CODIGO_PROFESSOR2_67,
@@ -9458,13 +9841,18 @@
             // 
             // HORARIO_GRADE_67
             // 
+            this.HORARIO_GRADE_67.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_67.HeaderText = "HORARIO_GRADE_67";
             this.HORARIO_GRADE_67.Name = "HORARIO_GRADE_67";
             this.HORARIO_GRADE_67.ReadOnly = true;
+            this.HORARIO_GRADE_67.Visible = false;
             // 
             // DIA_SEMANA_GRADE_67
             // 
+            this.DIA_SEMANA_GRADE_67.HeaderText = "DIA_SEMANA_GRADE_67";
             this.DIA_SEMANA_GRADE_67.Name = "DIA_SEMANA_GRADE_67";
             this.DIA_SEMANA_GRADE_67.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_67.Visible = false;
             // 
             // CODIGO_DISCIPLINA_67
             // 
@@ -9476,14 +9864,14 @@
             this.CODIGO_DISCIPLINA_67.ReadOnly = true;
             this.CODIGO_DISCIPLINA_67.Width = 20;
             // 
-            // SEQ_TURMA_67
+            // CODIGO_TURMA_67
             // 
-            this.SEQ_TURMA_67.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_67.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_67.HeaderText = "Turma";
-            this.SEQ_TURMA_67.MinimumWidth = 20;
-            this.SEQ_TURMA_67.Name = "SEQ_TURMA_67";
-            this.SEQ_TURMA_67.ReadOnly = true;
+            this.CODIGO_TURMA_67.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_67.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_67.HeaderText = "Turma";
+            this.CODIGO_TURMA_67.MinimumWidth = 20;
+            this.CODIGO_TURMA_67.Name = "CODIGO_TURMA_67";
+            this.CODIGO_TURMA_67.ReadOnly = true;
             // 
             // CODIGO_ESPACO_67
             // 
@@ -9537,7 +9925,7 @@
             this.HORARIO_GRADE_68,
             this.DIA_SEMANA_GRADE_68,
             this.CODIGO_DISCIPLINA_68,
-            this.SEQ_TURMA_68,
+            this.CODIGO_TURMA_68,
             this.CODIGO_ESPACO_68,
             this.CODIGO_PROFESSOR1_68,
             this.CODIGO_PROFESSOR2_68,
@@ -9558,13 +9946,18 @@
             // 
             // HORARIO_GRADE_68
             // 
+            this.HORARIO_GRADE_68.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_68.HeaderText = "HORARIO_GRADE_68";
             this.HORARIO_GRADE_68.Name = "HORARIO_GRADE_68";
             this.HORARIO_GRADE_68.ReadOnly = true;
+            this.HORARIO_GRADE_68.Visible = false;
             // 
             // DIA_SEMANA_GRADE_68
             // 
+            this.DIA_SEMANA_GRADE_68.HeaderText = "DIA_SEMANA_GRADE_68";
             this.DIA_SEMANA_GRADE_68.Name = "DIA_SEMANA_GRADE_68";
             this.DIA_SEMANA_GRADE_68.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_68.Visible = false;
             // 
             // CODIGO_DISCIPLINA_68
             // 
@@ -9576,14 +9969,14 @@
             this.CODIGO_DISCIPLINA_68.ReadOnly = true;
             this.CODIGO_DISCIPLINA_68.Width = 20;
             // 
-            // SEQ_TURMA_68
+            // CODIGO_TURMA_68
             // 
-            this.SEQ_TURMA_68.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_68.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_68.HeaderText = "Turma";
-            this.SEQ_TURMA_68.MinimumWidth = 20;
-            this.SEQ_TURMA_68.Name = "SEQ_TURMA_68";
-            this.SEQ_TURMA_68.ReadOnly = true;
+            this.CODIGO_TURMA_68.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_68.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_68.HeaderText = "Turma";
+            this.CODIGO_TURMA_68.MinimumWidth = 20;
+            this.CODIGO_TURMA_68.Name = "CODIGO_TURMA_68";
+            this.CODIGO_TURMA_68.ReadOnly = true;
             // 
             // CODIGO_ESPACO_68
             // 
@@ -9637,7 +10030,7 @@
             this.HORARIO_GRADE_69,
             this.DIA_SEMANA_GRADE_69,
             this.CODIGO_DISCIPLINA_69,
-            this.SEQ_TURMA_69,
+            this.CODIGO_TURMA_69,
             this.CODIGO_ESPACO_69,
             this.CODIGO_PROFESSOR1_69,
             this.CODIGO_PROFESSOR2_69,
@@ -9658,13 +10051,18 @@
             // 
             // HORARIO_GRADE_69
             // 
+            this.HORARIO_GRADE_69.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_69.HeaderText = "HORARIO_GRADE_69";
             this.HORARIO_GRADE_69.Name = "HORARIO_GRADE_69";
             this.HORARIO_GRADE_69.ReadOnly = true;
+            this.HORARIO_GRADE_69.Visible = false;
             // 
             // DIA_SEMANA_GRADE_69
             // 
+            this.DIA_SEMANA_GRADE_69.HeaderText = "DIA_SEMANA_GRADE_69";
             this.DIA_SEMANA_GRADE_69.Name = "DIA_SEMANA_GRADE_69";
             this.DIA_SEMANA_GRADE_69.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_69.Visible = false;
             // 
             // CODIGO_DISCIPLINA_69
             // 
@@ -9676,14 +10074,14 @@
             this.CODIGO_DISCIPLINA_69.ReadOnly = true;
             this.CODIGO_DISCIPLINA_69.Width = 20;
             // 
-            // SEQ_TURMA_69
+            // CODIGO_TURMA_69
             // 
-            this.SEQ_TURMA_69.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_69.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_69.HeaderText = "Turma";
-            this.SEQ_TURMA_69.MinimumWidth = 20;
-            this.SEQ_TURMA_69.Name = "SEQ_TURMA_69";
-            this.SEQ_TURMA_69.ReadOnly = true;
+            this.CODIGO_TURMA_69.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_69.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_69.HeaderText = "Turma";
+            this.CODIGO_TURMA_69.MinimumWidth = 20;
+            this.CODIGO_TURMA_69.Name = "CODIGO_TURMA_69";
+            this.CODIGO_TURMA_69.ReadOnly = true;
             // 
             // CODIGO_ESPACO_69
             // 
@@ -9737,7 +10135,7 @@
             this.HORARIO_GRADE_610,
             this.DIA_SEMANA_GRADE_610,
             this.CODIGO_DISCIPLINA_610,
-            this.SEQ_TURMA_610,
+            this.CODIGO_TURMA_610,
             this.CODIGO_ESPACO_610,
             this.CODIGO_PROFESSOR1_610,
             this.CODIGO_PROFESSOR2_610,
@@ -9758,13 +10156,18 @@
             // 
             // HORARIO_GRADE_610
             // 
+            this.HORARIO_GRADE_610.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_610.HeaderText = "HORARIO_GRADE_610";
             this.HORARIO_GRADE_610.Name = "HORARIO_GRADE_610";
             this.HORARIO_GRADE_610.ReadOnly = true;
+            this.HORARIO_GRADE_610.Visible = false;
             // 
             // DIA_SEMANA_GRADE_610
             // 
+            this.DIA_SEMANA_GRADE_610.HeaderText = "DIA_SEMANA_GRADE_610";
             this.DIA_SEMANA_GRADE_610.Name = "DIA_SEMANA_GRADE_610";
             this.DIA_SEMANA_GRADE_610.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_610.Visible = false;
             // 
             // CODIGO_DISCIPLINA_610
             // 
@@ -9776,14 +10179,14 @@
             this.CODIGO_DISCIPLINA_610.ReadOnly = true;
             this.CODIGO_DISCIPLINA_610.Width = 20;
             // 
-            // SEQ_TURMA_610
+            // CODIGO_TURMA_610
             // 
-            this.SEQ_TURMA_610.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_610.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_610.HeaderText = "Turma";
-            this.SEQ_TURMA_610.MinimumWidth = 20;
-            this.SEQ_TURMA_610.Name = "SEQ_TURMA_610";
-            this.SEQ_TURMA_610.ReadOnly = true;
+            this.CODIGO_TURMA_610.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_610.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_610.HeaderText = "Turma";
+            this.CODIGO_TURMA_610.MinimumWidth = 20;
+            this.CODIGO_TURMA_610.Name = "CODIGO_TURMA_610";
+            this.CODIGO_TURMA_610.ReadOnly = true;
             // 
             // CODIGO_ESPACO_610
             // 
@@ -9837,7 +10240,7 @@
             this.HORARIO_GRADE_611,
             this.DIA_SEMANA_GRADE_611,
             this.CODIGO_DISCIPLINA_611,
-            this.SEQ_TURMA_611,
+            this.CODIGO_TURMA_611,
             this.CODIGO_ESPACO_611,
             this.CODIGO_PROFESSOR1_611,
             this.CODIGO_PROFESSOR2_611,
@@ -9858,13 +10261,18 @@
             // 
             // HORARIO_GRADE_611
             // 
+            this.HORARIO_GRADE_611.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_611.HeaderText = "HORARIO_GRADE_611";
             this.HORARIO_GRADE_611.Name = "HORARIO_GRADE_611";
             this.HORARIO_GRADE_611.ReadOnly = true;
+            this.HORARIO_GRADE_611.Visible = false;
             // 
             // DIA_SEMANA_GRADE_611
             // 
+            this.DIA_SEMANA_GRADE_611.HeaderText = "DIA_SEMANA_GRADE_611";
             this.DIA_SEMANA_GRADE_611.Name = "DIA_SEMANA_GRADE_611";
             this.DIA_SEMANA_GRADE_611.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_611.Visible = false;
             // 
             // CODIGO_DISCIPLINA_611
             // 
@@ -9876,14 +10284,14 @@
             this.CODIGO_DISCIPLINA_611.ReadOnly = true;
             this.CODIGO_DISCIPLINA_611.Width = 20;
             // 
-            // SEQ_TURMA_611
+            // CODIGO_TURMA_611
             // 
-            this.SEQ_TURMA_611.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_611.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_611.HeaderText = "Turma";
-            this.SEQ_TURMA_611.MinimumWidth = 20;
-            this.SEQ_TURMA_611.Name = "SEQ_TURMA_611";
-            this.SEQ_TURMA_611.ReadOnly = true;
+            this.CODIGO_TURMA_611.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_611.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_611.HeaderText = "Turma";
+            this.CODIGO_TURMA_611.MinimumWidth = 20;
+            this.CODIGO_TURMA_611.Name = "CODIGO_TURMA_611";
+            this.CODIGO_TURMA_611.ReadOnly = true;
             // 
             // CODIGO_ESPACO_611
             // 
@@ -9937,7 +10345,7 @@
             this.HORARIO_GRADE_612,
             this.DIA_SEMANA_GRADE_612,
             this.CODIGO_DISCIPLINA_612,
-            this.SEQ_TURMA_612,
+            this.CODIGO_TURMA_612,
             this.CODIGO_ESPACO_612,
             this.CODIGO_PROFESSOR1_612,
             this.CODIGO_PROFESSOR2_612,
@@ -9958,13 +10366,18 @@
             // 
             // HORARIO_GRADE_612
             // 
+            this.HORARIO_GRADE_612.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_612.HeaderText = "HORARIO_GRADE_612";
             this.HORARIO_GRADE_612.Name = "HORARIO_GRADE_612";
             this.HORARIO_GRADE_612.ReadOnly = true;
+            this.HORARIO_GRADE_612.Visible = false;
             // 
             // DIA_SEMANA_GRADE_612
             // 
+            this.DIA_SEMANA_GRADE_612.HeaderText = "DIA_SEMANA_GRADE_612";
             this.DIA_SEMANA_GRADE_612.Name = "DIA_SEMANA_GRADE_612";
             this.DIA_SEMANA_GRADE_612.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_612.Visible = false;
             // 
             // CODIGO_DISCIPLINA_612
             // 
@@ -9976,14 +10389,14 @@
             this.CODIGO_DISCIPLINA_612.ReadOnly = true;
             this.CODIGO_DISCIPLINA_612.Width = 20;
             // 
-            // SEQ_TURMA_612
+            // CODIGO_TURMA_612
             // 
-            this.SEQ_TURMA_612.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_612.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_612.HeaderText = "Turma";
-            this.SEQ_TURMA_612.MinimumWidth = 20;
-            this.SEQ_TURMA_612.Name = "SEQ_TURMA_612";
-            this.SEQ_TURMA_612.ReadOnly = true;
+            this.CODIGO_TURMA_612.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_612.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_612.HeaderText = "Turma";
+            this.CODIGO_TURMA_612.MinimumWidth = 20;
+            this.CODIGO_TURMA_612.Name = "CODIGO_TURMA_612";
+            this.CODIGO_TURMA_612.ReadOnly = true;
             // 
             // CODIGO_ESPACO_612
             // 
@@ -10037,7 +10450,7 @@
             this.HORARIO_GRADE_613,
             this.DIA_SEMANA_GRADE_613,
             this.CODIGO_DISCIPLINA_613,
-            this.SEQ_TURMA_613,
+            this.CODIGO_TURMA_613,
             this.CODIGO_ESPACO_613,
             this.CODIGO_PROFESSOR1_613,
             this.CODIGO_PROFESSOR2_613,
@@ -10058,13 +10471,18 @@
             // 
             // HORARIO_GRADE_613
             // 
+            this.HORARIO_GRADE_613.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_613.HeaderText = "HORARIO_GRADE_613";
             this.HORARIO_GRADE_613.Name = "HORARIO_GRADE_613";
             this.HORARIO_GRADE_613.ReadOnly = true;
+            this.HORARIO_GRADE_613.Visible = false;
             // 
             // DIA_SEMANA_GRADE_613
             // 
+            this.DIA_SEMANA_GRADE_613.HeaderText = "DIA_SEMANA_GRADE_613";
             this.DIA_SEMANA_GRADE_613.Name = "DIA_SEMANA_GRADE_613";
             this.DIA_SEMANA_GRADE_613.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_613.Visible = false;
             // 
             // CODIGO_DISCIPLINA_613
             // 
@@ -10076,14 +10494,14 @@
             this.CODIGO_DISCIPLINA_613.ReadOnly = true;
             this.CODIGO_DISCIPLINA_613.Width = 20;
             // 
-            // SEQ_TURMA_613
+            // CODIGO_TURMA_613
             // 
-            this.SEQ_TURMA_613.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_613.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_613.HeaderText = "Turma";
-            this.SEQ_TURMA_613.MinimumWidth = 20;
-            this.SEQ_TURMA_613.Name = "SEQ_TURMA_613";
-            this.SEQ_TURMA_613.ReadOnly = true;
+            this.CODIGO_TURMA_613.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_613.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_613.HeaderText = "Turma";
+            this.CODIGO_TURMA_613.MinimumWidth = 20;
+            this.CODIGO_TURMA_613.Name = "CODIGO_TURMA_613";
+            this.CODIGO_TURMA_613.ReadOnly = true;
             // 
             // CODIGO_ESPACO_613
             // 
@@ -10137,7 +10555,7 @@
             this.HORARIO_GRADE_614,
             this.DIA_SEMANA_GRADE_614,
             this.CODIGO_DISCIPLINA_614,
-            this.SEQ_TURMA_614,
+            this.CODIGO_TURMA_614,
             this.CODIGO_ESPACO_614,
             this.CODIGO_PROFESSOR1_614,
             this.CODIGO_PROFESSOR2_614,
@@ -10158,13 +10576,18 @@
             // 
             // HORARIO_GRADE_614
             // 
+            this.HORARIO_GRADE_614.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_614.HeaderText = "HORARIO_GRADE_614";
             this.HORARIO_GRADE_614.Name = "HORARIO_GRADE_614";
             this.HORARIO_GRADE_614.ReadOnly = true;
+            this.HORARIO_GRADE_614.Visible = false;
             // 
             // DIA_SEMANA_GRADE_614
             // 
+            this.DIA_SEMANA_GRADE_614.HeaderText = "DIA_SEMANA_GRADE_614";
             this.DIA_SEMANA_GRADE_614.Name = "DIA_SEMANA_GRADE_614";
             this.DIA_SEMANA_GRADE_614.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_614.Visible = false;
             // 
             // CODIGO_DISCIPLINA_614
             // 
@@ -10176,14 +10599,14 @@
             this.CODIGO_DISCIPLINA_614.ReadOnly = true;
             this.CODIGO_DISCIPLINA_614.Width = 20;
             // 
-            // SEQ_TURMA_614
+            // CODIGO_TURMA_614
             // 
-            this.SEQ_TURMA_614.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_614.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_614.HeaderText = "Turma";
-            this.SEQ_TURMA_614.MinimumWidth = 20;
-            this.SEQ_TURMA_614.Name = "SEQ_TURMA_614";
-            this.SEQ_TURMA_614.ReadOnly = true;
+            this.CODIGO_TURMA_614.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_614.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_614.HeaderText = "Turma";
+            this.CODIGO_TURMA_614.MinimumWidth = 20;
+            this.CODIGO_TURMA_614.Name = "CODIGO_TURMA_614";
+            this.CODIGO_TURMA_614.ReadOnly = true;
             // 
             // CODIGO_ESPACO_614
             // 
@@ -10237,7 +10660,7 @@
             this.HORARIO_GRADE_11,
             this.DIA_SEMANA_GRADE_11,
             this.CODIGO_DISCIPLINA_11,
-            this.SEQ_TURMA_11,
+            this.CODIGO_TURMA_11,
             this.CODIGO_ESPACO_11,
             this.CODIGO_PROFESSOR1_11,
             this.CODIGO_PROFESSOR2_11,
@@ -10258,13 +10681,19 @@
             // 
             // HORARIO_GRADE_11
             // 
+            this.HORARIO_GRADE_11.DataPropertyName = "HORARIO_GRADE";
+            this.HORARIO_GRADE_11.HeaderText = "HORARIO_GRADE_11";
             this.HORARIO_GRADE_11.Name = "HORARIO_GRADE_11";
             this.HORARIO_GRADE_11.ReadOnly = true;
+            this.HORARIO_GRADE_11.Visible = false;
             // 
             // DIA_SEMANA_GRADE_11
             // 
+            this.DIA_SEMANA_GRADE_11.DataPropertyName = "DIA_SEMANA_GRADE";
+            this.DIA_SEMANA_GRADE_11.HeaderText = "DIA_SEMANA_GRADE_11";
             this.DIA_SEMANA_GRADE_11.Name = "DIA_SEMANA_GRADE_11";
             this.DIA_SEMANA_GRADE_11.ReadOnly = true;
+            this.DIA_SEMANA_GRADE_11.Visible = false;
             // 
             // CODIGO_DISCIPLINA_11
             // 
@@ -10276,14 +10705,14 @@
             this.CODIGO_DISCIPLINA_11.ReadOnly = true;
             this.CODIGO_DISCIPLINA_11.Width = 20;
             // 
-            // SEQ_TURMA_11
+            // CODIGO_TURMA_11
             // 
-            this.SEQ_TURMA_11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SEQ_TURMA_11.DataPropertyName = "SEQ_TURMA";
-            this.SEQ_TURMA_11.HeaderText = "Turma";
-            this.SEQ_TURMA_11.MinimumWidth = 20;
-            this.SEQ_TURMA_11.Name = "SEQ_TURMA_11";
-            this.SEQ_TURMA_11.ReadOnly = true;
+            this.CODIGO_TURMA_11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA_11.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_11.HeaderText = "Turma";
+            this.CODIGO_TURMA_11.MinimumWidth = 20;
+            this.CODIGO_TURMA_11.Name = "CODIGO_TURMA_11";
+            this.CODIGO_TURMA_11.ReadOnly = true;
             // 
             // CODIGO_ESPACO_11
             // 
@@ -10318,14 +10747,6 @@
             this.CODIGO_PROFESSOR3_11.Name = "CODIGO_PROFESSOR3_11";
             this.CODIGO_PROFESSOR3_11.ReadOnly = true;
             this.CODIGO_PROFESSOR3_11.Visible = false;
-            // 
-            // itmDetalhes
-            // 
-            this.itmDetalhes.Image = global::GradeDeHorario.Properties.Resources.ic_info;
-            this.itmDetalhes.Name = "itmDetalhes";
-            this.itmDetalhes.Size = new System.Drawing.Size(152, 22);
-            this.itmDetalhes.Text = "Detalhes";
-            this.itmDetalhes.Click += new System.EventHandler(this.itmDetalhes_Click);
             // 
             // frmGradeHorario
             // 
@@ -10505,7 +10926,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_12;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_12;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_12;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_12;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_12;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_12;
@@ -10514,7 +10935,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_13;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_13;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_13;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_13;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_13;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_13;
@@ -10523,7 +10944,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_14;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_14;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_14;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_14;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_14;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_14;
@@ -10532,7 +10953,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_15;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_15;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_15;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_15;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_15;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_15;
@@ -10541,7 +10962,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_16;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_16;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_16;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_16;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_16;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_16;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_16;
@@ -10550,7 +10971,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_17;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_17;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_17;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_17;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_17;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_17;
@@ -10559,7 +10980,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_18;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_18;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_18;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_18;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_18;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_18;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_18;
@@ -10568,7 +10989,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_19;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_19;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_19;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_19;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_19;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_19;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_19;
@@ -10577,7 +10998,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_110;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_110;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_110;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_110;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_110;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_110;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_110;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_110;
@@ -10586,7 +11007,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_111;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_111;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_111;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_111;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_111;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_111;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_111;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_111;
@@ -10595,7 +11016,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_112;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_112;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_112;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_112;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_112;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_112;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_112;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_112;
@@ -10604,7 +11025,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_113;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_113;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_113;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_113;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_113;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_113;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_113;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_113;
@@ -10613,7 +11034,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_114;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_114;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_114;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_114;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_114;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_114;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_114;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_114;
@@ -10622,7 +11043,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_21;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_21;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_21;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_21;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_21;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_21;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_21;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_21;
@@ -10631,7 +11052,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_22;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_22;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_22;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_22;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_22;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_22;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_22;
@@ -10640,7 +11061,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_23;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_23;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_23;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_23;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_23;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_23;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_23;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_23;
@@ -10649,7 +11070,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_24;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_24;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_24;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_24;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_24;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_24;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_24;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_24;
@@ -10658,7 +11079,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_25;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_25;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_25;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_25;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_25;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_25;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_25;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_25;
@@ -10667,7 +11088,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_26;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_26;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_26;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_26;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_26;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_26;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_26;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_26;
@@ -10676,7 +11097,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_27;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_27;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_27;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_27;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_27;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_27;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_27;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_27;
@@ -10685,7 +11106,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_28;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_28;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_28;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_28;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_28;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_28;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_28;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_28;
@@ -10694,7 +11115,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_29;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_29;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_29;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_29;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_29;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_29;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_29;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_29;
@@ -10703,7 +11124,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_210;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_210;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_210;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_210;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_210;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_210;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_210;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_210;
@@ -10712,7 +11133,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_211;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_211;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_211;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_211;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_211;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_211;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_211;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_211;
@@ -10721,7 +11142,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_212;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_212;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_212;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_212;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_212;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_212;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_212;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_212;
@@ -10730,7 +11151,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_213;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_213;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_213;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_213;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_213;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_213;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_213;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_213;
@@ -10739,7 +11160,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_214;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_214;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_214;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_214;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_214;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_214;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_214;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_214;
@@ -10748,7 +11169,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_31;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_31;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_31;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_31;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_31;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_31;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_31;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_31;
@@ -10757,7 +11178,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_32;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_32;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_32;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_32;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_32;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_32;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_32;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_32;
@@ -10766,7 +11187,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_33;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_33;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_33;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_33;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_33;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_33;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_33;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_33;
@@ -10775,7 +11196,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_34;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_34;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_34;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_34;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_34;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_34;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_34;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_34;
@@ -10784,7 +11205,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_35;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_35;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_35;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_35;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_35;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_35;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_35;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_35;
@@ -10793,7 +11214,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_36;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_36;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_36;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_36;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_36;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_36;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_36;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_36;
@@ -10802,7 +11223,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_37;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_37;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_37;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_37;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_37;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_37;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_37;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_37;
@@ -10811,7 +11232,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_38;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_38;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_38;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_38;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_38;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_38;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_38;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_38;
@@ -10820,7 +11241,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_39;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_39;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_39;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_39;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_39;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_39;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_39;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_39;
@@ -10829,7 +11250,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_310;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_310;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_310;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_310;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_310;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_310;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_310;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_310;
@@ -10838,7 +11259,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_311;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_311;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_311;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_311;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_311;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_311;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_311;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_311;
@@ -10847,7 +11268,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_312;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_312;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_312;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_312;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_312;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_312;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_312;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_312;
@@ -10856,7 +11277,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_313;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_313;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_313;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_313;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_313;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_313;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_313;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_313;
@@ -10865,7 +11286,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_314;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_314;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_314;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_314;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_314;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_314;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_314;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_314;
@@ -10874,7 +11295,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_41;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_41;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_41;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_41;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_41;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_41;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_41;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_41;
@@ -10883,7 +11304,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_42;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_42;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_42;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_42;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_42;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_42;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_42;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_42;
@@ -10892,7 +11313,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_43;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_43;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_43;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_43;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_43;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_43;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_43;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_43;
@@ -10901,7 +11322,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_44;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_44;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_44;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_44;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_44;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_44;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_44;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_44;
@@ -10910,7 +11331,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_45;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_45;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_45;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_45;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_45;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_45;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_45;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_45;
@@ -10919,7 +11340,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_46;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_46;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_46;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_46;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_46;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_46;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_46;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_46;
@@ -10928,7 +11349,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_47;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_47;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_47;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_47;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_47;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_47;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_47;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_47;
@@ -10937,7 +11358,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_48;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_48;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_48;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_48;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_48;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_48;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_48;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_48;
@@ -10946,7 +11367,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_49;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_49;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_49;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_49;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_49;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_49;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_49;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_49;
@@ -10955,7 +11376,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_410;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_410;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_410;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_410;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_410;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_410;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_410;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_410;
@@ -10964,7 +11385,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_411;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_411;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_411;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_411;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_411;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_411;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_411;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_411;
@@ -10973,7 +11394,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_412;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_412;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_412;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_412;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_412;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_412;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_412;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_412;
@@ -10982,7 +11403,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_413;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_413;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_413;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_413;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_413;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_413;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_413;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_413;
@@ -10991,7 +11412,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_414;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_414;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_414;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_414;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_414;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_414;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_414;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_414;
@@ -11000,7 +11421,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_51;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_51;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_51;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_51;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_51;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_51;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_51;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_51;
@@ -11009,7 +11430,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_52;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_52;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_52;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_52;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_52;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_52;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_52;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_52;
@@ -11018,7 +11439,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_53;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_53;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_53;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_53;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_53;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_53;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_53;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_53;
@@ -11027,7 +11448,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_54;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_54;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_54;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_54;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_54;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_54;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_54;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_54;
@@ -11036,7 +11457,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_55;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_55;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_55;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_55;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_55;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_55;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_55;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_55;
@@ -11045,7 +11466,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_56;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_56;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_56;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_56;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_56;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_56;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_56;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_56;
@@ -11054,7 +11475,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_57;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_57;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_57;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_57;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_57;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_57;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_57;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_57;
@@ -11063,7 +11484,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_58;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_58;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_58;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_58;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_58;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_58;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_58;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_58;
@@ -11072,7 +11493,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_59;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_59;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_59;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_59;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_59;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_59;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_59;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_59;
@@ -11081,7 +11502,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_510;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_510;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_510;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_510;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_510;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_510;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_510;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_510;
@@ -11090,7 +11511,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_511;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_511;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_511;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_511;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_511;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_511;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_511;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_511;
@@ -11099,7 +11520,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_512;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_512;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_512;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_512;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_512;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_512;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_512;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_512;
@@ -11108,7 +11529,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_513;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_513;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_513;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_513;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_513;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_513;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_513;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_513;
@@ -11117,7 +11538,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_514;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_514;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_514;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_514;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_514;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_514;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_514;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_514;
@@ -11126,7 +11547,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_61;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_61;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_61;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_61;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_61;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_61;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_61;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_61;
@@ -11135,7 +11556,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_62;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_62;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_62;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_62;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_62;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_62;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_62;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_62;
@@ -11144,7 +11565,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_63;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_63;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_63;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_63;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_63;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_63;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_63;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_63;
@@ -11153,7 +11574,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_64;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_64;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_64;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_64;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_64;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_64;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_64;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_64;
@@ -11162,7 +11583,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_65;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_65;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_65;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_65;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_65;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_65;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_65;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_65;
@@ -11171,7 +11592,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_66;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_66;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_66;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_66;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_66;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_66;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_66;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_66;
@@ -11180,7 +11601,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_67;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_67;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_67;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_67;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_67;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_67;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_67;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_67;
@@ -11189,7 +11610,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_68;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_68;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_68;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_68;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_68;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_68;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_68;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_68;
@@ -11198,7 +11619,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_69;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_69;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_69;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_69;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_69;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_69;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_69;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_69;
@@ -11207,7 +11628,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_610;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_610;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_610;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_610;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_610;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_610;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_610;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_610;
@@ -11216,7 +11637,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_611;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_611;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_611;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_611;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_611;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_611;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_611;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_611;
@@ -11225,7 +11646,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_612;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_612;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_612;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_612;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_612;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_612;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_612;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_612;
@@ -11234,7 +11655,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_613;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_613;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_613;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_613;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_613;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_613;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_613;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_613;
@@ -11243,7 +11664,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_614;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_614;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_614;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_614;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_614;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_614;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_614;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_614;
@@ -11253,14 +11674,6 @@
         private System.Windows.Forms.ToolStripMenuItem itmInserir;
         private System.Windows.Forms.ToolStripMenuItem itmEditar;
         private System.Windows.Forms.ToolStripMenuItem itmExcluir;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEQ_TURMA_11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR3_11;
         private System.Windows.Forms.DataGridViewCheckBoxColumn SELECT_PROFESSOR;
         private System.Windows.Forms.DataGridViewTextBoxColumn COD_PROF_PESQUISA;
         private System.Windows.Forms.DataGridViewTextBoxColumn NOME_PROF_PESQUISA;
@@ -11271,5 +11684,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn COD_ESP_PESQUISA;
         private System.Windows.Forms.DataGridViewTextBoxColumn TIPO_ESP_PESQUISA;
         private System.Windows.Forms.ToolStripMenuItem itmDetalhes;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HORARIO_GRADE_11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DIA_SEMANA_GRADE_11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_DISCIPLINA_11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA_11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_ESPACO_11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR3_11;
     }
 }

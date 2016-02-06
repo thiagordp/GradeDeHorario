@@ -41,7 +41,7 @@
     <EntitySetMapping Name="DISCIPLINA_TURMA">
       <EntityTypeMapping TypeName="GradeHorarioModelo.DISCIPLINA_TURMA">
         <MappingFragment StoreEntitySet="DISCIPLINA_TURMA">
-          <ScalarProperty Name="SEQ_TURMA" ColumnName="SEQ_TURMA" />
+          <ScalarProperty Name="CODIGO_TURMA" ColumnName="CODIGO_TURMA" />
           <ScalarProperty Name="SEQ_DISCIPLINA_CURSO" ColumnName="SEQ_DISCIPLINA_CURSO" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -89,8 +89,7 @@
     <EntitySetMapping Name="TURMA">
       <EntityTypeMapping TypeName="GradeHorarioModelo.TURMA">
         <MappingFragment StoreEntitySet="TURMA">
-          <ScalarProperty Name="SEQ_TURMA" ColumnName="SEQ_TURMA" />
-          <ScalarProperty Name="NOME_TURMA" ColumnName="NOME_TURMA" />
+          <ScalarProperty Name="CODIGO_TURMA" ColumnName="CODIGO_TURMA" />
           <ScalarProperty Name="SEQ_SEMESTRE" ColumnName="SEQ_SEMESTRE" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -100,7 +99,7 @@
         <ScalarProperty Name="CODIGO_ESPACO" ColumnName="CODIGO_ESPACO" />
       </EndProperty>
       <EndProperty Name="DISCIPLINA_TURMA">
-        <ScalarProperty Name="SEQ_TURMA" ColumnName="SEQ_TURMA" />
+        <ScalarProperty Name="CODIGO_TURMA" ColumnName="CODIGO_TURMA" />
         <ScalarProperty Name="SEQ_DISCIPLINA_CURSO" ColumnName="SEQ_DISCIPLINA_CURSO" />
       </EndProperty>
     </AssociationSetMapping>
@@ -109,7 +108,7 @@
         <ScalarProperty Name="SEQ_GRADE" ColumnName="SEQ_GRADE" />
       </EndProperty>
       <EndProperty Name="DISCIPLINA_TURMA">
-        <ScalarProperty Name="SEQ_TURMA" ColumnName="SEQ_TURMA" />
+        <ScalarProperty Name="CODIGO_TURMA" ColumnName="CODIGO_TURMA" />
         <ScalarProperty Name="SEQ_DISCIPLINA_CURSO" ColumnName="SEQ_DISCIPLINA_CURSO" />
       </EndProperty>
     </AssociationSetMapping>
@@ -126,7 +125,7 @@
         <ScalarProperty Name="CODIGO_PROFESSOR" ColumnName="CODIGO_PROFESSOR" />
       </EndProperty>
       <EndProperty Name="DISCIPLINA_TURMA">
-        <ScalarProperty Name="SEQ_TURMA" ColumnName="SEQ_TURMA" />
+        <ScalarProperty Name="CODIGO_TURMA" ColumnName="CODIGO_TURMA" />
         <ScalarProperty Name="SEQ_DISCIPLINA_CURSO" ColumnName="SEQ_DISCIPLINA_CURSO" />
       </EndProperty>
     </AssociationSetMapping>

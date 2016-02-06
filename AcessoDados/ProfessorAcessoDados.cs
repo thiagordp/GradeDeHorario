@@ -199,6 +199,21 @@ namespace AcessoDados
             }
         }
 
+
+        public Modelos.PROFESSOR SelecionaProfessorByCodigo(int codigo)
+        {
+            try
+            {
+                using (Modelos.Entidade contexto = new Modelos.Entidade())
+                {
+                    return contexto.PROFESSOR.Find(codigo);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 
 

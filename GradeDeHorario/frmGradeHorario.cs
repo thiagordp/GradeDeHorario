@@ -20,7 +20,6 @@ namespace GradeDeHorario
         {
             InitializeComponent();
             this.curso = curso;
-
         }
 
         private void frmGradeHorario_Load(object sender, EventArgs e)
@@ -35,11 +34,11 @@ namespace GradeDeHorario
             LayoutGrade();
 
 
-            (tblGrade.GetControlFromPosition(1, 1) as DataGridView).Rows.Add("ARA4513", "01655", "ARA302", "Fulano");
+            (tblGrade.GetControlFromPosition(1, 1) as DataGridView).Rows.Add("", "", "ARA1354", "01655", "ARA302", 1, 2, 3);
             (tblGrade.GetControlFromPosition(1, 1) as DataGridView).ClearSelection();
-            (tblGrade.GetControlFromPosition(6, 13) as DataGridView).Rows.Add("ARA2635", "01655", "ARC119", "Fulano");
+            (tblGrade.GetControlFromPosition(6, 13) as DataGridView).Rows.Add("", "", "ARA2635", "01655", "ARC119", 2);
             (tblGrade.GetControlFromPosition(6, 13) as DataGridView).ClearSelection();
-            (tblGrade.GetControlFromPosition(5, 10) as DataGridView).Rows.Add("ARA2635", "01655", "ARC119", "Fulano");
+            (tblGrade.GetControlFromPosition(5, 10) as DataGridView).Rows.Add("", "", "ARA2635", "01655", "ARC119", 3);
             (tblGrade.GetControlFromPosition(5, 10) as DataGridView).ClearSelection();
         }
 
@@ -328,13 +327,53 @@ namespace GradeDeHorario
                 return;
             }
 
-            gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(this.curso);
+            try
+            {
+                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(this.curso);
 
-            string msg = "";
+                string disciplina = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[2].Value.ToString();
+                int prof1 = Convert.ToInt32(hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[5].Value);
+                int prof2, prof3;
+
+
+                object temp = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[6].Value;
+
+                if (temp == null)
+                {
+                    prof2 = prof3 = -1;
+                }
+                else
+                {
+                    prof2 = Convert.ToInt32(temp);
+
+                    temp = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[7].Value.ToString();
+
+                    if (temp == null)
+                    {
+                        prof3 = -1;
+                    }
+                    else
+                    {
+                        prof3 = Convert.ToInt32(temp);
+                    }
+                }
+
+                string turma = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[3].Value.ToString();
+                string espaco = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[4].Value.ToString();
+
+
+                string msg = gradeRN.SelecionaDetalhe(disciplina, turma, prof1, prof2, prof3, espaco);
+
+
+                MessageBox.Show(msg, "Detalhe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
 
 
-            MessageBox.Show(msg, "Detalhe", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

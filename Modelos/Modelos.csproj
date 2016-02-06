@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{01A059F1-34B7-418B-9970-644EFBF2ED8A}</ProjectGuid>
+    <ProjectGuid>{C8C87F39-0846-4C00-9CC6-7E45E49FC1FA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Modelos</RootNamespace>
@@ -53,75 +53,75 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CURSO.cs">
-      <DependentUpon>Modelos.tt</DependentUpon>
+      <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>
     <Compile Include="DEPARTAMENTO.cs">
-      <DependentUpon>Modelos.tt</DependentUpon>
+      <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>
     <Compile Include="DISCIPLINA.cs">
-      <DependentUpon>Modelos.tt</DependentUpon>
+      <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>
     <Compile Include="DISCIPLINA_CURSO.cs">
-      <DependentUpon>Modelos.tt</DependentUpon>
+      <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>
     <Compile Include="DISCIPLINA_TURMA.cs">
-      <DependentUpon>Modelos.tt</DependentUpon>
+      <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>
     <Compile Include="ESPACO.cs">
-      <DependentUpon>Modelos.tt</DependentUpon>
+      <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>
     <Compile Include="GRADE.cs">
-      <DependentUpon>Modelos.tt</DependentUpon>
+      <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>
-    <Compile Include="Modelos.Context.cs">
+    <Compile Include="Modelo.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Modelos.Context.tt</DependentUpon>
+      <DependentUpon>Modelo.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Modelos.cs">
+    <Compile Include="Modelo.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Modelos.tt</DependentUpon>
+      <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>
-    <Compile Include="Modelos.Designer.cs">
+    <Compile Include="Modelo.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Modelos.edmx</DependentUpon>
+      <DependentUpon>Modelo.edmx</DependentUpon>
     </Compile>
     <Compile Include="PROFESSOR.cs">
-      <DependentUpon>Modelos.tt</DependentUpon>
+      <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SEMESTRE.cs">
-      <DependentUpon>Modelos.tt</DependentUpon>
+      <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>
     <Compile Include="TURMA.cs">
-      <DependentUpon>Modelos.tt</DependentUpon>
+      <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="Modelos.edmx">
+    <EntityDeploy Include="Modelo.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Modelos.Designer.cs</LastGenOutput>
+      <LastGenOutput>Modelo.Designer.cs</LastGenOutput>
     </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
-    <None Include="Modelos.edmx.diagram">
-      <DependentUpon>Modelos.edmx</DependentUpon>
+    <None Include="Modelo.edmx.diagram">
+      <DependentUpon>Modelo.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Modelos.Context.tt">
+    <Content Include="Modelo.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Modelos.edmx</DependentUpon>
-      <LastGenOutput>Modelos.Context.cs</LastGenOutput>
+      <DependentUpon>Modelo.edmx</DependentUpon>
+      <LastGenOutput>Modelo.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Modelos.tt">
+    <Content Include="Modelo.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Modelos.edmx</DependentUpon>
-      <LastGenOutput>Modelos.cs</LastGenOutput>
+      <DependentUpon>Modelo.edmx</DependentUpon>
+      <LastGenOutput>Modelo.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

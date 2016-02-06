@@ -37,7 +37,9 @@ namespace AcessoDados
 
             try
             {
-                using (SqlConnection conexao = new SqlConnection(Conexao.stringConexao))
+                string stringConexao = @"Server= localhost\SQLEXPRESS; Integrated Security = SSPI";  // String de conexão diferente do pradrão!!!
+
+                using (SqlConnection conexao = new SqlConnection(stringConexao))
                 {
                     conexao.Open();
 
@@ -219,7 +221,7 @@ namespace AcessoDados
 
             try
             {
-                using (SqlConnection conexao = new SqlConnection(Conexao.stringConexao))
+                using (SqlConnection conexao = new SqlConnection(@"Server= localhost\SQLEXPRESS; database=master; Integrated Security=SSPI"))  // String de conexão diferente do pradrão!!!
                 {
                     conexao.Open();
                     sql.Append("SELECT * FROM sys.databases where name = 'GradeHorario'");      // Consulta para verificar se existe algum banco nomeado 'GradeHorario'

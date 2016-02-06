@@ -40,10 +40,10 @@
         </EntityType>
         <EntityType Name="DISCIPLINA_TURMA">
           <Key>
-            <PropertyRef Name="SEQ_TURMA" />
+            <PropertyRef Name="CODIGO_TURMA" />
             <PropertyRef Name="SEQ_DISCIPLINA_CURSO" />
           </Key>
-          <Property Name="SEQ_TURMA" Type="int" Nullable="false" />
+          <Property Name="CODIGO_TURMA" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="SEQ_DISCIPLINA_CURSO" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="ESPACO">
@@ -62,11 +62,11 @@
         <EntityType Name="ESPACO_TURMA">
           <Key>
             <PropertyRef Name="CODIGO_ESPACO" />
-            <PropertyRef Name="SEQ_TURMA" />
+            <PropertyRef Name="CODIGO_TURMA" />
             <PropertyRef Name="SEQ_DISCIPLINA_CURSO" />
           </Key>
           <Property Name="CODIGO_ESPACO" Type="varchar" MaxLength="15" Nullable="false" />
-          <Property Name="SEQ_TURMA" Type="int" Nullable="false" />
+          <Property Name="CODIGO_TURMA" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="SEQ_DISCIPLINA_CURSO" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="GRADE">
@@ -79,11 +79,11 @@
         </EntityType>
         <EntityType Name="GRADE_TURMA">
           <Key>
-            <PropertyRef Name="SEQ_TURMA" />
+            <PropertyRef Name="CODIGO_TURMA" />
             <PropertyRef Name="SEQ_DISCIPLINA_CURSO" />
             <PropertyRef Name="SEQ_GRADE" />
           </Key>
-          <Property Name="SEQ_TURMA" Type="int" Nullable="false" />
+          <Property Name="CODIGO_TURMA" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="SEQ_DISCIPLINA_CURSO" Type="int" Nullable="false" />
           <Property Name="SEQ_GRADE" Type="int" Nullable="false" />
         </EntityType>
@@ -106,11 +106,11 @@
         <EntityType Name="PROFESSOR_TURMA">
           <Key>
             <PropertyRef Name="CODIGO_PROFESSOR" />
-            <PropertyRef Name="SEQ_TURMA" />
+            <PropertyRef Name="CODIGO_TURMA" />
             <PropertyRef Name="SEQ_DISCIPLINA_CURSO" />
           </Key>
           <Property Name="CODIGO_PROFESSOR" Type="int" Nullable="false" />
-          <Property Name="SEQ_TURMA" Type="int" Nullable="false" />
+          <Property Name="CODIGO_TURMA" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="SEQ_DISCIPLINA_CURSO" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="SEMESTRE">
@@ -122,10 +122,9 @@
         </EntityType>
         <EntityType Name="TURMA">
           <Key>
-            <PropertyRef Name="SEQ_TURMA" />
+            <PropertyRef Name="CODIGO_TURMA" />
           </Key>
-          <Property Name="SEQ_TURMA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="NOME_TURMA" Type="varchar" MaxLength="10" />
+          <Property Name="CODIGO_TURMA" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="SEQ_SEMESTRE" Type="int" />
         </EntityType>
         <Association Name="FK__DISCIPLIN__CODIG__286302EC">
@@ -164,6 +163,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK__DISCIPLIN__CODIG__32E0915F">
+          <End Role="TURMA" Type="Self.TURMA" Multiplicity="1" />
+          <End Role="DISCIPLINA_TURMA" Type="Self.DISCIPLINA_TURMA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TURMA">
+              <PropertyRef Name="CODIGO_TURMA" />
+            </Principal>
+            <Dependent Role="DISCIPLINA_TURMA">
+              <PropertyRef Name="CODIGO_TURMA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK__DISCIPLIN__SEQ_D__33D4B598">
           <End Role="DISCIPLINA_CURSO" Type="Self.DISCIPLINA_CURSO" Multiplicity="1" />
           <End Role="DISCIPLINA_TURMA" Type="Self.DISCIPLINA_TURMA" Multiplicity="*" />
@@ -173,18 +184,6 @@
             </Principal>
             <Dependent Role="DISCIPLINA_TURMA">
               <PropertyRef Name="SEQ_DISCIPLINA_CURSO" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__DISCIPLIN__SEQ_T__32E0915F">
-          <End Role="TURMA" Type="Self.TURMA" Multiplicity="1" />
-          <End Role="DISCIPLINA_TURMA" Type="Self.DISCIPLINA_TURMA" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="TURMA">
-              <PropertyRef Name="SEQ_TURMA" />
-            </Principal>
-            <Dependent Role="DISCIPLINA_TURMA">
-              <PropertyRef Name="SEQ_TURMA" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -205,11 +204,11 @@
           <End Role="ESPACO_TURMA" Type="Self.ESPACO_TURMA" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="DISCIPLINA_TURMA">
-              <PropertyRef Name="SEQ_TURMA" />
+              <PropertyRef Name="CODIGO_TURMA" />
               <PropertyRef Name="SEQ_DISCIPLINA_CURSO" />
             </Principal>
             <Dependent Role="ESPACO_TURMA">
-              <PropertyRef Name="SEQ_TURMA" />
+              <PropertyRef Name="CODIGO_TURMA" />
               <PropertyRef Name="SEQ_DISCIPLINA_CURSO" />
             </Dependent>
           </ReferentialConstraint>
@@ -231,11 +230,11 @@
           <End Role="GRADE_TURMA" Type="Self.GRADE_TURMA" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="DISCIPLINA_TURMA">
-              <PropertyRef Name="SEQ_TURMA" />
+              <PropertyRef Name="CODIGO_TURMA" />
               <PropertyRef Name="SEQ_DISCIPLINA_CURSO" />
             </Principal>
             <Dependent Role="GRADE_TURMA">
-              <PropertyRef Name="SEQ_TURMA" />
+              <PropertyRef Name="CODIGO_TURMA" />
               <PropertyRef Name="SEQ_DISCIPLINA_CURSO" />
             </Dependent>
           </ReferentialConstraint>
@@ -293,11 +292,11 @@
           <End Role="PROFESSOR_TURMA" Type="Self.PROFESSOR_TURMA" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="DISCIPLINA_TURMA">
-              <PropertyRef Name="SEQ_TURMA" />
+              <PropertyRef Name="CODIGO_TURMA" />
               <PropertyRef Name="SEQ_DISCIPLINA_CURSO" />
             </Principal>
             <Dependent Role="PROFESSOR_TURMA">
-              <PropertyRef Name="SEQ_TURMA" />
+              <PropertyRef Name="CODIGO_TURMA" />
               <PropertyRef Name="SEQ_DISCIPLINA_CURSO" />
             </Dependent>
           </ReferentialConstraint>
@@ -341,12 +340,12 @@
             <End Role="DEPARTAMENTO" EntitySet="DEPARTAMENTO" />
             <End Role="DISCIPLINA" EntitySet="DISCIPLINA" />
           </AssociationSet>
-          <AssociationSet Name="FK__DISCIPLIN__SEQ_D__33D4B598" Association="Self.FK__DISCIPLIN__SEQ_D__33D4B598">
-            <End Role="DISCIPLINA_CURSO" EntitySet="DISCIPLINA_CURSO" />
+          <AssociationSet Name="FK__DISCIPLIN__CODIG__32E0915F" Association="Self.FK__DISCIPLIN__CODIG__32E0915F">
+            <End Role="TURMA" EntitySet="TURMA" />
             <End Role="DISCIPLINA_TURMA" EntitySet="DISCIPLINA_TURMA" />
           </AssociationSet>
-          <AssociationSet Name="FK__DISCIPLIN__SEQ_T__32E0915F" Association="Self.FK__DISCIPLIN__SEQ_T__32E0915F">
-            <End Role="TURMA" EntitySet="TURMA" />
+          <AssociationSet Name="FK__DISCIPLIN__SEQ_D__33D4B598" Association="Self.FK__DISCIPLIN__SEQ_D__33D4B598">
+            <End Role="DISCIPLINA_CURSO" EntitySet="DISCIPLINA_CURSO" />
             <End Role="DISCIPLINA_TURMA" EntitySet="DISCIPLINA_TURMA" />
           </AssociationSet>
           <AssociationSet Name="FK__ESPACO_TU__CODIG__35BCFE0A" Association="Self.FK__ESPACO_TU__CODIG__35BCFE0A">
@@ -440,13 +439,13 @@
         </EntityType>
         <EntityType Name="DISCIPLINA_TURMA">
           <Key>
-            <PropertyRef Name="SEQ_TURMA" />
+            <PropertyRef Name="CODIGO_TURMA" />
             <PropertyRef Name="SEQ_DISCIPLINA_CURSO" />
           </Key>
-          <Property Name="SEQ_TURMA" Type="Int32" Nullable="false" />
+          <Property Name="CODIGO_TURMA" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="SEQ_DISCIPLINA_CURSO" Type="Int32" Nullable="false" />
           <NavigationProperty Name="DISCIPLINA_CURSO" Relationship="Self.FK__DISCIPLIN__SEQ_D__33D4B598" FromRole="DISCIPLINA_TURMA" ToRole="DISCIPLINA_CURSO" />
-          <NavigationProperty Name="TURMA" Relationship="Self.FK__DISCIPLIN__SEQ_T__32E0915F" FromRole="DISCIPLINA_TURMA" ToRole="TURMA" />
+          <NavigationProperty Name="TURMA" Relationship="Self.FK__DISCIPLIN__CODIG__32E0915F" FromRole="DISCIPLINA_TURMA" ToRole="TURMA" />
           <NavigationProperty Name="ESPACO" Relationship="Self.ESPACO_TURMA" FromRole="DISCIPLINA_TURMA" ToRole="ESPACO" />
           <NavigationProperty Name="GRADE" Relationship="Self.GRADE_TURMA" FromRole="DISCIPLINA_TURMA" ToRole="GRADE" />
           <NavigationProperty Name="PROFESSOR" Relationship="Self.PROFESSOR_TURMA" FromRole="DISCIPLINA_TURMA" ToRole="PROFESSOR" />
@@ -494,12 +493,11 @@
         </EntityType>
         <EntityType Name="TURMA">
           <Key>
-            <PropertyRef Name="SEQ_TURMA" />
+            <PropertyRef Name="CODIGO_TURMA" />
           </Key>
-          <Property Name="SEQ_TURMA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="NOME_TURMA" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="CODIGO_TURMA" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="SEQ_SEMESTRE" Type="Int32" />
-          <NavigationProperty Name="DISCIPLINA_TURMA" Relationship="Self.FK__DISCIPLIN__SEQ_T__32E0915F" FromRole="TURMA" ToRole="DISCIPLINA_TURMA" />
+          <NavigationProperty Name="DISCIPLINA_TURMA" Relationship="Self.FK__DISCIPLIN__CODIG__32E0915F" FromRole="TURMA" ToRole="DISCIPLINA_TURMA" />
           <NavigationProperty Name="SEMESTRE" Relationship="Self.FK__TURMA__SEQ_SEMES__34C8D9D1" FromRole="TURMA" ToRole="SEMESTRE" />
         </EntityType>
         <Association Name="FK__DISCIPLIN__CODIG__286302EC">
@@ -562,15 +560,15 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__DISCIPLIN__SEQ_T__32E0915F">
+        <Association Name="FK__DISCIPLIN__CODIG__32E0915F">
           <End Role="TURMA" Type="Self.TURMA" Multiplicity="1" />
           <End Role="DISCIPLINA_TURMA" Type="Self.DISCIPLINA_TURMA" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="TURMA">
-              <PropertyRef Name="SEQ_TURMA" />
+              <PropertyRef Name="CODIGO_TURMA" />
             </Principal>
             <Dependent Role="DISCIPLINA_TURMA">
-              <PropertyRef Name="SEQ_TURMA" />
+              <PropertyRef Name="CODIGO_TURMA" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -633,7 +631,7 @@
             <End Role="DISCIPLINA_CURSO" EntitySet="DISCIPLINA_CURSO" />
             <End Role="DISCIPLINA_TURMA" EntitySet="DISCIPLINA_TURMA" />
           </AssociationSet>
-          <AssociationSet Name="FK__DISCIPLIN__SEQ_T__32E0915F" Association="Self.FK__DISCIPLIN__SEQ_T__32E0915F">
+          <AssociationSet Name="FK__DISCIPLIN__CODIG__32E0915F" Association="Self.FK__DISCIPLIN__CODIG__32E0915F">
             <End Role="TURMA" EntitySet="TURMA" />
             <End Role="DISCIPLINA_TURMA" EntitySet="DISCIPLINA_TURMA" />
           </AssociationSet>
@@ -704,7 +702,7 @@
           <EntitySetMapping Name="DISCIPLINA_TURMA">
             <EntityTypeMapping TypeName="GradeHorarioModelo.DISCIPLINA_TURMA">
               <MappingFragment StoreEntitySet="DISCIPLINA_TURMA">
-                <ScalarProperty Name="SEQ_TURMA" ColumnName="SEQ_TURMA" />
+                <ScalarProperty Name="CODIGO_TURMA" ColumnName="CODIGO_TURMA" />
                 <ScalarProperty Name="SEQ_DISCIPLINA_CURSO" ColumnName="SEQ_DISCIPLINA_CURSO" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -752,8 +750,7 @@
           <EntitySetMapping Name="TURMA">
             <EntityTypeMapping TypeName="GradeHorarioModelo.TURMA">
               <MappingFragment StoreEntitySet="TURMA">
-                <ScalarProperty Name="SEQ_TURMA" ColumnName="SEQ_TURMA" />
-                <ScalarProperty Name="NOME_TURMA" ColumnName="NOME_TURMA" />
+                <ScalarProperty Name="CODIGO_TURMA" ColumnName="CODIGO_TURMA" />
                 <ScalarProperty Name="SEQ_SEMESTRE" ColumnName="SEQ_SEMESTRE" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -763,7 +760,7 @@
               <ScalarProperty Name="CODIGO_ESPACO" ColumnName="CODIGO_ESPACO" />
             </EndProperty>
             <EndProperty Name="DISCIPLINA_TURMA">
-              <ScalarProperty Name="SEQ_TURMA" ColumnName="SEQ_TURMA" />
+              <ScalarProperty Name="CODIGO_TURMA" ColumnName="CODIGO_TURMA" />
               <ScalarProperty Name="SEQ_DISCIPLINA_CURSO" ColumnName="SEQ_DISCIPLINA_CURSO" />
             </EndProperty>
           </AssociationSetMapping>
@@ -772,7 +769,7 @@
               <ScalarProperty Name="SEQ_GRADE" ColumnName="SEQ_GRADE" />
             </EndProperty>
             <EndProperty Name="DISCIPLINA_TURMA">
-              <ScalarProperty Name="SEQ_TURMA" ColumnName="SEQ_TURMA" />
+              <ScalarProperty Name="CODIGO_TURMA" ColumnName="CODIGO_TURMA" />
               <ScalarProperty Name="SEQ_DISCIPLINA_CURSO" ColumnName="SEQ_DISCIPLINA_CURSO" />
             </EndProperty>
           </AssociationSetMapping>
@@ -789,7 +786,7 @@
               <ScalarProperty Name="CODIGO_PROFESSOR" ColumnName="CODIGO_PROFESSOR" />
             </EndProperty>
             <EndProperty Name="DISCIPLINA_TURMA">
-              <ScalarProperty Name="SEQ_TURMA" ColumnName="SEQ_TURMA" />
+              <ScalarProperty Name="CODIGO_TURMA" ColumnName="CODIGO_TURMA" />
               <ScalarProperty Name="SEQ_DISCIPLINA_CURSO" ColumnName="SEQ_DISCIPLINA_CURSO" />
             </EndProperty>
           </AssociationSetMapping>

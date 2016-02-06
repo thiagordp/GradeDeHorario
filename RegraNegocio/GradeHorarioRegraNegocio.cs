@@ -120,9 +120,71 @@ namespace RegraNegocio
             }
         }
 
-        public string SelecionaDetalhe(int hora, int dia, string disciplina, string turma, int prof1, int prof2, int prof3)
+        public string SelecionaDetalhe(string disciplina, string turma, int prof1, int prof2, int prof3, string espaco)
         {
-            return null;
+            StringBuilder msg = new StringBuilder();
+            string nomeDisciplina = "";
+            string nomeProf1 = "";
+            string nomeProf2 = "";
+            string nomeProf3 = "";
+            try
+            {
+                nomeDisciplina = (new AcessoDados.DisciplinaAcessoDados()).SelecionaDisciplina(disciplina).NOME_DISCIPLINA;
+
+                Modelos.PROFESSOR temp = (new AcessoDados.ProfessorAcessoDados()).SelecionaProfessorByCodigo(prof1);
+                if (temp != null)
+                {
+                    nomeProf1 = temp.NOME_PROFESSOR;
+                }
+
+                temp = (new AcessoDados.ProfessorAcessoDados()).SelecionaProfessorByCodigo(prof2);
+
+                if (temp != null)
+                {
+                    nomeProf2 = temp.NOME_PROFESSOR;
+                }
+
+                temp = (new AcessoDados.ProfessorAcessoDados()).SelecionaProfessorByCodigo(prof3);
+
+                if (temp != null)
+                {
+                    nomeProf3 = temp.NOME_PROFESSOR;
+                }
+
+
+                Modelos.ESPACO esp = (new InfraestruturaAcessoDados()).SelecionaInfraEstrutura(espaco).First();
+
+                string tipoEspaco = "Desconhecido";
+
+                if (esp != null)
+                {
+                    tipoEspaco = esp.TIPO_ESPACO;
+                }
+
+
+                msg.Append("Disciplina:\t\t" + disciplina + " - " + nomeDisciplina + "\n");
+                msg.Append("Turma:\t\t" + turma + "\n");
+                msg.Append("Professor:\t\t" + prof1 + " - " + nomeProf1 + "\n");
+
+                if (!prof2.Equals(-1))
+                {
+                    msg.Append("Professor 2:\t" + prof2 + " - " + nomeProf2 + "\n");
+                }
+
+                if (!prof3.Equals(-1))
+                {
+                    msg.Append("Professor 3:\t" + prof3 + " - " + nomeProf3 + "\n");
+                }
+
+                msg.Append("Espaço:\t\t" + espaco + "\n  • " + "Tipo:\t\t" + tipoEspaco);
+
+                return msg.ToString();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
         }
     }
 }
