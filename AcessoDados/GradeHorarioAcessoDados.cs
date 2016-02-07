@@ -47,18 +47,20 @@ namespace AcessoDados
             SqlCommand comandoSql = new SqlCommand();
             StringBuilder sql = new StringBuilder();
 
+            string nomeSemestre = (new Modelos.Entidade()).SEMESTRE.Find(semestre).NOME_SEMESTRE;
+
             sql.Append("SELECT HORARIO_GRADE, DIA_SEMANA_GRADE, CODIGO_DISCIPLINA, NOME_TURMA, CODIGO_ESPACO, ");
             sql.Append("CODIGO_PROFESSOR1, CODIGO_PROFESSOR2, CODIGO_PROFESSOR3 ");
             sql.Append("	FROM DISCIPLINA_TURMA AS DISC_TUR");
             sql.Append("	INNER JOIN ");
             sql.Append("		(SELECT SEQ_DISCIPLINA_CURSO, CODIGO_DISCIPLINA FROM DISCIPLINA_CURSO");
-            sql.Append("			WHERE FASE_DISCIPLINA_CURSO = 1 AND CODIGO_CURSO = 655) AS DISC ");
+            sql.Append("			WHERE FASE_DISCIPLINA_CURSO = " + fase.ToString() + " AND CODIGO_CURSO = " + this.curso.CODIGO_CURSO.ToString() + ") AS DISC ");
             sql.Append("		ON DISC.SEQ_DISCIPLINA_CURSO = DISC_TUR.SEQ_DISCIPLINA_CURSO ");
             sql.Append("	INNER JOIN ");
             sql.Append("		(SELECT TURMA.SEQ_TURMA, TURMA.NOME_TURMA FROM SEMESTRE ");
             sql.Append("           INNER JOIN TURMA");
             sql.Append("				ON TURMA.SEQ_SEMESTRE = SEMESTRE.SEQ_SEMESTRE");
-            sql.Append("			WHERE NOME_SEMESTRE = '2016/1') AS TRM");
+            sql.Append("			WHERE NOME_SEMESTRE = \'" + nomeSemestre + "\') AS TRM");
             sql.Append("		ON TRM.SEQ_TURMA = DISC_TUR.SEQ_TURMA");
             sql.Append("	INNER JOIN ");
             sql.Append("		ESPACO_TURMA AS ESP_TRM ");

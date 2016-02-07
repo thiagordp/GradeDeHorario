@@ -60,6 +60,28 @@ namespace RegraNegocio
                 throw new Exception("O campo de nome do semestre não pode ser vazio.");
             }
 
+            if (semestre.NOME_SEMESTRE.Count() != 6)
+            {
+                throw new Exception("Número de caracteres diferente de 6.");
+            }
+
+            for (int i = 0; i < semestre.NOME_SEMESTRE.Count(); i++)
+            {
+                if (semestre.NOME_SEMESTRE.ElementAt(i) != '0' &&
+                    semestre.NOME_SEMESTRE.ElementAt(i) != '1' &&
+                    semestre.NOME_SEMESTRE.ElementAt(i) != '2' &&
+                    semestre.NOME_SEMESTRE.ElementAt(i) != '3' &&
+                    semestre.NOME_SEMESTRE.ElementAt(i) != '4' &&
+                    semestre.NOME_SEMESTRE.ElementAt(i) != '5' &&
+                    semestre.NOME_SEMESTRE.ElementAt(i) != '6' &&
+                    semestre.NOME_SEMESTRE.ElementAt(i) != '7' &&
+                    semestre.NOME_SEMESTRE.ElementAt(i) != '8' &&
+                    semestre.NOME_SEMESTRE.ElementAt(i) != '9' &&
+                    semestre.NOME_SEMESTRE.ElementAt(i) != '/')
+                {
+                    throw new Exception("Nome com caractere(s) inválido(s). \n\nVálidos somente: 0, 1, ... , 9, /");
+                }
+            }
 
             semestreAD = new AcessoDados.SemestreAcessoDados();
             Modelos.SEMESTRE lista = semestreAD.SelecionaSemestrePorNome(semestre.NOME_SEMESTRE);

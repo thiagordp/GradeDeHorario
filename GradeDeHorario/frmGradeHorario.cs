@@ -185,28 +185,11 @@ namespace GradeDeHorario
             }
         }
 
-        /// <summary>
-        /// Carrega uma grade de horários com base nos parâmetros.
-        /// </summary>
-        /// <param name="curso"></param>
-        /// <param name="fase"></param>
-        /// <param name="semestre"></param>
-        private void CarregaGrade(int curso, int fase, int semestre)
-        {
-            gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(this.curso);
-
-            List<DataGridView> grade = gradeRN.CarregaGrade(curso, fase, semestre);
-        }
-
         private void btnCarregaGrade_Click(object sender, EventArgs e)
         {
             try
             {
-                CarregaGrade(
-                    curso.CODIGO_CURSO,
-                    Convert.ToInt32(cbbSelectFase.ComboBox.SelectedValue),
-                    Convert.ToInt32(cbbSelectSemestre.ComboBox.SelectedValue));
-
+                PreencheGrade();
                 btnEditar.Enabled = true;
             }
             catch (Exception ex)
@@ -229,8 +212,6 @@ namespace GradeDeHorario
         {
             try
             {
-                PreencheGrade();
-
                 PreenchePesquisaDisciplina(txtPesquisaDisciplina.Text);
                 PreenchePesquisaProfessor(txtPesquisaProfessor.Text);
                 PreenchePesquisaEspaco(txtPesquisaEspaco.Text);
@@ -293,7 +274,6 @@ namespace GradeDeHorario
         private void itmInserir_Click(object sender, EventArgs e)
         {
             MessageBox.Show(hoverGrade.Name);
-
         }
 
         private void itmEditar_Click(object sender, EventArgs e)
