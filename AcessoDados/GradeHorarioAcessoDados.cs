@@ -101,7 +101,7 @@ namespace AcessoDados
         /// </summary>
         /// <param name="filtro">Filtro para a pesquisa, sendo o começo do nome.</param>
         /// <returns>Retorna o conjunto de disciplinas que estão de acordo com o friltro.</returns>
-        public DataTable SelecionaDisciplina(string filtro)
+        public DataTable SelecionaDisciplina(string filtro, int fase)
         {
             DataTable dadosTabela = new DataTable();
             StringBuilder sql = new StringBuilder();
@@ -109,9 +109,11 @@ namespace AcessoDados
 
             try
             {
-                sql.Append("SELECT CODIGO_DISCIPLINA, NOME_DISCIPLINA ");
-                sql.Append("FROM DISCIPLINA ");
-                sql.Append("WHERE NOME_DISCIPLINA LIKE \'" + filtro + "%' ");
+                sql.Append("SELECT DISCIPLINA.CODIGO_DISCIPLINA, NOME_DISCIPLINA ");
+                sql.Append("FROM DISCIPLINA_CURSO ");
+                sql.Append("	INNER JOIN ");
+                sql.Append("		DISCIPLINA ON DISCIPLINA.CODIGO_DISCIPLINA = DISCIPLINA_CURSO.CODIGO_DISCIPLINA ");
+                sql.Append("WHERE NOME_DISCIPLINA LIKE '" + filtro + "%' AND FASE_DISCIPLINA_CURSO = " + fase + " ");
                 sql.Append("ORDER BY NOME_DISCIPLINA ASC");
 
                 using (SqlConnection conexao = new SqlConnection(Conexao.stringConexao))

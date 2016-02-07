@@ -30,14 +30,6 @@ namespace GradeDeHorario
             PreencheListaFase();
             PreencheListaSemestre();
             LayoutGrade();
-
-
-            (tblGrade.GetControlFromPosition(1, 1) as DataGridView).Rows.Add("", "", "ARA1354", "01655", "ARA302", 1, 2, 3);
-            (tblGrade.GetControlFromPosition(1, 1) as DataGridView).ClearSelection();
-            (tblGrade.GetControlFromPosition(6, 13) as DataGridView).Rows.Add("", "", "ARA2635", "01655", "ARC119", 2);
-            (tblGrade.GetControlFromPosition(6, 13) as DataGridView).ClearSelection();
-            (tblGrade.GetControlFromPosition(5, 10) as DataGridView).Rows.Add("", "", "ARA2635", "01655", "ARC119", 3);
-            (tblGrade.GetControlFromPosition(5, 10) as DataGridView).ClearSelection();
         }
 
         private void LayoutGrade()
@@ -86,16 +78,16 @@ namespace GradeDeHorario
 
         private void txtPesquisaDisciplina_TextChanged(object sender, EventArgs e)
         {
-            PreenchePesquisaDisciplina(txtPesquisaDisciplina.Text);
+            PreenchePesquisaDisciplina(txtPesquisaDisciplina.Text, Convert.ToInt32(cbbSelectFase.ComboBox.SelectedValue));
         }
 
-        private void PreenchePesquisaDisciplina(string filtro)
+        private void PreenchePesquisaDisciplina(string filtro, int fase)
         {
             try
             {
                 gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(curso);
 
-                dtgPesquisaDisciplina.DataSource = gradeRN.SelecionaDisciplina(filtro);
+                dtgPesquisaDisciplina.DataSource = gradeRN.SelecionaDisciplina(filtro, fase);
                 dtgPesquisaDisciplina.ClearSelection();
             }
             catch (Exception ex)
@@ -212,7 +204,7 @@ namespace GradeDeHorario
         {
             try
             {
-                PreenchePesquisaDisciplina(txtPesquisaDisciplina.Text);
+                PreenchePesquisaDisciplina(txtPesquisaDisciplina.Text, Convert.ToInt32(cbbSelectFase.ComboBox.SelectedValue));
                 PreenchePesquisaProfessor(txtPesquisaProfessor.Text);
                 PreenchePesquisaEspaco(txtPesquisaEspaco.Text);
                 cbbSelectFase.Enabled = cbbSelectSemestre.Enabled = btnCarregaGrade.Enabled = btnEditar.Enabled = false;
@@ -243,6 +235,8 @@ namespace GradeDeHorario
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            LimparTabelas();
+
             cbbSelectFase.Enabled = cbbSelectSemestre.Enabled = btnCarregaGrade.Enabled = true;
             btnCancelar.Enabled = btnSalvar.Enabled = btnGerarRelatorio.Enabled = tblGrade.Enabled = gbDisciplina.Enabled = gbProfessor.Enabled = gbSala.Enabled = btnEditar.Enabled = false;
         }
@@ -291,11 +285,6 @@ namespace GradeDeHorario
             hoverGrade = sender as DataGridView;
         }
 
-        private void dtgPesquisaDisciplina_MouseClick(object sender, MouseEventArgs e)
-        {
-
-        }
-
         private void itmDetalhes_Click(object sender, EventArgs e)
         {
             if (hoverGrade.Rows.Count.Equals(0)) { return; }
@@ -313,7 +302,6 @@ namespace GradeDeHorario
                 string disciplina = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[2].Value.ToString();
                 int prof1 = Convert.ToInt32(hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[5].Value);
                 int prof2, prof3;
-
 
                 object temp = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[6].Value;
 
@@ -340,15 +328,13 @@ namespace GradeDeHorario
                 string turma = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[3].Value.ToString();
                 string espaco = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[4].Value.ToString();
 
-
                 string msg = gradeRN.SelecionaDetalhe(disciplina, turma, prof1, prof2, prof3, espaco);
-
 
                 MessageBox.Show(msg, "Detalhe", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 
@@ -410,6 +396,9 @@ namespace GradeDeHorario
             }
         }
 
+        /// <summary>
+        /// Limpar todas as células da grade.
+        /// </summary>
         private void LimpaTodaGrade()
         {
             foreach (Control tabela in tblGrade.Controls)
@@ -419,6 +408,18 @@ namespace GradeDeHorario
                     (tabela as DataGridView).Rows.Clear();
                 }
             }
+        }
+
+        /// <summary>
+        /// Limpar as tabelas de disciplinas, espaços e professores.
+        /// </summary>
+        private void LimparTabelas()
+        {
+            this.PreenchePesquisaDisciplina("", -1);
+            this.PreenchePesquisaEspaco("-1");
+            this.PreenchePesquisaProfessor("-1");
+            this.PreencheGrade();
+            this.LimpaTodaGrade();
         }
     }
 }

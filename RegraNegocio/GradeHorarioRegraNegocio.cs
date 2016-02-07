@@ -32,13 +32,13 @@ namespace RegraNegocio
         /// Seleciona um conjunto de disciplinas com base no filtro.
         /// </summary>
         /// <param name="filtro">Filtro para a pesquisa, sendo o começo do nome.</param>
-        public DataTable SelecionaDisciplina(string filtro)
+        public DataTable SelecionaDisciplina(string filtro, int fase)
         {
             try
             {
                 gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso);
 
-                return gradeAD.SelecionaDisciplina(filtro);
+                return gradeAD.SelecionaDisciplina(filtro, fase);
             }
             catch (Exception ex)
             {
@@ -178,7 +178,6 @@ namespace RegraNegocio
             {
                 throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
             }
-
         }
 
         /// <summary>

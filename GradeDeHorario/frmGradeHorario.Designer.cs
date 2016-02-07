@@ -1211,7 +1211,6 @@
             this.dtgPesquisaDisciplina.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgPesquisaDisciplina.Size = new System.Drawing.Size(170, 111);
             this.dtgPesquisaDisciplina.TabIndex = 1;
-            this.dtgPesquisaDisciplina.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dtgPesquisaDisciplina_MouseClick);
             // 
             // SELECT_DISCIPLINA
             // 
