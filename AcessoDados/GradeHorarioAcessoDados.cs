@@ -35,9 +35,59 @@ namespace AcessoDados
         public void ApagaGrade() { }
 
         /// <summary>
-        /// Retorna todas as grade cadastradas
+        /// Retorna toda uma grade a partir dos atributos
         /// </summary>
-        public void SelecionaTodaGrade() { }
+        /// <param name="curso">Curso</param>
+        /// <param name="fase">Fase do curso</param>
+        /// <param name="semestre">Semestre da grade desejada</param>
+        /// <returns></returns>
+        public DataTable SelecionaTodaGrade(int fase, int semestre)
+        {
+            DataTable dadosTabela = new DataTable();
+            SqlCommand comandoSql = new SqlCommand();
+            StringBuilder sql = new StringBuilder();
+
+            sql.Append("SELECT HORARIO_GRADE, DIA_SEMANA_GRADE, CODIGO_DISCIPLINA, NOME_TURMA, CODIGO_ESPACO, ");
+            sql.Append("CODIGO_PROFESSOR1, CODIGO_PROFESSOR2, CODIGO_PROFESSOR3 ");
+            sql.Append("	FROM DISCIPLINA_TURMA AS DISC_TUR");
+            sql.Append("	INNER JOIN ");
+            sql.Append("		(SELECT SEQ_DISCIPLINA_CURSO, CODIGO_DISCIPLINA FROM DISCIPLINA_CURSO");
+            sql.Append("			WHERE FASE_DISCIPLINA_CURSO = 1 AND CODIGO_CURSO = 655) AS DISC ");
+            sql.Append("		ON DISC.SEQ_DISCIPLINA_CURSO = DISC_TUR.SEQ_DISCIPLINA_CURSO ");
+            sql.Append("	INNER JOIN ");
+            sql.Append("		(SELECT TURMA.SEQ_TURMA, TURMA.NOME_TURMA FROM SEMESTRE ");
+            sql.Append("           INNER JOIN TURMA");
+            sql.Append("				ON TURMA.SEQ_SEMESTRE = SEMESTRE.SEQ_SEMESTRE");
+            sql.Append("			WHERE NOME_SEMESTRE = '2016/1') AS TRM");
+            sql.Append("		ON TRM.SEQ_TURMA = DISC_TUR.SEQ_TURMA");
+            sql.Append("	INNER JOIN ");
+            sql.Append("		ESPACO_TURMA AS ESP_TRM ");
+            sql.Append("			ON ESP_TRM.SEQ_TURMA = DISC_TUR.SEQ_TURMA AND");
+            sql.Append("				ESP_TRM.SEQ_DISCIPLINA_CURSO = DISC_TUR.SEQ_TURMA");
+            sql.Append("	INNER JOIN ");
+            sql.Append("		GRADE_TURMA AS GRD_TRM");
+            sql.Append("			ON GRD_TRM.SEQ_DISCIPLINA_CURSO = DISC_TUR.SEQ_DISCIPLINA_CURSO AND");
+            sql.Append("				GRD_TRM.SEQ_TURMA = DISC_TUR.SEQ_TURMA");
+
+            try
+            {
+                using (SqlConnection conexao = new SqlConnection(Conexao.stringConexao))
+                {
+                    conexao.Open();
+
+                    comandoSql.CommandText = sql.ToString();
+                    comandoSql.Connection = conexao;
+
+                    dadosTabela.Load(comandoSql.ExecuteReader());
+
+                    return dadosTabela;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
 
         /// <summary>
         /// Retorna as grade que contém o nome indicado -- REVER O FILTRO
@@ -149,6 +199,10 @@ namespace AcessoDados
             }
         }
 
+        /// <summary>
+        /// Selecionar todos os semestres cadastros
+        /// </summary>
+        /// <returns>Lista de semestres</returns>
         public DataTable SelecionaTodoSemestre()
         {
             StringBuilder sql = new StringBuilder();
@@ -178,6 +232,5 @@ namespace AcessoDados
                 throw new Exception(ex.Message);
             }
         }
-
     }
 }

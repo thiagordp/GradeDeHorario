@@ -375,5 +375,10 @@ namespace GradeDeHorario
 
 
         }
+
+        private void PreencheGrade()
+        {
+
+        }
     }
 }

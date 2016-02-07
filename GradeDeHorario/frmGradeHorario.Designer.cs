@@ -1117,7 +1117,7 @@
             this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(5);
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(884, 492);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(884, 524);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // tableLayoutPanel2
@@ -1135,7 +1135,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(192, 482);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(192, 514);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // gbDisciplina
@@ -1146,7 +1146,7 @@
             this.gbDisciplina.Location = new System.Drawing.Point(3, 3);
             this.gbDisciplina.Name = "gbDisciplina";
             this.gbDisciplina.Padding = new System.Windows.Forms.Padding(5);
-            this.gbDisciplina.Size = new System.Drawing.Size(186, 154);
+            this.gbDisciplina.Size = new System.Drawing.Size(186, 165);
             this.gbDisciplina.TabIndex = 0;
             this.gbDisciplina.TabStop = false;
             this.gbDisciplina.Text = "Disciplinas";
@@ -1164,7 +1164,7 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(176, 131);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(176, 142);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // txtPesquisaDisciplina
@@ -1209,7 +1209,7 @@
             this.dtgPesquisaDisciplina.Name = "dtgPesquisaDisciplina";
             this.dtgPesquisaDisciplina.RowHeadersVisible = false;
             this.dtgPesquisaDisciplina.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgPesquisaDisciplina.Size = new System.Drawing.Size(170, 100);
+            this.dtgPesquisaDisciplina.Size = new System.Drawing.Size(170, 111);
             this.dtgPesquisaDisciplina.TabIndex = 1;
             this.dtgPesquisaDisciplina.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dtgPesquisaDisciplina_MouseClick);
             // 
@@ -1244,9 +1244,9 @@
             this.gbProfessor.Controls.Add(this.tableLayoutPanel4);
             this.gbProfessor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gbProfessor.Enabled = false;
-            this.gbProfessor.Location = new System.Drawing.Point(3, 163);
+            this.gbProfessor.Location = new System.Drawing.Point(3, 174);
             this.gbProfessor.Name = "gbProfessor";
-            this.gbProfessor.Size = new System.Drawing.Size(186, 154);
+            this.gbProfessor.Size = new System.Drawing.Size(186, 165);
             this.gbProfessor.TabIndex = 1;
             this.gbProfessor.TabStop = false;
             this.gbProfessor.Text = "Professores";
@@ -1264,7 +1264,7 @@
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(180, 135);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(180, 146);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // dtgPesquisaProfessor
@@ -1298,7 +1298,7 @@
             this.dtgPesquisaProfessor.Name = "dtgPesquisaProfessor";
             this.dtgPesquisaProfessor.RowHeadersVisible = false;
             this.dtgPesquisaProfessor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgPesquisaProfessor.Size = new System.Drawing.Size(174, 104);
+            this.dtgPesquisaProfessor.Size = new System.Drawing.Size(174, 115);
             this.dtgPesquisaProfessor.TabIndex = 2;
             // 
             // SELECT_PROFESSOR
@@ -1342,9 +1342,9 @@
             this.gbSala.Controls.Add(this.tableLayoutPanel5);
             this.gbSala.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gbSala.Enabled = false;
-            this.gbSala.Location = new System.Drawing.Point(3, 323);
+            this.gbSala.Location = new System.Drawing.Point(3, 345);
             this.gbSala.Name = "gbSala";
-            this.gbSala.Size = new System.Drawing.Size(186, 156);
+            this.gbSala.Size = new System.Drawing.Size(186, 166);
             this.gbSala.TabIndex = 2;
             this.gbSala.TabStop = false;
             this.gbSala.Text = "Salas e laboratórios";
@@ -1362,7 +1362,7 @@
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(180, 137);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(180, 147);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
             // dtgPesquisaEspaco
@@ -1397,7 +1397,7 @@
             this.dtgPesquisaEspaco.RowHeadersVisible = false;
             this.dtgPesquisaEspaco.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dtgPesquisaEspaco.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgPesquisaEspaco.Size = new System.Drawing.Size(174, 106);
+            this.dtgPesquisaEspaco.Size = new System.Drawing.Size(174, 116);
             this.dtgPesquisaEspaco.TabIndex = 2;
             // 
             // SELECT_ESPACO
@@ -1572,7 +1572,7 @@
             this.tblGrade.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tblGrade.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tblGrade.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tblGrade.Size = new System.Drawing.Size(672, 472);
+            this.tblGrade.Size = new System.Drawing.Size(672, 504);
             this.tblGrade.TabIndex = 1;
             // 
             // label18
@@ -1865,7 +1865,7 @@
             this.label23.Location = new System.Drawing.Point(4, 470);
             this.label23.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(83, 31);
+            this.label23.Size = new System.Drawing.Size(83, 32);
             this.label23.TabIndex = 124;
             this.label23.Text = "21:10 - 22:00";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1882,7 +1882,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(83, 31);
             this.label13.TabIndex = 149;
-            this.label13.Text = "21:10 - 22:00";
+            this.label13.Text = "20:20 - 21:10";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // grade12
@@ -1968,7 +1968,7 @@
             // 
             // CODIGO_PROFESSOR1_12
             // 
-            this.CODIGO_PROFESSOR1_12.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_12.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_12.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_12.Name = "CODIGO_PROFESSOR1_12";
             this.CODIGO_PROFESSOR1_12.ReadOnly = true;
@@ -1976,7 +1976,7 @@
             // 
             // CODIGO_PROFESSOR2_12
             // 
-            this.CODIGO_PROFESSOR2_12.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_12.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_12.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_12.Name = "CODIGO_PROFESSOR2_12";
             this.CODIGO_PROFESSOR2_12.ReadOnly = true;
@@ -1984,7 +1984,7 @@
             // 
             // CODIGO_PROFESSOR3_12
             // 
-            this.CODIGO_PROFESSOR3_12.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_12.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_12.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_12.Name = "CODIGO_PROFESSOR3_12";
             this.CODIGO_PROFESSOR3_12.ReadOnly = true;
@@ -2115,7 +2115,7 @@
             // 
             // CODIGO_PROFESSOR1_13
             // 
-            this.CODIGO_PROFESSOR1_13.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_13.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_13.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_13.Name = "CODIGO_PROFESSOR1_13";
             this.CODIGO_PROFESSOR1_13.ReadOnly = true;
@@ -2123,7 +2123,7 @@
             // 
             // CODIGO_PROFESSOR2_13
             // 
-            this.CODIGO_PROFESSOR2_13.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_13.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_13.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_13.Name = "CODIGO_PROFESSOR2_13";
             this.CODIGO_PROFESSOR2_13.ReadOnly = true;
@@ -2131,7 +2131,7 @@
             // 
             // CODIGO_PROFESSOR3_13
             // 
-            this.CODIGO_PROFESSOR3_13.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_13.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_13.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_13.Name = "CODIGO_PROFESSOR3_13";
             this.CODIGO_PROFESSOR3_13.ReadOnly = true;
@@ -2220,7 +2220,7 @@
             // 
             // CODIGO_PROFESSOR1_14
             // 
-            this.CODIGO_PROFESSOR1_14.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_14.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_14.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_14.Name = "CODIGO_PROFESSOR1_14";
             this.CODIGO_PROFESSOR1_14.ReadOnly = true;
@@ -2228,7 +2228,7 @@
             // 
             // CODIGO_PROFESSOR2_14
             // 
-            this.CODIGO_PROFESSOR2_14.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_14.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_14.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_14.Name = "CODIGO_PROFESSOR2_14";
             this.CODIGO_PROFESSOR2_14.ReadOnly = true;
@@ -2236,7 +2236,7 @@
             // 
             // CODIGO_PROFESSOR3_14
             // 
-            this.CODIGO_PROFESSOR3_14.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_14.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_14.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_14.Name = "CODIGO_PROFESSOR3_14";
             this.CODIGO_PROFESSOR3_14.ReadOnly = true;
@@ -2325,7 +2325,7 @@
             // 
             // CODIGO_PROFESSOR1_15
             // 
-            this.CODIGO_PROFESSOR1_15.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_15.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_15.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_15.Name = "CODIGO_PROFESSOR1_15";
             this.CODIGO_PROFESSOR1_15.ReadOnly = true;
@@ -2333,7 +2333,7 @@
             // 
             // CODIGO_PROFESSOR2_15
             // 
-            this.CODIGO_PROFESSOR2_15.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_15.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_15.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_15.Name = "CODIGO_PROFESSOR2_15";
             this.CODIGO_PROFESSOR2_15.ReadOnly = true;
@@ -2341,7 +2341,7 @@
             // 
             // CODIGO_PROFESSOR3_15
             // 
-            this.CODIGO_PROFESSOR3_15.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_15.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_15.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_15.Name = "CODIGO_PROFESSOR3_15";
             this.CODIGO_PROFESSOR3_15.ReadOnly = true;
@@ -2430,7 +2430,7 @@
             // 
             // CODIGO_PROFESSOR1_16
             // 
-            this.CODIGO_PROFESSOR1_16.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_16.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_16.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_16.Name = "CODIGO_PROFESSOR1_16";
             this.CODIGO_PROFESSOR1_16.ReadOnly = true;
@@ -2438,7 +2438,7 @@
             // 
             // CODIGO_PROFESSOR2_16
             // 
-            this.CODIGO_PROFESSOR2_16.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_16.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_16.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_16.Name = "CODIGO_PROFESSOR2_16";
             this.CODIGO_PROFESSOR2_16.ReadOnly = true;
@@ -2446,7 +2446,7 @@
             // 
             // CODIGO_PROFESSOR3_16
             // 
-            this.CODIGO_PROFESSOR3_16.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_16.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_16.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_16.Name = "CODIGO_PROFESSOR3_16";
             this.CODIGO_PROFESSOR3_16.ReadOnly = true;
@@ -2535,7 +2535,7 @@
             // 
             // CODIGO_PROFESSOR1_17
             // 
-            this.CODIGO_PROFESSOR1_17.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_17.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_17.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_17.Name = "CODIGO_PROFESSOR1_17";
             this.CODIGO_PROFESSOR1_17.ReadOnly = true;
@@ -2543,7 +2543,7 @@
             // 
             // CODIGO_PROFESSOR2_17
             // 
-            this.CODIGO_PROFESSOR2_17.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_17.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_17.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_17.Name = "CODIGO_PROFESSOR2_17";
             this.CODIGO_PROFESSOR2_17.ReadOnly = true;
@@ -2551,7 +2551,7 @@
             // 
             // CODIGO_PROFESSOR3_17
             // 
-            this.CODIGO_PROFESSOR3_17.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_17.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_17.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_17.Name = "CODIGO_PROFESSOR3_17";
             this.CODIGO_PROFESSOR3_17.ReadOnly = true;
@@ -2640,7 +2640,7 @@
             // 
             // CODIGO_PROFESSOR1_18
             // 
-            this.CODIGO_PROFESSOR1_18.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_18.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_18.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_18.Name = "CODIGO_PROFESSOR1_18";
             this.CODIGO_PROFESSOR1_18.ReadOnly = true;
@@ -2648,7 +2648,7 @@
             // 
             // CODIGO_PROFESSOR2_18
             // 
-            this.CODIGO_PROFESSOR2_18.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_18.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_18.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_18.Name = "CODIGO_PROFESSOR2_18";
             this.CODIGO_PROFESSOR2_18.ReadOnly = true;
@@ -2656,7 +2656,7 @@
             // 
             // CODIGO_PROFESSOR3_18
             // 
-            this.CODIGO_PROFESSOR3_18.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_18.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_18.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_18.Name = "CODIGO_PROFESSOR3_18";
             this.CODIGO_PROFESSOR3_18.ReadOnly = true;
@@ -2745,7 +2745,7 @@
             // 
             // CODIGO_PROFESSOR1_19
             // 
-            this.CODIGO_PROFESSOR1_19.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_19.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_19.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_19.Name = "CODIGO_PROFESSOR1_19";
             this.CODIGO_PROFESSOR1_19.ReadOnly = true;
@@ -2753,7 +2753,7 @@
             // 
             // CODIGO_PROFESSOR2_19
             // 
-            this.CODIGO_PROFESSOR2_19.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_19.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_19.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_19.Name = "CODIGO_PROFESSOR2_19";
             this.CODIGO_PROFESSOR2_19.ReadOnly = true;
@@ -2761,7 +2761,7 @@
             // 
             // CODIGO_PROFESSOR3_19
             // 
-            this.CODIGO_PROFESSOR3_19.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_19.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_19.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_19.Name = "CODIGO_PROFESSOR3_19";
             this.CODIGO_PROFESSOR3_19.ReadOnly = true;
@@ -2850,7 +2850,7 @@
             // 
             // CODIGO_PROFESSOR1_110
             // 
-            this.CODIGO_PROFESSOR1_110.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_110.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_110.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_110.Name = "CODIGO_PROFESSOR1_110";
             this.CODIGO_PROFESSOR1_110.ReadOnly = true;
@@ -2858,7 +2858,7 @@
             // 
             // CODIGO_PROFESSOR2_110
             // 
-            this.CODIGO_PROFESSOR2_110.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_110.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_110.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_110.Name = "CODIGO_PROFESSOR2_110";
             this.CODIGO_PROFESSOR2_110.ReadOnly = true;
@@ -2866,7 +2866,7 @@
             // 
             // CODIGO_PROFESSOR3_110
             // 
-            this.CODIGO_PROFESSOR3_110.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_110.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_110.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_110.Name = "CODIGO_PROFESSOR3_110";
             this.CODIGO_PROFESSOR3_110.ReadOnly = true;
@@ -2955,7 +2955,7 @@
             // 
             // CODIGO_PROFESSOR1_111
             // 
-            this.CODIGO_PROFESSOR1_111.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_111.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_111.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_111.Name = "CODIGO_PROFESSOR1_111";
             this.CODIGO_PROFESSOR1_111.ReadOnly = true;
@@ -2963,7 +2963,7 @@
             // 
             // CODIGO_PROFESSOR2_111
             // 
-            this.CODIGO_PROFESSOR2_111.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_111.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_111.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_111.Name = "CODIGO_PROFESSOR2_111";
             this.CODIGO_PROFESSOR2_111.ReadOnly = true;
@@ -2971,7 +2971,7 @@
             // 
             // CODIGO_PROFESSOR3_111
             // 
-            this.CODIGO_PROFESSOR3_111.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_111.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_111.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_111.Name = "CODIGO_PROFESSOR3_111";
             this.CODIGO_PROFESSOR3_111.ReadOnly = true;
@@ -3060,7 +3060,7 @@
             // 
             // CODIGO_PROFESSOR1_112
             // 
-            this.CODIGO_PROFESSOR1_112.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_112.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_112.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_112.Name = "CODIGO_PROFESSOR1_112";
             this.CODIGO_PROFESSOR1_112.ReadOnly = true;
@@ -3068,7 +3068,7 @@
             // 
             // CODIGO_PROFESSOR2_112
             // 
-            this.CODIGO_PROFESSOR2_112.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_112.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_112.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_112.Name = "CODIGO_PROFESSOR2_112";
             this.CODIGO_PROFESSOR2_112.ReadOnly = true;
@@ -3076,7 +3076,7 @@
             // 
             // CODIGO_PROFESSOR3_112
             // 
-            this.CODIGO_PROFESSOR3_112.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_112.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_112.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_112.Name = "CODIGO_PROFESSOR3_112";
             this.CODIGO_PROFESSOR3_112.ReadOnly = true;
@@ -3165,7 +3165,7 @@
             // 
             // CODIGO_PROFESSOR1_113
             // 
-            this.CODIGO_PROFESSOR1_113.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_113.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_113.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_113.Name = "CODIGO_PROFESSOR1_113";
             this.CODIGO_PROFESSOR1_113.ReadOnly = true;
@@ -3173,7 +3173,7 @@
             // 
             // CODIGO_PROFESSOR2_113
             // 
-            this.CODIGO_PROFESSOR2_113.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_113.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_113.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_113.Name = "CODIGO_PROFESSOR2_113";
             this.CODIGO_PROFESSOR2_113.ReadOnly = true;
@@ -3181,7 +3181,7 @@
             // 
             // CODIGO_PROFESSOR3_113
             // 
-            this.CODIGO_PROFESSOR3_113.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_113.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_113.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_113.Name = "CODIGO_PROFESSOR3_113";
             this.CODIGO_PROFESSOR3_113.ReadOnly = true;
@@ -3220,7 +3220,7 @@
             this.grade114.RowHeadersVisible = false;
             this.grade114.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.grade114.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grade114.Size = new System.Drawing.Size(89, 27);
+            this.grade114.Size = new System.Drawing.Size(89, 28);
             this.grade114.TabIndex = 150;
             this.grade114.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
@@ -3270,7 +3270,7 @@
             // 
             // CODIGO_PROFESSOR1_114
             // 
-            this.CODIGO_PROFESSOR1_114.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_114.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_114.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_114.Name = "CODIGO_PROFESSOR1_114";
             this.CODIGO_PROFESSOR1_114.ReadOnly = true;
@@ -3278,7 +3278,7 @@
             // 
             // CODIGO_PROFESSOR2_114
             // 
-            this.CODIGO_PROFESSOR2_114.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_114.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_114.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_114.Name = "CODIGO_PROFESSOR2_114";
             this.CODIGO_PROFESSOR2_114.ReadOnly = true;
@@ -3286,7 +3286,7 @@
             // 
             // CODIGO_PROFESSOR3_114
             // 
-            this.CODIGO_PROFESSOR3_114.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_114.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_114.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_114.Name = "CODIGO_PROFESSOR3_114";
             this.CODIGO_PROFESSOR3_114.ReadOnly = true;
@@ -3375,7 +3375,7 @@
             // 
             // CODIGO_PROFESSOR1_21
             // 
-            this.CODIGO_PROFESSOR1_21.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_21.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_21.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_21.Name = "CODIGO_PROFESSOR1_21";
             this.CODIGO_PROFESSOR1_21.ReadOnly = true;
@@ -3383,7 +3383,7 @@
             // 
             // CODIGO_PROFESSOR2_21
             // 
-            this.CODIGO_PROFESSOR2_21.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_21.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_21.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_21.Name = "CODIGO_PROFESSOR2_21";
             this.CODIGO_PROFESSOR2_21.ReadOnly = true;
@@ -3391,7 +3391,7 @@
             // 
             // CODIGO_PROFESSOR3_21
             // 
-            this.CODIGO_PROFESSOR3_21.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_21.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_21.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_21.Name = "CODIGO_PROFESSOR3_21";
             this.CODIGO_PROFESSOR3_21.ReadOnly = true;
@@ -3480,7 +3480,7 @@
             // 
             // CODIGO_PROFESSOR1_22
             // 
-            this.CODIGO_PROFESSOR1_22.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_22.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_22.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_22.Name = "CODIGO_PROFESSOR1_22";
             this.CODIGO_PROFESSOR1_22.ReadOnly = true;
@@ -3488,7 +3488,7 @@
             // 
             // CODIGO_PROFESSOR2_22
             // 
-            this.CODIGO_PROFESSOR2_22.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_22.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_22.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_22.Name = "CODIGO_PROFESSOR2_22";
             this.CODIGO_PROFESSOR2_22.ReadOnly = true;
@@ -3496,7 +3496,7 @@
             // 
             // CODIGO_PROFESSOR3_22
             // 
-            this.CODIGO_PROFESSOR3_22.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_22.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_22.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_22.Name = "CODIGO_PROFESSOR3_22";
             this.CODIGO_PROFESSOR3_22.ReadOnly = true;
@@ -3585,7 +3585,7 @@
             // 
             // CODIGO_PROFESSOR1_23
             // 
-            this.CODIGO_PROFESSOR1_23.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_23.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_23.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_23.Name = "CODIGO_PROFESSOR1_23";
             this.CODIGO_PROFESSOR1_23.ReadOnly = true;
@@ -3593,7 +3593,7 @@
             // 
             // CODIGO_PROFESSOR2_23
             // 
-            this.CODIGO_PROFESSOR2_23.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_23.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_23.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_23.Name = "CODIGO_PROFESSOR2_23";
             this.CODIGO_PROFESSOR2_23.ReadOnly = true;
@@ -3601,7 +3601,7 @@
             // 
             // CODIGO_PROFESSOR3_23
             // 
-            this.CODIGO_PROFESSOR3_23.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_23.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_23.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_23.Name = "CODIGO_PROFESSOR3_23";
             this.CODIGO_PROFESSOR3_23.ReadOnly = true;
@@ -3690,7 +3690,7 @@
             // 
             // CODIGO_PROFESSOR1_24
             // 
-            this.CODIGO_PROFESSOR1_24.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_24.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_24.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_24.Name = "CODIGO_PROFESSOR1_24";
             this.CODIGO_PROFESSOR1_24.ReadOnly = true;
@@ -3698,7 +3698,7 @@
             // 
             // CODIGO_PROFESSOR2_24
             // 
-            this.CODIGO_PROFESSOR2_24.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_24.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_24.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_24.Name = "CODIGO_PROFESSOR2_24";
             this.CODIGO_PROFESSOR2_24.ReadOnly = true;
@@ -3706,7 +3706,7 @@
             // 
             // CODIGO_PROFESSOR3_24
             // 
-            this.CODIGO_PROFESSOR3_24.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_24.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_24.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_24.Name = "CODIGO_PROFESSOR3_24";
             this.CODIGO_PROFESSOR3_24.ReadOnly = true;
@@ -3795,7 +3795,7 @@
             // 
             // CODIGO_PROFESSOR1_25
             // 
-            this.CODIGO_PROFESSOR1_25.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_25.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_25.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_25.Name = "CODIGO_PROFESSOR1_25";
             this.CODIGO_PROFESSOR1_25.ReadOnly = true;
@@ -3803,7 +3803,7 @@
             // 
             // CODIGO_PROFESSOR2_25
             // 
-            this.CODIGO_PROFESSOR2_25.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_25.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_25.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_25.Name = "CODIGO_PROFESSOR2_25";
             this.CODIGO_PROFESSOR2_25.ReadOnly = true;
@@ -3811,7 +3811,7 @@
             // 
             // CODIGO_PROFESSOR3_25
             // 
-            this.CODIGO_PROFESSOR3_25.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_25.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_25.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_25.Name = "CODIGO_PROFESSOR3_25";
             this.CODIGO_PROFESSOR3_25.ReadOnly = true;
@@ -3900,7 +3900,7 @@
             // 
             // CODIGO_PROFESSOR1_26
             // 
-            this.CODIGO_PROFESSOR1_26.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_26.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_26.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_26.Name = "CODIGO_PROFESSOR1_26";
             this.CODIGO_PROFESSOR1_26.ReadOnly = true;
@@ -3908,7 +3908,7 @@
             // 
             // CODIGO_PROFESSOR2_26
             // 
-            this.CODIGO_PROFESSOR2_26.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_26.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_26.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_26.Name = "CODIGO_PROFESSOR2_26";
             this.CODIGO_PROFESSOR2_26.ReadOnly = true;
@@ -3916,7 +3916,7 @@
             // 
             // CODIGO_PROFESSOR3_26
             // 
-            this.CODIGO_PROFESSOR3_26.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_26.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_26.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_26.Name = "CODIGO_PROFESSOR3_26";
             this.CODIGO_PROFESSOR3_26.ReadOnly = true;
@@ -4005,7 +4005,7 @@
             // 
             // CODIGO_PROFESSOR1_27
             // 
-            this.CODIGO_PROFESSOR1_27.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_27.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_27.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_27.Name = "CODIGO_PROFESSOR1_27";
             this.CODIGO_PROFESSOR1_27.ReadOnly = true;
@@ -4013,7 +4013,7 @@
             // 
             // CODIGO_PROFESSOR2_27
             // 
-            this.CODIGO_PROFESSOR2_27.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_27.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_27.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_27.Name = "CODIGO_PROFESSOR2_27";
             this.CODIGO_PROFESSOR2_27.ReadOnly = true;
@@ -4021,7 +4021,7 @@
             // 
             // CODIGO_PROFESSOR3_27
             // 
-            this.CODIGO_PROFESSOR3_27.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_27.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_27.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_27.Name = "CODIGO_PROFESSOR3_27";
             this.CODIGO_PROFESSOR3_27.ReadOnly = true;
@@ -4110,7 +4110,7 @@
             // 
             // CODIGO_PROFESSOR1_28
             // 
-            this.CODIGO_PROFESSOR1_28.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_28.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_28.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_28.Name = "CODIGO_PROFESSOR1_28";
             this.CODIGO_PROFESSOR1_28.ReadOnly = true;
@@ -4118,7 +4118,7 @@
             // 
             // CODIGO_PROFESSOR2_28
             // 
-            this.CODIGO_PROFESSOR2_28.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_28.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_28.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_28.Name = "CODIGO_PROFESSOR2_28";
             this.CODIGO_PROFESSOR2_28.ReadOnly = true;
@@ -4126,7 +4126,7 @@
             // 
             // CODIGO_PROFESSOR3_28
             // 
-            this.CODIGO_PROFESSOR3_28.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_28.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_28.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_28.Name = "CODIGO_PROFESSOR3_28";
             this.CODIGO_PROFESSOR3_28.ReadOnly = true;
@@ -4215,7 +4215,7 @@
             // 
             // CODIGO_PROFESSOR1_29
             // 
-            this.CODIGO_PROFESSOR1_29.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_29.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_29.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_29.Name = "CODIGO_PROFESSOR1_29";
             this.CODIGO_PROFESSOR1_29.ReadOnly = true;
@@ -4223,7 +4223,7 @@
             // 
             // CODIGO_PROFESSOR2_29
             // 
-            this.CODIGO_PROFESSOR2_29.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_29.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_29.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_29.Name = "CODIGO_PROFESSOR2_29";
             this.CODIGO_PROFESSOR2_29.ReadOnly = true;
@@ -4231,7 +4231,7 @@
             // 
             // CODIGO_PROFESSOR3_29
             // 
-            this.CODIGO_PROFESSOR3_29.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_29.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_29.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_29.Name = "CODIGO_PROFESSOR3_29";
             this.CODIGO_PROFESSOR3_29.ReadOnly = true;
@@ -4320,7 +4320,7 @@
             // 
             // CODIGO_PROFESSOR1_210
             // 
-            this.CODIGO_PROFESSOR1_210.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_210.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_210.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_210.Name = "CODIGO_PROFESSOR1_210";
             this.CODIGO_PROFESSOR1_210.ReadOnly = true;
@@ -4328,7 +4328,7 @@
             // 
             // CODIGO_PROFESSOR2_210
             // 
-            this.CODIGO_PROFESSOR2_210.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_210.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_210.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_210.Name = "CODIGO_PROFESSOR2_210";
             this.CODIGO_PROFESSOR2_210.ReadOnly = true;
@@ -4336,7 +4336,7 @@
             // 
             // CODIGO_PROFESSOR3_210
             // 
-            this.CODIGO_PROFESSOR3_210.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_210.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_210.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_210.Name = "CODIGO_PROFESSOR3_210";
             this.CODIGO_PROFESSOR3_210.ReadOnly = true;
@@ -4425,7 +4425,7 @@
             // 
             // CODIGO_PROFESSOR1_211
             // 
-            this.CODIGO_PROFESSOR1_211.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_211.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_211.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_211.Name = "CODIGO_PROFESSOR1_211";
             this.CODIGO_PROFESSOR1_211.ReadOnly = true;
@@ -4433,7 +4433,7 @@
             // 
             // CODIGO_PROFESSOR2_211
             // 
-            this.CODIGO_PROFESSOR2_211.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_211.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_211.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_211.Name = "CODIGO_PROFESSOR2_211";
             this.CODIGO_PROFESSOR2_211.ReadOnly = true;
@@ -4441,7 +4441,7 @@
             // 
             // CODIGO_PROFESSOR3_211
             // 
-            this.CODIGO_PROFESSOR3_211.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_211.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_211.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_211.Name = "CODIGO_PROFESSOR3_211";
             this.CODIGO_PROFESSOR3_211.ReadOnly = true;
@@ -4530,7 +4530,7 @@
             // 
             // CODIGO_PROFESSOR1_212
             // 
-            this.CODIGO_PROFESSOR1_212.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_212.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_212.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_212.Name = "CODIGO_PROFESSOR1_212";
             this.CODIGO_PROFESSOR1_212.ReadOnly = true;
@@ -4538,7 +4538,7 @@
             // 
             // CODIGO_PROFESSOR2_212
             // 
-            this.CODIGO_PROFESSOR2_212.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_212.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_212.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_212.Name = "CODIGO_PROFESSOR2_212";
             this.CODIGO_PROFESSOR2_212.ReadOnly = true;
@@ -4546,7 +4546,7 @@
             // 
             // CODIGO_PROFESSOR3_212
             // 
-            this.CODIGO_PROFESSOR3_212.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_212.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_212.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_212.Name = "CODIGO_PROFESSOR3_212";
             this.CODIGO_PROFESSOR3_212.ReadOnly = true;
@@ -4635,7 +4635,7 @@
             // 
             // CODIGO_PROFESSOR1_213
             // 
-            this.CODIGO_PROFESSOR1_213.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_213.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_213.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_213.Name = "CODIGO_PROFESSOR1_213";
             this.CODIGO_PROFESSOR1_213.ReadOnly = true;
@@ -4643,7 +4643,7 @@
             // 
             // CODIGO_PROFESSOR2_213
             // 
-            this.CODIGO_PROFESSOR2_213.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_213.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_213.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_213.Name = "CODIGO_PROFESSOR2_213";
             this.CODIGO_PROFESSOR2_213.ReadOnly = true;
@@ -4651,7 +4651,7 @@
             // 
             // CODIGO_PROFESSOR3_213
             // 
-            this.CODIGO_PROFESSOR3_213.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_213.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_213.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_213.Name = "CODIGO_PROFESSOR3_213";
             this.CODIGO_PROFESSOR3_213.ReadOnly = true;
@@ -4690,7 +4690,7 @@
             this.grade214.RowHeadersVisible = false;
             this.grade214.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.grade214.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grade214.Size = new System.Drawing.Size(89, 27);
+            this.grade214.Size = new System.Drawing.Size(89, 28);
             this.grade214.TabIndex = 150;
             this.grade214.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
@@ -4740,7 +4740,7 @@
             // 
             // CODIGO_PROFESSOR1_214
             // 
-            this.CODIGO_PROFESSOR1_214.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_214.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_214.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_214.Name = "CODIGO_PROFESSOR1_214";
             this.CODIGO_PROFESSOR1_214.ReadOnly = true;
@@ -4748,7 +4748,7 @@
             // 
             // CODIGO_PROFESSOR2_214
             // 
-            this.CODIGO_PROFESSOR2_214.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_214.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_214.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_214.Name = "CODIGO_PROFESSOR2_214";
             this.CODIGO_PROFESSOR2_214.ReadOnly = true;
@@ -4756,7 +4756,7 @@
             // 
             // CODIGO_PROFESSOR3_214
             // 
-            this.CODIGO_PROFESSOR3_214.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_214.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_214.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_214.Name = "CODIGO_PROFESSOR3_214";
             this.CODIGO_PROFESSOR3_214.ReadOnly = true;
@@ -4845,7 +4845,7 @@
             // 
             // CODIGO_PROFESSOR1_31
             // 
-            this.CODIGO_PROFESSOR1_31.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_31.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_31.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_31.Name = "CODIGO_PROFESSOR1_31";
             this.CODIGO_PROFESSOR1_31.ReadOnly = true;
@@ -4853,7 +4853,7 @@
             // 
             // CODIGO_PROFESSOR2_31
             // 
-            this.CODIGO_PROFESSOR2_31.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_31.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_31.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_31.Name = "CODIGO_PROFESSOR2_31";
             this.CODIGO_PROFESSOR2_31.ReadOnly = true;
@@ -4861,7 +4861,7 @@
             // 
             // CODIGO_PROFESSOR3_31
             // 
-            this.CODIGO_PROFESSOR3_31.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_31.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_31.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_31.Name = "CODIGO_PROFESSOR3_31";
             this.CODIGO_PROFESSOR3_31.ReadOnly = true;
@@ -4950,7 +4950,7 @@
             // 
             // CODIGO_PROFESSOR1_32
             // 
-            this.CODIGO_PROFESSOR1_32.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_32.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_32.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_32.Name = "CODIGO_PROFESSOR1_32";
             this.CODIGO_PROFESSOR1_32.ReadOnly = true;
@@ -4958,7 +4958,7 @@
             // 
             // CODIGO_PROFESSOR2_32
             // 
-            this.CODIGO_PROFESSOR2_32.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_32.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_32.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_32.Name = "CODIGO_PROFESSOR2_32";
             this.CODIGO_PROFESSOR2_32.ReadOnly = true;
@@ -4966,7 +4966,7 @@
             // 
             // CODIGO_PROFESSOR3_32
             // 
-            this.CODIGO_PROFESSOR3_32.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_32.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_32.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_32.Name = "CODIGO_PROFESSOR3_32";
             this.CODIGO_PROFESSOR3_32.ReadOnly = true;
@@ -5055,7 +5055,7 @@
             // 
             // CODIGO_PROFESSOR1_33
             // 
-            this.CODIGO_PROFESSOR1_33.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_33.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_33.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_33.Name = "CODIGO_PROFESSOR1_33";
             this.CODIGO_PROFESSOR1_33.ReadOnly = true;
@@ -5063,7 +5063,7 @@
             // 
             // CODIGO_PROFESSOR2_33
             // 
-            this.CODIGO_PROFESSOR2_33.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_33.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_33.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_33.Name = "CODIGO_PROFESSOR2_33";
             this.CODIGO_PROFESSOR2_33.ReadOnly = true;
@@ -5071,7 +5071,7 @@
             // 
             // CODIGO_PROFESSOR3_33
             // 
-            this.CODIGO_PROFESSOR3_33.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_33.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_33.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_33.Name = "CODIGO_PROFESSOR3_33";
             this.CODIGO_PROFESSOR3_33.ReadOnly = true;
@@ -5160,7 +5160,7 @@
             // 
             // CODIGO_PROFESSOR1_34
             // 
-            this.CODIGO_PROFESSOR1_34.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_34.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_34.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_34.Name = "CODIGO_PROFESSOR1_34";
             this.CODIGO_PROFESSOR1_34.ReadOnly = true;
@@ -5168,7 +5168,7 @@
             // 
             // CODIGO_PROFESSOR2_34
             // 
-            this.CODIGO_PROFESSOR2_34.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_34.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_34.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_34.Name = "CODIGO_PROFESSOR2_34";
             this.CODIGO_PROFESSOR2_34.ReadOnly = true;
@@ -5176,7 +5176,7 @@
             // 
             // CODIGO_PROFESSOR3_34
             // 
-            this.CODIGO_PROFESSOR3_34.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_34.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_34.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_34.Name = "CODIGO_PROFESSOR3_34";
             this.CODIGO_PROFESSOR3_34.ReadOnly = true;
@@ -5265,7 +5265,7 @@
             // 
             // CODIGO_PROFESSOR1_35
             // 
-            this.CODIGO_PROFESSOR1_35.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_35.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_35.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_35.Name = "CODIGO_PROFESSOR1_35";
             this.CODIGO_PROFESSOR1_35.ReadOnly = true;
@@ -5273,7 +5273,7 @@
             // 
             // CODIGO_PROFESSOR2_35
             // 
-            this.CODIGO_PROFESSOR2_35.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_35.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_35.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_35.Name = "CODIGO_PROFESSOR2_35";
             this.CODIGO_PROFESSOR2_35.ReadOnly = true;
@@ -5281,7 +5281,7 @@
             // 
             // CODIGO_PROFESSOR3_35
             // 
-            this.CODIGO_PROFESSOR3_35.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_35.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_35.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_35.Name = "CODIGO_PROFESSOR3_35";
             this.CODIGO_PROFESSOR3_35.ReadOnly = true;
@@ -5370,7 +5370,7 @@
             // 
             // CODIGO_PROFESSOR1_36
             // 
-            this.CODIGO_PROFESSOR1_36.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_36.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_36.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_36.Name = "CODIGO_PROFESSOR1_36";
             this.CODIGO_PROFESSOR1_36.ReadOnly = true;
@@ -5378,7 +5378,7 @@
             // 
             // CODIGO_PROFESSOR2_36
             // 
-            this.CODIGO_PROFESSOR2_36.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_36.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_36.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_36.Name = "CODIGO_PROFESSOR2_36";
             this.CODIGO_PROFESSOR2_36.ReadOnly = true;
@@ -5386,7 +5386,7 @@
             // 
             // CODIGO_PROFESSOR3_36
             // 
-            this.CODIGO_PROFESSOR3_36.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_36.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_36.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_36.Name = "CODIGO_PROFESSOR3_36";
             this.CODIGO_PROFESSOR3_36.ReadOnly = true;
@@ -5475,7 +5475,7 @@
             // 
             // CODIGO_PROFESSOR1_37
             // 
-            this.CODIGO_PROFESSOR1_37.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_37.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_37.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_37.Name = "CODIGO_PROFESSOR1_37";
             this.CODIGO_PROFESSOR1_37.ReadOnly = true;
@@ -5483,7 +5483,7 @@
             // 
             // CODIGO_PROFESSOR2_37
             // 
-            this.CODIGO_PROFESSOR2_37.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_37.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_37.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_37.Name = "CODIGO_PROFESSOR2_37";
             this.CODIGO_PROFESSOR2_37.ReadOnly = true;
@@ -5491,7 +5491,7 @@
             // 
             // CODIGO_PROFESSOR3_37
             // 
-            this.CODIGO_PROFESSOR3_37.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_37.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_37.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_37.Name = "CODIGO_PROFESSOR3_37";
             this.CODIGO_PROFESSOR3_37.ReadOnly = true;
@@ -5580,7 +5580,7 @@
             // 
             // CODIGO_PROFESSOR1_38
             // 
-            this.CODIGO_PROFESSOR1_38.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_38.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_38.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_38.Name = "CODIGO_PROFESSOR1_38";
             this.CODIGO_PROFESSOR1_38.ReadOnly = true;
@@ -5588,7 +5588,7 @@
             // 
             // CODIGO_PROFESSOR2_38
             // 
-            this.CODIGO_PROFESSOR2_38.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_38.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_38.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_38.Name = "CODIGO_PROFESSOR2_38";
             this.CODIGO_PROFESSOR2_38.ReadOnly = true;
@@ -5596,7 +5596,7 @@
             // 
             // CODIGO_PROFESSOR3_38
             // 
-            this.CODIGO_PROFESSOR3_38.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_38.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_38.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_38.Name = "CODIGO_PROFESSOR3_38";
             this.CODIGO_PROFESSOR3_38.ReadOnly = true;
@@ -5685,7 +5685,7 @@
             // 
             // CODIGO_PROFESSOR1_39
             // 
-            this.CODIGO_PROFESSOR1_39.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_39.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_39.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_39.Name = "CODIGO_PROFESSOR1_39";
             this.CODIGO_PROFESSOR1_39.ReadOnly = true;
@@ -5693,7 +5693,7 @@
             // 
             // CODIGO_PROFESSOR2_39
             // 
-            this.CODIGO_PROFESSOR2_39.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_39.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_39.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_39.Name = "CODIGO_PROFESSOR2_39";
             this.CODIGO_PROFESSOR2_39.ReadOnly = true;
@@ -5701,7 +5701,7 @@
             // 
             // CODIGO_PROFESSOR3_39
             // 
-            this.CODIGO_PROFESSOR3_39.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_39.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_39.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_39.Name = "CODIGO_PROFESSOR3_39";
             this.CODIGO_PROFESSOR3_39.ReadOnly = true;
@@ -5790,7 +5790,7 @@
             // 
             // CODIGO_PROFESSOR1_310
             // 
-            this.CODIGO_PROFESSOR1_310.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_310.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_310.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_310.Name = "CODIGO_PROFESSOR1_310";
             this.CODIGO_PROFESSOR1_310.ReadOnly = true;
@@ -5798,7 +5798,7 @@
             // 
             // CODIGO_PROFESSOR2_310
             // 
-            this.CODIGO_PROFESSOR2_310.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_310.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_310.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_310.Name = "CODIGO_PROFESSOR2_310";
             this.CODIGO_PROFESSOR2_310.ReadOnly = true;
@@ -5806,7 +5806,7 @@
             // 
             // CODIGO_PROFESSOR3_310
             // 
-            this.CODIGO_PROFESSOR3_310.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_310.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_310.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_310.Name = "CODIGO_PROFESSOR3_310";
             this.CODIGO_PROFESSOR3_310.ReadOnly = true;
@@ -5895,7 +5895,7 @@
             // 
             // CODIGO_PROFESSOR1_311
             // 
-            this.CODIGO_PROFESSOR1_311.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_311.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_311.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_311.Name = "CODIGO_PROFESSOR1_311";
             this.CODIGO_PROFESSOR1_311.ReadOnly = true;
@@ -5903,7 +5903,7 @@
             // 
             // CODIGO_PROFESSOR2_311
             // 
-            this.CODIGO_PROFESSOR2_311.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_311.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_311.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_311.Name = "CODIGO_PROFESSOR2_311";
             this.CODIGO_PROFESSOR2_311.ReadOnly = true;
@@ -5911,7 +5911,7 @@
             // 
             // CODIGO_PROFESSOR3_311
             // 
-            this.CODIGO_PROFESSOR3_311.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_311.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_311.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_311.Name = "CODIGO_PROFESSOR3_311";
             this.CODIGO_PROFESSOR3_311.ReadOnly = true;
@@ -6000,7 +6000,7 @@
             // 
             // CODIGO_PROFESSOR1_312
             // 
-            this.CODIGO_PROFESSOR1_312.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_312.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_312.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_312.Name = "CODIGO_PROFESSOR1_312";
             this.CODIGO_PROFESSOR1_312.ReadOnly = true;
@@ -6008,7 +6008,7 @@
             // 
             // CODIGO_PROFESSOR2_312
             // 
-            this.CODIGO_PROFESSOR2_312.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_312.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_312.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_312.Name = "CODIGO_PROFESSOR2_312";
             this.CODIGO_PROFESSOR2_312.ReadOnly = true;
@@ -6016,7 +6016,7 @@
             // 
             // CODIGO_PROFESSOR3_312
             // 
-            this.CODIGO_PROFESSOR3_312.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_312.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_312.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_312.Name = "CODIGO_PROFESSOR3_312";
             this.CODIGO_PROFESSOR3_312.ReadOnly = true;
@@ -6105,7 +6105,7 @@
             // 
             // CODIGO_PROFESSOR1_313
             // 
-            this.CODIGO_PROFESSOR1_313.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_313.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_313.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_313.Name = "CODIGO_PROFESSOR1_313";
             this.CODIGO_PROFESSOR1_313.ReadOnly = true;
@@ -6113,7 +6113,7 @@
             // 
             // CODIGO_PROFESSOR2_313
             // 
-            this.CODIGO_PROFESSOR2_313.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_313.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_313.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_313.Name = "CODIGO_PROFESSOR2_313";
             this.CODIGO_PROFESSOR2_313.ReadOnly = true;
@@ -6121,7 +6121,7 @@
             // 
             // CODIGO_PROFESSOR3_313
             // 
-            this.CODIGO_PROFESSOR3_313.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_313.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_313.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_313.Name = "CODIGO_PROFESSOR3_313";
             this.CODIGO_PROFESSOR3_313.ReadOnly = true;
@@ -6160,7 +6160,7 @@
             this.grade314.RowHeadersVisible = false;
             this.grade314.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.grade314.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grade314.Size = new System.Drawing.Size(89, 27);
+            this.grade314.Size = new System.Drawing.Size(89, 28);
             this.grade314.TabIndex = 150;
             this.grade314.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
@@ -6210,7 +6210,7 @@
             // 
             // CODIGO_PROFESSOR1_314
             // 
-            this.CODIGO_PROFESSOR1_314.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_314.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_314.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_314.Name = "CODIGO_PROFESSOR1_314";
             this.CODIGO_PROFESSOR1_314.ReadOnly = true;
@@ -6218,7 +6218,7 @@
             // 
             // CODIGO_PROFESSOR2_314
             // 
-            this.CODIGO_PROFESSOR2_314.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_314.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_314.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_314.Name = "CODIGO_PROFESSOR2_314";
             this.CODIGO_PROFESSOR2_314.ReadOnly = true;
@@ -6226,7 +6226,7 @@
             // 
             // CODIGO_PROFESSOR3_314
             // 
-            this.CODIGO_PROFESSOR3_314.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_314.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_314.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_314.Name = "CODIGO_PROFESSOR3_314";
             this.CODIGO_PROFESSOR3_314.ReadOnly = true;
@@ -6315,7 +6315,7 @@
             // 
             // CODIGO_PROFESSOR1_41
             // 
-            this.CODIGO_PROFESSOR1_41.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_41.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_41.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_41.Name = "CODIGO_PROFESSOR1_41";
             this.CODIGO_PROFESSOR1_41.ReadOnly = true;
@@ -6323,7 +6323,7 @@
             // 
             // CODIGO_PROFESSOR2_41
             // 
-            this.CODIGO_PROFESSOR2_41.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_41.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_41.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_41.Name = "CODIGO_PROFESSOR2_41";
             this.CODIGO_PROFESSOR2_41.ReadOnly = true;
@@ -6331,7 +6331,7 @@
             // 
             // CODIGO_PROFESSOR3_41
             // 
-            this.CODIGO_PROFESSOR3_41.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_41.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_41.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_41.Name = "CODIGO_PROFESSOR3_41";
             this.CODIGO_PROFESSOR3_41.ReadOnly = true;
@@ -6420,7 +6420,7 @@
             // 
             // CODIGO_PROFESSOR1_42
             // 
-            this.CODIGO_PROFESSOR1_42.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_42.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_42.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_42.Name = "CODIGO_PROFESSOR1_42";
             this.CODIGO_PROFESSOR1_42.ReadOnly = true;
@@ -6428,7 +6428,7 @@
             // 
             // CODIGO_PROFESSOR2_42
             // 
-            this.CODIGO_PROFESSOR2_42.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_42.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_42.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_42.Name = "CODIGO_PROFESSOR2_42";
             this.CODIGO_PROFESSOR2_42.ReadOnly = true;
@@ -6436,7 +6436,7 @@
             // 
             // CODIGO_PROFESSOR3_42
             // 
-            this.CODIGO_PROFESSOR3_42.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_42.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_42.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_42.Name = "CODIGO_PROFESSOR3_42";
             this.CODIGO_PROFESSOR3_42.ReadOnly = true;
@@ -6525,7 +6525,7 @@
             // 
             // CODIGO_PROFESSOR1_43
             // 
-            this.CODIGO_PROFESSOR1_43.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_43.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_43.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_43.Name = "CODIGO_PROFESSOR1_43";
             this.CODIGO_PROFESSOR1_43.ReadOnly = true;
@@ -6533,7 +6533,7 @@
             // 
             // CODIGO_PROFESSOR2_43
             // 
-            this.CODIGO_PROFESSOR2_43.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_43.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_43.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_43.Name = "CODIGO_PROFESSOR2_43";
             this.CODIGO_PROFESSOR2_43.ReadOnly = true;
@@ -6541,7 +6541,7 @@
             // 
             // CODIGO_PROFESSOR3_43
             // 
-            this.CODIGO_PROFESSOR3_43.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_43.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_43.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_43.Name = "CODIGO_PROFESSOR3_43";
             this.CODIGO_PROFESSOR3_43.ReadOnly = true;
@@ -6630,7 +6630,7 @@
             // 
             // CODIGO_PROFESSOR1_44
             // 
-            this.CODIGO_PROFESSOR1_44.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_44.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_44.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_44.Name = "CODIGO_PROFESSOR1_44";
             this.CODIGO_PROFESSOR1_44.ReadOnly = true;
@@ -6638,7 +6638,7 @@
             // 
             // CODIGO_PROFESSOR2_44
             // 
-            this.CODIGO_PROFESSOR2_44.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_44.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_44.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_44.Name = "CODIGO_PROFESSOR2_44";
             this.CODIGO_PROFESSOR2_44.ReadOnly = true;
@@ -6646,7 +6646,7 @@
             // 
             // CODIGO_PROFESSOR3_44
             // 
-            this.CODIGO_PROFESSOR3_44.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_44.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_44.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_44.Name = "CODIGO_PROFESSOR3_44";
             this.CODIGO_PROFESSOR3_44.ReadOnly = true;
@@ -6735,7 +6735,7 @@
             // 
             // CODIGO_PROFESSOR1_45
             // 
-            this.CODIGO_PROFESSOR1_45.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_45.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_45.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_45.Name = "CODIGO_PROFESSOR1_45";
             this.CODIGO_PROFESSOR1_45.ReadOnly = true;
@@ -6743,7 +6743,7 @@
             // 
             // CODIGO_PROFESSOR2_45
             // 
-            this.CODIGO_PROFESSOR2_45.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_45.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_45.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_45.Name = "CODIGO_PROFESSOR2_45";
             this.CODIGO_PROFESSOR2_45.ReadOnly = true;
@@ -6751,7 +6751,7 @@
             // 
             // CODIGO_PROFESSOR3_45
             // 
-            this.CODIGO_PROFESSOR3_45.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_45.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_45.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_45.Name = "CODIGO_PROFESSOR3_45";
             this.CODIGO_PROFESSOR3_45.ReadOnly = true;
@@ -6840,7 +6840,7 @@
             // 
             // CODIGO_PROFESSOR1_46
             // 
-            this.CODIGO_PROFESSOR1_46.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_46.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_46.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_46.Name = "CODIGO_PROFESSOR1_46";
             this.CODIGO_PROFESSOR1_46.ReadOnly = true;
@@ -6848,7 +6848,7 @@
             // 
             // CODIGO_PROFESSOR2_46
             // 
-            this.CODIGO_PROFESSOR2_46.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_46.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_46.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_46.Name = "CODIGO_PROFESSOR2_46";
             this.CODIGO_PROFESSOR2_46.ReadOnly = true;
@@ -6856,7 +6856,7 @@
             // 
             // CODIGO_PROFESSOR3_46
             // 
-            this.CODIGO_PROFESSOR3_46.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_46.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_46.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_46.Name = "CODIGO_PROFESSOR3_46";
             this.CODIGO_PROFESSOR3_46.ReadOnly = true;
@@ -6945,7 +6945,7 @@
             // 
             // CODIGO_PROFESSOR1_47
             // 
-            this.CODIGO_PROFESSOR1_47.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_47.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_47.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_47.Name = "CODIGO_PROFESSOR1_47";
             this.CODIGO_PROFESSOR1_47.ReadOnly = true;
@@ -6953,7 +6953,7 @@
             // 
             // CODIGO_PROFESSOR2_47
             // 
-            this.CODIGO_PROFESSOR2_47.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_47.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_47.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_47.Name = "CODIGO_PROFESSOR2_47";
             this.CODIGO_PROFESSOR2_47.ReadOnly = true;
@@ -6961,7 +6961,7 @@
             // 
             // CODIGO_PROFESSOR3_47
             // 
-            this.CODIGO_PROFESSOR3_47.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_47.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_47.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_47.Name = "CODIGO_PROFESSOR3_47";
             this.CODIGO_PROFESSOR3_47.ReadOnly = true;
@@ -7050,7 +7050,7 @@
             // 
             // CODIGO_PROFESSOR1_48
             // 
-            this.CODIGO_PROFESSOR1_48.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_48.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_48.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_48.Name = "CODIGO_PROFESSOR1_48";
             this.CODIGO_PROFESSOR1_48.ReadOnly = true;
@@ -7058,7 +7058,7 @@
             // 
             // CODIGO_PROFESSOR2_48
             // 
-            this.CODIGO_PROFESSOR2_48.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_48.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_48.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_48.Name = "CODIGO_PROFESSOR2_48";
             this.CODIGO_PROFESSOR2_48.ReadOnly = true;
@@ -7066,7 +7066,7 @@
             // 
             // CODIGO_PROFESSOR3_48
             // 
-            this.CODIGO_PROFESSOR3_48.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_48.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_48.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_48.Name = "CODIGO_PROFESSOR3_48";
             this.CODIGO_PROFESSOR3_48.ReadOnly = true;
@@ -7155,7 +7155,7 @@
             // 
             // CODIGO_PROFESSOR1_49
             // 
-            this.CODIGO_PROFESSOR1_49.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_49.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_49.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_49.Name = "CODIGO_PROFESSOR1_49";
             this.CODIGO_PROFESSOR1_49.ReadOnly = true;
@@ -7163,7 +7163,7 @@
             // 
             // CODIGO_PROFESSOR2_49
             // 
-            this.CODIGO_PROFESSOR2_49.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_49.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_49.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_49.Name = "CODIGO_PROFESSOR2_49";
             this.CODIGO_PROFESSOR2_49.ReadOnly = true;
@@ -7171,7 +7171,7 @@
             // 
             // CODIGO_PROFESSOR3_49
             // 
-            this.CODIGO_PROFESSOR3_49.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_49.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_49.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_49.Name = "CODIGO_PROFESSOR3_49";
             this.CODIGO_PROFESSOR3_49.ReadOnly = true;
@@ -7260,7 +7260,7 @@
             // 
             // CODIGO_PROFESSOR1_410
             // 
-            this.CODIGO_PROFESSOR1_410.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_410.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_410.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_410.Name = "CODIGO_PROFESSOR1_410";
             this.CODIGO_PROFESSOR1_410.ReadOnly = true;
@@ -7268,7 +7268,7 @@
             // 
             // CODIGO_PROFESSOR2_410
             // 
-            this.CODIGO_PROFESSOR2_410.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_410.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_410.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_410.Name = "CODIGO_PROFESSOR2_410";
             this.CODIGO_PROFESSOR2_410.ReadOnly = true;
@@ -7276,7 +7276,7 @@
             // 
             // CODIGO_PROFESSOR3_410
             // 
-            this.CODIGO_PROFESSOR3_410.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_410.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_410.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_410.Name = "CODIGO_PROFESSOR3_410";
             this.CODIGO_PROFESSOR3_410.ReadOnly = true;
@@ -7365,7 +7365,7 @@
             // 
             // CODIGO_PROFESSOR1_411
             // 
-            this.CODIGO_PROFESSOR1_411.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_411.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_411.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_411.Name = "CODIGO_PROFESSOR1_411";
             this.CODIGO_PROFESSOR1_411.ReadOnly = true;
@@ -7373,7 +7373,7 @@
             // 
             // CODIGO_PROFESSOR2_411
             // 
-            this.CODIGO_PROFESSOR2_411.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_411.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_411.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_411.Name = "CODIGO_PROFESSOR2_411";
             this.CODIGO_PROFESSOR2_411.ReadOnly = true;
@@ -7381,7 +7381,7 @@
             // 
             // CODIGO_PROFESSOR3_411
             // 
-            this.CODIGO_PROFESSOR3_411.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_411.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_411.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_411.Name = "CODIGO_PROFESSOR3_411";
             this.CODIGO_PROFESSOR3_411.ReadOnly = true;
@@ -7470,7 +7470,7 @@
             // 
             // CODIGO_PROFESSOR1_412
             // 
-            this.CODIGO_PROFESSOR1_412.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_412.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_412.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_412.Name = "CODIGO_PROFESSOR1_412";
             this.CODIGO_PROFESSOR1_412.ReadOnly = true;
@@ -7478,7 +7478,7 @@
             // 
             // CODIGO_PROFESSOR2_412
             // 
-            this.CODIGO_PROFESSOR2_412.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_412.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_412.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_412.Name = "CODIGO_PROFESSOR2_412";
             this.CODIGO_PROFESSOR2_412.ReadOnly = true;
@@ -7486,7 +7486,7 @@
             // 
             // CODIGO_PROFESSOR3_412
             // 
-            this.CODIGO_PROFESSOR3_412.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_412.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_412.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_412.Name = "CODIGO_PROFESSOR3_412";
             this.CODIGO_PROFESSOR3_412.ReadOnly = true;
@@ -7575,7 +7575,7 @@
             // 
             // CODIGO_PROFESSOR1_413
             // 
-            this.CODIGO_PROFESSOR1_413.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_413.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_413.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_413.Name = "CODIGO_PROFESSOR1_413";
             this.CODIGO_PROFESSOR1_413.ReadOnly = true;
@@ -7583,7 +7583,7 @@
             // 
             // CODIGO_PROFESSOR2_413
             // 
-            this.CODIGO_PROFESSOR2_413.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_413.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_413.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_413.Name = "CODIGO_PROFESSOR2_413";
             this.CODIGO_PROFESSOR2_413.ReadOnly = true;
@@ -7591,7 +7591,7 @@
             // 
             // CODIGO_PROFESSOR3_413
             // 
-            this.CODIGO_PROFESSOR3_413.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_413.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_413.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_413.Name = "CODIGO_PROFESSOR3_413";
             this.CODIGO_PROFESSOR3_413.ReadOnly = true;
@@ -7630,7 +7630,7 @@
             this.grade414.RowHeadersVisible = false;
             this.grade414.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.grade414.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grade414.Size = new System.Drawing.Size(89, 27);
+            this.grade414.Size = new System.Drawing.Size(89, 28);
             this.grade414.TabIndex = 150;
             this.grade414.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
@@ -7680,7 +7680,7 @@
             // 
             // CODIGO_PROFESSOR1_414
             // 
-            this.CODIGO_PROFESSOR1_414.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_414.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_414.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_414.Name = "CODIGO_PROFESSOR1_414";
             this.CODIGO_PROFESSOR1_414.ReadOnly = true;
@@ -7688,7 +7688,7 @@
             // 
             // CODIGO_PROFESSOR2_414
             // 
-            this.CODIGO_PROFESSOR2_414.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_414.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_414.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_414.Name = "CODIGO_PROFESSOR2_414";
             this.CODIGO_PROFESSOR2_414.ReadOnly = true;
@@ -7696,7 +7696,7 @@
             // 
             // CODIGO_PROFESSOR3_414
             // 
-            this.CODIGO_PROFESSOR3_414.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_414.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_414.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_414.Name = "CODIGO_PROFESSOR3_414";
             this.CODIGO_PROFESSOR3_414.ReadOnly = true;
@@ -7785,7 +7785,7 @@
             // 
             // CODIGO_PROFESSOR1_51
             // 
-            this.CODIGO_PROFESSOR1_51.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_51.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_51.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_51.Name = "CODIGO_PROFESSOR1_51";
             this.CODIGO_PROFESSOR1_51.ReadOnly = true;
@@ -7793,7 +7793,7 @@
             // 
             // CODIGO_PROFESSOR2_51
             // 
-            this.CODIGO_PROFESSOR2_51.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_51.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_51.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_51.Name = "CODIGO_PROFESSOR2_51";
             this.CODIGO_PROFESSOR2_51.ReadOnly = true;
@@ -7801,7 +7801,7 @@
             // 
             // CODIGO_PROFESSOR3_51
             // 
-            this.CODIGO_PROFESSOR3_51.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_51.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_51.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_51.Name = "CODIGO_PROFESSOR3_51";
             this.CODIGO_PROFESSOR3_51.ReadOnly = true;
@@ -7890,7 +7890,7 @@
             // 
             // CODIGO_PROFESSOR1_52
             // 
-            this.CODIGO_PROFESSOR1_52.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_52.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_52.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_52.Name = "CODIGO_PROFESSOR1_52";
             this.CODIGO_PROFESSOR1_52.ReadOnly = true;
@@ -7898,7 +7898,7 @@
             // 
             // CODIGO_PROFESSOR2_52
             // 
-            this.CODIGO_PROFESSOR2_52.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_52.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_52.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_52.Name = "CODIGO_PROFESSOR2_52";
             this.CODIGO_PROFESSOR2_52.ReadOnly = true;
@@ -7906,7 +7906,7 @@
             // 
             // CODIGO_PROFESSOR3_52
             // 
-            this.CODIGO_PROFESSOR3_52.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_52.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_52.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_52.Name = "CODIGO_PROFESSOR3_52";
             this.CODIGO_PROFESSOR3_52.ReadOnly = true;
@@ -7995,7 +7995,7 @@
             // 
             // CODIGO_PROFESSOR1_53
             // 
-            this.CODIGO_PROFESSOR1_53.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_53.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_53.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_53.Name = "CODIGO_PROFESSOR1_53";
             this.CODIGO_PROFESSOR1_53.ReadOnly = true;
@@ -8003,7 +8003,7 @@
             // 
             // CODIGO_PROFESSOR2_53
             // 
-            this.CODIGO_PROFESSOR2_53.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_53.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_53.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_53.Name = "CODIGO_PROFESSOR2_53";
             this.CODIGO_PROFESSOR2_53.ReadOnly = true;
@@ -8011,7 +8011,7 @@
             // 
             // CODIGO_PROFESSOR3_53
             // 
-            this.CODIGO_PROFESSOR3_53.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_53.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_53.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_53.Name = "CODIGO_PROFESSOR3_53";
             this.CODIGO_PROFESSOR3_53.ReadOnly = true;
@@ -8100,7 +8100,7 @@
             // 
             // CODIGO_PROFESSOR1_54
             // 
-            this.CODIGO_PROFESSOR1_54.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_54.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_54.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_54.Name = "CODIGO_PROFESSOR1_54";
             this.CODIGO_PROFESSOR1_54.ReadOnly = true;
@@ -8108,7 +8108,7 @@
             // 
             // CODIGO_PROFESSOR2_54
             // 
-            this.CODIGO_PROFESSOR2_54.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_54.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_54.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_54.Name = "CODIGO_PROFESSOR2_54";
             this.CODIGO_PROFESSOR2_54.ReadOnly = true;
@@ -8116,7 +8116,7 @@
             // 
             // CODIGO_PROFESSOR3_54
             // 
-            this.CODIGO_PROFESSOR3_54.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_54.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_54.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_54.Name = "CODIGO_PROFESSOR3_54";
             this.CODIGO_PROFESSOR3_54.ReadOnly = true;
@@ -8205,7 +8205,7 @@
             // 
             // CODIGO_PROFESSOR1_55
             // 
-            this.CODIGO_PROFESSOR1_55.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_55.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_55.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_55.Name = "CODIGO_PROFESSOR1_55";
             this.CODIGO_PROFESSOR1_55.ReadOnly = true;
@@ -8213,7 +8213,7 @@
             // 
             // CODIGO_PROFESSOR2_55
             // 
-            this.CODIGO_PROFESSOR2_55.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_55.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_55.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_55.Name = "CODIGO_PROFESSOR2_55";
             this.CODIGO_PROFESSOR2_55.ReadOnly = true;
@@ -8221,7 +8221,7 @@
             // 
             // CODIGO_PROFESSOR3_55
             // 
-            this.CODIGO_PROFESSOR3_55.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_55.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_55.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_55.Name = "CODIGO_PROFESSOR3_55";
             this.CODIGO_PROFESSOR3_55.ReadOnly = true;
@@ -8310,7 +8310,7 @@
             // 
             // CODIGO_PROFESSOR1_56
             // 
-            this.CODIGO_PROFESSOR1_56.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_56.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_56.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_56.Name = "CODIGO_PROFESSOR1_56";
             this.CODIGO_PROFESSOR1_56.ReadOnly = true;
@@ -8318,7 +8318,7 @@
             // 
             // CODIGO_PROFESSOR2_56
             // 
-            this.CODIGO_PROFESSOR2_56.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_56.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_56.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_56.Name = "CODIGO_PROFESSOR2_56";
             this.CODIGO_PROFESSOR2_56.ReadOnly = true;
@@ -8326,7 +8326,7 @@
             // 
             // CODIGO_PROFESSOR3_56
             // 
-            this.CODIGO_PROFESSOR3_56.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_56.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_56.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_56.Name = "CODIGO_PROFESSOR3_56";
             this.CODIGO_PROFESSOR3_56.ReadOnly = true;
@@ -8415,7 +8415,7 @@
             // 
             // CODIGO_PROFESSOR1_57
             // 
-            this.CODIGO_PROFESSOR1_57.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_57.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_57.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_57.Name = "CODIGO_PROFESSOR1_57";
             this.CODIGO_PROFESSOR1_57.ReadOnly = true;
@@ -8423,7 +8423,7 @@
             // 
             // CODIGO_PROFESSOR2_57
             // 
-            this.CODIGO_PROFESSOR2_57.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_57.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_57.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_57.Name = "CODIGO_PROFESSOR2_57";
             this.CODIGO_PROFESSOR2_57.ReadOnly = true;
@@ -8431,7 +8431,7 @@
             // 
             // CODIGO_PROFESSOR3_57
             // 
-            this.CODIGO_PROFESSOR3_57.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_57.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_57.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_57.Name = "CODIGO_PROFESSOR3_57";
             this.CODIGO_PROFESSOR3_57.ReadOnly = true;
@@ -8520,7 +8520,7 @@
             // 
             // CODIGO_PROFESSOR1_58
             // 
-            this.CODIGO_PROFESSOR1_58.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_58.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_58.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_58.Name = "CODIGO_PROFESSOR1_58";
             this.CODIGO_PROFESSOR1_58.ReadOnly = true;
@@ -8528,7 +8528,7 @@
             // 
             // CODIGO_PROFESSOR2_58
             // 
-            this.CODIGO_PROFESSOR2_58.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_58.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_58.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_58.Name = "CODIGO_PROFESSOR2_58";
             this.CODIGO_PROFESSOR2_58.ReadOnly = true;
@@ -8536,7 +8536,7 @@
             // 
             // CODIGO_PROFESSOR3_58
             // 
-            this.CODIGO_PROFESSOR3_58.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_58.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_58.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_58.Name = "CODIGO_PROFESSOR3_58";
             this.CODIGO_PROFESSOR3_58.ReadOnly = true;
@@ -8625,7 +8625,7 @@
             // 
             // CODIGO_PROFESSOR1_59
             // 
-            this.CODIGO_PROFESSOR1_59.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_59.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_59.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_59.Name = "CODIGO_PROFESSOR1_59";
             this.CODIGO_PROFESSOR1_59.ReadOnly = true;
@@ -8633,7 +8633,7 @@
             // 
             // CODIGO_PROFESSOR2_59
             // 
-            this.CODIGO_PROFESSOR2_59.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_59.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_59.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_59.Name = "CODIGO_PROFESSOR2_59";
             this.CODIGO_PROFESSOR2_59.ReadOnly = true;
@@ -8641,7 +8641,7 @@
             // 
             // CODIGO_PROFESSOR3_59
             // 
-            this.CODIGO_PROFESSOR3_59.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_59.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_59.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_59.Name = "CODIGO_PROFESSOR3_59";
             this.CODIGO_PROFESSOR3_59.ReadOnly = true;
@@ -8730,7 +8730,7 @@
             // 
             // CODIGO_PROFESSOR1_510
             // 
-            this.CODIGO_PROFESSOR1_510.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_510.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_510.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_510.Name = "CODIGO_PROFESSOR1_510";
             this.CODIGO_PROFESSOR1_510.ReadOnly = true;
@@ -8738,7 +8738,7 @@
             // 
             // CODIGO_PROFESSOR2_510
             // 
-            this.CODIGO_PROFESSOR2_510.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_510.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_510.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_510.Name = "CODIGO_PROFESSOR2_510";
             this.CODIGO_PROFESSOR2_510.ReadOnly = true;
@@ -8746,7 +8746,7 @@
             // 
             // CODIGO_PROFESSOR3_510
             // 
-            this.CODIGO_PROFESSOR3_510.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_510.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_510.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_510.Name = "CODIGO_PROFESSOR3_510";
             this.CODIGO_PROFESSOR3_510.ReadOnly = true;
@@ -8835,7 +8835,7 @@
             // 
             // CODIGO_PROFESSOR1_511
             // 
-            this.CODIGO_PROFESSOR1_511.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_511.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_511.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_511.Name = "CODIGO_PROFESSOR1_511";
             this.CODIGO_PROFESSOR1_511.ReadOnly = true;
@@ -8843,7 +8843,7 @@
             // 
             // CODIGO_PROFESSOR2_511
             // 
-            this.CODIGO_PROFESSOR2_511.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_511.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_511.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_511.Name = "CODIGO_PROFESSOR2_511";
             this.CODIGO_PROFESSOR2_511.ReadOnly = true;
@@ -8851,7 +8851,7 @@
             // 
             // CODIGO_PROFESSOR3_511
             // 
-            this.CODIGO_PROFESSOR3_511.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_511.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_511.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_511.Name = "CODIGO_PROFESSOR3_511";
             this.CODIGO_PROFESSOR3_511.ReadOnly = true;
@@ -8940,7 +8940,7 @@
             // 
             // CODIGO_PROFESSOR1_512
             // 
-            this.CODIGO_PROFESSOR1_512.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_512.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_512.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_512.Name = "CODIGO_PROFESSOR1_512";
             this.CODIGO_PROFESSOR1_512.ReadOnly = true;
@@ -8948,7 +8948,7 @@
             // 
             // CODIGO_PROFESSOR2_512
             // 
-            this.CODIGO_PROFESSOR2_512.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_512.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_512.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_512.Name = "CODIGO_PROFESSOR2_512";
             this.CODIGO_PROFESSOR2_512.ReadOnly = true;
@@ -8956,7 +8956,7 @@
             // 
             // CODIGO_PROFESSOR3_512
             // 
-            this.CODIGO_PROFESSOR3_512.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_512.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_512.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_512.Name = "CODIGO_PROFESSOR3_512";
             this.CODIGO_PROFESSOR3_512.ReadOnly = true;
@@ -9045,7 +9045,7 @@
             // 
             // CODIGO_PROFESSOR1_513
             // 
-            this.CODIGO_PROFESSOR1_513.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_513.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_513.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_513.Name = "CODIGO_PROFESSOR1_513";
             this.CODIGO_PROFESSOR1_513.ReadOnly = true;
@@ -9053,7 +9053,7 @@
             // 
             // CODIGO_PROFESSOR2_513
             // 
-            this.CODIGO_PROFESSOR2_513.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_513.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_513.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_513.Name = "CODIGO_PROFESSOR2_513";
             this.CODIGO_PROFESSOR2_513.ReadOnly = true;
@@ -9061,7 +9061,7 @@
             // 
             // CODIGO_PROFESSOR3_513
             // 
-            this.CODIGO_PROFESSOR3_513.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_513.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_513.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_513.Name = "CODIGO_PROFESSOR3_513";
             this.CODIGO_PROFESSOR3_513.ReadOnly = true;
@@ -9100,7 +9100,7 @@
             this.grade514.RowHeadersVisible = false;
             this.grade514.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.grade514.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grade514.Size = new System.Drawing.Size(89, 27);
+            this.grade514.Size = new System.Drawing.Size(89, 28);
             this.grade514.TabIndex = 150;
             this.grade514.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
@@ -9150,7 +9150,7 @@
             // 
             // CODIGO_PROFESSOR1_514
             // 
-            this.CODIGO_PROFESSOR1_514.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_514.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_514.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_514.Name = "CODIGO_PROFESSOR1_514";
             this.CODIGO_PROFESSOR1_514.ReadOnly = true;
@@ -9158,7 +9158,7 @@
             // 
             // CODIGO_PROFESSOR2_514
             // 
-            this.CODIGO_PROFESSOR2_514.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_514.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_514.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_514.Name = "CODIGO_PROFESSOR2_514";
             this.CODIGO_PROFESSOR2_514.ReadOnly = true;
@@ -9166,7 +9166,7 @@
             // 
             // CODIGO_PROFESSOR3_514
             // 
-            this.CODIGO_PROFESSOR3_514.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_514.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_514.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_514.Name = "CODIGO_PROFESSOR3_514";
             this.CODIGO_PROFESSOR3_514.ReadOnly = true;
@@ -9255,7 +9255,7 @@
             // 
             // CODIGO_PROFESSOR1_61
             // 
-            this.CODIGO_PROFESSOR1_61.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_61.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_61.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_61.Name = "CODIGO_PROFESSOR1_61";
             this.CODIGO_PROFESSOR1_61.ReadOnly = true;
@@ -9263,7 +9263,7 @@
             // 
             // CODIGO_PROFESSOR2_61
             // 
-            this.CODIGO_PROFESSOR2_61.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_61.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_61.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_61.Name = "CODIGO_PROFESSOR2_61";
             this.CODIGO_PROFESSOR2_61.ReadOnly = true;
@@ -9271,7 +9271,7 @@
             // 
             // CODIGO_PROFESSOR3_61
             // 
-            this.CODIGO_PROFESSOR3_61.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_61.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_61.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_61.Name = "CODIGO_PROFESSOR3_61";
             this.CODIGO_PROFESSOR3_61.ReadOnly = true;
@@ -9360,7 +9360,7 @@
             // 
             // CODIGO_PROFESSOR1_62
             // 
-            this.CODIGO_PROFESSOR1_62.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_62.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_62.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_62.Name = "CODIGO_PROFESSOR1_62";
             this.CODIGO_PROFESSOR1_62.ReadOnly = true;
@@ -9368,7 +9368,7 @@
             // 
             // CODIGO_PROFESSOR2_62
             // 
-            this.CODIGO_PROFESSOR2_62.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_62.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_62.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_62.Name = "CODIGO_PROFESSOR2_62";
             this.CODIGO_PROFESSOR2_62.ReadOnly = true;
@@ -9376,7 +9376,7 @@
             // 
             // CODIGO_PROFESSOR3_62
             // 
-            this.CODIGO_PROFESSOR3_62.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_62.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_62.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_62.Name = "CODIGO_PROFESSOR3_62";
             this.CODIGO_PROFESSOR3_62.ReadOnly = true;
@@ -9465,7 +9465,7 @@
             // 
             // CODIGO_PROFESSOR1_63
             // 
-            this.CODIGO_PROFESSOR1_63.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_63.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_63.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_63.Name = "CODIGO_PROFESSOR1_63";
             this.CODIGO_PROFESSOR1_63.ReadOnly = true;
@@ -9473,7 +9473,7 @@
             // 
             // CODIGO_PROFESSOR2_63
             // 
-            this.CODIGO_PROFESSOR2_63.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_63.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_63.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_63.Name = "CODIGO_PROFESSOR2_63";
             this.CODIGO_PROFESSOR2_63.ReadOnly = true;
@@ -9481,7 +9481,7 @@
             // 
             // CODIGO_PROFESSOR3_63
             // 
-            this.CODIGO_PROFESSOR3_63.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_63.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_63.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_63.Name = "CODIGO_PROFESSOR3_63";
             this.CODIGO_PROFESSOR3_63.ReadOnly = true;
@@ -9570,7 +9570,7 @@
             // 
             // CODIGO_PROFESSOR1_64
             // 
-            this.CODIGO_PROFESSOR1_64.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_64.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_64.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_64.Name = "CODIGO_PROFESSOR1_64";
             this.CODIGO_PROFESSOR1_64.ReadOnly = true;
@@ -9578,7 +9578,7 @@
             // 
             // CODIGO_PROFESSOR2_64
             // 
-            this.CODIGO_PROFESSOR2_64.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_64.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_64.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_64.Name = "CODIGO_PROFESSOR2_64";
             this.CODIGO_PROFESSOR2_64.ReadOnly = true;
@@ -9586,7 +9586,7 @@
             // 
             // CODIGO_PROFESSOR3_64
             // 
-            this.CODIGO_PROFESSOR3_64.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_64.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_64.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_64.Name = "CODIGO_PROFESSOR3_64";
             this.CODIGO_PROFESSOR3_64.ReadOnly = true;
@@ -9675,7 +9675,7 @@
             // 
             // CODIGO_PROFESSOR1_65
             // 
-            this.CODIGO_PROFESSOR1_65.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_65.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_65.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_65.Name = "CODIGO_PROFESSOR1_65";
             this.CODIGO_PROFESSOR1_65.ReadOnly = true;
@@ -9683,7 +9683,7 @@
             // 
             // CODIGO_PROFESSOR2_65
             // 
-            this.CODIGO_PROFESSOR2_65.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_65.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_65.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_65.Name = "CODIGO_PROFESSOR2_65";
             this.CODIGO_PROFESSOR2_65.ReadOnly = true;
@@ -9691,7 +9691,7 @@
             // 
             // CODIGO_PROFESSOR3_65
             // 
-            this.CODIGO_PROFESSOR3_65.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_65.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_65.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_65.Name = "CODIGO_PROFESSOR3_65";
             this.CODIGO_PROFESSOR3_65.ReadOnly = true;
@@ -9780,7 +9780,7 @@
             // 
             // CODIGO_PROFESSOR1_66
             // 
-            this.CODIGO_PROFESSOR1_66.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_66.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_66.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_66.Name = "CODIGO_PROFESSOR1_66";
             this.CODIGO_PROFESSOR1_66.ReadOnly = true;
@@ -9788,7 +9788,7 @@
             // 
             // CODIGO_PROFESSOR2_66
             // 
-            this.CODIGO_PROFESSOR2_66.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_66.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_66.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_66.Name = "CODIGO_PROFESSOR2_66";
             this.CODIGO_PROFESSOR2_66.ReadOnly = true;
@@ -9796,7 +9796,7 @@
             // 
             // CODIGO_PROFESSOR3_66
             // 
-            this.CODIGO_PROFESSOR3_66.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_66.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_66.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_66.Name = "CODIGO_PROFESSOR3_66";
             this.CODIGO_PROFESSOR3_66.ReadOnly = true;
@@ -9885,7 +9885,7 @@
             // 
             // CODIGO_PROFESSOR1_67
             // 
-            this.CODIGO_PROFESSOR1_67.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_67.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_67.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_67.Name = "CODIGO_PROFESSOR1_67";
             this.CODIGO_PROFESSOR1_67.ReadOnly = true;
@@ -9893,7 +9893,7 @@
             // 
             // CODIGO_PROFESSOR2_67
             // 
-            this.CODIGO_PROFESSOR2_67.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_67.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_67.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_67.Name = "CODIGO_PROFESSOR2_67";
             this.CODIGO_PROFESSOR2_67.ReadOnly = true;
@@ -9901,7 +9901,7 @@
             // 
             // CODIGO_PROFESSOR3_67
             // 
-            this.CODIGO_PROFESSOR3_67.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_67.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_67.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_67.Name = "CODIGO_PROFESSOR3_67";
             this.CODIGO_PROFESSOR3_67.ReadOnly = true;
@@ -9990,7 +9990,7 @@
             // 
             // CODIGO_PROFESSOR1_68
             // 
-            this.CODIGO_PROFESSOR1_68.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_68.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_68.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_68.Name = "CODIGO_PROFESSOR1_68";
             this.CODIGO_PROFESSOR1_68.ReadOnly = true;
@@ -9998,7 +9998,7 @@
             // 
             // CODIGO_PROFESSOR2_68
             // 
-            this.CODIGO_PROFESSOR2_68.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_68.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_68.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_68.Name = "CODIGO_PROFESSOR2_68";
             this.CODIGO_PROFESSOR2_68.ReadOnly = true;
@@ -10006,7 +10006,7 @@
             // 
             // CODIGO_PROFESSOR3_68
             // 
-            this.CODIGO_PROFESSOR3_68.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_68.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_68.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_68.Name = "CODIGO_PROFESSOR3_68";
             this.CODIGO_PROFESSOR3_68.ReadOnly = true;
@@ -10095,7 +10095,7 @@
             // 
             // CODIGO_PROFESSOR1_69
             // 
-            this.CODIGO_PROFESSOR1_69.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_69.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_69.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_69.Name = "CODIGO_PROFESSOR1_69";
             this.CODIGO_PROFESSOR1_69.ReadOnly = true;
@@ -10103,7 +10103,7 @@
             // 
             // CODIGO_PROFESSOR2_69
             // 
-            this.CODIGO_PROFESSOR2_69.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_69.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_69.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_69.Name = "CODIGO_PROFESSOR2_69";
             this.CODIGO_PROFESSOR2_69.ReadOnly = true;
@@ -10111,7 +10111,7 @@
             // 
             // CODIGO_PROFESSOR3_69
             // 
-            this.CODIGO_PROFESSOR3_69.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_69.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_69.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_69.Name = "CODIGO_PROFESSOR3_69";
             this.CODIGO_PROFESSOR3_69.ReadOnly = true;
@@ -10200,7 +10200,7 @@
             // 
             // CODIGO_PROFESSOR1_610
             // 
-            this.CODIGO_PROFESSOR1_610.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_610.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_610.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_610.Name = "CODIGO_PROFESSOR1_610";
             this.CODIGO_PROFESSOR1_610.ReadOnly = true;
@@ -10208,7 +10208,7 @@
             // 
             // CODIGO_PROFESSOR2_610
             // 
-            this.CODIGO_PROFESSOR2_610.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_610.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_610.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_610.Name = "CODIGO_PROFESSOR2_610";
             this.CODIGO_PROFESSOR2_610.ReadOnly = true;
@@ -10216,7 +10216,7 @@
             // 
             // CODIGO_PROFESSOR3_610
             // 
-            this.CODIGO_PROFESSOR3_610.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_610.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_610.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_610.Name = "CODIGO_PROFESSOR3_610";
             this.CODIGO_PROFESSOR3_610.ReadOnly = true;
@@ -10305,7 +10305,7 @@
             // 
             // CODIGO_PROFESSOR1_611
             // 
-            this.CODIGO_PROFESSOR1_611.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_611.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_611.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_611.Name = "CODIGO_PROFESSOR1_611";
             this.CODIGO_PROFESSOR1_611.ReadOnly = true;
@@ -10313,7 +10313,7 @@
             // 
             // CODIGO_PROFESSOR2_611
             // 
-            this.CODIGO_PROFESSOR2_611.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_611.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_611.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_611.Name = "CODIGO_PROFESSOR2_611";
             this.CODIGO_PROFESSOR2_611.ReadOnly = true;
@@ -10321,7 +10321,7 @@
             // 
             // CODIGO_PROFESSOR3_611
             // 
-            this.CODIGO_PROFESSOR3_611.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_611.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_611.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_611.Name = "CODIGO_PROFESSOR3_611";
             this.CODIGO_PROFESSOR3_611.ReadOnly = true;
@@ -10410,7 +10410,7 @@
             // 
             // CODIGO_PROFESSOR1_612
             // 
-            this.CODIGO_PROFESSOR1_612.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_612.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_612.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_612.Name = "CODIGO_PROFESSOR1_612";
             this.CODIGO_PROFESSOR1_612.ReadOnly = true;
@@ -10418,7 +10418,7 @@
             // 
             // CODIGO_PROFESSOR2_612
             // 
-            this.CODIGO_PROFESSOR2_612.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_612.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_612.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_612.Name = "CODIGO_PROFESSOR2_612";
             this.CODIGO_PROFESSOR2_612.ReadOnly = true;
@@ -10426,7 +10426,7 @@
             // 
             // CODIGO_PROFESSOR3_612
             // 
-            this.CODIGO_PROFESSOR3_612.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_612.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_612.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_612.Name = "CODIGO_PROFESSOR3_612";
             this.CODIGO_PROFESSOR3_612.ReadOnly = true;
@@ -10515,7 +10515,7 @@
             // 
             // CODIGO_PROFESSOR1_613
             // 
-            this.CODIGO_PROFESSOR1_613.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_613.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_613.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_613.Name = "CODIGO_PROFESSOR1_613";
             this.CODIGO_PROFESSOR1_613.ReadOnly = true;
@@ -10523,7 +10523,7 @@
             // 
             // CODIGO_PROFESSOR2_613
             // 
-            this.CODIGO_PROFESSOR2_613.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_613.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_613.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_613.Name = "CODIGO_PROFESSOR2_613";
             this.CODIGO_PROFESSOR2_613.ReadOnly = true;
@@ -10531,7 +10531,7 @@
             // 
             // CODIGO_PROFESSOR3_613
             // 
-            this.CODIGO_PROFESSOR3_613.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_613.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_613.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_613.Name = "CODIGO_PROFESSOR3_613";
             this.CODIGO_PROFESSOR3_613.ReadOnly = true;
@@ -10570,7 +10570,7 @@
             this.grade614.RowHeadersVisible = false;
             this.grade614.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.grade614.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grade614.Size = new System.Drawing.Size(94, 27);
+            this.grade614.Size = new System.Drawing.Size(94, 28);
             this.grade614.TabIndex = 150;
             this.grade614.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
@@ -10620,7 +10620,7 @@
             // 
             // CODIGO_PROFESSOR1_614
             // 
-            this.CODIGO_PROFESSOR1_614.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_614.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_614.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_614.Name = "CODIGO_PROFESSOR1_614";
             this.CODIGO_PROFESSOR1_614.ReadOnly = true;
@@ -10628,7 +10628,7 @@
             // 
             // CODIGO_PROFESSOR2_614
             // 
-            this.CODIGO_PROFESSOR2_614.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_614.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_614.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_614.Name = "CODIGO_PROFESSOR2_614";
             this.CODIGO_PROFESSOR2_614.ReadOnly = true;
@@ -10636,7 +10636,7 @@
             // 
             // CODIGO_PROFESSOR3_614
             // 
-            this.CODIGO_PROFESSOR3_614.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_614.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_614.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_614.Name = "CODIGO_PROFESSOR3_614";
             this.CODIGO_PROFESSOR3_614.ReadOnly = true;
@@ -10726,7 +10726,7 @@
             // 
             // CODIGO_PROFESSOR1_11
             // 
-            this.CODIGO_PROFESSOR1_11.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR1_11.DataPropertyName = "CODIGO_PROFESSOR1";
             this.CODIGO_PROFESSOR1_11.HeaderText = "Professor";
             this.CODIGO_PROFESSOR1_11.Name = "CODIGO_PROFESSOR1_11";
             this.CODIGO_PROFESSOR1_11.ReadOnly = true;
@@ -10734,7 +10734,7 @@
             // 
             // CODIGO_PROFESSOR2_11
             // 
-            this.CODIGO_PROFESSOR2_11.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR2_11.DataPropertyName = "CODIGO_PROFESSOR2";
             this.CODIGO_PROFESSOR2_11.HeaderText = "Professor";
             this.CODIGO_PROFESSOR2_11.Name = "CODIGO_PROFESSOR2_11";
             this.CODIGO_PROFESSOR2_11.ReadOnly = true;
@@ -10742,7 +10742,7 @@
             // 
             // CODIGO_PROFESSOR3_11
             // 
-            this.CODIGO_PROFESSOR3_11.DataPropertyName = "CODIGO_PROFESSOR";
+            this.CODIGO_PROFESSOR3_11.DataPropertyName = "CODIGO_PROFESSOR3";
             this.CODIGO_PROFESSOR3_11.HeaderText = "Professor";
             this.CODIGO_PROFESSOR3_11.Name = "CODIGO_PROFESSOR3_11";
             this.CODIGO_PROFESSOR3_11.ReadOnly = true;
@@ -10752,12 +10752,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 561);
+            this.ClientSize = new System.Drawing.Size(884, 593);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.toolStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(900, 600);
+            this.MinimumSize = new System.Drawing.Size(900, 632);
             this.Name = "frmGradeHorario";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -182,10 +182,32 @@ namespace RegraNegocio
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
             }
 
         }
+
+        /// <summary>
+        /// Retorna toda uma grade a partir dos atributos
+        /// </summary>
+        /// <param name="curso">Curso</param>
+        /// <param name="fase">Fase do curso</param>
+        /// <param name="semestre">Semestre da grade desejada</param>
+        /// <returns></returns>
+        public DataTable SelecionaTodaGrade(int fase, int semestre)
+        {
+            try
+            {
+                gradeAD = new AcessoDados.GradeHorarioAcessoDados(this.curso);
+
+                return gradeAD.SelecionaTodaGrade(fase, semestre);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
+        }
+
     }
 }
 
