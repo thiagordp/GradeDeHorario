@@ -19,19 +19,22 @@ namespace Modelos
         {
             this.ESPACO = new HashSet<ESPACO>();
             this.GRADE = new HashSet<GRADE>();
-            this.PROFESSOR = new HashSet<PROFESSOR>();
         }
     
-        public string CODIGO_TURMA { get; set; }
+        public int SEQ_TURMA { get; set; }
         public int SEQ_DISCIPLINA_CURSO { get; set; }
+        public Nullable<int> CODIGO_PROFESSOR1 { get; set; }
+        public Nullable<int> CODIGO_PROFESSOR2 { get; set; }
+        public Nullable<int> CODIGO_PROFESSOR3 { get; set; }
     
         public virtual DISCIPLINA_CURSO DISCIPLINA_CURSO { get; set; }
+        public virtual PROFESSOR PROFESSOR { get; set; }
+        public virtual PROFESSOR PROFESSOR1 { get; set; }
+        public virtual PROFESSOR PROFESSOR2 { get; set; }
         public virtual TURMA TURMA { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ESPACO> ESPACO { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<GRADE> GRADE { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PROFESSOR> PROFESSOR { get; set; }
     }
 }

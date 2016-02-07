@@ -18,6 +18,8 @@ namespace Modelos
         public PROFESSOR()
         {
             this.DISCIPLINA_TURMA = new HashSet<DISCIPLINA_TURMA>();
+            this.DISCIPLINA_TURMA1 = new HashSet<DISCIPLINA_TURMA>();
+            this.DISCIPLINA_TURMA2 = new HashSet<DISCIPLINA_TURMA>();
         }
     
         public string NOME_PROFESSOR { get; set; }
@@ -27,5 +29,9 @@ namespace Modelos
         public virtual DEPARTAMENTO DEPARTAMENTO { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DISCIPLINA_TURMA> DISCIPLINA_TURMA { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DISCIPLINA_TURMA> DISCIPLINA_TURMA1 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DISCIPLINA_TURMA> DISCIPLINA_TURMA2 { get; set; }
     }
 }

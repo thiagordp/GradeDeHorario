@@ -24,8 +24,6 @@ namespace GradeDeHorario
 
         private void frmGradeHorario_Load(object sender, EventArgs e)
         {
-            InicializaGrade();
-
             this.Text += " - " + curso.NOME_CURSO;
 
             // Inicializações
@@ -231,10 +229,11 @@ namespace GradeDeHorario
         {
             try
             {
+                PreencheGrade();
+
                 PreenchePesquisaDisciplina(txtPesquisaDisciplina.Text);
                 PreenchePesquisaProfessor(txtPesquisaProfessor.Text);
                 PreenchePesquisaEspaco(txtPesquisaEspaco.Text);
-
                 cbbSelectFase.Enabled = cbbSelectSemestre.Enabled = btnCarregaGrade.Enabled = btnEditar.Enabled = false;
                 btnCancelar.Enabled = btnSalvar.Enabled = btnGerarRelatorio.Enabled = tblGrade.Enabled = gbDisciplina.Enabled = gbProfessor.Enabled = gbSala.Enabled = true;
             }
@@ -346,7 +345,7 @@ namespace GradeDeHorario
                 {
                     prof2 = Convert.ToInt32(temp);
 
-                    temp = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[7].Value.ToString();
+                    temp = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[7].Value;
 
                     if (temp == null)
                     {
@@ -378,7 +377,68 @@ namespace GradeDeHorario
 
         private void PreencheGrade()
         {
+            try
+            {
+                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(this.curso);
+                gradeRN.VerificaCarregaGrade(this.curso.CODIGO_CURSO, Convert.ToInt32(cbbSelectFase.ComboBox.SelectedValue), Convert.ToInt32(cbbSelectSemestre.ComboBox.SelectedValue));
 
+                DataTable query = gradeRN.SelecionaTodaGrade(Convert.ToInt32(cbbSelectFase.ComboBox.SelectedValue), Convert.ToInt32(cbbSelectSemestre.ComboBox.SelectedValue));
+
+                LimpaTodaGrade();
+
+                for (int i = 0; i < query.Rows.Count; i++)
+                {
+                    int linha, coluna;
+
+                    linha = query.Rows[i].Field<int>("HORARIO_GRADE");
+                    coluna = query.Rows[i].Field<int>("DIA_SEMANA_GRADE");
+
+                    Control control = tblGrade.GetControlFromPosition(coluna, linha);
+
+                    if (control is DataGridView)
+                    {
+                        DataGridView grade = tblGrade.GetControlFromPosition(coluna, linha) as DataGridView;
+
+                        string disciplina = query.Rows[i].Field<string>("CODIGO_DISCIPLINA");
+                        string turma = query.Rows[i].Field<string>("NOME_TURMA");
+                        string espaco = query.Rows[i].Field<string>("CODIGO_ESPACO");
+
+                        int? prof1 = query.Rows[i].Field<int?>("CODIGO_PROFESSOR1");        // 'int?' é um int anulável.
+                        int? prof2 = query.Rows[i].Field<int?>("CODIGO_PROFESSOR2");
+                        int? prof3 = query.Rows[i].Field<int?>("CODIGO_PROFESSOR3");
+
+                        if (prof2 != null)
+                        {
+                            grade.Rows.Add(linha, coluna, disciplina, turma, espaco, prof1, prof2, prof3);
+                        }
+                        else if (prof3 != null)
+                        {
+                            grade.Rows.Add(linha, coluna, disciplina, turma, espaco, prof1, prof2);
+                        }
+                        else
+                        {
+                            grade.Rows.Add(linha, coluna, disciplina, turma, espaco, prof1);
+                        }
+
+                        grade.ClearSelection();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void LimpaTodaGrade()
+        {
+            foreach (Control tabela in tblGrade.Controls)
+            {
+                if ((tabela is DataGridView) && ((tabela as DataGridView).Name.Contains("grade") == true))
+                {
+                    (tabela as DataGridView).Rows.Clear();
+                }
+            }
         }
     }
 }

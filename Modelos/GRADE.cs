@@ -20,9 +20,8 @@ namespace Modelos
             this.DISCIPLINA_TURMA = new HashSet<DISCIPLINA_TURMA>();
         }
     
-        public int SEQ_GRADE { get; set; }
-        public Nullable<int> DIA_SEMANA_GRADE { get; set; }
-        public Nullable<int> HORARIO_GRADE { get; set; }
+        public int DIA_SEMANA_GRADE { get; set; }
+        public int HORARIO_GRADE { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DISCIPLINA_TURMA> DISCIPLINA_TURMA { get; set; }

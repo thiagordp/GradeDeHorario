@@ -10708,7 +10708,7 @@
             // CODIGO_TURMA_11
             // 
             this.CODIGO_TURMA_11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CODIGO_TURMA_11.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA_11.DataPropertyName = "NOME_TURMA";
             this.CODIGO_TURMA_11.HeaderText = "Turma";
             this.CODIGO_TURMA_11.MinimumWidth = 20;
             this.CODIGO_TURMA_11.Name = "CODIGO_TURMA_11";

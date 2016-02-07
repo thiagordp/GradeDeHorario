@@ -84,7 +84,6 @@ namespace AcessoDados
 
                         grade.DIA_SEMANA_GRADE = i;
                         grade.HORARIO_GRADE = j;
-                        grade.SEQ_GRADE = k++;
 
                         grades.Add(grade);
                     }

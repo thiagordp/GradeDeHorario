@@ -71,7 +71,7 @@
       <Name>AcessoDados</Name>
     </ProjectReference>
     <ProjectReference Include="..\Modelos\Modelos.csproj">
-      <Project>{c8c87f39-0846-4c00-9cc6-7e45e49fc1fa}</Project>
+      <Project>{4201247f-7146-4d21-ae88-e2189d621599}</Project>
       <Name>Modelos</Name>
     </ProjectReference>
   </ItemGroup>

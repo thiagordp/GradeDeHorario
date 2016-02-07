@@ -113,6 +113,7 @@ namespace AcessoDados
                     }
 
                     tempDisciplina.CODIGO_DISCIPLINA = disciplinaNova.CODIGO_DISCIPLINA;
+                    tempDisciplina.NOME_DISCIPLINA = disciplinaNova.NOME_DISCIPLINA;
                     tempDisciplina.CODIGO_DEPARTAMENTO = disciplinaNova.CODIGO_DEPARTAMENTO;
                     tempDisciplina.CREDITO_DISCIPLINA = disciplinaNova.CREDITO_DISCIPLINA;
                     tempDisciplina.DEPARTAMENTO = disciplinaNova.DEPARTAMENTO;
@@ -306,7 +307,7 @@ namespace AcessoDados
             }
         }
 
-      
+
         public DataTable SelecionaDisciplinaPorNome(string nome)
         {
             sql = new StringBuilder();
