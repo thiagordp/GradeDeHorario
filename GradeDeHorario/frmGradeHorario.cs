@@ -267,7 +267,17 @@ namespace GradeDeHorario
 
         private void itmInserir_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(hoverGrade.Name);
+            try
+            {
+
+                VerificaSelecaoTabelas();
+
+                MessageBox.Show(hoverGrade.Name);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void itmEditar_Click(object sender, EventArgs e)
@@ -420,6 +430,76 @@ namespace GradeDeHorario
             this.PreenchePesquisaProfessor("-1");
             this.PreencheGrade();
             this.LimpaTodaGrade();
+        }
+
+        /// <summary>
+        /// Verifica se as selecões de disciplina, professores e espaço está correta.
+        /// </summary>
+        private void VerificaSelecaoTabelas()
+        {
+            int contagem = 0;
+
+            dtgPesquisaDisciplina.EndEdit();
+            dtgPesquisaEspaco.EndEdit();
+            dtgPesquisaProfessor.EndEdit();
+
+            for (int i = 0; i < dtgPesquisaDisciplina.Rows.Count; i++)
+            {
+                if (contagem > 1)
+                {
+                    throw new Exception("Apenas uma disciplina deve ser selecionada!");
+                }
+
+                if (Convert.ToBoolean(dtgPesquisaDisciplina.Rows[i].Cells["SELECT_DISCIPLINA"].Value) == true)
+                {
+                    contagem++;
+                }
+            }
+
+            if (contagem == 0)
+            {
+                throw new Exception("Uma disciplina deve ser selecionada!");
+            }
+
+            contagem = 0;
+
+            for (int i = 0; i < dtgPesquisaProfessor.Rows.Count; i++)
+            {
+                if (contagem > 3)
+                {
+                    throw new Exception("Até 3 professores podem ser selecionados!");
+                }
+
+                if (Convert.ToBoolean(dtgPesquisaProfessor.Rows[i].Cells["SELECT_PROFESSOR"].Value) == true)
+                {
+                    contagem++;
+                }
+            }
+
+            if (contagem == 0)
+            {
+                throw new Exception("Ao menos um professor deve ser selecionado!");
+            }
+
+            contagem = 0;
+
+            for (int i = 0; i < dtgPesquisaEspaco.Rows.Count; i++)
+            {
+                if (contagem > 3)
+                {
+                    throw new Exception("Apenas um espaço deve ser selecionado!");
+                }
+
+                if (Convert.ToBoolean(dtgPesquisaEspaco.Rows[i].Cells["SELECT_ESPACO"].Value) == true)
+                {
+                    contagem++;
+                }
+            }
+
+            if (contagem == 0)
+            {
+                throw new Exception("Ao menos um espaço deve ser selecionado!");
+            }
         }
     }
 }
