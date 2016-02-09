@@ -284,7 +284,7 @@ namespace GradeDeHorario
                 VerificaSelecaoTabelas();
 
                 string disciplina, espaco;
-                List<string> professores = new List<string>();
+                List<int> professores = new List<int>();
 
                 disciplina = espaco = string.Empty;
 
@@ -296,9 +296,13 @@ namespace GradeDeHorario
 
                 celula.hora = tblGrade.GetPositionFromControl(hoverGrade).Row;
                 celula.dia = tblGrade.GetPositionFromControl(hoverGrade).Column;
+                celula.disciplina = disciplina;
+                celula.espaco = espaco;
+                celula.fase = Convert.ToInt32(cbbSelectFase.ComboBox.SelectedValue);
+                celula.professores = professores;
+                celula.semestre = Convert.ToInt32(cbbSelectSemestre.ComboBox.SelectedValue);
 
-                gradeRN.InsereCelula(
-                    this, celula);
+                gradeRN.InsereCelula(this, celula);
             }
             catch (Exception ex)
             {
@@ -382,9 +386,14 @@ namespace GradeDeHorario
             try
             {
                 gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(this.curso);
-                gradeRN.VerificaCarregaGrade(this.curso.CODIGO_CURSO, Convert.ToInt32(cbbSelectFase.ComboBox.SelectedValue), Convert.ToInt32(cbbSelectSemestre.ComboBox.SelectedValue));
+                gradeRN.VerificaCarregaGrade(
+                    this.curso.CODIGO_CURSO,
+                    Convert.ToInt32(cbbSelectFase.ComboBox.SelectedValue),
+                    Convert.ToInt32(cbbSelectSemestre.ComboBox.SelectedValue));
 
-                DataTable query = gradeRN.SelecionaTodaGrade(Convert.ToInt32(cbbSelectFase.ComboBox.SelectedValue), Convert.ToInt32(cbbSelectSemestre.ComboBox.SelectedValue));
+                DataTable query = gradeRN.SelecionaTodaGrade(
+                    Convert.ToInt32(cbbSelectFase.ComboBox.SelectedValue),
+                    Convert.ToInt32(cbbSelectSemestre.ComboBox.SelectedValue));
 
                 LimpaTodaGrade();
 
@@ -409,11 +418,11 @@ namespace GradeDeHorario
                         int? prof2 = query.Rows[i].Field<int?>("CODIGO_PROFESSOR2");
                         int? prof3 = query.Rows[i].Field<int?>("CODIGO_PROFESSOR3");
 
-                        if (prof2 != null)
+                        if (prof3 != null)
                         {
                             grade.Rows.Add(linha, coluna, disciplina, turma, espaco, prof1, prof2, prof3);
                         }
-                        else if (prof3 != null)
+                        else if (prof2 != null)
                         {
                             grade.Rows.Add(linha, coluna, disciplina, turma, espaco, prof1, prof2);
                         }
@@ -541,12 +550,13 @@ namespace GradeDeHorario
         }
 
         /// <summary>
-        /// Seleciona os campos marcados de disciplina, espaco e professor(es) e os armazena nos parâmetros por refência.
+        /// Seleciona os campos marcados de disciplina, espaco e 
+        /// professor(es) e os armazena nos parâmetros por refência.
         /// </summary>
         /// <param name="disciplina">Código da disciplina selecionada.</param>
         /// <param name="espaco">Código do espaco selecionado.</param>
         /// <param name="professores">Lista de código(s) de professor(es) selecionado(s).</param>
-        private void SelecionaCampoMarcado(ref string disciplina, ref string espaco, ref List<string> professores)
+        private void SelecionaCampoMarcado(ref string disciplina, ref string espaco, ref List<int> professores)
         {
             // Conclui a edição das tabelas.
             dtgPesquisaDisciplina.EndEdit();
@@ -568,7 +578,7 @@ namespace GradeDeHorario
             {
                 if (Convert.ToBoolean(dtgPesquisaProfessor.Rows[i].Cells["SELECT_PROFESSOR"].Value) == true)
                 {
-                    professores.Add(dtgPesquisaProfessor.Rows[i].Cells["COD_PROF_PESQUISA"].Value.ToString());
+                    professores.Add(Convert.ToInt32(dtgPesquisaProfessor.Rows[i].Cells["COD_PROF_PESQUISA"].Value));
 
                     if (professores.Count > 3) { break; }
                 }
@@ -583,17 +593,6 @@ namespace GradeDeHorario
                     break;
                 }
             }
-
-            StringBuilder str = new StringBuilder();
-
-            str.Append(disciplina + "\n");
-            for (int i = 0; i < professores.Count; i++)
-            {
-                str.Append(professores.ElementAt(i) + "\n");
-            }
-            str.Append("\n" + espaco + "\n");
-
-            MessageBox.Show(str.ToString());
         }
     }
 }

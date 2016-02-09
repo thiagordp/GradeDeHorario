@@ -201,9 +201,83 @@ namespace RegraNegocio
             }
         }
 
+        /// <summary>
+        /// Verifica se é possível inserir a célula indicada no local indicado
+        /// </summary>
+        /// <param name="grade">Formulário da grade</param>
+        /// <param name="celula">Célula a ser inserida</param>
         public void InsereCelula(Form grade, Modelos.Celula celula)
         {
+            // Verificação se há e qual é a última turma cadastrada da disciplina fase e semestre indicado.
+            gradeAD = new AcessoDados.GradeHorarioAcessoDados(this.curso);
+            DataTable query = gradeAD.SelecionaTurma(celula.disciplina, celula.fase, celula.semestre);
 
+            int turma = 0;
+            string nomeTurma = "";
+
+            if (query.Rows.Count > 0) // Caso já existe alguma turma com as características mais relevantes da célula
+            {
+                turma = query.Rows[0].Field<int>("SEQ_TURMA");
+                nomeTurma = query.Rows[0].Field<string>("NOME_TURMA");
+
+                query = gradeAD.SelectNumeroCredito(turma, celula.disciplina);
+
+                int creditoAtual = query.Rows[0].Field<int>("CREDITO_GASTO");
+                int creditoPermitido = query.Rows[0].Field<int>("CREDITO_DISCIPLINA");
+
+
+                if (creditoAtual < creditoPermitido)
+                {
+                    // inserir na turma indicada
+                    // Verificar se existe a turma atual.
+                }
+                else
+                {
+                    string novaTurma = ProximaTurma(nomeTurma, celula.fase);
+                    // criar nova turma
+                }
+            }
+            else // Caso a célula atual seja a primeira a ser cadastrada com tais características relevantes.
+            {
+                // Criar uma nova turma
+                // Insere direto.
+            }
+        }
+
+        private string ProximaTurma(string turmaAtual, int fase)
+        {
+            string turmaFinal = "";
+
+            if (turmaAtual == string.Empty)
+            {
+                turmaFinal = "0" + fase.ToString() + this.curso.CODIGO_CURSO.ToString();
+
+                if (fase >= 10)
+                {
+                    turmaFinal = turmaFinal.Remove(0, 1);
+                }
+            }
+            else
+            {
+                if (turmaAtual.Length == 5)
+                {
+                    turmaFinal = turmaAtual + "B";
+
+                    // Colocar o sufixo A na anterior (turmaAtual).
+
+                }
+                else // Provavelmente será 6.
+                {
+                    char ch = turmaAtual.ElementAt(turmaAtual.Length - 1);
+
+                    ch = (char)(ch + 1);
+
+                    turmaFinal = turmaAtual.Remove(turmaAtual.Length - 1, 1) + ch.ToString();
+                }
+            }
+            MessageBox.Show(turmaAtual + "\n" + turmaFinal);
+
+            return turmaFinal;
         }
     }
 }

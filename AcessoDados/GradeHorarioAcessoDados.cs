@@ -236,5 +236,90 @@ namespace AcessoDados
                 throw new Exception(ex.Message);
             }
         }
+
+        public DataTable SelecionaTurma(string disciplina, int fase, int semestre)
+        {
+            try
+            {
+                SqlCommand comandoSql = new SqlCommand();
+                StringBuilder sql = new StringBuilder();
+                DataTable dadosTabela = new DataTable();
+
+                sql.Append("SELECT TRM.SEQ_TURMA, MAX(NOME_TURMA) AS NOME_TURMA FROM DISCIPLINA_TURMA AS DISC_TRM ");
+                sql.Append("INNER JOIN ");
+                sql.Append("	(SELECT * FROM DISCIPLINA_CURSO");
+                sql.Append("	WHERE CODIGO_DISCIPLINA = '" + disciplina.ToString() + "'");
+                sql.Append("		AND FASE_DISCIPLINA_CURSO = " + fase.ToString() + " ");
+                sql.Append("        AND CODIGO_CURSO = " + this.curso.CODIGO_CURSO.ToString() + ") AS DISC ");
+                sql.Append("	ON DISC_TRM.SEQ_DISCIPLINA_CURSO = DISC.SEQ_DISCIPLINA_CURSO ");
+                sql.Append("INNER JOIN ");
+                sql.Append("	(SELECT SEQ_TURMA, NOME_TURMA FROM TURMA ");
+                sql.Append("	WHERE SEQ_SEMESTRE = " + semestre.ToString() + ") AS TRM ");
+                sql.Append("    ON TRM.SEQ_TURMA = DISC_TRM.SEQ_TURMA ");
+                sql.Append("GROUP BY TRM.SEQ_TURMA");
+
+                using (SqlConnection conexao = new SqlConnection(Conexao.stringConexao))
+                {
+                    conexao.Open();
+
+                    comandoSql.CommandText = sql.ToString();
+                    comandoSql.Connection = conexao;
+
+                    dadosTabela.Load(comandoSql.ExecuteReader());
+
+                    return dadosTabela;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+
+        public DataTable SelectNumeroCredito(int turma, string disciplina)
+        {
+            try
+            {
+                SqlCommand comandoSql = new SqlCommand();
+                StringBuilder sql = new StringBuilder();
+                DataTable dadosTabela = new DataTable();
+
+                sql.Append("SELECT COUNT(*) AS CREDITO_GASTO, CREDITO_DISCIPLINA FROM DISCIPLINA_TURMA AS DISC_TRM ");
+                sql.Append("INNER JOIN ");
+                sql.Append("	(SELECT * FROM TURMA ");
+                sql.Append("	WHERE SEQ_TURMA = " + turma.ToString() + ") AS TRM ");
+                sql.Append("	ON DISC_TRM.SEQ_TURMA = TRM.SEQ_TURMA ");
+                sql.Append("INNER JOIN ");
+                sql.Append("	(SELECT * FROM DISCIPLINA_CURSO ");
+                sql.Append("	WHERE CODIGO_DISCIPLINA = '" + disciplina.ToString() + "' ");
+                sql.Append("		AND CODIGO_CURSO = " + this.curso.CODIGO_CURSO.ToString() + ") AS DISC ");
+                sql.Append("	ON DISC.SEQ_DISCIPLINA_CURSO = DISC_TRM.SEQ_DISCIPLINA_CURSO ");
+                sql.Append("INNER JOIN ");
+                sql.Append("	(SELECT * FROM GRADE_TURMA) AS GRD_TRM ");
+                sql.Append("	ON GRD_TRM.SEQ_DISCIPLINA_CURSO = DISC_TRM.SEQ_DISCIPLINA_CURSO AND ");
+                sql.Append("		GRD_TRM.SEQ_TURMA = DISC_TRM.SEQ_TURMA ");
+                sql.Append("INNER JOIN ");
+                sql.Append("	(SELECT * FROM DISCIPLINA ");
+                sql.Append("	WHERE DISCIPLINA.CODIGO_DISCIPLINA = '" + disciplina.ToString() + "') AS DIC ");
+                sql.Append("	ON DIC.CODIGO_DISCIPLINA = DISC.CODIGO_DISCIPLINA ");
+                sql.Append("GROUP BY CREDITO_DISCIPLINA ");
+
+                using (SqlConnection conexao = new SqlConnection(Conexao.stringConexao))
+                {
+                    conexao.Open();
+
+                    comandoSql.CommandText = sql.ToString();
+                    comandoSql.Connection = conexao;
+
+                    dadosTabela.Load(comandoSql.ExecuteReader());
+                    return dadosTabela;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

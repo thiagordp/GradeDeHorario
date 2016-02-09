@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,7 +17,9 @@ namespace Modelos
 
         public string espaco { get; set; }
 
-        public List<string> professores { get; set; }
+        public List<int> professores { get; set; }
+
+        public int turma { get; set; }
 
         public int fase { get; set; }
 
@@ -26,7 +29,17 @@ namespace Modelos
         {
             hora = dia = fase = semestre = 0;
             disciplina = espaco = string.Empty;
-            professores = new List<string>();
+            professores = new List<int>();
+        }
+
+        public bool Equal(Celula obj)
+        {
+            if ((this.disciplina != obj.disciplina)|| (this.turma !=obj.turma))
+            {
+                return false;
+            }
+                
+            return true;
         }
     }
 }
