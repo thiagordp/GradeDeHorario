@@ -200,6 +200,11 @@ namespace RegraNegocio
                 throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
             }
         }
+
+        public void InsereCelula(Form grade, Modelos.Celula celula)
+        {
+
+        }
     }
 }
 

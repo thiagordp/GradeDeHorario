@@ -13,8 +13,16 @@ namespace GradeDeHorario
     public partial class frmGradeHorario : Form
     {
         private Modelos.CURSO curso { set; get; }
+
         private RegraNegocio.GradeHorarioRegraNegocio gradeRN;
         private DataGridView hoverGrade;
+
+        private List<Modelos.Celula> ListaInsere { get; set; }
+
+        private List<Modelos.Celula> ListaEdita { get; set; }
+
+        private List<Modelos.Celula> ListaExclui { get; set; }
+
 
         public frmGradeHorario(Modelos.CURSO curso)
         {
@@ -209,6 +217,10 @@ namespace GradeDeHorario
                 PreenchePesquisaEspaco(txtPesquisaEspaco.Text);
                 cbbSelectFase.Enabled = cbbSelectSemestre.Enabled = btnCarregaGrade.Enabled = btnEditar.Enabled = false;
                 btnCancelar.Enabled = btnSalvar.Enabled = btnGerarRelatorio.Enabled = tblGrade.Enabled = gbDisciplina.Enabled = gbProfessor.Enabled = gbSala.Enabled = true;
+
+                ListaEdita = new List<Modelos.Celula>();
+                ListaExclui = new List<Modelos.Celula>();
+                ListaInsere = new List<Modelos.Celula>();
             }
             catch (Exception ex)
             {
@@ -269,10 +281,24 @@ namespace GradeDeHorario
         {
             try
             {
-
                 VerificaSelecaoTabelas();
 
-                MessageBox.Show(hoverGrade.Name);
+                string disciplina, espaco;
+                List<string> professores = new List<string>();
+
+                disciplina = espaco = string.Empty;
+
+                SelecionaCampoMarcado(ref disciplina, ref espaco, ref professores);
+
+                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(this.curso);
+
+                Modelos.Celula celula = new Modelos.Celula();
+
+                celula.hora = tblGrade.GetPositionFromControl(hoverGrade).Row;
+                celula.dia = tblGrade.GetPositionFromControl(hoverGrade).Column;
+
+                gradeRN.InsereCelula(
+                    this, celula);
             }
             catch (Exception ex)
             {
@@ -445,14 +471,14 @@ namespace GradeDeHorario
 
             for (int i = 0; i < dtgPesquisaDisciplina.Rows.Count; i++)
             {
-                if (contagem > 1)
-                {
-                    throw new Exception("Apenas uma disciplina deve ser selecionada!");
-                }
-
                 if (Convert.ToBoolean(dtgPesquisaDisciplina.Rows[i].Cells["SELECT_DISCIPLINA"].Value) == true)
                 {
                     contagem++;
+                }
+
+                if (contagem > 1)
+                {
+                    throw new Exception("Apenas uma disciplina deve ser selecionada!");
                 }
             }
 
@@ -465,14 +491,14 @@ namespace GradeDeHorario
 
             for (int i = 0; i < dtgPesquisaProfessor.Rows.Count; i++)
             {
-                if (contagem > 3)
-                {
-                    throw new Exception("Até 3 professores podem ser selecionados!");
-                }
-
                 if (Convert.ToBoolean(dtgPesquisaProfessor.Rows[i].Cells["SELECT_PROFESSOR"].Value) == true)
                 {
                     contagem++;
+                }
+
+                if (contagem > 3)
+                {
+                    throw new Exception("Até 3 professores podem ser selecionados!");
                 }
             }
 
@@ -485,21 +511,89 @@ namespace GradeDeHorario
 
             for (int i = 0; i < dtgPesquisaEspaco.Rows.Count; i++)
             {
-                if (contagem > 3)
-                {
-                    throw new Exception("Apenas um espaço deve ser selecionado!");
-                }
-
                 if (Convert.ToBoolean(dtgPesquisaEspaco.Rows[i].Cells["SELECT_ESPACO"].Value) == true)
                 {
                     contagem++;
                 }
+
+                if (contagem > 1)
+                {
+                    throw new Exception("Apenas um espaço deve ser selecionado!");
+                }
+
             }
 
             if (contagem == 0)
             {
                 throw new Exception("Ao menos um espaço deve ser selecionado!");
             }
+        }
+
+        private void gradeXX_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            foreach (Control controle in tblGrade.Controls)
+            {
+                if (controle is DataGridView && controle.Name.Contains("grade") && controle.Name != (sender as DataGridView).Name)
+                {
+                    (controle as DataGridView).ClearSelection();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Seleciona os campos marcados de disciplina, espaco e professor(es) e os armazena nos parâmetros por refência.
+        /// </summary>
+        /// <param name="disciplina">Código da disciplina selecionada.</param>
+        /// <param name="espaco">Código do espaco selecionado.</param>
+        /// <param name="professores">Lista de código(s) de professor(es) selecionado(s).</param>
+        private void SelecionaCampoMarcado(ref string disciplina, ref string espaco, ref List<string> professores)
+        {
+            // Conclui a edição das tabelas.
+            dtgPesquisaDisciplina.EndEdit();
+            dtgPesquisaEspaco.EndEdit();
+            dtgPesquisaProfessor.EndEdit();
+
+            // Seleção da disciplina.
+            for (int i = 0; i < dtgPesquisaDisciplina.Rows.Count; i++)
+            {
+                if (Convert.ToBoolean(dtgPesquisaDisciplina.Rows[i].Cells["SELECT_DISCIPLINA"].Value) == true)
+                {
+                    disciplina = dtgPesquisaDisciplina.Rows[i].Cells["COD_DISC_PESQUISA"].Value.ToString();
+                    break;
+                }
+            }
+
+            // Seleção do(s) professor(es).
+            for (int i = 0; i < dtgPesquisaProfessor.Rows.Count; i++)
+            {
+                if (Convert.ToBoolean(dtgPesquisaProfessor.Rows[i].Cells["SELECT_PROFESSOR"].Value) == true)
+                {
+                    professores.Add(dtgPesquisaProfessor.Rows[i].Cells["COD_PROF_PESQUISA"].Value.ToString());
+
+                    if (professores.Count > 3) { break; }
+                }
+            }
+
+            // Seleção da disciplina.
+            for (int i = 0; i < dtgPesquisaEspaco.Rows.Count; i++)
+            {
+                if (Convert.ToBoolean(dtgPesquisaEspaco.Rows[i].Cells["SELECT_ESPACO"].Value) == true)
+                {
+                    espaco = dtgPesquisaEspaco.Rows[i].Cells["COD_ESP_PESQUISA"].Value.ToString();
+                    break;
+                }
+            }
+
+            StringBuilder str = new StringBuilder();
+
+            str.Append(disciplina + "\n");
+            for (int i = 0; i < professores.Count; i++)
+            {
+                str.Append(professores.ElementAt(i) + "\n");
+            }
+            str.Append("\n" + espaco + "\n");
+
+            MessageBox.Show(str.ToString());
         }
     }
 }

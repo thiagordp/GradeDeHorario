@@ -1919,6 +1919,7 @@
             this.grade12.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade12.Size = new System.Drawing.Size(89, 27);
             this.grade12.TabIndex = 150;
+            this.grade12.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade12.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_12
@@ -2066,6 +2067,7 @@
             this.grade13.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade13.Size = new System.Drawing.Size(89, 27);
             this.grade13.TabIndex = 150;
+            this.grade13.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade13.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_13
@@ -2171,6 +2173,7 @@
             this.grade14.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade14.Size = new System.Drawing.Size(89, 27);
             this.grade14.TabIndex = 150;
+            this.grade14.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade14.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_14
@@ -2276,6 +2279,7 @@
             this.grade15.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade15.Size = new System.Drawing.Size(89, 27);
             this.grade15.TabIndex = 150;
+            this.grade15.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade15.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_15
@@ -2381,6 +2385,7 @@
             this.grade16.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade16.Size = new System.Drawing.Size(89, 27);
             this.grade16.TabIndex = 150;
+            this.grade16.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade16.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_16
@@ -2486,6 +2491,7 @@
             this.grade17.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade17.Size = new System.Drawing.Size(89, 27);
             this.grade17.TabIndex = 150;
+            this.grade17.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade17.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_17
@@ -2591,6 +2597,7 @@
             this.grade18.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade18.Size = new System.Drawing.Size(89, 27);
             this.grade18.TabIndex = 150;
+            this.grade18.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade18.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_18
@@ -2696,6 +2703,7 @@
             this.grade19.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade19.Size = new System.Drawing.Size(89, 27);
             this.grade19.TabIndex = 150;
+            this.grade19.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade19.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_19
@@ -2801,6 +2809,7 @@
             this.grade110.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade110.Size = new System.Drawing.Size(89, 27);
             this.grade110.TabIndex = 150;
+            this.grade110.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade110.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_110
@@ -2906,6 +2915,7 @@
             this.grade111.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade111.Size = new System.Drawing.Size(89, 27);
             this.grade111.TabIndex = 150;
+            this.grade111.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade111.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_111
@@ -3011,6 +3021,7 @@
             this.grade112.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade112.Size = new System.Drawing.Size(89, 27);
             this.grade112.TabIndex = 150;
+            this.grade112.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade112.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_112
@@ -3116,6 +3127,7 @@
             this.grade113.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade113.Size = new System.Drawing.Size(89, 27);
             this.grade113.TabIndex = 150;
+            this.grade113.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade113.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_113
@@ -3221,6 +3233,7 @@
             this.grade114.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade114.Size = new System.Drawing.Size(89, 28);
             this.grade114.TabIndex = 150;
+            this.grade114.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade114.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_114
@@ -3326,6 +3339,7 @@
             this.grade21.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade21.Size = new System.Drawing.Size(89, 27);
             this.grade21.TabIndex = 150;
+            this.grade21.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade21.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_21
@@ -3431,6 +3445,7 @@
             this.grade22.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade22.Size = new System.Drawing.Size(89, 27);
             this.grade22.TabIndex = 150;
+            this.grade22.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade22.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_22
@@ -3536,6 +3551,7 @@
             this.grade23.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade23.Size = new System.Drawing.Size(89, 27);
             this.grade23.TabIndex = 150;
+            this.grade23.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade23.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_23
@@ -3641,6 +3657,7 @@
             this.grade24.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade24.Size = new System.Drawing.Size(89, 27);
             this.grade24.TabIndex = 150;
+            this.grade24.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade24.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_24
@@ -3746,6 +3763,7 @@
             this.grade25.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade25.Size = new System.Drawing.Size(89, 27);
             this.grade25.TabIndex = 150;
+            this.grade25.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade25.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_25
@@ -3851,6 +3869,7 @@
             this.grade26.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade26.Size = new System.Drawing.Size(89, 27);
             this.grade26.TabIndex = 150;
+            this.grade26.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade26.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_26
@@ -3956,6 +3975,7 @@
             this.grade27.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade27.Size = new System.Drawing.Size(89, 27);
             this.grade27.TabIndex = 150;
+            this.grade27.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade27.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_27
@@ -4061,6 +4081,7 @@
             this.grade28.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade28.Size = new System.Drawing.Size(89, 27);
             this.grade28.TabIndex = 150;
+            this.grade28.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade28.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_28
@@ -4166,6 +4187,7 @@
             this.grade29.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade29.Size = new System.Drawing.Size(89, 27);
             this.grade29.TabIndex = 150;
+            this.grade29.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade29.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_29
@@ -4271,6 +4293,7 @@
             this.grade210.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade210.Size = new System.Drawing.Size(89, 27);
             this.grade210.TabIndex = 150;
+            this.grade210.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade210.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_210
@@ -4376,6 +4399,7 @@
             this.grade211.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade211.Size = new System.Drawing.Size(89, 27);
             this.grade211.TabIndex = 150;
+            this.grade211.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade211.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_211
@@ -4481,6 +4505,7 @@
             this.grade212.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade212.Size = new System.Drawing.Size(89, 27);
             this.grade212.TabIndex = 150;
+            this.grade212.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade212.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_212
@@ -4586,6 +4611,7 @@
             this.grade213.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade213.Size = new System.Drawing.Size(89, 27);
             this.grade213.TabIndex = 150;
+            this.grade213.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade213.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_213
@@ -4691,6 +4717,7 @@
             this.grade214.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade214.Size = new System.Drawing.Size(89, 28);
             this.grade214.TabIndex = 150;
+            this.grade214.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade214.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_214
@@ -4796,6 +4823,7 @@
             this.grade31.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade31.Size = new System.Drawing.Size(89, 27);
             this.grade31.TabIndex = 150;
+            this.grade31.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade31.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_31
@@ -4901,6 +4929,7 @@
             this.grade32.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade32.Size = new System.Drawing.Size(89, 27);
             this.grade32.TabIndex = 150;
+            this.grade32.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade32.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_32
@@ -5006,6 +5035,7 @@
             this.grade33.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade33.Size = new System.Drawing.Size(89, 27);
             this.grade33.TabIndex = 150;
+            this.grade33.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade33.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_33
@@ -5111,6 +5141,7 @@
             this.grade34.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade34.Size = new System.Drawing.Size(89, 27);
             this.grade34.TabIndex = 150;
+            this.grade34.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade34.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_34
@@ -5216,6 +5247,7 @@
             this.grade35.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade35.Size = new System.Drawing.Size(89, 27);
             this.grade35.TabIndex = 150;
+            this.grade35.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade35.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_35
@@ -5321,6 +5353,7 @@
             this.grade36.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade36.Size = new System.Drawing.Size(89, 27);
             this.grade36.TabIndex = 150;
+            this.grade36.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade36.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_36
@@ -5426,6 +5459,7 @@
             this.grade37.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade37.Size = new System.Drawing.Size(89, 27);
             this.grade37.TabIndex = 150;
+            this.grade37.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade37.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_37
@@ -5531,6 +5565,7 @@
             this.grade38.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade38.Size = new System.Drawing.Size(89, 27);
             this.grade38.TabIndex = 150;
+            this.grade38.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade38.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_38
@@ -5636,6 +5671,7 @@
             this.grade39.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade39.Size = new System.Drawing.Size(89, 27);
             this.grade39.TabIndex = 150;
+            this.grade39.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade39.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_39
@@ -5741,6 +5777,7 @@
             this.grade310.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade310.Size = new System.Drawing.Size(89, 27);
             this.grade310.TabIndex = 150;
+            this.grade310.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade310.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_310
@@ -5846,6 +5883,7 @@
             this.grade311.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade311.Size = new System.Drawing.Size(89, 27);
             this.grade311.TabIndex = 150;
+            this.grade311.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade311.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_311
@@ -5951,6 +5989,7 @@
             this.grade312.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade312.Size = new System.Drawing.Size(89, 27);
             this.grade312.TabIndex = 150;
+            this.grade312.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade312.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_312
@@ -6056,6 +6095,7 @@
             this.grade313.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade313.Size = new System.Drawing.Size(89, 27);
             this.grade313.TabIndex = 150;
+            this.grade313.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade313.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_313
@@ -6161,6 +6201,7 @@
             this.grade314.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade314.Size = new System.Drawing.Size(89, 28);
             this.grade314.TabIndex = 150;
+            this.grade314.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade314.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_314
@@ -6266,6 +6307,7 @@
             this.grade41.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade41.Size = new System.Drawing.Size(89, 27);
             this.grade41.TabIndex = 150;
+            this.grade41.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade41.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_41
@@ -6371,6 +6413,7 @@
             this.grade42.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade42.Size = new System.Drawing.Size(89, 27);
             this.grade42.TabIndex = 150;
+            this.grade42.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade42.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_42
@@ -6476,6 +6519,7 @@
             this.grade43.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade43.Size = new System.Drawing.Size(89, 27);
             this.grade43.TabIndex = 150;
+            this.grade43.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade43.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_43
@@ -6581,6 +6625,7 @@
             this.grade44.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade44.Size = new System.Drawing.Size(89, 27);
             this.grade44.TabIndex = 150;
+            this.grade44.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade44.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_44
@@ -6686,6 +6731,7 @@
             this.grade45.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade45.Size = new System.Drawing.Size(89, 27);
             this.grade45.TabIndex = 150;
+            this.grade45.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade45.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_45
@@ -6791,6 +6837,7 @@
             this.grade46.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade46.Size = new System.Drawing.Size(89, 27);
             this.grade46.TabIndex = 150;
+            this.grade46.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade46.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_46
@@ -6896,6 +6943,7 @@
             this.grade47.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade47.Size = new System.Drawing.Size(89, 27);
             this.grade47.TabIndex = 150;
+            this.grade47.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade47.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_47
@@ -7001,6 +7049,7 @@
             this.grade48.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade48.Size = new System.Drawing.Size(89, 27);
             this.grade48.TabIndex = 150;
+            this.grade48.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade48.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_48
@@ -7106,6 +7155,7 @@
             this.grade49.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade49.Size = new System.Drawing.Size(89, 27);
             this.grade49.TabIndex = 150;
+            this.grade49.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade49.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_49
@@ -7211,6 +7261,7 @@
             this.grade410.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade410.Size = new System.Drawing.Size(89, 27);
             this.grade410.TabIndex = 150;
+            this.grade410.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade410.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_410
@@ -7316,6 +7367,7 @@
             this.grade411.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade411.Size = new System.Drawing.Size(89, 27);
             this.grade411.TabIndex = 150;
+            this.grade411.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade411.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_411
@@ -7421,6 +7473,7 @@
             this.grade412.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade412.Size = new System.Drawing.Size(89, 27);
             this.grade412.TabIndex = 150;
+            this.grade412.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade412.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_412
@@ -7526,6 +7579,7 @@
             this.grade413.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade413.Size = new System.Drawing.Size(89, 27);
             this.grade413.TabIndex = 150;
+            this.grade413.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade413.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_413
@@ -7631,6 +7685,7 @@
             this.grade414.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade414.Size = new System.Drawing.Size(89, 28);
             this.grade414.TabIndex = 150;
+            this.grade414.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade414.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_414
@@ -7736,6 +7791,7 @@
             this.grade51.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade51.Size = new System.Drawing.Size(89, 27);
             this.grade51.TabIndex = 150;
+            this.grade51.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade51.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_51
@@ -7841,6 +7897,7 @@
             this.grade52.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade52.Size = new System.Drawing.Size(89, 27);
             this.grade52.TabIndex = 150;
+            this.grade52.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade52.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_52
@@ -7946,6 +8003,7 @@
             this.grade53.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade53.Size = new System.Drawing.Size(89, 27);
             this.grade53.TabIndex = 150;
+            this.grade53.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade53.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_53
@@ -8051,6 +8109,7 @@
             this.grade54.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade54.Size = new System.Drawing.Size(89, 27);
             this.grade54.TabIndex = 150;
+            this.grade54.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade54.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_54
@@ -8156,6 +8215,7 @@
             this.grade55.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade55.Size = new System.Drawing.Size(89, 27);
             this.grade55.TabIndex = 150;
+            this.grade55.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade55.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_55
@@ -8261,6 +8321,7 @@
             this.grade56.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade56.Size = new System.Drawing.Size(89, 27);
             this.grade56.TabIndex = 150;
+            this.grade56.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade56.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_56
@@ -8366,6 +8427,7 @@
             this.grade57.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade57.Size = new System.Drawing.Size(89, 27);
             this.grade57.TabIndex = 150;
+            this.grade57.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade57.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_57
@@ -8471,6 +8533,7 @@
             this.grade58.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade58.Size = new System.Drawing.Size(89, 27);
             this.grade58.TabIndex = 150;
+            this.grade58.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade58.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_58
@@ -8576,6 +8639,7 @@
             this.grade59.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade59.Size = new System.Drawing.Size(89, 27);
             this.grade59.TabIndex = 150;
+            this.grade59.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade59.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_59
@@ -8681,6 +8745,7 @@
             this.grade510.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade510.Size = new System.Drawing.Size(89, 27);
             this.grade510.TabIndex = 150;
+            this.grade510.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade510.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_510
@@ -8786,6 +8851,7 @@
             this.grade511.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade511.Size = new System.Drawing.Size(89, 27);
             this.grade511.TabIndex = 150;
+            this.grade511.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade511.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_511
@@ -8891,6 +8957,7 @@
             this.grade512.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade512.Size = new System.Drawing.Size(89, 27);
             this.grade512.TabIndex = 150;
+            this.grade512.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade512.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_512
@@ -8996,6 +9063,7 @@
             this.grade513.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade513.Size = new System.Drawing.Size(89, 27);
             this.grade513.TabIndex = 150;
+            this.grade513.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade513.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_513
@@ -9101,6 +9169,7 @@
             this.grade514.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade514.Size = new System.Drawing.Size(89, 28);
             this.grade514.TabIndex = 150;
+            this.grade514.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade514.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_514
@@ -9206,6 +9275,7 @@
             this.grade61.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade61.Size = new System.Drawing.Size(94, 27);
             this.grade61.TabIndex = 150;
+            this.grade61.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade61.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_61
@@ -9311,6 +9381,7 @@
             this.grade62.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade62.Size = new System.Drawing.Size(94, 27);
             this.grade62.TabIndex = 150;
+            this.grade62.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade62.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_62
@@ -9416,6 +9487,7 @@
             this.grade63.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade63.Size = new System.Drawing.Size(94, 27);
             this.grade63.TabIndex = 150;
+            this.grade63.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade63.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_63
@@ -9521,6 +9593,7 @@
             this.grade64.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade64.Size = new System.Drawing.Size(94, 27);
             this.grade64.TabIndex = 150;
+            this.grade64.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade64.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_64
@@ -9626,6 +9699,7 @@
             this.grade65.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade65.Size = new System.Drawing.Size(94, 27);
             this.grade65.TabIndex = 150;
+            this.grade65.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade65.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_65
@@ -9731,6 +9805,7 @@
             this.grade66.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade66.Size = new System.Drawing.Size(94, 27);
             this.grade66.TabIndex = 150;
+            this.grade66.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade66.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_66
@@ -9836,6 +9911,7 @@
             this.grade67.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade67.Size = new System.Drawing.Size(94, 27);
             this.grade67.TabIndex = 150;
+            this.grade67.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade67.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_67
@@ -9941,6 +10017,7 @@
             this.grade68.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade68.Size = new System.Drawing.Size(94, 27);
             this.grade68.TabIndex = 150;
+            this.grade68.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade68.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_68
@@ -10046,6 +10123,7 @@
             this.grade69.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade69.Size = new System.Drawing.Size(94, 27);
             this.grade69.TabIndex = 150;
+            this.grade69.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade69.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_69
@@ -10151,6 +10229,7 @@
             this.grade610.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade610.Size = new System.Drawing.Size(94, 27);
             this.grade610.TabIndex = 150;
+            this.grade610.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade610.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_610
@@ -10256,6 +10335,7 @@
             this.grade611.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade611.Size = new System.Drawing.Size(94, 27);
             this.grade611.TabIndex = 150;
+            this.grade611.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade611.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_611
@@ -10361,6 +10441,7 @@
             this.grade612.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade612.Size = new System.Drawing.Size(94, 27);
             this.grade612.TabIndex = 150;
+            this.grade612.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade612.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_612
@@ -10466,6 +10547,7 @@
             this.grade613.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade613.Size = new System.Drawing.Size(94, 27);
             this.grade613.TabIndex = 150;
+            this.grade613.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade613.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_613
@@ -10571,6 +10653,7 @@
             this.grade614.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade614.Size = new System.Drawing.Size(94, 28);
             this.grade614.TabIndex = 150;
+            this.grade614.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade614.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_614
@@ -10676,6 +10759,7 @@
             this.grade11.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grade11.Size = new System.Drawing.Size(89, 27);
             this.grade11.TabIndex = 150;
+            this.grade11.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gradeXX_CellClick);
             this.grade11.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gradeXX_MouseMove);
             // 
             // HORARIO_GRADE_11
@@ -10707,7 +10791,7 @@
             // CODIGO_TURMA_11
             // 
             this.CODIGO_TURMA_11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CODIGO_TURMA_11.DataPropertyName = "NOME_TURMA";
+            this.CODIGO_TURMA_11.DataPropertyName = "CODIGO_TURMA";
             this.CODIGO_TURMA_11.HeaderText = "Turma";
             this.CODIGO_TURMA_11.MinimumWidth = 20;
             this.CODIGO_TURMA_11.Name = "CODIGO_TURMA_11";
