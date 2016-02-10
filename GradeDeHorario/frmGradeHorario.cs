@@ -15,14 +15,9 @@ namespace GradeDeHorario
         private Modelos.CURSO curso { set; get; }
 
         private RegraNegocio.GradeHorarioRegraNegocio gradeRN;
-        private DataGridView hoverGrade;
+        public DataGridView hoverGrade;
 
-        private List<Modelos.Celula> ListaInsere { get; set; }
-
-        private List<Modelos.Celula> ListaEdita { get; set; }
-
-        private List<Modelos.Celula> ListaExclui { get; set; }
-
+        private List<Modelos.Celula> ListaModificacao;
 
         public frmGradeHorario(Modelos.CURSO curso)
         {
@@ -218,9 +213,7 @@ namespace GradeDeHorario
                 cbbSelectFase.Enabled = cbbSelectSemestre.Enabled = btnCarregaGrade.Enabled = btnEditar.Enabled = false;
                 btnCancelar.Enabled = btnSalvar.Enabled = btnGerarRelatorio.Enabled = tblGrade.Enabled = gbDisciplina.Enabled = gbProfessor.Enabled = gbSala.Enabled = true;
 
-                ListaEdita = new List<Modelos.Celula>();
-                ListaExclui = new List<Modelos.Celula>();
-                ListaInsere = new List<Modelos.Celula>();
+                ListaModificacao = new List<Modelos.Celula>();
             }
             catch (Exception ex)
             {
@@ -302,7 +295,7 @@ namespace GradeDeHorario
                 celula.professores = professores;
                 celula.semestre = Convert.ToInt32(cbbSelectSemestre.ComboBox.SelectedValue);
 
-                gradeRN.InsereCelula(this, celula);
+                gradeRN.InsereCelula(ref tblGrade, celula, ref ListaModificacao);
             }
             catch (Exception ex)
             {

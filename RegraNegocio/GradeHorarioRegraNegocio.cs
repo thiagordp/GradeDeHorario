@@ -206,7 +206,7 @@ namespace RegraNegocio
         /// </summary>
         /// <param name="grade">Formulário da grade</param>
         /// <param name="celula">Célula a ser inserida</param>
-        public void InsereCelula(Form grade, Modelos.Celula celula)
+        public void InsereCelula(ref TableLayoutPanel grade, Modelos.Celula celula, ref List<Modelos.Celula> ListaModificacao)
         {
             // Verificação se há e qual é a última turma cadastrada da disciplina fase e semestre indicado.
             gradeAD = new AcessoDados.GradeHorarioAcessoDados(this.curso);
@@ -224,7 +224,6 @@ namespace RegraNegocio
 
                 int creditoAtual = query.Rows[0].Field<int>("CREDITO_GASTO");
                 int creditoPermitido = query.Rows[0].Field<int>("CREDITO_DISCIPLINA");
-
 
                 if (creditoAtual < creditoPermitido)
                 {

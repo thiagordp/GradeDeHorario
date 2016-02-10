@@ -10980,7 +10980,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.DataGridView dtgPesquisaEspaco;
         private System.Windows.Forms.TextBox txtPesquisaEspaco;
-        private System.Windows.Forms.TableLayoutPanel tblGrade;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
@@ -11775,5 +11774,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR1_11;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR2_11;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_PROFESSOR3_11;
+        public System.Windows.Forms.TableLayoutPanel tblGrade;
     }
 }
