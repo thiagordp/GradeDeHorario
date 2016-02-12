@@ -30,11 +30,13 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDisciplina));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnNovo = new System.Windows.Forms.ToolStripButton();
@@ -68,6 +70,10 @@
             this.cbbDepartamento = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtPesquisaDisciplina = new System.Windows.Forms.TextBox();
+            this.dtgSelecionaTurma = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnSelecionaTurma = new System.Windows.Forms.Button();
+            this.CODIGO_TURMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgDisciplina)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -77,6 +83,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgDisciplinaRequisito)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgSelecionaTurma)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -90,7 +97,7 @@
             this.btnExcluir});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(784, 69);
+            this.toolStrip1.Size = new System.Drawing.Size(884, 69);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "k";
             // 
@@ -177,32 +184,32 @@
             this.PRE_REQUISITO_DISCIPLINA,
             this.CODIGO_DEPARTAMENTO});
             this.tableLayoutPanel1.SetColumnSpan(this.dtgDisciplina, 2);
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 8F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgDisciplina.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 8F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgDisciplina.DefaultCellStyle = dataGridViewCellStyle7;
             this.dtgDisciplina.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgDisciplina.Location = new System.Drawing.Point(13, 183);
             this.dtgDisciplina.MultiSelect = false;
             this.dtgDisciplina.Name = "dtgDisciplina";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 8F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgDisciplina.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 8F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgDisciplina.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dtgDisciplina.RowHeadersVisible = false;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dtgDisciplina.RowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dtgDisciplina.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dtgDisciplina.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dtgDisciplina.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgDisciplina.Size = new System.Drawing.Size(758, 216);
+            this.dtgDisciplina.Size = new System.Drawing.Size(858, 174);
             this.dtgDisciplina.TabIndex = 1;
             this.dtgDisciplina.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgDisciplina_CellDoubleClick);
             // 
@@ -282,7 +289,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 110F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(784, 412);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(884, 369);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // gbDisciplina
@@ -294,20 +301,22 @@
             this.gbDisciplina.Location = new System.Drawing.Point(13, 13);
             this.gbDisciplina.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.gbDisciplina.Name = "gbDisciplina";
-            this.gbDisciplina.Size = new System.Drawing.Size(758, 102);
+            this.gbDisciplina.Size = new System.Drawing.Size(858, 102);
             this.gbDisciplina.TabIndex = 2;
             this.gbDisciplina.TabStop = false;
             this.gbDisciplina.Text = "Cadastro de disciplina";
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 6;
+            this.tableLayoutPanel2.ColumnCount = 8;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.11036F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.88819F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.00145F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 1);
@@ -319,6 +328,9 @@
             this.tableLayoutPanel2.Controls.Add(this.label5, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.label4, 2, 2);
             this.tableLayoutPanel2.Controls.Add(this.cbbDepartamento, 3, 2);
+            this.tableLayoutPanel2.Controls.Add(this.dtgSelecionaTurma, 6, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label6, 6, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnSelecionaTurma, 7, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 18);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(5);
@@ -327,7 +339,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(752, 81);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(852, 81);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // label2
@@ -369,8 +381,9 @@
             this.txtCodigo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCodigo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtCodigo.Location = new System.Drawing.Point(73, 3);
+            this.txtCodigo.MaxLength = 7;
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(57, 22);
+            this.txtCodigo.Size = new System.Drawing.Size(64, 22);
             this.txtCodigo.TabIndex = 3;
             // 
             // txtNomeDisciplina
@@ -380,7 +393,7 @@
             this.txtNomeDisciplina.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtNomeDisciplina.Location = new System.Drawing.Point(73, 29);
             this.txtNomeDisciplina.Name = "txtNomeDisciplina";
-            this.txtNomeDisciplina.Size = new System.Drawing.Size(371, 22);
+            this.txtNomeDisciplina.Size = new System.Drawing.Size(386, 22);
             this.txtNomeDisciplina.TabIndex = 4;
             // 
             // nudCreditoDisplicina
@@ -398,7 +411,7 @@
             0,
             0});
             this.nudCreditoDisplicina.Name = "nudCreditoDisplicina";
-            this.nudCreditoDisplicina.Size = new System.Drawing.Size(57, 22);
+            this.nudCreditoDisplicina.Size = new System.Drawing.Size(64, 22);
             this.nudCreditoDisplicina.TabIndex = 6;
             this.nudCreditoDisplicina.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.nudCreditoDisplicina.Value = new decimal(new int[] {
@@ -433,14 +446,14 @@
             this.NOME_DISCIPLINA_REQUISITO});
             this.tableLayoutPanel2.SetColumnSpan(this.dtgDisciplinaRequisito, 2);
             this.dtgDisciplinaRequisito.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgDisciplinaRequisito.Location = new System.Drawing.Point(450, 29);
+            this.dtgDisciplinaRequisito.Location = new System.Drawing.Point(465, 29);
             this.dtgDisciplinaRequisito.Name = "dtgDisciplinaRequisito";
             this.dtgDisciplinaRequisito.ReadOnly = true;
             this.dtgDisciplinaRequisito.RowHeadersVisible = false;
             this.tableLayoutPanel2.SetRowSpan(this.dtgDisciplinaRequisito, 2);
             this.dtgDisciplinaRequisito.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dtgDisciplinaRequisito.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgDisciplinaRequisito.Size = new System.Drawing.Size(299, 49);
+            this.dtgDisciplinaRequisito.Size = new System.Drawing.Size(263, 49);
             this.dtgDisciplinaRequisito.TabIndex = 8;
             // 
             // CODIGO_DISCIPLINA_REQUISITO
@@ -466,7 +479,7 @@
             // 
             this.panel1.Controls.Add(this.btnSelecionaRequisito);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(702, 3);
+            this.panel1.Location = new System.Drawing.Point(681, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(47, 20);
             this.panel1.TabIndex = 5;
@@ -486,9 +499,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(450, 0);
+            this.label5.Location = new System.Drawing.Point(465, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(246, 26);
+            this.label5.Size = new System.Drawing.Size(210, 26);
             this.label5.TabIndex = 9;
             this.label5.Text = "Disciplinas Pré-requisito";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -497,9 +510,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(136, 52);
+            this.label4.Location = new System.Drawing.Point(143, 52);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 29);
+            this.label4.Size = new System.Drawing.Size(84, 29);
             this.label4.TabIndex = 10;
             this.label4.Text = "Departamento:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -509,9 +522,9 @@
             this.cbbDepartamento.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbbDepartamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbDepartamento.FormattingEnabled = true;
-            this.cbbDepartamento.Location = new System.Drawing.Point(230, 55);
+            this.cbbDepartamento.Location = new System.Drawing.Point(233, 55);
             this.cbbDepartamento.Name = "cbbDepartamento";
-            this.cbbDepartamento.Size = new System.Drawing.Size(214, 21);
+            this.cbbDepartamento.Size = new System.Drawing.Size(226, 21);
             this.cbbDepartamento.TabIndex = 11;
             // 
             // groupBox1
@@ -522,7 +535,7 @@
             this.groupBox1.Location = new System.Drawing.Point(13, 123);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(5);
-            this.groupBox1.Size = new System.Drawing.Size(758, 54);
+            this.groupBox1.Size = new System.Drawing.Size(858, 54);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pesquisar disciplinas por nome";
@@ -535,20 +548,83 @@
             this.txtPesquisaDisciplina.Location = new System.Drawing.Point(5, 20);
             this.txtPesquisaDisciplina.Margin = new System.Windows.Forms.Padding(5);
             this.txtPesquisaDisciplina.Name = "txtPesquisaDisciplina";
-            this.txtPesquisaDisciplina.Size = new System.Drawing.Size(748, 22);
+            this.txtPesquisaDisciplina.Size = new System.Drawing.Size(848, 22);
             this.txtPesquisaDisciplina.TabIndex = 0;
             this.txtPesquisaDisciplina.TextChanged += new System.EventHandler(this.txtPesquisaDisciplina_TextChanged);
+            // 
+            // dtgSelecionaTurma
+            // 
+            this.dtgSelecionaTurma.AllowUserToAddRows = false;
+            this.dtgSelecionaTurma.AllowUserToDeleteRows = false;
+            this.dtgSelecionaTurma.AllowUserToResizeColumns = false;
+            this.dtgSelecionaTurma.AllowUserToResizeRows = false;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dtgSelecionaTurma.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dtgSelecionaTurma.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtgSelecionaTurma.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dtgSelecionaTurma.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dtgSelecionaTurma.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgSelecionaTurma.ColumnHeadersVisible = false;
+            this.dtgSelecionaTurma.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CODIGO_TURMA});
+            this.tableLayoutPanel2.SetColumnSpan(this.dtgSelecionaTurma, 2);
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 8F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgSelecionaTurma.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dtgSelecionaTurma.Location = new System.Drawing.Point(734, 29);
+            this.dtgSelecionaTurma.Name = "dtgSelecionaTurma";
+            this.dtgSelecionaTurma.RowHeadersVisible = false;
+            this.tableLayoutPanel2.SetRowSpan(this.dtgSelecionaTurma, 2);
+            this.dtgSelecionaTurma.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dtgSelecionaTurma.Size = new System.Drawing.Size(115, 49);
+            this.dtgSelecionaTurma.TabIndex = 12;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(734, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 26);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Turmas:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnSelecionaTurma
+            // 
+            this.btnSelecionaTurma.Location = new System.Drawing.Point(801, 3);
+            this.btnSelecionaTurma.Name = "btnSelecionaTurma";
+            this.btnSelecionaTurma.Size = new System.Drawing.Size(48, 20);
+            this.btnSelecionaTurma.TabIndex = 14;
+            this.btnSelecionaTurma.Text = "...";
+            this.btnSelecionaTurma.UseVisualStyleBackColor = true;
+            // 
+            // CODIGO_TURMA
+            // 
+            this.CODIGO_TURMA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA.HeaderText = "Turma";
+            this.CODIGO_TURMA.Name = "CODIGO_TURMA";
             // 
             // frmDisciplina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 481);
+            this.ClientSize = new System.Drawing.Size(884, 438);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.toolStrip1);
             this.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(800, 520);
+            this.MinimumSize = new System.Drawing.Size(900, 477);
             this.Name = "frmDisciplina";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -566,6 +642,7 @@
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgSelecionaTurma)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -605,5 +682,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NOME_DISCIPLINA_REQUISITO;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtPesquisaDisciplina;
+        private System.Windows.Forms.DataGridView dtgSelecionaTurma;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnSelecionaTurma;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA;
     }
 }

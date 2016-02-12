@@ -99,6 +99,7 @@
     <Compile Include="TURMA.cs">
       <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>
+    <Compile Include="Utilidades.cs" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="Modelo.edmx">
