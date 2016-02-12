@@ -25,8 +25,6 @@ namespace Modelos
         /// </summary>
         public const int COMPARA_SALA = 3;
 
-
-
         public int hora { get; set; }
 
         public int dia { get; set; }
