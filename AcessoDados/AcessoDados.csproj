@@ -62,6 +62,7 @@
     <Compile Include="SelecionaCursoAcessoDados.cs" />
     <Compile Include="SelecionaDisciplinaAcessoDados.cs" />
     <Compile Include="SemestreAcessoDados.cs" />
+    <Compile Include="TurmaAcessoDados.cs" />
     <Compile Include="UtilidadeAcessoDados.cs" />
   </ItemGroup>
   <ItemGroup>

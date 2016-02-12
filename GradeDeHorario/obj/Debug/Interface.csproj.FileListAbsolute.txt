@@ -54,3 +54,4 @@ D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Debug\Grade de Horários - UFSC
 D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\Grade de Horários - UFSC Araranguá.exe
 D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\Grade de Horários - UFSC Araranguá.pdb
 D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.frmGradeHorario.resources
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Debug\GradeDeHorario.frmSelecionaTurma.resources

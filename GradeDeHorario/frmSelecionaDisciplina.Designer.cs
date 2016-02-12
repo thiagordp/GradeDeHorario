@@ -31,13 +31,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSelecionaDisciplina));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.btnSalvar = new System.Windows.Forms.ToolStripButton();
-            this.btnLimpar = new System.Windows.Forms.ToolStripButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dtgSelecionaDisciplina = new System.Windows.Forms.DataGridView();
             this.SELECIONA_DISCIPLINA = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.CODIGO_DISCIPLINA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NOME_DISCIPLINA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSalvar = new System.Windows.Forms.ToolStripButton();
+            this.btnLimpar = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgSelecionaDisciplina)).BeginInit();
@@ -56,27 +56,6 @@
             this.toolStrip1.Size = new System.Drawing.Size(434, 72);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // btnSalvar
-            // 
-            this.btnSalvar.Image = global::GradeDeHorario.Properties.Resources.ic_button;
-            this.btnSalvar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(44, 59);
-            this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
-            // 
-            // btnLimpar
-            // 
-            this.btnLimpar.Image = global::GradeDeHorario.Properties.Resources.ic_clean;
-            this.btnLimpar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnLimpar.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(48, 62);
-            this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -143,6 +122,27 @@
             this.NOME_DISCIPLINA.Name = "NOME_DISCIPLINA";
             this.NOME_DISCIPLINA.ReadOnly = true;
             this.NOME_DISCIPLINA.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.Image = global::GradeDeHorario.Properties.Resources.ic_button;
+            this.btnSalvar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(44, 59);
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Image = global::GradeDeHorario.Properties.Resources.ic_clean;
+            this.btnLimpar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnLimpar.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(48, 62);
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // frmSelecionaDisciplina
             // 

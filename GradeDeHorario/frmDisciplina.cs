@@ -201,7 +201,7 @@ namespace GradeDeHorario
             {
                 MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
+
         }
 
         private void frmDisciplina_Load(object sender, EventArgs e)
@@ -257,10 +257,23 @@ namespace GradeDeHorario
             }
         }
 
+        private void PreencheTabelaTurma()
+        {
+            disciplinaRN = new RegraNegocio.DisciplinaRegraNegocio(this);
+
+            //dtgSelecionaTurma.DataSource;
+        }
+
+
         private void txtPesquisaDisciplina_TextChanged(object sender, EventArgs e)
         {
             disciplinaRN = new RegraNegocio.DisciplinaRegraNegocio(this);
             dtgDisciplina.DataSource = disciplinaRN.SelecionaDisciplinaPorNome(txtPesquisaDisciplina.Text);
+        }
+
+        private void btnSelecionaTurma_Click(object sender, EventArgs e)
+        {
+            (new frmSelecionaTurma(ref dtgSelecionaTurma)).ShowDialog();
         }
     }
 }

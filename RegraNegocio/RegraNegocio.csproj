@@ -64,6 +64,7 @@
     <Compile Include="SelecionaCursoRegraNegocio.cs" />
     <Compile Include="SelecionaDisciplinaRegraNegocio.cs" />
     <Compile Include="SemestreRegraNegocio.cs" />
+    <Compile Include="TurmaRegraNegocio.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AcessoDados\AcessoDados.csproj">

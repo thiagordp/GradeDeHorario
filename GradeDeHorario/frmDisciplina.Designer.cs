@@ -68,12 +68,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cbbDepartamento = new System.Windows.Forms.ComboBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtPesquisaDisciplina = new System.Windows.Forms.TextBox();
             this.dtgSelecionaTurma = new System.Windows.Forms.DataGridView();
+            this.CODIGO_TURMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label6 = new System.Windows.Forms.Label();
             this.btnSelecionaTurma = new System.Windows.Forms.Button();
-            this.CODIGO_TURMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtPesquisaDisciplina = new System.Windows.Forms.TextBox();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgDisciplina)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -82,8 +82,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudCreditoDisplicina)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgDisciplinaRequisito)).BeginInit();
             this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgSelecionaTurma)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -316,7 +316,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.88819F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.00145F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 1);
@@ -339,6 +339,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(852, 81);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
@@ -393,7 +394,7 @@
             this.txtNomeDisciplina.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtNomeDisciplina.Location = new System.Drawing.Point(73, 29);
             this.txtNomeDisciplina.Name = "txtNomeDisciplina";
-            this.txtNomeDisciplina.Size = new System.Drawing.Size(386, 22);
+            this.txtNomeDisciplina.Size = new System.Drawing.Size(384, 22);
             this.txtNomeDisciplina.TabIndex = 4;
             // 
             // nudCreditoDisplicina
@@ -446,14 +447,14 @@
             this.NOME_DISCIPLINA_REQUISITO});
             this.tableLayoutPanel2.SetColumnSpan(this.dtgDisciplinaRequisito, 2);
             this.dtgDisciplinaRequisito.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgDisciplinaRequisito.Location = new System.Drawing.Point(465, 29);
+            this.dtgDisciplinaRequisito.Location = new System.Drawing.Point(463, 29);
             this.dtgDisciplinaRequisito.Name = "dtgDisciplinaRequisito";
             this.dtgDisciplinaRequisito.ReadOnly = true;
             this.dtgDisciplinaRequisito.RowHeadersVisible = false;
             this.tableLayoutPanel2.SetRowSpan(this.dtgDisciplinaRequisito, 2);
             this.dtgDisciplinaRequisito.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dtgDisciplinaRequisito.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgDisciplinaRequisito.Size = new System.Drawing.Size(263, 49);
+            this.dtgDisciplinaRequisito.Size = new System.Drawing.Size(261, 49);
             this.dtgDisciplinaRequisito.TabIndex = 8;
             // 
             // CODIGO_DISCIPLINA_REQUISITO
@@ -479,7 +480,7 @@
             // 
             this.panel1.Controls.Add(this.btnSelecionaRequisito);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(681, 3);
+            this.panel1.Location = new System.Drawing.Point(677, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(47, 20);
             this.panel1.TabIndex = 5;
@@ -499,9 +500,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(465, 0);
+            this.label5.Location = new System.Drawing.Point(463, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(210, 26);
+            this.label5.Size = new System.Drawing.Size(208, 26);
             this.label5.TabIndex = 9;
             this.label5.Text = "Disciplinas Pré-requisito";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -524,33 +525,8 @@
             this.cbbDepartamento.FormattingEnabled = true;
             this.cbbDepartamento.Location = new System.Drawing.Point(233, 55);
             this.cbbDepartamento.Name = "cbbDepartamento";
-            this.cbbDepartamento.Size = new System.Drawing.Size(226, 21);
+            this.cbbDepartamento.Size = new System.Drawing.Size(224, 21);
             this.cbbDepartamento.TabIndex = 11;
-            // 
-            // groupBox1
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.groupBox1, 2);
-            this.groupBox1.Controls.Add(this.txtPesquisaDisciplina);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(13, 123);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(5);
-            this.groupBox1.Size = new System.Drawing.Size(858, 54);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Pesquisar disciplinas por nome";
-            // 
-            // txtPesquisaDisciplina
-            // 
-            this.txtPesquisaDisciplina.AccessibleDescription = "Pesquisa de disciplinas";
-            this.txtPesquisaDisciplina.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtPesquisaDisciplina.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtPesquisaDisciplina.Location = new System.Drawing.Point(5, 20);
-            this.txtPesquisaDisciplina.Margin = new System.Windows.Forms.Padding(5);
-            this.txtPesquisaDisciplina.Name = "txtPesquisaDisciplina";
-            this.txtPesquisaDisciplina.Size = new System.Drawing.Size(848, 22);
-            this.txtPesquisaDisciplina.TabIndex = 0;
-            this.txtPesquisaDisciplina.TextChanged += new System.EventHandler(this.txtPesquisaDisciplina_TextChanged);
             // 
             // dtgSelecionaTurma
             // 
@@ -579,13 +555,20 @@
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgSelecionaTurma.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dtgSelecionaTurma.Location = new System.Drawing.Point(734, 29);
+            this.dtgSelecionaTurma.Location = new System.Drawing.Point(730, 29);
             this.dtgSelecionaTurma.Name = "dtgSelecionaTurma";
             this.dtgSelecionaTurma.RowHeadersVisible = false;
             this.tableLayoutPanel2.SetRowSpan(this.dtgSelecionaTurma, 2);
             this.dtgSelecionaTurma.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dtgSelecionaTurma.Size = new System.Drawing.Size(115, 49);
+            this.dtgSelecionaTurma.Size = new System.Drawing.Size(119, 49);
             this.dtgSelecionaTurma.TabIndex = 12;
+            // 
+            // CODIGO_TURMA
+            // 
+            this.CODIGO_TURMA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA.HeaderText = "Turma";
+            this.CODIGO_TURMA.Name = "CODIGO_TURMA";
             // 
             // label6
             // 
@@ -593,27 +576,47 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(734, 0);
+            this.label6.Location = new System.Drawing.Point(730, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 26);
+            this.label6.Size = new System.Drawing.Size(60, 26);
             this.label6.TabIndex = 13;
             this.label6.Text = "Turmas:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnSelecionaTurma
             // 
-            this.btnSelecionaTurma.Location = new System.Drawing.Point(801, 3);
+            this.btnSelecionaTurma.Location = new System.Drawing.Point(796, 3);
             this.btnSelecionaTurma.Name = "btnSelecionaTurma";
             this.btnSelecionaTurma.Size = new System.Drawing.Size(48, 20);
             this.btnSelecionaTurma.TabIndex = 14;
             this.btnSelecionaTurma.Text = "...";
             this.btnSelecionaTurma.UseVisualStyleBackColor = true;
+            this.btnSelecionaTurma.Click += new System.EventHandler(this.btnSelecionaTurma_Click);
             // 
-            // CODIGO_TURMA
+            // groupBox1
             // 
-            this.CODIGO_TURMA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CODIGO_TURMA.HeaderText = "Turma";
-            this.CODIGO_TURMA.Name = "CODIGO_TURMA";
+            this.tableLayoutPanel1.SetColumnSpan(this.groupBox1, 2);
+            this.groupBox1.Controls.Add(this.txtPesquisaDisciplina);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Location = new System.Drawing.Point(13, 123);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(5);
+            this.groupBox1.Size = new System.Drawing.Size(858, 54);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Pesquisar disciplinas por nome";
+            // 
+            // txtPesquisaDisciplina
+            // 
+            this.txtPesquisaDisciplina.AccessibleDescription = "Pesquisa de disciplinas";
+            this.txtPesquisaDisciplina.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtPesquisaDisciplina.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtPesquisaDisciplina.Location = new System.Drawing.Point(5, 20);
+            this.txtPesquisaDisciplina.Margin = new System.Windows.Forms.Padding(5);
+            this.txtPesquisaDisciplina.Name = "txtPesquisaDisciplina";
+            this.txtPesquisaDisciplina.Size = new System.Drawing.Size(848, 22);
+            this.txtPesquisaDisciplina.TabIndex = 0;
+            this.txtPesquisaDisciplina.TextChanged += new System.EventHandler(this.txtPesquisaDisciplina_TextChanged);
             // 
             // frmDisciplina
             // 
@@ -640,9 +643,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudCreditoDisplicina)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgDisciplinaRequisito)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgSelecionaTurma)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgSelecionaTurma)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

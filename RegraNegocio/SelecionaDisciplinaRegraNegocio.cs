@@ -22,11 +22,6 @@ namespace RegraNegocio
 
             return selecionaDisciplinaAD.SelecionaTodaDisciplina();
         }
-
-        public void VerificaSelecao()
-        {
-
-        }
     }
 }
 
