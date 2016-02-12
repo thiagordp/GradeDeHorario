@@ -9,6 +9,24 @@ namespace Modelos
 {
     public class Celula
     {
+
+        /// <summary>
+        /// Constante para critério de comparação na lista de alterações por Disciplina e Turma.
+        /// </summary>
+        public const int COMPARA_DISCIPLINA_TURMA = 1;
+
+        /// <summary>
+        /// Constante para critério de comparação na lista de alterações por Professor.
+        /// </summary>
+        public const int COMPARA_PROFESSOR = 2;
+
+        /// <summary>
+        /// Constante para critério de comparação na lista de alterações por Sala.
+        /// </summary>
+        public const int COMPARA_SALA = 3;
+
+
+
         public int hora { get; set; }
 
         public int dia { get; set; }
@@ -32,13 +50,27 @@ namespace Modelos
             professores = new List<int>();
         }
 
-        public bool Equal(Celula obj)
+        public bool Equal(Celula obj, int operacao)
         {
-            if ((this.disciplina != obj.disciplina)|| (this.turma !=obj.turma))
+            switch (operacao)
             {
-                return false;
+                case COMPARA_DISCIPLINA_TURMA:
+                    if ((this.disciplina != obj.disciplina) || (this.turma != obj.turma)) { return false; }
+
+                    break;
+                case COMPARA_PROFESSOR:
+
+                    for (int i = 0; i < obj.professores.Count; i++)
+                    {
+                        if (this.professores.ElementAt(i) != obj.professores.ElementAt(i)) { return false; }
+                    }
+
+                    break;
+                case COMPARA_SALA:
+                    if (this.espaco != obj.espaco) { return false; }
+
+                    break;
             }
-                
             return true;
         }
     }
