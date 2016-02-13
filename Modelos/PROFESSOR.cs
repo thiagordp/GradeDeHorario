@@ -22,8 +22,8 @@ namespace Modelos
             this.DISCIPLINA_TURMA2 = new HashSet<DISCIPLINA_TURMA>();
         }
     
-        public string NOME_PROFESSOR { get; set; }
         public int CODIGO_PROFESSOR { get; set; }
+        public string NOME_PROFESSOR { get; set; }
         public Nullable<int> CODIGO_DEPARTAMENTO { get; set; }
     
         public virtual DEPARTAMENTO DEPARTAMENTO { get; set; }

@@ -20,13 +20,14 @@ namespace Modelos
             this.DISCIPLINA_TURMA = new HashSet<DISCIPLINA_TURMA>();
         }
     
-        public int SEQ_DISCIPLINA_CURSO { get; set; }
-        public Nullable<int> FASE_DISCIPLINA_CURSO { get; set; }
-        public Nullable<int> CODIGO_CURSO { get; set; }
         public string CODIGO_DISCIPLINA { get; set; }
+        public int CODIGO_CURSO { get; set; }
+        public string CODIGO_TURMA { get; set; }
+        public Nullable<int> FASE_DISCIPLINA_CURSO { get; set; }
     
         public virtual CURSO CURSO { get; set; }
         public virtual DISCIPLINA DISCIPLINA { get; set; }
+        public virtual TURMA TURMA { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DISCIPLINA_TURMA> DISCIPLINA_TURMA { get; set; }
     }

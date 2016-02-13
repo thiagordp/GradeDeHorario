@@ -17,13 +17,13 @@ namespace Modelos
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public SEMESTRE()
         {
-            this.TURMA = new HashSet<TURMA>();
+            this.DISCIPLINA_TURMA = new HashSet<DISCIPLINA_TURMA>();
         }
     
-        public int SEQ_SEMESTRE { get; set; }
+        public int CODIGO_SEMESTRE { get; set; }
         public string NOME_SEMESTRE { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TURMA> TURMA { get; set; }
+        public virtual ICollection<DISCIPLINA_TURMA> DISCIPLINA_TURMA { get; set; }
     }
 }

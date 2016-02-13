@@ -21,13 +21,13 @@ namespace Modelos
         }
     
         public string CODIGO_ESPACO { get; set; }
-        public Nullable<bool> QUADRO_VIDRO_ESPACO { get; set; }
+        public string TIPO_ESPACO { get; set; }
+        public Nullable<int> NUMERO_PC_ESPACO { get; set; }
         public Nullable<bool> PROJETOR_ESPACO { get; set; }
         public Nullable<bool> INTERNET_ESPACO { get; set; }
         public Nullable<int> CAPACIDADE_ESPACO { get; set; }
+        public Nullable<bool> QUADRO_VIDRO_ESPACO { get; set; }
         public Nullable<bool> QUADRO_BRANCO_ESPACO { get; set; }
-        public string TIPO_ESPACO { get; set; }
-        public Nullable<int> NUMERO_PC_ESPACO { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DISCIPLINA_TURMA> DISCIPLINA_TURMA { get; set; }

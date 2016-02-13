@@ -264,7 +264,6 @@ namespace GradeDeHorario
             //dtgSelecionaTurma.DataSource;
         }
 
-
         private void txtPesquisaDisciplina_TextChanged(object sender, EventArgs e)
         {
             disciplinaRN = new RegraNegocio.DisciplinaRegraNegocio(this);
