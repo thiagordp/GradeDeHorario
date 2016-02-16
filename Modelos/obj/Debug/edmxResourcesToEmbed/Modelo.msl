@@ -41,7 +41,7 @@
     <EntitySetMapping Name="DISCIPLINA_TURMA">
       <EntityTypeMapping TypeName="GradeHorarioModelo.DISCIPLINA_TURMA">
         <MappingFragment StoreEntitySet="DISCIPLINA_TURMA">
-          <ScalarProperty Name="CODIGO_SEMESTRE" ColumnName="CODIGO_SEMESTRE" />
+          <ScalarProperty Name="SEQ_SEMESTRE" ColumnName="SEQ_SEMESTRE" />
           <ScalarProperty Name="CODIGO_CURSO" ColumnName="CODIGO_CURSO" />
           <ScalarProperty Name="CODIGO_DISCIPLINA" ColumnName="CODIGO_DISCIPLINA" />
           <ScalarProperty Name="CODIGO_TURMA" ColumnName="CODIGO_TURMA" />
@@ -85,7 +85,7 @@
     <EntitySetMapping Name="SEMESTRE">
       <EntityTypeMapping TypeName="GradeHorarioModelo.SEMESTRE">
         <MappingFragment StoreEntitySet="SEMESTRE">
-          <ScalarProperty Name="CODIGO_SEMESTRE" ColumnName="CODIGO_SEMESTRE" />
+          <ScalarProperty Name="SEQ_SEMESTRE" ColumnName="SEQ_SEMESTRE" />
           <ScalarProperty Name="NOME_SEMESTRE" ColumnName="NOME_SEMESTRE" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -102,7 +102,7 @@
         <ScalarProperty Name="CODIGO_ESPACO" ColumnName="CODIGO_ESPACO" />
       </EndProperty>
       <EndProperty Name="DISCIPLINA_TURMA">
-        <ScalarProperty Name="CODIGO_SEMESTRE" ColumnName="CODIGO_SEMESTRE" />
+        <ScalarProperty Name="SEQ_SEMESTRE" ColumnName="SEQ_SEMESTRE" />
         <ScalarProperty Name="CODIGO_CURSO" ColumnName="CODIGO_CURSO" />
         <ScalarProperty Name="CODIGO_DISCIPLINA" ColumnName="CODIGO_DISCIPLINA" />
         <ScalarProperty Name="CODIGO_TURMA" ColumnName="CODIGO_TURMA" />
@@ -114,7 +114,7 @@
         <ScalarProperty Name="HORARIO_GRADE" ColumnName="HORARIO_GRADE" />
       </EndProperty>
       <EndProperty Name="DISCIPLINA_TURMA">
-        <ScalarProperty Name="CODIGO_SEMESTRE" ColumnName="CODIGO_SEMESTRE" />
+        <ScalarProperty Name="SEQ_SEMESTRE" ColumnName="SEQ_SEMESTRE" />
         <ScalarProperty Name="CODIGO_CURSO" ColumnName="CODIGO_CURSO" />
         <ScalarProperty Name="CODIGO_DISCIPLINA" ColumnName="CODIGO_DISCIPLINA" />
         <ScalarProperty Name="CODIGO_TURMA" ColumnName="CODIGO_TURMA" />

@@ -95,7 +95,7 @@ namespace AcessoDados
                     // Deletando as disciplinas que não fase mais parte da fase.
                     foreach (Modelos.DISCIPLINA_CURSO item in listaExclui)
                     {
-                        temp = contexto.DISCIPLINA_CURSO.Find(item.SEQ_DISCIPLINA_CURSO);
+                        temp = contexto.DISCIPLINA_CURSO.Find(item.CODIGO_DISCIPLINA, item.CODIGO_CURSO, item.CODIGO_TURMA);
 
                         if (temp.DISCIPLINA_TURMA.Count > 0)
                         {
@@ -108,7 +108,7 @@ namespace AcessoDados
                     // Editando as disciplinas alteradas. // TALVEZ NÃO PRECISA
                     foreach (Modelos.DISCIPLINA_CURSO item in listaEdita)
                     {
-                        temp = contexto.DISCIPLINA_CURSO.Find(item.SEQ_DISCIPLINA_CURSO);
+                        temp = contexto.DISCIPLINA_CURSO.Find(item.CODIGO_DISCIPLINA, item.CODIGO_CURSO, item.CODIGO_TURMA);
                         temp.FASE_DISCIPLINA_CURSO = item.FASE_DISCIPLINA_CURSO;
 
                         contexto.Entry(temp).State = System.Data.Entity.EntityState.Modified;

@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="10a62b3bfe32408dbee7f1b52030a5d5" Name="Diagram1">
+      <Diagram DiagramId="109cb99ffec64ba98a26fb98e516d94f" Name="Diagram1">
         <EntityTypeShape EntityType="GradeHorarioModelo.CURSO" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
         <EntityTypeShape EntityType="GradeHorarioModelo.DEPARTAMENTO" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
         <EntityTypeShape EntityType="GradeHorarioModelo.DISCIPLINA" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
@@ -21,10 +21,10 @@
         <AssociationConnector Association="GradeHorarioModelo.FK__DISCIPLIN__CODIG__32E0915F" ManuallyRouted="false" />
         <AssociationConnector Association="GradeHorarioModelo.FK__DISCIPLIN__CODIG__33D4B598" ManuallyRouted="false" />
         <AssociationConnector Association="GradeHorarioModelo.FK__DISCIPLINA_TURMA__267ABA7A" ManuallyRouted="false" />
-        <AssociationConnector Association="GradeHorarioModelo.FK__DISCIPLIN__CODIG__25869641" ManuallyRouted="false" />
         <AssociationConnector Association="GradeHorarioModelo.FK__DISCIPLIN__CODIG__276EDEB3" ManuallyRouted="false" />
         <AssociationConnector Association="GradeHorarioModelo.FK__DISCIPLIN__CODIG__286302EC" ManuallyRouted="false" />
         <AssociationConnector Association="GradeHorarioModelo.FK__DISCIPLIN__CODIG__29572725" ManuallyRouted="false" />
+        <AssociationConnector Association="GradeHorarioModelo.FK__DISCIPLIN__SEQ_S__25869641" ManuallyRouted="false" />
         <AssociationConnector Association="GradeHorarioModelo.ESPACO_TURMA" ManuallyRouted="false" />
         <AssociationConnector Association="GradeHorarioModelo.GRADE_TURMA" ManuallyRouted="false" />
         <AssociationConnector Association="GradeHorarioModelo.PRE_REQUISITO" ManuallyRouted="false" />

@@ -22,8 +22,13 @@ namespace AcessoDados
         SqlCommand comandoSql;
         DataTable dadosTabela;
 
-        // Insere uma nova disciplina no banco de dados
-        public void InsereDisciplina(Modelos.DISCIPLINA disciplina, DataGridView requisitos)
+        /// <summary>
+        /// Insere uma nova disciplina no banco de dados
+        /// </summary>
+        /// <param name="disciplina">Disciplina a ser inserida/editada.</param>
+        /// <param name="requisitos">Lista de requisitos.</param>
+        /// <param name="turmas">Lista de turmas.</param>
+        public void InsereDisciplina(Modelos.DISCIPLINA disciplina, DataGridView requisitos, DataGridView turmas)
         {
             Modelos.DISCIPLINA tempDisciplina;
 
@@ -58,6 +63,16 @@ namespace AcessoDados
 
                         disciplina.DISCIPLINA1.Add(tempDisciplina);
                     }
+
+                    string codigoDisc = disciplina.CODIGO_DISCIPLINA;
+                    int codigoCurso = 0;
+                    int codigoFase = 0;
+                    string turma = "";
+                    char aux = '\0';
+
+                    Modelos.Utilidades.ExtractFromTurma(turma, ref codigoFase, ref codigoCurso, ref aux);
+
+
 
                     contexto.DISCIPLINA.Add(disciplina);
                     contexto.SaveChanges();
@@ -306,7 +321,6 @@ namespace AcessoDados
                 throw new Exception(ex.Message);
             }
         }
-
 
         public DataTable SelecionaDisciplinaPorNome(string nome)
         {

@@ -28,7 +28,7 @@ namespace RegraNegocio
         }
 
         // Insere uma disciplina no banco.
-        public void InsereDisciplina(Modelos.DISCIPLINA disciplina, DataGridView disciplinaRequisito)
+        public void InsereDisciplina(Modelos.DISCIPLINA disciplina, DataGridView disciplinaRequisito, DataGridView turmas)
         {
             VerificaDisciplina(disciplina);
             VerificaRequisitos(disciplina, disciplinaRequisito);
@@ -36,7 +36,7 @@ namespace RegraNegocio
             try
             {
                 disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
-                disciplinaAD.InsereDisciplina(disciplina, disciplinaRequisito);
+                disciplinaAD.InsereDisciplina(disciplina, disciplinaRequisito, turmas);
             }
             catch (Exception ex)
             {
@@ -221,6 +221,20 @@ namespace RegraNegocio
             catch (Exception ex)
             {
                 throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
+        }
+
+        public DataTable SelecionaTodaTurma()
+        {
+            try
+            {
+                AcessoDados.TurmaAcessoDados turmas = new AcessoDados.TurmaAcessoDados();
+
+                return turmas.SelecionaTodaTurma();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
     }

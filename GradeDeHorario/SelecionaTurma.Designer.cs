@@ -112,19 +112,19 @@
             // 
             // SELECIONA_TURMA
             // 
+            this.SELECIONA_TURMA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.SELECIONA_TURMA.HeaderText = "";
             this.SELECIONA_TURMA.Name = "SELECIONA_TURMA";
-            this.SELECIONA_TURMA.Width = 25;
+            this.SELECIONA_TURMA.Width = 5;
             // 
             // CODIGO_TURMA
             // 
-            this.CODIGO_TURMA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.CODIGO_TURMA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.CODIGO_TURMA.DataPropertyName = "CODIGO_TURMA";
             this.CODIGO_TURMA.HeaderText = "Código";
             this.CODIGO_TURMA.Name = "CODIGO_TURMA";
             this.CODIGO_TURMA.ReadOnly = true;
             this.CODIGO_TURMA.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.CODIGO_TURMA.Width = 5;
             // 
             // frmSelecionaTurma
             // 
@@ -135,9 +135,11 @@
             this.Controls.Add(this.toolStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(250, 259);
             this.Name = "frmSelecionaTurma";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seleção de turma(s)";
+            this.Load += new System.EventHandler(this.frmSelecionaTurma_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgSelecionaTurma)).EndInit();

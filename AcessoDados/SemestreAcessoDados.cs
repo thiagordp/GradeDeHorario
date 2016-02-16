@@ -71,11 +71,11 @@ namespace AcessoDados
             }
         }
 
-        public List<Modelos.TURMA> VerificaTemTurma(Modelos.SEMESTRE semestre)
+        public List<Modelos.DISCIPLINA_TURMA> VerificaTemTurma(Modelos.SEMESTRE semestre)
         {
             using (Modelos.Entidade contexto = new Modelos.Entidade())
             {
-                return contexto.SEMESTRE.Find(semestre.SEQ_SEMESTRE).TURMA.ToList();
+                return contexto.SEMESTRE.Find(semestre.SEQ_SEMESTRE).DISCIPLINA_TURMA.ToList();
             }
         }
 
@@ -87,7 +87,6 @@ namespace AcessoDados
 
                 return semestre;
             }
-
         }
     }
 }

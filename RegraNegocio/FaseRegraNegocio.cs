@@ -80,7 +80,7 @@ namespace RegraNegocio
                     List<Modelos.DISCIPLINA_CURSO> lista = PreencheFase(tabelaNova, fase, curso);
 
 
-                    for (int i = 0; i < listaFaseNova.Count; i++)
+                   /* for (int i = 0; i < listaFaseNova.Count; i++)
                     {
                         Modelos.DISCIPLINA_CURSO discLista = listaFaseAntiga.Find(p => (p.CODIGO_DISCIPLINA == lista.ElementAt(i).CODIGO_DISCIPLINA) && (p.CODIGO_CURSO == curso));
 
@@ -113,7 +113,7 @@ namespace RegraNegocio
                         Modelos.DISCIPLINA_CURSO temp = faseAD.SelecionaFaseCurso(fase, curso).Find(p => (p.CODIGO_DISCIPLINA == listaFaseAntiga.ElementAt(i).CODIGO_DISCIPLINA) && (p.CODIGO_CURSO == curso));
                         listaFaseAntiga.ElementAt(i).SEQ_DISCIPLINA_CURSO = temp.SEQ_DISCIPLINA_CURSO;
                         listaExclui.Add(listaFaseAntiga.ElementAt(i));
-                    }
+                    }*/
 
                     faseAD.SalvaFase(listaEdita, listaExclui, listaInsere);
                 }

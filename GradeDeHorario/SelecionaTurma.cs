@@ -156,11 +156,67 @@ namespace GradeDeHorario
         {
             try
             {
+                // Verificação da seleção de turmas.
                 VerificaSelecao();
+
+                // Altera a tabela do frmDisciplina com as disciplinas selecionadas.
+                PreencheTabelaDisciplina();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void frmSelecionaTurma_Load(object sender, EventArgs e)
+        {
+            ListaTurma();
+            PreencheTabelaTurma();
+        }
+
+        /// <summary>
+        /// Preenche a tabela de turmas do formulário de disciplinas.
+        /// </summary>
+        private void PreencheTabelaDisciplina()
+        {
+            string codigo;
+            DataTable tabela = new DataTable();
+
+            tabela.Columns.Add("CODIGO_TURMA");
+
+            dtgSelecionaTurma.EndEdit();
+
+            for (int i = 0; i < dtgSelecionaTurma.Rows.Count; i++)
+            {
+                if (Convert.ToBoolean(dtgSelecionaTurma.Rows[i].Cells["SELECIONA_TURMA"].Value) == true)
+                {
+                    codigo = dtgSelecionaTurma.Rows[i].Cells["CODIGO_TURMA"].Value.ToString();
+
+                    tabela.Rows.Add(codigo);
+                }
+            }
+
+            tabelaTurma.DataSource = tabela;
+            tabelaTurma.ClearSelection();
+
+            this.Close();
+        }
+
+        /// <summary>
+        /// Preenche a tabela de seleção de turmas com as previamente selecionadas.
+        /// </summary>
+        private void PreencheTabelaTurma()
+        {
+            for (int i = 0; i < tabelaTurma.Rows.Count; i++)
+            {
+                for (int j = 0; j < dtgSelecionaTurma.Rows.Count; j++)
+                {
+                    if (dtgSelecionaTurma.Rows[j].Cells["CODIGO_TURMA"].Value.ToString() == tabelaTurma.Rows[i].Cells["CODIGO_TURMA"].Value.ToString())
+                    {
+                        dtgSelecionaTurma.Rows[j].Cells["SELECIONA_TURMA"].Value = true;
+                        break;
+                    }
+                }
             }
         }
     }

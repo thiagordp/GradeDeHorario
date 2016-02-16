@@ -9,13 +9,13 @@ namespace RegraNegocio
 {
     public class TurmaRegraNegocio
     {
-        private TurmaRegraNegocio turmaAD;
+        private AcessoDados.TurmaAcessoDados turmaAD;
 
         public DataTable SelecionaTodaTurma()
         {
             try
             {
-                turmaAD = new TurmaRegraNegocio();
+                turmaAD = new AcessoDados.TurmaAcessoDados();
 
                 return turmaAD.SelecionaTodaTurma();
             }

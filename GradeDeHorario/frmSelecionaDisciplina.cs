@@ -40,7 +40,6 @@ namespace GradeDeHorario
             dtgSelecionaDisciplina.ClearSelection();
         }
 
-
         // Verifica a presença de disciplinas já existentes na tabela de requisitos.
         private void VerificaDisciplinaSelecionada()
         {

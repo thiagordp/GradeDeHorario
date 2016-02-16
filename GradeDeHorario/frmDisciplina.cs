@@ -140,7 +140,6 @@ namespace GradeDeHorario
 
                 disciplinaRN = new RegraNegocio.DisciplinaRegraNegocio(this);
 
-
                 if (novoRegistro == true)
                 {
                     disciplinaRN.InsereDisciplina(disciplina, dtgDisciplinaRequisito);
@@ -149,6 +148,7 @@ namespace GradeDeHorario
                 {
                     disciplinaRN.EditaDisciplina(disciplinaAntiga, disciplina, requisitoAntigo, requisitoNovo);
                 }
+
                 PreencheTabelaDisciplina();
                 PreencheVazio(ref dtgDisciplinaRequisito);
 
@@ -217,7 +217,7 @@ namespace GradeDeHorario
                 disciplinaRN = new RegraNegocio.DisciplinaRegraNegocio(this);
 
                 requisitoAntigo = disciplinaRN.SelecionaRequisito(disciplina);
-                dtgDisciplinaRequisito.DataSource = requisitoAntigo;
+                //dtgDisciplinaRequisito.DataSource = requisitoAntigo;
             }
             catch (Exception ex)
             {
@@ -255,13 +255,6 @@ namespace GradeDeHorario
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-
-        private void PreencheTabelaTurma()
-        {
-            disciplinaRN = new RegraNegocio.DisciplinaRegraNegocio(this);
-
-            //dtgSelecionaTurma.DataSource;
         }
 
         private void txtPesquisaDisciplina_TextChanged(object sender, EventArgs e)
