@@ -29,7 +29,7 @@ namespace RegraNegocio
         }
 
         // Insere uma disciplina no banco.
-        public void InsereDisciplina(Modelos.DISCIPLINA disciplina, DataGridView disciplinaRequisito, DataGridView turmas)
+        public void InsereDisciplina(Modelos.DISCIPLINA disciplina, DataGridView disciplinaRequisito, DataTable turmaAntiga, DataTable turmaNova)
         {
             VerificaDisciplina(disciplina);
             VerificaRequisitos(disciplina, disciplinaRequisito);
@@ -37,8 +37,7 @@ namespace RegraNegocio
             try
             {
                 disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
-                disciplinaAD.InsereDisciplina(disciplina, disciplinaRequisito, turmas);
-
+                disciplinaAD.InsereDisciplina(disciplina, disciplinaRequisito, turmaAntiga, turmaNova);
             }
             catch (Exception ex)
             {
@@ -47,7 +46,13 @@ namespace RegraNegocio
         }
 
         // Edita uma disciplina cadastrada.
-        public void EditaDisciplina(Modelos.DISCIPLINA disciplinaAntiga, Modelos.DISCIPLINA disciplinaNova, DataTable requisitoAntigo, DataTable requisitoNovo)
+        public void EditaDisciplina(
+            Modelos.DISCIPLINA disciplinaAntiga,
+            Modelos.DISCIPLINA disciplinaNova,
+            DataTable requisitoAntigo,
+            DataTable requisitoNovo,
+            DataTable turmaAntiga,
+            DataTable turmaNova)
         {
             VerificaDisciplina(disciplinaNova);
             VerificaRequisitos(disciplinaNova, requisitoNovo);
@@ -56,7 +61,7 @@ namespace RegraNegocio
             {
                 disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
 
-                disciplinaAD.EditaDisciplina(disciplinaAntiga, disciplinaNova, requisitoAntigo, requisitoNovo);
+                disciplinaAD.EditaDisciplina(disciplinaAntiga, disciplinaNova, requisitoAntigo, requisitoNovo, turmaAntiga, turmaNova);
             }
             catch (Exception ex)
             {
@@ -100,76 +105,113 @@ namespace RegraNegocio
             }
         }
 
-        public void SalvaTurmas(string disciplina, DataTable turmaAntiga, DataTable turmaNova)
-        {
-            int curso = 0;
-            int fase = 0;
-            string turma = "";
-            char aux = '\0';
+        //public void SalvaTurmas(string disciplina, DataTable turmaAntiga, DataTable turmaNova)
+        //{
+        //    int curso = 0;
+        //    int fase = 0;
+        //    string turma = "";
+        //    char aux = '\0';
 
-            try
-            {
-                disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
-                faseAD = new AcessoDados.FaseAcessoDados();
+        //    try
+        //    {
+        //        disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
+        //        faseAD = new AcessoDados.FaseAcessoDados();
 
-                if (turmaAntiga.Rows.Count == 0)
-                {
-                    Modelos.DISCIPLINA_CURSO novaTurmaFase;
+        //        // Caso não tenha nenhuma turma naquela disciplina já cadastrada.
+        //        if (turmaAntiga.Rows.Count == 0)
+        //        {
+        //            Modelos.DISCIPLINA_CURSO novaTurmaFase;
+        //            List<Modelos.DISCIPLINA_CURSO> listaFase = new List<Modelos.DISCIPLINA_CURSO>();
 
-                    List<Modelos.DISCIPLINA_CURSO> listaFase = new List<Modelos.DISCIPLINA_CURSO>();
+        //            for (int i = 0; i < turmaNova.Rows.Count; i++)
+        //            {
+        //                turma = turmaNova.Rows[i].Field<string>("CODIGO_TURMA");
 
-                    for (int i = 0; i < turmaNova.Rows.Count; i++)
-                    {
-                        turma = turmaNova.Rows[i].Field<string>("CODIGO_TURMA");
+        //                Modelos.Utilidades.ExtractFromTurma(turma, ref fase, ref curso, ref aux);
 
-                        Modelos.Utilidades.ExtractFromTurma(turma, ref fase, ref curso, ref aux);
+        //                novaTurmaFase = new Modelos.DISCIPLINA_CURSO();
+        //                novaTurmaFase.CODIGO_CURSO = curso;
+        //                novaTurmaFase.CODIGO_DISCIPLINA = disciplina;
+        //                novaTurmaFase.CODIGO_TURMA = turma;
+        //                novaTurmaFase.FASE_DISCIPLINA_CURSO = fase;
 
-                        novaTurmaFase = new Modelos.DISCIPLINA_CURSO();
-                        novaTurmaFase.CODIGO_CURSO = curso;
-                        novaTurmaFase.CODIGO_DISCIPLINA = disciplina;
-                        novaTurmaFase.CODIGO_TURMA = turma;
-                        novaTurmaFase.FASE_DISCIPLINA_CURSO = fase;
+        //                Modelos.DISCIPLINA_CURSO temp = faseAD.VerificaDisciplinaCurso(novaTurmaFase);
 
-                        Modelos.DISCIPLINA_CURSO temp = faseAD.VerificaDisciplinaCurso(novaTurmaFase);
+        //                if (temp != null)
+        //                { // Arrumar
+        //                    throw new Exception("A disciplina de código " + novaTurmaFase.CODIGO_DISCIPLINA + " já está vinculada à " + temp.FASE_DISCIPLINA_CURSO.ToString() + "ª fase desse curso.\nRemova a restrição e tente novamente.");
+        //                }
 
-                        if (temp != null)
-                        {
-                            throw new Exception("A disciplina de código " + novaTurmaFase.CODIGO_DISCIPLINA + " já está vinculada à " + temp.FASE_DISCIPLINA_CURSO.ToString() + "ª fase desse curso.\nRemova a restrição e tente novamente.");
-                        }
+        //                listaFase.Add(novaTurmaFase);
+        //            }
 
-                        listaFase.Add(novaTurmaFase);
-                    }
+        //            faseAD.InsereListaDisciplinaFase(listaFase);
+        //        }
+        //        else
+        //        {
+        //            Modelos.Utilidades.ExtractFromTurma(turma, ref fase, ref curso, ref aux);
 
-                    faseAD.InsereListaDisciplinaFase(listaFase);
-                }
-                else
-                {
-                    Modelos.Utilidades.ExtractFromTurma(turma, ref fase, ref curso, ref aux);
+        //            List<Modelos.DISCIPLINA_CURSO> listaEdita = new List<Modelos.DISCIPLINA_CURSO>();
+        //            List<Modelos.DISCIPLINA_CURSO> listaExclui = new List<Modelos.DISCIPLINA_CURSO>();
+        //            List<Modelos.DISCIPLINA_CURSO> listaInsere = new List<Modelos.DISCIPLINA_CURSO>();
+        //            List<Modelos.DISCIPLINA_CURSO> listaFaseAntiga = faseAD.SelecionaFaseCurso(disciplina);
+        //            List<Modelos.DISCIPLINA_CURSO> listaFaseNova = PreencheFase(turmaNova, fase, curso, disciplina);
+        //            List<Modelos.DISCIPLINA_CURSO> lista = PreencheFase(turmaNova, fase, curso, disciplina);
+        //            // lista FaseAntiga deve ser revisado para ter mais de um curso.
+        //            for (int i = 0; i < listaFaseNova.Count; i++)
+        //            {
+        //                Modelos.DISCIPLINA_CURSO discLista = listaFaseAntiga.Find(
+        //                    p =>
+        //                    (p.CODIGO_DISCIPLINA == disciplina) &&
+        //                    (p.CODIGO_CURSO == curso) &&
+        //                    (p.CODIGO_TURMA == lista.ElementAt(i).CODIGO_TURMA));
 
-                    List<Modelos.DISCIPLINA_CURSO> listaEdita = new List<Modelos.DISCIPLINA_CURSO>();
-                    List<Modelos.DISCIPLINA_CURSO> listaExclui = new List<Modelos.DISCIPLINA_CURSO>();
-                    List<Modelos.DISCIPLINA_CURSO> listaInsere = new List<Modelos.DISCIPLINA_CURSO>();
-                    List<Modelos.DISCIPLINA_CURSO> listaFaseAntiga = faseAD.SelecionaFaseCurso(fase, curso);
-                    List<Modelos.DISCIPLINA_CURSO> listaFaseNova = PreencheFase(turmaNova, fase, curso, disciplina);
-                    List<Modelos.DISCIPLINA_CURSO> lista = PreencheFase(turmaNova, fase, curso, disciplina);
+        //                if (discLista == null)
+        //                {
+        //                    Modelos.DISCIPLINA_CURSO discFaseBD = faseAD.VerificaDisciplinaCurso(listaFaseNova.ElementAt(i));
 
-                    for (int i = 0; i < listaFaseNova.Count; i++)
-                    {
-                        Modelos.DISCIPLINA_CURSO discLista = listaFaseAntiga.Find(
-                            p =>
-                            (p.CODIGO_DISCIPLINA == lista.ElementAt(i).CODIGO_DISCIPLINA) &&
-                            (p.CODIGO_CURSO == curso) &&
-                            (p.CODIGO_TURMA == turma));
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
-            }
-        }
+        //                    if (discFaseBD != null)
+        //                    {//REVER
+        //                        throw new Exception("A disciplina de código " + listaFaseNova.ElementAt(i).CODIGO_DISCIPLINA + " já está vinculada à " + discFaseBD.FASE_DISCIPLINA_CURSO.ToString() + "ª fase desse curso.\nRemova a restrição e tente novamente.");
+        //                    }
+
+        //                    listaInsere.Add(listaFaseNova.ElementAt(i));
+        //                }
+        //                else
+        //                {
+        //                    listaEdita.Add(listaFaseNova.ElementAt(i));
+
+        //                    listaFaseAntiga.Remove(listaFaseAntiga.Find(
+        //                        p =>
+        //                        (p.CODIGO_CURSO == listaFaseNova.ElementAt(i).CODIGO_CURSO) &&
+        //                        (p.CODIGO_DISCIPLINA == listaFaseNova.ElementAt(i).CODIGO_DISCIPLINA) &&
+        //                        (p.CODIGO_TURMA == listaFaseNova.ElementAt(i).CODIGO_TURMA)));
+        //                }
+        //            }
+
+        //            for (int i = 0; i < listaFaseAntiga.Count; i++)
+        //            {
+        //                //Modelos.DISCIPLINA_CURSO temp = faseAD.SelecionaFaseCurso(fase, curso).Find(
+        //                //    p =>
+        //                //    (p.CODIGO_CURSO == listaFaseAntiga.ElementAt(i).CODIGO_CURSO) &&
+        //                //    (p.CODIGO_DISCIPLINA == listaFaseAntiga.ElementAt(i).CODIGO_DISCIPLINA) &&
+        //                //    (p.CODIGO_TURMA == listaFaseAntiga.ElementAt(i).CODIGO_TURMA));
+
+        //                listaExclui.Add(listaFaseAntiga.ElementAt(i));
+        //            }
+
+        //            faseAD.SalvaFase(listaEdita, listaExclui, listaInsere);
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+        //    }
+        //}
+
 
         //
+
         private List<Modelos.DISCIPLINA_CURSO> PreencheFase(DataTable tabela, int fase, int curso, string disciplina)
         {
             Modelos.DISCIPLINA_CURSO temp;
@@ -188,6 +230,21 @@ namespace RegraNegocio
             }
 
             return lista;
+        }
+
+        //
+        public DataTable SelecionaTurmaPorDisciplina(string disciplina)
+        {
+            try
+            {
+                disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
+
+                return disciplinaAD.SelecionaTurmaPorDisciplina(disciplina);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
         }
 
         // Retorna uma lista com todas as disciplinas cadastradas.
@@ -218,6 +275,18 @@ namespace RegraNegocio
             {
                 throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
             }
+        }
+
+        public bool VerificaTemTurmaAlocada(string codigoDisciplina)
+        {
+            faseAD = new AcessoDados.FaseAcessoDados();
+
+            if (faseAD.SelecionaTurmaAlocada(codigoDisciplina) != null)
+            {
+                return true;
+            }
+
+            return false;
         }
 
         private bool VerificaTemRequisito(Modelos.DISCIPLINA disciplina)

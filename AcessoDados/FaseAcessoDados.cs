@@ -15,17 +15,13 @@ namespace AcessoDados
         DataTable dadosTabela;
 
         // Adiciona Fase
-        public void InsereListaDisciplinaFase(List<Modelos.DISCIPLINA_CURSO> disciplinaFase)
+        public void InsereListaDisciplinaFase(ref Modelos.Entidade contexto, List<Modelos.DISCIPLINA_CURSO> disciplinaFase)
         {
             try
             {
-                using (Modelos.Entidade contexto = new Modelos.Entidade())
+                for (int i = 0; i < disciplinaFase.Count; i++)
                 {
-                    for (int i = 0; i < disciplinaFase.Count; i++)
-                    {
-                        contexto.DISCIPLINA_CURSO.Add(disciplinaFase.ElementAt(i));
-                    }
-                    contexto.SaveChanges();
+                    contexto.DISCIPLINA_CURSO.Add(disciplinaFase.ElementAt(i));
                 }
             }
             catch (Exception)
@@ -85,39 +81,31 @@ namespace AcessoDados
             }
         }
 
-        public void SalvaFase(List<Modelos.DISCIPLINA_CURSO> listaEdita, List<Modelos.DISCIPLINA_CURSO> listaExclui, List<Modelos.DISCIPLINA_CURSO> listaInsere)
+        public void SalvaFase(ref Modelos.Entidade contexto, List<Modelos.DISCIPLINA_CURSO> listaEdita, List<Modelos.DISCIPLINA_CURSO> listaExclui, List<Modelos.DISCIPLINA_CURSO> listaInsere)
         {
             try
             {
-                using (Modelos.Entidade contexto = new Modelos.Entidade())
+                Modelos.DISCIPLINA_CURSO temp;
+                // Deletando as disciplinas que não fase mais parte da fase.
+                foreach (Modelos.DISCIPLINA_CURSO item in listaExclui)
                 {
-                    Modelos.DISCIPLINA_CURSO temp;
-                    // Deletando as disciplinas que não fase mais parte da fase.
-                    foreach (Modelos.DISCIPLINA_CURSO item in listaExclui)
+                    temp = contexto.DISCIPLINA_CURSO.Find(item.CODIGO_DISCIPLINA, item.CODIGO_CURSO, item.CODIGO_TURMA);
+                    if (temp.DISCIPLINA_TURMA.Count > 0)
                     {
-                        temp = contexto.DISCIPLINA_CURSO.Find(item.CODIGO_DISCIPLINA, item.CODIGO_CURSO, item.CODIGO_TURMA);
-
-                        if (temp.DISCIPLINA_TURMA.Count > 0)
-                        {
-                            throw new Exception("Não é possível exclui a disciplina de código " + temp.CODIGO_DISCIPLINA + ", pois já existe uma ou mais turmas vinculadas à ela.");
-                        }
-
-                        contexto.Entry(temp).State = System.Data.Entity.EntityState.Deleted;
+                        throw new Exception("Não é possível exclui a disciplina de código " + temp.CODIGO_DISCIPLINA + ", pois já existe uma ou mais turmas vinculadas à ela.");
                     }
+                    contexto.Entry(temp).State = System.Data.Entity.EntityState.Deleted;
+                }
 
-                    // Editando as disciplinas alteradas. // TALVEZ NÃO PRECISA
-                    foreach (Modelos.DISCIPLINA_CURSO item in listaEdita)
-                    {
-                        temp = contexto.DISCIPLINA_CURSO.Find(item.CODIGO_DISCIPLINA, item.CODIGO_CURSO, item.CODIGO_TURMA);
-                        temp.FASE_DISCIPLINA_CURSO = item.FASE_DISCIPLINA_CURSO;
-
-                        contexto.Entry(temp).State = System.Data.Entity.EntityState.Modified;
-                    }
-                    contexto.SaveChanges();
-
+                // Editando as disciplinas alteradas. // TALVEZ NÃO PRECISA
+                foreach (Modelos.DISCIPLINA_CURSO item in listaEdita)
+                {
+                    temp = contexto.DISCIPLINA_CURSO.Find(item.CODIGO_DISCIPLINA, item.CODIGO_CURSO, item.CODIGO_TURMA);
+                    temp.FASE_DISCIPLINA_CURSO = item.FASE_DISCIPLINA_CURSO;
+                    contexto.Entry(temp).State = System.Data.Entity.EntityState.Modified;
                 }
                 // Inserindo as novas disciplinas.
-                InsereListaDisciplinaFase(listaInsere);
+                InsereListaDisciplinaFase(ref contexto, listaInsere);
             }
             catch (Exception ex)
             {
@@ -125,14 +113,13 @@ namespace AcessoDados
             }
         }
 
-        public List<Modelos.DISCIPLINA_CURSO> SelecionaFaseCurso(int fase, int curso)
+        public List<Modelos.DISCIPLINA_CURSO> SelecionaFaseCurso(string disciplina)
         {
             try
             {
                 using (Modelos.Entidade contexto = new Modelos.Entidade())
                 {
-                    List<Modelos.DISCIPLINA_CURSO> lista = contexto.DISCIPLINA_CURSO.ToList().FindAll(faseCurso => (faseCurso.CODIGO_CURSO == curso) && (faseCurso.FASE_DISCIPLINA_CURSO == fase));
-
+                    List<Modelos.DISCIPLINA_CURSO> lista = contexto.DISCIPLINA_CURSO.ToList().FindAll(faseCurso => (faseCurso.CODIGO_DISCIPLINA == disciplina));
                     return lista;
                 }
             }
@@ -149,7 +136,6 @@ namespace AcessoDados
                 using (Modelos.Entidade contexto = new Modelos.Entidade())
                 {
                     List<Modelos.DISCIPLINA_CURSO> lista = contexto.DISCIPLINA_CURSO.ToList();
-
                     return lista;
                 }
             }
@@ -231,6 +217,26 @@ namespace AcessoDados
                 }
 
                 return Convert.ToInt32(discCurso.FASE_DISCIPLINA_CURSO);
+            }
+        }
+
+        /// <summary>
+        /// Retorna uma lista com todas as turmas alocadas em alguma(s) grade(s) vinculadas à disciplina especificada.
+        /// </summary>
+        /// <param name="codigoDisciplina">Código da disciplina</param>
+        /// <returns></returns>
+        public Modelos.DISCIPLINA_TURMA SelecionaTurmaAlocada(string codigoDisciplina)
+        {
+            try
+            {
+                using (Modelos.Entidade contexto = new Modelos.Entidade())
+                {
+                    return contexto.DISCIPLINA_TURMA.ToList().Find(p => (p.CODIGO_DISCIPLINA == codigoDisciplina));
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
     }

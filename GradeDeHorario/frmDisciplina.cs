@@ -46,7 +46,6 @@ namespace GradeDeHorario
                     requisitoNovo = dtgDisciplinaRequisito.DataSource as DataTable;
                     turmaFaseNovo = dtgSelecionaTurma.DataSource as DataTable;
 
-
                     if (requisitoNovo == null)
                     {
                         requisitoNovo = new DataTable();
@@ -96,14 +95,19 @@ namespace GradeDeHorario
         {
             LimparTexto();
             PreencheVazio(ref dtgDisciplinaRequisito);
+            PreencheVazio(ref dtgSelecionaTurma);
             btnNovo.Enabled = true;
         }
 
         private void PreencheVazio(ref DataGridView dtg)
         {
             DataTable tabela = new DataTable();
-            tabela.Columns.Add("CODIGO_DISCIPLINA");
-            tabela.Columns.Add("NOME_DISCIPLINA");
+
+            for (int i = 0; i < dtg.Columns.Count; i++)
+            {
+                if (tabela.Columns.Contains(dtg.Columns[i].Name) == false)
+                    tabela.Columns.Add(dtg.Columns[i].Name);
+            }
 
             dtg.DataSource = tabela;
         }
@@ -129,8 +133,6 @@ namespace GradeDeHorario
             nudCreditoDisplicina.Value = 1;
             cbbDepartamento.SelectedIndex = -1;
             EstadoEditacao(false);
-
-            /**** Chamar novamente a consulta de seleção da tabela de disciplinas ****/
         }
 
         private void btnSalvarEdicao_Click(object sender, EventArgs e)
@@ -148,15 +150,18 @@ namespace GradeDeHorario
 
                 if (novoRegistro == true)
                 {
-                    disciplinaRN.InsereDisciplina(disciplina, dtgDisciplinaRequisito, dtgSelecionaTurma);
+                    disciplinaRN.InsereDisciplina(disciplina, dtgDisciplinaRequisito, turmaFaseAntigo, turmaFaseNovo);
                 }
                 else
                 {
-                    disciplinaRN.EditaDisciplina(disciplinaAntiga, disciplina, requisitoAntigo, requisitoNovo);
+                    disciplinaRN.EditaDisciplina(disciplinaAntiga, disciplina, requisitoAntigo, requisitoNovo, turmaFaseAntigo, turmaFaseNovo);
                 }
+
+                //disciplinaRN.SalvaTurmas(disciplina.CODIGO_DISCIPLINA, turmaFaseAntigo, turmaFaseNovo);
 
                 PreencheTabelaDisciplina();
                 PreencheVazio(ref dtgDisciplinaRequisito);
+                PreencheVazio(ref dtgSelecionaTurma);
 
                 LimparTudo();
                 btnNovo.Enabled = true;
@@ -172,6 +177,8 @@ namespace GradeDeHorario
         {
             try
             {
+                disciplinaRN = new RegraNegocio.DisciplinaRegraNegocio(this);
+
                 Modelos.DISCIPLINA temp = new Modelos.DISCIPLINA();
 
                 if (gbDisciplina.Enabled == true)
@@ -183,6 +190,14 @@ namespace GradeDeHorario
                 EstadoEditacao(true);
                 btnNovo.Enabled = false;
 
+                if (disciplinaRN.VerificaTemTurmaAlocada(dtgDisciplina.Rows[e.RowIndex].Cells["CODIGO_DISCIPLINA"].Value.ToString()))
+                {
+                    MessageBox.Show("Essa disciplina pertence à turma(s) que já possui(em) horários alocados. \nPortanto, alguns atributos não serão editáveis a menos que seja removidas as alocações.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    txtCodigo.Enabled = dtgDisciplinaRequisito.Enabled = dtgSelecionaTurma.Enabled = false;
+                    btnSelecionaRequisito.Enabled = btnSelecionaTurma.Enabled = false;
+                }
+
                 txtCodigo.Text = dtgDisciplina.Rows[e.RowIndex].Cells["CODIGO_DISCIPLINA"].Value.ToString();
                 txtNomeDisciplina.Text = dtgDisciplina.Rows[e.RowIndex].Cells["NOME_DISCIPLINA"].Value.ToString();
                 nudCreditoDisplicina.Value = Convert.ToDecimal(dtgDisciplina.Rows[e.RowIndex].Cells["CREDITO_DISCIPLINA"].Value.ToString());
@@ -190,6 +205,7 @@ namespace GradeDeHorario
 
                 temp.CODIGO_DISCIPLINA = txtCodigo.Text;
                 PreencheTabelaRequisitos(temp);
+                PreencheTabelaTurma(temp.CODIGO_DISCIPLINA);
 
                 disciplinaAntiga.CODIGO_DISCIPLINA = txtCodigo.Text;
                 disciplinaAntiga.NOME_DISCIPLINA = txtNomeDisciplina.Text;
@@ -202,6 +218,10 @@ namespace GradeDeHorario
                 if (requisitoNovo == null)
                 {
                     requisitoAntigo = requisitoNovo = new DataTable();
+
+                }
+                if (turmaFaseAntigo == null)
+                {
                     turmaFaseAntigo = turmaFaseNovo = new DataTable();
                 }
             }
@@ -225,7 +245,7 @@ namespace GradeDeHorario
                 disciplinaRN = new RegraNegocio.DisciplinaRegraNegocio(this);
 
                 requisitoAntigo = disciplinaRN.SelecionaRequisito(disciplina);
-                //dtgDisciplinaRequisito.DataSource = requisitoAntigo;
+                dtgDisciplinaRequisito.DataSource = requisitoAntigo;
             }
             catch (Exception ex)
             {
@@ -247,6 +267,20 @@ namespace GradeDeHorario
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void PreencheTabelaTurma(string disciplina)
+        {
+            try
+            {
+                disciplinaRN = new RegraNegocio.DisciplinaRegraNegocio(this);
+
+                dtgSelecionaTurma.DataSource = disciplinaRN.SelecionaTurmaPorDisciplina(disciplina);
+            }
+            catch (Exception)
+            {
+                throw;
             }
         }
 
@@ -274,6 +308,8 @@ namespace GradeDeHorario
         private void btnSelecionaTurma_Click(object sender, EventArgs e)
         {
             (new frmSelecionaTurma(ref dtgSelecionaTurma)).ShowDialog();
+
+            turmaFaseNovo = dtgSelecionaTurma.DataSource as DataTable;
         }
     }
 }
