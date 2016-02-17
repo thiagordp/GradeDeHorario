@@ -16,6 +16,9 @@ namespace GradeDeHorario
         private Modelos.DISCIPLINA disciplinaAntiga = new Modelos.DISCIPLINA();
         private DataTable requisitoAntigo = new DataTable();
         private DataTable requisitoNovo = new DataTable();
+        private DataTable turmaFaseAntigo = new DataTable();
+        private DataTable turmaFaseNovo = new DataTable();
+
         private bool novoRegistro = false;
 
         public frmDisciplina()
@@ -41,10 +44,13 @@ namespace GradeDeHorario
                 else
                 {
                     requisitoNovo = dtgDisciplinaRequisito.DataSource as DataTable;
+                    turmaFaseNovo = dtgSelecionaTurma.DataSource as DataTable;
+
 
                     if (requisitoNovo == null)
                     {
                         requisitoNovo = new DataTable();
+                        turmaFaseNovo = new DataTable();
                     }
                 }
             }
@@ -142,7 +148,7 @@ namespace GradeDeHorario
 
                 if (novoRegistro == true)
                 {
-                    disciplinaRN.InsereDisciplina(disciplina, dtgDisciplinaRequisito);
+                    disciplinaRN.InsereDisciplina(disciplina, dtgDisciplinaRequisito, dtgSelecionaTurma);
                 }
                 else
                 {
@@ -191,10 +197,12 @@ namespace GradeDeHorario
                 disciplinaAntiga.CODIGO_DEPARTAMENTO = Convert.ToInt32(cbbDepartamento.SelectedValue.ToString());
 
                 requisitoAntigo = requisitoNovo = dtgDisciplinaRequisito.DataSource as DataTable;
+                turmaFaseAntigo = turmaFaseNovo = dtgSelecionaTurma.DataSource as DataTable;
 
                 if (requisitoNovo == null)
                 {
                     requisitoAntigo = requisitoNovo = new DataTable();
+                    turmaFaseAntigo = turmaFaseNovo = new DataTable();
                 }
             }
             catch (Exception ex)

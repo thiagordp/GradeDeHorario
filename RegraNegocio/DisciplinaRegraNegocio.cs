@@ -20,6 +20,7 @@ namespace RegraNegocio
     public class DisciplinaRegraNegocio
     {
         private AcessoDados.DisciplinaAcessoDados disciplinaAD;
+        private AcessoDados.FaseAcessoDados faseAD;
         private Form frmDisciplina;
 
         public DisciplinaRegraNegocio(Form frm)
@@ -37,6 +38,7 @@ namespace RegraNegocio
             {
                 disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
                 disciplinaAD.InsereDisciplina(disciplina, disciplinaRequisito, turmas);
+
             }
             catch (Exception ex)
             {
@@ -53,6 +55,7 @@ namespace RegraNegocio
             try
             {
                 disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
+
                 disciplinaAD.EditaDisciplina(disciplinaAntiga, disciplinaNova, requisitoAntigo, requisitoNovo);
             }
             catch (Exception ex)
@@ -95,6 +98,96 @@ namespace RegraNegocio
             {
                 throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
             }
+        }
+
+        public void SalvaTurmas(string disciplina, DataTable turmaAntiga, DataTable turmaNova)
+        {
+            int curso = 0;
+            int fase = 0;
+            string turma = "";
+            char aux = '\0';
+
+            try
+            {
+                disciplinaAD = new AcessoDados.DisciplinaAcessoDados();
+                faseAD = new AcessoDados.FaseAcessoDados();
+
+                if (turmaAntiga.Rows.Count == 0)
+                {
+                    Modelos.DISCIPLINA_CURSO novaTurmaFase;
+
+                    List<Modelos.DISCIPLINA_CURSO> listaFase = new List<Modelos.DISCIPLINA_CURSO>();
+
+                    for (int i = 0; i < turmaNova.Rows.Count; i++)
+                    {
+                        turma = turmaNova.Rows[i].Field<string>("CODIGO_TURMA");
+
+                        Modelos.Utilidades.ExtractFromTurma(turma, ref fase, ref curso, ref aux);
+
+                        novaTurmaFase = new Modelos.DISCIPLINA_CURSO();
+                        novaTurmaFase.CODIGO_CURSO = curso;
+                        novaTurmaFase.CODIGO_DISCIPLINA = disciplina;
+                        novaTurmaFase.CODIGO_TURMA = turma;
+                        novaTurmaFase.FASE_DISCIPLINA_CURSO = fase;
+
+                        Modelos.DISCIPLINA_CURSO temp = faseAD.VerificaDisciplinaCurso(novaTurmaFase);
+
+                        if (temp != null)
+                        {
+                            throw new Exception("A disciplina de código " + novaTurmaFase.CODIGO_DISCIPLINA + " já está vinculada à " + temp.FASE_DISCIPLINA_CURSO.ToString() + "ª fase desse curso.\nRemova a restrição e tente novamente.");
+                        }
+
+                        listaFase.Add(novaTurmaFase);
+                    }
+
+                    faseAD.InsereListaDisciplinaFase(listaFase);
+                }
+                else
+                {
+                    Modelos.Utilidades.ExtractFromTurma(turma, ref fase, ref curso, ref aux);
+
+                    List<Modelos.DISCIPLINA_CURSO> listaEdita = new List<Modelos.DISCIPLINA_CURSO>();
+                    List<Modelos.DISCIPLINA_CURSO> listaExclui = new List<Modelos.DISCIPLINA_CURSO>();
+                    List<Modelos.DISCIPLINA_CURSO> listaInsere = new List<Modelos.DISCIPLINA_CURSO>();
+                    List<Modelos.DISCIPLINA_CURSO> listaFaseAntiga = faseAD.SelecionaFaseCurso(fase, curso);
+                    List<Modelos.DISCIPLINA_CURSO> listaFaseNova = PreencheFase(turmaNova, fase, curso, disciplina);
+                    List<Modelos.DISCIPLINA_CURSO> lista = PreencheFase(turmaNova, fase, curso, disciplina);
+
+                    for (int i = 0; i < listaFaseNova.Count; i++)
+                    {
+                        Modelos.DISCIPLINA_CURSO discLista = listaFaseAntiga.Find(
+                            p =>
+                            (p.CODIGO_DISCIPLINA == lista.ElementAt(i).CODIGO_DISCIPLINA) &&
+                            (p.CODIGO_CURSO == curso) &&
+                            (p.CODIGO_TURMA == turma));
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
+        }
+
+        //
+        private List<Modelos.DISCIPLINA_CURSO> PreencheFase(DataTable tabela, int fase, int curso, string disciplina)
+        {
+            Modelos.DISCIPLINA_CURSO temp;
+
+            List<Modelos.DISCIPLINA_CURSO> lista = new List<Modelos.DISCIPLINA_CURSO>();
+
+            for (int i = 0; i < tabela.Rows.Count; i++)
+            {
+                temp = new Modelos.DISCIPLINA_CURSO();
+                temp.CODIGO_DISCIPLINA = disciplina;
+                temp.CODIGO_TURMA = tabela.Rows[i].Field<string>("CODIGO_TURMA");
+                temp.CODIGO_CURSO = curso;
+                temp.FASE_DISCIPLINA_CURSO = fase;
+
+                lista.Add(temp);
+            }
+
+            return lista;
         }
 
         // Retorna uma lista com todas as disciplinas cadastradas.
@@ -179,7 +272,6 @@ namespace RegraNegocio
 
         private void VerificaRequisitos(Modelos.DISCIPLINA disciplina, DataTable requisitos)
         {
-
             for (int i = 0; i < requisitos.Rows.Count; i++)
             {
                 if (requisitos.Rows[i].Field<string>("CODIGO_DISCIPLINA") == disciplina.CODIGO_DISCIPLINA)

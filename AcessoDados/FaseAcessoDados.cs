@@ -159,6 +159,26 @@ namespace AcessoDados
             }
         }
 
+        public Modelos.DISCIPLINA_CURSO VerificaDisciplinaCurso(Modelos.DISCIPLINA_CURSO turma)
+        {
+            try
+            {
+                using (Modelos.Entidade contexto = new Modelos.Entidade())
+                {
+                    return contexto.DISCIPLINA_CURSO.ToList().Find(
+                        p =>
+                        (p.CODIGO_CURSO == turma.CODIGO_CURSO) &&
+                        (p.CODIGO_DISCIPLINA == turma.CODIGO_DISCIPLINA) &&
+                        (p.CODIGO_TURMA == turma.CODIGO_TURMA));
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+
         // Procura por alguma tupla que já contenha os códigos da disciplina e curso informados.
         public Modelos.DISCIPLINA_CURSO VerificaDisciplinaCurso(string disciplina, int curso)
         {

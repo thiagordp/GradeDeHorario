@@ -20,7 +20,18 @@ namespace AcessoDados
     {
         StringBuilder sql;
         SqlCommand comandoSql;
+        Modelos.CURSO curso;
         DataTable dadosTabela;
+
+        public DisciplinaAcessoDados()
+        {
+
+        }
+
+        public DisciplinaAcessoDados(Modelos.CURSO curso)
+        {
+            this.curso = curso;
+        }
 
         /// <summary>
         /// Insere uma nova disciplina no banco de dados
@@ -64,18 +75,36 @@ namespace AcessoDados
                         disciplina.DISCIPLINA1.Add(tempDisciplina);
                     }
 
-                    string codigoDisc = disciplina.CODIGO_DISCIPLINA;
-                    int codigoCurso = 0;
-                    int codigoFase = 0;
-                    string turma = "";
-                    char aux = '\0';
-
-                    Modelos.Utilidades.ExtractFromTurma(turma, ref codigoFase, ref codigoCurso, ref aux);
-
-
-
                     contexto.DISCIPLINA.Add(disciplina);
                     contexto.SaveChanges();
+
+                    if (turmas.Rows.Count > 0)
+                    {
+                        string codigoDisc = disciplina.CODIGO_DISCIPLINA;
+                        int codigoCurso = 0;
+                        int codigoFase = 0;
+                        string turma = "";
+                        char aux = '\0';
+
+                        Modelos.DISCIPLINA_CURSO turmaFase = new Modelos.DISCIPLINA_CURSO();
+
+                        for (int i = 0; i < turmas.Rows.Count; i++)
+                        {
+                            turma = turmas.Rows[i].Cells["CODIGO_TURMA"].Value.ToString();
+
+                            Modelos.Utilidades.ExtractFromTurma(turma, ref codigoFase, ref codigoCurso, ref aux);
+
+                            turmaFase = new Modelos.DISCIPLINA_CURSO();
+
+                            turmaFase.CODIGO_DISCIPLINA = disciplina.CODIGO_DISCIPLINA;
+                            turmaFase.CODIGO_CURSO = codigoCurso;
+                            turmaFase.CODIGO_TURMA = turma;
+
+                            turmaFase.FASE_DISCIPLINA_CURSO = codigoFase;
+                            contexto.DISCIPLINA_CURSO.Add(turmaFase);
+                        }
+                        contexto.SaveChanges();
+                    }
                 }
             }
             catch (Exception ex)
@@ -84,11 +113,31 @@ namespace AcessoDados
             }
         }
 
+        // 
+        public void SalvaTurmas(string disciplina, DataTable turmaFaseAntigo, DataTable turmaFaseNovo)
+        {
+            int codigoCurso = 0;
+            int codigoFase = 0;
+            string turma = "";
+            char aux = '\0';
+
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         // Edita os atributos da disciplina indicada de acordo com os dados fornecidos
         public void EditaDisciplina(Modelos.DISCIPLINA disciplinaAntiga, Modelos.DISCIPLINA disciplinaNova, DataTable requisitoAntigo, DataTable requisitoNovo)
         {
             Modelos.DISCIPLINA tempDisciplina;
             Modelos.Entidade contex;
+            string subject = "";
 
             using (Modelos.Entidade contexto = new Modelos.Entidade())
             {
@@ -113,6 +162,7 @@ namespace AcessoDados
                     // Cópia das fases alocadas.
                     foreach (Modelos.DISCIPLINA_CURSO disciplina in tempDisciplina.DISCIPLINA_CURSO.ToList()) { disciplinaNova.DISCIPLINA_CURSO.Add(disciplina); }
 
+                    subject = disciplinaNova.CODIGO_DISCIPLINA;
                     contexto.DISCIPLINA.Add(disciplinaNova);
 
                     tempDisciplina.DISCIPLINA1.Clear();
@@ -127,7 +177,7 @@ namespace AcessoDados
                         throw new Exception("Objeto não encontrado!\nVerifique se há algum programa alterando o banco de dados.");
                     }
 
-                    tempDisciplina.CODIGO_DISCIPLINA = disciplinaNova.CODIGO_DISCIPLINA;
+                    tempDisciplina.CODIGO_DISCIPLINA = subject = disciplinaNova.CODIGO_DISCIPLINA;
                     tempDisciplina.NOME_DISCIPLINA = disciplinaNova.NOME_DISCIPLINA;
                     tempDisciplina.CODIGO_DEPARTAMENTO = disciplinaNova.CODIGO_DEPARTAMENTO;
                     tempDisciplina.CREDITO_DISCIPLINA = disciplinaNova.CREDITO_DISCIPLINA;
@@ -140,8 +190,12 @@ namespace AcessoDados
                 }
 
                 contexto.SaveChanges();
+
+                //Inserir turmas
             }
         }
+
+
 
         private void AdicionaRequisito(ref Modelos.DISCIPLINA disciplina, DataTable requisito, ref Modelos.Entidade contexto)
         {
