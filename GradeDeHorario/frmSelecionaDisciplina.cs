@@ -82,6 +82,8 @@ namespace GradeDeHorario
             tabela.Columns.Add("CODIGO_DISCIPLINA");
             tabela.Columns.Add("NOME_DISCIPLINA");
 
+
+
             dtgSelecionaDisciplina.EndEdit();
 
             for (int i = 0; i < dtgSelecionaDisciplina.Rows.Count; i++)
@@ -96,6 +98,9 @@ namespace GradeDeHorario
             }
 
             tabelaDisciplina.DataSource = tabela;
+            tabelaDisciplina.Columns["CODIGO_DISCIPLINA_REQUISITO"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            tabelaDisciplina.Columns["NOME_DISCIPLINA_REQUISITO"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
             this.Close();
         }
 

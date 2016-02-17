@@ -316,7 +316,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.88819F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.00145F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 68F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 69F));
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 1);
@@ -394,7 +394,7 @@
             this.txtNomeDisciplina.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtNomeDisciplina.Location = new System.Drawing.Point(73, 29);
             this.txtNomeDisciplina.Name = "txtNomeDisciplina";
-            this.txtNomeDisciplina.Size = new System.Drawing.Size(380, 22);
+            this.txtNomeDisciplina.Size = new System.Drawing.Size(379, 22);
             this.txtNomeDisciplina.TabIndex = 4;
             // 
             // nudCreditoDisplicina
@@ -447,7 +447,7 @@
             this.NOME_DISCIPLINA_REQUISITO});
             this.tableLayoutPanel2.SetColumnSpan(this.dtgDisciplinaRequisito, 2);
             this.dtgDisciplinaRequisito.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgDisciplinaRequisito.Location = new System.Drawing.Point(459, 29);
+            this.dtgDisciplinaRequisito.Location = new System.Drawing.Point(458, 29);
             this.dtgDisciplinaRequisito.Name = "dtgDisciplinaRequisito";
             this.dtgDisciplinaRequisito.ReadOnly = true;
             this.dtgDisciplinaRequisito.RowHeadersVisible = false;
@@ -480,7 +480,7 @@
             // 
             this.panel1.Controls.Add(this.btnSelecionaRequisito);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(668, 3);
+            this.panel1.Location = new System.Drawing.Point(667, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(47, 20);
             this.panel1.TabIndex = 5;
@@ -500,7 +500,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(459, 0);
+            this.label5.Location = new System.Drawing.Point(458, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(203, 26);
             this.label5.TabIndex = 9;
@@ -525,7 +525,7 @@
             this.cbbDepartamento.FormattingEnabled = true;
             this.cbbDepartamento.Location = new System.Drawing.Point(233, 55);
             this.cbbDepartamento.Name = "cbbDepartamento";
-            this.cbbDepartamento.Size = new System.Drawing.Size(220, 21);
+            this.cbbDepartamento.Size = new System.Drawing.Size(219, 21);
             this.cbbDepartamento.TabIndex = 11;
             // 
             // dtgSelecionaTurma
@@ -555,12 +555,12 @@
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgSelecionaTurma.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dtgSelecionaTurma.Location = new System.Drawing.Point(721, 29);
+            this.dtgSelecionaTurma.Location = new System.Drawing.Point(720, 29);
             this.dtgSelecionaTurma.Name = "dtgSelecionaTurma";
             this.dtgSelecionaTurma.RowHeadersVisible = false;
             this.tableLayoutPanel2.SetRowSpan(this.dtgSelecionaTurma, 2);
             this.dtgSelecionaTurma.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dtgSelecionaTurma.Size = new System.Drawing.Size(128, 49);
+            this.dtgSelecionaTurma.Size = new System.Drawing.Size(129, 49);
             this.dtgSelecionaTurma.TabIndex = 12;
             // 
             // CODIGO_TURMA
@@ -576,7 +576,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(721, 0);
+            this.label6.Location = new System.Drawing.Point(720, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(59, 26);
             this.label6.TabIndex = 13;
@@ -585,7 +585,7 @@
             // 
             // btnSelecionaTurma
             // 
-            this.btnSelecionaTurma.Location = new System.Drawing.Point(786, 3);
+            this.btnSelecionaTurma.Location = new System.Drawing.Point(785, 3);
             this.btnSelecionaTurma.Name = "btnSelecionaTurma";
             this.btnSelecionaTurma.Size = new System.Drawing.Size(48, 20);
             this.btnSelecionaTurma.TabIndex = 14;

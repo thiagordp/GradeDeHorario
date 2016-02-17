@@ -103,13 +103,32 @@ namespace GradeDeHorario
         {
             DataTable tabela = new DataTable();
 
-            for (int i = 0; i < dtg.Columns.Count; i++)
+            if (dtg.Name == "dtgDisciplinaRequisito")
             {
-                if (tabela.Columns.Contains(dtg.Columns[i].Name) == false)
-                    tabela.Columns.Add(dtg.Columns[i].Name);
+                tabela.Columns.Add("CODIGO_DISCIPLINA_REQUISITO");
+                tabela.Columns.Add("NOME_DISCIPLINA_REQUISITO");
+
+                dtg.DataSource = tabela;
+
+                dtg.Columns["CODIGO_DISCIPLINA_REQUISITO"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                dtg.Columns["NOME_DISCIPLINA_REQUISITO"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            }
+            else if (dtg.Name == "dtgSelecionaTurma")
+            {
+                tabela.Columns.Add("CODIGO_TURMA");
+
+                dtg.DataSource = tabela;
+
+                dtg.Columns["CODIGO_TURMA"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             }
 
-            dtg.DataSource = tabela;
+            //for (int i = 0; i < dtg.Columns.Count; i++)
+            //{
+            //    if (tabela.Columns.Contains(dtg.Columns[i].Name) == false)
+            //        tabela.Columns.Add(dtg.Columns[i].Name);
+            //}
+
+
         }
 
         private void EstadoEditacao(bool estado)
@@ -244,8 +263,8 @@ namespace GradeDeHorario
             {
                 disciplinaRN = new RegraNegocio.DisciplinaRegraNegocio(this);
 
-                requisitoAntigo = disciplinaRN.SelecionaRequisito(disciplina);
-                dtgDisciplinaRequisito.DataSource = requisitoAntigo;
+                dtgDisciplinaRequisito.DataSource = disciplinaRN.SelecionaRequisito(disciplina);
+                requisitoAntigo = dtgDisciplinaRequisito.DataSource as DataTable;
             }
             catch (Exception ex)
             {
