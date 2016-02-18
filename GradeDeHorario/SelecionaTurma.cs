@@ -14,11 +14,13 @@ namespace GradeDeHorario
     {
         RegraNegocio.TurmaRegraNegocio turmaRN = new RegraNegocio.TurmaRegraNegocio();
         DataGridView tabelaTurma;
+        string disciplina;
 
-        public frmSelecionaTurma(ref DataGridView tabelaTurma)
+        public frmSelecionaTurma(ref DataGridView tabelaTurma, string disciplina)
         {
             InitializeComponent();
             this.tabelaTurma = tabelaTurma;
+            this.disciplina = disciplina;
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
@@ -33,6 +35,9 @@ namespace GradeDeHorario
             dtgSelecionaTurma.ClearSelection();
         }
 
+        /// <summary>
+        /// Listagem na tabela de turmas.
+        /// </summary>
         private void ListaTurma()
         {
             turmaRN = new RegraNegocio.TurmaRegraNegocio();
@@ -40,10 +45,36 @@ namespace GradeDeHorario
             try
             {
                 dtgSelecionaTurma.DataSource = turmaRN.SelecionaTodaTurma();
+
+                DesabilitaTurmaAlocada(turmaRN.SelecionaTurmaAlocada(disciplina));
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        /// <summary>
+        /// Desabilita a edição da seleção de turmas que estão alocadas e as indica através da cor vermelha.
+        /// </summary>
+        /// <param name="tabela">Tabela com turmas que estão alocadas</param>
+        private void DesabilitaTurmaAlocada(DataTable tabela)
+        {
+            DataTable dtg = dtgSelecionaTurma.DataSource as DataTable;
+
+            for (int i = 0; i < tabela.Rows.Count; i++)
+            {
+                for (int j = 0; j < dtg.Rows.Count; j++)
+                {
+                    if (dtg.Rows[j].Field<string>("CODIGO_TURMA") == tabela.Rows[i].Field<string>("CODIGO_TURMA"))
+                    {
+                        for (int k = 0; k < dtgSelecionaTurma.Rows[j].Cells.Count; k++)
+                        {
+                            dtgSelecionaTurma[k, j].ReadOnly = true;
+                            dtgSelecionaTurma[k, j].Style.BackColor = Color.LightCoral;
+                        }
+                    }
+                }
             }
         }
 

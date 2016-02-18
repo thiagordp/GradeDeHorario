@@ -24,5 +24,21 @@ namespace RegraNegocio
                 throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
             }
         }
+
+        public DataTable SelecionaTurmaAlocada(string disciplina)
+        {
+            try
+            {
+                turmaAD = new AcessoDados.TurmaAcessoDados();
+
+                return turmaAD.SelecionaTurmaAlocada(disciplina);
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
+            
+        }
     }
 }

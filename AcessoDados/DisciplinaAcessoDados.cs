@@ -516,14 +516,14 @@ namespace AcessoDados
             }
         }
 
-        // Verifica se a disciplina está alocada em alguma(s) fase(s).
+        // Verifica se a disciplina está alocada em alguma(s) turma(s).
         public bool VerificaAlocacao(Modelos.DISCIPLINA disciplina)
         {
             try
             {
                 using (Modelos.Entidade contexto = new Modelos.Entidade())
                 {
-                    if ((contexto.DISCIPLINA.Find(disciplina.CODIGO_DISCIPLINA)).DISCIPLINA_CURSO.Count > 0) { return true; }
+                    if ((contexto.DISCIPLINA_TURMA.Where(p => p.CODIGO_DISCIPLINA == disciplina.CODIGO_DISCIPLINA)).ToList().Count > 0) { return true; }
                 }
 
                 return false;
@@ -560,8 +560,5 @@ namespace AcessoDados
                 return dadosTabela;
             }
         }
-
-
-
     }
 }

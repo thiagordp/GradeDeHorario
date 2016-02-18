@@ -96,7 +96,7 @@ namespace GradeDeHorario
             LimparTexto();
             PreencheVazio(ref dtgDisciplinaRequisito);
             PreencheVazio(ref dtgSelecionaTurma);
-            btnNovo.Enabled = true;
+            txtCodigo.Enabled = btnNovo.Enabled = true;
         }
 
         private void PreencheVazio(ref DataGridView dtg)
@@ -176,14 +176,13 @@ namespace GradeDeHorario
                     disciplinaRN.EditaDisciplina(disciplinaAntiga, disciplina, requisitoAntigo, requisitoNovo, turmaFaseAntigo, turmaFaseNovo);
                 }
 
-                //disciplinaRN.SalvaTurmas(disciplina.CODIGO_DISCIPLINA, turmaFaseAntigo, turmaFaseNovo);
-
                 PreencheTabelaDisciplina();
                 PreencheVazio(ref dtgDisciplinaRequisito);
                 PreencheVazio(ref dtgSelecionaTurma);
 
                 LimparTudo();
-                btnNovo.Enabled = true;
+                txtCodigo.Enabled = btnNovo.Enabled = true;
+
                 MessageBox.Show("Alterações realizadas com sucesso!", "Alterações concluídas", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
@@ -213,8 +212,7 @@ namespace GradeDeHorario
                 {
                     MessageBox.Show("Essa disciplina pertence à turma(s) que já possui(em) horários alocados. \nPortanto, alguns atributos não serão editáveis a menos que seja removidas as alocações.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    txtCodigo.Enabled = dtgDisciplinaRequisito.Enabled = dtgSelecionaTurma.Enabled = false;
-                    btnSelecionaRequisito.Enabled = btnSelecionaTurma.Enabled = false;
+                    txtCodigo.Enabled  = false;
                 }
 
                 txtCodigo.Text = dtgDisciplina.Rows[e.RowIndex].Cells["CODIGO_DISCIPLINA"].Value.ToString();
@@ -326,7 +324,7 @@ namespace GradeDeHorario
 
         private void btnSelecionaTurma_Click(object sender, EventArgs e)
         {
-            (new frmSelecionaTurma(ref dtgSelecionaTurma)).ShowDialog();
+            (new frmSelecionaTurma(ref dtgSelecionaTurma, disciplinaAntiga.CODIGO_DISCIPLINA)).ShowDialog();
 
             turmaFaseNovo = dtgSelecionaTurma.DataSource as DataTable;
         }
