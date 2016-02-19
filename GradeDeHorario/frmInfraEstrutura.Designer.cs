@@ -63,7 +63,7 @@
             this.PROJETOR_ESPACO = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.QUADRO_BRANCO_ESPACO = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.QUADRO_VIDRO_ESPACO = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.DISCIPLINA_TURMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GRADE_TURMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.gbSala.SuspendLayout();
@@ -376,7 +376,7 @@
             this.PROJETOR_ESPACO,
             this.QUADRO_BRANCO_ESPACO,
             this.QUADRO_VIDRO_ESPACO,
-            this.DISCIPLINA_TURMA});
+            this.GRADE_TURMA});
             this.tableLayoutPanel1.SetColumnSpan(this.dtgInfraestrutura, 2);
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
@@ -490,14 +490,14 @@
             this.QUADRO_VIDRO_ESPACO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.QUADRO_VIDRO_ESPACO.Width = 116;
             // 
-            // DISCIPLINA_TURMA
+            // GRADE_TURMA
             // 
-            this.DISCIPLINA_TURMA.DataPropertyName = "DISCIPLINA_TURMA";
-            this.DISCIPLINA_TURMA.HeaderText = "DISCIPLINA_TURMA";
-            this.DISCIPLINA_TURMA.Name = "DISCIPLINA_TURMA";
-            this.DISCIPLINA_TURMA.ReadOnly = true;
-            this.DISCIPLINA_TURMA.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.DISCIPLINA_TURMA.Visible = false;
+            this.GRADE_TURMA.DataPropertyName = "GRADE_TURMA";
+            this.GRADE_TURMA.HeaderText = "DISCIPLINA_TURMA";
+            this.GRADE_TURMA.Name = "GRADE_TURMA";
+            this.GRADE_TURMA.ReadOnly = true;
+            this.GRADE_TURMA.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.GRADE_TURMA.Visible = false;
             // 
             // frmInfraEstrutura
             // 
@@ -559,6 +559,6 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn PROJETOR_ESPACO;
         private System.Windows.Forms.DataGridViewCheckBoxColumn QUADRO_BRANCO_ESPACO;
         private System.Windows.Forms.DataGridViewCheckBoxColumn QUADRO_VIDRO_ESPACO;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DISCIPLINA_TURMA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GRADE_TURMA;
     }
 }

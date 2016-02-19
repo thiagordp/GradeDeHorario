@@ -73,6 +73,19 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="GRADE_TURMA">
+      <EntityTypeMapping TypeName="GradeHorarioModelo.GRADE_TURMA">
+        <MappingFragment StoreEntitySet="GRADE_TURMA">
+          <ScalarProperty Name="DIA_SEMANA_GRADE" ColumnName="DIA_SEMANA_GRADE" />
+          <ScalarProperty Name="HORARIO_GRADE" ColumnName="HORARIO_GRADE" />
+          <ScalarProperty Name="SEQ_SEMESTRE" ColumnName="SEQ_SEMESTRE" />
+          <ScalarProperty Name="CODIGO_CURSO" ColumnName="CODIGO_CURSO" />
+          <ScalarProperty Name="CODIGO_DISCIPLINA" ColumnName="CODIGO_DISCIPLINA" />
+          <ScalarProperty Name="CODIGO_TURMA" ColumnName="CODIGO_TURMA" />
+          <ScalarProperty Name="CODIGO_ESPACO" ColumnName="CODIGO_ESPACO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="PROFESSOR">
       <EntityTypeMapping TypeName="GradeHorarioModelo.PROFESSOR">
         <MappingFragment StoreEntitySet="PROFESSOR">
@@ -97,29 +110,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <AssociationSetMapping Name="ESPACO_TURMA" TypeName="GradeHorarioModelo.ESPACO_TURMA" StoreEntitySet="ESPACO_TURMA">
-      <EndProperty Name="ESPACO">
-        <ScalarProperty Name="CODIGO_ESPACO" ColumnName="CODIGO_ESPACO" />
-      </EndProperty>
-      <EndProperty Name="DISCIPLINA_TURMA">
-        <ScalarProperty Name="SEQ_SEMESTRE" ColumnName="SEQ_SEMESTRE" />
-        <ScalarProperty Name="CODIGO_CURSO" ColumnName="CODIGO_CURSO" />
-        <ScalarProperty Name="CODIGO_DISCIPLINA" ColumnName="CODIGO_DISCIPLINA" />
-        <ScalarProperty Name="CODIGO_TURMA" ColumnName="CODIGO_TURMA" />
-      </EndProperty>
-    </AssociationSetMapping>
-    <AssociationSetMapping Name="GRADE_TURMA" TypeName="GradeHorarioModelo.GRADE_TURMA" StoreEntitySet="GRADE_TURMA">
-      <EndProperty Name="GRADE">
-        <ScalarProperty Name="DIA_SEMANA_GRADE" ColumnName="DIA_SEMANA_GRADE" />
-        <ScalarProperty Name="HORARIO_GRADE" ColumnName="HORARIO_GRADE" />
-      </EndProperty>
-      <EndProperty Name="DISCIPLINA_TURMA">
-        <ScalarProperty Name="SEQ_SEMESTRE" ColumnName="SEQ_SEMESTRE" />
-        <ScalarProperty Name="CODIGO_CURSO" ColumnName="CODIGO_CURSO" />
-        <ScalarProperty Name="CODIGO_DISCIPLINA" ColumnName="CODIGO_DISCIPLINA" />
-        <ScalarProperty Name="CODIGO_TURMA" ColumnName="CODIGO_TURMA" />
-      </EndProperty>
-    </AssociationSetMapping>
     <AssociationSetMapping Name="PRE_REQUISITO" TypeName="GradeHorarioModelo.PRE_REQUISITO" StoreEntitySet="PRE_REQUISITO">
       <EndProperty Name="DISCIPLINA">
         <ScalarProperty Name="CODIGO_DISCIPLINA" ColumnName="CODIGO_DISCIPLINA" />

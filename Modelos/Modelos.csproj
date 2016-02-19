@@ -74,6 +74,9 @@
     <Compile Include="GRADE.cs">
       <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>
+    <Compile Include="GRADE_TURMA.cs">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
     <Compile Include="Modelo.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

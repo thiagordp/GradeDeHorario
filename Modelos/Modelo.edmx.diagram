@@ -4,29 +4,31 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="109cb99ffec64ba98a26fb98e516d94f" Name="Diagram1">
-        <EntityTypeShape EntityType="GradeHorarioModelo.CURSO" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="GradeHorarioModelo.DEPARTAMENTO" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="GradeHorarioModelo.DISCIPLINA" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="GradeHorarioModelo.DISCIPLINA_CURSO" Width="1.5" PointX="5.25" PointY="3.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="GradeHorarioModelo.DISCIPLINA_TURMA" Width="1.5" PointX="7.5" PointY="4.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="GradeHorarioModelo.ESPACO" Width="1.5" PointX="5.25" PointY="7.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="GradeHorarioModelo.GRADE" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="GradeHorarioModelo.PROFESSOR" Width="1.5" PointX="3" PointY="6.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="GradeHorarioModelo.SEMESTRE" Width="1.5" PointX="5.25" PointY="11.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="GradeHorarioModelo.TURMA" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+      <Diagram DiagramId="0c8f0640912d4d638c7ed6ef6c2eb384" Name="Diagram1">
+        <EntityTypeShape EntityType="GradeHorarioModelo.CURSO" Width="1.5" PointX="3" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GradeHorarioModelo.DEPARTAMENTO" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GradeHorarioModelo.DISCIPLINA" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GradeHorarioModelo.DISCIPLINA_CURSO" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GradeHorarioModelo.DISCIPLINA_TURMA" Width="1.5" PointX="7.5" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GradeHorarioModelo.ESPACO" Width="1.5" PointX="7.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GradeHorarioModelo.GRADE" Width="1.5" PointX="7.5" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GradeHorarioModelo.GRADE_TURMA" Width="1.5" PointX="9.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GradeHorarioModelo.PROFESSOR" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GradeHorarioModelo.SEMESTRE" Width="1.5" PointX="5.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GradeHorarioModelo.TURMA" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
         <AssociationConnector Association="GradeHorarioModelo.FK__DISCIPLIN__CODIG__182C9B23" ManuallyRouted="false" />
         <AssociationConnector Association="GradeHorarioModelo.FK__DISCIPLIN__CODIG__2C3393D0" ManuallyRouted="false" />
         <AssociationConnector Association="GradeHorarioModelo.FK__PROFESSOR__CODIG__1ED998B2" ManuallyRouted="false" />
-        <AssociationConnector Association="GradeHorarioModelo.FK__DISCIPLIN__CODIG__32E0915F" ManuallyRouted="false" />
-        <AssociationConnector Association="GradeHorarioModelo.FK__DISCIPLIN__CODIG__33D4B598" ManuallyRouted="false" />
+        <AssociationConnector Association="GradeHorarioModelo.FK__DISCIPLIN__CODIG__2F10007B" ManuallyRouted="false" />
+        <AssociationConnector Association="GradeHorarioModelo.FK__DISCIPLIN__CODIG__300424B4" ManuallyRouted="false" />
         <AssociationConnector Association="GradeHorarioModelo.FK__DISCIPLINA_TURMA__267ABA7A" ManuallyRouted="false" />
         <AssociationConnector Association="GradeHorarioModelo.FK__DISCIPLIN__CODIG__276EDEB3" ManuallyRouted="false" />
         <AssociationConnector Association="GradeHorarioModelo.FK__DISCIPLIN__CODIG__286302EC" ManuallyRouted="false" />
         <AssociationConnector Association="GradeHorarioModelo.FK__DISCIPLIN__CODIG__29572725" ManuallyRouted="false" />
         <AssociationConnector Association="GradeHorarioModelo.FK__DISCIPLIN__SEQ_S__25869641" ManuallyRouted="false" />
-        <AssociationConnector Association="GradeHorarioModelo.ESPACO_TURMA" ManuallyRouted="false" />
-        <AssociationConnector Association="GradeHorarioModelo.GRADE_TURMA" ManuallyRouted="false" />
+        <AssociationConnector Association="GradeHorarioModelo.FK__GRADE_TURMA__32E0915F" ManuallyRouted="false" />
+        <AssociationConnector Association="GradeHorarioModelo.FK__GRADE_TUR__CODIG__30F848ED" ManuallyRouted="false" />
+        <AssociationConnector Association="GradeHorarioModelo.FK__GRADE_TURMA__31EC6D26" ManuallyRouted="false" />
         <AssociationConnector Association="GradeHorarioModelo.PRE_REQUISITO" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>

@@ -32,6 +32,7 @@ namespace Modelos
         public virtual DbSet<DISCIPLINA_TURMA> DISCIPLINA_TURMA { get; set; }
         public virtual DbSet<ESPACO> ESPACO { get; set; }
         public virtual DbSet<GRADE> GRADE { get; set; }
+        public virtual DbSet<GRADE_TURMA> GRADE_TURMA { get; set; }
         public virtual DbSet<PROFESSOR> PROFESSOR { get; set; }
         public virtual DbSet<SEMESTRE> SEMESTRE { get; set; }
         public virtual DbSet<TURMA> TURMA { get; set; }

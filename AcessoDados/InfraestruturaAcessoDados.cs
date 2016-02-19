@@ -93,7 +93,7 @@ public class InfraestruturaAcessoDados
                     throw new Exception("Objeto não encontrado!\n\nVerifique se existe algum outro aplicativo manipulando o banco de dados.");
                 }
 
-                if (tempEspaco.DISCIPLINA_TURMA.Count > 0)
+                if (tempEspaco.GRADE_TURMA.Count > 0)
                 {
                     throw new Exception("O espaço não pode ser excluído pois está alocado em alguma turma.\nDesaloque este espaço para, então, excluí-lo.");
                 }

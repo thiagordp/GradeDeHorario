@@ -17,8 +17,7 @@ namespace Modelos
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public DISCIPLINA_TURMA()
         {
-            this.ESPACO = new HashSet<ESPACO>();
-            this.GRADE = new HashSet<GRADE>();
+            this.GRADE_TURMA = new HashSet<GRADE_TURMA>();
         }
     
         public int SEQ_SEMESTRE { get; set; }
@@ -35,8 +34,6 @@ namespace Modelos
         public virtual PROFESSOR PROFESSOR2 { get; set; }
         public virtual SEMESTRE SEMESTRE { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ESPACO> ESPACO { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GRADE> GRADE { get; set; }
+        public virtual ICollection<GRADE_TURMA> GRADE_TURMA { get; set; }
     }
 }

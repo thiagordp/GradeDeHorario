@@ -17,7 +17,7 @@ namespace Modelos
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public ESPACO()
         {
-            this.DISCIPLINA_TURMA = new HashSet<DISCIPLINA_TURMA>();
+            this.GRADE_TURMA = new HashSet<GRADE_TURMA>();
         }
     
         public string CODIGO_ESPACO { get; set; }
@@ -30,6 +30,6 @@ namespace Modelos
         public Nullable<bool> QUADRO_BRANCO_ESPACO { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DISCIPLINA_TURMA> DISCIPLINA_TURMA { get; set; }
+        public virtual ICollection<GRADE_TURMA> GRADE_TURMA { get; set; }
     }
 }

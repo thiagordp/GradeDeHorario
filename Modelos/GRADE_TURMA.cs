@@ -12,18 +12,18 @@ namespace Modelos
     using System;
     using System.Collections.Generic;
     
-    public partial class GRADE
+    public partial class GRADE_TURMA
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public GRADE()
-        {
-            this.GRADE_TURMA = new HashSet<GRADE_TURMA>();
-        }
-    
         public int DIA_SEMANA_GRADE { get; set; }
         public int HORARIO_GRADE { get; set; }
+        public int SEQ_SEMESTRE { get; set; }
+        public int CODIGO_CURSO { get; set; }
+        public string CODIGO_DISCIPLINA { get; set; }
+        public string CODIGO_TURMA { get; set; }
+        public string CODIGO_ESPACO { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GRADE_TURMA> GRADE_TURMA { get; set; }
+        public virtual DISCIPLINA_TURMA DISCIPLINA_TURMA { get; set; }
+        public virtual ESPACO ESPACO { get; set; }
+        public virtual GRADE GRADE { get; set; }
     }
 }
