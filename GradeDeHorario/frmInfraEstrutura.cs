@@ -35,6 +35,8 @@ namespace GradeDeHorario
             {
                 Modelos.ESPACO espaco = new Modelos.ESPACO();
 
+
+
                 espaco.CODIGO_ESPACO = txtIdentificacao.Text;
                 espaco.CAPACIDADE_ESPACO = Convert.ToInt32(nudCapacidade.Value);
                 espaco.TIPO_ESPACO = cbbTipoEspaco.SelectedItem.ToString();
@@ -42,7 +44,7 @@ namespace GradeDeHorario
                 espaco.PROJETOR_ESPACO = chkProjetor.Checked;
                 espaco.INTERNET_ESPACO = chkInternet.Checked;
                 espaco.QUADRO_BRANCO_ESPACO = chkQuadroBranco.Checked;
-                espaco.QUADRO_VIDRO_ESPACO = chkQuadroBranco.Checked;
+                espaco.QUADRO_VIDRO_ESPACO = chkQuadroVidro.Checked;
 
                 infraEstruturaRN = new InfraestruturaRegraNegocio();
 
@@ -165,6 +167,7 @@ namespace GradeDeHorario
             {
                 infraEstruturaRN = new InfraestruturaRegraNegocio();
                 dtgInfraestrutura.DataSource = infraEstruturaRN.SelecionaTodaInfraEstrutura();
+                dtgInfraestrutura.ClearSelection();
             }
             catch (Exception ex)
             {

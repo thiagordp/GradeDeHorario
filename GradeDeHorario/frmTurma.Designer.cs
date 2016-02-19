@@ -275,6 +275,7 @@
             // 
             // txtTurma
             // 
+            this.txtTurma.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tableLayoutPanel4.SetColumnSpan(this.txtTurma, 3);
             this.txtTurma.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtTurma.Enabled = false;

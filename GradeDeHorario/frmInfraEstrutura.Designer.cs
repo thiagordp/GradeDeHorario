@@ -30,6 +30,8 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInfraEstrutura));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnNovo = new System.Windows.Forms.ToolStripButton();
@@ -351,6 +353,7 @@
             this.dtgInfraestrutura.AllowUserToDeleteRows = false;
             this.dtgInfraestrutura.AllowUserToResizeColumns = false;
             this.dtgInfraestrutura.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dtgInfraestrutura.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgInfraestrutura.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
@@ -375,11 +378,27 @@
             this.QUADRO_VIDRO_ESPACO,
             this.DISCIPLINA_TURMA});
             this.tableLayoutPanel1.SetColumnSpan(this.dtgInfraestrutura, 2);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgInfraestrutura.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgInfraestrutura.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgInfraestrutura.Location = new System.Drawing.Point(10, 110);
             this.dtgInfraestrutura.Margin = new System.Windows.Forms.Padding(5);
             this.dtgInfraestrutura.MultiSelect = false;
             this.dtgInfraestrutura.Name = "dtgInfraestrutura";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 8F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgInfraestrutura.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dtgInfraestrutura.RowHeadersVisible = false;
             this.dtgInfraestrutura.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgInfraestrutura.Size = new System.Drawing.Size(784, 252);
@@ -449,9 +468,10 @@
             // 
             // QUADRO_BRANCO_ESPACO
             // 
-            this.QUADRO_BRANCO_ESPACO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.QUADRO_BRANCO_ESPACO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.QUADRO_BRANCO_ESPACO.DataPropertyName = "QUADRO_BRANCO_ESPACO";
             this.QUADRO_BRANCO_ESPACO.HeaderText = "Quadro branco";
+            this.QUADRO_BRANCO_ESPACO.MinimumWidth = 100;
             this.QUADRO_BRANCO_ESPACO.Name = "QUADRO_BRANCO_ESPACO";
             this.QUADRO_BRANCO_ESPACO.ReadOnly = true;
             this.QUADRO_BRANCO_ESPACO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -460,9 +480,10 @@
             // 
             // QUADRO_VIDRO_ESPACO
             // 
-            this.QUADRO_VIDRO_ESPACO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.QUADRO_VIDRO_ESPACO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.QUADRO_VIDRO_ESPACO.DataPropertyName = "QUADRO_VIDRO_ESPACO";
             this.QUADRO_VIDRO_ESPACO.HeaderText = "Quadro de vidro";
+            this.QUADRO_VIDRO_ESPACO.MinimumWidth = 100;
             this.QUADRO_VIDRO_ESPACO.Name = "QUADRO_VIDRO_ESPACO";
             this.QUADRO_VIDRO_ESPACO.ReadOnly = true;
             this.QUADRO_VIDRO_ESPACO.Resizable = System.Windows.Forms.DataGridViewTriState.False;

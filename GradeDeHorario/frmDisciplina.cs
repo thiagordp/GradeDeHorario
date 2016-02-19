@@ -105,8 +105,8 @@ namespace GradeDeHorario
 
             if (dtg.Name == "dtgDisciplinaRequisito")
             {
-                tabela.Columns.Add("CODIGO_DISCIPLINA_REQUISITO");
-                tabela.Columns.Add("NOME_DISCIPLINA_REQUISITO");
+                tabela.Columns.Add("CODIGO_DISCIPLINA");
+                tabela.Columns.Add("NOME_DISCIPLINA");
 
                 dtg.DataSource = tabela;
 
