@@ -430,7 +430,7 @@ namespace GradeDeHorario
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw new Exception(ex.Message);
             }
         }
 
