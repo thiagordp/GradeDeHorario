@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTurma));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnNovo = new System.Windows.Forms.ToolStripButton();
@@ -42,20 +43,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.dtgSemestre = new System.Windows.Forms.DataGridView();
-            this.CODIGO_TURMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NOME_SEMESTRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtTurma = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cbbSemestre = new System.Windows.Forms.ComboBox();
             this.dtgTurma = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SEMESTRE_TURMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CODIGO_TURMA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -89,10 +83,12 @@
             this.btnNovo.Size = new System.Drawing.Size(44, 59);
             this.btnNovo.Text = "Novo";
             this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // btnCancelar
             // 
             this.btnCancelar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnCancelar.Enabled = false;
             this.btnCancelar.Image = global::GradeDeHorario.Properties.Resources.ic_menu_close;
             this.btnCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(5);
@@ -100,10 +96,12 @@
             this.btnCancelar.Size = new System.Drawing.Size(57, 59);
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnExcluir
             // 
             this.btnExcluir.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnExcluir.Enabled = false;
             this.btnExcluir.Image = global::GradeDeHorario.Properties.Resources.ic_delete;
             this.btnExcluir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExcluir.Margin = new System.Windows.Forms.Padding(5);
@@ -111,10 +109,12 @@
             this.btnExcluir.Size = new System.Drawing.Size(45, 59);
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnSalvar
             // 
             this.btnSalvar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnSalvar.Enabled = false;
             this.btnSalvar.Image = global::GradeDeHorario.Properties.Resources.ic_button;
             this.btnSalvar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(5);
@@ -122,6 +122,7 @@
             this.btnSalvar.Size = new System.Drawing.Size(44, 59);
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -208,7 +209,6 @@
             this.dtgSemestre.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dtgSemestre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgSemestre.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CODIGO_TURMA,
             this.NOME_SEMESTRE});
             this.tableLayoutPanel1.SetColumnSpan(this.dtgSemestre, 2);
             this.dtgSemestre.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -219,13 +219,6 @@
             this.dtgSemestre.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dtgSemestre.Size = new System.Drawing.Size(336, 217);
             this.dtgSemestre.TabIndex = 1;
-            // 
-            // CODIGO_TURMA
-            // 
-            this.CODIGO_TURMA.HeaderText = "Código";
-            this.CODIGO_TURMA.Name = "CODIGO_TURMA";
-            this.CODIGO_TURMA.ReadOnly = true;
-            this.CODIGO_TURMA.Visible = false;
             // 
             // NOME_SEMESTRE
             // 
@@ -238,16 +231,17 @@
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.dtgTurma, 0, 1);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Controls.Add(this.dtgTurma, 1, 1);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 69);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(5);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(342, 278);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
@@ -259,82 +253,35 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Controls.Add(this.textBox1, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.label4, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.txtTurma, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label5, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.cbbSemestre, 3, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(336, 49);
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(336, 24);
             this.tableLayoutPanel4.TabIndex = 0;
-            // 
-            // textBox1
-            // 
-            this.tableLayoutPanel4.SetColumnSpan(this.textBox1, 3);
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(53, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(280, 20);
-            this.textBox1.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(3, 24);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 25);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Nome:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Enabled = false;
             this.label4.Location = new System.Drawing.Point(3, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 24);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Código:";
+            this.label4.Text = "Turma:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtTurma
             // 
+            this.tableLayoutPanel4.SetColumnSpan(this.txtTurma, 3);
             this.txtTurma.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtTurma.Enabled = false;
             this.txtTurma.Location = new System.Drawing.Point(53, 3);
             this.txtTurma.Name = "txtTurma";
-            this.txtTurma.Size = new System.Drawing.Size(74, 20);
+            this.txtTurma.Size = new System.Drawing.Size(280, 20);
             this.txtTurma.TabIndex = 2;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(133, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 24);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Semestre:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // cbbSemestre
-            // 
-            this.cbbSemestre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbbSemestre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbSemestre.FormattingEnabled = true;
-            this.cbbSemestre.Location = new System.Drawing.Point(193, 3);
-            this.cbbSemestre.Name = "cbbSemestre";
-            this.cbbSemestre.Size = new System.Drawing.Size(140, 21);
-            this.cbbSemestre.TabIndex = 5;
             // 
             // dtgTurma
             // 
@@ -342,47 +289,43 @@
             this.dtgTurma.AllowUserToDeleteRows = false;
             this.dtgTurma.AllowUserToResizeColumns = false;
             this.dtgTurma.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dtgTurma.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgTurma.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgTurma.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dtgTurma.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dtgTurma.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgTurma.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.SEMESTRE_TURMA});
+            this.CODIGO_TURMA});
             this.tableLayoutPanel3.SetColumnSpan(this.dtgTurma, 2);
-            this.dtgTurma.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgTurma.Location = new System.Drawing.Point(3, 58);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgTurma.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgTurma.Location = new System.Drawing.Point(5, 35);
+            this.dtgTurma.Margin = new System.Windows.Forms.Padding(5);
             this.dtgTurma.Name = "dtgTurma";
             this.dtgTurma.ReadOnly = true;
             this.dtgTurma.RowHeadersVisible = false;
             this.dtgTurma.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dtgTurma.Size = new System.Drawing.Size(336, 217);
+            this.dtgTurma.Size = new System.Drawing.Size(332, 238);
             this.dtgTurma.TabIndex = 1;
+            this.dtgTurma.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgTurma_CellContentClick);
             // 
-            // dataGridViewTextBoxColumn1
+            // CODIGO_TURMA
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Código";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nome";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // SEMESTRE_TURMA
-            // 
-            this.SEMESTRE_TURMA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.SEMESTRE_TURMA.HeaderText = "Semestre";
-            this.SEMESTRE_TURMA.Name = "SEMESTRE_TURMA";
-            this.SEMESTRE_TURMA.ReadOnly = true;
-            this.SEMESTRE_TURMA.Width = 76;
+            this.CODIGO_TURMA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CODIGO_TURMA.DataPropertyName = "CODIGO_TURMA";
+            this.CODIGO_TURMA.HeaderText = "Código";
+            this.CODIGO_TURMA.Name = "CODIGO_TURMA";
+            this.CODIGO_TURMA.ReadOnly = true;
             // 
             // frmTurma
             // 
@@ -400,6 +343,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Turmas";
+            this.Load += new System.EventHandler(this.frmTurma_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -432,17 +376,10 @@
         private System.Windows.Forms.ToolStripButton btnExcluir;
         private System.Windows.Forms.ToolStripButton btnCancelar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.DataGridView dtgTurma;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtTurma;
-        private System.Windows.Forms.DataGridView dtgTurma;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cbbSemestre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SEMESTRE_TURMA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
     }
 }
