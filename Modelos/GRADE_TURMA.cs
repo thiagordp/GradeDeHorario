@@ -16,10 +16,7 @@ namespace Modelos
     {
         public int DIA_SEMANA_GRADE { get; set; }
         public int HORARIO_GRADE { get; set; }
-        public int SEQ_SEMESTRE { get; set; }
-        public int CODIGO_CURSO { get; set; }
-        public string CODIGO_DISCIPLINA { get; set; }
-        public string CODIGO_TURMA { get; set; }
+        public int SEQ_DISCIPLINA_TURMA { get; set; }
         public string CODIGO_ESPACO { get; set; }
     
         public virtual DISCIPLINA_TURMA DISCIPLINA_TURMA { get; set; }

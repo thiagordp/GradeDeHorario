@@ -20,8 +20,9 @@ namespace Modelos
             this.GRADE_TURMA = new HashSet<GRADE_TURMA>();
         }
     
-        public int SEQ_SEMESTRE { get; set; }
-        public int CODIGO_CURSO { get; set; }
+        public int SEQ_DISCIPLINA_TURMA { get; set; }
+        public Nullable<int> SEQ_SEMESTRE { get; set; }
+        public Nullable<int> CODIGO_CURSO { get; set; }
         public string CODIGO_DISCIPLINA { get; set; }
         public string CODIGO_TURMA { get; set; }
         public Nullable<int> CODIGO_PROFESSOR1 { get; set; }

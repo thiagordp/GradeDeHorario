@@ -404,7 +404,7 @@ namespace GradeDeHorario
                         DataGridView grade = tblGrade.GetControlFromPosition(coluna, linha) as DataGridView;
 
                         string disciplina = query.Rows[i].Field<string>("CODIGO_DISCIPLINA");
-                        string turma = query.Rows[i].Field<string>("NOME_TURMA");
+                        string turma = query.Rows[i].Field<string>("CODIGO_TURMA");
                         string espaco = query.Rows[i].Field<string>("CODIGO_ESPACO");
 
                         int? prof1 = query.Rows[i].Field<int?>("CODIGO_PROFESSOR1");        // 'int?' é um int anulável.

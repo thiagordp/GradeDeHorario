@@ -48,15 +48,13 @@
   </EntityType>
   <EntityType Name="DISCIPLINA_TURMA">
     <Key>
-      <PropertyRef Name="SEQ_SEMESTRE" />
-      <PropertyRef Name="CODIGO_CURSO" />
-      <PropertyRef Name="CODIGO_DISCIPLINA" />
-      <PropertyRef Name="CODIGO_TURMA" />
+      <PropertyRef Name="SEQ_DISCIPLINA_TURMA" />
     </Key>
-    <Property Name="SEQ_SEMESTRE" Type="Int32" Nullable="false" />
-    <Property Name="CODIGO_CURSO" Type="Int32" Nullable="false" />
-    <Property Name="CODIGO_DISCIPLINA" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="CODIGO_TURMA" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SEQ_DISCIPLINA_TURMA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SEQ_SEMESTRE" Type="Int32" />
+    <Property Name="CODIGO_CURSO" Type="Int32" />
+    <Property Name="CODIGO_DISCIPLINA" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+    <Property Name="CODIGO_TURMA" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
     <Property Name="CODIGO_PROFESSOR1" Type="Int32" />
     <Property Name="CODIGO_PROFESSOR2" Type="Int32" />
     <Property Name="CODIGO_PROFESSOR3" Type="Int32" />
@@ -65,7 +63,7 @@
     <NavigationProperty Name="PROFESSOR1" Relationship="Self.FK__DISCIPLIN__CODIG__286302EC" FromRole="DISCIPLINA_TURMA" ToRole="PROFESSOR" />
     <NavigationProperty Name="PROFESSOR2" Relationship="Self.FK__DISCIPLIN__CODIG__29572725" FromRole="DISCIPLINA_TURMA" ToRole="PROFESSOR" />
     <NavigationProperty Name="SEMESTRE" Relationship="Self.FK__DISCIPLIN__SEQ_S__25869641" FromRole="DISCIPLINA_TURMA" ToRole="SEMESTRE" />
-    <NavigationProperty Name="GRADE_TURMA" Relationship="Self.FK__GRADE_TURMA__32E0915F" FromRole="DISCIPLINA_TURMA" ToRole="GRADE_TURMA" />
+    <NavigationProperty Name="GRADE_TURMA" Relationship="Self.FK__GRADE_TUR__SEQ_D__32E0915F" FromRole="DISCIPLINA_TURMA" ToRole="GRADE_TURMA" />
   </EntityType>
   <EntityType Name="ESPACO">
     <Key>
@@ -94,19 +92,13 @@
     <Key>
       <PropertyRef Name="DIA_SEMANA_GRADE" />
       <PropertyRef Name="HORARIO_GRADE" />
-      <PropertyRef Name="SEQ_SEMESTRE" />
-      <PropertyRef Name="CODIGO_CURSO" />
-      <PropertyRef Name="CODIGO_DISCIPLINA" />
-      <PropertyRef Name="CODIGO_TURMA" />
+      <PropertyRef Name="SEQ_DISCIPLINA_TURMA" />
     </Key>
     <Property Name="DIA_SEMANA_GRADE" Type="Int32" Nullable="false" />
     <Property Name="HORARIO_GRADE" Type="Int32" Nullable="false" />
-    <Property Name="SEQ_SEMESTRE" Type="Int32" Nullable="false" />
-    <Property Name="CODIGO_CURSO" Type="Int32" Nullable="false" />
-    <Property Name="CODIGO_DISCIPLINA" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="CODIGO_TURMA" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SEQ_DISCIPLINA_TURMA" Type="Int32" Nullable="false" />
     <Property Name="CODIGO_ESPACO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="DISCIPLINA_TURMA" Relationship="Self.FK__GRADE_TURMA__32E0915F" FromRole="GRADE_TURMA" ToRole="DISCIPLINA_TURMA" />
+    <NavigationProperty Name="DISCIPLINA_TURMA" Relationship="Self.FK__GRADE_TUR__SEQ_D__32E0915F" FromRole="GRADE_TURMA" ToRole="DISCIPLINA_TURMA" />
     <NavigationProperty Name="ESPACO" Relationship="Self.FK__GRADE_TUR__CODIG__30F848ED" FromRole="GRADE_TURMA" ToRole="ESPACO" />
     <NavigationProperty Name="GRADE" Relationship="Self.FK__GRADE_TURMA__31EC6D26" FromRole="GRADE_TURMA" ToRole="GRADE" />
   </EntityType>
@@ -198,7 +190,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK__DISCIPLINA_TURMA__267ABA7A">
-    <End Role="DISCIPLINA_CURSO" Type="Self.DISCIPLINA_CURSO" Multiplicity="1" />
+    <End Role="DISCIPLINA_CURSO" Type="Self.DISCIPLINA_CURSO" Multiplicity="0..1" />
     <End Role="DISCIPLINA_TURMA" Type="Self.DISCIPLINA_TURMA" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="DISCIPLINA_CURSO">
@@ -250,7 +242,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK__DISCIPLIN__SEQ_S__25869641">
-    <End Role="SEMESTRE" Type="Self.SEMESTRE" Multiplicity="1" />
+    <End Role="SEMESTRE" Type="Self.SEMESTRE" Multiplicity="0..1" />
     <End Role="DISCIPLINA_TURMA" Type="Self.DISCIPLINA_TURMA" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="SEMESTRE">
@@ -261,21 +253,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__GRADE_TURMA__32E0915F">
+  <Association Name="FK__GRADE_TUR__SEQ_D__32E0915F">
     <End Role="DISCIPLINA_TURMA" Type="Self.DISCIPLINA_TURMA" Multiplicity="1" />
     <End Role="GRADE_TURMA" Type="Self.GRADE_TURMA" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="DISCIPLINA_TURMA">
-        <PropertyRef Name="SEQ_SEMESTRE" />
-        <PropertyRef Name="CODIGO_CURSO" />
-        <PropertyRef Name="CODIGO_DISCIPLINA" />
-        <PropertyRef Name="CODIGO_TURMA" />
+        <PropertyRef Name="SEQ_DISCIPLINA_TURMA" />
       </Principal>
       <Dependent Role="GRADE_TURMA">
-        <PropertyRef Name="SEQ_SEMESTRE" />
-        <PropertyRef Name="CODIGO_CURSO" />
-        <PropertyRef Name="CODIGO_DISCIPLINA" />
-        <PropertyRef Name="CODIGO_TURMA" />
+        <PropertyRef Name="SEQ_DISCIPLINA_TURMA" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -361,7 +347,7 @@
       <End Role="SEMESTRE" EntitySet="SEMESTRE" />
       <End Role="DISCIPLINA_TURMA" EntitySet="DISCIPLINA_TURMA" />
     </AssociationSet>
-    <AssociationSet Name="FK__GRADE_TURMA__32E0915F" Association="Self.FK__GRADE_TURMA__32E0915F">
+    <AssociationSet Name="FK__GRADE_TUR__SEQ_D__32E0915F" Association="Self.FK__GRADE_TUR__SEQ_D__32E0915F">
       <End Role="DISCIPLINA_TURMA" EntitySet="DISCIPLINA_TURMA" />
       <End Role="GRADE_TURMA" EntitySet="GRADE_TURMA" />
     </AssociationSet>

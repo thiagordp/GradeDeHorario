@@ -49,8 +49,22 @@ namespace AcessoDados
 
             string nomeSemestre = (new Modelos.Entidade()).SEMESTRE.Find(semestre).NOME_SEMESTRE;
 
-            sql.Append("SELECT GRD.HORARIO_GRADE, GRD.DIA_SEMANA_GRADE, ");
-         
+            sql.Append("SELECT GRD_TRM.HORARIO_GRADE, GRD_TRM.DIA_SEMANA_GRADE,  ");
+            sql.Append("	GRD_TRM.CODIGO_ESPACO, DISC_TRM.CODIGO_TURMA, ");
+            sql.Append("	DISC_TRM.CODIGO_DISCIPLINA, DISC_TRM.CODIGO_PROFESSOR1, ");
+            sql.Append("	DISC_TRM.CODIGO_PROFESSOR2, DISC_TRM.CODIGO_PROFESSOR3 ");
+            sql.Append("FROM ");
+            sql.Append("	DISCIPLINA_TURMA AS DISC_TRM ");
+            sql.Append("    INNER JOIN ");
+            sql.Append("        (SELECT * FROM DISCIPLINA_CURSO AS DISC_CUR ");
+            sql.Append("        WHERE FASE_DISCIPLINA_CURSO = " + fase + " AND CODIGO_CURSO = " + curso.CODIGO_CURSO+ ") AS DISC_CUR");
+            sql.Append("	ON DISC_TRM.CODIGO_CURSO = DISC_CUR.CODIGO_CURSO AND ");
+            sql.Append("	DISC_TRM.CODIGO_DISCIPLINA = DISC_CUR.CODIGO_DISCIPLINA AND ");
+            sql.Append("	DISC_TRM.CODIGO_TURMA = DISC_CUR.CODIGO_TURMA ");
+            sql.Append("	INNER JOIN ");
+            sql.Append("	GRADE_TURMA AS GRD_TRM ");
+            sql.Append("	ON GRD_TRM.SEQ_DISCIPLINA_TURMA = DISC_TRM.SEQ_DISCIPLINA_TURMA ");
+            sql.Append("    WHERE DISC_TRM.SEQ_SEMESTRE = " + semestre);
 
             try
             {
