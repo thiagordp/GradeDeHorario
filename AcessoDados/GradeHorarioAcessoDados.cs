@@ -323,6 +323,24 @@ namespace AcessoDados
         /// </summary>
         /// <param name="novoRegistro">Indicador de novo registro em caso verdadeiro.</param>
         /// <param name="celula">Célula com os dados a serem verificados.</param>
+
+        public int SelectFromHora(Modelos.Celula celula)
+        {
+            var query = (from DISC_TRM in contexto.DISCIPLINA_TURMA.Local
+                         join GRD_TRM in contexto.GRADE_TURMA.Local
+                         on DISC_TRM.SEQ_DISCIPLINA_TURMA.ToString() equals GRD_TRM.SEQ_DISCIPLINA_TURMA.ToString()
+                         where DISC_TRM.CODIGO_TURMA == celula.turma &&
+                             DISC_TRM.CODIGO_DISCIPLINA == celula.disciplina &&
+                             DISC_TRM.SEQ_SEMESTRE == celula.semestre &&
+                             GRD_TRM.DIA_SEMANA_GRADE == celula.dia &&
+                             GRD_TRM.HORARIO_GRADE == celula.hora
+                         select new { DISC_TRM.SEQ_DISCIPLINA_TURMA }).ToList();
+
+            if (query == null) { return 0; }
+
+            return query.Count;
+        }
+
         public void VerificaCelula(bool novoRegistro, Modelos.Celula celula)
         {
             #region Algoritmo
@@ -446,7 +464,7 @@ namespace AcessoDados
         {
             try
             {
-                Modelos.DISCIPLINA_TURMA turma = contexto.DISCIPLINA_TURMA.ToList().Find(p => p.CODIGO_CURSO == curso.CODIGO_CURSO &&
+                /*Modelos.DISCIPLINA_TURMA turma = contexto.DISCIPLINA_TURMA.ToList().Find(p => p.CODIGO_CURSO == curso.CODIGO_CURSO &&
                                                                                   p.CODIGO_DISCIPLINA == celula.disciplina &&
                                                                                   p.CODIGO_TURMA == celula.turma &&
                                                                                   p.SEQ_SEMESTRE == celula.semestre); // Rever keys
@@ -498,7 +516,9 @@ namespace AcessoDados
                 else
                 {
 
-                }
+                }*/
+
+                MessageBox.Show(SelectFromHora(celula).ToString());
             }
             catch (Exception)
             {

@@ -299,7 +299,7 @@ namespace GradeDeHorario
                 celula.fase = Convert.ToInt32(cbbSelectFase.ComboBox.SelectedValue);
                 celula.professores = professores;
                 celula.semestre = Convert.ToInt32(cbbSelectSemestre.ComboBox.SelectedValue);
-
+                celula.turma = turma;
                 gradeRN.InsereCelula(ref tblGrade, celula);
             }
             catch (Exception ex)
