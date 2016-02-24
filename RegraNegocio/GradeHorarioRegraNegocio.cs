@@ -20,12 +20,15 @@ namespace RegraNegocio
         /// </summary>
         private AcessoDados.GradeHorarioAcessoDados gradeAD;
 
+        private Modelos.Entidade contexto;
+
         /// <summary>
         /// Construtor da classe
         /// </summary> 
-        public GradeHorarioRegraNegocio(Modelos.CURSO curso)
+        public GradeHorarioRegraNegocio(Modelos.CURSO curso, ref Modelos.Entidade contexto)
         {
             this.curso = curso;
+            this.contexto = contexto;
         }
 
         /// <summary>
@@ -36,7 +39,7 @@ namespace RegraNegocio
         {
             try
             {
-                gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso);
+                gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
 
                 return gradeAD.SelecionaDisciplina(filtro, fase);
             }
@@ -55,7 +58,7 @@ namespace RegraNegocio
         {
             try
             {
-                gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso);
+                gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
 
                 return gradeAD.SelecionaProfessor(filtro);
             }
@@ -74,7 +77,7 @@ namespace RegraNegocio
         {
             try
             {
-                gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso);
+                gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
 
                 return gradeAD.SelecionaEspaco(filtro);
             }
@@ -86,7 +89,7 @@ namespace RegraNegocio
 
         public DataTable SelecionaTodoSemestre()
         {
-            gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso);
+            gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
 
             return gradeAD.SelecionaTodoSemestre();
         }
@@ -114,6 +117,16 @@ namespace RegraNegocio
             }
         }
 
+        /// <summary>
+        /// REFAZER
+        /// </summary>
+        /// <param name="disciplina"></param>
+        /// <param name="turma"></param>
+        /// <param name="prof1"></param>
+        /// <param name="prof2"></param>
+        /// <param name="prof3"></param>
+        /// <param name="espaco"></param>
+        /// <returns>Informações da célula.</returns>
         public string SelecionaDetalhe(string disciplina, string turma, int prof1, int prof2, int prof3, string espaco)
         {
             StringBuilder msg = new StringBuilder();
@@ -158,16 +171,16 @@ namespace RegraNegocio
 
                 msg.Append("Disciplina:\t\t" + disciplina + " - " + nomeDisciplina + "\n");
                 msg.Append("Turma:\t\t" + turma + "\n");
-                msg.Append("Professor:\t\t" + prof1 + " - " + nomeProf1 + "\n");
+                msg.Append("Professores:\t" + prof1 + " - " + nomeProf1 + "\n");
 
                 if (!prof2.Equals(-1))
                 {
-                    msg.Append("Professor 2:\t" + prof2 + " - " + nomeProf2 + "\n");
+                    msg.Append("\t\t" + prof2 + " - " + nomeProf2 + "\n");
                 }
 
                 if (!prof3.Equals(-1))
                 {
-                    msg.Append("Professor 3:\t" + prof3 + " - " + nomeProf3 + "\n");
+                    msg.Append("\t\t" + prof3 + " - " + nomeProf3 + "\n");
                 }
 
                 msg.Append("Espaço:\t\t" + espaco + "\n  • " + "Tipo:\t\t" + tipoEspaco);
@@ -191,7 +204,7 @@ namespace RegraNegocio
         {
             try
             {
-                gradeAD = new AcessoDados.GradeHorarioAcessoDados(this.curso);
+                gradeAD = new AcessoDados.GradeHorarioAcessoDados(this.curso, ref contexto);
 
                 return gradeAD.SelecionaTodaGrade(fase, semestre);
             }
@@ -202,44 +215,21 @@ namespace RegraNegocio
         }
 
         /// <summary>
-        /// Verifica se é possível inserir a célula indicada no local indicado
+        /// Insere uma nova célula na grade
         /// </summary>
         /// <param name="grade">Formulário da grade</param>
         /// <param name="celula">Célula a ser inserida</param>
-        public void InsereCelula(ref TableLayoutPanel grade, Modelos.Celula celula, ref List<Modelos.Celula> ListaModificacao)
+        public void InsereCelula(ref TableLayoutPanel grade, Modelos.Celula celula)
         {
-            // Verificação se há e qual é a última turma cadastrada da disciplina fase e semestre indicado.
-            gradeAD = new AcessoDados.GradeHorarioAcessoDados(this.curso);
-            DataTable query = gradeAD.SelecionaTurma(celula.disciplina, celula.fase, celula.semestre);
-
-            int turma = 0;
-            string nomeTurma = "";
-
-            if (query.Rows.Count > 0) // Caso já existe alguma turma com as características mais relevantes da célula
+            try
             {
-                turma = query.Rows[0].Field<int>("SEQ_TURMA");
-                nomeTurma = query.Rows[0].Field<string>("NOME_TURMA");
+                gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
 
-                query = gradeAD.SelectNumeroCredito(turma, celula.disciplina);
-
-                int creditoAtual = query.Rows[0].Field<int>("CREDITO_GASTO");
-                int creditoPermitido = query.Rows[0].Field<int>("CREDITO_DISCIPLINA");
-
-                if (creditoAtual < creditoPermitido)
-                {
-                    // inserir na turma indicada
-                    // Verificar se existe a turma atual.
-                }
-                else
-                {
-                    string novaTurma = ProximaTurma(nomeTurma, celula.fase);
-                    // criar nova turma
-                }
+                gradeAD.InsereGrade(ref grade, celula);
             }
-            else // Caso a célula atual seja a primeira a ser cadastrada com tais características relevantes.
+            catch (Exception ex)
             {
-                // Criar uma nova turma
-                // Insere direto.
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
             }
         }
 
@@ -277,6 +267,13 @@ namespace RegraNegocio
             MessageBox.Show(turmaAtual + "\n" + turmaFinal);
 
             return turmaFinal;
+        }
+
+        public void CarregaLocalmente()
+        {
+            gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
+
+            gradeAD.CarregaLocalmente();
         }
     }
 }

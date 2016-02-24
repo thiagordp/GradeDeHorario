@@ -35,7 +35,7 @@ namespace Modelos
 
         public List<int> professores { get; set; }
 
-        public int turma { get; set; }
+        public string turma { get; set; }
 
         public int fase { get; set; }
 

@@ -17,6 +17,8 @@ namespace GradeDeHorario
         private RegraNegocio.GradeHorarioRegraNegocio gradeRN;
         public DataGridView hoverGrade;
 
+        private Modelos.Entidade contextoUniversal;
+
         private List<Modelos.Celula> ListaModificacao;
 
         public frmGradeHorario(Modelos.CURSO curso)
@@ -88,7 +90,7 @@ namespace GradeDeHorario
         {
             try
             {
-                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(curso);
+                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(curso, ref contextoUniversal);
 
                 dtgPesquisaDisciplina.DataSource = gradeRN.SelecionaDisciplina(filtro, fase);
                 dtgPesquisaDisciplina.ClearSelection();
@@ -108,7 +110,7 @@ namespace GradeDeHorario
         {
             try
             {
-                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(curso);
+                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(curso, ref contextoUniversal);
 
                 dtgPesquisaProfessor.DataSource = gradeRN.SelecionaProfessor(filtro);
                 dtgPesquisaProfessor.ClearSelection();
@@ -128,7 +130,7 @@ namespace GradeDeHorario
         {
             try
             {
-                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(curso);
+                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(curso, ref contextoUniversal);
 
                 dtgPesquisaEspaco.DataSource = gradeRN.SelecionaEspaco(filtro);
                 dtgPesquisaEspaco.ClearSelection();
@@ -166,7 +168,7 @@ namespace GradeDeHorario
         {
             try
             {
-                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(curso);
+                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(curso, ref contextoUniversal);
 
                 cbbSelectSemestre.ComboBox.DataSource = gradeRN.SelecionaTodoSemestre();
                 cbbSelectSemestre.ComboBox.ValueMember = "SEQ_SEMESTRE";
@@ -210,10 +212,13 @@ namespace GradeDeHorario
                 PreenchePesquisaDisciplina(txtPesquisaDisciplina.Text, Convert.ToInt32(cbbSelectFase.ComboBox.SelectedValue));
                 PreenchePesquisaProfessor(txtPesquisaProfessor.Text);
                 PreenchePesquisaEspaco(txtPesquisaEspaco.Text);
+
+                this.contextoUniversal = new Modelos.Entidade();
+                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(curso, ref contextoUniversal);
+                gradeRN.CarregaLocalmente();
+
                 cbbSelectFase.Enabled = cbbSelectSemestre.Enabled = btnCarregaGrade.Enabled = btnEditar.Enabled = false;
                 btnCancelar.Enabled = btnSalvar.Enabled = btnGerarRelatorio.Enabled = tblGrade.Enabled = gbDisciplina.Enabled = gbProfessor.Enabled = gbSala.Enabled = true;
-
-                ListaModificacao = new List<Modelos.Celula>();
             }
             catch (Exception ex)
             {
@@ -230,7 +235,8 @@ namespace GradeDeHorario
         {
             try
             {
-
+                contextoUniversal.SaveChanges();
+                MessageBox.Show("Salvo");
             }
             catch (Exception ex)
             {
@@ -276,14 +282,14 @@ namespace GradeDeHorario
             {
                 VerificaSelecaoTabelas();
 
-                string disciplina, espaco;
+                string disciplina, espaco, turma;
                 List<int> professores = new List<int>();
 
-                disciplina = espaco = string.Empty;
+                disciplina = espaco = turma = string.Empty;
 
-                SelecionaCampoMarcado(ref disciplina, ref espaco, ref professores);
+                SelecionaCampoMarcado(ref disciplina, ref espaco, ref professores, ref turma);
 
-                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(this.curso);
+                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(this.curso, ref contextoUniversal);
 
                 Modelos.Celula celula = new Modelos.Celula();
 
@@ -295,7 +301,7 @@ namespace GradeDeHorario
                 celula.professores = professores;
                 celula.semestre = Convert.ToInt32(cbbSelectSemestre.ComboBox.SelectedValue);
 
-                gradeRN.InsereCelula(ref tblGrade, celula, ref ListaModificacao);
+                gradeRN.InsereCelula(ref tblGrade, celula);
             }
             catch (Exception ex)
             {
@@ -330,7 +336,7 @@ namespace GradeDeHorario
 
             try
             {
-                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(this.curso);
+                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(this.curso, ref contextoUniversal);
 
                 string disciplina = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[2].Value.ToString();
                 int prof1 = Convert.ToInt32(hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[5].Value);
@@ -369,16 +375,13 @@ namespace GradeDeHorario
             {
                 MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
-
         }
 
         private void PreencheGrade()
         {
             try
             {
-                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(this.curso);
+                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(this.curso, ref contextoUniversal);
                 gradeRN.VerificaCarregaGrade(
                     this.curso.CODIGO_CURSO,
                     Convert.ToInt32(cbbSelectFase.ComboBox.SelectedValue),
@@ -531,6 +534,11 @@ namespace GradeDeHorario
             }
         }
 
+        /// <summary>
+        /// Limpa a seleção de todas células exceto a que invocou o evento 'CellClick'.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void gradeXX_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             foreach (Control controle in tblGrade.Controls)
@@ -549,7 +557,7 @@ namespace GradeDeHorario
         /// <param name="disciplina">Código da disciplina selecionada.</param>
         /// <param name="espaco">Código do espaco selecionado.</param>
         /// <param name="professores">Lista de código(s) de professor(es) selecionado(s).</param>
-        private void SelecionaCampoMarcado(ref string disciplina, ref string espaco, ref List<int> professores)
+        private void SelecionaCampoMarcado(ref string disciplina, ref string espaco, ref List<int> professores, ref string turma)
         {
             // Conclui a edição das tabelas.
             dtgPesquisaDisciplina.EndEdit();
@@ -562,6 +570,7 @@ namespace GradeDeHorario
                 if (Convert.ToBoolean(dtgPesquisaDisciplina.Rows[i].Cells["SELECT_DISCIPLINA"].Value) == true)
                 {
                     disciplina = dtgPesquisaDisciplina.Rows[i].Cells["COD_DISC_PESQUISA"].Value.ToString();
+                    turma = dtgPesquisaDisciplina.Rows[i].Cells["CODIGO_TURMA"].Value.ToString();
                     break;
                 }
             }
@@ -573,11 +582,11 @@ namespace GradeDeHorario
                 {
                     professores.Add(Convert.ToInt32(dtgPesquisaProfessor.Rows[i].Cells["COD_PROF_PESQUISA"].Value));
 
-                    if (professores.Count > 3) { break; }
+                    if (professores.Count == 3) { break; }
                 }
             }
 
-            // Seleção da disciplina.
+            // Seleção da espaço.
             for (int i = 0; i < dtgPesquisaEspaco.Rows.Count; i++)
             {
                 if (Convert.ToBoolean(dtgPesquisaEspaco.Rows[i].Cells["SELECT_ESPACO"].Value) == true)
