@@ -235,8 +235,7 @@ namespace GradeDeHorario
         {
             try
             {
-                contextoUniversal.SaveChanges();
-                MessageBox.Show("Salvo");
+                MessageBox.Show("Em processo de implementação.", "A ser implementado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex)
             {

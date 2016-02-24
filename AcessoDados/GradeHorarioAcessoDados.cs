@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -264,38 +265,52 @@ namespace AcessoDados
             }
         }
 
-        public void SelectNumeroCredito(int turma, string disciplina)
+        public void TesteQuery()
+        {
+            var query = (from DISC_TRM in contexto.DISCIPLINA_TURMA
+                         join GRD_TRM in contexto.GRADE_TURMA
+                         on DISC_TRM.SEQ_DISCIPLINA_TURMA.ToString() equals GRD_TRM.SEQ_DISCIPLINA_TURMA.ToString()
+                         join DISC in contexto.DISCIPLINA
+                         on DISC_TRM.CODIGO_DISCIPLINA equals DISC.CODIGO_DISCIPLINA
+                         join SEM in contexto.SEMESTRE
+                         on DISC_TRM.SEQ_SEMESTRE.ToString() equals SEM.SEQ_SEMESTRE.ToString()
+                         where
+                            DISC_TRM.CODIGO_DISCIPLINA == "ARA1658" &&
+                            DISC_TRM.CODIGO_TURMA == "06655" &&
+                            SEM.NOME_SEMESTRE == "2016/1"
+                         select new { DISC.CREDITO_DISCIPLINA }).ToList();
+
+            int count = query.Count;
+
+            StringBuilder str = new StringBuilder();
+            str.Append(query.First().CREDITO_DISCIPLINA);
+
+            MessageBox.Show("Creditos max: " + str.ToString() + "\n\nCount: " + count);
+        }
+
+        public void SelectNumeroCredito(string turma, string disciplina, string semestre, ref int countCredito, ref int maxCredito)
         {
             try
             {
+                /* Modelos.GRADE_TURMA grade = contexto.GRADE_TURMA.Local.First();
 
-                //sql.Append("SELECT COUNT(*) AS CREDITO_GASTO, CREDITO_DISCIPLINA FROM DISCIPLINA_TURMA AS DISC_TRM ");
-                //sql.Append("INNER JOIN ");
-                //sql.Append("	(SELECT * FROM TURMA ");
-                //sql.Append("	WHERE SEQ_TURMA = " + turma.ToString() + ") AS TRM ");
-                //sql.Append("	ON DISC_TRM.SEQ_TURMA = TRM.SEQ_TURMA ");
-                //sql.Append("INNER JOIN ");
-                //sql.Append("	(SELECT * FROM DISCIPLINA_CURSO ");
-                //sql.Append("	WHERE CODIGO_DISCIPLINA = '" + disciplina.ToString() + "' ");
-                //sql.Append("		AND CODIGO_CURSO = " + this.curso.CODIGO_CURSO.ToString() + ") AS DISC ");
-                //sql.Append("	ON DISC.SEQ_DISCIPLINA_CURSO = DISC_TRM.SEQ_DISCIPLINA_CURSO ");
-                //sql.Append("INNER JOIN ");
-                //sql.Append("	(SELECT * FROM GRADE_TURMA) AS GRD_TRM ");
-                //sql.Append("	ON GRD_TRM.SEQ_DISCIPLINA_CURSO = DISC_TRM.SEQ_DISCIPLINA_CURSO AND ");
-                //sql.Append("		GRD_TRM.SEQ_TURMA = DISC_TRM.SEQ_TURMA ");
-                //sql.Append("INNER JOIN ");
-                //sql.Append("	(SELECT * FROM DISCIPLINA ");
-                //sql.Append("	WHERE DISCIPLINA.CODIGO_DISCIPLINA = '" + disciplina.ToString() + "') AS DIC ");
-                //sql.Append("	ON DIC.CODIGO_DISCIPLINA = DISC.CODIGO_DISCIPLINA ");
-                //sql.Append("GROUP BY CREDITO_DISCIPLINA ");
+                 contexto.Entry(grade).State = System.Data.Entity.EntityState.Deleted;*/
 
-                var query = from DISC_TRM in contexto.DISCIPLINA_TURMA.Local
-                            join TRM in (from TRM in contexto.TURMA.Local
-                                         where TRM.CODIGO_TURMA == "01655"
-                                         select new { TRM.CODIGO_TURMA })
-                            on DISC_TRM.CODIGO_TURMA.ToString() equals TRM.CODIGO_TURMA
-                            join DISC in (from DISC in contexto.DISCIPLINA_CURSO.Local );
+                var query = (from DISC_TRM in contexto.DISCIPLINA_TURMA.Local
+                             join GRD_TRM in contexto.GRADE_TURMA.Local
+                             on DISC_TRM.SEQ_DISCIPLINA_TURMA.ToString() equals GRD_TRM.SEQ_DISCIPLINA_TURMA.ToString()
+                             join DISC in contexto.DISCIPLINA.Local
+                             on DISC_TRM.CODIGO_DISCIPLINA equals DISC.CODIGO_DISCIPLINA
+                             join SEM in contexto.SEMESTRE.Local
+                             on DISC_TRM.SEQ_SEMESTRE.ToString() equals SEM.SEQ_SEMESTRE.ToString()
+                             where
+                                DISC_TRM.CODIGO_DISCIPLINA == disciplina &&
+                                DISC_TRM.CODIGO_TURMA == turma &&
+                                SEM.NOME_SEMESTRE == semestre
+                             select new { DISC.CREDITO_DISCIPLINA }).ToList();
 
+                countCredito = query.Count();
+                maxCredito = Convert.ToInt32(query.First().CREDITO_DISCIPLINA);
             }
             catch (Exception ex)
             {
@@ -513,44 +528,30 @@ namespace AcessoDados
             Modelos.GRADE_TURMA grd = contexto.GRADE_TURMA.Find();
         }
 
+        /// <summary>
+        /// Cambiarras... muitas cambiarras
+        /// </summary>
         public void CarregaLocalmente()
         {
-            foreach (var disc in contexto.DISCIPLINA.ToList())
-            {
-                foreach (var fase in disc.DISCIPLINA_CURSO.ToList())
-                {
-                    var x = fase.DISCIPLINA;
-                    var y = fase.CURSO;
+            foreach (var disc in contexto.DISCIPLINA.ToList()) { }
 
-                    foreach (var turma in fase.DISCIPLINA_TURMA.ToList())
-                    {
-                        var a = turma.SEMESTRE;
+            foreach (var fase in contexto.DISCIPLINA_CURSO.ToList()) { }
 
-                        foreach (var grade in turma.GRADE_TURMA)
-                        {
-                            var b = grade.ESPACO;
-                        }
-                    }
-                }
-            }
+            foreach (var turma in contexto.DISCIPLINA_TURMA.ToList()) { }
 
-            foreach (var espaco in contexto.ESPACO.ToList())
-            {
-                foreach (var grd in espaco.GRADE_TURMA)
-                {
+            foreach (var grade in contexto.GRADE_TURMA.ToList()) { }
 
-                }
+            foreach (var espaco in contexto.ESPACO.ToList()) { }
 
-            }
+            foreach (var grd in contexto.GRADE.ToList()) { }
 
-            foreach (var grd in contexto.GRADE)
-            {
-                foreach (var item in grd.GRADE_TURMA)
-                {
+            foreach (var item in contexto.PROFESSOR.ToList()) { }
 
-                }
-            }
+            foreach (var item in contexto.SEMESTRE.ToList()) { }
+
+            foreach (var item in contexto.TURMA.ToList()) { }
+
+            foreach (var item in contexto.CURSO.ToList()) { }
         }
-
     }
 }

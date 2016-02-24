@@ -12,19 +12,19 @@ namespace Modelos
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
+
     public partial class Entidade : DbContext
     {
-        public Entidade()
-            : base("name=Entidade")
+        public Entidade() : base("name=Entidade")
         {
+            this.Configuration.LazyLoadingEnabled = false;
         }
-    
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
         }
-    
+
         public virtual DbSet<CURSO> CURSO { get; set; }
         public virtual DbSet<DEPARTAMENTO> DEPARTAMENTO { get; set; }
         public virtual DbSet<DISCIPLINA> DISCIPLINA { get; set; }

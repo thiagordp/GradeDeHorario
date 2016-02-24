@@ -269,11 +269,39 @@ namespace RegraNegocio
             return turmaFinal;
         }
 
+        /// <summary>
+        /// Seleciona o número de créditos gastos e o máximo de uma turma de uma disciplina de um semestre
+        /// </summary>
+        /// <param name="turma"></param>
+        /// <param name="disciplina"></param>
+        /// <param name="semestre"></param>
+        /// <param name="countCredito"></param>
+        /// <param name="maxCredito"></param>
+        public void Credito(string turma, string disciplina, string semestre, ref int countCredito, ref int maxCredito)
+        {
+            try
+            {
+                gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
+                gradeAD.SelectNumeroCredito(turma, disciplina, semestre, ref countCredito, ref maxCredito);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
+        }
+
         public void CarregaLocalmente()
         {
             gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
 
             gradeAD.CarregaLocalmente();
+        }
+
+        public void TesteQuery()
+        {
+            gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
+
+            gradeAD.TesteQuery();
         }
     }
 }
