@@ -214,6 +214,7 @@ namespace RegraNegocio
             }
         }
 
+
         /// <summary>
         /// Insere uma nova célula na grade
         /// </summary>
@@ -297,6 +298,12 @@ namespace RegraNegocio
             gradeAD.CarregaLocalmente();
         }
 
+        public void SelectProfessorFromHora(Modelos.Celula celula)
+        {
+            gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
+
+            gradeAD.SelectProfessorFromHora(celula);
+        }
         public void TesteQuery()
         {
             gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);

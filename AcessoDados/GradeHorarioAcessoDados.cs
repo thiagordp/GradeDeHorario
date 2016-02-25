@@ -324,7 +324,7 @@ namespace AcessoDados
         /// <param name="novoRegistro">Indicador de novo registro em caso verdadeiro.</param>
         /// <param name="celula">Célula com os dados a serem verificados.</param>
 
-        public int SelectFromHora(Modelos.Celula celula)
+        public int SelectGradeFromHora(Modelos.Celula celula)
         {
             var query = (from DISC_TRM in contexto.DISCIPLINA_TURMA.Local
                          join GRD_TRM in contexto.GRADE_TURMA.Local
@@ -339,6 +339,152 @@ namespace AcessoDados
             if (query == null) { return 0; }
 
             return query.Count;
+        }
+
+        public void SelectProfessorFromHora(Modelos.Celula celula)
+        {
+            try
+            {
+                // Verificação do primeiro professor
+                var query = (from DISC_TRM in contexto.DISCIPLINA_TURMA.Local
+                             join GRD_TRM in contexto.GRADE_TURMA.Local
+                             on DISC_TRM.SEQ_DISCIPLINA_TURMA.ToString() equals GRD_TRM.SEQ_DISCIPLINA_TURMA.ToString()
+                             where
+                                DISC_TRM.CODIGO_PROFESSOR1 == celula.professores.ElementAt(0) &&
+                                DISC_TRM.SEQ_SEMESTRE == celula.semestre &&
+                                GRD_TRM.DIA_SEMANA_GRADE == celula.dia &&
+                                GRD_TRM.HORARIO_GRADE == celula.hora
+                             select new
+                             {
+                                 DISC_TRM.PROFESSOR,
+                                 DISC_TRM.CODIGO_TURMA,
+                                 DISC_TRM.CODIGO_DISCIPLINA,
+                                 DISC_TRM.CODIGO_CURSO
+                             }).ToList();
+
+                if (query.Count > 0)
+                {
+                    StringBuilder excecao = new StringBuilder();
+
+                    int codigoCurso = Convert.ToInt32(query.ElementAt(0).CODIGO_CURSO);
+
+                    excecao.Append("O professor:\n\n");
+                    excecao.Append(query.ElementAt(0).PROFESSOR.NOME_PROFESSOR + "\n\n");
+                    excecao.Append("já está alocado, nesse horário, na seguinte turma:");
+                    excecao.Append("\n\nTurma:\t\t" + query.ElementAt(0).CODIGO_TURMA);
+
+                    string codigoDisciplina = query.ElementAt(0).CODIGO_DISCIPLINA;
+                    int curso = Convert.ToInt32(query.ElementAt(0).CODIGO_CURSO);
+
+                    excecao.Append("\nDisciplina:\t\t" + codigoDisciplina);
+                    excecao.Append(" - " + contexto.DISCIPLINA.Find(codigoDisciplina).NOME_DISCIPLINA);
+                    excecao.Append("\nCurso:\t\t" + curso);
+
+                    Modelos.Entidade contextoAux = new Modelos.Entidade();
+
+                    string nomeCurso = contextoAux.CURSO.Find(codigoCurso).NOME_CURSO;
+                    contextoAux.Dispose();
+                    excecao.Append(" - " + nomeCurso);
+
+                    throw new Exception(excecao.ToString());
+                }
+
+
+                if (celula.professores.Count == 1) { return; }
+
+                // Verificação do segundo professor
+
+                var query2 = (from DISC_TRM in contexto.DISCIPLINA_TURMA.Local
+                              join GRD_TRM in contexto.GRADE_TURMA.Local
+                              on DISC_TRM.SEQ_DISCIPLINA_TURMA.ToString() equals GRD_TRM.SEQ_DISCIPLINA_TURMA.ToString()
+                              where
+                                 DISC_TRM.CODIGO_PROFESSOR2 == celula.professores.ElementAt(1) &&
+                                 DISC_TRM.SEQ_SEMESTRE == celula.semestre &&
+                                 GRD_TRM.DIA_SEMANA_GRADE == celula.dia &&
+                                 GRD_TRM.HORARIO_GRADE == celula.hora
+                              select new
+                              {
+                                  DISC_TRM.CODIGO_PROFESSOR2,
+                                  DISC_TRM.CODIGO_TURMA,
+                                  DISC_TRM.CODIGO_DISCIPLINA,
+                                  DISC_TRM.CODIGO_CURSO
+                              }).ToList();
+
+                if (query2.Count > 0)
+                {
+                    StringBuilder excecao = new StringBuilder();
+
+                    string codigoDisciplina = query2.ElementAt(0).CODIGO_DISCIPLINA;
+                    int codigoCurso = Convert.ToInt32(query2.ElementAt(0).CODIGO_CURSO);
+                    int codigoProfessor = Convert.ToInt32(query2.ElementAt(0).CODIGO_PROFESSOR2);
+
+                    excecao.Append("O professor:\n\n");
+                    excecao.Append(contexto.PROFESSOR.Local.Where(p => p.CODIGO_PROFESSOR == codigoProfessor).First().NOME_PROFESSOR + "\n\n");
+                    excecao.Append("já está alocado, nesse horário, na seguinte turma:");
+                    excecao.Append("\n\nTurma:\t\t" + query2.ElementAt(0).CODIGO_TURMA);
+
+                    excecao.Append("\nDisciplina:\t\t" + codigoDisciplina);
+                    excecao.Append(" - " + contexto.DISCIPLINA.Local.Where(p => p.CODIGO_DISCIPLINA == codigoDisciplina).First().NOME_DISCIPLINA);
+                    excecao.Append("\nCurso:\t\t" + codigoCurso);
+
+                    Modelos.Entidade contextoAux = new Modelos.Entidade();
+
+                    string nomeCurso = contextoAux.CURSO.Find(codigoCurso).NOME_CURSO;
+                    contextoAux.Dispose();
+                    excecao.Append(" - " + nomeCurso);
+
+                    throw new Exception(excecao.ToString());
+                }
+
+                if (celula.professores.Count == 2) { return; }
+
+                // Verificação do terceiro professor
+                var query3 = (from DISC_TRM in contexto.DISCIPLINA_TURMA.Local
+                              join GRD_TRM in contexto.GRADE_TURMA.Local
+                              on DISC_TRM.SEQ_DISCIPLINA_TURMA.ToString() equals GRD_TRM.SEQ_DISCIPLINA_TURMA.ToString()
+                              where
+                                 DISC_TRM.CODIGO_PROFESSOR2 == celula.professores.ElementAt(2) &&
+                                 DISC_TRM.SEQ_SEMESTRE == celula.semestre &&
+                                 GRD_TRM.DIA_SEMANA_GRADE == celula.dia &&
+                                 GRD_TRM.HORARIO_GRADE == celula.hora
+                              select new
+                              {
+                                  DISC_TRM.CODIGO_PROFESSOR3,
+                                  DISC_TRM.CODIGO_TURMA,
+                                  DISC_TRM.CODIGO_DISCIPLINA,
+                                  DISC_TRM.CODIGO_CURSO
+                              }).ToList();
+
+                if (query3.Count > 0)
+                {
+                    StringBuilder excecao = new StringBuilder();
+
+                    string codigoDisciplina = query3.ElementAt(0).CODIGO_DISCIPLINA;
+                    int codigoCurso = Convert.ToInt32(query3.ElementAt(0).CODIGO_CURSO);
+                    int codigoProfessor = Convert.ToInt32(query3.ElementAt(0).CODIGO_PROFESSOR3);
+
+                    excecao.Append("O professor:\n\n");
+                    excecao.Append(contexto.PROFESSOR.Local.Where(p => p.CODIGO_PROFESSOR == codigoProfessor).First().NOME_PROFESSOR + "\n\n");
+                    excecao.Append("já está alocado, nesse horário, na seguinte turma:");
+                    excecao.Append("\n\nTurma:\t\t" + query3.ElementAt(0).CODIGO_TURMA);
+
+                    excecao.Append("\nDisciplina:\t\t" + codigoDisciplina);
+                    excecao.Append(" - " + contexto.DISCIPLINA.Local.Where(p => p.CODIGO_DISCIPLINA == codigoDisciplina).First().NOME_DISCIPLINA);
+                    excecao.Append("\nCurso:\t\t" + codigoCurso);
+
+                    Modelos.Entidade contextoAux = new Modelos.Entidade();
+
+                    string nomeCurso = contextoAux.CURSO.Find(codigoCurso).NOME_CURSO;
+                    contextoAux.Dispose();
+                    excecao.Append(" - " + nomeCurso);
+
+                    throw new Exception(excecao.ToString());
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public void VerificaCelula(bool novoRegistro, Modelos.Celula celula)
@@ -518,7 +664,7 @@ namespace AcessoDados
 
                 }*/
 
-                MessageBox.Show(SelectFromHora(celula).ToString());
+                MessageBox.Show(SelectGradeFromHora(celula).ToString());
             }
             catch (Exception)
             {
