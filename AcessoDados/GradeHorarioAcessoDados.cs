@@ -27,7 +27,6 @@ namespace AcessoDados
             this.contexto = contexto;
         }
 
-
         /// <summary>
         /// Retorna toda uma grade a partir dos atributos
         /// </summary>
@@ -265,37 +264,129 @@ namespace AcessoDados
             }
         }
 
-        public void TesteQuery()
+        /// <summary>
+        /// Verifica se a celula atender as seguintes condições:
+        ///     - Caso exista alguma célula neste horário, não pode haver uma mesma turma com a mesma disciplina
+        ///     - 
+        /// </summary>
+        /// <param name="celula">Contém o conteúdo da posição da grade e turma.</param>
+        public void SelectDisciplinaTurma(Modelos.Celula celula)
         {
-            var query = (from DISC_TRM in contexto.DISCIPLINA_TURMA
-                         join GRD_TRM in contexto.GRADE_TURMA
-                         on DISC_TRM.SEQ_DISCIPLINA_TURMA.ToString() equals GRD_TRM.SEQ_DISCIPLINA_TURMA.ToString()
-                         join DISC in contexto.DISCIPLINA
-                         on DISC_TRM.CODIGO_DISCIPLINA equals DISC.CODIGO_DISCIPLINA
-                         join SEM in contexto.SEMESTRE
-                         on DISC_TRM.SEQ_SEMESTRE.ToString() equals SEM.SEQ_SEMESTRE.ToString()
-                         where
-                            DISC_TRM.CODIGO_DISCIPLINA == "ARA1658" &&
-                            DISC_TRM.CODIGO_TURMA == "06655" &&
-                            SEM.NOME_SEMESTRE == "2016/1"
-                         select new { DISC.CREDITO_DISCIPLINA }).ToList();
+            try
+            {
+                // Verificação de uma mesma disciplina com mesma turma com o mesmo horário.
+                var query1 = (from DISC_TRM in contexto.DISCIPLINA_TURMA.Local
+                              join GRD_TRM in contexto.GRADE_TURMA.Local
+                              on DISC_TRM.SEQ_DISCIPLINA_TURMA.ToString() equals GRD_TRM.SEQ_DISCIPLINA_TURMA.ToString()
+                              join SEM in contexto.SEMESTRE.Local
+                              on DISC_TRM.SEQ_SEMESTRE.ToString() equals SEM.SEQ_SEMESTRE.ToString()
+                              where
+                                 DISC_TRM.CODIGO_DISCIPLINA == celula.disciplina &&
+                                 DISC_TRM.CODIGO_TURMA == celula.turma &&
+                                 GRD_TRM.DIA_SEMANA_GRADE == celula.dia &&
+                                 GRD_TRM.HORARIO_GRADE == celula.hora &&
+                                 SEM.SEQ_SEMESTRE == celula.semestre
+                              select new { DISC_TRM.CODIGO_DISCIPLINA, DISC_TRM.CODIGO_TURMA }).ToList();
 
-            int count = query.Count;
+                if (query1.Count > 0)
+                {
+                    throw new Exception("O conjunto de disciplina e turma indicados já está cadastrado nessa dia e horário.");
+                }
 
-            StringBuilder str = new StringBuilder();
-            str.Append(query.First().CREDITO_DISCIPLINA);
+                // Verificação de uma disciplina de turmas diferentes mas professor(es) e espaço igual.
+                var query2 = (from DISC_TRM in contexto.DISCIPLINA_TURMA.Local
+                              join GRD_TRM in contexto.GRADE_TURMA.Local
+                              on DISC_TRM.SEQ_DISCIPLINA_TURMA.ToString() equals GRD_TRM.SEQ_DISCIPLINA_TURMA.ToString()
+                              join SEM in contexto.SEMESTRE.Local
+                              on DISC_TRM.SEQ_SEMESTRE.ToString() equals SEM.SEQ_SEMESTRE.ToString()
+                              where
+                                 DISC_TRM.CODIGO_DISCIPLINA == celula.disciplina &&
+                                 DISC_TRM.CODIGO_TURMA != celula.turma &&
+                                 GRD_TRM.DIA_SEMANA_GRADE == celula.dia &&
+                                 GRD_TRM.HORARIO_GRADE == celula.hora &&
+                                 SEM.SEQ_SEMESTRE == celula.semestre
+                              select new
+                              {
+                                  DISC_TRM.CODIGO_CURSO,
+                                  DISC_TRM.CODIGO_DISCIPLINA,
+                                  DISC_TRM.CODIGO_TURMA,
+                                  DISC_TRM.CODIGO_PROFESSOR1,
+                                  DISC_TRM.CODIGO_PROFESSOR2,
+                                  DISC_TRM.CODIGO_PROFESSOR3,
+                                  GRD_TRM.CODIGO_ESPACO
+                              }).ToList();
 
-            MessageBox.Show("Creditos max: " + str.ToString() + "\n\nCount: " + count);
+                foreach (var item in query2)
+                {
+
+                    // Sim... Estes if's fazem sentido...
+                    if (item.CODIGO_PROFESSOR1 == celula.professores.ElementAt(0) ||
+                        (celula.professores.Count >= 2 && item.CODIGO_PROFESSOR2 == celula.professores.ElementAt(1)) ||
+                        (celula.professores.Count >= 3 && item.CODIGO_PROFESSOR3 == celula.professores.ElementAt(2)) ||
+                        item.CODIGO_ESPACO == celula.espaco)
+                    {
+                        if ((item.CODIGO_PROFESSOR1 != celula.professores.ElementAt(0)) ||
+                            (celula.professores.Count >= 2 && item.CODIGO_PROFESSOR2 != celula.professores.ElementAt(1)) ||
+                            celula.professores.Count >= 3 && item.CODIGO_PROFESSOR3 != celula.professores.ElementAt(2) ||
+                            item.CODIGO_ESPACO != celula.espaco)
+                        {
+                            StringBuilder exception = new StringBuilder();
+
+                            exception.Append("A disciplina " + item.CODIGO_DISCIPLINA);
+                            exception.Append(" será compartilhada com a turma " + item.CODIGO_TURMA);
+
+                            using (Modelos.Entidade contextoAux = new Modelos.Entidade())
+                            {
+                                string nomeCurso = contextoAux.CURSO.Find(item.CODIGO_CURSO).NOME_CURSO;
+
+                                exception.Append(" do curso de " + nomeCurso + ".\n\n");
+                            }
+
+                            exception.Append("Portanto a célula que será inserida/modificada deve atender os seguintes requisitos:\n");
+                            exception.Append("\nDisciplina:\t\t" + item.CODIGO_DISCIPLINA);
+                            exception.Append(" - " + contexto.DISCIPLINA.Find(item.CODIGO_DISCIPLINA).NOME_DISCIPLINA);
+                            exception.Append("\nProfessor(es):\n\t" + item.CODIGO_PROFESSOR1 + " - " + contexto.PROFESSOR.Local.Where(p => p.CODIGO_PROFESSOR == item.CODIGO_PROFESSOR1).First().NOME_PROFESSOR);
+
+                            if (item.CODIGO_PROFESSOR2 != null)
+                            {
+                                exception.Append("\n\t" + item.CODIGO_PROFESSOR2 + " - " + contexto.PROFESSOR.Local.Where(p => p.CODIGO_PROFESSOR == item.CODIGO_PROFESSOR2).First().NOME_PROFESSOR);
+
+                                if (item.CODIGO_PROFESSOR3 != null)
+                                {
+                                    exception.Append("\n\t" + item.CODIGO_PROFESSOR3 + " - " + contexto.PROFESSOR.Local.Where(p => p.CODIGO_PROFESSOR == item.CODIGO_PROFESSOR3).First().NOME_PROFESSOR);
+                                }
+                            }
+
+                            exception.Append("\nEspaço:\t" + item.CODIGO_ESPACO);
+
+                            throw new Exception(exception.ToString());
+                        }
+                    }
+                }
+
+                // Verificação de créditos.
+                int creditoAtual, creditoMax;
+
+                creditoAtual = creditoMax = 0;
+                string semestre = contexto.SEMESTRE.Find(celula.semestre).NOME_SEMESTRE;
+
+                SelectNumeroCredito(celula.turma, celula.disciplina, semestre, ref creditoAtual, ref creditoMax);
+
+                if (creditoAtual == creditoMax)
+                {
+                    throw new Exception("Não é possível alocar a turma e disciplina indicados, pois já atribuiram o número máximo de créditos possíveis (" + creditoMax + ").");
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public void SelectNumeroCredito(string turma, string disciplina, string semestre, ref int countCredito, ref int maxCredito)
         {
             try
             {
-                /* Modelos.GRADE_TURMA grade = contexto.GRADE_TURMA.Local.First();
-
-                 contexto.Entry(grade).State = System.Data.Entity.EntityState.Deleted;*/
-
                 var query = (from DISC_TRM in contexto.DISCIPLINA_TURMA.Local
                              join GRD_TRM in contexto.GRADE_TURMA.Local
                              on DISC_TRM.SEQ_DISCIPLINA_TURMA.ToString() equals GRD_TRM.SEQ_DISCIPLINA_TURMA.ToString()
@@ -389,7 +480,6 @@ namespace AcessoDados
                     throw new Exception(excecao.ToString());
                 }
 
-
                 if (celula.professores.Count == 1) { return; }
 
                 // Verificação do segundo professor
@@ -471,6 +561,59 @@ namespace AcessoDados
                     excecao.Append("\nDisciplina:\t\t" + codigoDisciplina);
                     excecao.Append(" - " + contexto.DISCIPLINA.Local.Where(p => p.CODIGO_DISCIPLINA == codigoDisciplina).First().NOME_DISCIPLINA);
                     excecao.Append("\nCurso:\t\t" + codigoCurso);
+
+                    Modelos.Entidade contextoAux = new Modelos.Entidade();
+
+                    string nomeCurso = contextoAux.CURSO.Find(codigoCurso).NOME_CURSO;
+                    contextoAux.Dispose();
+                    excecao.Append(" - " + nomeCurso);
+
+                    throw new Exception(excecao.ToString());
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public void SelectEspacoFromHora(Modelos.Celula celula)
+        {
+            try
+            {
+                var query = (from DISC_TRM in contexto.DISCIPLINA_TURMA.Local
+                             join GRD_TRM in contexto.GRADE_TURMA.Local
+                             on DISC_TRM.SEQ_DISCIPLINA_TURMA.ToString() equals GRD_TRM.SEQ_DISCIPLINA_TURMA.ToString()
+                             where
+                                GRD_TRM.CODIGO_ESPACO == celula.espaco &&
+                                DISC_TRM.SEQ_SEMESTRE == celula.semestre &&
+                                GRD_TRM.DIA_SEMANA_GRADE == celula.dia &&
+                                GRD_TRM.HORARIO_GRADE == celula.hora
+                             select new
+                             {
+                                 GRD_TRM.CODIGO_ESPACO,
+                                 DISC_TRM.CODIGO_TURMA,
+                                 DISC_TRM.CODIGO_DISCIPLINA,
+                                 DISC_TRM.CODIGO_CURSO
+                             }).ToList();
+
+                if (query.Count > 0)
+                {
+                    StringBuilder excecao = new StringBuilder();
+
+                    int codigoCurso = Convert.ToInt32(query.ElementAt(0).CODIGO_CURSO);
+
+                    excecao.Append("O espaço ");
+                    excecao.Append(query.ElementAt(0).CODIGO_ESPACO);
+                    excecao.Append(" já está alocado, nesse horário, na seguinte turma:");
+                    excecao.Append("\n\nTurma:\t\t" + query.ElementAt(0).CODIGO_TURMA);
+
+                    string codigoDisciplina = query.ElementAt(0).CODIGO_DISCIPLINA;
+                    int curso = Convert.ToInt32(query.ElementAt(0).CODIGO_CURSO);
+
+                    excecao.Append("\nDisciplina:\t\t" + codigoDisciplina);
+                    excecao.Append(" - " + contexto.DISCIPLINA.Find(codigoDisciplina).NOME_DISCIPLINA);
+                    excecao.Append("\nCurso:\t\t" + curso);
 
                     Modelos.Entidade contextoAux = new Modelos.Entidade();
 

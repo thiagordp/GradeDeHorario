@@ -306,7 +306,7 @@ namespace GradeDeHorario
 
                 gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(curso, ref contextoUniversal);
 
-                gradeRN.SelectProfessorFromHora(celula);
+                gradeRN.SelectDisciplinaTurma(celula);
             }
             catch (Exception ex)
             {

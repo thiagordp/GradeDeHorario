@@ -304,11 +304,18 @@ namespace RegraNegocio
 
             gradeAD.SelectProfessorFromHora(celula);
         }
-        public void TesteQuery()
+
+        public void SelectEspacoFromEspaco(Modelos.Celula celula)
+        {
+            gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
+            gradeAD.SelectEspacoFromHora(celula);
+        }
+
+        public void SelectDisciplinaTurma(Modelos.Celula celula)
         {
             gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
 
-            gradeAD.TesteQuery();
+            gradeAD.SelectDisciplinaTurma(celula);
         }
     }
 }
