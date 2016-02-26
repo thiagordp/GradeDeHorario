@@ -226,6 +226,8 @@ namespace RegraNegocio
             {
                 gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
 
+                // Verificações aqui...
+                
                 gradeAD.InsereGrade(ref grade, celula);
             }
             catch (Exception ex)
@@ -315,7 +317,7 @@ namespace RegraNegocio
         {
             gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
 
-            gradeAD.SelectDisciplinaTurma(celula);
+            gradeAD.SelectDisciplinaTurmaFromDiaHora(celula);
         }
     }
 }

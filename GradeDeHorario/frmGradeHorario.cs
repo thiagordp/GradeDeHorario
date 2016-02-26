@@ -235,9 +235,9 @@ namespace GradeDeHorario
         {
             try
             {
+                contextoUniversal.SaveChanges();
 
-
-                MessageBox.Show("Em processo de implementação.", "A ser implementado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Alterações salvas com sucesso.", "Alterações salvas", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -302,11 +302,8 @@ namespace GradeDeHorario
                 celula.professores = professores;
                 celula.semestre = Convert.ToInt32(cbbSelectSemestre.ComboBox.SelectedValue);
                 celula.turma = turma;
-                // gradeRN.InsereCelula(ref tblGrade, celula);
 
-                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(curso, ref contextoUniversal);
-
-                gradeRN.SelectDisciplinaTurma(celula);
+                gradeRN.InsereCelula(ref tblGrade, celula); // Insere na grade
             }
             catch (Exception ex)
             {
