@@ -371,6 +371,8 @@ namespace AcessoDados
                 {
                     throw new Exception("Não é possível alocar a turma e disciplina indicados, pois já atribuiram o número máximo de créditos possíveis (" + creditoMax + ").");
                 }
+
+
             }
             catch (Exception)
             {
@@ -403,8 +405,17 @@ namespace AcessoDados
                                 SEM.NOME_SEMESTRE == semestre
                              select new { DISC.CREDITO_DISCIPLINA }).ToList();
 
-                countCredito = query.Count();
-                maxCredito = Convert.ToInt32(query.First().CREDITO_DISCIPLINA);
+                if (query.Count() == 0)
+                {
+                    countCredito = 0;
+                    maxCredito = Convert.ToInt32(contexto.DISCIPLINA.Local.Where(p => p.CODIGO_DISCIPLINA == disciplina).First().CREDITO_DISCIPLINA);
+
+                }
+                else
+                {
+                    countCredito = query.Count();
+                    maxCredito = Convert.ToInt32(query.First().CREDITO_DISCIPLINA);
+                }
             }
             catch (Exception ex)
             {
@@ -415,7 +426,6 @@ namespace AcessoDados
         /// <summary>
         /// Verifica a disponibilidade de cada disciplina, turma, professores e espaço no horário atual.
         /// </summary>
-        /// <param name="novoRegistro">Indicador de novo registro em caso verdadeiro.</param>
         /// <param name="celula">Célula com os dados a serem verificados.</param>
         public int SelectGradeFromHora(Modelos.Celula celula)
         {
@@ -641,123 +651,6 @@ namespace AcessoDados
         }
 
         /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="novoRegistro"></param>
-        /// <param name="celula"></param>
-        public void VerificaCelula(bool novoRegistro, Modelos.Celula celula)
-        {
-            #region Algoritmo
-            /*
-            Novo Registro:
-                • Verifica disciplina
-                    Sim: • Mesmo prof's e espaço e turma ≠
-                            Sim: • Insere e return;
-                            Não: Prossegue
-
-                            • Verifica turma / disciplina (sem considerar o indíce)
-                                Sim: • Verifica índice
-                                        Sim: erro return
-                                        Não: prosseguir
-                                Não: prosseguir.
-                    Não: • Verifica prof's
-                            Sim: • erro
-                            Não: prossegue
-                         • Verifica Espaco
-                            Sim: erro
-                            Não: prossegue. Insere.
-            */
-            #endregion
-
-            try
-            {
-                // Verificação de todas as alocações no dia, horário e semestre indicados.
-                var alocacao = (from DISC_TRM in contexto.DISCIPLINA_TURMA
-                                join GRD_TRM in contexto.GRADE_TURMA
-                                on DISC_TRM.SEQ_DISCIPLINA_TURMA.ToString() equals GRD_TRM.SEQ_DISCIPLINA_TURMA.ToString()
-                                where GRD_TRM.HORARIO_GRADE == celula.hora &&
-                                     GRD_TRM.DIA_SEMANA_GRADE == celula.dia &&
-                                     DISC_TRM.SEQ_SEMESTRE == celula.semestre
-                                select new
-                                {
-                                    GRD_TRM.HORARIO_GRADE,
-                                    GRD_TRM.DIA_SEMANA_GRADE,
-                                    DISC_TRM.CODIGO_CURSO,
-                                    DISC_TRM.CODIGO_DISCIPLINA,
-                                    DISC_TRM.CODIGO_TURMA,
-                                    DISC_TRM.CODIGO_PROFESSOR1,
-                                    DISC_TRM.CODIGO_PROFESSOR2,
-                                    DISC_TRM.CODIGO_PROFESSOR3,
-                                    GRD_TRM.CODIGO_ESPACO,
-                                    DISC_TRM.SEQ_SEMESTRE,
-                                    DISC_TRM.SEQ_DISCIPLINA_TURMA
-                                }).ToList();
-
-                if (novoRegistro == true)
-                {
-                    foreach (var item in alocacao)
-                    {
-                        if (item.CODIGO_DISCIPLINA == celula.disciplina)
-                        {
-                            if (item.CODIGO_ESPACO == celula.espaco && item.CODIGO_CURSO != curso.CODIGO_CURSO)
-                            {
-                                if (item.CODIGO_CURSO != curso.CODIGO_CURSO)
-                                {
-                                    int countCelula = celula.professores.Count;
-                                    int countItem = 3;
-
-                                    if (item.CODIGO_PROFESSOR3 == null) { countItem--; }
-                                    if (item.CODIGO_PROFESSOR2 == null) { countItem--; }
-
-                                    if (countItem != countCelula)
-                                    {
-                                        // Verificar os professores diferentes e iguais e exibir turma e disciplina.
-
-                                        if (true)
-                                        {
-
-                                        }
-
-                                        throw new Exception("Já existe uma turma desta disciplina em outro curso no mesmo dia e horário. Mas o ");
-                                    }
-
-                                    // Sequência que verifica diferença entre professores.
-                                    if (item.CODIGO_PROFESSOR1 != celula.professores.ElementAt(0))
-                                    {
-                                        throw new Exception("O 1º professor da lista é diferente ao de outra turma da mesma disciplina do curso " + item.CODIGO_CURSO +
-                                            "\n\nTurma:" + item.CODIGO_TURMA + "\nCódigo prof. existente: " + item.CODIGO_PROFESSOR1);
-                                    }
-
-                                    if (countCelula == 2 && item.CODIGO_PROFESSOR2 != celula.professores.ElementAt(1))
-                                    {
-                                        throw new Exception("");
-                                    }
-
-                                    if (countCelula == 3 && item.CODIGO_PROFESSOR3 != celula.professores.ElementAt(2))
-                                    {
-                                        throw new Exception("");
-                                    }
-                                }
-                                return;
-                            }
-                        }
-                    }
-
-
-                }
-
-                else
-                {
-
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
-
-        /// <summary>
         /// Insere uma nova grade no banco de dados
         /// </summary>
         public void InsereGrade(ref TableLayoutPanel grade, Modelos.Celula celula)
@@ -775,7 +668,9 @@ namespace AcessoDados
                     turma.CODIGO_DISCIPLINA = celula.disciplina;
                     turma.CODIGO_TURMA = celula.turma;
                     turma.SEQ_SEMESTRE = celula.semestre;
+
                     LastIndex = contexto.DISCIPLINA_TURMA.Local.OrderByDescending(p => p.SEQ_DISCIPLINA_TURMA).First().SEQ_DISCIPLINA_TURMA + 1;
+
                     turma.SEQ_DISCIPLINA_TURMA = LastIndex;
 
                     turma.CODIGO_PROFESSOR1 = celula.professores.ElementAt(0);
@@ -790,6 +685,7 @@ namespace AcessoDados
                     }
 
                     contexto.DISCIPLINA_TURMA.Add(turma);
+
                 }
 
                 Modelos.GRADE_TURMA horaDia = new Modelos.GRADE_TURMA();
@@ -800,6 +696,8 @@ namespace AcessoDados
                 horaDia.CODIGO_ESPACO = celula.espaco;
 
                 contexto.GRADE_TURMA.Add(horaDia);
+
+                AdicionaCelula(ref grade, celula);
             }
             catch (Exception)
             {
@@ -809,6 +707,25 @@ namespace AcessoDados
 
         /// <summary>
         /// 
+        /// </summary>
+        /// <param name="celula"></param>
+        /// <returns></returns>
+        private int SelectGradeTurma(ref int seq, Modelos.Celula celula)
+        {
+            var query = from DISC_TRM in contexto.DISCIPLINA_TURMA.Local
+                        join GRD_TRM in contexto.GRADE_TURMA.Local
+                        on DISC_TRM.SEQ_DISCIPLINA_TURMA.ToString() equals GRD_TRM.SEQ_DISCIPLINA_TURMA.ToString()
+                        where DISC_TRM.CODIGO_CURSO == this.curso.CODIGO_CURSO &&
+                           DISC_TRM.CODIGO_DISCIPLINA == celula.disciplina &&
+                           DISC_TRM.CODIGO_TURMA == celula.turma &&
+                           DISC_TRM.SEQ_SEMESTRE == celula.semestre
+                        select new { GRD_TRM.HORARIO_GRADE, GRD_TRM.DIA_SEMANA_GRADE };
+
+            return query.Count();
+        }
+
+        /// <summary>
+        /// Verifica se a lista de professores é valida e retorna o último ID de Disciplina_Turma.
         /// </summary>
         /// <param name="celula"></param>
         private int SelectDisciplinaTurma(Modelos.Celula celula)
@@ -839,11 +756,27 @@ namespace AcessoDados
         /// </summary>
         /// <param name="grade"></param>
         /// <param name="celula"></param>
-        private void AdicionaGrade(ref TableLayoutPanel grade, Modelos.Celula celula)
+        private void AdicionaCelula(ref TableLayoutPanel grade, Modelos.Celula celula)
         {
-            DataGridView local = grade.GetControlFromPosition(celula.dia, celula.hora) as DataGridView;
+            DataGridView posicao = grade.GetControlFromPosition(celula.dia, celula.hora) as DataGridView;
 
-            local.Rows.Add(celula.hora, celula.dia, celula.disciplina, celula.turma, celula.espaco, celula.espaco, celula.professores.ElementAt(0), celula.professores.ElementAt(1), celula.professores.ElementAt(2));
+            if (celula.professores.Count == 1)
+            {
+                posicao.Rows.Add(celula.hora, celula.dia, celula.disciplina, celula.turma, celula.espaco, celula.espaco, celula.professores.ElementAt(0));
+            }
+            else if (celula.professores.Count == 2)
+            {
+                posicao.Rows.Add(celula.hora, celula.dia, celula.disciplina, celula.turma, celula.espaco, celula.espaco, celula.professores.ElementAt(0), celula.professores.ElementAt(1));
+            }
+            else if (celula.professores.Count == 3)
+            {
+                posicao.Rows.Add(celula.hora, celula.dia, celula.disciplina, celula.turma, celula.espaco, celula.espaco, celula.professores.ElementAt(0), celula.professores.ElementAt(1), celula.professores.ElementAt(2));
+            }
+            else
+            {
+                throw new Exception("O número de professores é inválido!\nVerifique se escolheu entre 1 a 3 e que não exista nenhuma aplicação interagindo com o banco neste momento.");
+            }
+            posicao.ClearSelection();
         }
 
         /// <summary>
@@ -854,15 +787,45 @@ namespace AcessoDados
         /// <summary>
         /// Deleta a grade especificada
         /// </summary>
-        public void ApagaGrade(Modelos.Celula celula)
+        public void ApagaGrade(ref TableLayoutPanel grade, Modelos.Celula celula)
         {
-            Modelos.DISCIPLINA_TURMA turma = contexto.DISCIPLINA_TURMA.Where(p => p.SEQ_SEMESTRE == celula.semestre).First();
+            try
+            {
+                int seq = 0;
+                int count = SelectGradeTurma(ref seq, celula);
 
-            Modelos.GRADE_TURMA grd = contexto.GRADE_TURMA.Find();
+                Modelos.DISCIPLINA_TURMA turma = contexto.DISCIPLINA_TURMA.Local.Where(p =>
+                        p.CODIGO_CURSO == curso.CODIGO_CURSO &&
+                        p.CODIGO_DISCIPLINA == celula.disciplina &&
+                        p.CODIGO_TURMA == celula.turma &&
+                        p.SEQ_SEMESTRE == celula.semestre).First();
+
+                if (count > 1)
+                {
+                    Modelos.GRADE_TURMA gradeTurma = contexto.GRADE_TURMA.Where(p => p.SEQ_DISCIPLINA_TURMA == turma.SEQ_DISCIPLINA_TURMA &&
+                     p.HORARIO_GRADE == celula.hora &&
+                     p.DIA_SEMANA_GRADE == celula.dia).First();
+
+                    contexto.Entry(gradeTurma).State = System.Data.Entity.EntityState.Deleted;
+                }
+                else if (count == 1)
+                {
+                    turma.GRADE_TURMA.Clear();
+                    contexto.Entry(turma).State = System.Data.Entity.EntityState.Modified;
+                }
+                else
+                {
+                    throw new Exception("Erro ao excluir a célula indicada.\nCertifique-se de que nenhuma aplicação esteja interagindo com o banco de dados.");
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         /// <summary>
-        /// Cambiarras... muitas cambiarras
+        /// Cambiarras... Muitas cambiarras
         /// </summary>
         public void CarregaLocalmente()
         {

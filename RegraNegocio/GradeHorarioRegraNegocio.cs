@@ -214,7 +214,6 @@ namespace RegraNegocio
             }
         }
 
-
         /// <summary>
         /// Insere uma nova célula na grade
         /// </summary>
@@ -227,12 +226,29 @@ namespace RegraNegocio
                 gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
 
                 // Verificações aqui...
-                
+                gradeAD.SelectDisciplinaTurmaFromDiaHora(celula);
+                gradeAD.SelectProfessorFromHora(celula);
+                gradeAD.SelectEspacoFromHora(celula);
+
                 gradeAD.InsereGrade(ref grade, celula);
             }
             catch (Exception ex)
             {
                 throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
+        }
+
+        public void ApagaCelula(ref TableLayoutPanel grade, Modelos.Celula celula)
+        {
+            try
+            {
+                gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
+
+                gradeAD.ApagaGrade(ref grade, celula);
+            }
+            catch (Exception)
+            {
+                throw;
             }
         }
 
@@ -313,7 +329,7 @@ namespace RegraNegocio
             gradeAD.SelectEspacoFromHora(celula);
         }
 
-        public void SelectDisciplinaTurma(Modelos.Celula celula)
+        public void SelectDisciplinaTurmaFromDiaHora(Modelos.Celula celula)
         {
             gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
 
@@ -321,4 +337,3 @@ namespace RegraNegocio
         }
     }
 }
-

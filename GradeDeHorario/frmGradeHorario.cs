@@ -237,6 +237,9 @@ namespace GradeDeHorario
             {
                 contextoUniversal.SaveChanges();
 
+                cbbSelectFase.Enabled = cbbSelectSemestre.Enabled = btnCarregaGrade.Enabled = true;
+                btnCancelar.Enabled = btnSalvar.Enabled = btnGerarRelatorio.Enabled = tblGrade.Enabled = gbDisciplina.Enabled = gbProfessor.Enabled = gbSala.Enabled = btnEditar.Enabled = false;
+
                 MessageBox.Show("Alterações salvas com sucesso.", "Alterações salvas", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
@@ -318,7 +321,34 @@ namespace GradeDeHorario
 
         private void itmExcluir_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Excluir");
+            if (hoverGrade.Rows.Count.Equals(0)) { return; }
+
+            if (hoverGrade.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("É necessário selecionar uma célula para excluí-la.", "Selecione uma célula", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            try
+            {
+                Modelos.Celula celula = new Modelos.Celula();
+                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(this.curso, ref contextoUniversal);
+
+                celula.disciplina = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[2].Value.ToString();
+                celula.turma = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[3].Value.ToString();
+                celula.espaco = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[4].Value.ToString();
+                celula.semestre = Convert.ToInt32(cbbSelectSemestre.ComboBox.SelectedValue);
+                celula.hora = tblGrade.GetPositionFromControl(hoverGrade).Row;
+                celula.dia = tblGrade.GetPositionFromControl(hoverGrade).Column;
+
+                gradeRN.ApagaCelula(ref tblGrade, celula);
+
+                hoverGrade.Rows.RemoveAt(hoverGrade.CurrentRow.Index);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void gradeXX_MouseMove(object sender, MouseEventArgs e)
