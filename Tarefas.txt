@@ -34,7 +34,7 @@ frmTurma:
     ✓ Comportamento de interface.
     ✓ Verificar se é necessário inserir, editar etc.
         ○ (Sim) Inserção, edição, exclusão e listagem de turmas de acordo com o semestre.
-        ○ (Não) Apagar formulário.
+        ✓ (Não) Apagar formulário.
 ----------------------------------------------------------------------------------------------
 frmProfessor:
 
@@ -51,11 +51,11 @@ frmGradeHorario
     ✓ Listagem de fases
     ✓ Listagem de semestres
     ✓ Carregar a grade para a fase e o semestre indicados.
-    • Salvamento da grade.
+    ✓ Salvamento da grade.
     ✓ Listagem de disciplinas
     ✓ Listagem de Professores
     ✓ Listagem de Salas
     ✓ Adição de Disc, Prof, e Lab. (DPL) em uma célula da grade.
-    • Verificar a validade da DPL para tal horário.
+    ✓ Verificar a validade da DPL para tal horário.
     • Imprimir PDF com a grade atual com todas a info de acordo com o modelo.
 ----------------------------------------------------------------------------------------------
