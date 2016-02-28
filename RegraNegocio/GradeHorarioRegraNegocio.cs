@@ -238,6 +238,45 @@ namespace RegraNegocio
             }
         }
 
+        public void EditaGrade(ref TableLayoutPanel grade, Modelos.Celula celulaAntiga, Modelos.Celula celulaNova)
+        {
+            try
+            {
+                gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
+
+                if (celulaNova.espaco != celulaAntiga.espaco)
+                {
+                    gradeAD.SelectEspacoFromHora(celulaNova);
+                }
+
+                SelectProfessorFromHora(celulaNova, ListaProfessoresDistintosCelula(celulaAntiga, celulaNova));
+
+                gradeAD.EditaGrade(ref grade, celulaAntiga, celulaNova);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
+            }
+        }
+
+        private List<int> ListaProfessoresDistintosCelula(Modelos.Celula celulaAntiga, Modelos.Celula celulaNova)
+        {
+            List<int> lista = new List<int>();
+
+            foreach (var item in celulaNova.professores)
+            {
+                int? found = celulaAntiga.professores.Find(p => p == item);
+
+                if (found == null)
+                {
+                    lista.Add(item);
+                }
+            }
+
+            return lista;
+        }
+
+
         public void ApagaCelula(ref TableLayoutPanel grade, Modelos.Celula celula)
         {
             try
@@ -320,6 +359,14 @@ namespace RegraNegocio
         {
             gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
 
+            gradeAD.SelectProfessorFromHora(celula);
+        }
+
+        public void SelectProfessorFromHora(Modelos.Celula celula, List<int> alteracao)
+        {
+            gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
+
+            celula.professores = alteracao;
             gradeAD.SelectProfessorFromHora(celula);
         }
 

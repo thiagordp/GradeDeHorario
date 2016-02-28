@@ -19,7 +19,8 @@ namespace GradeDeHorario
 
         private Modelos.Entidade contextoUniversal;
 
-        private List<Modelos.Celula> ListaModificacao;
+        private Modelos.Celula celulaAntiga;
+        private Modelos.Celula celulaNova;
 
         public frmGradeHorario(Modelos.CURSO curso)
         {
@@ -316,7 +317,41 @@ namespace GradeDeHorario
 
         private void itmEditar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Edita");
+            // Recolhendo dados da célula antiga.
+            celulaAntiga.disciplina = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[2].Value.ToString();
+            celulaAntiga.turma = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[3].Value.ToString();
+            celulaAntiga.espaco = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[4].Value.ToString();
+            celulaAntiga.semestre = Convert.ToInt32(cbbSelectSemestre.ComboBox.SelectedValue);
+            celulaAntiga.hora = tblGrade.GetPositionFromControl(hoverGrade).Row;
+            celulaAntiga.dia = tblGrade.GetPositionFromControl(hoverGrade).Column;
+
+            List<int> lista = new List<int>();
+
+            int prof = Convert.ToInt32(hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[5].Value);
+            lista.Add(prof);
+
+            object temp = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[6].Value;
+
+            if (temp != null)// prof2
+            {
+                prof = Convert.ToInt32(temp);
+                lista.Add(prof);
+
+                temp = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[7].Value;
+
+                if (temp != null) // prof3
+                {
+                    prof = Convert.ToInt32(temp);
+                    lista.Add(prof);
+                }
+            }
+
+            celulaAntiga.professores = lista;
+
+            btnFimEdicao.Enabled = true;
+            cbbSelectFase.Enabled = cbbSelectSemestre.Enabled = btnCarregaGrade.Enabled = btnEditar.Enabled = false;
+            btnCancelar.Enabled = btnSalvar.Enabled = btnGerarRelatorio.Enabled = tblGrade.Enabled = false;
+            gbDisciplina.Enabled = gbProfessor.Enabled = gbSala.Enabled = true;
         }
 
         private void itmExcluir_Click(object sender, EventArgs e)
@@ -626,6 +661,46 @@ namespace GradeDeHorario
                     espaco = dtgPesquisaEspaco.Rows[i].Cells["COD_ESP_PESQUISA"].Value.ToString();
                     break;
                 }
+            }
+        }
+
+        private void btnFimEdicao_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                VerificaSelecaoTabelas();
+
+                // Recolhimento de informações da nova célula.
+                string disciplina, espaco, turma;
+                List<int> professores = new List<int>();
+
+                disciplina = espaco = turma = string.Empty;
+
+                SelecionaCampoMarcado(ref disciplina, ref espaco, ref professores, ref turma);
+
+                gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(this.curso, ref contextoUniversal);
+
+                Modelos.Celula celula = new Modelos.Celula();
+
+                celula.hora = tblGrade.GetPositionFromControl(hoverGrade).Row;
+                celula.dia = tblGrade.GetPositionFromControl(hoverGrade).Column;
+                celula.disciplina = disciplina;
+                celula.espaco = espaco;
+                celula.fase = Convert.ToInt32(cbbSelectFase.ComboBox.SelectedValue);
+                celula.professores = professores;
+                celula.semestre = Convert.ToInt32(cbbSelectSemestre.ComboBox.SelectedValue);
+                celula.turma = turma;
+                
+                gradeRN.EditaGrade(ref tblGrade, celulaAntiga, celulaNova);
+
+                btnFimEdicao.Enabled = false;
+                cbbSelectFase.Enabled = cbbSelectSemestre.Enabled = btnCarregaGrade.Enabled = btnEditar.Enabled = false;
+                btnCancelar.Enabled = btnSalvar.Enabled = btnGerarRelatorio.Enabled = tblGrade.Enabled = true;
+                gbDisciplina.Enabled = gbProfessor.Enabled = gbSala.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

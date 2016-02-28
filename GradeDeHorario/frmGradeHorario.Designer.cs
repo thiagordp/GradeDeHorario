@@ -73,6 +73,7 @@
             this.COD_ESP_PESQUISA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TIPO_ESP_PESQUISA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtPesquisaEspaco = new System.Windows.Forms.TextBox();
+            this.btnFimEdicao = new System.Windows.Forms.Button();
             this.tblGrade = new System.Windows.Forms.TableLayoutPanel();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -1125,17 +1126,19 @@
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.gbDisciplina, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.gbProfessor, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.gbSala, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.gbDisciplina, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.gbProfessor, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.gbSala, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.btnFimEdicao, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(687, 5);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.RowCount = 4;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33444F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33444F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33112F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(192, 514);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
@@ -1144,10 +1147,10 @@
             this.gbDisciplina.Controls.Add(this.tableLayoutPanel3);
             this.gbDisciplina.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gbDisciplina.Enabled = false;
-            this.gbDisciplina.Location = new System.Drawing.Point(3, 3);
+            this.gbDisciplina.Location = new System.Drawing.Point(3, 38);
             this.gbDisciplina.Name = "gbDisciplina";
             this.gbDisciplina.Padding = new System.Windows.Forms.Padding(5);
-            this.gbDisciplina.Size = new System.Drawing.Size(186, 165);
+            this.gbDisciplina.Size = new System.Drawing.Size(186, 153);
             this.gbDisciplina.TabIndex = 0;
             this.gbDisciplina.TabStop = false;
             this.gbDisciplina.Text = "Disciplinas";
@@ -1165,7 +1168,7 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(176, 142);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(176, 130);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // txtPesquisaDisciplina
@@ -1211,7 +1214,7 @@
             this.dtgPesquisaDisciplina.Name = "dtgPesquisaDisciplina";
             this.dtgPesquisaDisciplina.RowHeadersVisible = false;
             this.dtgPesquisaDisciplina.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgPesquisaDisciplina.Size = new System.Drawing.Size(170, 111);
+            this.dtgPesquisaDisciplina.Size = new System.Drawing.Size(170, 99);
             this.dtgPesquisaDisciplina.TabIndex = 1;
             // 
             // SELECT_DISCIPLINA
@@ -1254,9 +1257,9 @@
             this.gbProfessor.Controls.Add(this.tableLayoutPanel4);
             this.gbProfessor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gbProfessor.Enabled = false;
-            this.gbProfessor.Location = new System.Drawing.Point(3, 174);
+            this.gbProfessor.Location = new System.Drawing.Point(3, 197);
             this.gbProfessor.Name = "gbProfessor";
-            this.gbProfessor.Size = new System.Drawing.Size(186, 165);
+            this.gbProfessor.Size = new System.Drawing.Size(186, 153);
             this.gbProfessor.TabIndex = 1;
             this.gbProfessor.TabStop = false;
             this.gbProfessor.Text = "Professores";
@@ -1274,7 +1277,7 @@
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(180, 146);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(180, 134);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // dtgPesquisaProfessor
@@ -1308,7 +1311,7 @@
             this.dtgPesquisaProfessor.Name = "dtgPesquisaProfessor";
             this.dtgPesquisaProfessor.RowHeadersVisible = false;
             this.dtgPesquisaProfessor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgPesquisaProfessor.Size = new System.Drawing.Size(174, 115);
+            this.dtgPesquisaProfessor.Size = new System.Drawing.Size(174, 103);
             this.dtgPesquisaProfessor.TabIndex = 2;
             // 
             // SELECT_PROFESSOR
@@ -1352,9 +1355,9 @@
             this.gbSala.Controls.Add(this.tableLayoutPanel5);
             this.gbSala.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gbSala.Enabled = false;
-            this.gbSala.Location = new System.Drawing.Point(3, 345);
+            this.gbSala.Location = new System.Drawing.Point(3, 356);
             this.gbSala.Name = "gbSala";
-            this.gbSala.Size = new System.Drawing.Size(186, 166);
+            this.gbSala.Size = new System.Drawing.Size(186, 155);
             this.gbSala.TabIndex = 2;
             this.gbSala.TabStop = false;
             this.gbSala.Text = "Salas e laboratórios";
@@ -1372,7 +1375,7 @@
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(180, 147);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(180, 136);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
             // dtgPesquisaEspaco
@@ -1407,7 +1410,7 @@
             this.dtgPesquisaEspaco.RowHeadersVisible = false;
             this.dtgPesquisaEspaco.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dtgPesquisaEspaco.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgPesquisaEspaco.Size = new System.Drawing.Size(174, 116);
+            this.dtgPesquisaEspaco.Size = new System.Drawing.Size(174, 105);
             this.dtgPesquisaEspaco.TabIndex = 2;
             // 
             // SELECT_ESPACO
@@ -1443,6 +1446,21 @@
             this.txtPesquisaEspaco.TabIndex = 0;
             this.txtPesquisaEspaco.WordWrap = false;
             this.txtPesquisaEspaco.TextChanged += new System.EventHandler(this.txtPesquisaEspaco_TextChanged);
+            // 
+            // btnFimEdicao
+            // 
+            this.btnFimEdicao.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFimEdicao.Enabled = false;
+            this.btnFimEdicao.Location = new System.Drawing.Point(5, 5);
+            this.btnFimEdicao.Margin = new System.Windows.Forms.Padding(5);
+            this.btnFimEdicao.Name = "btnFimEdicao";
+            this.btnFimEdicao.Size = new System.Drawing.Size(182, 25);
+            this.btnFimEdicao.TabIndex = 3;
+            this.btnFimEdicao.Text = "Finalizar edição";
+            this.btnFimEdicao.UseVisualStyleBackColor = true;
+            this.btnFimEdicao.Click += new System.EventHandler(this.btnFimEdicao_Click);
             // 
             // tblGrade
             // 
@@ -11871,5 +11889,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn COD_DISC_PESQUISA;
         private System.Windows.Forms.DataGridViewTextBoxColumn NOME_DISC_PESQUISA;
         private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO_TURMA;
+        private System.Windows.Forms.Button btnFimEdicao;
     }
 }

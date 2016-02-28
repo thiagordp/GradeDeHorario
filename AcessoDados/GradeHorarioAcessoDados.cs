@@ -452,6 +452,8 @@ namespace AcessoDados
         {
             try
             {
+                if (celula.professores.Count == 0) { return; }
+
                 // Verificação do primeiro professor
                 var query = (from DISC_TRM in contexto.DISCIPLINA_TURMA.Local
                              join GRD_TRM in contexto.GRADE_TURMA.Local
@@ -782,7 +784,53 @@ namespace AcessoDados
         /// <summary>
         /// Edita os atributos da grade indicada de acordo com os dados fornecidos
         /// </summary>
-        public void EditaGrade() { }
+        public void EditaGrade(ref TableLayoutPanel grade, Modelos.Celula celulaAntiga, Modelos.Celula celulaNova)
+        {
+            try
+            {
+                DataGridView posicao = grade.GetControlFromPosition(celulaAntiga.dia, celulaAntiga.hora) as DataGridView;
+
+                Modelos.DISCIPLINA_TURMA turma = new Modelos.DISCIPLINA_TURMA();
+                Modelos.GRADE_TURMA horaDia = new Modelos.GRADE_TURMA();
+
+                turma = contexto.DISCIPLINA_TURMA.Local.Where(p =>
+                    p.CODIGO_CURSO == curso.CODIGO_CURSO &&
+                    p.CODIGO_DISCIPLINA == celulaAntiga.disciplina &&
+                    p.CODIGO_TURMA == celulaAntiga.turma &&
+                    p.SEQ_DISCIPLINA_TURMA == celulaAntiga.semestre).First();
+
+                horaDia = turma.GRADE_TURMA.Where(p => p.DIA_SEMANA_GRADE == celulaAntiga.dia && p.HORARIO_GRADE == celulaAntiga.hora).First();
+
+                horaDia.CODIGO_ESPACO = celulaNova.espaco;
+
+                turma.CODIGO_PROFESSOR1 = celulaNova.professores.ElementAt(0);
+
+                if (celulaNova.professores.Count > 1)
+                {
+                    turma.CODIGO_PROFESSOR2 = celulaNova.professores.ElementAt(1);
+
+                    if (celulaNova.professores.Count > 2)
+                    {
+                        turma.CODIGO_PROFESSOR3 = celulaNova.professores.ElementAt(2);
+                    }
+                    else
+                    {
+                        turma.CODIGO_PROFESSOR3 = null;
+                    }
+                }
+                else
+                {
+                    turma.CODIGO_PROFESSOR2 = null;
+                }
+
+                contexto.Entry(horaDia).State = System.Data.Entity.EntityState.Modified;
+                contexto.Entry(turma).State = System.Data.Entity.EntityState.Modified;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
 
         /// <summary>
         /// Deleta a grade especificada
