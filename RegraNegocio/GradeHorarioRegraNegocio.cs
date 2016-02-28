@@ -364,10 +364,19 @@ namespace RegraNegocio
 
         public void SelectProfessorFromHora(Modelos.Celula celula, List<int> alteracao)
         {
-            gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
+            Modelos.Celula cel = new Modelos.Celula();
 
-            celula.professores = alteracao;
-            gradeAD.SelectProfessorFromHora(celula);
+            cel.dia = celula.dia;
+            cel.disciplina = celula.disciplina;
+            cel.espaco = celula.espaco;
+            cel.fase = celula.fase;
+            cel.hora = celula.hora;
+            cel.semestre = celula.semestre;
+            cel.turma = celula.turma;
+            cel.professores = alteracao;
+
+            gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
+            gradeAD.SelectProfessorFromHora(cel);
         }
 
         public void SelectEspacoFromEspaco(Modelos.Celula celula)

@@ -797,7 +797,7 @@ namespace AcessoDados
                     p.CODIGO_CURSO == curso.CODIGO_CURSO &&
                     p.CODIGO_DISCIPLINA == celulaAntiga.disciplina &&
                     p.CODIGO_TURMA == celulaAntiga.turma &&
-                    p.SEQ_DISCIPLINA_TURMA == celulaAntiga.semestre).First();
+                    p.SEQ_SEMESTRE == celulaAntiga.semestre).First();
 
                 horaDia = turma.GRADE_TURMA.Where(p => p.DIA_SEMANA_GRADE == celulaAntiga.dia && p.HORARIO_GRADE == celulaAntiga.hora).First();
 

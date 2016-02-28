@@ -317,41 +317,114 @@ namespace GradeDeHorario
 
         private void itmEditar_Click(object sender, EventArgs e)
         {
-            // Recolhendo dados da célula antiga.
-            celulaAntiga.disciplina = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[2].Value.ToString();
-            celulaAntiga.turma = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[3].Value.ToString();
-            celulaAntiga.espaco = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[4].Value.ToString();
-            celulaAntiga.semestre = Convert.ToInt32(cbbSelectSemestre.ComboBox.SelectedValue);
-            celulaAntiga.hora = tblGrade.GetPositionFromControl(hoverGrade).Row;
-            celulaAntiga.dia = tblGrade.GetPositionFromControl(hoverGrade).Column;
+            if (hoverGrade.Rows.Count.Equals(0)) { return; }
 
-            List<int> lista = new List<int>();
-
-            int prof = Convert.ToInt32(hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[5].Value);
-            lista.Add(prof);
-
-            object temp = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[6].Value;
-
-            if (temp != null)// prof2
+            if (hoverGrade.SelectedRows.Count == 0)
             {
-                prof = Convert.ToInt32(temp);
+                MessageBox.Show("É necessário selecionar uma célula para visualizar seus detalhes.", "Selecione uma célula", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            celulaAntiga = new Modelos.Celula();
+            celulaNova = new Modelos.Celula();
+
+            try
+            {
+                // Recolhendo dados da célula antiga.
+                celulaAntiga.disciplina = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[2].Value.ToString();
+                celulaAntiga.turma = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[3].Value.ToString();
+                celulaAntiga.espaco = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[4].Value.ToString();
+                celulaAntiga.semestre = Convert.ToInt32(cbbSelectSemestre.ComboBox.SelectedValue);
+                celulaAntiga.hora = tblGrade.GetPositionFromControl(hoverGrade).Row;
+                celulaAntiga.dia = tblGrade.GetPositionFromControl(hoverGrade).Column;
+
+                List<int> lista = new List<int>();
+
+                int prof = Convert.ToInt32(hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[5].Value);
                 lista.Add(prof);
 
-                temp = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[7].Value;
+                object temp = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[6].Value;
 
-                if (temp != null) // prof3
+                if (temp != null)// prof2
                 {
                     prof = Convert.ToInt32(temp);
                     lista.Add(prof);
+
+                    temp = hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[7].Value;
+
+                    if (temp != null) // prof3
+                    {
+                        prof = Convert.ToInt32(temp);
+                        lista.Add(prof);
+                    }
                 }
+
+                celulaAntiga.professores = lista;
+
+                for (int i = 0; i < dtgPesquisaDisciplina.Rows.Count; i++)
+                {
+                    if (dtgPesquisaDisciplina.Rows[i].Cells["COD_DISC_PESQUISA"].Value.ToString() == celulaAntiga.disciplina &&
+                        dtgPesquisaDisciplina.Rows[i].Cells["CODIGO_TURMA"].Value.ToString() == celulaAntiga.turma)
+                    {
+                        dtgPesquisaDisciplina.Rows[i].Cells["SELECT_DISCIPLINA"].Value = true;
+                        break;
+                    }
+                }
+
+                for (int i = 0; i < dtgPesquisaEspaco.Rows.Count; i++)
+                {
+                    if (dtgPesquisaEspaco.Rows[i].Cells["COD_ESP_PESQUISA"].Value.ToString() == celulaAntiga.espaco)
+                    {
+                        dtgPesquisaEspaco.Rows[i].Cells["SELECT_ESPACO"].Value = true;
+                        break;
+                    }
+                }
+
+                bool find1, find2, find3;
+                find1 = find2 = find3 = false;
+
+                for (int i = 0; i < dtgPesquisaProfessor.Rows.Count; i++)
+                {
+                    object codigo = dtgPesquisaProfessor.Rows[i].Cells["COD_PROF_PESQUISA"].Value;
+
+                    if (
+                        celulaAntiga.professores.Count >= 1 &&
+                        find1 == false &&
+                        Convert.ToInt32(codigo) == celulaAntiga.professores.ElementAt(0))
+                    {
+                        dtgPesquisaProfessor.Rows[i].Cells["SELECT_PROFESSOR"].Value = true;
+                        find1 = true;
+                    }
+
+                    if (
+                        celulaAntiga.professores.Count >= 2 &&
+                        find2 == false &&
+                        Convert.ToInt32(codigo) == celulaAntiga.professores.ElementAt(1))
+                    {
+                        dtgPesquisaProfessor.Rows[i].Cells["SELECT_PROFESSOR"].Value = true;
+                        find2 = true;
+                    }
+
+                    if (
+                        celulaAntiga.professores.Count >= 3 &&
+                        find3 == false &&
+                        Convert.ToInt32(codigo) == celulaAntiga.professores.ElementAt(2))
+                    {
+                        dtgPesquisaProfessor.Rows[i].Cells["SELECT_PROFESSOR"].Value = true;
+                        find3 = true;
+                    }
+                }
+
+                btnFimEdicao.Enabled = true;
+                cbbSelectFase.Enabled = cbbSelectSemestre.Enabled = btnCarregaGrade.Enabled = btnEditar.Enabled = false;
+                btnCancelar.Enabled = btnSalvar.Enabled = btnGerarRelatorio.Enabled = tblGrade.Enabled = gbDisciplina.Enabled = false;
+                gbProfessor.Enabled = gbSala.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + "\nInner:\n" + ex.InnerException);
             }
 
-            celulaAntiga.professores = lista;
-
-            btnFimEdicao.Enabled = true;
-            cbbSelectFase.Enabled = cbbSelectSemestre.Enabled = btnCarregaGrade.Enabled = btnEditar.Enabled = false;
-            btnCancelar.Enabled = btnSalvar.Enabled = btnGerarRelatorio.Enabled = tblGrade.Enabled = false;
-            gbDisciplina.Enabled = gbProfessor.Enabled = gbSala.Enabled = true;
         }
 
         private void itmExcluir_Click(object sender, EventArgs e)
@@ -680,18 +753,42 @@ namespace GradeDeHorario
 
                 gradeRN = new RegraNegocio.GradeHorarioRegraNegocio(this.curso, ref contextoUniversal);
 
-                Modelos.Celula celula = new Modelos.Celula();
 
-                celula.hora = tblGrade.GetPositionFromControl(hoverGrade).Row;
-                celula.dia = tblGrade.GetPositionFromControl(hoverGrade).Column;
-                celula.disciplina = disciplina;
-                celula.espaco = espaco;
-                celula.fase = Convert.ToInt32(cbbSelectFase.ComboBox.SelectedValue);
-                celula.professores = professores;
-                celula.semestre = Convert.ToInt32(cbbSelectSemestre.ComboBox.SelectedValue);
-                celula.turma = turma;
-                
+                celulaNova.hora = tblGrade.GetPositionFromControl(hoverGrade).Row;
+                celulaNova.dia = tblGrade.GetPositionFromControl(hoverGrade).Column;
+                celulaNova.disciplina = disciplina;
+                celulaNova.espaco = espaco;
+                celulaNova.fase = Convert.ToInt32(cbbSelectFase.ComboBox.SelectedValue);
+                celulaNova.professores = professores;
+                celulaNova.semestre = Convert.ToInt32(cbbSelectSemestre.ComboBox.SelectedValue);
+                celulaNova.turma = turma;
+
                 gradeRN.EditaGrade(ref tblGrade, celulaAntiga, celulaNova);
+
+                hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[4].Value = celulaNova.espaco;
+
+                hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[5].Value = celulaNova.professores.ElementAt(0);
+                if (celulaNova.professores.Count >= 2)
+                {
+                    hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[6].Value = celulaNova.professores.ElementAt(1);
+
+                    if (celulaNova.professores.Count == 3)
+                    {
+                        hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[7].Value = celulaNova.professores.ElementAt(2);
+                    }
+                    else
+                    {
+                        hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[7].Value = null;
+                    }
+                }
+                else
+                {
+                    hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[6].Value = null;
+                }
+
+                this.PreenchePesquisaDisciplina("", -1);
+                this.PreenchePesquisaEspaco("-1");
+                this.PreenchePesquisaProfessor("-1");
 
                 btnFimEdicao.Enabled = false;
                 cbbSelectFase.Enabled = cbbSelectSemestre.Enabled = btnCarregaGrade.Enabled = btnEditar.Enabled = false;
