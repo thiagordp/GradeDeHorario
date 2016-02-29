@@ -747,7 +747,23 @@ namespace AcessoDados
                 (celula.professores.Count >= 2 && celula.professores.ElementAt(1) != query.First().CODIGO_PROFESSOR2) ||
                 (celula.professores.Count == 3 && celula.professores.ElementAt(2) != query.First().CODIGO_PROFESSOR3))
             {
-                throw new Exception("Já existe uma ou mais células da mesma turma, disciplina, curso e semestre, no entanto, a lista de professores não bate com a existente.\nVerifique a lista de professores e tente novamente.");
+                StringBuilder excecao = new StringBuilder();
+
+                excecao.Append("Já existe uma ou mais células da mesma turma, disciplina, curso e semestre, no entanto, a lista de professores não bate com a existente.\nO conjunto de professores deve ser:\n\n");
+
+                excecao.Append(query.First().CODIGO_PROFESSOR1 + " - " + contexto.PROFESSOR.Find(query.First().CODIGO_PROFESSOR1).NOME_PROFESSOR + "\n");
+
+                if (query.First().CODIGO_PROFESSOR2 != null)
+                {
+                    excecao.Append(query.First().CODIGO_PROFESSOR2 + " - " + contexto.PROFESSOR.Find(query.First().CODIGO_PROFESSOR2).NOME_PROFESSOR + "\n");
+
+                    if (query.First().CODIGO_PROFESSOR3 != null)
+                    {
+                        excecao.Append(query.First().CODIGO_PROFESSOR3 + " - " + contexto.PROFESSOR.Find(query.First().CODIGO_PROFESSOR3).NOME_PROFESSOR + "\n");
+                    }
+                }
+                
+                throw new Exception(excecao.ToString());
             }
 
             return query.First().SEQ_DISCIPLINA_TURMA;
@@ -917,17 +933,17 @@ namespace AcessoDados
         /// </summary>
         public void CarregaLocalmente()
         {
-            foreach (var disc in contexto.DISCIPLINA.ToList()) { }
+            foreach (var item in contexto.DISCIPLINA.ToList()) { }
 
-            foreach (var fase in contexto.DISCIPLINA_CURSO.ToList()) { }
+            foreach (var item in contexto.DISCIPLINA_CURSO.ToList()) { }
 
-            foreach (var turma in contexto.DISCIPLINA_TURMA.ToList()) { }
+            foreach (var item in contexto.DISCIPLINA_TURMA.ToList()) { }
 
-            foreach (var grade in contexto.GRADE_TURMA.ToList()) { }
+            foreach (var item in contexto.GRADE_TURMA.ToList()) { }
 
-            foreach (var espaco in contexto.ESPACO.ToList()) { }
+            foreach (var item in contexto.ESPACO.ToList()) { }
 
-            foreach (var grd in contexto.GRADE.ToList()) { }
+            foreach (var item in contexto.GRADE.ToList()) { }
 
             foreach (var item in contexto.PROFESSOR.ToList()) { }
 

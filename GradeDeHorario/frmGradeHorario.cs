@@ -821,6 +821,81 @@ namespace GradeDeHorario
                     hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[6].Value = null;
                 }
 
+                bool asked = false;
+                bool answer = false;
+                foreach (var item in tblGrade.Controls)
+                {
+                    if (item is DataGridView && (item as DataGridView).Rows.Count > 0)
+                    {
+                        DataGridView temp = item as DataGridView;
+
+                        for (int i = 0; i < temp.Rows.Count; i++)
+                        {
+                            if (temp.Rows[i].Cells[2].Value.ToString() == celulaNova.disciplina &&
+                                temp.Rows[i].Cells[3].Value.ToString() == celulaNova.turma)
+                            {
+                                temp.Rows[i].Cells[5].Value = celulaNova.professores.ElementAt(0);
+
+                                if (celulaNova.professores.Count >= 2)
+                                {
+                                    temp.Rows[i].Cells[6].Value = celulaNova.professores.ElementAt(1);
+
+                                    if (celulaNova.professores.Count == 3)
+                                    {
+                                        temp.Rows[i].Cells[7].Value = celulaNova.professores.ElementAt(2);
+                                    }
+                                }
+
+                                if (asked == false)
+                                {
+                                    if (MessageBox.Show("Deseja aplicar a alteração de espaço aos demais horários?", "Aplicar alterações de espaço", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                                    {
+                                        answer = true;
+                                    }
+                                    else
+                                    {
+                                        answer = false;
+                                    }
+
+                                    asked = true;
+                                }
+
+                                if (answer == true &&
+                                    celulaNova.espaco != temp.Rows[i].Cells[4].Value.ToString())
+                                {
+                                    temp.Rows[i].Cells[4].Value = celulaNova.espaco;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                if(answer == true)
+                {
+                    ///// TRANSFERIR PARA O ACESSO DADOS
+                    var query1 = contextoUniversal.DISCIPLINA_TURMA.Local.Where(p =>
+                                    p.SEQ_SEMESTRE == celulaNova.semestre &&
+                                    p.CODIGO_CURSO == this.curso.CODIGO_CURSO &&
+                                    p.CODIGO_DISCIPLINA == celulaNova.disciplina &&
+                                    p.CODIGO_TURMA == celulaNova.turma).First();
+
+                    var query = contextoUniversal.GRADE_TURMA.Local.Where(p => p.SEQ_DISCIPLINA_TURMA == query1.SEQ_DISCIPLINA_TURMA).ToList();
+
+                    foreach (var grade in query)
+                    {
+                        if (contextoUniversal.Entry(grade).State == System.Data.Entity.EntityState.Added)
+                        {
+                            grade.CODIGO_ESPACO = celulaNova.espaco;
+                            contextoUniversal.Entry(grade).State = System.Data.Entity.EntityState.Added;
+                        }
+                        else
+                        {
+                            grade.CODIGO_ESPACO = celulaNova.espaco;
+                        }
+                    }
+                    ////////////////////
+                }
+            
                 this.LimpaSelecaoTabelas();
 
                 btnFimEdicao.Enabled = false;
