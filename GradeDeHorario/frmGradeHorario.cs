@@ -577,6 +577,41 @@ namespace GradeDeHorario
             }
         }
 
+        private void LimpaSelecaoTabelas()
+        {
+            dtgPesquisaDisciplina.EndEdit();
+            dtgPesquisaEspaco.EndEdit();
+            dtgPesquisaProfessor.EndEdit();
+
+            for (int i = 0; i < dtgPesquisaDisciplina.Rows.Count; i++)
+            {
+                if (Convert.ToBoolean(dtgPesquisaDisciplina.Rows[i].Cells["SELECT_DISCIPLINA"].Value) == true)
+                {
+                    dtgPesquisaDisciplina.Rows[i].Cells["SELECT_DISCIPLINA"].Value = false;
+                }
+            }
+
+            for (int i = 0; i < dtgPesquisaEspaco.Rows.Count; i++)
+            {
+                if (Convert.ToBoolean(dtgPesquisaEspaco.Rows[i].Cells["SELECT_ESPACO"].Value) == true)
+                {
+                    dtgPesquisaEspaco.Rows[i].Cells["SELECT_ESPACO"].Value = false;
+                }
+            }
+
+            for (int i = 0; i < dtgPesquisaProfessor.Rows.Count; i++)
+            {
+                if (Convert.ToBoolean(dtgPesquisaProfessor.Rows[i].Cells["SELECT_PROFESSOR"].Value) == true)
+                {
+                    dtgPesquisaProfessor.Rows[i].Cells["SELECT_PROFESSOR"].Value = false;
+                }
+            }
+
+            dtgPesquisaDisciplina.ClearSelection();
+            dtgPesquisaEspaco.ClearSelection();
+            dtgPesquisaProfessor.ClearSelection();
+        }
+
         /// <summary>
         /// Limpar todas as células da grade.
         /// </summary>
@@ -786,9 +821,7 @@ namespace GradeDeHorario
                     hoverGrade.Rows[hoverGrade.CurrentRow.Index].Cells[6].Value = null;
                 }
 
-                this.PreenchePesquisaDisciplina("", -1);
-                this.PreenchePesquisaEspaco("-1");
-                this.PreenchePesquisaProfessor("-1");
+                this.LimpaSelecaoTabelas();
 
                 btnFimEdicao.Enabled = false;
                 cbbSelectFase.Enabled = cbbSelectSemestre.Enabled = btnCarregaGrade.Enabled = btnEditar.Enabled = false;

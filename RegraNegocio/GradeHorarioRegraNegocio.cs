@@ -267,7 +267,7 @@ namespace RegraNegocio
             {
                 int? found = celulaAntiga.professores.Find(p => p == item);
 
-                if (found == null)
+                if (found == null || found == 0)
                 {
                     lista.Add(item);
                 }

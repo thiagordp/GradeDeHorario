@@ -764,20 +764,22 @@ namespace AcessoDados
 
             if (celula.professores.Count == 1)
             {
-                posicao.Rows.Add(celula.hora, celula.dia, celula.disciplina, celula.turma, celula.espaco, celula.espaco, celula.professores.ElementAt(0));
+                posicao.Rows.Add(celula.hora, celula.dia, celula.disciplina, celula.turma, celula.espaco, celula.professores.ElementAt(0));
             }
             else if (celula.professores.Count == 2)
             {
-                posicao.Rows.Add(celula.hora, celula.dia, celula.disciplina, celula.turma, celula.espaco, celula.espaco, celula.professores.ElementAt(0), celula.professores.ElementAt(1));
+                posicao.Rows.Add(celula.hora, celula.dia, celula.disciplina, celula.turma, celula.espaco, celula.professores.ElementAt(0), celula.professores.ElementAt(1));
             }
             else if (celula.professores.Count == 3)
             {
-                posicao.Rows.Add(celula.hora, celula.dia, celula.disciplina, celula.turma, celula.espaco, celula.espaco, celula.professores.ElementAt(0), celula.professores.ElementAt(1), celula.professores.ElementAt(2));
+                posicao.Rows.Add(celula.hora, celula.dia, celula.disciplina, celula.turma, celula.espaco, celula.professores.ElementAt(0), celula.professores.ElementAt(1), celula.professores.ElementAt(2));
             }
             else
             {
                 throw new Exception("O número de professores é inválido!\nVerifique se escolheu entre 1 a 3 e que não exista nenhuma aplicação interagindo com o banco neste momento.");
             }
+
+            posicao.Sort(posicao.Columns[2], System.ComponentModel.ListSortDirection.Ascending);
             posicao.ClearSelection();
         }
 
@@ -799,7 +801,8 @@ namespace AcessoDados
                     p.CODIGO_TURMA == celulaAntiga.turma &&
                     p.SEQ_SEMESTRE == celulaAntiga.semestre).First();
 
-                horaDia = turma.GRADE_TURMA.Where(p => p.DIA_SEMANA_GRADE == celulaAntiga.dia && p.HORARIO_GRADE == celulaAntiga.hora).First();
+                horaDia = contexto.GRADE_TURMA.Local.Where(p => p.SEQ_DISCIPLINA_TURMA == turma.SEQ_DISCIPLINA_TURMA && p.DIA_SEMANA_GRADE == celulaAntiga.dia && p.HORARIO_GRADE == celulaAntiga.hora).First();
+                //   horaDia = turma.GRADE_TURMA.Where(p => p.DIA_SEMANA_GRADE == celulaAntiga.dia && p.HORARIO_GRADE == celulaAntiga.hora).First();
 
                 horaDia.CODIGO_ESPACO = celulaNova.espaco;
 
@@ -823,8 +826,17 @@ namespace AcessoDados
                     turma.CODIGO_PROFESSOR2 = null;
                 }
 
-                contexto.Entry(horaDia).State = System.Data.Entity.EntityState.Modified;
-                contexto.Entry(turma).State = System.Data.Entity.EntityState.Modified;
+                if (contexto.Entry(turma).State != System.Data.Entity.EntityState.Added)
+                {
+                    contexto.Entry(turma).State = System.Data.Entity.EntityState.Modified;
+
+                }
+                if (contexto.Entry(horaDia).State != System.Data.Entity.EntityState.Added)
+                {
+                    contexto.Entry(horaDia).State = System.Data.Entity.EntityState.Modified;
+                }
+
+
             }
             catch (Exception)
             {
@@ -848,18 +860,46 @@ namespace AcessoDados
                         p.CODIGO_TURMA == celula.turma &&
                         p.SEQ_SEMESTRE == celula.semestre).First();
 
+                Modelos.GRADE_TURMA gradeTurma = contexto.GRADE_TURMA.Local.Where(p =>
+                        p.SEQ_DISCIPLINA_TURMA == turma.SEQ_DISCIPLINA_TURMA &&
+                        p.HORARIO_GRADE == celula.hora &&
+                        p.DIA_SEMANA_GRADE == celula.dia).First();
+
                 if (count > 1)
                 {
-                    Modelos.GRADE_TURMA gradeTurma = contexto.GRADE_TURMA.Where(p => p.SEQ_DISCIPLINA_TURMA == turma.SEQ_DISCIPLINA_TURMA &&
-                     p.HORARIO_GRADE == celula.hora &&
-                     p.DIA_SEMANA_GRADE == celula.dia).First();
 
-                    contexto.Entry(gradeTurma).State = System.Data.Entity.EntityState.Deleted;
+
+                    if (contexto.Entry(gradeTurma).State == System.Data.Entity.EntityState.Added)
+                    {
+                        contexto.GRADE_TURMA.Local.Remove(gradeTurma);
+                    }
+                    else
+                    {
+                        contexto.Entry(gradeTurma).State = System.Data.Entity.EntityState.Deleted;
+                    }
+
+
                 }
                 else if (count == 1)
                 {
-                    turma.GRADE_TURMA.Clear();
-                    contexto.Entry(turma).State = System.Data.Entity.EntityState.Modified;
+
+                    if (contexto.Entry(gradeTurma).State == System.Data.Entity.EntityState.Added)
+                    {
+                        contexto.GRADE_TURMA.Remove(gradeTurma);
+                    }
+                    else
+                    {
+                        turma.GRADE_TURMA.Clear();
+                    }
+
+                    if (contexto.Entry(turma).State == System.Data.Entity.EntityState.Added)
+                    {
+                        contexto.DISCIPLINA_TURMA.Remove(turma);
+                    }
+                    else
+                    {
+                        contexto.Entry(turma).State = System.Data.Entity.EntityState.Deleted;
+                    }
                 }
                 else
                 {
