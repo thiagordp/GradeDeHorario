@@ -134,6 +134,27 @@ namespace GradeDeHorario
                         }
                     }
                 }
+
+                for (int j = 652; j <= 655; j++)
+                {
+                    int fase = 0;
+                    for (int i = 0; i < linhas.Count; i++)
+                    {
+                        string turma = linhas[i].Cells["CODIGO_TURMA"].Value.ToString();
+
+                        if (turma.Substring(2, 3) == j.ToString())
+                        {
+                            if (fase > 0 && Convert.ToInt32(turma.Substring(0, 2)) != fase)
+                            {
+                                throw new Exception("Você deve selecionar apenas uma turma de cada fase de um curso (Ex.: 01655, 04653, ...), exceto nos casos em que há turmas com sufixo (Ex.: 01655A e 01655B).");
+                            }
+                            else
+                            {
+                                fase = Convert.ToInt32(turma.Substring(0, 2));
+                            }
+                        }
+                    }
+                }
             }
             catch (Exception ex)
             {
