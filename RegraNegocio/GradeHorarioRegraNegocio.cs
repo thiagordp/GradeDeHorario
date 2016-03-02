@@ -276,7 +276,6 @@ namespace RegraNegocio
             return lista;
         }
 
-
         public void ApagaCelula(ref TableLayoutPanel grade, Modelos.Celula celula)
         {
             try

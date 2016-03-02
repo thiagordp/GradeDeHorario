@@ -745,7 +745,12 @@ namespace AcessoDados
 
             if ((celula.professores.ElementAt(0) != query.First().CODIGO_PROFESSOR1) ||
                 (celula.professores.Count >= 2 && celula.professores.ElementAt(1) != query.First().CODIGO_PROFESSOR2) ||
-                (celula.professores.Count == 3 && celula.professores.ElementAt(2) != query.First().CODIGO_PROFESSOR3))
+                (celula.professores.Count == 3 && celula.professores.ElementAt(2) != query.First().CODIGO_PROFESSOR3) ||
+                (query.First().CODIGO_PROFESSOR3 == null && celula.professores.Count == 3) ||
+                (query.First().CODIGO_PROFESSOR2 == null && celula.professores.Count == 2) ||
+                (query.First().CODIGO_PROFESSOR3 != null && celula.professores.Count < 3) ||
+                (query.First().CODIGO_PROFESSOR2 != null && celula.professores.Count < 2) ||
+                (celula.professores.Count == 3 && (query.First().CODIGO_PROFESSOR2 == null || query.First().CODIGO_PROFESSOR3 == null)))
             {
                 StringBuilder excecao = new StringBuilder();
 
@@ -762,7 +767,6 @@ namespace AcessoDados
                         excecao.Append(query.First().CODIGO_PROFESSOR3 + " - " + contexto.PROFESSOR.Find(query.First().CODIGO_PROFESSOR3).NOME_PROFESSOR + "\n");
                     }
                 }
-                
                 throw new Exception(excecao.ToString());
             }
 

@@ -367,7 +367,10 @@ namespace GradeDeHorario
                         dtgPesquisaDisciplina.Rows[i].Cells["CODIGO_TURMA"].Value.ToString() == celulaAntiga.turma)
                     {
                         dtgPesquisaDisciplina.Rows[i].Cells["SELECT_DISCIPLINA"].Value = true;
-                        break;
+                    }
+                    else
+                    {
+                        dtgPesquisaDisciplina.Rows[i].Cells["SELECT_DISCIPLINA"].Value = false;
                     }
                 }
 
@@ -376,12 +379,20 @@ namespace GradeDeHorario
                     if (dtgPesquisaEspaco.Rows[i].Cells["COD_ESP_PESQUISA"].Value.ToString() == celulaAntiga.espaco)
                     {
                         dtgPesquisaEspaco.Rows[i].Cells["SELECT_ESPACO"].Value = true;
-                        break;
+                    }
+                    else
+                    {
+                        dtgPesquisaEspaco.Rows[i].Cells["SELECT_ESPACO"].Value = false;
                     }
                 }
 
                 bool find1, find2, find3;
                 find1 = find2 = find3 = false;
+
+                for (int i = 0; i < dtgPesquisaProfessor.Rows.Count; i++)
+                {
+                    dtgPesquisaProfessor.Rows[i].Cells["SELECT_PROFESSOR"].Value = false;
+                }
 
                 for (int i = 0; i < dtgPesquisaProfessor.Rows.Count; i++)
                 {
@@ -870,7 +881,7 @@ namespace GradeDeHorario
                     }
                 }
 
-                if(answer == true)
+                if (answer == true)
                 {
                     ///// TRANSFERIR PARA O ACESSO DADOS
                     var query1 = contextoUniversal.DISCIPLINA_TURMA.Local.Where(p =>
@@ -895,7 +906,7 @@ namespace GradeDeHorario
                     }
                     ////////////////////
                 }
-            
+
                 this.LimpaSelecaoTabelas();
 
                 btnFimEdicao.Enabled = false;
