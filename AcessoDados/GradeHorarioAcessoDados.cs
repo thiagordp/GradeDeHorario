@@ -671,7 +671,17 @@ namespace AcessoDados
                     turma.CODIGO_TURMA = celula.turma;
                     turma.SEQ_SEMESTRE = celula.semestre;
 
-                    LastIndex = contexto.DISCIPLINA_TURMA.Local.OrderByDescending(p => p.SEQ_DISCIPLINA_TURMA).First().SEQ_DISCIPLINA_TURMA + 1;
+                    List<Modelos.DISCIPLINA_TURMA> list = contexto.DISCIPLINA_TURMA.Local.OrderByDescending(p => p.SEQ_DISCIPLINA_TURMA).ToList();
+
+                    if (list.Count > 0)
+                    {
+                        LastIndex = contexto.DISCIPLINA_TURMA.Local.OrderByDescending(p => p.SEQ_DISCIPLINA_TURMA).First().SEQ_DISCIPLINA_TURMA + 1;
+                    }
+                    else
+                    {
+                        LastIndex = 1;
+                    }
+
 
                     turma.SEQ_DISCIPLINA_TURMA = LastIndex;
 

@@ -26,3 +26,9 @@ D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\GradeDeHorario.Properti
 D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\Interface.csproj.GenerateResource.Cache
 D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\Grade de Horários - UFSC Araranguá.exe
 D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\Grade de Horários - UFSC Araranguá.pdb
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Release\Grade de Horários - UFSC Araranguá.exe.manifest
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\bin\Release\Grade de Horários - UFSC Araranguá.application
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\GradeDeHorario.frmSelecionaTurma.resources
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\Grade de Horários - UFSC Araranguá.exe.manifest
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\Grade de Horários - UFSC Araranguá.application
+D:\Projetos\C#\GradeDeHorario\GradeDeHorario\obj\Release\GradeDeHorario.frmSplash.resources

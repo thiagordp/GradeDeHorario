@@ -51,7 +51,7 @@ namespace AcessoDados
 
                     sql.Clear();
 
-                    sql.Append(ScriptTabelasConstrucao);
+                    sql.Append(ScriptTabelasConstrucao); // Adiciona o script para criação das tabelas
 
                     comandoSql.CommandText = sql.ToString();
                     comandoSql.Connection = conexao;
@@ -73,8 +73,6 @@ namespace AcessoDados
             {
                 List<Modelos.GRADE> grades = new List<Modelos.GRADE>();
                 Modelos.GRADE grade;
-
-                int k = 1;
 
                 for (int i = 1; i <= COLUNA; i++) // colunas
                 {

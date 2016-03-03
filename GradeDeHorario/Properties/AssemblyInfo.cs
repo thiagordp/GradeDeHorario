@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("GradeDeHorario")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Grade de Horários")]
+[assembly: AssemblyDescription("Gerenciador de grade de horários da UFSC Araranguá")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("GradeDeHorario")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyCompany("Laboratório de Automação e Robótica Móvel - LARM")]
+[assembly: AssemblyProduct("Grade de Horários")]
+[assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
