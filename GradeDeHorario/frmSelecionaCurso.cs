@@ -12,8 +12,11 @@ namespace GradeDeHorario
 {
     public partial class frmSelecionaCurso : Form
     {
-        RegraNegocio.SelecionaCursoRegraNegocio cursoRN;
+        RegraNegocio.SelecionaCursoRegraNegocio cursoRN;    // Referência ao objeto da camada de regra de negócios.
 
+        /// <summary>
+        /// Construtor
+        /// </summary>
         public frmSelecionaCurso()
         {
             InitializeComponent();
@@ -46,6 +49,9 @@ namespace GradeDeHorario
             }
         }
 
+        /// <summary>
+        /// Preenche a lista de cursos de acordo com o conteúdo do banco de dados.
+        /// </summary>
         private void PreencheListaCurso()
         {
             cursoRN = new RegraNegocio.SelecionaCursoRegraNegocio();

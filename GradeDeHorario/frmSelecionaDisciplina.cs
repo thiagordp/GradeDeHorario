@@ -12,9 +12,13 @@ namespace GradeDeHorario
 {
     public partial class frmSelecionaDisciplina : Form
     {
-        private RegraNegocio.SelecionaDisciplinaRegraNegocio selecionaDisciplinaRN;
-        private DataGridView tabelaDisciplina;
+        private RegraNegocio.SelecionaDisciplinaRegraNegocio selecionaDisciplinaRN;     // Referência a camada de regra de negócio.
+        private DataGridView tabelaDisciplina;                                          // Referência a tabela de disciplinas do 'frmDisciplina'.
 
+        /// <summary>
+        /// Construtor
+        /// </summary>
+        /// <param name="tabelaDisciplina">Referência à tabela de disciplinas.</param>
         public frmSelecionaDisciplina(ref DataGridView tabelaDisciplina)
         {
             InitializeComponent();
@@ -32,6 +36,9 @@ namespace GradeDeHorario
             dtgSelecionaDisciplina.ClearSelection();
         }
 
+        /// <summary>
+        /// Listagem de requisitos de acordo com o banco de dados.
+        /// </summary>
         private void ListaRequisito()
         {
             selecionaDisciplinaRN = new RegraNegocio.SelecionaDisciplinaRegraNegocio();
@@ -40,7 +47,9 @@ namespace GradeDeHorario
             dtgSelecionaDisciplina.ClearSelection();
         }
 
-        // Verifica a presença de disciplinas já existentes na tabela de requisitos.
+        /// <summary>
+        /// Verifica a presença de disciplinas já existentes na tabela de requisitos.
+        /// </summary>
         private void VerificaDisciplinaSelecionada()
         {
             try

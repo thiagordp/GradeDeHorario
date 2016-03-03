@@ -12,7 +12,7 @@ namespace GradeDeHorario
 {
     public partial class frmProfessor : Form
     {
-        private AcessoDados.ProfessorRegraNegocio professorRN;
+        private AcessoDados.ProfessorRegraNegocio professorRN;              //
         private bool novoRegistro = false;
         private Modelos.PROFESSOR profAntigo = new Modelos.PROFESSOR();
 
@@ -86,6 +86,9 @@ namespace GradeDeHorario
             LimparTexto();
         }
 
+        /// <summary>
+        /// Limpar campos e caixas de seleção
+        /// </summary>
         private void LimparTudo()
         {
             professorRN = new AcessoDados.ProfessorRegraNegocio();
@@ -95,18 +98,23 @@ namespace GradeDeHorario
             dtgProfessor.DataSource = professorRN.SelecionaTodoProfessor();
             cbbDepartamento.SelectedIndex = -1;
             EstadoEditacao(false);
-            /**** Chamar novamente a consulta de seleção da tabela de disciplinas ****/
         }
 
+        /// <summary>
+        /// Limpa a caixas de texto
+        /// </summary>
         private void LimparTexto()
         {
             txtCodigoProfessor.Clear();
             txtNomeProfessor.Clear();
-
             cbbDepartamento.SelectedIndex = -1;
             EstadoEditacao(false);
         }
 
+        /// <summary>
+        /// Dita o estado de botões e afins de acordo com o parâmetro.
+        /// </summary>
+        /// <param name="estado">Estado desejado.</param>
         private void EstadoEditacao(bool estado)
         {
             btnCancelar.Enabled = btnSalvar.Enabled = btnExcluir.Enabled = gbProfessor.Enabled = estado;
@@ -139,6 +147,9 @@ namespace GradeDeHorario
             }
         }
 
+        /// <summary>
+        /// Preenche a lista de departamento de acordo com o conteúdo do banco de dados.
+        /// </summary>
         private void PreencheListaDepartamento()
         {
             try
@@ -156,6 +167,9 @@ namespace GradeDeHorario
             }
         }
 
+        /// <summary>
+        /// Preenche a lista de professores de acordo com o conteúdo do banco de dados.
+        /// </summary>
         private void PreencheTabelaProfessor()
         {
             try

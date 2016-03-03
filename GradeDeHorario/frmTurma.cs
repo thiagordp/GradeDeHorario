@@ -12,10 +12,10 @@ namespace GradeDeHorario
 {
     public partial class frmTurma : Form
     {
-        private Modelos.CURSO curso;
-        private RegraNegocio.TurmaRegraNegocio turmaRn;
-        private Modelos.TURMA turmaAntiga;
-        private bool novoRegistro = false;
+        private Modelos.CURSO curso;                        // Referência ao curso escolhido.
+        private RegraNegocio.TurmaRegraNegocio turmaRn;     // Referência à camada de regra de negócios.
+        private Modelos.TURMA turmaAntiga;                  // Estado da turma anterior à edição
+        private bool novoRegistro = false;                  // Indicador de novo registro.
 
         public frmTurma(Modelos.CURSO curso)
         {

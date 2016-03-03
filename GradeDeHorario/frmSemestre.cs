@@ -12,11 +12,14 @@ namespace GradeDeHorario
 {
     public partial class frmSemestre : Form
     {
-        private Modelos.CURSO curso;
-        private bool novoRegistro;
-        private RegraNegocio.SemestreRegraNegocio semestreRN;
+        private Modelos.CURSO curso;                                // Curso selecionado.
+        private bool novoRegistro;                                  // Indicador de novo registro.
+        private RegraNegocio.SemestreRegraNegocio semestreRN;       // Referência a camada de regra de negócio.
 
-
+        /// <summary>
+        /// Construtor
+        /// </summary>
+        /// <param name="curso"></param>
         public frmSemestre(Modelos.CURSO curso)
         {
             InitializeComponent();
@@ -128,18 +131,28 @@ namespace GradeDeHorario
             }
         }
 
+        /// <summary>
+        ///  Estado de botões e afins.
+        /// </summary>
+        /// <param name="estado"></param>
         private void EstadoEditacao(bool estado)
         {
             btnCancelar.Enabled = btnSalvar.Enabled = gbSemestre.Enabled = estado;
             btnNovo.Enabled = !estado;
         }
 
+        /// <summary>
+        /// Limpa os campos.
+        /// </summary>
         private void LimparTudo()
         {
             txtCodigo.Clear();
             txtNome.Clear();
         }
 
+        /// <summary>
+        /// Preenche a tabela de acordo com o conteúdo do banco de dados.
+        /// </summary>
         private void PreencheTabela()
         {
             semestreRN = new RegraNegocio.SemestreRegraNegocio();

@@ -12,9 +12,9 @@ namespace GradeDeHorario
 {
     public partial class frmSelecionaTurma : Form
     {
-        RegraNegocio.TurmaRegraNegocio turmaRN = new RegraNegocio.TurmaRegraNegocio();
-        DataGridView tabelaTurma;
-        string disciplina;
+        RegraNegocio.TurmaRegraNegocio turmaRN = new RegraNegocio.TurmaRegraNegocio();      // Referência a camada de regra de negócio.
+        DataGridView tabelaTurma;                                                           // Referência a tabela de turmas do 'frmDisciplina'
+        string disciplina;                                                                  // Disciplina.
 
         public frmSelecionaTurma(ref DataGridView tabelaTurma, string disciplina)
         {
@@ -78,6 +78,9 @@ namespace GradeDeHorario
             }
         }
 
+        /// <summary>
+        /// Verifica a seleção de turmas.
+        /// </summary>
         private void VerificaSelecao()
         {
             dtgSelecionaTurma.EndEdit();
@@ -162,6 +165,12 @@ namespace GradeDeHorario
             }
         }
 
+        /// <summary>
+        /// Verifica lista de turma
+        /// </summary>
+        /// <param name="index"></param>
+        /// <param name="linhas"></param>
+        /// <returns></returns>
         private bool VerificaListaTurma(int index, List<DataGridViewRow> linhas)
         {
             if (linhas.Count <= 1) { return true; }
