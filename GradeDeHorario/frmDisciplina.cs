@@ -12,15 +12,17 @@ namespace GradeDeHorario
 {
     public partial class frmDisciplina : Form
     {
-        private RegraNegocio.DisciplinaRegraNegocio disciplinaRN;
-        private Modelos.DISCIPLINA disciplinaAntiga = new Modelos.DISCIPLINA();
-        private DataTable requisitoAntigo = new DataTable();
-        private DataTable requisitoNovo = new DataTable();
-        private DataTable turmaFaseAntigo = new DataTable();
-        private DataTable turmaFaseNovo = new DataTable();
+        private RegraNegocio.DisciplinaRegraNegocio disciplinaRN;                   // Objeto que referencia a camada RegraNegocio
+        private Modelos.DISCIPLINA disciplinaAntiga = new Modelos.DISCIPLINA();     // Objeto auxiliar para edição de disciplinas
+        private DataTable requisitoAntigo = new DataTable();                        // Tabela com os requisitos anteriores à edição
+        private DataTable requisitoNovo = new DataTable();                          // Tabela com os requisitos posteriores à edição
+        private DataTable turmaFaseAntigo = new DataTable();                        // Tabela com as turmas/fases anteriores à edição
+        private DataTable turmaFaseNovo = new DataTable();                          // Tabela com as turmas/fases posteriores à edição
+        private bool novoRegistro = false;                                          // Indicador de novo registro (inserção)
 
-        private bool novoRegistro = false;
-
+        /// <summary>
+        /// Construtor
+        /// </summary>
         public frmDisciplina()
         {
             InitializeComponent();
@@ -30,8 +32,11 @@ namespace GradeDeHorario
         {
             try
             {
-                (new frmSelecionaDisciplina(ref dtgDisciplinaRequisito)).ShowDialog();//teste
+                (new frmSelecionaDisciplina(ref dtgDisciplinaRequisito)).ShowDialog(); // Abre o formulário para seleção de requisitos.
 
+
+                // Caso seja um novo registro, os requisitos serão armazenados no lugar onde seriam os antigos
+                // resgatados do dtg de requisitos.
                 if (novoRegistro == true)
                 {
                     requisitoAntigo = dtgDisciplinaRequisito.DataSource as DataTable;
@@ -41,7 +46,7 @@ namespace GradeDeHorario
                         requisitoAntigo = new DataTable();
                     }
                 }
-                else
+                else // Caso não seja, os requisitos e as turmas são resgatados dos respectivos dtg's.
                 {
                     requisitoNovo = dtgDisciplinaRequisito.DataSource as DataTable;
                     turmaFaseNovo = dtgSelecionaTurma.DataSource as DataTable;
@@ -131,11 +136,19 @@ namespace GradeDeHorario
 
         }
 
+        /// <summary>
+        /// Habita botões e caixas de texto de acordo o parâmetro.
+        /// </summary>
+        /// <param name="estado"></param>
         private void EstadoEditacao(bool estado)
         {
             btnCancelar.Enabled = btnSalvarEdicao.Enabled = btnExcluir.Enabled = gbDisciplina.Enabled = estado;
         }
 
+        /// <summary>
+        /// Limpa os campos de textos e afins além de habilitar/desabilitar botões e 
+        /// outros componentes de acordo com o necessários.
+        /// </summary>
         private void LimparTexto()
         {
             txtCodigo.Clear();
@@ -144,7 +157,10 @@ namespace GradeDeHorario
             cbbDepartamento.SelectedIndex = -1;
             EstadoEditacao(false);
         }
-
+        /// <summary>
+        /// Limpa os campos de textos e afins além de habilitar/desabilitar botões e 
+        /// outros componentes de acordo com o necessários.
+        /// </summary>
         private void LimparTudo()
         {
             txtCodigo.Clear();
@@ -212,7 +228,7 @@ namespace GradeDeHorario
                 {
                     MessageBox.Show("Essa disciplina pertence à turma(s) que já possui(em) horários alocados. \nPortanto, alguns atributos não serão editáveis a menos que seja removidas as alocações.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    txtCodigo.Enabled  = false;
+                    txtCodigo.Enabled = false;
                 }
 
                 txtCodigo.Text = dtgDisciplina.Rows[e.RowIndex].Cells["CODIGO_DISCIPLINA"].Value.ToString();
@@ -301,6 +317,9 @@ namespace GradeDeHorario
             }
         }
 
+        /// <summary>
+        /// Preenche a tabela de disciplinas de acordo com os dados que constam no banco de dados.
+        /// </summary>
         private void PreencheTabelaDisciplina()
         {
             try
@@ -308,7 +327,7 @@ namespace GradeDeHorario
                 disciplinaRN = new RegraNegocio.DisciplinaRegraNegocio(this);
 
                 dtgDisciplina.DataSource = disciplinaRN.SelecionaTodaDisciplina();
-                dtgDisciplina.ClearSelection();
+                dtgDisciplina.ClearSelection(); 
             }
             catch (Exception ex)
             {

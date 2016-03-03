@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Grade de Horários - UFSC Araranguá.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Grade de Horários - UFSC Araranguá.exe" version="1.0.0.4" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="logo_default.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Hl0q74JJl4WdpO4p80Av27rFDnfzBujReqnNyPtv2lc=</dsig:DigestValue>
+        <dsig:DigestValue>wmaUbkWhtfzgbVy/I46bu6VMZ6Xmuo9Q0UEimXjXfJQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -79,14 +79,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Grade de Horários - UFSC Araranguá.exe" size="1465856">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Grade de Horários - UFSC Araranguá.exe" size="1466880">
       <assemblyIdentity name="Grade de Horários - UFSC Araranguá" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/TMzhQ31yDciqM+1N6zoouJdJxbArxUnpbB3fswfTdU=</dsig:DigestValue>
+        <dsig:DigestValue>JgMF2nYUchGkDny6HwRwfs2lVKH0Dd34d+Fw/RbLjk4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -110,7 +110,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>wV6tnyk05LUFIOwhaDi3w0jfAd8ZuebwCy86ObBj4Rk=</dsig:DigestValue>
+        <dsig:DigestValue>S+ZN8sX7fI49LEwJeQkyBqktp5oL6AGaMswmCl1ne/M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -12,10 +12,13 @@ namespace GradeDeHorario
 {
     public partial class frmInfraEstrutura : Form
     {
-        private InfraestruturaRegraNegocio infraEstruturaRN;
-        private bool novoRegistro = false;                           //Indica que é um novo registro caso 1 ou já existe caso contrário.
-        private Modelos.ESPACO espacoAntigo = new Modelos.ESPACO();
+        private InfraestruturaRegraNegocio infraEstruturaRN;            // Referência ao objeto da camada de regra de negócios.
+        private bool novoRegistro = false;                              // Indica que é um novo registro caso 1 ou já existe caso contrário.
+        private Modelos.ESPACO espacoAntigo = new Modelos.ESPACO();     // Referência ao estado do espaço anterior à edição.
 
+        /// <summary>
+        /// Construtor
+        /// </summary>
         public frmInfraEstrutura()
         {
             InitializeComponent();
@@ -34,8 +37,6 @@ namespace GradeDeHorario
             try
             {
                 Modelos.ESPACO espaco = new Modelos.ESPACO();
-
-
 
                 espaco.CODIGO_ESPACO = txtIdentificacao.Text;
                 espaco.CAPACIDADE_ESPACO = Convert.ToInt32(nudCapacidade.Value);
@@ -70,7 +71,6 @@ namespace GradeDeHorario
             {
                 MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -95,12 +95,18 @@ namespace GradeDeHorario
                 }
             }
         }
-
+        /// <summary>
+        /// Estado de botões e afins.
+        /// </summary>
+        /// <param name="estado"></param>
         private void EstadoEditacao(bool estado)
         {
             btnCancelar.Enabled = btnSalvar.Enabled = btnExcluir.Enabled = gbSala.Enabled = estado;
         }
 
+        /// <summary>
+        /// Limpa caixa de texto e de seleção.
+        /// </summary>
         private void Limpar()
         {
             txtIdentificacao.Clear();
@@ -126,7 +132,6 @@ namespace GradeDeHorario
                 btnNovo.Enabled = false;
                 novoRegistro = false;
 
-
                 txtIdentificacao.Text = espacoAntigo.CODIGO_ESPACO = dtgInfraestrutura.Rows[e.RowIndex].Cells["CODIGO_ESPACO"].Value.ToString();
                 cbbTipoEspaco.SelectedItem = espacoAntigo.TIPO_ESPACO = dtgInfraestrutura.Rows[e.RowIndex].Cells["TIPO_ESPACO"].Value.ToString();
                 nudCapacidade.Value = Convert.ToDecimal(dtgInfraestrutura.Rows[e.RowIndex].Cells["CAPACIDADE_ESPACO"].Value.ToString());
@@ -135,7 +140,6 @@ namespace GradeDeHorario
                 chkProjetor.Checked = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["PROJETOR_ESPACO"].Value.ToString());
                 chkQuadroBranco.Checked = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["QUADRO_BRANCO_ESPACO"].Value.ToString());
                 chkQuadroVidro.Checked = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["QUADRO_VIDRO_ESPACO"].Value.ToString());
-
 
                 espacoAntigo.CAPACIDADE_ESPACO = int.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["CAPACIDADE_ESPACO"].Value.ToString());
                 espacoAntigo.INTERNET_ESPACO = bool.Parse(dtgInfraestrutura.Rows[e.RowIndex].Cells["INTERNET_ESPACO"].Value.ToString());
@@ -161,6 +165,7 @@ namespace GradeDeHorario
             PreencheTabela();
         }
 
+        // Prenche a lista de espaços de acordo com o conteúdo do banco.
         private void PreencheTabela()
         {
             try

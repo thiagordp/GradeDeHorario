@@ -12,16 +12,19 @@ namespace GradeDeHorario
 {
     public partial class frmGradeHorario : Form
     {
-        private Modelos.CURSO curso { set; get; }
+        private Modelos.CURSO curso { set; get; }                   // Curso escolhido.
+        private RegraNegocio.GradeHorarioRegraNegocio gradeRN;      // Referência à camada de dados.
+        public DataGridView hoverGrade;                             // Última grade que gatilhou o evento Hover (mouse sobre).
+        private Modelos.Entidade contextoUniversal;                 // Contexto universal para manter alterações da grade de horários, 
+                                                                    // em memória antes de enviar ao banco de dados.
 
-        private RegraNegocio.GradeHorarioRegraNegocio gradeRN;
-        public DataGridView hoverGrade;
+        private Modelos.Celula celulaAntiga;                        // Estado da célula anterior a edição.
+        private Modelos.Celula celulaNova;                          // Estado da célula posterior a edição.
 
-        private Modelos.Entidade contextoUniversal;
-
-        private Modelos.Celula celulaAntiga;
-        private Modelos.Celula celulaNova;
-
+        /// <summary>
+        /// Construtor
+        /// </summary>
+        /// <param name="curso">Curso escolhido.</param>
         public frmGradeHorario(Modelos.CURSO curso)
         {
             InitializeComponent();
@@ -38,6 +41,9 @@ namespace GradeDeHorario
             LayoutGrade();
         }
 
+        /// <summary>
+        /// Aplicação de layout da grade nas células de acordo com as linhas.
+        /// </summary>
         private void LayoutGrade()
         {
             foreach (Component tabela in tblGrade.Controls)
@@ -64,29 +70,35 @@ namespace GradeDeHorario
             }
         }
 
-        private void InicializaGrade()
-        {
-            /*
-            tblGrade.GetControlFromPosition(1, 1);
+        //private void InicializaGrade()
+        //{
+        //    
+        //    tblGrade.GetControlFromPosition(1, 1);
 
-            MessageBox.Show(tblGrade.GetControlFromPosition(1, 1).Name); // Grid a partir da posição
+        //    MessageBox.Show(tblGrade.GetControlFromPosition(1, 1).Name); // Grid a partir da posição
 
-            TableLayoutPanelCellPosition posicao = tblGrade.GetPositionFromControl(dataGridView16); // posição a partir do grid.
-            MessageBox.Show("linha: " + posicao.Row + "\ncoluna: " + posicao.Column);
+        //    TableLayoutPanelCellPosition posicao = tblGrade.GetPositionFromControl(dataGridView16); // posição a partir do grid.
+        //    MessageBox.Show("linha: " + posicao.Row + "\ncoluna: " + posicao.Column);
 
-            grade11.Height = grade11.Rows.GetRowsHeight(DataGridViewElementStates.None)-5; // Altura automática com base no conteúdo da tabela.
-            */
+        //    grade11.Height = grade11.Rows.GetRowsHeight(DataGridViewElementStates.None)-5; // Altura automática com base no conteúdo da tabela.
+        //    
 
-            //       tblGrade.RowStyles[1].Height = (float) (grade11.Rows.GetRowsHeight(DataGridViewElementStates.Visible));
+        //    //       tblGrade.RowStyles[1].Height = (float) (grade11.Rows.GetRowsHeight(DataGridViewElementStates.Visible));
 
-            //    grade11.Height = grade11.Rows.GetRowsHeight(DataGridViewElementStates.None) - 5;
-        }
+        //    //    grade11.Height = grade11.Rows.GetRowsHeight(DataGridViewElementStates.None) - 5;
+        //}
 
         private void txtPesquisaDisciplina_TextChanged(object sender, EventArgs e)
         {
             PreenchePesquisaDisciplina(txtPesquisaDisciplina.Text, Convert.ToInt32(cbbSelectFase.ComboBox.SelectedValue));
         }
 
+        /// <summary>
+        /// Preenche a lista de disciplinas de acordo com o filtro e a fase
+        /// </summary>
+        /// <param name="filtro">Filtro que define as disciplinas que início pelo conjunto de 
+        /// caracteres por ele explicitado</param>
+        /// <param name="fase">Fase do conjunto de disciplinas selecionados.</param>
         private void PreenchePesquisaDisciplina(string filtro, int fase)
         {
             try
@@ -107,6 +119,12 @@ namespace GradeDeHorario
             PreenchePesquisaProfessor(txtPesquisaProfessor.Text);
         }
 
+        /// <summary>
+        /// Preenche a lista de professores de acordo com o filtro
+        /// </summary>
+        /// <param name="filtro">Filtro que define os professores que início pelo conjunto de 
+        /// caracteres por ele explicitado.
+        /// </param>
         private void PreenchePesquisaProfessor(string filtro)
         {
             try
@@ -127,6 +145,10 @@ namespace GradeDeHorario
             PreenchePesquisaEspaco(txtPesquisaEspaco.Text);
         }
 
+        /// <summary>
+        /// Preenche a lista de espaço de acordo com o filtro.
+        /// </summary>
+        /// <param name="filtro">Filtro do conjunto de espaços selecionados.</param>
         private void PreenchePesquisaEspaco(string filtro)
         {
             try
@@ -142,6 +164,10 @@ namespace GradeDeHorario
             }
         }
 
+        /// <summary>
+        /// Preenche a lista de fases de acordo com o filtro.
+        /// </summary>
+        /// <param name="filtro">Filtro do conjunto de fases selecionados.</param>
         private void PreencheListaFase()
         {
             int qtd_fase = Convert.ToInt32(curso.QTD_FASE);
@@ -165,6 +191,9 @@ namespace GradeDeHorario
             cbbSelectFase.SelectedIndex = -1;
         }
 
+        /// <summary>
+        /// Preenche a lista de semestres de acordo com os dados contantes no banco.
+        /// </summary>
         private void PreencheListaSemestre()
         {
             try
@@ -273,6 +302,10 @@ namespace GradeDeHorario
             AutoSizeGrade(sender);
         }
 
+        /// <summary>
+        /// Redimensionamento da célula da grade de acordo com o número de linhas.
+        /// </summary>
+        /// <param name="grade"></param>
         private void AutoSizeGrade(object grade)
         {
             if (grade is DataGridView)
@@ -528,6 +561,9 @@ namespace GradeDeHorario
             }
         }
 
+        /// <summary>
+        /// Preenche a grade com o conteúdo do banco de dados de acordo com o curso, fase e semestre.
+        /// </summary>
         private void PreencheGrade()
         {
             try
@@ -588,12 +624,16 @@ namespace GradeDeHorario
             }
         }
 
+        /// <summary>
+        /// Limpa a marcação do campo de seleção das tabelas de escolha de espaços, professores e disciplinas.
+        /// </summary>
         private void LimpaSelecaoTabelas()
         {
             dtgPesquisaDisciplina.EndEdit();
             dtgPesquisaEspaco.EndEdit();
             dtgPesquisaProfessor.EndEdit();
 
+            // Limpa a seleção de disciplinas.
             for (int i = 0; i < dtgPesquisaDisciplina.Rows.Count; i++)
             {
                 if (Convert.ToBoolean(dtgPesquisaDisciplina.Rows[i].Cells["SELECT_DISCIPLINA"].Value) == true)
@@ -602,6 +642,7 @@ namespace GradeDeHorario
                 }
             }
 
+            // Limpa a seleção de espaços.
             for (int i = 0; i < dtgPesquisaEspaco.Rows.Count; i++)
             {
                 if (Convert.ToBoolean(dtgPesquisaEspaco.Rows[i].Cells["SELECT_ESPACO"].Value) == true)
@@ -610,6 +651,7 @@ namespace GradeDeHorario
                 }
             }
 
+            // Limpa a seleção de professores.
             for (int i = 0; i < dtgPesquisaProfessor.Rows.Count; i++)
             {
                 if (Convert.ToBoolean(dtgPesquisaProfessor.Rows[i].Cells["SELECT_PROFESSOR"].Value) == true)

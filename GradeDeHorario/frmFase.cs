@@ -27,7 +27,6 @@ namespace GradeDeHorario
             this.curso = curso;
         }
 
-        //
         private void btnExcluir_Click(object sender, EventArgs e)
         {
             // Adicionar comando para remover disciplinas da fase
@@ -45,7 +44,6 @@ namespace GradeDeHorario
             }
         }
 
-        //
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             try
@@ -65,7 +63,6 @@ namespace GradeDeHorario
             }
         }
 
-        //
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             btnEditar.Enabled = cbbFase.Enabled = true;
@@ -77,7 +74,6 @@ namespace GradeDeHorario
             btnExcluir.Enabled = btnSalvar.Enabled = btnCancelar.Enabled = dtgListaDisciplina.Enabled = dtgDisciplinaFase.Enabled = false;
         }
 
-        //
         private void dtgListaDisciplina_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             string codigo = dtgListaDisciplina.Rows[e.RowIndex].Cells["CODIGO_DISCIPLINA_FASE"].Value.ToString();
@@ -106,7 +102,6 @@ namespace GradeDeHorario
             dtgDisciplinaFase.ClearSelection();
         }
 
-        //
         private void dtgDisciplinaFase_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -121,7 +116,6 @@ namespace GradeDeHorario
             }
         }
 
-        //
         private void cbbFase_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (!ativo) { return; }
@@ -129,7 +123,6 @@ namespace GradeDeHorario
             PreencheTabelaDisciplina();
         }
 
-        //
         private void btnEditar_Click(object sender, EventArgs e)
         {
             if (cbbFase.SelectedIndex == -1)
@@ -144,7 +137,6 @@ namespace GradeDeHorario
             btnExcluir.Enabled = btnSalvar.Enabled = btnCancelar.Enabled = dtgListaDisciplina.Enabled = dtgDisciplinaFase.Enabled = true;
         }
 
-        //
         private void frmFase_Load(object sender, EventArgs e)
         {
             PreencheListaFase();
@@ -155,7 +147,6 @@ namespace GradeDeHorario
             btnExcluir.Enabled = btnSalvar.Enabled = btnCancelar.Enabled = false;
         }
 
-        //
         private void PreencheListaFase()
         {
             int qtd_fase = Convert.ToInt32(curso.QTD_FASE);
@@ -179,7 +170,10 @@ namespace GradeDeHorario
             cbbFase.SelectedIndex = -1;
         }
 
-        // Preenche a lista de pesquisa de disciplinas com aquelas que comecem com o conteúdo de 'nome'.
+        /// <summary>
+        /// Preenche a lista de pesquisa de disciplinas com aquelas que comecem com o conteúdo de 'nome'.
+        /// </summary>
+        /// <param name="nome"></param>
         private void PreencheListaDisciplina(string nome)
         {
             faseRN = new RegraNegocio.FaseRegraNegocio();
@@ -192,7 +186,9 @@ namespace GradeDeHorario
             PreencheListaDisciplina(txtPesquisaDisciplina.Text);
         }
 
-        // 
+        /// <summary>
+        /// Preenche a tabela de disciplinas.
+        /// </summary> 
         private void PreencheTabelaDisciplina()
         {
             faseRN = new RegraNegocio.FaseRegraNegocio();
@@ -209,7 +205,11 @@ namespace GradeDeHorario
             dtgListaDisciplina.ClearSelection();
         }
 
-        // Copia o conteúdo de um datagridview para outro.
+        /// <summary>
+        /// Copia o conteúdo de um datagridview para outro.
+        /// </summary>
+        /// <param name="tabela"></param>
+        /// <returns></returns>
         private DataGridView CopyDataGridView(DataGridView tabela)
         {
             DataGridView tabelaCopia = new DataGridView();
