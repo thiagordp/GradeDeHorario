@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Grade de Horários - UFSC Araranguá.exe" version="1.0.0.5" publicKeyToken="09bc21f4fe4a7754" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="logo_default.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Grade de Horários - UFSC Araranguá" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Grade de Horários - UFSC Araranguá.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AcessoDados.dll" size="86016">
+      <assemblyIdentity name="AcessoDados" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>45U3ernKkWMOG8bvtDJZvYeSfvh5aMKPC+GCJTSRrVw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="5196496">
+      <assemblyIdentity name="EntityFramework" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>7W69dJBS+QGPZplnGuVGmt7fCGz4sb1CVrvpxOf2/wU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.SqlServer.dll" size="621264">
+      <assemblyIdentity name="EntityFramework.SqlServer" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ob9snjgg6D9D6fIN19mwozYqkxRvCv4LEzAYXi1RsMs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Grade de Horários - UFSC Araranguá.exe" size="1466880">
+      <assemblyIdentity name="Grade de Horários - UFSC Araranguá" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>f5EsGbWQyXNXZA6wWTHy2Fttamyo8mpBl96ocCCJDII=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Modelos.dll" size="64000">
+      <assemblyIdentity name="Modelos" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jIx40d5SXuYABz3bmbYVijGbBnG23ymZfhZNQiefb6Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RegraNegocio.dll" size="38912">
+      <assemblyIdentity name="RegraNegocio" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>fMZ/vFR2W3UQoy992MRXAcYAWJzMHvBIltoJavs+j/Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Grade de Horários - UFSC Araranguá.exe.config" size="1415">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SpcriGLAyYWMiCGzIbKnc1soMv7vv4N4wSQ3XsDy8SI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="logo.ico" size="16937">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Qk3pRkWf2KQXPjDM3g8QdKHFh15E9woOSMDDr9aONKY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="logo_default.ico" size="15236">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eQfxX++VvihOYcma+Wg/Qh5j2rqbRnDu7vSN4U8JEBw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\icon-setup.ico" size="16153">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>N0Pn6IKZOtXZbTr/uhb8IZ+mR7axX/WRFoumqxtGhUo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\ScriptBancoConstrucao.sql" size="470">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hceSYbwLHjmHrXTgWVJUf8ZeHf6DhQFcSGItFRlHdwA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\ScriptTabelasConstrucao.sql" size="8995">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LGJRGaLIfLj/QmwBPl5yr4JN7YnfMllhSfAhF6QYW9g=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=THIAGO-RDP\Thiago Dal Pont" issuerKeyHash="a8b0e736e77d5f90cf551fa1c2fc91c24e52bf8f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>SqiPPf2hd4hyKIH8vGwo/MjpWu15NN9HVvhmw3mGu18=</DigestValue></Reference></SignedInfo><SignatureValue>StAg/vw1VdSXEboWlMbfdpstQszEUwllqvrMBudIOKkd7X19EvyTeXKG4C8kIsne9knphmufx0Uzf4pbnGLxAg+VpVTpFf9mqqtLs4vpfygJClaxiCRP53vaYF+xMfRB2MYplEjpmq2aDKTQwU/2Ah1GGXNtJTfNdgQ14fajpR4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>lyuZntezNK/C1JwFvyKds24+wRnwa50Ny6bATrriXISemo1IqRtZHoENlA0mcGNjMhzat78mHjFwMpgdkmxrdmKeM2thxFO01ho4cOGDiEjz2CDWsg7XyVQ41SO8hK/YzHdq9t97ic5mdh2naSTXZUkAvv9nGgoAM/ymF10Y3Mk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="5fbb8679c366f85647df3479ed5ae9c8fc286cbcfc8128728877a1fd3d8fa84a" Description="" Url=""><as:assemblyIdentity name="Grade de Horários - UFSC Araranguá.exe" version="1.0.0.5" publicKeyToken="09bc21f4fe4a7754" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=THIAGO-RDP\Thiago Dal Pont</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>rhnURZSj5F+g3SeGQg6DsJrVpKmiwPaQKcs12aT4IG0=</DigestValue></Reference></SignedInfo><SignatureValue>Oh9aGl5o1Vvxn1VOH+KmVxbxgKRv2whMgjlRBgUaFBXxNrsHErkwDMdwlCcjhvVJ8Wfy6l6iweW+e6WKzZqjyhI2rUlK/tk976pNHqel/zQ4GkxUjGqVm2DgXCRJlaXf02qMNt7z4Wvhsz6YK2zYlC6ZHx129wcmOTCv5ZvY9WU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>lyuZntezNK/C1JwFvyKds24+wRnwa50Ny6bATrriXISemo1IqRtZHoENlA0mcGNjMhzat78mHjFwMpgdkmxrdmKeM2thxFO01ho4cOGDiEjz2CDWsg7XyVQ41SO8hK/YzHdq9t97ic5mdh2naSTXZUkAvv9nGgoAM/ymF10Y3Mk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICATCCAWqgAwIBAgIQMHG3pYNKyrtCToqLHsz3aDANBgkqhkiG9w0BAQsFADA/MT0wOwYDVQQDHjQAVABIAEkAQQBHAE8ALQBSAEQAUABcAFQAaABpAGEAZwBvACAARABhAGwAIABQAG8AbgB0MB4XDTE2MDMwMjE3NTQ1MFoXDTE3MDMwMjIzNTQ1MFowPzE9MDsGA1UEAx40AFQASABJAEEARwBPAC0AUgBEAFAAXABUAGgAaQBhAGcAbwAgAEQAYQBsACAAUABvAG4AdDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAlyuZntezNK/C1JwFvyKds24+wRnwa50Ny6bATrriXISemo1IqRtZHoENlA0mcGNjMhzat78mHjFwMpgdkmxrdmKeM2thxFO01ho4cOGDiEjz2CDWsg7XyVQ41SO8hK/YzHdq9t97ic5mdh2naSTXZUkAvv9nGgoAM/ymF10Y3MkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQCMb+Jmsusu3Plk3PQytrItoy94tythvbbI8wZB7PrniiJbWxG59qD1WznrRk3UIN8N3ZOnDpQthwir9gHp++gF9hPIog8W0yfDR5juwqlA+T8SQxPYQE4aKOIWie3irFlJqkOeJQfVCFeKvxhtTc/41xz0YD1ryYSfm60TfzPBLw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

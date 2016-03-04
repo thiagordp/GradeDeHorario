@@ -225,10 +225,15 @@ namespace RegraNegocio
             {
                 gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
 
+                bool compartilhada = false;
                 // Verificações aqui...
-                gradeAD.SelectDisciplinaTurmaFromDiaHora(celula);
-                gradeAD.SelectProfessorFromHora(celula);
-                gradeAD.SelectEspacoFromHora(celula);
+                gradeAD.SelectDisciplinaTurmaFromDiaHora(celula, ref compartilhada);
+
+                if (compartilhada == false)
+                {
+                    gradeAD.SelectProfessorFromHora(celula);
+                    gradeAD.SelectEspacoFromHora(celula);
+                }
 
                 gradeAD.InsereGrade(ref grade, celula);
             }
@@ -243,7 +248,9 @@ namespace RegraNegocio
             try
             {
                 gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
-
+                
+                gradeAD.SelectDisciplinaCompartilhada(celulaNova);
+                
                 if (celulaNova.espaco != celulaAntiga.espaco)
                 {
                     gradeAD.SelectEspacoFromHora(celulaNova);
@@ -388,7 +395,7 @@ namespace RegraNegocio
         {
             gradeAD = new AcessoDados.GradeHorarioAcessoDados(curso, ref contexto);
 
-            gradeAD.SelectDisciplinaTurmaFromDiaHora(celula);
+            //gradeAD.SelectDisciplinaTurmaFromDiaHora(celula);
         }
     }
 }

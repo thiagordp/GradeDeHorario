@@ -259,13 +259,87 @@ namespace AcessoDados
             }
         }
 
+
+        public void SelectDisciplinaCompartilhada(Modelos.Celula celula)
+        {
+            // Verificação de uma disciplina de turmas diferentes mas professor(es) e espaço igual.
+            var query2 = (from DISC_TRM in contexto.DISCIPLINA_TURMA.Local
+                          join GRD_TRM in contexto.GRADE_TURMA.Local
+                          on DISC_TRM.SEQ_DISCIPLINA_TURMA.ToString() equals GRD_TRM.SEQ_DISCIPLINA_TURMA.ToString()
+                          join SEM in contexto.SEMESTRE.Local
+                          on DISC_TRM.SEQ_SEMESTRE.ToString() equals SEM.SEQ_SEMESTRE.ToString()
+                          where
+                             DISC_TRM.CODIGO_DISCIPLINA == celula.disciplina &&
+                             DISC_TRM.CODIGO_TURMA != celula.turma &&
+                             GRD_TRM.DIA_SEMANA_GRADE == celula.dia &&
+                             GRD_TRM.HORARIO_GRADE == celula.hora &&
+                             SEM.SEQ_SEMESTRE == celula.semestre
+                          select new
+                          {
+                              DISC_TRM.CODIGO_CURSO,
+                              DISC_TRM.CODIGO_DISCIPLINA,
+                              DISC_TRM.CODIGO_TURMA,
+                              DISC_TRM.CODIGO_PROFESSOR1,
+                              DISC_TRM.CODIGO_PROFESSOR2,
+                              DISC_TRM.CODIGO_PROFESSOR3,
+                              GRD_TRM.CODIGO_ESPACO
+                          }).ToList();
+
+            foreach (var item in query2)
+            {
+                // Sim... Estes if's fazem sentido...
+                if (item.CODIGO_PROFESSOR1 == celula.professores.ElementAt(0) ||
+                    (celula.professores.Count >= 2 && item.CODIGO_PROFESSOR2 == celula.professores.ElementAt(1)) ||
+                    (celula.professores.Count >= 3 && item.CODIGO_PROFESSOR3 == celula.professores.ElementAt(2)) ||
+                    item.CODIGO_ESPACO == celula.espaco)
+                {
+                    if ((item.CODIGO_PROFESSOR1 != celula.professores.ElementAt(0)) ||
+                        (celula.professores.Count >= 2 && item.CODIGO_PROFESSOR2 != celula.professores.ElementAt(1)) ||
+                        celula.professores.Count >= 3 && item.CODIGO_PROFESSOR3 != celula.professores.ElementAt(2) ||
+                        item.CODIGO_ESPACO != celula.espaco)
+                    {
+                        StringBuilder exception = new StringBuilder();
+
+                        exception.Append("A disciplina " + item.CODIGO_DISCIPLINA);
+                        exception.Append(" será compartilhada com a turma " + item.CODIGO_TURMA);
+
+                        using (Modelos.Entidade contextoAux = new Modelos.Entidade())
+                        {
+                            string nomeCurso = contextoAux.CURSO.Find(item.CODIGO_CURSO).NOME_CURSO;
+
+                            exception.Append(" do curso de " + nomeCurso + ".\n\n");
+                        }
+
+                        exception.Append("Portanto a célula que será inserida/modificada deve atender os seguintes requisitos:\n");
+                        exception.Append("\nDisciplina:\t\t" + item.CODIGO_DISCIPLINA);
+                        exception.Append(" - " + contexto.DISCIPLINA.Find(item.CODIGO_DISCIPLINA).NOME_DISCIPLINA);
+                        exception.Append("\nProfessor(es):\n\t" + item.CODIGO_PROFESSOR1 + " - " + contexto.PROFESSOR.Local.Where(p => p.CODIGO_PROFESSOR == item.CODIGO_PROFESSOR1).First().NOME_PROFESSOR);
+
+                        if (item.CODIGO_PROFESSOR2 != null)
+                        {
+                            exception.Append("\n\t" + item.CODIGO_PROFESSOR2 + " - " + contexto.PROFESSOR.Local.Where(p => p.CODIGO_PROFESSOR == item.CODIGO_PROFESSOR2).First().NOME_PROFESSOR);
+
+                            if (item.CODIGO_PROFESSOR3 != null)
+                            {
+                                exception.Append("\n\t" + item.CODIGO_PROFESSOR3 + " - " + contexto.PROFESSOR.Local.Where(p => p.CODIGO_PROFESSOR == item.CODIGO_PROFESSOR3).First().NOME_PROFESSOR);
+                            }
+                        }
+
+                        exception.Append("\nEspaço:\t" + item.CODIGO_ESPACO);
+
+                        throw new Exception(exception.ToString());
+                    }
+                }
+            }
+        }
+
         /// <summary>
         /// Verifica se a celula atender as seguintes condições:
         ///     - Caso exista alguma célula neste horário, não pode haver uma mesma turma com a mesma disciplina
         ///     - 
         /// </summary>
         /// <param name="celula">Contém o conteúdo da posição da grade e turma.</param>
-        public void SelectDisciplinaTurmaFromDiaHora(Modelos.Celula celula)
+        public void SelectDisciplinaTurmaFromDiaHora(Modelos.Celula celula, ref bool compartilhada)
         {
             try
             {
@@ -320,6 +394,8 @@ namespace AcessoDados
                         (celula.professores.Count >= 3 && item.CODIGO_PROFESSOR3 == celula.professores.ElementAt(2)) ||
                         item.CODIGO_ESPACO == celula.espaco)
                     {
+                        compartilhada = true;
+
                         if ((item.CODIGO_PROFESSOR1 != celula.professores.ElementAt(0)) ||
                             (celula.professores.Count >= 2 && item.CODIGO_PROFESSOR2 != celula.professores.ElementAt(1)) ||
                             celula.professores.Count >= 3 && item.CODIGO_PROFESSOR3 != celula.professores.ElementAt(2) ||
@@ -682,7 +758,6 @@ namespace AcessoDados
                         LastIndex = 1;
                     }
 
-
                     turma.SEQ_DISCIPLINA_TURMA = LastIndex;
 
                     turma.CODIGO_PROFESSOR1 = celula.professores.ElementAt(0);
@@ -865,8 +940,6 @@ namespace AcessoDados
                 {
                     contexto.Entry(horaDia).State = System.Data.Entity.EntityState.Modified;
                 }
-
-
             }
             catch (Exception)
             {
