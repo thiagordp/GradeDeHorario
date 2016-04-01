@@ -269,7 +269,7 @@ namespace GradeDeHorario
 
                 cbbSelectFase.Enabled = cbbSelectSemestre.Enabled = btnCarregaGrade.Enabled = true;
                 btnCancelar.Enabled = btnSalvar.Enabled = btnGerarRelatorio.Enabled = tblGrade.Enabled = gbDisciplina.Enabled = gbProfessor.Enabled = gbSala.Enabled = btnEditar.Enabled = false;
-
+                contextoUniversal.Dispose();
                 MessageBox.Show("Alterações salvas com sucesso.", "Alterações salvas", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
@@ -281,7 +281,7 @@ namespace GradeDeHorario
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             LimparTabelas();
-
+            contextoUniversal.Dispose();
             cbbSelectFase.Enabled = cbbSelectSemestre.Enabled = btnCarregaGrade.Enabled = true;
             btnCancelar.Enabled = btnSalvar.Enabled = btnGerarRelatorio.Enabled = tblGrade.Enabled = gbDisciplina.Enabled = gbProfessor.Enabled = gbSala.Enabled = btnEditar.Enabled = false;
         }

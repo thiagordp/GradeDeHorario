@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AcessoDados.dll" size="86016">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AcessoDados.dll" size="86528">
       <assemblyIdentity name="AcessoDados" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>45U3ernKkWMOG8bvtDJZvYeSfvh5aMKPC+GCJTSRrVw=</dsig:DigestValue>
+        <dsig:DigestValue>9Xvnyu7wgbGRSvr0ebG0BZDljf7cG9VVFtN0sHiotiQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,7 +86,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/t1XHuVHinmecCd5yUE9jPlV5x1cnSngZ3TT/NVOBoo=</dsig:DigestValue>
+        <dsig:DigestValue>4IeRxCo5kL/U+9qkoa2OcWKgv6iRkttEtrej0ocTllY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -110,7 +110,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>fMZ/vFR2W3UQoy992MRXAcYAWJzMHvBIltoJavs+j/Q=</dsig:DigestValue>
+        <dsig:DigestValue>/ZjYEa17XnN6sE/Y9k5xY9xqntseB+zTsacGQQiCto0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

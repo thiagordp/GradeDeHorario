@@ -21,6 +21,11 @@ namespace AcessoDados
         /// </summary>
         private Modelos.Entidade contexto;
 
+        /// <summary>
+        /// Construtor
+        /// </summary>
+        /// <param name="curso">Curso escolhido</param>
+        /// <param name="contexto">Referência do contexto universal em memória.</param>
         public GradeHorarioAcessoDados(Modelos.CURSO curso, ref Modelos.Entidade contexto)
         {
             this.curso = curso;
@@ -220,6 +225,13 @@ namespace AcessoDados
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="disciplina"></param>
+        /// <param name="fase"></param>
+        /// <param name="semestre"></param>
+        /// <returns></returns>
         public DataTable SelecionaTurma(string disciplina, int fase, int semestre)
         {
             try
@@ -259,7 +271,10 @@ namespace AcessoDados
             }
         }
 
-
+        /// <summary>
+        /// Seleciona a lista de disciplinas que são compartilhadas entre turmas de diferentes cursos.
+        /// </summary>
+        /// <param name="celula">Célula com informações para seleção das turmas.</param>
         public void SelectDisciplinaCompartilhada(Modelos.Celula celula)
         {
             // Verificação de uma disciplina de turmas diferentes mas professor(es) e espaço igual.
@@ -336,9 +351,12 @@ namespace AcessoDados
         /// <summary>
         /// Verifica se a celula atender as seguintes condições:
         ///     - Caso exista alguma célula neste horário, não pode haver uma mesma turma com a mesma disciplina
-        ///     - 
+        ///     - Caso seja uma disciplina compartilhada, os professores e espaço devem ser iguais.
+        ///     - O número de crédito já "usados" em um conjunto de disciplina e turma deve
+        ///       ser menor ou igual ao valor máximo estipulado no cadastro da disciplina.
         /// </summary>
-        /// <param name="celula">Contém o conteúdo da posição da grade e turma.</param>
+        /// <param name="celula">Célula com informações necessárias</param>
+        /// <param name="compartilhada">Indicador de disciplina compartilhada</param>
         public void SelectDisciplinaTurmaFromDiaHora(Modelos.Celula celula, ref bool compartilhada)
         {
             try
@@ -387,8 +405,7 @@ namespace AcessoDados
 
                 foreach (var item in query2)
                 {
-
-                    // Sim... Estes if's fazem sentido...
+                    // Verifica se pelo menos uma das informações coincidem entre as turmas.
                     if (item.CODIGO_PROFESSOR1 == celula.professores.ElementAt(0) ||
                         (celula.professores.Count >= 2 && item.CODIGO_PROFESSOR2 == celula.professores.ElementAt(1)) ||
                         (celula.professores.Count >= 3 && item.CODIGO_PROFESSOR3 == celula.professores.ElementAt(2)) ||
@@ -396,11 +413,13 @@ namespace AcessoDados
                     {
                         compartilhada = true;
 
+                        // Verifica se alguma das informações não conferem (Os professores e espaço devem ser os mesmos).
                         if ((item.CODIGO_PROFESSOR1 != celula.professores.ElementAt(0)) ||
                             (celula.professores.Count >= 2 && item.CODIGO_PROFESSOR2 != celula.professores.ElementAt(1)) ||
                             celula.professores.Count >= 3 && item.CODIGO_PROFESSOR3 != celula.professores.ElementAt(2) ||
                             item.CODIGO_ESPACO != celula.espaco)
                         {
+                            // Formador da string com informações sobre a exceção.
                             StringBuilder exception = new StringBuilder();
 
                             exception.Append("A disciplina " + item.CODIGO_DISCIPLINA);
@@ -457,13 +476,13 @@ namespace AcessoDados
         }
 
         /// <summary>
-        /// 
+        /// Seleciona o número máximo de créditos e o "usado" até agora.
         /// </summary>
-        /// <param name="turma"></param>
-        /// <param name="disciplina"></param>
-        /// <param name="semestre"></param>
-        /// <param name="countCredito"></param>
-        /// <param name="maxCredito"></param>
+        /// <param name="turma">Turma</param>
+        /// <param name="disciplina">Disciplina</param>
+        /// <param name="semestre">Semestre</param>
+        /// <param name="countCredito">Referência para a variável que conterá o número de créditos usados.</param>
+        /// <param name="maxCredito">Referência para a variável que conterá o número máximo de créditos.</param>
         public void SelectNumeroCredito(string turma, string disciplina, string semestre, ref int countCredito, ref int maxCredito)
         {
             try
@@ -485,7 +504,6 @@ namespace AcessoDados
                 {
                     countCredito = 0;
                     maxCredito = Convert.ToInt32(contexto.DISCIPLINA.Local.Where(p => p.CODIGO_DISCIPLINA == disciplina).First().CREDITO_DISCIPLINA);
-
                 }
                 else
                 {
@@ -521,9 +539,9 @@ namespace AcessoDados
         }
 
         /// <summary>
-        /// 
+        /// Verifica se existem professores alocados ou não no dia e horário especificados. 
         /// </summary>
-        /// <param name="celula"></param>
+        /// <param name="celula">Célula com informações necessárias.</param>
         public void SelectProfessorFromHora(Modelos.Celula celula)
         {
             try
@@ -672,7 +690,7 @@ namespace AcessoDados
         }
 
         /// <summary>
-        /// 
+        /// Verifica se existe espaço alocado ou não no dia e horário especificados. 
         /// </summary>
         /// <param name="celula"></param>
         public void SelectEspacoFromHora(Modelos.Celula celula)
@@ -731,6 +749,8 @@ namespace AcessoDados
         /// <summary>
         /// Insere uma nova grade no banco de dados
         /// </summary>
+        /// <param name="grade">Referência ao objeto de layout que contém as células da grade.</param>
+        /// <param name="celula">Célula com informações necessárias para inserção no dia e hora desejados.</param>
         public void InsereGrade(ref TableLayoutPanel grade, Modelos.Celula celula)
         {
             try
@@ -793,9 +813,10 @@ namespace AcessoDados
         }
 
         /// <summary>
-        /// 
+        /// Seleção da turma que está de acordo com informações dos parâmetros.
         /// </summary>
-        /// <param name="celula"></param>
+        /// <param name="seq">Referência ao sequencial da turma encontrada.</param>
+        /// <param name="celula">Célula com informações necessárias para a seleção</param>
         /// <returns></returns>
         private int SelectGradeTurma(ref int seq, Modelos.Celula celula)
         {
@@ -859,7 +880,7 @@ namespace AcessoDados
         }
 
         /// <summary>
-        /// 
+        /// Adiciona a célula informada à grade.
         /// </summary>
         /// <param name="grade"></param>
         /// <param name="celula"></param>
@@ -891,6 +912,9 @@ namespace AcessoDados
         /// <summary>
         /// Edita os atributos da grade indicada de acordo com os dados fornecidos
         /// </summary>
+        /// <param name="grade"></param>
+        /// <param name="celulaAntiga"></param>
+        /// <param name="celulaNova"></param>
         public void EditaGrade(ref TableLayoutPanel grade, Modelos.Celula celulaAntiga, Modelos.Celula celulaNova)
         {
             try
@@ -948,8 +972,10 @@ namespace AcessoDados
         }
 
         /// <summary>
-        /// Deleta a grade especificada
+        /// Deleta a grade especificada.
         /// </summary>
+        /// <param name="grade"></param>
+        /// <param name="celula"></param>
         public void ApagaGrade(ref TableLayoutPanel grade, Modelos.Celula celula)
         {
             try
@@ -970,8 +996,6 @@ namespace AcessoDados
 
                 if (count > 1)
                 {
-
-
                     if (contexto.Entry(gradeTurma).State == System.Data.Entity.EntityState.Added)
                     {
                         contexto.GRADE_TURMA.Local.Remove(gradeTurma);
@@ -980,12 +1004,9 @@ namespace AcessoDados
                     {
                         contexto.Entry(gradeTurma).State = System.Data.Entity.EntityState.Deleted;
                     }
-
-
                 }
                 else if (count == 1)
                 {
-
                     if (contexto.Entry(gradeTurma).State == System.Data.Entity.EntityState.Added)
                     {
                         contexto.GRADE_TURMA.Remove(gradeTurma);
@@ -1016,29 +1037,36 @@ namespace AcessoDados
         }
 
         /// <summary>
-        /// Cambiarras... Muitas cambiarras
+        /// Cambiarras... Muitas cambiarras...
         /// </summary>
         public void CarregaLocalmente()
         {
-            foreach (var item in contexto.DISCIPLINA.ToList()) { }
+            try
+            {
+                foreach (var item in contexto.DISCIPLINA.ToList()) { }
 
-            foreach (var item in contexto.DISCIPLINA_CURSO.ToList()) { }
+                foreach (var item in contexto.DISCIPLINA_CURSO.ToList()) { }
 
-            foreach (var item in contexto.DISCIPLINA_TURMA.ToList()) { }
+                foreach (var item in contexto.DISCIPLINA_TURMA.ToList()) { }
 
-            foreach (var item in contexto.GRADE_TURMA.ToList()) { }
+                foreach (var item in contexto.GRADE_TURMA.ToList()) { }
 
-            foreach (var item in contexto.ESPACO.ToList()) { }
+                foreach (var item in contexto.ESPACO.ToList()) { }
 
-            foreach (var item in contexto.GRADE.ToList()) { }
+                foreach (var item in contexto.GRADE.ToList()) { }
 
-            foreach (var item in contexto.PROFESSOR.ToList()) { }
+                foreach (var item in contexto.PROFESSOR.ToList()) { }
 
-            foreach (var item in contexto.SEMESTRE.ToList()) { }
+                foreach (var item in contexto.SEMESTRE.ToList()) { }
 
-            foreach (var item in contexto.TURMA.ToList()) { }
+                foreach (var item in contexto.TURMA.ToList()) { }
 
-            foreach (var item in contexto.CURSO.ToList()) { }
+                foreach (var item in contexto.CURSO.ToList()) { }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro ao carregar dados do banco para a memória");
+            }
         }
     }
 }

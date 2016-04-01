@@ -17,7 +17,7 @@ namespace RegraNegocio
         private AcessoDados.CriaBancoAcessoDados criaBanco;
 
         ///////////////////////////////////
-        //  Executar comandos de CREATE  //d
+        //  Executar comandos de CREATE  //
         ///////////////////////////////////
 
         // Cria o banco no SQL Server caso não exista.
@@ -44,7 +44,6 @@ namespace RegraNegocio
             {
                 throw new Exception("Erro no método " + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n\nDetalhe:\n\n" + ex.Message);
             }
-
         }
 
         // Inserção dos departamentos
